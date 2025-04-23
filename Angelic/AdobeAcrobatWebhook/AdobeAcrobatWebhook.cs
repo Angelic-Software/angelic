@@ -32,7 +32,7 @@ public class AdobeAcrobatWebhook
     public string? Event { get; set; }
 
     [JsonProperty("eventDate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public System.DateTimeOffset? EventDate { get; set; }
+    public DateTimeOffset? EventDate { get; set; }
 
     [JsonProperty("eventResourceType", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? EventResourceType { get; set; }

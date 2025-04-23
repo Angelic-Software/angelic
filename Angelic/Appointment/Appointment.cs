@@ -17,10 +17,10 @@ public class Appointment
     public string? Location { get; set; }
     
     [JsonProperty("start_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public System.DateTimeOffset? StartDate { get; set; }
+    public DateTimeOffset? StartDate { get; set; }
     
     [JsonProperty("end_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public System.DateTimeOffset? EndDate { get; set; }
+    public DateTimeOffset? EndDate { get; set; }
     
     [JsonProperty("all_day", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? AllDay { get; set; }
@@ -41,7 +41,7 @@ public class Appointment
     public string? TypeName { get; set; }
     
     [JsonProperty("created", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public System.DateTimeOffset? Created { get; set; }
+    public DateTimeOffset? Created { get; set; }
     
     [JsonProperty("created_by", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? CreatedBy { get; set; }
@@ -50,7 +50,7 @@ public class Appointment
     public string? CreatedByName { get; set; }
     
     [JsonProperty("modified", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public System.DateTimeOffset? Modified { get; set; }
+    public DateTimeOffset? Modified { get; set; }
     
     [JsonProperty("modified_by", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ModifiedBy { get; set; }

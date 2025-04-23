@@ -40,10 +40,10 @@ public partial class AddressStore
     public bool? Inactive { get; set; } = default!;
 
     [JsonProperty("date_active", Required = JsonRequired.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public System.DateTimeOffset? DateActive { get; set; } = default!;
+    public DateTimeOffset? DateActive { get; set; } = default!;
 
     [JsonProperty("date_inactive", Required = JsonRequired.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public System.DateTimeOffset? DateInactive { get; set; } = default!;
+    public DateTimeOffset? DateInactive { get; set; } = default!;
 
     [JsonProperty("lat", Required = JsonRequired.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? Lat { get; set; } = default!;

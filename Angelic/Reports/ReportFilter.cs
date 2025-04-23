@@ -1,8 +1,7 @@
 using System.CodeDom.Compiler;
-using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace Angelic.AnalyzerFilter;
+namespace Angelic.Reports;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
 public class ReportFilter

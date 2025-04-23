@@ -1,7 +1,7 @@
 using System.CodeDom.Compiler;
 using Newtonsoft.Json;
 
-namespace Angelic.AnalyzerProfileColumn;
+namespace Angelic.Reports;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
 public class ReportColumn
@@ -79,7 +79,7 @@ public class ReportColumn
     public bool? Applied { get; set; }
     
     [JsonProperty("applied_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public System.DateTimeOffset? AppliedDate { get; set; }
+    public DateTimeOffset? AppliedDate { get; set; }
     
     [JsonProperty("dismissed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Dismissed { get; set; }

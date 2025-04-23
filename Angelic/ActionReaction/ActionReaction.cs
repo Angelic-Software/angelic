@@ -16,7 +16,7 @@ public class ActionReaction
     public int? AgentId { get; set; }
 
     [JsonProperty("timestamp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public System.DateTimeOffset? Timestamp { get; set; }
+    public DateTimeOffset? Timestamp { get; set; }
 
     [JsonProperty("type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Type { get; set; }

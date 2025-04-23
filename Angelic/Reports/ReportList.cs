@@ -1,11 +1,10 @@
 using System.CodeDom.Compiler;
-using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace Angelic.AnalyzerProfile_List;
+namespace Angelic.Reports;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
-public class AnalyzerProfile_List
+public class ReportList
 {
     [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Id { get; set; }
@@ -17,7 +16,7 @@ public class AnalyzerProfile_List
     public string? Description { get; set; }
     
     [JsonProperty("last_run_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public System.DateTimeOffset? LastRunDate { get; set; }
+    public DateTimeOffset? LastRunDate { get; set; }
     
     [JsonProperty("group_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? GroupId { get; set; }

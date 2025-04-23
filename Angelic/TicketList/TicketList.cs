@@ -11,7 +11,7 @@ namespace Angelic.TicketList;
         public int? Id { get; set; } 
 
         [JsonProperty("dateoccurred", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Dateoccurred { get; set; } 
+        public DateTimeOffset? Dateoccurred { get; set; } 
 
         [JsonProperty("summary", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Summary { get; set; } 
@@ -116,10 +116,10 @@ namespace Angelic.TicketList;
         public double? Projectcompletionpercentage { get; set; } 
 
         [JsonProperty("projectearlieststart", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Projectearlieststart { get; set; } 
+        public DateTimeOffset? Projectearlieststart { get; set; } 
 
         [JsonProperty("projectlatestend", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Projectlatestend { get; set; } 
+        public DateTimeOffset? Projectlatestend { get; set; } 
 
         [JsonProperty("timetaken", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Timetaken { get; set; } 
@@ -170,28 +170,28 @@ namespace Angelic.TicketList;
         public bool? Onhold { get; set; } 
 
         [JsonProperty("respondbydate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Respondbydate { get; set; } 
+        public DateTimeOffset? Respondbydate { get; set; } 
 
         [JsonProperty("responsedate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Responsedate { get; set; } 
+        public DateTimeOffset? Responsedate { get; set; } 
 
         [JsonProperty("first_responsedate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? First_responsedate { get; set; } 
+        public DateTimeOffset? First_responsedate { get; set; } 
 
         [JsonProperty("responsestartdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Responsestartdate { get; set; } 
+        public DateTimeOffset? Responsestartdate { get; set; } 
 
         [JsonProperty("slaresponsestate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Slaresponsestate { get; set; } 
 
         [JsonProperty("fixbydate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Fixbydate { get; set; } 
+        public DateTimeOffset? Fixbydate { get; set; } 
 
         [JsonProperty("dateclosed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Dateclosed { get; set; } 
+        public DateTimeOffset? Dateclosed { get; set; } 
 
         [JsonProperty("dateassigned", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Dateassigned { get; set; } 
+        public DateTimeOffset? Dateassigned { get; set; } 
 
         [JsonProperty("excludefromsla", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Excludefromsla { get; set; } 
@@ -209,7 +209,7 @@ namespace Angelic.TicketList;
         public bool? Parentassign { get; set; } 
 
         [JsonProperty("slaactiondate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Slaactiondate { get; set; } 
+        public DateTimeOffset? Slaactiondate { get; set; } 
 
         [JsonProperty("slapercused", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Slapercused { get; set; } 
@@ -221,13 +221,13 @@ namespace Angelic.TicketList;
         public double? Currentelapsedhours { get; set; } 
 
         [JsonProperty("lastactiondate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Lastactiondate { get; set; } 
+        public DateTimeOffset? Lastactiondate { get; set; } 
 
         [JsonProperty("last_update", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Last_update { get; set; } 
+        public DateTimeOffset? Last_update { get; set; } 
 
         [JsonProperty("lastchildactiondate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Lastchildactiondate { get; set; } 
+        public DateTimeOffset? Lastchildactiondate { get; set; } 
 
         [JsonProperty("organisation_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Organisation_id { get; set; } 
@@ -305,13 +305,13 @@ namespace Angelic.TicketList;
         public string? Workflow_stage_number { get; set; } 
 
         [JsonProperty("lastincomingemail", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Lastincomingemail { get; set; } 
+        public DateTimeOffset? Lastincomingemail { get; set; } 
 
         [JsonProperty("child_ticket_ids", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<int>? Child_ticket_ids { get; set; } 
 
         [JsonProperty("nextactivitydate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Nextactivitydate { get; set; } 
+        public DateTimeOffset? Nextactivitydate { get; set; } 
 
         [JsonProperty("inventory_number", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Inventory_number { get; set; } 
@@ -365,7 +365,7 @@ namespace Angelic.TicketList;
         public int? Urgency { get; set; } 
 
         [JsonProperty("startdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Startdate { get; set; } 
+        public DateTimeOffset? Startdate { get; set; } 
 
         [JsonProperty("startdate_timezone", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Startdate_timezone { get; set; } 
@@ -380,7 +380,7 @@ namespace Angelic.TicketList;
         public int? Starttimeslot { get; set; } 
 
         [JsonProperty("targetdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Targetdate { get; set; } 
+        public DateTimeOffset? Targetdate { get; set; } 
 
         [JsonProperty("targetdate_timezone", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Targetdate_timezone { get; set; } 
@@ -395,10 +395,10 @@ namespace Angelic.TicketList;
         public int? Targettimeslot { get; set; } 
 
         [JsonProperty("deadlinedate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Deadlinedate { get; set; } 
+        public DateTimeOffset? Deadlinedate { get; set; } 
 
         [JsonProperty("followupdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Followupdate { get; set; } 
+        public DateTimeOffset? Followupdate { get; set; } 
 
         [JsonProperty("oppcontactname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Oppcontactname { get; set; } 
@@ -467,19 +467,19 @@ namespace Angelic.TicketList;
         public string? Oppcompetitors { get; set; } 
 
         [JsonProperty("opptrialdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Opptrialdate { get; set; } 
+        public DateTimeOffset? Opptrialdate { get; set; } 
 
         [JsonProperty("oppdemodate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Oppdemodate { get; set; } 
+        public DateTimeOffset? Oppdemodate { get; set; } 
 
         [JsonProperty("oppdiscountdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Oppdiscountdate { get; set; } 
+        public DateTimeOffset? Oppdiscountdate { get; set; } 
 
         [JsonProperty("oppattemptsmade", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Oppattemptsmade { get; set; } 
 
         [JsonProperty("oppconverteddate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Oppconverteddate { get; set; } 
+        public DateTimeOffset? Oppconverteddate { get; set; } 
 
         [JsonProperty("oppproductchosen", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Oppproductchosen { get; set; } 
@@ -584,7 +584,7 @@ namespace Angelic.TicketList;
         public int? Appointment_id { get; set; } 
 
         [JsonProperty("nextappointmentdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Nextappointmentdate { get; set; } 
+        public DateTimeOffset? Nextappointmentdate { get; set; } 
 
         [JsonProperty("firstname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Firstname { get; set; } 
@@ -608,7 +608,7 @@ namespace Angelic.TicketList;
         public int? Action_ticket_id { get; set; } 
 
         [JsonProperty("action_datetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Action_datetime { get; set; } 
+        public DateTimeOffset? Action_datetime { get; set; } 
 
         [JsonProperty("action_outcome", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Action_outcome { get; set; } 
@@ -674,16 +674,16 @@ namespace Angelic.TicketList;
         public int? Milestone_status { get; set; } 
 
         [JsonProperty("milestone_startdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Milestone_startdate { get; set; } 
+        public DateTimeOffset? Milestone_startdate { get; set; } 
 
         [JsonProperty("milestone_enddate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Milestone_enddate { get; set; } 
+        public DateTimeOffset? Milestone_enddate { get; set; } 
 
         [JsonProperty("email_message_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Email_message_id { get; set; } 
 
         [JsonProperty("guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Guid { get; set; } 
+        public Guid? Guid { get; set; } 
 
         [JsonProperty("colour", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Colour { get; set; } 
@@ -710,7 +710,7 @@ namespace Angelic.TicketList;
         public int? Child_status { get; set; } 
 
         [JsonProperty("date_fully_closed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Date_fully_closed { get; set; } 
+        public DateTimeOffset? Date_fully_closed { get; set; } 
 
         [JsonProperty("lastaction_chargerate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Lastaction_chargerate { get; set; } 
@@ -824,10 +824,10 @@ namespace Angelic.TicketList;
         public int? Itil_requesttype_id { get; set; } 
 
         [JsonProperty("startdatetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Startdatetime { get; set; } 
+        public DateTimeOffset? Startdatetime { get; set; } 
 
         [JsonProperty("enddatetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Enddatetime { get; set; } 
+        public DateTimeOffset? Enddatetime { get; set; } 
 
         [JsonProperty("closure_agent_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Closure_agent_id { get; set; } 

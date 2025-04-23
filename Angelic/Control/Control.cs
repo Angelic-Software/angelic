@@ -31,7 +31,7 @@ namespace Angelic.Control;
         public string? License_name { get; set; } 
 
         [JsonProperty("trial_expires", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Trial_expires { get; set; } 
+        public DateTimeOffset? Trial_expires { get; set; } 
 
         [JsonProperty("licence_error", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Licence_error { get; set; } 
@@ -46,7 +46,7 @@ namespace Angelic.Control;
         public int? One_sla_id { get; set; } 
 
         [JsonProperty("one_sla_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? One_sla_guid { get; set; } 
+        public Guid? One_sla_guid { get; set; } 
 
         [JsonProperty("email_start_tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Email_start_tag { get; set; } 
@@ -58,7 +58,7 @@ namespace Angelic.Control;
         public int? Contact_status_id { get; set; } 
 
         [JsonProperty("contact_status_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Contact_status_guid { get; set; } 
+        public Guid? Contact_status_guid { get; set; } 
 
         [JsonProperty("default_estimate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Default_estimate { get; set; } 
@@ -232,7 +232,7 @@ namespace Angelic.Control;
         public int? Updateticketwhenpoinstockstatus { get; set; } 
 
         [JsonProperty("updateticketwhenpoinstockstatus_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Updateticketwhenpoinstockstatus_guid { get; set; } 
+        public Guid? Updateticketwhenpoinstockstatus_guid { get; set; } 
 
         [JsonProperty("allowstockreserve", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Allowstockreserve { get; set; } 
@@ -343,7 +343,7 @@ namespace Angelic.Control;
         public int? Kbdrafttickettype { get; set; } 
 
         [JsonProperty("kbdrafttickettype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Kbdrafttickettype_guid { get; set; } 
+        public Guid? Kbdrafttickettype_guid { get; set; } 
 
         [JsonProperty("usecurrencyconversion", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Usecurrencyconversion { get; set; } 
@@ -532,7 +532,7 @@ namespace Angelic.Control;
         public int? Sagebusinesscloud_default_invoice_status { get; set; } 
 
         [JsonProperty("sagebusinesscloud_default_invoice_status_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Sagebusinesscloud_default_invoice_status_guid { get; set; } 
+        public Guid? Sagebusinesscloud_default_invoice_status_guid { get; set; } 
 
         [JsonProperty("publishchangecalendartype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Publishchangecalendartype { get; set; } 
@@ -634,7 +634,7 @@ namespace Angelic.Control;
         public int? Default_user_role { get; set; } 
 
         [JsonProperty("default_user_role_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Default_user_role_guid { get; set; } 
+        public Guid? Default_user_role_guid { get; set; } 
 
         [JsonProperty("default_user_role_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Default_user_role_name { get; set; } 
@@ -805,7 +805,7 @@ namespace Angelic.Control;
         public int? Workspace_defaultgroup { get; set; } 
 
         [JsonProperty("workspace_defaultgroup_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Workspace_defaultgroup_guid { get; set; } 
+        public Guid? Workspace_defaultgroup_guid { get; set; } 
 
         [JsonProperty("workspace_delete_devices", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Workspace_delete_devices { get; set; } 
@@ -826,7 +826,7 @@ namespace Angelic.Control;
         public int? Addigy_assettype { get; set; } 
 
         [JsonProperty("addigy_assettype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Addigy_assettype_guid { get; set; } 
+        public Guid? Addigy_assettype_guid { get; set; } 
 
         [JsonProperty("default_salesforce_user", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Default_salesforce_user { get; set; } 
@@ -1216,7 +1216,7 @@ namespace Angelic.Control;
         public int? Default_columns_id_clients { get; set; } 
 
         [JsonProperty("default_columns_id_clients_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Default_columns_id_clients_guid { get; set; } 
+        public Guid? Default_columns_id_clients_guid { get; set; } 
 
         [JsonProperty("hide_other_dep_teams", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Hide_other_dep_teams { get; set; } 
@@ -1234,7 +1234,7 @@ namespace Angelic.Control;
         public string? Cognigyendpoint { get; set; } 
 
         [JsonProperty("connectwiseautomatealertlastupdated", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Connectwiseautomatealertlastupdated { get; set; } 
+        public DateTimeOffset? Connectwiseautomatealertlastupdated { get; set; } 
 
         [JsonProperty("cannedsuggestnewticket", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Cannedsuggestnewticket { get; set; } 
@@ -1345,13 +1345,13 @@ namespace Angelic.Control;
         public int? Kaseya_defaultassettype_server { get; set; } 
 
         [JsonProperty("kaseya_defaultassettype_server_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Kaseya_defaultassettype_server_guid { get; set; } 
+        public Guid? Kaseya_defaultassettype_server_guid { get; set; } 
 
         [JsonProperty("kaseya_defaultassettype_workstation", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Kaseya_defaultassettype_workstation { get; set; } 
 
         [JsonProperty("kaseya_defaultassettype_workstation_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Kaseya_defaultassettype_workstation_guid { get; set; } 
+        public Guid? Kaseya_defaultassettype_workstation_guid { get; set; } 
 
         [JsonProperty("recaptcha_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Recaptcha_type { get; set; } 
@@ -1462,7 +1462,7 @@ namespace Angelic.Control;
         public int? Icinga_defaultgroup { get; set; } 
 
         [JsonProperty("icinga_defaultgroup_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Icinga_defaultgroup_guid { get; set; } 
+        public Guid? Icinga_defaultgroup_guid { get; set; } 
 
         [JsonProperty("icingaassettypefield", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Icingaassettypefield { get; set; } 
@@ -1525,7 +1525,7 @@ namespace Angelic.Control;
         public int? Default_columns_id_contracts { get; set; } 
 
         [JsonProperty("default_columns_id_contracts_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Default_columns_id_contracts_guid { get; set; } 
+        public Guid? Default_columns_id_contracts_guid { get; set; } 
 
         [JsonProperty("beyond_trust_instance_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Beyond_trust_instance_type { get; set; } 
@@ -1649,7 +1649,7 @@ namespace Angelic.Control;
         public int? Kbdrafttickettypenews { get; set; } 
 
         [JsonProperty("kbdrafttickettype_guidnews", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Kbdrafttickettype_guidnews { get; set; } 
+        public Guid? Kbdrafttickettype_guidnews { get; set; } 
 
         [JsonProperty("halonewssandbox", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Halonewssandbox { get; set; } 
@@ -1661,10 +1661,10 @@ namespace Angelic.Control;
         public int? Shopifydefaultsite { get; set; } 
 
         [JsonProperty("shopify_integratorcustomerslastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Shopify_integratorcustomerslastsync { get; set; } 
+        public DateTimeOffset? Shopify_integratorcustomerslastsync { get; set; } 
 
         [JsonProperty("shopify_integratororderslastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Shopify_integratororderslastsync { get; set; } 
+        public DateTimeOffset? Shopify_integratororderslastsync { get; set; } 
 
         [JsonProperty("shopify_integratorentitiestoimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Shopify_integratorentitiestoimport { get; set; } 
@@ -1712,7 +1712,7 @@ namespace Angelic.Control;
         public int? Xensam_defaultgroup { get; set; } 
 
         [JsonProperty("xensamdefaultgroup_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Xensamdefaultgroup_guid { get; set; } 
+        public Guid? Xensamdefaultgroup_guid { get; set; } 
 
         [JsonProperty("xensam_integratorentitiestoimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Xensam_integratorentitiestoimport { get; set; } 
@@ -1808,7 +1808,7 @@ namespace Angelic.Control;
         public int? Statusafterrespond { get; set; } 
 
         [JsonProperty("statusafterrespond_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Statusafterrespond_guid { get; set; } 
+        public Guid? Statusafterrespond_guid { get; set; } 
 
         [JsonProperty("tracknonbill", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Tracknonbill { get; set; } 
@@ -1823,7 +1823,7 @@ namespace Angelic.Control;
         public int? Default_tickettype_id { get; set; } 
 
         [JsonProperty("default_tickettype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Default_tickettype_guid { get; set; } 
+        public Guid? Default_tickettype_guid { get; set; } 
 
         [JsonProperty("allow_tickettype_selection_agents", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Allow_tickettype_selection_agents { get; set; } 
@@ -1970,13 +1970,13 @@ namespace Angelic.Control;
         public int? Gfiservertype { get; set; } 
 
         [JsonProperty("gfiservertype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Gfiservertype_guid { get; set; } 
+        public Guid? Gfiservertype_guid { get; set; } 
 
         [JsonProperty("gfiwstype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Gfiwstype { get; set; } 
 
         [JsonProperty("gfiwstype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Gfiwstype_guid { get; set; } 
+        public Guid? Gfiwstype_guid { get; set; } 
 
         [JsonProperty("showsendsmstouser", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Showsendsmstouser { get; set; } 
@@ -2033,7 +2033,7 @@ namespace Angelic.Control;
         public int? Orion_tickettype { get; set; } 
 
         [JsonProperty("orion_tickettype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Orion_tickettype_guid { get; set; } 
+        public Guid? Orion_tickettype_guid { get; set; } 
 
         [JsonProperty("orion_user", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Orion_user { get; set; } 
@@ -2048,7 +2048,7 @@ namespace Angelic.Control;
         public int? Prtgdefaultassettype { get; set; } 
 
         [JsonProperty("prtgdefaultassettype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Prtgdefaultassettype_guid { get; set; } 
+        public Guid? Prtgdefaultassettype_guid { get; set; } 
 
         [JsonProperty("orion_enable_updates", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Orion_enable_updates { get; set; } 
@@ -2072,7 +2072,7 @@ namespace Angelic.Control;
         public int? Soc_tickettype { get; set; } 
 
         [JsonProperty("soc_tickettype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Soc_tickettype_guid { get; set; } 
+        public Guid? Soc_tickettype_guid { get; set; } 
 
         [JsonProperty("soc_user", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Soc_user { get; set; } 
@@ -2081,7 +2081,7 @@ namespace Angelic.Control;
         public int? Dattodefaultassettypegroup { get; set; } 
 
         [JsonProperty("dattodefaultassettypegroup_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Dattodefaultassettypegroup_guid { get; set; } 
+        public Guid? Dattodefaultassettypegroup_guid { get; set; } 
 
         [JsonProperty("dattositeimporttype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Dattositeimporttype { get; set; } 
@@ -2126,7 +2126,7 @@ namespace Angelic.Control;
         public int? Default_phone_pref { get; set; } 
 
         [JsonProperty("migration_ticket_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Migration_ticket_date { get; set; } 
+        public DateTimeOffset? Migration_ticket_date { get; set; } 
 
         [JsonProperty("migration_ticket_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Migration_ticket_status { get; set; } 
@@ -2144,7 +2144,7 @@ namespace Angelic.Control;
         public int? Device42defaulttype { get; set; } 
 
         [JsonProperty("device42defaulttype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Device42defaulttype_guid { get; set; } 
+        public Guid? Device42defaulttype_guid { get; set; } 
 
         [JsonProperty("servicenow_locale", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Servicenow_locale { get; set; } 
@@ -2195,7 +2195,7 @@ namespace Angelic.Control;
         public int? Migration_service_group { get; set; } 
 
         [JsonProperty("migration_contract_enddate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Migration_contract_enddate { get; set; } 
+        public DateTimeOffset? Migration_contract_enddate { get; set; } 
 
         [JsonProperty("migration_tax_rate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Migration_tax_rate { get; set; } 
@@ -2216,7 +2216,7 @@ namespace Angelic.Control;
         public string? Exchange_connected_user { get; set; } 
 
         [JsonProperty("exchange_start_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Exchange_start_date { get; set; } 
+        public DateTimeOffset? Exchange_start_date { get; set; } 
 
         [JsonProperty("exchange_import_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Exchange_import_type { get; set; } 
@@ -2264,7 +2264,7 @@ namespace Angelic.Control;
         public int? Atera_defaultgroup { get; set; } 
 
         [JsonProperty("atera_defaultgroup_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Atera_defaultgroup_guid { get; set; } 
+        public Guid? Atera_defaultgroup_guid { get; set; } 
 
         [JsonProperty("atera_delete_devices", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Atera_delete_devices { get; set; } 
@@ -2294,7 +2294,7 @@ namespace Angelic.Control;
         public int? Ticketstatusafterinternalconversation { get; set; } 
 
         [JsonProperty("ticketstatusafterinternalconversation_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Ticketstatusafterinternalconversation_guid { get; set; } 
+        public Guid? Ticketstatusafterinternalconversation_guid { get; set; } 
 
         [JsonProperty("enableitemurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Enableitemurl { get; set; } 
@@ -2315,7 +2315,7 @@ namespace Angelic.Control;
         public int? Merakitickettype { get; set; } 
 
         [JsonProperty("merakitickettype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Merakitickettype_guid { get; set; } 
+        public Guid? Merakitickettype_guid { get; set; } 
 
         [JsonProperty("merakiuser", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Merakiuser { get; set; } 
@@ -2330,7 +2330,7 @@ namespace Angelic.Control;
         public int? Lansweeper_default_group { get; set; } 
 
         [JsonProperty("lansweeper_default_group_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Lansweeper_default_group_guid { get; set; } 
+        public Guid? Lansweeper_default_group_guid { get; set; } 
 
         [JsonProperty("lansweeper_use_users_site", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Lansweeper_use_users_site { get; set; } 
@@ -2492,7 +2492,7 @@ namespace Angelic.Control;
         public int? Move_quotes_default_status { get; set; } 
 
         [JsonProperty("move_quotes_default_status_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Move_quotes_default_status_guid { get; set; } 
+        public Guid? Move_quotes_default_status_guid { get; set; } 
 
         [JsonProperty("show_child_sos_on_parent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Show_child_sos_on_parent { get; set; } 
@@ -2522,7 +2522,7 @@ namespace Angelic.Control;
         public int? Snelstart_item_group { get; set; } 
 
         [JsonProperty("snelstart_item_group_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Snelstart_item_group_guid { get; set; } 
+        public Guid? Snelstart_item_group_guid { get; set; } 
 
         [JsonProperty("snelstart_enable_sync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Snelstart_enable_sync { get; set; } 
@@ -2546,7 +2546,7 @@ namespace Angelic.Control;
         public int? Jamf_defaultdtypemobile { get; set; } 
 
         [JsonProperty("jamf_defaultdtypemobile_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Jamf_defaultdtypemobile_guid { get; set; } 
+        public Guid? Jamf_defaultdtypemobile_guid { get; set; } 
 
         [JsonProperty("scom_allowed_clientids", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Scom_allowed_clientids { get; set; } 
@@ -2555,7 +2555,7 @@ namespace Angelic.Control;
         public int? Jamf_defaultdtypecomputer { get; set; } 
 
         [JsonProperty("jamf_defaultdtypecomputer_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Jamf_defaultdtypecomputer_guid { get; set; } 
+        public Guid? Jamf_defaultdtypecomputer_guid { get; set; } 
 
         [JsonProperty("orion_allowed_clientids", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Orion_allowed_clientids { get; set; } 
@@ -2600,7 +2600,7 @@ namespace Angelic.Control;
         public int? Default_sentinel_ticket_type { get; set; } 
 
         [JsonProperty("default_sentinel_ticket_type_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Default_sentinel_ticket_type_guid { get; set; } 
+        public Guid? Default_sentinel_ticket_type_guid { get; set; } 
 
         [JsonProperty("default_sentinel_classification", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Default_sentinel_classification { get; set; } 
@@ -2636,7 +2636,7 @@ namespace Angelic.Control;
         public int? Teamsbot_ticket_type { get; set; } 
 
         [JsonProperty("teamsbot_ticket_type_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Teamsbot_ticket_type_guid { get; set; } 
+        public Guid? Teamsbot_ticket_type_guid { get; set; } 
 
         [JsonProperty("teamsbot_default_subject", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Teamsbot_default_subject { get; set; } 
@@ -2672,13 +2672,13 @@ namespace Angelic.Control;
         public int? Serializationassetfield { get; set; } 
 
         [JsonProperty("serializationassetfield_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Serializationassetfield_guid { get; set; } 
+        public Guid? Serializationassetfield_guid { get; set; } 
 
         [JsonProperty("azuremonitortickettype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Azuremonitortickettype { get; set; } 
 
         [JsonProperty("azuremonitortickettype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Azuremonitortickettype_guid { get; set; } 
+        public Guid? Azuremonitortickettype_guid { get; set; } 
 
         [JsonProperty("azuremonitoruser", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Azuremonitoruser { get; set; } 
@@ -2687,7 +2687,7 @@ namespace Angelic.Control;
         public int? Azuremonitorreopenstatus { get; set; } 
 
         [JsonProperty("azuremonitorreopenstatus_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Azuremonitorreopenstatus_guid { get; set; } 
+        public Guid? Azuremonitorreopenstatus_guid { get; set; } 
 
         [JsonProperty("faqtreeview", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Faqtreeview { get; set; } 
@@ -2708,7 +2708,7 @@ namespace Angelic.Control;
         public int? Syncro_defaultgroup { get; set; } 
 
         [JsonProperty("syncro_defaultgroup_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Syncro_defaultgroup_guid { get; set; } 
+        public Guid? Syncro_defaultgroup_guid { get; set; } 
 
         [JsonProperty("syncro_importtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Syncro_importtype { get; set; } 
@@ -2735,7 +2735,7 @@ namespace Angelic.Control;
         public int? Domotz_default_agentdevicetype { get; set; } 
 
         [JsonProperty("domotz_default_agentdevicetype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Domotz_default_agentdevicetype_guid { get; set; } 
+        public Guid? Domotz_default_agentdevicetype_guid { get; set; } 
 
         [JsonProperty("domotz_default_agentsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Domotz_default_agentsite { get; set; } 
@@ -2744,7 +2744,7 @@ namespace Angelic.Control;
         public int? Domotz_default_devicetype { get; set; } 
 
         [JsonProperty("domotz_default_devicetype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Domotz_default_devicetype_guid { get; set; } 
+        public Guid? Domotz_default_devicetype_guid { get; set; } 
 
         [JsonProperty("domotz_default_devicesite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Domotz_default_devicesite { get; set; } 
@@ -2768,16 +2768,16 @@ namespace Angelic.Control;
         public int? Snow_default_devicetype { get; set; } 
 
         [JsonProperty("snow_default_devicetype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Snow_default_devicetype_guid { get; set; } 
+        public Guid? Snow_default_devicetype_guid { get; set; } 
 
         [JsonProperty("okta_deactivate_entities", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Okta_deactivate_entities { get; set; } 
 
         [JsonProperty("okta_last_agent_sync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Okta_last_agent_sync { get; set; } 
+        public DateTimeOffset? Okta_last_agent_sync { get; set; } 
 
         [JsonProperty("okta_last_user_sync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Okta_last_user_sync { get; set; } 
+        public DateTimeOffset? Okta_last_user_sync { get; set; } 
 
         [JsonProperty("automate_import_entities", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Automate_import_entities { get; set; } 
@@ -2885,7 +2885,7 @@ namespace Angelic.Control;
         public int? Default_columns_id_assets { get; set; } 
 
         [JsonProperty("default_columns_id_assets_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Default_columns_id_assets_guid { get; set; } 
+        public Guid? Default_columns_id_assets_guid { get; set; } 
 
         [JsonProperty("pin_important_actions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Pin_important_actions { get; set; } 
@@ -2981,7 +2981,7 @@ namespace Angelic.Control;
         public int? Passportal_defaultassetgroup { get; set; } 
 
         [JsonProperty("passportal_defaultassetgroup_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Passportal_defaultassetgroup_guid { get; set; } 
+        public Guid? Passportal_defaultassetgroup_guid { get; set; } 
 
         [JsonProperty("passportal_deactivate_assets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Passportal_deactivate_assets { get; set; } 
@@ -3035,7 +3035,7 @@ namespace Angelic.Control;
         public int? Chatendtickettype { get; set; } 
 
         [JsonProperty("chatendtickettype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Chatendtickettype_guid { get; set; } 
+        public Guid? Chatendtickettype_guid { get; set; } 
 
         [JsonProperty("intacctinvoicetransactiondetail", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Intacctinvoicetransactiondetail { get; set; } 
@@ -3113,7 +3113,7 @@ namespace Angelic.Control;
         public int? Addigy_defaultassetgroup { get; set; } 
 
         [JsonProperty("addigy_defaultassetgroup_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Addigy_defaultassetgroup_guid { get; set; } 
+        public Guid? Addigy_defaultassetgroup_guid { get; set; } 
 
         [JsonProperty("addigy_assettypefield", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Addigy_assettypefield { get; set; } 
@@ -3182,7 +3182,7 @@ namespace Angelic.Control;
         public int? Liongard_defaultgroup { get; set; } 
 
         [JsonProperty("liongard_defaultgroup_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Liongard_defaultgroup_guid { get; set; } 
+        public Guid? Liongard_defaultgroup_guid { get; set; } 
 
         [JsonProperty("salesforce_integratorentitiestoimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Salesforce_integratorentitiestoimport { get; set; } 
@@ -3197,25 +3197,25 @@ namespace Angelic.Control;
         public int? Salesforce_casetickettype { get; set; } 
 
         [JsonProperty("salesforce_casetickettype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Salesforce_casetickettype_guid { get; set; } 
+        public Guid? Salesforce_casetickettype_guid { get; set; } 
 
         [JsonProperty("liongard_delete_devices", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Liongard_delete_devices { get; set; } 
 
         [JsonProperty("salesforce_integratoraccountlastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Salesforce_integratoraccountlastsync { get; set; } 
+        public DateTimeOffset? Salesforce_integratoraccountlastsync { get; set; } 
 
         [JsonProperty("liongard_customer_sync_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Liongard_customer_sync_type { get; set; } 
 
         [JsonProperty("salesforce_integratorcontactlastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Salesforce_integratorcontactlastsync { get; set; } 
+        public DateTimeOffset? Salesforce_integratorcontactlastsync { get; set; } 
 
         [JsonProperty("sync_liongard_customer", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Sync_liongard_customer { get; set; } 
 
         [JsonProperty("salesforce_integratoropportunitylastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Salesforce_integratoropportunitylastsync { get; set; } 
+        public DateTimeOffset? Salesforce_integratoropportunitylastsync { get; set; } 
 
         [JsonProperty("show_liongard_success", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Show_liongard_success { get; set; } 
@@ -3242,7 +3242,7 @@ namespace Angelic.Control;
         public string? Pax8_import_entities { get; set; } 
 
         [JsonProperty("salesforce_integratorcaselastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Salesforce_integratorcaselastsync { get; set; } 
+        public DateTimeOffset? Salesforce_integratorcaselastsync { get; set; } 
 
         [JsonProperty("sendclosureremindertoccaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Sendclosureremindertoccaddress { get; set; } 
@@ -3287,7 +3287,7 @@ namespace Angelic.Control;
         public int? Newrelic_tickettype { get; set; } 
 
         [JsonProperty("newrelic_tickettype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Newrelic_tickettype_guid { get; set; } 
+        public Guid? Newrelic_tickettype_guid { get; set; } 
 
         [JsonProperty("newrelic_user", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Newrelic_user { get; set; } 
@@ -3350,7 +3350,7 @@ namespace Angelic.Control;
         public int? Kaseya_defaultassettype { get; set; } 
 
         [JsonProperty("kaseya_defaultassettype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Kaseya_defaultassettype_guid { get; set; } 
+        public Guid? Kaseya_defaultassettype_guid { get; set; } 
 
         [JsonProperty("kaseya_enable_alerting", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Kaseya_enable_alerting { get; set; } 
@@ -3371,7 +3371,7 @@ namespace Angelic.Control;
         public string? Kaseyaservicedesks { get; set; } 
 
         [JsonProperty("migration_ticket_end_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Migration_ticket_end_date { get; set; } 
+        public DateTimeOffset? Migration_ticket_end_date { get; set; } 
 
         [JsonProperty("invoicelongdescriptionfromsalesorder", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Invoicelongdescriptionfromsalesorder { get; set; } 
@@ -3422,7 +3422,7 @@ namespace Angelic.Control;
         public int? Zabbix_default_type { get; set; } 
 
         [JsonProperty("zabbix_default_type_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Zabbix_default_type_guid { get; set; } 
+        public Guid? Zabbix_default_type_guid { get; set; } 
 
         [JsonProperty("zabbix_default_site", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Zabbix_default_site { get; set; } 
@@ -3542,13 +3542,13 @@ namespace Angelic.Control;
         public int? Default_filter_id_tickets { get; set; } 
 
         [JsonProperty("default_filter_id_tickets_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Default_filter_id_tickets_guid { get; set; } 
+        public Guid? Default_filter_id_tickets_guid { get; set; } 
 
         [JsonProperty("default_columns_id_tickets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Default_columns_id_tickets { get; set; } 
 
         [JsonProperty("default_columns_id_tickets_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Default_columns_id_tickets_guid { get; set; } 
+        public Guid? Default_columns_id_tickets_guid { get; set; } 
 
         [JsonProperty("default_view_tickets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Default_view_tickets { get; set; } 
@@ -3557,19 +3557,19 @@ namespace Angelic.Control;
         public int? Default_view_tickets_selectedid { get; set; } 
 
         [JsonProperty("default_view_tickets_selected_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Default_view_tickets_selected_guid { get; set; } 
+        public Guid? Default_view_tickets_selected_guid { get; set; } 
 
         [JsonProperty("default_filter_id_opps", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Default_filter_id_opps { get; set; } 
 
         [JsonProperty("default_filter_id_opps_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Default_filter_id_opps_guid { get; set; } 
+        public Guid? Default_filter_id_opps_guid { get; set; } 
 
         [JsonProperty("default_columns_id_opps", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Default_columns_id_opps { get; set; } 
 
         [JsonProperty("default_columns_id_opps_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Default_columns_id_opps_guid { get; set; } 
+        public Guid? Default_columns_id_opps_guid { get; set; } 
 
         [JsonProperty("default_view_opps", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Default_view_opps { get; set; } 
@@ -3578,7 +3578,7 @@ namespace Angelic.Control;
         public int? Default_view_opps_selectedid { get; set; } 
 
         [JsonProperty("default_view_opps_selected_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Default_view_opps_selected_guid { get; set; } 
+        public Guid? Default_view_opps_selected_guid { get; set; } 
 
         [JsonProperty("forwardinboundupdates", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Forwardinboundupdates { get; set; } 
@@ -3620,7 +3620,7 @@ namespace Angelic.Control;
         public int? Parentstatusafterallchildclosed { get; set; } 
 
         [JsonProperty("parentstatusafterallchildclosed_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Parentstatusafterallchildclosed_guid { get; set; } 
+        public Guid? Parentstatusafterallchildclosed_guid { get; set; } 
 
         [JsonProperty("newchilduserisagent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Newchilduserisagent { get; set; } 
@@ -3632,7 +3632,7 @@ namespace Angelic.Control;
         public int? Feedback_tickettype_id { get; set; } 
 
         [JsonProperty("feedback_tickettype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Feedback_tickettype_guid { get; set; } 
+        public Guid? Feedback_tickettype_guid { get; set; } 
 
         [JsonProperty("allowcabchoice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Allowcabchoice { get; set; } 
@@ -3866,7 +3866,7 @@ namespace Angelic.Control;
         public int? Callrequesttype { get; set; } 
 
         [JsonProperty("callrequesttype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Callrequesttype_guid { get; set; } 
+        public Guid? Callrequesttype_guid { get; set; } 
 
         [JsonProperty("callsendack", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Callsendack { get; set; } 
@@ -3899,7 +3899,7 @@ namespace Angelic.Control;
         public int? Default_opp_tickettype_id { get; set; } 
 
         [JsonProperty("default_opp_tickettype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Default_opp_tickettype_guid { get; set; } 
+        public Guid? Default_opp_tickettype_guid { get; set; } 
 
         [JsonProperty("default_client_opps", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Default_client_opps { get; set; } 
@@ -4193,7 +4193,7 @@ namespace Angelic.Control;
         public int? Salesforce_tickettype { get; set; } 
 
         [JsonProperty("salesforce_tickettype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Salesforce_tickettype_guid { get; set; } 
+        public Guid? Salesforce_tickettype_guid { get; set; } 
 
         [JsonProperty("clientimportidentifier", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Clientimportidentifier { get; set; } 
@@ -4208,7 +4208,7 @@ namespace Angelic.Control;
         public int? Assetimportidentifier { get; set; } 
 
         [JsonProperty("assetimportidentifier_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Assetimportidentifier_guid { get; set; } 
+        public Guid? Assetimportidentifier_guid { get; set; } 
 
         [JsonProperty("supplierimportidentifier", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Supplierimportidentifier { get; set; } 
@@ -4271,7 +4271,7 @@ namespace Angelic.Control;
         public int? Servicerequestrtid { get; set; } 
 
         [JsonProperty("servicerequestrtid_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Servicerequestrtid_guid { get; set; } 
+        public Guid? Servicerequestrtid_guid { get; set; } 
 
         [JsonProperty("serviceincidentrtid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Serviceincidentrtid { get; set; } 
@@ -4301,7 +4301,7 @@ namespace Angelic.Control;
         public int? Pagerdutydefrequesttype { get; set; } 
 
         [JsonProperty("pagerdutydefrequesttype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Pagerdutydefrequesttype_guid { get; set; } 
+        public Guid? Pagerdutydefrequesttype_guid { get; set; } 
 
         [JsonProperty("pagerdutyaccount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Pagerdutyaccount { get; set; } 
@@ -4322,7 +4322,7 @@ namespace Angelic.Control;
         public int? Splunk_tickettype { get; set; } 
 
         [JsonProperty("splunk_tickettype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Splunk_tickettype_guid { get; set; } 
+        public Guid? Splunk_tickettype_guid { get; set; } 
 
         [JsonProperty("splunkuser", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Splunkuser { get; set; } 
@@ -4409,7 +4409,7 @@ namespace Angelic.Control;
         public bool? Allowquickinvites { get; set; } 
 
         [JsonProperty("periodichistorydate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Periodichistorydate { get; set; } 
+        public DateTimeOffset? Periodichistorydate { get; set; } 
 
         [JsonProperty("adminsskippendingclosure", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Adminsskippendingclosure { get; set; } 
@@ -4472,7 +4472,7 @@ namespace Angelic.Control;
         public string? Sage200token { get; set; } 
 
         [JsonProperty("sage200tokenexpiry", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Sage200tokenexpiry { get; set; } 
+        public DateTimeOffset? Sage200tokenexpiry { get; set; } 
 
         [JsonProperty("callscreenusetimeonactions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Callscreenusetimeonactions { get; set; } 
@@ -4562,7 +4562,7 @@ namespace Angelic.Control;
         public int? Stopnewticketsviaemailreplywithtemplate_id { get; set; } 
 
         [JsonProperty("stopnewticketsviaemailreplywithtemplate_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Stopnewticketsviaemailreplywithtemplate_guid { get; set; } 
+        public Guid? Stopnewticketsviaemailreplywithtemplate_guid { get; set; } 
 
         [JsonProperty("stopnewticketsviaemailreplywithtemplate_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Stopnewticketsviaemailreplywithtemplate_name { get; set; } 
@@ -4595,7 +4595,7 @@ namespace Angelic.Control;
         public int? Ninjarmmdefaultgroup { get; set; } 
 
         [JsonProperty("ninjarmmdefaultgroup_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Ninjarmmdefaultgroup_guid { get; set; } 
+        public Guid? Ninjarmmdefaultgroup_guid { get; set; } 
 
         [JsonProperty("ninjarmmimporttype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Ninjarmmimporttype { get; set; } 
@@ -4616,7 +4616,7 @@ namespace Angelic.Control;
         public int? Contractexpirytemplate_id { get; set; } 
 
         [JsonProperty("contractexpirytemplate_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Contractexpirytemplate_guid { get; set; } 
+        public Guid? Contractexpirytemplate_guid { get; set; } 
 
         [JsonProperty("contractexpirytemplate_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Contractexpirytemplate_name { get; set; } 
@@ -4742,7 +4742,7 @@ namespace Angelic.Control;
         public int? Ncentral_tickettype { get; set; } 
 
         [JsonProperty("ncentral_tickettype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Ncentral_tickettype_guid { get; set; } 
+        public Guid? Ncentral_tickettype_guid { get; set; } 
 
         [JsonProperty("ncentraluser", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Ncentraluser { get; set; } 
@@ -4787,7 +4787,7 @@ namespace Angelic.Control;
         public int? Fixedassettype { get; set; } 
 
         [JsonProperty("fixedassettype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Fixedassettype_guid { get; set; } 
+        public Guid? Fixedassettype_guid { get; set; } 
 
         [JsonProperty("businesscentral_site", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Businesscentral_site { get; set; } 
@@ -4838,7 +4838,7 @@ namespace Angelic.Control;
         public int? Internalticketconversationtickettype { get; set; } 
 
         [JsonProperty("internalticketconversationtickettype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Internalticketconversationtickettype_guid { get; set; } 
+        public Guid? Internalticketconversationtickettype_guid { get; set; } 
 
         [JsonProperty("enableinternalreply", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Enableinternalreply { get; set; } 
@@ -4847,7 +4847,7 @@ namespace Angelic.Control;
         public int? Internalreplystatus { get; set; } 
 
         [JsonProperty("internalreplystatus_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Internalreplystatus_guid { get; set; } 
+        public Guid? Internalreplystatus_guid { get; set; } 
 
         [JsonProperty("hidefeedback", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Hidefeedback { get; set; } 
@@ -4892,7 +4892,7 @@ namespace Angelic.Control;
         public bool? Allowcodegeneration { get; set; } 
 
         [JsonProperty("googlecalendartokenexpiry", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Googlecalendartokenexpiry { get; set; } 
+        public DateTimeOffset? Googlecalendartokenexpiry { get; set; } 
 
         [JsonProperty("googlecalendaraccount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Googlecalendaraccount { get; set; } 
@@ -4943,13 +4943,13 @@ namespace Angelic.Control;
         public int? Ticketstatusafterquoteaccepted { get; set; } 
 
         [JsonProperty("ticketstatusafterquoteaccepted_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Ticketstatusafterquoteaccepted_guid { get; set; } 
+        public Guid? Ticketstatusafterquoteaccepted_guid { get; set; } 
 
         [JsonProperty("ticketstatusafterquoterejected", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Ticketstatusafterquoterejected { get; set; } 
 
         [JsonProperty("ticketstatusafterquoterejected_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Ticketstatusafterquoterejected_guid { get; set; } 
+        public Guid? Ticketstatusafterquoterejected_guid { get; set; } 
 
         [JsonProperty("loadimagesfromapi", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Loadimagesfromapi { get; set; } 
@@ -5351,7 +5351,7 @@ namespace Angelic.Control;
         public bool? Exclude_apionly_informownertech { get; set; } 
 
         [JsonProperty("lastdailytaskdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Lastdailytaskdate { get; set; } 
+        public DateTimeOffset? Lastdailytaskdate { get; set; } 
 
         [JsonProperty("etilize_item_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Etilize_item_group { get; set; } 
@@ -5426,7 +5426,7 @@ namespace Angelic.Control;
         public int? Trace_level_reset_days { get; set; } 
 
         [JsonProperty("trace_level_reset_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Trace_level_reset_date { get; set; } 
+        public DateTimeOffset? Trace_level_reset_date { get; set; } 
 
         [JsonProperty("incoming_unmatched_users", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Incoming_unmatched_users { get; set; } 
@@ -5603,7 +5603,7 @@ namespace Angelic.Control;
         public int? Default_columns_id_supplier_contracts { get; set; } 
 
         [JsonProperty("default_columns_id_supplier_contracts_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Default_columns_id_supplier_contracts_guid { get; set; } 
+        public Guid? Default_columns_id_supplier_contracts_guid { get; set; } 
 
         [JsonProperty("enablefilescanning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Enablefilescanning { get; set; } 
@@ -5672,7 +5672,7 @@ namespace Angelic.Control;
         public int? Default_view_assets_selectedid { get; set; } 
 
         [JsonProperty("default_list_assets_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Default_list_assets_guid { get; set; } 
+        public Guid? Default_list_assets_guid { get; set; } 
 
         [JsonProperty("logicmonitor_alerting_assetidentifier", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Logicmonitor_alerting_assetidentifier { get; set; } 
@@ -5924,7 +5924,7 @@ namespace Angelic.Control;
         public int? Meraki_defaultgroup { get; set; } 
 
         [JsonProperty("meraki_defaultgroup_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Meraki_defaultgroup_guid { get; set; } 
+        public Guid? Meraki_defaultgroup_guid { get; set; } 
 
         [JsonProperty("lapsafe_default_installation", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Lapsafe_default_installation { get; set; } 
@@ -5939,19 +5939,19 @@ namespace Angelic.Control;
         public int? Lapsafe_status_after_webhook { get; set; } 
 
         [JsonProperty("lapsafe_status_after_webhook_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Lapsafe_status_after_webhook_guid { get; set; } 
+        public Guid? Lapsafe_status_after_webhook_guid { get; set; } 
 
         [JsonProperty("lapsafedefaultdropoffemailtemplate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Lapsafedefaultdropoffemailtemplate { get; set; } 
 
         [JsonProperty("lapsafedefaultdropoffemailtemplate_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Lapsafedefaultdropoffemailtemplate_guid { get; set; } 
+        public Guid? Lapsafedefaultdropoffemailtemplate_guid { get; set; } 
 
         [JsonProperty("lapsafedefaultcollectionemailtemplate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Lapsafedefaultcollectionemailtemplate { get; set; } 
 
         [JsonProperty("lapsafedefaultcollectionemailtemplate_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Lapsafedefaultcollectionemailtemplate_guid { get; set; } 
+        public Guid? Lapsafedefaultcollectionemailtemplate_guid { get; set; } 
 
         [JsonProperty("zabbix_dont_close_tickets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Zabbix_dont_close_tickets { get; set; } 
@@ -5996,7 +5996,7 @@ namespace Angelic.Control;
         public int? Taskmonitorsnoozeseverity { get; set; } 
 
         [JsonProperty("taskmonitorsnoozedate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Taskmonitorsnoozedate { get; set; } 
+        public DateTimeOffset? Taskmonitorsnoozedate { get; set; } 
 
         [JsonProperty("slack_channel_workspace", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Slack_channel_workspace { get; set; } 
@@ -6240,7 +6240,7 @@ namespace Angelic.Control;
         public int? Ticketstatusafterquotesent { get; set; } 
 
         [JsonProperty("ticketstatusafterquotesent_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Ticketstatusafterquotesent_guid { get; set; } 
+        public Guid? Ticketstatusafterquotesent_guid { get; set; } 
 
         [JsonProperty("use_azure_openai_surveys", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Use_azure_openai_surveys { get; set; } 
@@ -6355,7 +6355,7 @@ namespace Angelic.Control;
         public bool? Enable_purchase_currency { get; set; } 
 
         [JsonProperty("last_license_sync_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Last_license_sync_date { get; set; } 
+        public DateTimeOffset? Last_license_sync_date { get; set; } 
 
         [JsonProperty("show_home_html", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Show_home_html { get; set; } 
@@ -6458,7 +6458,7 @@ namespace Angelic.Control;
         public int? Default_columns_id_supplier { get; set; } 
 
         [JsonProperty("default_columns_id_supplier_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Default_columns_id_supplier_guid { get; set; } 
+        public Guid? Default_columns_id_supplier_guid { get; set; } 
 
         [JsonProperty("problemmatchproductmatch", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Problemmatchproductmatch { get; set; } 
@@ -6657,7 +6657,7 @@ namespace Angelic.Control;
         public int? Lapsafedefaultswapemailtemplate { get; set; } 
 
         [JsonProperty("lapsafedefaultswapemailtemplate_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Lapsafedefaultswapemailtemplate_guid { get; set; } 
+        public Guid? Lapsafedefaultswapemailtemplate_guid { get; set; } 
 
         [JsonProperty("orion_reset_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Orion_reset_status { get; set; } 
@@ -6724,7 +6724,7 @@ namespace Angelic.Control;
         public int? Assetimportsecondaryidentifier { get; set; } 
 
         [JsonProperty("assetimportsecondaryidentifier_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Assetimportsecondaryidentifier_guid { get; set; } 
+        public Guid? Assetimportsecondaryidentifier_guid { get; set; } 
 
         [JsonProperty("appointment_sla_procedure_mins", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Appointment_sla_procedure_mins { get; set; } 
@@ -6915,7 +6915,7 @@ namespace Angelic.Control;
         public bool? Sendagentemailafterquoterejected { get; set; } 
 
         [JsonProperty("guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Guid { get; set; } 
+        public Guid? Guid { get; set; } 
 
         [JsonProperty("log_clientsiteuser_views", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Log_clientsiteuser_views { get; set; } 
@@ -6924,7 +6924,7 @@ namespace Angelic.Control;
         public bool? Enable_xml_generation_warnings { get; set; } 
 
         [JsonProperty("last_auto_invoice_process_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Last_auto_invoice_process_date { get; set; } 
+        public DateTimeOffset? Last_auto_invoice_process_date { get; set; } 
 
         [JsonProperty("send_incomplete_timesheet_notifications", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Send_incomplete_timesheet_notifications { get; set; } 
@@ -6969,7 +6969,7 @@ namespace Angelic.Control;
         public int? Default_columns_id_pos { get; set; } 
 
         [JsonProperty("default_columns_id_pos_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Default_columns_id_pos_guid { get; set; } 
+        public Guid? Default_columns_id_pos_guid { get; set; } 
 
         [JsonProperty("default_site_details_layout", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Default_site_details_layout { get; set; } 
@@ -7369,7 +7369,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_sccm { get; set; } 
 
         [JsonProperty("halointegrator_sccm_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_sccm_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_sccm_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_sccm_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_sccm_lasterror { get; set; } 
@@ -7399,7 +7399,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_ninjarmm { get; set; } 
 
         [JsonProperty("halointegrator_ninjarmm_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_ninjarmm_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_ninjarmm_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_ninjarmm_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_ninjarmm_lasterror { get; set; } 
@@ -7408,7 +7408,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_solarwindsrmm { get; set; } 
 
         [JsonProperty("halointegrator_solarwindsrmm_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_solarwindsrmm_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_solarwindsrmm_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_solarwindsrmm_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_solarwindsrmm_lasterror { get; set; } 
@@ -7441,7 +7441,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_lansweeper { get; set; } 
 
         [JsonProperty("halointegrator_lansweeper_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_lansweeper_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_lansweeper_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_lansweeper_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_lansweeper_lasterror { get; set; } 
@@ -7528,7 +7528,7 @@ namespace Angelic.Control;
         public int? Dattormm_tickettype { get; set; } 
 
         [JsonProperty("dattormm_tickettype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Dattormm_tickettype_guid { get; set; } 
+        public Guid? Dattormm_tickettype_guid { get; set; } 
 
         [JsonProperty("cautomate_fromaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Cautomate_fromaddress { get; set; } 
@@ -7537,7 +7537,7 @@ namespace Angelic.Control;
         public int? Cautomate_requesttype { get; set; } 
 
         [JsonProperty("cautomate_requesttype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Cautomate_requesttype_guid { get; set; } 
+        public Guid? Cautomate_requesttype_guid { get; set; } 
 
         [JsonProperty("solarwindsrmm_fromaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Solarwindsrmm_fromaddress { get; set; } 
@@ -7546,7 +7546,7 @@ namespace Angelic.Control;
         public int? Solarwindsrmm_requesttype { get; set; } 
 
         [JsonProperty("solarwindsrmm_requesttype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Solarwindsrmm_requesttype_guid { get; set; } 
+        public Guid? Solarwindsrmm_requesttype_guid { get; set; } 
 
         [JsonProperty("halointegrator_integrations", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<KeyPair2>? Halointegrator_integrations { get; set; } 
@@ -7561,7 +7561,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_ncentral { get; set; } 
 
         [JsonProperty("halointegrator_ncentral_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_ncentral_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_ncentral_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_ncentral_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_ncentral_lasterror { get; set; } 
@@ -7609,7 +7609,7 @@ namespace Angelic.Control;
         public bool? _sendautomationhook { get; set; } 
 
         [JsonProperty("_automationwebhookid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? _automationwebhookid { get; set; } 
+        public Guid? _automationwebhookid { get; set; } 
 
         [JsonProperty("_automationwebhookmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<WebhookMapping>? _automationwebhookmappings { get; set; } 
@@ -7621,7 +7621,7 @@ namespace Angelic.Control;
         public bool? _getwebhookbody { get; set; } 
 
         [JsonProperty("_webhookid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? _webhookid { get; set; } 
+        public Guid? _webhookid { get; set; } 
 
         [JsonProperty("_webhookmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<WebhookMapping>? _webhookmappings { get; set; } 
@@ -7690,7 +7690,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_googleworkplace { get; set; } 
 
         [JsonProperty("halointegrator_googleworkplace_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_googleworkplace_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_googleworkplace_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_googleworkplace_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_googleworkplace_lasterror { get; set; } 
@@ -7705,7 +7705,7 @@ namespace Angelic.Control;
         public int? Scom_requesttype { get; set; } 
 
         [JsonProperty("scom_requesttype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Scom_requesttype_guid { get; set; } 
+        public Guid? Scom_requesttype_guid { get; set; } 
 
         [JsonProperty("scom_devicefield", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Scom_devicefield { get; set; } 
@@ -7714,7 +7714,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_scom { get; set; } 
 
         [JsonProperty("halointegrator_scom_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_scom_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_scom_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_scom_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_scom_lasterror { get; set; } 
@@ -7738,7 +7738,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_prtg { get; set; } 
 
         [JsonProperty("halointegrator_prtg_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_prtg_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_prtg_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_prtg_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_prtg_lasterror { get; set; } 
@@ -7756,7 +7756,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_orion { get; set; } 
 
         [JsonProperty("halointegrator_orion_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_orion_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_orion_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_orion_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_orion_lasterror { get; set; } 
@@ -7807,7 +7807,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_datto { get; set; } 
 
         [JsonProperty("halointegrator_datto_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_datto_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_datto_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_datto_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_datto_lasterror { get; set; } 
@@ -7831,7 +7831,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_atera { get; set; } 
 
         [JsonProperty("halointegrator_atera_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_atera_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_atera_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_atera_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_atera_lasterror { get; set; } 
@@ -7870,7 +7870,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_exchange { get; set; } 
 
         [JsonProperty("halointegrator_exchange_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_exchange_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_exchange_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_exchange_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_exchange_lasterror { get; set; } 
@@ -7903,7 +7903,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_okta { get; set; } 
 
         [JsonProperty("halointegrator_okta_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_okta_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_okta_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_okta_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_okta_lasterror { get; set; } 
@@ -7984,7 +7984,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_xlsimports { get; set; } 
 
         [JsonProperty("halointegrator_xlsimports_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_xlsimports_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_xlsimports_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_xlsimports_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_xlsimports_lasterror { get; set; } 
@@ -8020,7 +8020,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_itglue { get; set; } 
 
         [JsonProperty("halointegrator_itglue_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_itglue_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_itglue_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_itglue_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_itglue_lasterror { get; set; } 
@@ -8050,7 +8050,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_dynamics365crm { get; set; } 
 
         [JsonProperty("halointegrator_dynamics365crm_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_dynamics365crm_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_dynamics365crm_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_dynamics365crm_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_dynamics365crm_lasterror { get; set; } 
@@ -8077,7 +8077,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_jamf { get; set; } 
 
         [JsonProperty("halointegrator_jamf_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_jamf_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_jamf_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_jamf_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_jamf_lasterror { get; set; } 
@@ -8089,7 +8089,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_sentinel { get; set; } 
 
         [JsonProperty("halointegrator_sentinel_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_sentinel_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_sentinel_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_sentinel_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_sentinel_lasterror { get; set; } 
@@ -8122,7 +8122,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_syncro { get; set; } 
 
         [JsonProperty("halointegrator_syncro_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_syncro_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_syncro_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_syncro_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_syncro_lasterror { get; set; } 
@@ -8149,7 +8149,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_domotz { get; set; } 
 
         [JsonProperty("halointegrator_domotz_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_domotz_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_domotz_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_domotz_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_domotz_lasterror { get; set; } 
@@ -8179,7 +8179,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_haloassetdiscovery { get; set; } 
 
         [JsonProperty("halointegrator_haloassetdiscovery_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_haloassetdiscovery_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_haloassetdiscovery_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_haloassetdiscovery_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_haloassetdiscovery_lasterror { get; set; } 
@@ -8191,7 +8191,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_automate { get; set; } 
 
         [JsonProperty("halointegrator_automate_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_automate_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_automate_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_automate_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_automate_lasterror { get; set; } 
@@ -8236,7 +8236,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_g2aremote { get; set; } 
 
         [JsonProperty("halointegrator_g2aremote_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_g2aremote_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_g2aremote_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_g2aremote_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_g2aremote_lasterror { get; set; } 
@@ -8251,7 +8251,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_snow { get; set; } 
 
         [JsonProperty("halointegrator_snow_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_snow_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_snow_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_snow_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_snow_lasterror { get; set; } 
@@ -8278,7 +8278,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_auvik { get; set; } 
 
         [JsonProperty("halointegrator_auvik_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_auvik_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_auvik_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_auvik_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_auvik_lasterror { get; set; } 
@@ -8320,7 +8320,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_hubspot { get; set; } 
 
         [JsonProperty("halointegrator_hubspot_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_hubspot_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_hubspot_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_hubspot_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_hubspot_lasterror { get; set; } 
@@ -8338,7 +8338,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_qualys { get; set; } 
 
         [JsonProperty("halointegrator_qualys_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_qualys_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_qualys_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_qualys_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_qualys_lasterror { get; set; } 
@@ -8356,7 +8356,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_passportal { get; set; } 
 
         [JsonProperty("halointegrator_passportal_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_passportal_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_passportal_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_passportal_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_passportal_lasterror { get; set; } 
@@ -8395,7 +8395,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_addigy { get; set; } 
 
         [JsonProperty("halointegrator_addigy_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_addigy_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_addigy_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_addigy_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_addigy_lasterror { get; set; } 
@@ -8410,7 +8410,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_liongard { get; set; } 
 
         [JsonProperty("halointegrator_liongard_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_liongard_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_liongard_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_liongard_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_liongard_lasterror { get; set; } 
@@ -8431,7 +8431,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_stripe { get; set; } 
 
         [JsonProperty("halointegrator_stripe_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_stripe_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_stripe_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_stripe_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_stripe_lasterror { get; set; } 
@@ -8446,7 +8446,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_ingram_micro { get; set; } 
 
         [JsonProperty("halointegrator_ingram_micro_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_ingram_micro_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_ingram_micro_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_ingram_micro_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_ingram_micro_lasterror { get; set; } 
@@ -8470,7 +8470,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_pax8 { get; set; } 
 
         [JsonProperty("halointegrator_pax8_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_pax8_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_pax8_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_pax8_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_pax8_lasterror { get; set; } 
@@ -8482,7 +8482,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_giacom { get; set; } 
 
         [JsonProperty("halointegrator_giacom_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_giacom_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_giacom_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_giacom_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_giacom_lasterror { get; set; } 
@@ -8506,7 +8506,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_salesforce { get; set; } 
 
         [JsonProperty("halointegrator_salesforce_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_salesforce_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_salesforce_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_salesforce_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_salesforce_lasterror { get; set; } 
@@ -8536,7 +8536,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_newrelic { get; set; } 
 
         [JsonProperty("halointegrator_newrelic_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_newrelic_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_newrelic_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_newrelic_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_newrelic_lasterror { get; set; } 
@@ -8545,7 +8545,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_backupradar { get; set; } 
 
         [JsonProperty("halointegrator_backupradar_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_backupradar_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_backupradar_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_backupradar_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_backupradar_lasterror { get; set; } 
@@ -8560,7 +8560,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_kaseya { get; set; } 
 
         [JsonProperty("halointegrator_kaseya_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_kaseya_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_kaseya_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_kaseya_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_kaseya_lasterror { get; set; } 
@@ -8599,7 +8599,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_zabbix { get; set; } 
 
         [JsonProperty("halointegrator_zabbix_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_zabbix_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_zabbix_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_zabbix_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_zabbix_lasterror { get; set; } 
@@ -8620,7 +8620,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_rhipe { get; set; } 
 
         [JsonProperty("halointegrator_rhipe_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_rhipe_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_rhipe_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_rhipe_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_rhipe_lasterror { get; set; } 
@@ -8638,7 +8638,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_techdata { get; set; } 
 
         [JsonProperty("halointegrator_techdata_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_techdata_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_techdata_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_techdata_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_techdata_lasterror { get; set; } 
@@ -8656,7 +8656,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_inty { get; set; } 
 
         [JsonProperty("halointegrator_inty_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_inty_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_inty_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_inty_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_inty_lasterror { get; set; } 
@@ -8674,7 +8674,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_westcoastcloud { get; set; } 
 
         [JsonProperty("halointegrator_westcoastcloud_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_westcoastcloud_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_westcoastcloud_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_westcoastcloud_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_westcoastcloud_lasterror { get; set; } 
@@ -8692,7 +8692,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_sherweb { get; set; } 
 
         [JsonProperty("halointegrator_sherweb_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_sherweb_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_sherweb_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_sherweb_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_sherweb_lasterror { get; set; } 
@@ -8710,7 +8710,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_also { get; set; } 
 
         [JsonProperty("halointegrator_also_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_also_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_also_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_also_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_also_lasterror { get; set; } 
@@ -8728,7 +8728,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_arrowsphere { get; set; } 
 
         [JsonProperty("halointegrator_arrowsphere_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_arrowsphere_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_arrowsphere_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_arrowsphere_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_arrowsphere_lasterror { get; set; } 
@@ -8746,7 +8746,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_dickerdata { get; set; } 
 
         [JsonProperty("halointegrator_dickerdata_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_dickerdata_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_dickerdata_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_dickerdata_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_dickerdata_lasterror { get; set; } 
@@ -8758,7 +8758,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_oracle { get; set; } 
 
         [JsonProperty("halointegrator_oracle_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_oracle_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_oracle_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_oracle_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_oracle_lasterror { get; set; } 
@@ -8767,7 +8767,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_servicenow { get; set; } 
 
         [JsonProperty("halointegrator_servicenow_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_servicenow_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_servicenow_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_servicenow_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_servicenow_lasterror { get; set; } 
@@ -8836,7 +8836,7 @@ namespace Angelic.Control;
         public ICollection<KeyPair2>? Connectwisecontrol_import_entities_list { get; set; } 
 
         [JsonProperty("halointegrator_connectwisecontrol_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_connectwisecontrol_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_connectwisecontrol_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_connectwisecontrol_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_connectwisecontrol_lasterror { get; set; } 
@@ -8923,7 +8923,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_logicmonitor { get; set; } 
 
         [JsonProperty("halointegrator_logicmonitor_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_logicmonitor_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_logicmonitor_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_logicmonitor_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_logicmonitor_lasterror { get; set; } 
@@ -8941,7 +8941,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_barracuda { get; set; } 
 
         [JsonProperty("halointegrator_barracuda_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_barracuda_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_barracuda_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_barracuda_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_barracuda_lasterror { get; set; } 
@@ -9019,7 +9019,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_icinga { get; set; } 
 
         [JsonProperty("halointegrator_icinga_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_icinga_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_icinga_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_icinga_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_icinga_lasterror { get; set; } 
@@ -9040,10 +9040,10 @@ namespace Angelic.Control;
         public string? Icinga_alert_user_name { get; set; } 
 
         [JsonProperty("default_columns_id_sites_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Default_columns_id_sites_guid { get; set; } 
+        public Guid? Default_columns_id_sites_guid { get; set; } 
 
         [JsonProperty("default_columns_id_users_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.Guid? Default_columns_id_users_guid { get; set; } 
+        public Guid? Default_columns_id_users_guid { get; set; } 
 
         [JsonProperty("translations", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<LanguagePackTranslationsCustom>? Translations { get; set; } 
@@ -9067,7 +9067,7 @@ namespace Angelic.Control;
         public ICollection<KeyPair2>? Connectwisermm_import_entities_list { get; set; } 
 
         [JsonProperty("halointegrator_connectwisermm_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_connectwisermm_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_connectwisermm_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_connectwisermm_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_connectwisermm_lasterror { get; set; } 
@@ -9094,7 +9094,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_shopify { get; set; } 
 
         [JsonProperty("halointegrator_shopify_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_shopify_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_shopify_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_shopify_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_shopify_lasterror { get; set; } 
@@ -9130,7 +9130,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_xensam { get; set; } 
 
         [JsonProperty("halointegrator_xensam_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_xensam_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_xensam_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_xensam_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_xensam_lasterror { get; set; } 
@@ -9181,7 +9181,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_amazonseller { get; set; } 
 
         [JsonProperty("halointegrator_amazonseller_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_amazonseller_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_amazonseller_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_amazonseller_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_amazonseller_lasterror { get; set; } 
@@ -9214,7 +9214,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_prometheus { get; set; } 
 
         [JsonProperty("halointegrator_prometheus_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_prometheus_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_prometheus_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_prometheus_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_prometheus_lasterror { get; set; } 
@@ -9223,7 +9223,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_mattermost { get; set; } 
 
         [JsonProperty("halointegrator_mattermost_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_mattermost_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_mattermost_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_mattermost_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_mattermost_lasterror { get; set; } 
@@ -9232,7 +9232,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_wordpress { get; set; } 
 
         [JsonProperty("halointegrator_wordpress_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_wordpress_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_wordpress_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_wordpress_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_wordpress_lasterror { get; set; } 
@@ -9250,7 +9250,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_googlebusiness { get; set; } 
 
         [JsonProperty("halointegrator_googlebusiness_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_googlebusiness_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_googlebusiness_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_googlebusiness_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_googlebusiness_lasterror { get; set; } 
@@ -9274,7 +9274,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_googlecalendars { get; set; } 
 
         [JsonProperty("halointegrator_googlecalendars_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_googlecalendars_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_googlecalendars_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_googlecalendars_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_googlecalendars_lasterror { get; set; } 
@@ -9286,7 +9286,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_wordpressorg { get; set; } 
 
         [JsonProperty("halointegrator_wordpressorg_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_wordpressorg_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_wordpressorg_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_wordpressorg_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_wordpressorg_lasterror { get; set; } 
@@ -9298,7 +9298,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_splashtop { get; set; } 
 
         [JsonProperty("halointegrator_splashtop_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_splashtop_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_splashtop_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_splashtop_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_splashtop_lasterror { get; set; } 
@@ -9313,7 +9313,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_gocardless { get; set; } 
 
         [JsonProperty("halointegrator_gocardless_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_gocardless_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_gocardless_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_gocardless_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_gocardless_lasterror { get; set; } 
@@ -9352,7 +9352,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_meraki { get; set; } 
 
         [JsonProperty("halointegrator_meraki_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_meraki_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_meraki_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_meraki_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_meraki_lasterror { get; set; } 
@@ -9373,7 +9373,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_adobecommerce { get; set; } 
 
         [JsonProperty("halointegrator_adobecommerce_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_adobecommerce_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_adobecommerce_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_adobecommerce_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_adobecommerce_lasterror { get; set; } 
@@ -9427,7 +9427,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_mailchimp { get; set; } 
 
         [JsonProperty("halointegrator_mailchimp_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_mailchimp_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_mailchimp_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_mailchimp_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_mailchimp_lasterror { get; set; } 
@@ -9508,7 +9508,7 @@ namespace Angelic.Control;
         public string? Businesscentral_domain { get; set; } 
 
         [JsonProperty("businesscentral_tokenexpiry", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Businesscentral_tokenexpiry { get; set; } 
+        public DateTimeOffset? Businesscentral_tokenexpiry { get; set; } 
 
         [JsonProperty("businesscentral_redirect", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Businesscentral_redirect { get; set; } 
@@ -9526,7 +9526,7 @@ namespace Angelic.Control;
         public string? Dynamicscrm_domain { get; set; } 
 
         [JsonProperty("dynamicscrm_tokenexpiry", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Dynamicscrm_tokenexpiry { get; set; } 
+        public DateTimeOffset? Dynamicscrm_tokenexpiry { get; set; } 
 
         [JsonProperty("dynamicscrm_redirect", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Dynamicscrm_redirect { get; set; } 
@@ -9541,7 +9541,7 @@ namespace Angelic.Control;
         public string? Exchange_tenant_id { get; set; } 
 
         [JsonProperty("exchange_token_expiry", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Exchange_token_expiry { get; set; } 
+        public DateTimeOffset? Exchange_token_expiry { get; set; } 
 
         [JsonProperty("exchange_redirect", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Exchange_redirect { get; set; } 
@@ -9574,7 +9574,7 @@ namespace Angelic.Control;
         public string? Qbo_client_id { get; set; } 
 
         [JsonProperty("qbo_token_expiry", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Qbo_token_expiry { get; set; } 
+        public DateTimeOffset? Qbo_token_expiry { get; set; } 
 
         [JsonProperty("qbo_authorized", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Qbo_authorized { get; set; } 
@@ -9616,7 +9616,7 @@ namespace Angelic.Control;
         public bool? Ninja_authorized { get; set; } 
 
         [JsonProperty("ninja_token_expiry", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Ninja_token_expiry { get; set; } 
+        public DateTimeOffset? Ninja_token_expiry { get; set; } 
 
         [JsonProperty("ninja_redirect", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Ninja_redirect { get; set; } 
@@ -9634,7 +9634,7 @@ namespace Angelic.Control;
         public bool? Snelstart_authorized { get; set; } 
 
         [JsonProperty("snelstart_token_expiry", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Snelstart_token_expiry { get; set; } 
+        public DateTimeOffset? Snelstart_token_expiry { get; set; } 
 
         [JsonProperty("jamf_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Jamf_url { get; set; } 
@@ -9652,7 +9652,7 @@ namespace Angelic.Control;
         public string? Interact_tenant { get; set; } 
 
         [JsonProperty("interact_token_expiry", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Interact_token_expiry { get; set; } 
+        public DateTimeOffset? Interact_token_expiry { get; set; } 
 
         [JsonProperty("gw_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Gw_url { get; set; } 
@@ -9661,7 +9661,7 @@ namespace Angelic.Control;
         public string? Gw_client_id { get; set; } 
 
         [JsonProperty("gw_token_expiry", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Gw_token_expiry { get; set; } 
+        public DateTimeOffset? Gw_token_expiry { get; set; } 
 
         [JsonProperty("gw_redirect", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Gw_redirect { get; set; } 
@@ -9703,13 +9703,13 @@ namespace Angelic.Control;
         public string? Beyondtrust_username { get; set; } 
 
         [JsonProperty("beyondtrust_token_expiry", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Beyondtrust_token_expiry { get; set; } 
+        public DateTimeOffset? Beyondtrust_token_expiry { get; set; } 
 
         [JsonProperty("beyondtrust_authorized", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Beyondtrust_authorized { get; set; } 
 
         [JsonProperty("sentinel_token_expiry", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Sentinel_token_expiry { get; set; } 
+        public DateTimeOffset? Sentinel_token_expiry { get; set; } 
 
         [JsonProperty("sentinel_redirect", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Sentinel_redirect { get; set; } 
@@ -9736,13 +9736,13 @@ namespace Angelic.Control;
         public bool? G2aremote_authorized { get; set; } 
 
         [JsonProperty("automate_token_expiry", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Automate_token_expiry { get; set; } 
+        public DateTimeOffset? Automate_token_expiry { get; set; } 
 
         [JsonProperty("g2aremote_refresh_token", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? G2aremote_refresh_token { get; set; } 
 
         [JsonProperty("g2aremote_token_expiry", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? G2aremote_token_expiry { get; set; } 
+        public DateTimeOffset? G2aremote_token_expiry { get; set; } 
 
         [JsonProperty("g2aremote_redirect", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? G2aremote_redirect { get; set; } 
@@ -9769,7 +9769,7 @@ namespace Angelic.Control;
         public bool? Hubspot_authorized { get; set; } 
 
         [JsonProperty("hubspot_token_expiry", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Hubspot_token_expiry { get; set; } 
+        public DateTimeOffset? Hubspot_token_expiry { get; set; } 
 
         [JsonProperty("hubspot_redirect", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Hubspot_redirect { get; set; } 
@@ -9799,7 +9799,7 @@ namespace Angelic.Control;
         public string? Passportal_refresh_token { get; set; } 
 
         [JsonProperty("passportal_token_expiry", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Passportal_token_expiry { get; set; } 
+        public DateTimeOffset? Passportal_token_expiry { get; set; } 
 
         [JsonProperty("hudu_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Hudu_url { get; set; } 
@@ -9832,7 +9832,7 @@ namespace Angelic.Control;
         public string? Ingram_micro_username { get; set; } 
 
         [JsonProperty("ingram_micro_token_expiry", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Ingram_micro_token_expiry { get; set; } 
+        public DateTimeOffset? Ingram_micro_token_expiry { get; set; } 
 
         [JsonProperty("freshdesk_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Freshdesk_url { get; set; } 
@@ -9853,13 +9853,13 @@ namespace Angelic.Control;
         public bool? Salesforce_authorized { get; set; } 
 
         [JsonProperty("pax8_token_expiry", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Pax8_token_expiry { get; set; } 
+        public DateTimeOffset? Pax8_token_expiry { get; set; } 
 
         [JsonProperty("salesforce_refresh_token", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Salesforce_refresh_token { get; set; } 
 
         [JsonProperty("salesforce_token_expiry", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Salesforce_token_expiry { get; set; } 
+        public DateTimeOffset? Salesforce_token_expiry { get; set; } 
 
         [JsonProperty("salesforce_redirect", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Salesforce_redirect { get; set; } 
@@ -10045,7 +10045,7 @@ namespace Angelic.Control;
         public ICollection<RequestType_List>? Vectorise_tickettypes { get; set; } 
 
         [JsonProperty("vectorise_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Vectorise_date { get; set; } 
+        public DateTimeOffset? Vectorise_date { get; set; } 
 
         [JsonProperty("opsgenie_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Opsgenie_url { get; set; } 
@@ -10108,7 +10108,7 @@ namespace Angelic.Control;
         public bool? Halointegrator_microsoftteams { get; set; } 
 
         [JsonProperty("halointegrator_microsoftteams_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public System.DateTimeOffset? Halointegrator_microsoftteams_lastsync { get; set; } 
+        public DateTimeOffset? Halointegrator_microsoftteams_lastsync { get; set; } 
 
         [JsonProperty("halointegrator_microsoftteams_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Halointegrator_microsoftteams_lasterror { get; set; } 

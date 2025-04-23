@@ -22,7 +22,7 @@ public class AdobeCommerceDetails
     public bool? Enabled { get; set; }
 
     [JsonProperty("integrator_last_sync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public System.DateTimeOffset? IntegratorLastSync { get; set; }
+    public DateTimeOffset? IntegratorLastSync { get; set; }
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; }

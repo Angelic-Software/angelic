@@ -1,12 +1,8 @@
 using System.CodeDom.Compiler;
-using System.Collections.Generic;
+using Angelic.Dtos;
 using Newtonsoft.Json;
-using Angelic.AnalyzerProfileColumn;
-using Angelic.AnalyzerFilter;
-using Angelic.AnalyzerProfileSeries;
-using Angelic.AnalyzerProfileColour;
 
-namespace Angelic.AnalyzerProfile;
+namespace Angelic.Reports;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
 public class Report
@@ -30,10 +26,10 @@ public class Report
     public string? SelectedFields { get; set; }
     
     [JsonProperty("reportingperiodstartdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public System.DateTimeOffset? ReportingPeriodStartDate { get; set; }
+    public DateTimeOffset? ReportingPeriodStartDate { get; set; }
     
     [JsonProperty("reportingperiodenddate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public System.DateTimeOffset? ReportingPeriodEndDate { get; set; }
+    public DateTimeOffset? ReportingPeriodEndDate { get; set; }
     
     [JsonProperty("reportingperioddatefield", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ReportingPeriodDateField { get; set; }
@@ -144,22 +140,22 @@ public class Report
     public bool? UsesDynamicSql { get; set; }
     
     [JsonProperty("available_columns", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AnalyzerProfileColumn.ReportColumn>? AvailableColumns { get; set; }
+    public ICollection<ReportColumn>? AvailableColumns { get; set; }
     
     [JsonProperty("columns", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AnalyzerProfileColumn.ReportColumn>? Columns { get; set; }
+    public ICollection<ReportColumn>? Columns { get; set; }
     
     [JsonProperty("filters", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AnalyzerFilter.ReportFilter>? Filters { get; set; }
+    public ICollection<ReportFilter>? Filters { get; set; }
     
     [JsonProperty("conditions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AnalyzerFilter.ReportFilter>? Conditions { get; set; }
+    public ICollection<ReportFilter>? Conditions { get; set; }
     
     [JsonProperty("filterable_columns", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AnalyzerProfileColumn.ReportColumn>? FilterableColumns { get; set; }
+    public ICollection<ReportColumn>? FilterableColumns { get; set; }
     
     [JsonProperty("filterable_columns_conditions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AnalyzerProfileColumn.ReportColumn>? FilterableColumnsConditions { get; set; }
+    public ICollection<ReportColumn>? FilterableColumnsConditions { get; set; }
     
     [JsonProperty("permissions_agent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<UnameAnalyzer>? PermissionsAgent { get; set; }
@@ -183,7 +179,7 @@ public class Report
     public string? GetReportConditionValues { get; set; }
     
     [JsonProperty("filter_lookup_values", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<KeyPair2>? FilterLookupValues { get; set; }
+    public ICollection<ValueLabelIsNewKeyPair>? FilterLookupValues { get; set; }
     
     [JsonProperty("report", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ReportContent? Report { get; set; }
@@ -312,10 +308,10 @@ public class Report
     public bool? ShowDataValues { get; set; }
     
     [JsonProperty("series", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AnalyzerProfileSeries.AnalyzerProfileSeries>? Series { get; set; }
+    public ICollection<ReportSeries>? Series { get; set; }
     
     [JsonProperty("colours", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AnalyzerProfileColour.ReportColour>? Colours { get; set; }
+    public ICollection<ReportColour>? Colours { get; set; }
     
     [JsonProperty("ticket_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? TicketId { get; set; }
@@ -345,7 +341,7 @@ public class Report
     public string? AiRunId { get; set; }
     
     [JsonProperty("assistant_request", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public AIAssistantRequest? AssistantRequest { get; set; }
+    public AiAssistantRequest.AiAssistantRequest? AssistantRequest { get; set; }
     
     [JsonProperty("publish_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? PublishType { get; set; }
@@ -354,7 +350,7 @@ public class Report
     public bool? ApplyQueryBuilderPerms { get; set; }
     
     [JsonProperty("last_run_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public System.DateTimeOffset? LastRunDate { get; set; }
+    public DateTimeOffset? LastRunDate { get; set; }
     
     [JsonProperty("group_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? GroupId { get; set; }

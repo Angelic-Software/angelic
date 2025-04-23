@@ -13,7 +13,7 @@ public class AgentCheckIn
     public int? AgentId { get; set; }
 
     [JsonProperty("timestamp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public System.DateTimeOffset? Timestamp { get; set; }
+    public DateTimeOffset? Timestamp { get; set; }
 
     [JsonProperty("status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Status { get; set; }
