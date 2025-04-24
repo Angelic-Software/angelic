@@ -1,0 +1,39 @@
+using System.CodeDom.Compiler;
+using Newtonsoft.Json;
+
+namespace Angelic;
+
+[GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
+public class AssignSchedule
+{
+    [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public int? Id { get; set; } 
+
+    [JsonProperty("day", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public int? Day { get; set; } 
+
+    [JsonProperty("time", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public DateTimeOffset? Time { get; set; } 
+
+    [JsonProperty("assignto_agent_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public int? AssigntoAgentId { get; set; } 
+
+    [JsonProperty("status_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public int? StatusId { get; set; } 
+
+    [JsonProperty("tickettype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public int? TickettypeId { get; set; } 
+
+    [JsonProperty("last_run_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public DateTimeOffset? LastRunDate { get; set; } 
+
+    [JsonProperty("interval", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public int? Interval { get; set; } 
+
+    [JsonProperty("paused", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public bool? Paused { get; set; } 
+
+    [JsonProperty("asslinked_tickettype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public int? AsslinkedTickettype { get; set; } 
+
+}

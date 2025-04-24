@@ -1,0 +1,18 @@
+using System.CodeDom.Compiler;
+using Newtonsoft.Json;
+
+namespace Angelic;
+
+[GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
+public class ProcessStreetUser
+{
+    [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public string? Id { get; set; } 
+
+    [JsonProperty("email", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public string? Email { get; set; } 
+
+    [JsonProperty("username", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public string? Username { get; set; } 
+
+}

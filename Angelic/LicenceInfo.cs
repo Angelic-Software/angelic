@@ -1,0 +1,42 @@
+using System.CodeDom.Compiler;
+using Newtonsoft.Json;
+
+namespace Angelic;
+
+[GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
+public class LicenceInfo
+{
+    [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public Guid? Id { get; set; } 
+
+    [JsonProperty("site_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public int? Site_id { get; set; } 
+
+    [JsonProperty("client_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public int? Client_id { get; set; } 
+
+    [JsonProperty("client_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public string? Client_name { get; set; } 
+
+    [JsonProperty("version", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public string? Version { get; set; } 
+
+    [JsonProperty("apiurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public string? Apiurl { get; set; } 
+
+    [JsonProperty("organisationname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public string? Organisationname { get; set; } 
+
+    [JsonProperty("is_trial", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public bool? Is_trial { get; set; } 
+
+    [JsonProperty("support_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public int? Support_type { get; set; } 
+
+    [JsonProperty("trialexpiry", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public DateTimeOffset? Trialexpiry { get; set; } 
+
+    [JsonProperty("registrationdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public DateTimeOffset? Registrationdate { get; set; } 
+
+}
