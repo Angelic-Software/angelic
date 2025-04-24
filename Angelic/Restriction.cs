@@ -16,24 +16,24 @@ public class Restriction
     public int? Key1 { get; set; } 
 
     [JsonProperty("key1_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Key1_name { get; set; } 
+    public string? Key1Name { get; set; } 
 
     [JsonProperty("key2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Key2 { get; set; } 
 
     [JsonProperty("key2_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? Key2_guid { get; set; } 
+    public Guid? Key2Guid { get; set; } 
 
     [JsonProperty("key2_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Key2_name { get; set; } 
+    public string? Key2Name { get; set; } 
 
     [JsonProperty("role_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Role_id { get; set; } 
+    public string? RoleId { get; set; } 
 
     [JsonProperty("role_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Role_name { get; set; } 
+    public string? RoleName { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

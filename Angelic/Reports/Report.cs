@@ -166,7 +166,7 @@ public class Report
     public ICollection<UserAnalyzer>? PermissionsUser { get; set; }
     
     [JsonProperty("schedule", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<StdRequest_List>? Schedule { get; set; }
+    public ICollection<StdRequestList>? Schedule { get; set; }
     
     [JsonProperty("local_library_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? LocalLibraryId { get; set; }

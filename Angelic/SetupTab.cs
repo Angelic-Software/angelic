@@ -22,7 +22,7 @@ public class SetupTab
     public int? Duration { get; set; } 
 
     [JsonProperty("system_use", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? System_use { get; set; } 
+    public int? SystemUse { get; set; } 
 
     [JsonProperty("completed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Completed { get; set; } 
@@ -34,10 +34,10 @@ public class SetupTab
     public int? Article2 { get; set; } 
 
     [JsonProperty("group_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Group_id { get; set; } 
+    public int? GroupId { get; set; } 
 
     [JsonProperty("group_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Group_name { get; set; } 
+    public string? GroupName { get; set; } 
 
     [JsonProperty("icon", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Icon { get; set; } 
@@ -46,6 +46,6 @@ public class SetupTab
     public ICollection<LanguagePackTranslationsCustom>? Translations { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

@@ -86,6 +86,6 @@ public enum TableEnum
 
     _1020 = 1020,
 
-    __1 = -1,
+    _1 = -1,
 
 }

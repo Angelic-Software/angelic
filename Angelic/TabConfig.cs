@@ -13,16 +13,16 @@ public class TabConfig
     public int? Usage { get; set; } 
 
     [JsonProperty("entity_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Entity_id { get; set; } 
+    public int? EntityId { get; set; } 
 
     [JsonProperty("screenlayout_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Screenlayout_id { get; set; } 
+    public int? ScreenlayoutId { get; set; } 
 
     [JsonProperty("tab_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Tab_id { get; set; } 
+    public int? TabId { get; set; } 
 
     [JsonProperty("tab_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Tab_name { get; set; } 
+    public string? TabName { get; set; } 
 
     [JsonProperty("sequence", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Sequence { get; set; } 
@@ -31,10 +31,10 @@ public class TabConfig
     public int? Display { get; set; } 
 
     [JsonProperty("icon_override", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Icon_override { get; set; } 
+    public bool? IconOverride { get; set; } 
 
     [JsonProperty("new_icon", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? New_icon { get; set; } 
+    public string? NewIcon { get; set; } 
 
     [JsonProperty("nosidemenu", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Nosidemenu { get; set; } 

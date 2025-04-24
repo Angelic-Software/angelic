@@ -34,7 +34,7 @@ public class EscMsg
     public string? Emailbody { get; set; } 
 
     [JsonProperty("emailbody_html", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Emailbody_html { get; set; } 
+    public string? EmailbodyHtml { get; set; } 
 
     [JsonProperty("ccaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Ccaddress { get; set; } 
@@ -58,10 +58,10 @@ public class EscMsg
     public int? Slackid { get; set; } 
 
     [JsonProperty("template_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Template_id { get; set; } 
+    public int? TemplateId { get; set; } 
 
     [JsonProperty("approval_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Approval_id { get; set; } 
+    public int? ApprovalId { get; set; } 
 
     [JsonProperty("msteamsid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Msteamsid { get; set; } 
@@ -76,96 +76,96 @@ public class EscMsg
     public bool? Integratorwarning { get; set; } 
 
     [JsonProperty("next_retry_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Next_retry_date { get; set; } 
+    public DateTimeOffset? NextRetryDate { get; set; } 
 
     [JsonProperty("template_already_processed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Template_already_processed { get; set; } 
+    public bool? TemplateAlreadyProcessed { get; set; } 
 
     [JsonProperty("mattermost_channelid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Mattermost_channelid { get; set; } 
+    public int? MattermostChannelid { get; set; } 
 
     [JsonProperty("replyto_address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Replyto_address { get; set; } 
+    public string? ReplytoAddress { get; set; } 
 
     [JsonProperty("mailbox_from", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Mailbox_from { get; set; } 
+    public int? MailboxFrom { get; set; } 
 
     [JsonProperty("batch_master", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Batch_master { get; set; } 
+    public bool? BatchMaster { get; set; } 
 
     [JsonProperty("batch_use", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Batch_use { get; set; } 
+    public int? BatchUse { get; set; } 
 
     [JsonProperty("batch_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Batch_status { get; set; } 
+    public int? BatchStatus { get; set; } 
 
     [JsonProperty("batch_parent_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public long? Batch_parent_id { get; set; } 
+    public long? BatchParentId { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
     [JsonProperty("_ignoreperms", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _ignoreperms { get; set; } 
+    public bool? Ignoreperms { get; set; } 
 
     [JsonProperty("agent_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Agent_id { get; set; } 
+    public int? AgentId { get; set; } 
 
     [JsonProperty("user_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? User_id { get; set; } 
+    public int? UserId { get; set; } 
 
     [JsonProperty("eventno", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Eventno { get; set; } 
 
     [JsonProperty("notification_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Notification_id { get; set; } 
+    public int? NotificationId { get; set; } 
 
     [JsonProperty("notification_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Notification_name { get; set; } 
+    public string? NotificationName { get; set; } 
 
     [JsonProperty("message", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Message { get; set; } 
 
     [JsonProperty("read_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Read_status { get; set; } 
+    public int? ReadStatus { get; set; } 
 
     [JsonProperty("read_status_update", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Read_status_update { get; set; } 
+    public int? ReadStatusUpdate { get; set; } 
 
     [JsonProperty("datetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? Datetime { get; set; } 
 
     [JsonProperty("ticket_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Ticket_id { get; set; } 
+    public int? TicketId { get; set; } 
 
     [JsonProperty("action_number", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Action_number { get; set; } 
+    public int? ActionNumber { get; set; } 
 
     [JsonProperty("client_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Client_id { get; set; } 
+    public int? ClientId { get; set; } 
 
     [JsonProperty("shown", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Shown { get; set; } 
 
     [JsonProperty("key_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Key_id { get; set; } 
+    public int? KeyId { get; set; } 
 
     [JsonProperty("status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Status { get; set; } 
 
     [JsonProperty("status_update", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Status_update { get; set; } 
+    public int? StatusUpdate { get; set; } 
 
     [JsonProperty("popupcolour", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Popupcolour { get; set; } 
 
     [JsonProperty("attachment_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Attachment_type { get; set; } 
+    public int? AttachmentType { get; set; } 
 
     [JsonProperty("at_entity", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? At_entity { get; set; } 
+    public string? AtEntity { get; set; } 
 
     [JsonProperty("at_uniqueid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? At_uniqueid { get; set; } 
+    public int? AtUniqueid { get; set; } 
 
 }

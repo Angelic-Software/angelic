@@ -10,18 +10,18 @@ public class WorkspaceApplication
     public Guid? Id { get; set; } 
 
     [JsonProperty("database_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? Database_id { get; set; } 
+    public Guid? DatabaseId { get; set; } 
 
     [JsonProperty("client_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? Client_id { get; set; } 
+    public Guid? ClientId { get; set; } 
 
     [JsonProperty("client_secret", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Client_secret { get; set; } 
+    public string? ClientSecret { get; set; } 
 
     [JsonProperty("workspace_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Workspace_id { get; set; } 
+    public string? WorkspaceId { get; set; } 
 
     [JsonProperty("workspace_token", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Workspace_token { get; set; } 
+    public string? WorkspaceToken { get; set; } 
 
 }

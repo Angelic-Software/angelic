@@ -19,7 +19,7 @@ public class EmailStore
     public string? Emailbody { get; set; } 
 
     [JsonProperty("emailbody_html", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Emailbody_html { get; set; } 
+    public string? EmailbodyHtml { get; set; } 
 
     [JsonProperty("emailto", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Emailto { get; set; } 
@@ -34,7 +34,7 @@ public class EmailStore
     public string? Emailattachments { get; set; } 
 
     [JsonProperty("messagegroup_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Messagegroup_id { get; set; } 
+    public int? MessagegroupId { get; set; } 
 
     [JsonProperty("faultid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Faultid { get; set; } 
@@ -49,7 +49,7 @@ public class EmailStore
     public string? Keymessage { get; set; } 
 
     [JsonProperty("reply_direct", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Reply_direct { get; set; } 
+    public bool? ReplyDirect { get; set; } 
 
     [JsonProperty("replyaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Replyaddress { get; set; } 
@@ -58,75 +58,75 @@ public class EmailStore
     public bool? Addactionaftersending { get; set; } 
 
     [JsonProperty("mailbox_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Mailbox_id { get; set; } 
+    public int? MailboxId { get; set; } 
 
     [JsonProperty("org_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Org_id { get; set; } 
+    public int? OrgId { get; set; } 
 
     [JsonProperty("client_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Client_id { get; set; } 
+    public int? ClientId { get; set; } 
 
     [JsonProperty("site_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Site_id { get; set; } 
+    public int? SiteId { get; set; } 
 
     [JsonProperty("username", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Username { get; set; } 
 
     [JsonProperty("user_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? User_id { get; set; } 
+    public int? UserId { get; set; } 
 
     [JsonProperty("test_credentials", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Mailbox? Test_credentials { get; set; } 
+    public Mailbox? TestCredentials { get; set; } 
 
     [JsonProperty("_emailsent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _emailsent { get; set; } 
+    public bool? Emailsent { get; set; } 
 
     [JsonProperty("attachments", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<Attachment>? Attachments { get; set; } 
 
     [JsonProperty("quotation_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Quotation_id { get; set; } 
+    public int? QuotationId { get; set; } 
 
     [JsonProperty("salesorder_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Salesorder_id { get; set; } 
+    public int? SalesorderId { get; set; } 
 
     [JsonProperty("purchaseorder_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Purchaseorder_id { get; set; } 
+    public int? PurchaseorderId { get; set; } 
 
     [JsonProperty("invoice_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Invoice_id { get; set; } 
+    public int? InvoiceId { get; set; } 
 
     [JsonProperty("sales_mailbox_override_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Sales_mailbox_override_id { get; set; } 
+    public int? SalesMailboxOverrideId { get; set; } 
 
     [JsonProperty("datecreated", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? Datecreated { get; set; } 
 
     [JsonProperty("contract_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Contract_id { get; set; } 
+    public int? ContractId { get; set; } 
 
     [JsonProperty("bulk_user_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Bulk_user_id { get; set; } 
+    public int? BulkUserId { get; set; } 
 
     [JsonProperty("bulk_user_id_array", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<int>? Bulk_user_id_array { get; set; } 
+    public ICollection<int>? BulkUserIdArray { get; set; } 
 
     [JsonProperty("_isbatch", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _isbatch { get; set; } 
+    public bool? Isbatch { get; set; } 
 
     [JsonProperty("kb_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Kb_id { get; set; } 
+    public int? KbId { get; set; } 
 
     [JsonProperty("report_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Report_id { get; set; } 
+    public int? ReportId { get; set; } 
 
     [JsonProperty("from_dl_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? From_dl_id { get; set; } 
+    public int? FromDlId { get; set; } 
 
     [JsonProperty("add_to_feed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Add_to_feed { get; set; } 
+    public bool? AddToFeed { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

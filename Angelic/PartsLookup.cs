@@ -7,7 +7,7 @@ namespace Angelic;
 public class PartsLookup
 {
     [JsonProperty("lookup_value_obj", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public object? Lookup_value_obj { get; set; } 
+    public object? LookupValueObj { get; set; } 
 
     [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Id { get; set; } 
@@ -22,49 +22,49 @@ public class PartsLookup
     public bool? Active { get; set; } 
 
     [JsonProperty("field_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Field_id { get; set; } 
+    public int? FieldId { get; set; } 
 
     [JsonProperty("field_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Field_name { get; set; } 
+    public string? FieldName { get; set; } 
 
     [JsonProperty("table_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Table_id { get; set; } 
+    public int? TableId { get; set; } 
 
     [JsonProperty("table_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Table_name { get; set; } 
+    public string? TableName { get; set; } 
 
     [JsonProperty("sql_user", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Sql_user { get; set; } 
+    public string? SqlUser { get; set; } 
 
     [JsonProperty("sql_new_password", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Sql_new_password { get; set; } 
+    public string? SqlNewPassword { get; set; } 
 
     [JsonProperty("sql_server", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Sql_server { get; set; } 
+    public string? SqlServer { get; set; } 
 
     [JsonProperty("sql_database", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Sql_database { get; set; } 
+    public string? SqlDatabase { get; set; } 
 
     [JsonProperty("sql_script", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Sql_script { get; set; } 
+    public string? SqlScript { get; set; } 
 
     [JsonProperty("key_field", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Key_field { get; set; } 
+    public string? KeyField { get; set; } 
 
     [JsonProperty("lookup_field", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Lookup_field { get; set; } 
+    public string? LookupField { get; set; } 
 
     [JsonProperty("itemdesc1_field", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Itemdesc1_field { get; set; } 
+    public string? Itemdesc1Field { get; set; } 
 
     [JsonProperty("itemdesc2_field", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Itemdesc2_field { get; set; } 
+    public string? Itemdesc2Field { get; set; } 
 
     [JsonProperty("itemdesc3_field", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Itemdesc3_field { get; set; } 
+    public string? Itemdesc3Field { get; set; } 
 
     [JsonProperty("itemvalue_field", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Itemvalue_field { get; set; } 
+    public string? ItemvalueField { get; set; } 
 
     [JsonProperty("matchedhint", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Matchedhint { get; set; } 
@@ -76,10 +76,10 @@ public class PartsLookup
     public bool? Lookuponrefresh { get; set; } 
 
     [JsonProperty("messagestring_user", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Messagestring_user { get; set; } 
+    public string? MessagestringUser { get; set; } 
 
     [JsonProperty("messagestring_agent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Messagestring_agent { get; set; } 
+    public string? MessagestringAgent { get; set; } 
 
     [JsonProperty("showmessagetouseroragent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Showmessagetouseroragent { get; set; } 
@@ -94,16 +94,16 @@ public class PartsLookup
     public ICollection<PartsLookupField>? Fields { get; set; } 
 
     [JsonProperty("field_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<PartsLookupMapping>? Field_mappings { get; set; } 
+    public ICollection<PartsLookupMapping>? FieldMappings { get; set; } 
 
     [JsonProperty("agent_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<TechPartsLookup>? Agent_mappings { get; set; } 
+    public ICollection<TechPartsLookup>? AgentMappings { get; set; } 
 
     [JsonProperty("run", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Run { get; set; } 
 
     [JsonProperty("lookup_value", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Lookup_value { get; set; } 
+    public string? LookupValue { get; set; } 
 
     [JsonProperty("customfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<CustomField>? Customfields { get; set; } 
@@ -112,78 +112,78 @@ public class PartsLookup
     public PartsLookupResult? Lookup { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
     [JsonProperty("client_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Client_id { get; set; } 
+    public int? ClientId { get; set; } 
 
     [JsonProperty("site_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Site_id { get; set; } 
+    public int? SiteId { get; set; } 
 
     [JsonProperty("user_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? User_id { get; set; } 
+    public int? UserId { get; set; } 
 
     [JsonProperty("ticket_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Ticket_id { get; set; } 
+    public int? TicketId { get; set; } 
 
     [JsonProperty("lookupconnectiontype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Lookupconnectiontype { get; set; } 
 
     [JsonProperty("lookup_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Lookup_type { get; set; } 
+    public int? LookupType { get; set; } 
 
     [JsonProperty("lookup_type_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Lookup_type_name { get; set; } 
+    public string? LookupTypeName { get; set; } 
 
     [JsonProperty("contract_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Contract_id { get; set; } 
+    public int? ContractId { get; set; } 
 
     [JsonProperty("certificate_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Certificate_id { get; set; } 
+    public int? CertificateId { get; set; } 
 
     [JsonProperty("certificate_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Certificate_name { get; set; } 
+    public string? CertificateName { get; set; } 
 
     [JsonProperty("allowmultipleresults", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Allowmultipleresults { get; set; } 
 
     [JsonProperty("lookup_field_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Lookup_field_id { get; set; } 
+    public int? LookupFieldId { get; set; } 
 
     [JsonProperty("lookup_field_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Lookup_field_name { get; set; } 
+    public string? LookupFieldName { get; set; } 
 
     [JsonProperty("outcome_mapped_field", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Outcome_mapped_field { get; set; } 
+    public int? OutcomeMappedField { get; set; } 
 
     [JsonProperty("outcome_mapped_field_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Outcome_mapped_field_name { get; set; } 
+    public string? OutcomeMappedFieldName { get; set; } 
 
     [JsonProperty("invert_outcome_mapped_result", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Invert_outcome_mapped_result { get; set; } 
+    public bool? InvertOutcomeMappedResult { get; set; } 
 
     [JsonProperty("trigger_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Trigger_type { get; set; } 
+    public int? TriggerType { get; set; } 
 
     [JsonProperty("rules", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<Autoassign>? Rules { get; set; } 
 
     [JsonProperty("integration_method_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Integration_method_id { get; set; } 
+    public int? IntegrationMethodId { get; set; } 
 
     [JsonProperty("integration_method_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Integration_method_name { get; set; } 
+    public string? IntegrationMethodName { get; set; } 
 
     [JsonProperty("integration_method_value", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Integration_method_value { get; set; } 
+    public int? IntegrationMethodValue { get; set; } 
 
     [JsonProperty("integration_method_value_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Integration_method_value_name { get; set; } 
+    public string? IntegrationMethodValueName { get; set; } 
 
     [JsonProperty("access_control", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AccessControl>? Access_control { get; set; } 
+    public ICollection<AccessControl>? AccessControl { get; set; } 
 
     [JsonProperty("access_control_level", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Access_control_level { get; set; } 
+    public int? AccessControlLevel { get; set; } 
 
 }

@@ -32,12 +32,12 @@ public class Qualification
     public ICollection<AgentQualification>? Agents { get; set; } 
 
     [JsonProperty("agent_matched", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Agent_matched { get; set; } 
+    public bool? AgentMatched { get; set; } 
 
     [JsonProperty("_domatch", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _domatch { get; set; } 
+    public bool? Domatch { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

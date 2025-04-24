@@ -13,7 +13,7 @@ public class Policy
     public int? Slaid { get; set; } 
 
     [JsonProperty("sla_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? Sla_guid { get; set; } 
+    public Guid? SlaGuid { get; set; } 
 
     [JsonProperty("priorityid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Priorityid { get; set; } 
@@ -82,6 +82,6 @@ public class Policy
     public bool? Enterslaresponseexcuse { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

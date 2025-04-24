@@ -106,7 +106,7 @@ public class UserDashboardButtons
     public int? DefaultView { get; set; } 
 
     [JsonProperty("portal_ticket_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<RequestType_List>? PortalTicketList { get; set; } 
+    public ICollection<RequestTypeList>? PortalTicketList { get; set; } 
 
     [JsonProperty("ticket_column_override", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? TicketColumnOverride { get; set; } 

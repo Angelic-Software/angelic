@@ -10,18 +10,18 @@ public class TechPartsLookup
     public int? Id { get; set; } 
 
     [JsonProperty("lookup_profile_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Lookup_profile_id { get; set; } 
+    public int? LookupProfileId { get; set; } 
 
     [JsonProperty("agent_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Agent_id { get; set; } 
+    public int? AgentId { get; set; } 
 
     [JsonProperty("agent_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Agent_name { get; set; } 
+    public string? AgentName { get; set; } 
 
     [JsonProperty("lookup_value", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Lookup_value { get; set; } 
+    public string? LookupValue { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

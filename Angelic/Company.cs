@@ -326,10 +326,10 @@ public class Company
     public string? MyobTenantName { get; set; } 
 
     [JsonProperty("external_links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ExternalLink_List>? ExternalLinks { get; set; } 
+    public ICollection<ExternalLinkList>? ExternalLinks { get; set; } 
 
     [JsonProperty("new_external_link", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ExternalLink_List? NewExternalLink { get; set; } 
+    public ExternalLinkList? NewExternalLink { get; set; } 
 
     [JsonProperty("purchase_tax_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? PurchaseTaxCode { get; set; } 

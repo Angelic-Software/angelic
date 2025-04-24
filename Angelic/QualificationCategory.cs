@@ -13,12 +13,12 @@ public class QualificationCategory
     public int? Qlid { get; set; } 
 
     [JsonProperty("qualification_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? Qualification_guid { get; set; } 
+    public Guid? QualificationGuid { get; set; } 
 
     [JsonProperty("fields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<AutoassignCriteria>? Fields { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

@@ -34,7 +34,7 @@ public class Outgoingemail
     public string? Subject { get; set; } 
 
     [JsonProperty("likely_cause", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Likely_cause { get; set; } 
+    public string? LikelyCause { get; set; } 
 
     [JsonProperty("changeseq", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Changeseq { get; set; } 
@@ -55,6 +55,6 @@ public class Outgoingemail
     public string? Error { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

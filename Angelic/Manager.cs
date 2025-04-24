@@ -13,9 +13,9 @@ public class Manager
     public string? Name { get; set; } 
 
     [JsonProperty("agent_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Agent_id { get; set; } 
+    public int? AgentId { get; set; } 
 
     [JsonProperty("user_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? User_id { get; set; } 
+    public int? UserId { get; set; } 
 
 }

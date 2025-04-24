@@ -10,18 +10,18 @@ public class LicenceMatch
     public int? Id { get; set; } 
 
     [JsonProperty("licence_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Licence_id { get; set; } 
+    public int? LicenceId { get; set; } 
 
     [JsonProperty("type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Type { get; set; } 
 
     [JsonProperty("licence_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Licence_name { get; set; } 
+    public string? LicenceName { get; set; } 
 
     [JsonProperty("text", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Text { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

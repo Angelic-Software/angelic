@@ -34,21 +34,21 @@ public class Tabname
     public string? Url { get; set; } 
 
     [JsonProperty("linked_dashboard_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Linked_dashboard_id { get; set; } 
+    public int? LinkedDashboardId { get; set; } 
 
     [JsonProperty("icon", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Icon { get; set; } 
 
     [JsonProperty("send_secure_url_parameter", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Send_secure_url_parameter { get; set; } 
+    public bool? SendSecureUrlParameter { get; set; } 
 
     [JsonProperty("new_iframe_secret", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? New_iframe_secret { get; set; } 
+    public string? NewIframeSecret { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
     [JsonProperty("module_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Module_id { get; set; } 
+    public int? ModuleId { get; set; } 
 
 }

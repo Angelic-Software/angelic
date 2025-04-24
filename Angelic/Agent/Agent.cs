@@ -332,13 +332,13 @@ namespace Angelic.Agent;
         public string? ThirdPartyGuid { get; set; } 
 
         [JsonProperty("roles", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<NHD_Roles>? Roles { get; set; } 
+        public ICollection<NhdRoles>? Roles { get; set; } 
 
         [JsonProperty("add_roles", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<NHD_Roles>? AddRoles { get; set; } 
+        public ICollection<NhdRoles>? AddRoles { get; set; } 
 
         [JsonProperty("claims", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<NHD_Claim>? Claims { get; set; } 
+        public ICollection<NhdClaim>? Claims { get; set; } 
 
         [JsonProperty("department", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Department { get; set; } 

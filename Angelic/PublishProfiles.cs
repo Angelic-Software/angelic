@@ -10,24 +10,24 @@ public class PublishProfiles
     public int? Id { get; set; } 
 
     [JsonProperty("profile_username", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Profile_username { get; set; } 
+    public string? ProfileUsername { get; set; } 
 
     [JsonProperty("active", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Active { get; set; } 
 
     [JsonProperty("auth_method", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Auth_method { get; set; } 
+    public int? AuthMethod { get; set; } 
 
     [JsonProperty("basic_auth_password", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Basic_auth_password { get; set; } 
+    public string? BasicAuthPassword { get; set; } 
 
     [JsonProperty("basic_auth_salt", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Basic_auth_salt { get; set; } 
+    public string? BasicAuthSalt { get; set; } 
 
     [JsonProperty("basic_auth_iterations", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Basic_auth_iterations { get; set; } 
+    public int? BasicAuthIterations { get; set; } 
 
     [JsonProperty("_profile_access_token", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _profile_access_token { get; set; } 
+    public string? ProfileAccessToken { get; set; } 
 
 }

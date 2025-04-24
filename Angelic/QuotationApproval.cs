@@ -31,7 +31,7 @@ public class QuotationApproval
     public string? Signature { get; set; } 
 
     [JsonProperty("optional_lines", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<QuotationDetail>? Optional_lines { get; set; } 
+    public ICollection<QuotationDetail>? OptionalLines { get; set; } 
 
     [JsonProperty("customfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<CustomField>? Customfields { get; set; } 

@@ -10,21 +10,21 @@ public class Permalinks
     public int? Id { get; set; } 
 
     [JsonProperty("entity_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Entity_name { get; set; } 
+    public string? EntityName { get; set; } 
 
     [JsonProperty("entity_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Entity_id { get; set; } 
+    public int? EntityId { get; set; } 
 
     [JsonProperty("published_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Published_guid { get; set; } 
+    public string? PublishedGuid { get; set; } 
 
     [JsonProperty("access_token", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Access_token { get; set; } 
+    public string? AccessToken { get; set; } 
 
     [JsonProperty("publishedlink", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Publishedlink { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

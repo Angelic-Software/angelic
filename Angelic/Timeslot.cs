@@ -10,30 +10,30 @@ public class Timeslot
     public int? Id { get; set; } 
 
     [JsonProperty("workday_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Workday_id { get; set; } 
+    public int? WorkdayId { get; set; } 
 
     [JsonProperty("workday_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? Workday_guid { get; set; } 
+    public Guid? WorkdayGuid { get; set; } 
 
     [JsonProperty("bookingtype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Bookingtype_id { get; set; } 
+    public int? BookingtypeId { get; set; } 
 
     [JsonProperty("name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Name { get; set; } 
 
     [JsonProperty("start_time", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Start_time { get; set; } 
+    public string? StartTime { get; set; } 
 
     [JsonProperty("end_time", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? End_time { get; set; } 
+    public string? EndTime { get; set; } 
 
     [JsonProperty("start_label", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Start_label { get; set; } 
+    public string? StartLabel { get; set; } 
 
     [JsonProperty("end_label", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? End_label { get; set; } 
+    public string? EndLabel { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

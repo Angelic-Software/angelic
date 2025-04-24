@@ -10,7 +10,7 @@ public class LanguagePackTranslations
     public int? Id { get; set; } 
 
     [JsonProperty("language_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Language_id { get; set; } 
+    public int? LanguageId { get; set; } 
 
     [JsonProperty("sysid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Sysid { get; set; } 
@@ -19,7 +19,7 @@ public class LanguagePackTranslations
     public int? Systype { get; set; } 
 
     [JsonProperty("display_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Display_id { get; set; } 
+    public string? DisplayId { get; set; } 
 
     [JsonProperty("translation", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Translation { get; set; } 
@@ -34,12 +34,12 @@ public class LanguagePackTranslations
     public string? Description { get; set; } 
 
     [JsonProperty("default_string", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Default_string { get; set; } 
+    public string? DefaultString { get; set; } 
 
     [JsonProperty("context", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Context { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

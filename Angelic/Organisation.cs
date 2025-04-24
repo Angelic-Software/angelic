@@ -19,10 +19,10 @@ public class Organisation
     public string? Name { get; set; } 
 
     [JsonProperty("reply_address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Reply_address { get; set; } 
+    public string? ReplyAddress { get; set; } 
 
     [JsonProperty("messagegroup_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Messagegroup_id { get; set; } 
+    public int? MessagegroupId { get; set; } 
 
     [JsonProperty("address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public AddressStore? Address { get; set; } 
@@ -43,7 +43,7 @@ public class Organisation
     public string? Logo { get; set; } 
 
     [JsonProperty("portal_logo", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Portal_logo { get; set; } 
+    public string? PortalLogo { get; set; } 
 
     [JsonProperty("portalbackgroundimageurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     [System.ComponentModel.DataAnnotations.StringLength(500)]
@@ -62,63 +62,63 @@ public class Organisation
     public string? Portalfolderlocation { get; set; } 
 
     [JsonProperty("departments", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<Tree_List>? Departments { get; set; } 
+    public ICollection<TreeList>? Departments { get; set; } 
 
     [JsonProperty("linked_client_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Linked_client_id { get; set; } 
+    public int? LinkedClientId { get; set; } 
 
     [JsonProperty("allowall_tickettypes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Allowall_tickettypes { get; set; } 
+    public bool? AllowallTickettypes { get; set; } 
 
     [JsonProperty("allowed_tickettypes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<RequestType_List>? Allowed_tickettypes { get; set; } 
+    public ICollection<RequestTypeList>? AllowedTickettypes { get; set; } 
 
     [JsonProperty("faqlists", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<FAQListHead>? Faqlists { get; set; } 
+    public ICollection<FaqListHead>? Faqlists { get; set; } 
 
     [JsonProperty("customfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<CustomField>? Customfields { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
     [JsonProperty("isorganisationdetails", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Isorganisationdetails { get; set; } 
 
     [JsonProperty("bank_details_line_1", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Bank_details_line_1 { get; set; } 
+    public string? BankDetailsLine1 { get; set; } 
 
     [JsonProperty("bank_details_line_2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Bank_details_line_2 { get; set; } 
+    public string? BankDetailsLine2 { get; set; } 
 
     [JsonProperty("bank_details_line_3", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Bank_details_line_3 { get; set; } 
+    public string? BankDetailsLine3 { get; set; } 
 
     [JsonProperty("bank_details_line_4", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Bank_details_line_4 { get; set; } 
+    public string? BankDetailsLine4 { get; set; } 
 
     [JsonProperty("bank_details_line_5", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Bank_details_line_5 { get; set; } 
+    public string? BankDetailsLine5 { get; set; } 
 
     [JsonProperty("tax_number", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Tax_number { get; set; } 
+    public string? TaxNumber { get; set; } 
 
     [JsonProperty("new_icon", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? New_icon { get; set; } 
+    public string? NewIcon { get; set; } 
 
     [JsonProperty("portal_title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Portal_title { get; set; } 
+    public string? PortalTitle { get; set; } 
 
     [JsonProperty("user_faqlists", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<FAQListHead>? User_faqlists { get; set; } 
+    public ICollection<FaqListHead>? UserFaqlists { get; set; } 
 
     [JsonProperty("all_user_faqlists_allowed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? All_user_faqlists_allowed { get; set; } 
+    public bool? AllUserFaqlistsAllowed { get; set; } 
 
     [JsonProperty("portal_chat_profile_override", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Portal_chat_profile_override { get; set; } 
+    public string? PortalChatProfileOverride { get; set; } 
 
     [JsonProperty("portal_chat_profile_override_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Portal_chat_profile_override_name { get; set; } 
+    public string? PortalChatProfileOverrideName { get; set; } 
 
 }

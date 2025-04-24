@@ -13,7 +13,7 @@ public class SupplierOrderDetail
     public int? Id { get; set; } 
 
     [JsonProperty("sort_seq", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Sort_seq { get; set; } 
+    public int? SortSeq { get; set; } 
 
     [JsonProperty("productcode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Productcode { get; set; } 
@@ -22,64 +22,64 @@ public class SupplierOrderDetail
     public string? Name { get; set; } 
 
     [JsonProperty("quantity_received", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Quantity_received { get; set; } 
+    public double? QuantityReceived { get; set; } 
 
     [JsonProperty("purchaseorder_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Purchaseorder_id { get; set; } 
+    public int? PurchaseorderId { get; set; } 
 
     [JsonProperty("item_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Item_id { get; set; } 
+    public int? ItemId { get; set; } 
 
     [JsonProperty("assettype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Assettype_id { get; set; } 
+    public int? AssettypeId { get; set; } 
 
     [JsonProperty("note", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Note { get; set; } 
 
     [JsonProperty("group_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Group_id { get; set; } 
+    public int? GroupId { get; set; } 
 
     [JsonProperty("isgroupdesc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Isgroupdesc { get; set; } 
 
     [JsonProperty("salesorder_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Salesorder_id { get; set; } 
+    public int? SalesorderId { get; set; } 
 
     [JsonProperty("salesorder_line_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Salesorder_line_id { get; set; } 
+    public int? SalesorderLineId { get; set; } 
 
     [JsonProperty("sales_order_stock_location", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Sales_order_stock_location { get; set; } 
+    public int? SalesOrderStockLocation { get; set; } 
 
     [JsonProperty("item_internal_reference", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Item_internal_reference { get; set; } 
+    public string? ItemInternalReference { get; set; } 
 
     [JsonProperty("item_external_reference", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Item_external_reference { get; set; } 
+    public string? ItemExternalReference { get; set; } 
 
     [JsonProperty("item_min_purchase_qty", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Item_min_purchase_qty { get; set; } 
+    public double? ItemMinPurchaseQty { get; set; } 
 
     [JsonProperty("xero_line_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Xero_line_id { get; set; } 
+    public string? XeroLineId { get; set; } 
 
     [JsonProperty("item_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Item_code { get; set; } 
+    public string? ItemCode { get; set; } 
 
     [JsonProperty("accounts_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Accounts_code { get; set; } 
+    public string? AccountsCode { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
     [JsonProperty("line_site_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Line_site_id { get; set; } 
+    public int? LineSiteId { get; set; } 
 
     [JsonProperty("qbo_line_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Qbo_line_id { get; set; } 
+    public string? QboLineId { get; set; } 
 
     [JsonProperty("site_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Site_name { get; set; } 
+    public string? SiteName { get; set; } 
 
     [JsonProperty("hideitems", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Hideitems { get; set; } 
@@ -88,100 +88,100 @@ public class SupplierOrderDetail
     public int? Invoiceid { get; set; } 
 
     [JsonProperty("asset_type_matching_field_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Asset_type_matching_field_name { get; set; } 
+    public string? AssetTypeMatchingFieldName { get; set; } 
 
     [JsonProperty("serialise_only_one", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Serialise_only_one { get; set; } 
+    public bool? SerialiseOnlyOne { get; set; } 
 
     [JsonProperty("synced_to_intacct", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Synced_to_intacct { get; set; } 
+    public bool? SyncedToIntacct { get; set; } 
 
     [JsonProperty("intacct_warehouse_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Intacct_warehouse_id { get; set; } 
+    public string? IntacctWarehouseId { get; set; } 
 
     [JsonProperty("intacct_location_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Intacct_location_id { get; set; } 
+    public string? IntacctLocationId { get; set; } 
 
     [JsonProperty("intacct_department_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Intacct_department_id { get; set; } 
+    public string? IntacctDepartmentId { get; set; } 
 
     [JsonProperty("_create_invoice_percentage", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? _create_invoice_percentage { get; set; } 
+    public double? CreateInvoicePercentage { get; set; } 
 
     [JsonProperty("percentage_invoiced", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Percentage_invoiced { get; set; } 
+    public double? PercentageInvoiced { get; set; } 
 
     [JsonProperty("invoiced_quantity", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Invoiced_quantity { get; set; } 
+    public double? InvoicedQuantity { get; set; } 
 
     [JsonProperty("myob_location", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Myob_location { get; set; } 
+    public string? MyobLocation { get; set; } 
 
     [JsonProperty("myob_row_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Myob_row_id { get; set; } 
+    public int? MyobRowId { get; set; } 
 
     [JsonProperty("entity_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Entity_type { get; set; } 
+    public string? EntityType { get; set; } 
 
     [JsonProperty("item_dont_receive_on_po", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Item_dont_receive_on_po { get; set; } 
+    public bool? ItemDontReceiveOnPo { get; set; } 
 
     [JsonProperty("net_total", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Net_total { get; set; } 
+    public double? NetTotal { get; set; } 
 
     [JsonProperty("total_tax_converted", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Total_tax_converted { get; set; } 
+    public double? TotalTaxConverted { get; set; } 
 
     [JsonProperty("tax_converted", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Tax_converted { get; set; } 
+    public double? TaxConverted { get; set; } 
 
     [JsonProperty("quote_line_distributor_external_link", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ExternalLink_List? Quote_line_distributor_external_link { get; set; } 
+    public ExternalLinkList? QuoteLineDistributorExternalLink { get; set; } 
 
     [JsonProperty("new_external_link", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ExternalLink_List? New_external_link { get; set; } 
+    public ExternalLinkList? NewExternalLink { get; set; } 
 
     [JsonProperty("date_received", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Date_received { get; set; } 
+    public DateTimeOffset? DateReceived { get; set; } 
 
     [JsonProperty("override_tax_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Override_tax_code { get; set; } 
+    public int? OverrideTaxCode { get; set; } 
 
     [JsonProperty("baseprice_converted", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Baseprice_converted { get; set; } 
+    public double? BasepriceConverted { get; set; } 
 
     [JsonProperty("baseprice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? Baseprice { get; set; } 
 
     [JsonProperty("total_tax", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Total_tax { get; set; } 
+    public double? TotalTax { get; set; } 
 
     [JsonProperty("total_price", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Total_price { get; set; } 
+    public double? TotalPrice { get; set; } 
 
     [JsonProperty("total_discount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Total_discount { get; set; } 
+    public double? TotalDiscount { get; set; } 
 
     [JsonProperty("conversion_rate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Conversion_rate { get; set; } 
+    public double? ConversionRate { get; set; } 
 
     [JsonProperty("discount_converted", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Discount_converted { get; set; } 
+    public double? DiscountConverted { get; set; } 
 
     [JsonProperty("net_amount_converted", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Net_amount_converted { get; set; } 
+    public double? NetAmountConverted { get; set; } 
 
     [JsonProperty("total_price_converted", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Total_price_converted { get; set; } 
+    public double? TotalPriceConverted { get; set; } 
 
     [JsonProperty("_importtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _importtype { get; set; } 
+    public string? Importtype { get; set; } 
 
     [JsonProperty("_isimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _isimport { get; set; } 
+    public bool? Isimport { get; set; } 
 
     [JsonProperty("tax_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Tax_name { get; set; } 
+    public string? TaxName { get; set; } 
 
     [JsonProperty("taxRuleResult", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<TaxRuleResult>? TaxRuleResult { get; set; } 
@@ -190,6 +190,6 @@ public class SupplierOrderDetail
     public int? Decimalplacesforinvoices { get; set; } 
 
     [JsonProperty("total_net_total", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Total_net_total { get; set; } 
+    public double? TotalNetTotal { get; set; } 
 
 }

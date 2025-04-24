@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Ticket;
 using Newtonsoft.Json;
 
 namespace Angelic;
@@ -16,9 +17,9 @@ public class ToDoGroup
     public string? Text { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
     [JsonProperty("todo_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<FaultToDo>? Todo_list { get; set; } 
+    public ICollection<TicketToDo>? TodoList { get; set; } 
 
 }

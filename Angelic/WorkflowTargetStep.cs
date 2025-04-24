@@ -10,21 +10,21 @@ public class WorkflowTargetStep
     public int? Id { get; set; } 
 
     [JsonProperty("workflowtarget_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Workflowtarget_id { get; set; } 
+    public int? WorkflowtargetId { get; set; } 
 
     [JsonProperty("step_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Step_id { get; set; } 
+    public int? StepId { get; set; } 
 
     [JsonProperty("is_end", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Is_end { get; set; } 
+    public bool? IsEnd { get; set; } 
 
     [JsonProperty("name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Name { get; set; } 
 
     [JsonProperty("flowheader_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Flowheader_id { get; set; } 
+    public int? FlowheaderId { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

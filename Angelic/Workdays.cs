@@ -97,7 +97,7 @@ public class Workdays
     public DateTimeOffset? Startsunday { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
     [JsonProperty("holidays", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<Holidays>? Holidays { get; set; } 
@@ -106,10 +106,10 @@ public class Workdays
     public ICollection<Timeslot>? Timeslots { get; set; } 
 
     [JsonProperty("access_control", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AccessControl>? Access_control { get; set; } 
+    public ICollection<AccessControl>? AccessControl { get; set; } 
 
     [JsonProperty("access_control_level", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Access_control_level { get; set; } 
+    public int? AccessControlLevel { get; set; } 
 
     [JsonProperty("breaks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<WorkdayBreak>? Breaks { get; set; } 

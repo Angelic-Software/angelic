@@ -10,22 +10,22 @@ public class ServiceOption
     public int? Id { get; set; } 
 
     [JsonProperty("service_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Service_id { get; set; } 
+    public int? ServiceId { get; set; } 
 
     [JsonProperty("optional_service_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Optional_service_id { get; set; } 
+    public int? OptionalServiceId { get; set; } 
 
     [JsonProperty("optional_service_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? Optional_service_guid { get; set; } 
+    public Guid? OptionalServiceGuid { get; set; } 
 
     [JsonProperty("optional_service_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Optional_service_name { get; set; } 
+    public string? OptionalServiceName { get; set; } 
 
     [JsonProperty("sequenceid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Sequenceid { get; set; } 
 
     [JsonProperty("show_new_req_screen", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Show_new_req_screen { get; set; } 
+    public bool? ShowNewReqScreen { get; set; } 
 
     [JsonProperty("mandatory", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Mandatory { get; set; } 
@@ -40,21 +40,21 @@ public class ServiceOption
     public bool? Include { get; set; } 
 
     [JsonProperty("servicerequestdetails_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Servicerequestdetails_id { get; set; } 
+    public int? ServicerequestdetailsId { get; set; } 
 
     [JsonProperty("optional_parent_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Optional_parent_id { get; set; } 
+    public int? OptionalParentId { get; set; } 
 
     [JsonProperty("rule_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Rule_count { get; set; } 
+    public int? RuleCount { get; set; } 
 
     [JsonProperty("creation_rules", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<StdRequestRule>? Creation_rules { get; set; } 
+    public ICollection<StdRequestRule>? CreationRules { get; set; } 
 
     [JsonProperty("optional_service_name_short", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Optional_service_name_short { get; set; } 
+    public string? OptionalServiceNameShort { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

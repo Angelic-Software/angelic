@@ -38,25 +38,25 @@ namespace Angelic;
         public bool? Includesoftware { get; set; } 
 
         [JsonProperty("field_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<IntegrationFieldMapping>? Field_mappings { get; set; } 
+        public ICollection<IntegrationFieldMapping>? FieldMappings { get; set; } 
 
         [JsonProperty("field_mapping_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Field_mapping_count { get; set; } 
+        public int? FieldMappingCount { get; set; } 
 
         [JsonProperty("sub_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Sub_type { get; set; } 
+        public int? SubType { get; set; } 
 
         [JsonProperty("tag_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Tag_list { get; set; } 
+        public string? TagList { get; set; } 
 
         [JsonProperty("tag_list_pairs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ValueLabelIsNewKeyPair>? Tag_list_pairs { get; set; } 
+        public ICollection<ValueLabelIsNewKeyPair>? TagListPairs { get; set; } 
 
         [JsonProperty("seq", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Seq { get; set; } 
 
         [JsonProperty("partial_match", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Partial_match { get; set; } 
+        public bool? PartialMatch { get; set; } 
 
         [JsonProperty("detailsid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Detailsid { get; set; } 
@@ -68,9 +68,9 @@ namespace Angelic;
         public ICollection<XTypeMappingCriteria>? Criteria { get; set; } 
 
         [JsonProperty("rule_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Rule_count { get; set; } 
+        public int? RuleCount { get; set; } 
 
         [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? _warning { get; set; } 
+        public string? Warning { get; set; } 
 
     }

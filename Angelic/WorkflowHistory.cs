@@ -10,45 +10,45 @@ public class WorkflowHistory
     public int? Id { get; set; } 
 
     [JsonProperty("ticket_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Ticket_id { get; set; } 
+    public int? TicketId { get; set; } 
 
     [JsonProperty("moved_from", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Moved_from { get; set; } 
+    public int? MovedFrom { get; set; } 
 
     [JsonProperty("moved_to", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Moved_to { get; set; } 
+    public int? MovedTo { get; set; } 
 
     [JsonProperty("flow_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Flow_id { get; set; } 
+    public int? FlowId { get; set; } 
 
     [JsonProperty("moved_from_stage", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Moved_from_stage { get; set; } 
+    public int? MovedFromStage { get; set; } 
 
     [JsonProperty("moved_to_stage", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Moved_to_stage { get; set; } 
+    public int? MovedToStage { get; set; } 
 
     [JsonProperty("moved_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Moved_date { get; set; } 
+    public DateTimeOffset? MovedDate { get; set; } 
 
     [JsonProperty("target_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Target_date { get; set; } 
+    public DateTimeOffset? TargetDate { get; set; } 
 
     [JsonProperty("target_hours", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Target_hours { get; set; } 
+    public double? TargetHours { get; set; } 
 
     [JsonProperty("actual_hours", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Actual_hours { get; set; } 
+    public double? ActualHours { get; set; } 
 
     [JsonProperty("target_met", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Target_met { get; set; } 
+    public bool? TargetMet { get; set; } 
 
     [JsonProperty("override_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Override_date { get; set; } 
+    public DateTimeOffset? OverrideDate { get; set; } 
 
     [JsonProperty("summary", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Summary { get; set; } 
 
     [JsonProperty("action_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Action_id { get; set; } 
+    public int? ActionId { get; set; } 
 
 }

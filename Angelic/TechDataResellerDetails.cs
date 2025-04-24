@@ -13,10 +13,10 @@ public class TechDataResellerDetails
     public string? Name { get; set; } 
 
     [JsonProperty("new_method", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? New_method { get; set; } 
+    public bool? NewMethod { get; set; } 
 
     [JsonProperty("client_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Client_id { get; set; } 
+    public string? ClientId { get; set; } 
 
     [JsonProperty("type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Type { get; set; } 
@@ -25,21 +25,21 @@ public class TechDataResellerDetails
     public string? Region { get; set; } 
 
     [JsonProperty("api_to_use", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Api_to_use { get; set; } 
+    public int? ApiToUse { get; set; } 
 
     [JsonProperty("customer_number", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Customer_number { get; set; } 
+    public string? CustomerNumber { get; set; } 
 
     [JsonProperty("application_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Application_type { get; set; } 
+    public int? ApplicationType { get; set; } 
 
     [JsonProperty("new_client_secret", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? New_client_secret { get; set; } 
+    public string? NewClientSecret { get; set; } 
 
     [JsonProperty("guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public Guid? Guid { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

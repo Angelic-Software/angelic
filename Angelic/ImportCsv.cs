@@ -19,12 +19,12 @@ public class ImportCsv
     public ICollection<IntegrationFieldMapping>? Mappings { get; set; } 
 
     [JsonProperty("create_new_lines", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Create_new_lines { get; set; } 
+    public bool? CreateNewLines { get; set; } 
 
     [JsonProperty("one_time_charges", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? One_time_charges { get; set; } 
+    public bool? OneTimeCharges { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

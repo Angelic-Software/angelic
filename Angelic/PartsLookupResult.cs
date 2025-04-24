@@ -11,10 +11,10 @@ public class PartsLookupResult
     public int? Id { get; set; } 
 
     [JsonProperty("field_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Field_id { get; set; } 
+    public int? FieldId { get; set; } 
 
     [JsonProperty("lookup_value", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Lookup_value { get; set; } 
+    public string? LookupValue { get; set; } 
 
     [JsonProperty("success", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Success { get; set; } 
@@ -26,13 +26,13 @@ public class PartsLookupResult
     public IDictionary<string, object?>? Data { get; set; } 
 
     [JsonProperty("field_values", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<StringIdNameKeyPair>? Field_values { get; set; } 
+    public ICollection<StringIdNameKeyPair>? FieldValues { get; set; } 
 
     [JsonProperty("customfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<CustomField>? Customfields { get; set; } 
 
     [JsonProperty("lookup_values", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Lookup_values { get; set; } 
+    public string? LookupValues { get; set; } 
 
     [JsonProperty("message", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Message { get; set; } 
@@ -41,21 +41,21 @@ public class PartsLookupResult
     public string? Popup { get; set; } 
 
     [JsonProperty("confirm_popup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Confirm_popup { get; set; } 
+    public bool? ConfirmPopup { get; set; } 
 
     [JsonProperty("data_multiple", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<IDictionary<string, object>>? Data_multiple { get; set; } 
+    public ICollection<IDictionary<string, object>>? DataMultiple { get; set; } 
 
     [JsonProperty("message_multiple", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Message_multiple { get; set; } 
+    public string? MessageMultiple { get; set; } 
 
     [JsonProperty("customfields_multiple", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ICollection<CustomField>>? Customfields_multiple { get; set; } 
+    public ICollection<ICollection<CustomField>>? CustomfieldsMultiple { get; set; } 
 
     [JsonProperty("mapped_outcome_field_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Mapped_outcome_field_id { get; set; } 
+    public int? MappedOutcomeFieldId { get; set; } 
 
     [JsonProperty("mapped_outcome_inverted", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Mapped_outcome_inverted { get; set; } 
+    public bool? MappedOutcomeInverted { get; set; } 
 
 }

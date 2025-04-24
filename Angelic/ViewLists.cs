@@ -22,28 +22,28 @@ public class ViewLists
     public string? Use { get; set; } 
 
     [JsonProperty("restriction_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Restriction_type { get; set; } 
+    public int? RestrictionType { get; set; } 
 
     [JsonProperty("agent_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Agent_id { get; set; } 
+    public int? AgentId { get; set; } 
 
     [JsonProperty("agent_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Agent_name { get; set; } 
+    public string? AgentName { get; set; } 
 
     [JsonProperty("team_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Team_id { get; set; } 
+    public int? TeamId { get; set; } 
 
     [JsonProperty("team_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? Team_guid { get; set; } 
+    public Guid? TeamGuid { get; set; } 
 
     [JsonProperty("team_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Team_name { get; set; } 
+    public string? TeamName { get; set; } 
 
     [JsonProperty("type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Type { get; set; } 
 
     [JsonProperty("type_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Type_name { get; set; } 
+    public string? TypeName { get; set; } 
 
     [JsonProperty("sequence", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Sequence { get; set; } 
@@ -52,49 +52,49 @@ public class ViewLists
     public bool? Showcounts { get; set; } 
 
     [JsonProperty("column_profile_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Column_profile_id { get; set; } 
+    public int? ColumnProfileId { get; set; } 
 
     [JsonProperty("column_profile_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? Column_profile_guid { get; set; } 
+    public Guid? ColumnProfileGuid { get; set; } 
 
     [JsonProperty("filter_profile_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Filter_profile_id { get; set; } 
+    public int? FilterProfileId { get; set; } 
 
     [JsonProperty("filter_profile_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? Filter_profile_guid { get; set; } 
+    public Guid? FilterProfileGuid { get; set; } 
 
     [JsonProperty("lock_view_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Lock_view_type { get; set; } 
+    public int? LockViewType { get; set; } 
 
     [JsonProperty("connectedinstance_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Connectedinstance_id { get; set; } 
+    public int? ConnectedinstanceId { get; set; } 
 
     [JsonProperty("connectedinstance_list_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Connectedinstance_list_id { get; set; } 
+    public int? ConnectedinstanceListId { get; set; } 
 
     [JsonProperty("show_in_team_tree", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Show_in_team_tree { get; set; } 
+    public bool? ShowInTeamTree { get; set; } 
 
     [JsonProperty("show_in_team_tree_team_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Show_in_team_tree_team_id { get; set; } 
+    public int? ShowInTeamTreeTeamId { get; set; } 
 
     [JsonProperty("show_in_team_tree_team_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Show_in_team_tree_team_name { get; set; } 
+    public string? ShowInTeamTreeTeamName { get; set; } 
 
     [JsonProperty("ticket_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Ticket_count { get; set; } 
+    public int? TicketCount { get; set; } 
 
     [JsonProperty("connectedinstance_error", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Connectedinstance_error { get; set; } 
+    public bool? ConnectedinstanceError { get; set; } 
 
     [JsonProperty("column_profile_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Column_profile_name { get; set; } 
+    public string? ColumnProfileName { get; set; } 
 
     [JsonProperty("filter_profile_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Filter_profile_name { get; set; } 
+    public string? FilterProfileName { get; set; } 
 
     [JsonProperty("connectedinstance_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Connectedinstance_name { get; set; } 
+    public string? ConnectedinstanceName { get; set; } 
 
     [JsonProperty("filters", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<ViewFilterDetails>? Filters { get; set; } 
@@ -103,16 +103,16 @@ public class ViewLists
     public int? Group { get; set; } 
 
     [JsonProperty("group_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Group_name { get; set; } 
+    public string? GroupName { get; set; } 
 
     [JsonProperty("group_seq", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Group_seq { get; set; } 
+    public int? GroupSeq { get; set; } 
 
     [JsonProperty("group_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Group_type { get; set; } 
+    public int? GroupType { get; set; } 
 
     [JsonProperty("group_collapsed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Group_collapsed { get; set; } 
+    public bool? GroupCollapsed { get; set; } 
 
     [JsonProperty("translations", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<LanguagePackTranslationsCustom>? Translations { get; set; } 

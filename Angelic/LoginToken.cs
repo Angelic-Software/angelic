@@ -22,21 +22,21 @@ public class LoginToken
     public string? Token { get; set; } 
 
     [JsonProperty("enc_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Enc_id { get; set; } 
+    public int? EncId { get; set; } 
 
     [JsonProperty("token_used", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Token_used { get; set; } 
+    public bool? TokenUsed { get; set; } 
 
     [JsonProperty("used_timestamp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Used_timestamp { get; set; } 
+    public DateTimeOffset? UsedTimestamp { get; set; } 
 
     [JsonProperty("used_userid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Used_userid { get; set; } 
+    public string? UsedUserid { get; set; } 
 
     [JsonProperty("jwt", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Jwt { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

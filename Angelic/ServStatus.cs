@@ -16,13 +16,13 @@ public class ServStatus
     public int? Status { get; set; } 
 
     [JsonProperty("message_internal", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Message_internal { get; set; } 
+    public string? MessageInternal { get; set; } 
 
     [JsonProperty("message_public", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Message_public { get; set; } 
+    public string? MessagePublic { get; set; } 
 
     [JsonProperty("ticket_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Ticket_id { get; set; } 
+    public int? TicketId { get; set; } 
 
     [JsonProperty("who", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Who { get; set; } 
@@ -52,19 +52,19 @@ public class ServStatus
     public int? Totaldowninstances { get; set; } 
 
     [JsonProperty("message_internal_html", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Message_internal_html { get; set; } 
+    public string? MessageInternalHtml { get; set; } 
 
     [JsonProperty("message_public_html", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Message_public_html { get; set; } 
+    public string? MessagePublicHtml { get; set; } 
 
     [JsonProperty("status_ticket_start_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Status_ticket_start_date { get; set; } 
+    public DateTimeOffset? StatusTicketStartDate { get; set; } 
 
     [JsonProperty("status_ticket_end_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Status_ticket_end_date { get; set; } 
+    public DateTimeOffset? StatusTicketEndDate { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
     [JsonProperty("uniqueid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public Guid? Uniqueid { get; set; } 

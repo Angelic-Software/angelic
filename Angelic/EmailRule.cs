@@ -16,10 +16,10 @@ public class EmailRule
     public string? Name { get; set; } 
 
     [JsonProperty("pop3serverid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Pop3serverid { get; set; } 
+    public int? Pop3Serverid { get; set; } 
 
     [JsonProperty("mailbox_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Mailbox_name { get; set; } 
+    public string? MailboxName { get; set; } 
 
     [JsonProperty("subject", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Subject { get; set; } 
@@ -136,10 +136,10 @@ public class EmailRule
     public int? Pagerdutyagent { get; set; } 
 
     [JsonProperty("pagerduty_service", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Pagerduty_service { get; set; } 
+    public string? PagerdutyService { get; set; } 
 
     [JsonProperty("pagerduty_service_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Pagerduty_service_name { get; set; } 
+    public string? PagerdutyServiceName { get; set; } 
 
     [JsonProperty("5starttag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? _5starttag { get; set; } 
@@ -190,27 +190,27 @@ public class EmailRule
     public int? _6endtagmatchtype { get; set; } 
 
     [JsonProperty("always_close_alerts", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Always_close_alerts { get; set; } 
+    public bool? AlwaysCloseAlerts { get; set; } 
 
     [JsonProperty("closed_alerts_read_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Closed_alerts_read_status { get; set; } 
+    public int? ClosedAlertsReadStatus { get; set; } 
 
     [JsonProperty("dontsendacknowledgement", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Dontsendacknowledgement { get; set; } 
 
     [JsonProperty("scan_full_body", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Scan_full_body { get; set; } 
+    public bool? ScanFullBody { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
     [JsonProperty("response_template_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Response_template_id { get; set; } 
+    public int? ResponseTemplateId { get; set; } 
 
     [JsonProperty("response_template_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Response_template_name { get; set; } 
+    public string? ResponseTemplateName { get; set; } 
 
     [JsonProperty("dont_update_from_address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Dont_update_from_address { get; set; } 
+    public bool? DontUpdateFromAddress { get; set; } 
 
 }

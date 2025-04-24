@@ -10,15 +10,15 @@ public class KbEntryAreaAccess
     public int? Id { get; set; } 
 
     [JsonProperty("client_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Client_id { get; set; } 
+    public int? ClientId { get; set; } 
 
     [JsonProperty("client_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Client_name { get; set; } 
+    public string? ClientName { get; set; } 
 
     [JsonProperty("kb_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Kb_id { get; set; } 
+    public int? KbId { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

@@ -10,15 +10,15 @@ public class EcommerceOrderFault
     public int? Id { get; set; } 
 
     [JsonProperty("eo_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Eo_id { get; set; } 
+    public int? EoId { get; set; } 
 
     [JsonProperty("ticket_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Ticket_id { get; set; } 
+    public int? TicketId { get; set; } 
 
     [JsonProperty("third_party_order_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Third_party_order_id { get; set; } 
+    public string? ThirdPartyOrderId { get; set; } 
 
     [JsonProperty("third_party_order_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Third_party_order_url { get; set; } 
+    public string? ThirdPartyOrderUrl { get; set; } 
 
 }

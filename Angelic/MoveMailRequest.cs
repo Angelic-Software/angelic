@@ -7,7 +7,7 @@ namespace Angelic;
 public class MoveMailRequest
 {
     [JsonProperty("mailbox_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Mailbox_id { get; set; } 
+    public int? MailboxId { get; set; } 
 
     [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Id { get; set; } 

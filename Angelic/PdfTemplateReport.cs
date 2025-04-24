@@ -10,18 +10,18 @@ public class PdfTemplateReport
     public int? Id { get; set; } 
 
     [JsonProperty("pdftemplate_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Pdftemplate_id { get; set; } 
+    public int? PdftemplateId { get; set; } 
 
     [JsonProperty("report_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Report_id { get; set; } 
+    public int? ReportId { get; set; } 
 
     [JsonProperty("report_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Report_name { get; set; } 
+    public string? ReportName { get; set; } 
 
     [JsonProperty("report_data", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public AnalyzerProfile? Report_data { get; set; } 
+    public AnalyzerProfile? ReportData { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

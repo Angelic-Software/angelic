@@ -13,16 +13,16 @@ public class Holidays
     public int? Holid { get; set; } 
 
     [JsonProperty("workday_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Workday_id { get; set; } 
+    public int? WorkdayId { get; set; } 
 
     [JsonProperty("workday_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? Workday_guid { get; set; } 
+    public Guid? WorkdayGuid { get; set; } 
 
     [JsonProperty("date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? Date { get; set; } 
 
     [JsonProperty("end_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? End_date { get; set; } 
+    public DateTimeOffset? EndDate { get; set; } 
 
     [JsonProperty("allday", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Allday { get; set; } 
@@ -34,25 +34,25 @@ public class Holidays
     public double? Duration { get; set; } 
 
     [JsonProperty("holiday_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Holiday_type { get; set; } 
+    public int? HolidayType { get; set; } 
 
     [JsonProperty("agent_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Agent_id { get; set; } 
+    public int? AgentId { get; set; } 
 
     [JsonProperty("agent_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Agent_name { get; set; } 
+    public string? AgentName { get; set; } 
 
     [JsonProperty("entity", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Entity { get; set; } 
 
     [JsonProperty("_force", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _force { get; set; } 
+    public bool? Force { get; set; } 
 
     [JsonProperty("date_only", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Date_only { get; set; } 
+    public DateTimeOffset? DateOnly { get; set; } 
 
     [JsonProperty("end_date_only", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? End_date_only { get; set; } 
+    public DateTimeOffset? EndDateOnly { get; set; } 
 
     [JsonProperty("isrecurring", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Isrecurring { get; set; } 
@@ -67,16 +67,16 @@ public class Holidays
     public bool? Createnextappt { get; set; } 
 
     [JsonProperty("approval_start", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Approval_start { get; set; } 
+    public bool? ApprovalStart { get; set; } 
 
     [JsonProperty("approvalnote", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Approvalnote { get; set; } 
 
     [JsonProperty("approval_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Approval_status { get; set; } 
+    public int? ApprovalStatus { get; set; } 
 
     [JsonProperty("_return_appointment", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _return_appointment { get; set; } 
+    public bool? ReturnAppointment { get; set; } 
 
     [JsonProperty("appointmentobj", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public Appointment? Appointmentobj { get; set; } 
@@ -85,9 +85,9 @@ public class Holidays
     public string? Thirdpartyid { get; set; } 
 
     [JsonProperty("date_datetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Date_datetime { get; set; } 
+    public DateTimeOffset? DateDatetime { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

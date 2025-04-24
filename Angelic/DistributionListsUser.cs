@@ -10,21 +10,21 @@ public class DistributionListsUser
     public int? Id { get; set; } 
 
     [JsonProperty("distributionlists_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Distributionlists_id { get; set; } 
+    public int? DistributionlistsId { get; set; } 
 
     [JsonProperty("user_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? User_id { get; set; } 
+    public int? UserId { get; set; } 
 
     [JsonProperty("email", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Email { get; set; } 
 
     [JsonProperty("phone_extn", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Phone_extn { get; set; } 
+    public string? PhoneExtn { get; set; } 
 
     [JsonProperty("phone_mobile", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Phone_mobile { get; set; } 
+    public string? PhoneMobile { get; set; } 
 
     [JsonProperty("phone_mobile2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Phone_mobile2 { get; set; } 
+    public string? PhoneMobile2 { get; set; } 
 
 }

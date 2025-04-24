@@ -19,7 +19,7 @@ public class ReleaseNote
     public bool? Important { get; set; } 
 
     [JsonProperty("group_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Group_id { get; set; } 
+    public int? GroupId { get; set; } 
 
     [JsonProperty("changeinformation", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Changeinformation { get; set; } 

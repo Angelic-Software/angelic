@@ -7,7 +7,7 @@ namespace Angelic;
 public class IncomingEmail
 {
     [JsonProperty("old_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Old_id { get; set; } 
+    public int? OldId { get; set; } 
 
     [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Id { get; set; } 
@@ -67,30 +67,30 @@ public class IncomingEmail
     public int? Status { get; set; } 
 
     [JsonProperty("removed_from_mailbox", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Removed_from_mailbox { get; set; } 
+    public bool? RemovedFromMailbox { get; set; } 
 
     [JsonProperty("retry_remaining", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Retry_remaining { get; set; } 
+    public int? RetryRemaining { get; set; } 
 
     [JsonProperty("last_attempt_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Last_attempt_date { get; set; } 
+    public DateTimeOffset? LastAttemptDate { get; set; } 
 
     [JsonProperty("_checkmailid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _checkmailid { get; set; } 
+    public bool? Checkmailid { get; set; } 
 
     [JsonProperty("_downloadmail", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _downloadmail { get; set; } 
+    public bool? Downloadmail { get; set; } 
 
     [JsonProperty("mailbox", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public Mailbox? Mailbox { get; set; } 
 
     [JsonProperty("mailbox_type_int", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Mailbox_type_int { get; set; } 
+    public int? MailboxTypeInt { get; set; } 
 
     [JsonProperty("outbound", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Outbound { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

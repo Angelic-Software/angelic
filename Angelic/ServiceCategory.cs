@@ -31,43 +31,43 @@ public class ServiceCategory
     public string? Icon { get; set; } 
 
     [JsonProperty("new_icon", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? New_icon { get; set; } 
+    public string? NewIcon { get; set; } 
 
     [JsonProperty("summary", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Summary { get; set; } 
 
     [JsonProperty("parent_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Parent_id { get; set; } 
+    public int? ParentId { get; set; } 
 
     [JsonProperty("parent_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? Parent_guid { get; set; } 
+    public Guid? ParentGuid { get; set; } 
 
     [JsonProperty("parent_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Parent_name { get; set; } 
+    public string? ParentName { get; set; } 
 
     [JsonProperty("grandparent_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Grandparent_name { get; set; } 
+    public string? GrandparentName { get; set; } 
 
     [JsonProperty("long_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Long_name { get; set; } 
+    public string? LongName { get; set; } 
 
     [JsonProperty("service_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Service_count { get; set; } 
+    public int? ServiceCount { get; set; } 
 
     [JsonProperty("user_access", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ServiceRestriction>? User_access { get; set; } 
+    public ICollection<ServiceRestriction>? UserAccess { get; set; } 
 
     [JsonProperty("translations", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<LanguagePackTranslationsCustom>? Translations { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
     [JsonProperty("access_control", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AccessControl>? Access_control { get; set; } 
+    public ICollection<AccessControl>? AccessControl { get; set; } 
 
     [JsonProperty("access_control_level", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Access_control_level { get; set; } 
+    public int? AccessControlLevel { get; set; } 
 
     [JsonProperty("phonenumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Phonenumber { get; set; } 

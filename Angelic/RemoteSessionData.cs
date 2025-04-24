@@ -13,7 +13,7 @@ public class RemoteSessionData
     public string? Thirdpartyid { get; set; } 
 
     [JsonProperty("ticket_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Ticket_id { get; set; } 
+    public int? TicketId { get; set; } 
 
     [JsonProperty("actionnumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Actionnumber { get; set; } 
@@ -97,24 +97,24 @@ public class RemoteSessionData
     public int? Siteid { get; set; } 
 
     [JsonProperty("_override_create_action", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _override_create_action { get; set; } 
+    public bool? OverrideCreateAction { get; set; } 
 
     [JsonProperty("time_taken", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Time_taken { get; set; } 
+    public double? TimeTaken { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
     [JsonProperty("agent_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Agent_url { get; set; } 
+    public string? AgentUrl { get; set; } 
 
     [JsonProperty("new_webhook_password", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? New_webhook_password { get; set; } 
+    public string? NewWebhookPassword { get; set; } 
 
     [JsonProperty("module_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Module_id { get; set; } 
+    public int? ModuleId { get; set; } 
 
     [JsonProperty("recording_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Recording_url { get; set; } 
+    public string? RecordingUrl { get; set; } 
 
 }

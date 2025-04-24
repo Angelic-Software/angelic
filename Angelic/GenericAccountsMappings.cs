@@ -16,51 +16,51 @@ public class GenericAccountsMappings
     public string? Tenantid { get; set; } 
 
     [JsonProperty("tenant_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Tenant_name { get; set; } 
+    public string? TenantName { get; set; } 
 
     [JsonProperty("nominalcode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Nominalcode { get; set; } 
 
     [JsonProperty("nominalcode_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Nominalcode_name { get; set; } 
+    public string? NominalcodeName { get; set; } 
 
     [JsonProperty("nominalcode_purchase", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Nominalcode_purchase { get; set; } 
+    public string? NominalcodePurchase { get; set; } 
 
     [JsonProperty("nominalcode_name_purchase", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Nominalcode_name_purchase { get; set; } 
+    public string? NominalcodeNamePurchase { get; set; } 
 
     [JsonProperty("itemcode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Itemcode { get; set; } 
 
     [JsonProperty("itemcode_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Itemcode_name { get; set; } 
+    public string? ItemcodeName { get; set; } 
 
     [JsonProperty("taxcode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Taxcode { get; set; } 
 
     [JsonProperty("tax_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Tax_name { get; set; } 
+    public string? TaxName { get; set; } 
 
     [JsonProperty("taxcode_purchase", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Taxcode_purchase { get; set; } 
+    public int? TaxcodePurchase { get; set; } 
 
     [JsonProperty("tax_name_purchase", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Tax_name_purchase { get; set; } 
+    public string? TaxNamePurchase { get; set; } 
 
     [JsonProperty("xero_category_1_lookup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Xero_category_1_lookup { get; set; } 
+    public string? XeroCategory1Lookup { get; set; } 
 
     [JsonProperty("xero_category_2_lookup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Xero_category_2_lookup { get; set; } 
+    public string? XeroCategory2Lookup { get; set; } 
 
     [JsonProperty("xero_category_1_lookup_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Xero_category_1_lookup_name { get; set; } 
+    public string? XeroCategory1LookupName { get; set; } 
 
     [JsonProperty("xero_category_2_lookup_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Xero_category_2_lookup_name { get; set; } 
+    public string? XeroCategory2LookupName { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

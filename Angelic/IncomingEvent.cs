@@ -10,7 +10,7 @@ public class IncomingEvent
     public int? Id { get; set; } 
 
     [JsonProperty("rule_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Rule_id { get; set; } 
+    public int? RuleId { get; set; } 
 
     [JsonProperty("timestamp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? Timestamp { get; set; } 
@@ -40,39 +40,39 @@ public class IncomingEvent
     public bool? Error { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
     [JsonProperty("deletion_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Deletion_date { get; set; } 
+    public DateTimeOffset? DeletionDate { get; set; } 
 
     [JsonProperty("output_variables", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<OutboundIntegrationMethodValue>? Output_variables { get; set; } 
+    public ICollection<OutboundIntegrationMethodValue>? OutputVariables { get; set; } 
 
     [JsonProperty("_retry", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _retry { get; set; } 
+    public bool? Retry { get; set; } 
 
     [JsonProperty("_apply_this_rule", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? _apply_this_rule { get; set; } 
+    public int? ApplyThisRule { get; set; } 
 
     [JsonProperty("_is_link", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _is_link { get; set; } 
+    public bool? IsLink { get; set; } 
 
     [JsonProperty("rule_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Rule_name { get; set; } 
+    public string? RuleName { get; set; } 
 
     [JsonProperty("entity_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Entity_id { get; set; } 
+    public int? EntityId { get; set; } 
 
     [JsonProperty("thirdparty_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Thirdparty_id { get; set; } 
+    public string? ThirdpartyId { get; set; } 
 
     [JsonProperty("status_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Status_name { get; set; } 
+    public string? StatusName { get; set; } 
 
     [JsonProperty("responsetype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Responsetype { get; set; } 
 
     [JsonProperty("response_desc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Response_desc { get; set; } 
+    public string? ResponseDesc { get; set; } 
 
 }

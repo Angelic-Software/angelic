@@ -10,37 +10,37 @@ public class ReportContent
     public bool? Loaded { get; set; } 
 
     [JsonProperty("load_error", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Load_error { get; set; } 
+    public string? LoadError { get; set; } 
 
     [JsonProperty("rows", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<IDictionary<string, object>>? Rows { get; set; } 
 
     [JsonProperty("chart_labels", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<object>? Chart_labels { get; set; } 
+    public ICollection<object>? ChartLabels { get; set; } 
 
     [JsonProperty("chart_dataset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<object>? Chart_dataset { get; set; } 
+    public ICollection<object>? ChartDataset { get; set; } 
 
     [JsonProperty("chart_dataset1", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<object>? Chart_dataset1 { get; set; } 
+    public ICollection<object>? ChartDataset1 { get; set; } 
 
     [JsonProperty("chart_dataset2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<object>? Chart_dataset2 { get; set; } 
+    public ICollection<object>? ChartDataset2 { get; set; } 
 
     [JsonProperty("chart_dataset3", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<object>? Chart_dataset3 { get; set; } 
+    public ICollection<object>? ChartDataset3 { get; set; } 
 
     [JsonProperty("chart_dataset4", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<object>? Chart_dataset4 { get; set; } 
+    public ICollection<object>? ChartDataset4 { get; set; } 
 
     [JsonProperty("chart_dataset5", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<object>? Chart_dataset5 { get; set; } 
+    public ICollection<object>? ChartDataset5 { get; set; } 
 
     [JsonProperty("base_link", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Base_link { get; set; } 
+    public string? BaseLink { get; set; } 
 
     [JsonProperty("table_html", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Table_html { get; set; } 
+    public string? TableHtml { get; set; } 
 
     [JsonProperty("datasets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public IDictionary<string, ICollection<object>?>? Datasets { get; set; } 

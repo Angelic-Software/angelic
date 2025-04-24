@@ -13,15 +13,15 @@ public class Tag
     public string? Text { get; set; } 
 
     [JsonProperty("add_to_kbid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Add_to_kbid { get; set; } 
+    public int? AddToKbid { get; set; } 
 
     [JsonProperty("add_to_ctid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Add_to_ctid { get; set; } 
+    public int? AddToCtid { get; set; } 
 
     [JsonProperty("add_to_stid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Add_to_stid { get; set; } 
+    public int? AddToStid { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

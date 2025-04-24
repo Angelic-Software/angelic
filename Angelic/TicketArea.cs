@@ -23,43 +23,43 @@ public class TicketArea
     public int? Sequence { get; set; } 
 
     [JsonProperty("entity_singular", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Entity_singular { get; set; } 
+    public string? EntitySingular { get; set; } 
 
     [JsonProperty("entity_plural", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Entity_plural { get; set; } 
+    public string? EntityPlural { get; set; } 
 
     [JsonProperty("icon", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Icon { get; set; } 
 
     [JsonProperty("default_filter_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Default_filter_id { get; set; } 
+    public int? DefaultFilterId { get; set; } 
 
     [JsonProperty("default_filter_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Default_filter_name { get; set; } 
+    public string? DefaultFilterName { get; set; } 
 
     [JsonProperty("default_view", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Default_view { get; set; } 
+    public string? DefaultView { get; set; } 
 
     [JsonProperty("default_view_selectedid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Default_view_selectedid { get; set; } 
+    public int? DefaultViewSelectedid { get; set; } 
 
     [JsonProperty("default_view_selectedname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Default_view_selectedname { get; set; } 
+    public string? DefaultViewSelectedname { get; set; } 
 
     [JsonProperty("default_columns_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Default_columns_id { get; set; } 
+    public int? DefaultColumnsId { get; set; } 
 
     [JsonProperty("default_ticket_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Default_ticket_type { get; set; } 
+    public int? DefaultTicketType { get; set; } 
 
     [JsonProperty("default_itil_ticket_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Default_itil_ticket_type { get; set; } 
+    public int? DefaultItilTicketType { get; set; } 
 
     [JsonProperty("default_template_group_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Default_template_group_id { get; set; } 
+    public int? DefaultTemplateGroupId { get; set; } 
 
     [JsonProperty("default_columns_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Default_columns_name { get; set; } 
+    public string? DefaultColumnsName { get; set; } 
 
     [JsonProperty("selectservice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Selectservice { get; set; } 
@@ -74,27 +74,27 @@ public class TicketArea
     public ICollection<ViewFilterDetails>? Filters { get; set; } 
 
     [JsonProperty("team_restrictions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AreaSectionDetail>? Team_restrictions { get; set; } 
+    public ICollection<AreaSectionDetail>? TeamRestrictions { get; set; } 
 
     [JsonProperty("area_use", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Area_use { get; set; } 
+    public int? AreaUse { get; set; } 
 
     [JsonProperty("area_use_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Area_use_name { get; set; } 
+    public string? AreaUseName { get; set; } 
 
     [JsonProperty("shownewticketbutton", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Shownewticketbutton { get; set; } 
 
     [JsonProperty("allow_ticket_type_selection", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Allow_ticket_type_selection { get; set; } 
+    public int? AllowTicketTypeSelection { get; set; } 
 
     [JsonProperty("kanbanstatuschoice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<StringIdNameKeyPair>? Kanbanstatuschoice { get; set; } 
 
     [JsonProperty("kanbanstatuschoice_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Kanbanstatuschoice_list { get; set; } 
+    public string? KanbanstatuschoiceList { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

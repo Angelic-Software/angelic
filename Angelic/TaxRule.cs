@@ -19,12 +19,12 @@ public class TaxRule
     public int? Sequence { get; set; } 
 
     [JsonProperty("tax_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Tax_name { get; set; } 
+    public string? TaxName { get; set; } 
 
     [JsonProperty("tax_conditions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<TaxRuleConditions>? Tax_conditions { get; set; } 
+    public ICollection<TaxRuleConditions>? TaxConditions { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

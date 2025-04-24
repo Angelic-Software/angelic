@@ -37,7 +37,7 @@ public class ConsignmentHeader
     public ICollection<ConsignmentDetail>? Lines { get; set; } 
 
     [JsonProperty("assets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<Device_List>? Assets { get; set; } 
+    public ICollection<DeviceList>? Assets { get; set; } 
 
     [JsonProperty("_print_generate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? PrintGenerate { get; set; } 

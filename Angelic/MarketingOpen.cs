@@ -10,19 +10,19 @@ public class MarketingOpen
     public int? Id { get; set; } 
 
     [JsonProperty("mailcampaign_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Mailcampaign_id { get; set; } 
+    public int? MailcampaignId { get; set; } 
 
     [JsonProperty("user_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? User_id { get; set; } 
+    public int? UserId { get; set; } 
 
     [JsonProperty("email_address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Email_address { get; set; } 
+    public string? EmailAddress { get; set; } 
 
     [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Url { get; set; } 
 
     [JsonProperty("email_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Email_id { get; set; } 
+    public int? EmailId { get; set; } 
 
     [JsonProperty("type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Type { get; set; } 
@@ -31,13 +31,13 @@ public class MarketingOpen
     public DateTimeOffset? Date { get; set; } 
 
     [JsonProperty("user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? User_name { get; set; } 
+    public string? UserName { get; set; } 
 
     [JsonProperty("mailcampaign_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Mailcampaign_name { get; set; } 
+    public string? MailcampaignName { get; set; } 
 
     [JsonProperty("email_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Email_name { get; set; } 
+    public string? EmailName { get; set; } 
 
     [JsonProperty("token", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Token { get; set; } 

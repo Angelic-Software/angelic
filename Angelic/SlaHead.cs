@@ -22,10 +22,10 @@ public class SlaHead
     public bool? Hoursaretechslocaltime { get; set; } 
 
     [JsonProperty("workday_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Workday_id { get; set; } 
+    public int? WorkdayId { get; set; } 
 
     [JsonProperty("workday_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? Workday_guid { get; set; } 
+    public Guid? WorkdayGuid { get; set; } 
 
     [JsonProperty("responsereset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Responsereset { get; set; } 
@@ -40,7 +40,7 @@ public class SlaHead
     public ICollection<Policy>? Priorities { get; set; } 
 
     [JsonProperty("response_reset_approval", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Response_reset_approval { get; set; } 
+    public bool? ResponseResetApproval { get; set; } 
 
     [JsonProperty("autoreleaselimit", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Autoreleaselimit { get; set; } 
@@ -61,21 +61,21 @@ public class SlaHead
     public int? Slstatusaftersecondwarning { get; set; } 
 
     [JsonProperty("workday_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Workday_name { get; set; } 
+    public string? WorkdayName { get; set; } 
 
     [JsonProperty("dontsendholdreminders", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Dontsendholdreminders { get; set; } 
 
     [JsonProperty("statusafterautorelease_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Statusafterautorelease_name { get; set; } 
+    public string? StatusafterautoreleaseName { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
     [JsonProperty("access_control", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AccessControl>? Access_control { get; set; } 
+    public ICollection<AccessControl>? AccessControl { get; set; } 
 
     [JsonProperty("access_control_level", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Access_control_level { get; set; } 
+    public int? AccessControlLevel { get; set; } 
 
 }

@@ -13,12 +13,12 @@ public class StockBin
     public string? Name { get; set; } 
 
     [JsonProperty("site_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Site_id { get; set; } 
+    public int? SiteId { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
     [JsonProperty("dont_add_to_order", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Dont_add_to_order { get; set; } 
+    public bool? DontAddToOrder { get; set; } 
 
 }

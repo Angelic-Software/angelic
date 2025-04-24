@@ -32,22 +32,22 @@ public class SectionDetail
     public bool? Forprojects { get; set; } 
 
     [JsonProperty("ticket_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Ticket_count { get; set; } 
+    public int? TicketCount { get; set; } 
 
     [JsonProperty("department_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Department_id { get; set; } 
+    public int? DepartmentId { get; set; } 
 
     [JsonProperty("department_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Department_name { get; set; } 
+    public string? DepartmentName { get; set; } 
 
     [JsonProperty("org_team_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Org_team_name { get; set; } 
+    public string? OrgTeamName { get; set; } 
 
     [JsonProperty("inactive", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Inactive { get; set; } 
 
     [JsonProperty("override_column_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Override_column_id { get; set; } 
+    public int? OverrideColumnId { get; set; } 
 
     [JsonProperty("managers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<Manager>? Managers { get; set; } 
@@ -56,19 +56,19 @@ public class SectionDetail
     public string? Teamphotopath { get; set; } 
 
     [JsonProperty("last_modified", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Last_modified { get; set; } 
+    public DateTimeOffset? LastModified { get; set; } 
 
     [JsonProperty("hide_agents_in_tree_if_no_tickets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Hide_agents_in_tree_if_no_tickets { get; set; } 
+    public bool? HideAgentsInTreeIfNoTickets { get; set; } 
 
     [JsonProperty("timesheet_approver", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Timesheet_approver { get; set; } 
+    public int? TimesheetApprover { get; set; } 
 
     [JsonProperty("timesheet_approver_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Timesheet_approver_name { get; set; } 
+    public string? TimesheetApproverName { get; set; } 
 
     [JsonProperty("concurrent_lic_limit", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Concurrent_lic_limit { get; set; } 
+    public int? ConcurrentLicLimit { get; set; } 
 
     [JsonProperty("workinghoursbeforealert", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? Workinghoursbeforealert { get; set; } 
@@ -86,73 +86,73 @@ public class SectionDetail
     public int? Rtid { get; set; } 
 
     [JsonProperty("mailbox_override", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Mailbox_override { get; set; } 
+    public int? MailboxOverride { get; set; } 
 
     [JsonProperty("agents", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<AgentSection>? Agents { get; set; } 
 
     [JsonProperty("organisation_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Organisation_id { get; set; } 
+    public int? OrganisationId { get; set; } 
 
     [JsonProperty("cannedtext", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<CannedText>? Cannedtext { get; set; } 
 
     [JsonProperty("templates", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<StdRequest_List>? Templates { get; set; } 
+    public ICollection<StdRequestList>? Templates { get; set; } 
 
     [JsonProperty("allowall_category1", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Allowall_category1 { get; set; } 
+    public bool? AllowallCategory1 { get; set; } 
 
     [JsonProperty("allowed_category1", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CategoryRestriction>? Allowed_category1 { get; set; } 
+    public ICollection<CategoryRestriction>? AllowedCategory1 { get; set; } 
 
     [JsonProperty("allowall_category2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Allowall_category2 { get; set; } 
+    public bool? AllowallCategory2 { get; set; } 
 
     [JsonProperty("allowed_category2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CategoryRestriction>? Allowed_category2 { get; set; } 
+    public ICollection<CategoryRestriction>? AllowedCategory2 { get; set; } 
 
     [JsonProperty("allowall_category3", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Allowall_category3 { get; set; } 
+    public bool? AllowallCategory3 { get; set; } 
 
     [JsonProperty("allowed_category3", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CategoryRestriction>? Allowed_category3 { get; set; } 
+    public ICollection<CategoryRestriction>? AllowedCategory3 { get; set; } 
 
     [JsonProperty("allowall_category4", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Allowall_category4 { get; set; } 
+    public bool? AllowallCategory4 { get; set; } 
 
     [JsonProperty("includeinloadbalance", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Includeinloadbalance { get; set; } 
 
     [JsonProperty("allowed_category4", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CategoryRestriction>? Allowed_category4 { get; set; } 
+    public ICollection<CategoryRestriction>? AllowedCategory4 { get; set; } 
 
     [JsonProperty("override_column_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Override_column_name { get; set; } 
+    public string? OverrideColumnName { get; set; } 
 
     [JsonProperty("messagegroup_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Messagegroup_id { get; set; } 
+    public int? MessagegroupId { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
     [JsonProperty("_canupdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _canupdate { get; set; } 
+    public bool? Canupdate { get; set; } 
 
     [JsonProperty("_canupdate2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _canupdate2 { get; set; } 
+    public bool? Canupdate2 { get; set; } 
 
     [JsonProperty("main_email_address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Main_email_address { get; set; } 
+    public string? MainEmailAddress { get; set; } 
 
     [JsonProperty("phone_number", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Phone_number { get; set; } 
+    public string? PhoneNumber { get; set; } 
 
     [JsonProperty("timezone", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Timezone { get; set; } 
 
     [JsonProperty("alternative_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Alternative_name { get; set; } 
+    public string? AlternativeName { get; set; } 
 
     [JsonProperty("logo", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Logo { get; set; } 
@@ -161,28 +161,28 @@ public class SectionDetail
     public bool? Dontsendsurvey { get; set; } 
 
     [JsonProperty("team_note", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Team_note { get; set; } 
+    public string? TeamNote { get; set; } 
 
     [JsonProperty("booking_workday_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Booking_workday_id { get; set; } 
+    public int? BookingWorkdayId { get; set; } 
 
     [JsonProperty("booking_workday_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Booking_workday_name { get; set; } 
+    public string? BookingWorkdayName { get; set; } 
 
     [JsonProperty("recurring_shifts", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<Appointment_List>? Recurring_shifts { get; set; } 
+    public ICollection<Appointment_List>? RecurringShifts { get; set; } 
 
     [JsonProperty("third_party_migration_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Third_party_migration_id { get; set; } 
+    public string? ThirdPartyMigrationId { get; set; } 
 
     [JsonProperty("enable_teams_shifts", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Enable_teams_shifts { get; set; } 
+    public bool? EnableTeamsShifts { get; set; } 
 
     [JsonProperty("use", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Use { get; set; } 
 
     [JsonProperty("department_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? Department_guid { get; set; } 
+    public Guid? DepartmentGuid { get; set; } 
 
     [JsonProperty("homescreendashboardid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Homescreendashboardid { get; set; } 

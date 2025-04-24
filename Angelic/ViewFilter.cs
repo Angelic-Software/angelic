@@ -19,36 +19,36 @@ public class ViewFilter
     public string? Name { get; set; } 
 
     [JsonProperty("agent_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Agent_id { get; set; } 
+    public int? AgentId { get; set; } 
 
     [JsonProperty("agent_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Agent_name { get; set; } 
+    public string? AgentName { get; set; } 
 
     [JsonProperty("team_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Team_id { get; set; } 
+    public int? TeamId { get; set; } 
 
     [JsonProperty("team_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Team_name { get; set; } 
+    public string? TeamName { get; set; } 
 
     [JsonProperty("type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Type { get; set; } 
 
     [JsonProperty("type_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Type_name { get; set; } 
+    public string? TypeName { get; set; } 
 
     [JsonProperty("sys_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Sys_id { get; set; } 
+    public string? SysId { get; set; } 
 
     [JsonProperty("filters", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<ViewFilterDetails>? Filters { get; set; } 
 
     [JsonProperty("_temp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _temp { get; set; } 
+    public bool? Temp { get; set; } 
 
     [JsonProperty("restriction_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Restriction_type { get; set; } 
+    public int? RestrictionType { get; set; } 
 
     [JsonProperty("team_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? Team_guid { get; set; } 
+    public Guid? TeamGuid { get; set; } 
 
 }

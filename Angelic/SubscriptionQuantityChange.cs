@@ -7,12 +7,12 @@ namespace Angelic;
 public class SubscriptionQuantityChange
 {
     [JsonProperty("licence_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Licence_id { get; set; } 
+    public int? LicenceId { get; set; } 
 
     [JsonProperty("current_quantity", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Current_quantity { get; set; } 
+    public int? CurrentQuantity { get; set; } 
 
     [JsonProperty("new_quantity", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? New_quantity { get; set; } 
+    public int? NewQuantity { get; set; } 
 
 }

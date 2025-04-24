@@ -35,52 +35,52 @@ public class Widget
     public int? Type { get; set; } 
 
     [JsonProperty("report_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Report_id { get; set; } 
+    public int? ReportId { get; set; } 
 
     [JsonProperty("counter_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Counter_type { get; set; } 
+    public int? CounterType { get; set; } 
 
     [JsonProperty("count_format_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Count_format_type { get; set; } 
+    public int? CountFormatType { get; set; } 
 
     [JsonProperty("column_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     [System.ComponentModel.DataAnnotations.StringLength(255)]
-    public string? Column_name { get; set; } 
+    public string? ColumnName { get; set; } 
 
     [JsonProperty("ticketarea_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Ticketarea_id { get; set; } 
+    public int? TicketareaId { get; set; } 
 
     [JsonProperty("view_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? View_type { get; set; } 
+    public string? ViewType { get; set; } 
 
     [JsonProperty("filter_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Filter_id { get; set; } 
+    public int? FilterId { get; set; } 
 
     [JsonProperty("tree_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Tree_id { get; set; } 
+    public int? TreeId { get; set; } 
 
     [JsonProperty("tree_id2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Tree_id2 { get; set; } 
+    public int? TreeId2 { get; set; } 
 
     [JsonProperty("columns_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Columns_id { get; set; } 
+    public int? ColumnsId { get; set; } 
 
     [JsonProperty("page_size", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Page_size { get; set; } 
+    public int? PageSize { get; set; } 
 
     [JsonProperty("custom_html", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     [System.ComponentModel.DataAnnotations.StringLength(10000)]
-    public string? Custom_html { get; set; } 
+    public string? CustomHtml { get; set; } 
 
     [JsonProperty("custom_html_translated", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Custom_html_translated { get; set; } 
+    public string? CustomHtmlTranslated { get; set; } 
 
     [JsonProperty("style", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Style { get; set; } 
 
     [JsonProperty("custom_css", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     [System.ComponentModel.DataAnnotations.StringLength(4000)]
-    public string? Custom_css { get; set; } 
+    public string? CustomCss { get; set; } 
 
     [JsonProperty("initialcolour", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Initialcolour { get; set; } 
@@ -95,37 +95,37 @@ public class Widget
     public int? Colourchangerule { get; set; } 
 
     [JsonProperty("override_drilldown_report_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Override_drilldown_report_id { get; set; } 
+    public int? OverrideDrilldownReportId { get; set; } 
 
     [JsonProperty("default_currency_symbol", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Default_currency_symbol { get; set; } 
+    public string? DefaultCurrencySymbol { get; set; } 
 
     [JsonProperty("relation", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Relation { get; set; } 
 
     [JsonProperty("field_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Field_id { get; set; } 
+    public int? FieldId { get; set; } 
 
     [JsonProperty("outcome_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Outcome_id { get; set; } 
+    public int? OutcomeId { get; set; } 
 
     [JsonProperty("field_columns", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Field_columns { get; set; } 
+    public int? FieldColumns { get; set; } 
 
     [JsonProperty("mode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Mode { get; set; } 
 
     [JsonProperty("actions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<TOutcome>? Actions { get; set; } 
+    public ICollection<Outcome>? Actions { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
     [JsonProperty("open_report_in_new_tab", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Open_report_in_new_tab { get; set; } 
+    public bool? OpenReportInNewTab { get; set; } 
 
     [JsonProperty("display_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Display_type { get; set; } 
+    public int? DisplayType { get; set; } 
 
     [JsonProperty("charttype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Charttype { get; set; } 
@@ -167,16 +167,16 @@ public class Widget
     public bool? Averageaspercentage { get; set; } 
 
     [JsonProperty("show_top_only", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Show_top_only { get; set; } 
+    public bool? ShowTopOnly { get; set; } 
 
     [JsonProperty("top_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Top_count { get; set; } 
+    public int? TopCount { get; set; } 
 
     [JsonProperty("show_trendline", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Show_trendline { get; set; } 
+    public bool? ShowTrendline { get; set; } 
 
     [JsonProperty("show_datavalues", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Show_datavalues { get; set; } 
+    public bool? ShowDatavalues { get; set; } 
 
     [JsonProperty("stackbars", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Stackbars { get; set; } 
@@ -185,7 +185,7 @@ public class Widget
     public string? Colourpallette { get; set; } 
 
     [JsonProperty("chart_comparison", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Chart_comparison { get; set; } 
+    public int? ChartComparison { get; set; } 
 
     [JsonProperty("autosize", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Autosize { get; set; } 

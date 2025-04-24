@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Ticket;
 using Newtonsoft.Json;
 
 namespace Angelic.Actions;
@@ -70,7 +71,7 @@ namespace Angelic.Actions;
         public int? CreatedFromActionId { get; set; }
 
         [JsonProperty("action_contract_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Action_Contract_Id { get; set; }
+        public int? ActionContractId { get; set; }
 
         [JsonProperty("action_contract_ref", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? ActionContractRef { get; set; }
@@ -133,7 +134,7 @@ namespace Angelic.Actions;
         public string? TicketGuid { get; set; }
 
         [JsonProperty("instagram_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Instagram_Id { get; set; }
+        public string? InstagramId { get; set; }
 
         [JsonProperty("instagram_sent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? InstagramSent { get; set; }
@@ -739,7 +740,7 @@ namespace Angelic.Actions;
         public bool? CanUpdate { get; set; }
 
         [JsonProperty("assets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<Device_List>? Assets { get; set; }
+        public ICollection<DeviceList>? Assets { get; set; }
 
         [JsonProperty("dont_do_rules", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? DontDoRules { get; set; }
@@ -949,10 +950,10 @@ namespace Angelic.Actions;
         public ICollection<Tag>? NewTags { get; set; }
 
         [JsonProperty("new_faqlists", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<FAQListHead>? NewFaqLists { get; set; }
+        public ICollection<FaqListHead>? NewFaqLists { get; set; }
 
         [JsonProperty("new_related_articles", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<KBEntry_List>? NewRelatedArticles { get; set; }
+        public ICollection<KbEntryList>? NewRelatedArticles { get; set; }
 
         [JsonProperty("ignoredatedoneisstartdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IgnoreDateDoneIsStartDate { get; set; }
@@ -973,7 +974,7 @@ namespace Angelic.Actions;
         public string? SentinelClassificationReason { get; set; }
 
         [JsonProperty("g2aremote_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? G2aRemoteId { get; set; }
+        public string? G2ARemoteId { get; set; }
 
         [JsonProperty("dontcreatechild", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? DontCreateChild { get; set; }
@@ -1024,10 +1025,10 @@ namespace Angelic.Actions;
         public bool? DattoRmmClose { get; set; }
 
         [JsonProperty("external_links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ExternalLink_List>? ExternalLinks { get; set; }
+        public ICollection<ExternalLinkList>? ExternalLinks { get; set; }
 
         [JsonProperty("new_external_link", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ExternalLink_List? NewExternalLink { get; set; }
+        public ExternalLinkList? NewExternalLink { get; set; }
 
         [JsonProperty("_match_thirdparty_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? MatchThirdPartyId { get; set; }
@@ -1063,7 +1064,7 @@ namespace Angelic.Actions;
         public int? NewServiceId { get; set; }
 
         [JsonProperty("new_asset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public Device? NewAsset { get; set; }
+        public Asset? NewAsset { get; set; }
 
         [JsonProperty("contract_date_override", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public DateTimeOffset? ContractDateOverride { get; set; }
@@ -1084,7 +1085,7 @@ namespace Angelic.Actions;
         public ICollection<UsersList>? FollowersUser { get; set; }
 
         [JsonProperty("new_items_issued", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<FaultItem>? NewItemsIssued { get; set; }
+        public ICollection<TicketItem>? NewItemsIssued { get; set; }
 
         [JsonProperty("purchaseordernumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? PurchaseOrderNumber { get; set; }
@@ -1153,7 +1154,7 @@ namespace Angelic.Actions;
         public int? NewThirdPartyReviewScore { get; set; }
 
         [JsonProperty("new_additional_agents", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<FaultAdditionalAgents>? NewAdditionalAgents { get; set; }
+        public ICollection<TicketAdditionalAgents>? NewAdditionalAgents { get; set; }
 
         [JsonProperty("instagramid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? InstagramId { get; set; }

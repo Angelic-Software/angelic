@@ -13,7 +13,7 @@ public class ModuleSetup
     public string? Intent { get; set; } 
 
     [JsonProperty("module_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Module_name { get; set; } 
+    public string? ModuleName { get; set; } 
 
     [JsonProperty("enabled", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Enabled { get; set; } 
@@ -31,15 +31,15 @@ public class ModuleSetup
     public bool? Halointegratorenabled { get; set; } 
 
     [JsonProperty("halointegrator_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Halointegrator_lastsync { get; set; } 
+    public DateTimeOffset? HalointegratorLastsync { get; set; } 
 
     [JsonProperty("halointegrator_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Halointegrator_lasterror { get; set; } 
+    public string? HalointegratorLasterror { get; set; } 
 
     [JsonProperty("actual_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Actual_name { get; set; } 
+    public string? ActualName { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

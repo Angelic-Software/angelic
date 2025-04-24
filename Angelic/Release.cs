@@ -13,22 +13,22 @@ public class Release
     public string? Name { get; set; } 
 
     [JsonProperty("name_expanded", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Name_expanded { get; set; } 
+    public string? NameExpanded { get; set; } 
 
     [JsonProperty("releasetype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Releasetype_id { get; set; } 
+    public int? ReleasetypeId { get; set; } 
 
     [JsonProperty("releasetype_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Releasetype_name { get; set; } 
+    public string? ReleasetypeName { get; set; } 
 
     [JsonProperty("branch_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Branch_id { get; set; } 
+    public int? BranchId { get; set; } 
 
     [JsonProperty("branch_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Branch_name { get; set; } 
+    public string? BranchName { get; set; } 
 
     [JsonProperty("whoreleased_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Whoreleased_id { get; set; } 
+    public int? WhoreleasedId { get; set; } 
 
     [JsonProperty("builddate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? Builddate { get; set; } 
@@ -40,87 +40,87 @@ public class Release
     public string? Note { get; set; } 
 
     [JsonProperty("public_note", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Public_note { get; set; } 
+    public string? PublicNote { get; set; } 
 
     [JsonProperty("product_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Product_id { get; set; } 
+    public int? ProductId { get; set; } 
 
     [JsonProperty("product_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Product_name { get; set; } 
+    public string? ProductName { get; set; } 
 
     [JsonProperty("product_icon", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Product_icon { get; set; } 
+    public string? ProductIcon { get; set; } 
 
     [JsonProperty("sequence", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Sequence { get; set; } 
 
     [JsonProperty("major_version_number", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Major_version_number { get; set; } 
+    public int? MajorVersionNumber { get; set; } 
 
     [JsonProperty("minor_version_number", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Minor_version_number { get; set; } 
+    public int? MinorVersionNumber { get; set; } 
 
     [JsonProperty("patch_version_number", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Patch_version_number { get; set; } 
+    public int? PatchVersionNumber { get; set; } 
 
     [JsonProperty("releasenote_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Releasenote_count { get; set; } 
+    public int? ReleasenoteCount { get; set; } 
 
     [JsonProperty("release1_emaildate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Release1_emaildate { get; set; } 
+    public DateTimeOffset? Release1Emaildate { get; set; } 
 
     [JsonProperty("release2_emaildate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Release2_emaildate { get; set; } 
+    public DateTimeOffset? Release2Emaildate { get; set; } 
 
     [JsonProperty("release3_emaildate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Release3_emaildate { get; set; } 
+    public DateTimeOffset? Release3Emaildate { get; set; } 
 
     [JsonProperty("send_release1_email", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Send_release1_email { get; set; } 
+    public bool? SendRelease1Email { get; set; } 
 
     [JsonProperty("send_release2_email", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Send_release2_email { get; set; } 
+    public bool? SendRelease2Email { get; set; } 
 
     [JsonProperty("send_release3_email", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Send_release3_email { get; set; } 
+    public bool? SendRelease3Email { get; set; } 
 
     [JsonProperty("preview_release_email", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Preview_release_email { get; set; } 
+    public bool? PreviewReleaseEmail { get; set; } 
 
     [JsonProperty("release_email_subject", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Release_email_subject { get; set; } 
+    public string? ReleaseEmailSubject { get; set; } 
 
     [JsonProperty("release_email_html", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Release_email_html { get; set; } 
+    public string? ReleaseEmailHtml { get; set; } 
 
     [JsonProperty("release_email_tickets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<int>? Release_email_tickets { get; set; } 
+    public ICollection<int>? ReleaseEmailTickets { get; set; } 
 
     [JsonProperty("releasetype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ReleaseType? Releasetype { get; set; } 
 
     [JsonProperty("instance_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Instance_count { get; set; } 
+    public int? InstanceCount { get; set; } 
 
     [JsonProperty("total_instance_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Total_instance_count { get; set; } 
+    public int? TotalInstanceCount { get; set; } 
 
     [JsonProperty("adoption", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? Adoption { get; set; } 
 
     [JsonProperty("issues_logged", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Issues_logged { get; set; } 
+    public int? IssuesLogged { get; set; } 
 
     [JsonProperty("open_issues", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Open_issues { get; set; } 
+    public int? OpenIssues { get; set; } 
 
     [JsonProperty("licences", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<LicenceInfo>? Licences { get; set; } 
 
     [JsonProperty("jira_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Jira_name { get; set; } 
+    public string? JiraName { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

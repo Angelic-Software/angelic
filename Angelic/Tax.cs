@@ -20,31 +20,31 @@ public class Tax
     public double? Value { get; set; } 
 
     [JsonProperty("thirdparty_tax_rates", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ValueLabelIsNewKeyPair>? Thirdparty_tax_rates { get; set; } 
+    public ICollection<ValueLabelIsNewKeyPair>? ThirdpartyTaxRates { get; set; } 
 
     [JsonProperty("xero_tenant_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Xero_tenant_id { get; set; } 
+    public string? XeroTenantId { get; set; } 
 
     [JsonProperty("xero_tenant_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Xero_tenant_name { get; set; } 
+    public string? XeroTenantName { get; set; } 
 
     [JsonProperty("third_party_desc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Third_party_desc { get; set; } 
+    public string? ThirdPartyDesc { get; set; } 
 
     [JsonProperty("is_composite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Is_composite { get; set; } 
+    public bool? IsComposite { get; set; } 
 
     [JsonProperty("linked_rates", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<Tax>? Linked_rates { get; set; } 
+    public ICollection<Tax>? LinkedRates { get; set; } 
 
     [JsonProperty("xerotaxrate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ValueLabelIsNewKeyPair? Xerotaxrate { get; set; } 
 
     [JsonProperty("kashflow_tenant_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Kashflow_tenant_id { get; set; } 
+    public int? KashflowTenantId { get; set; } 
 
     [JsonProperty("kashflow_tenant_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Kashflow_tenant_name { get; set; } 
+    public string? KashflowTenantName { get; set; } 
 
     [JsonProperty("kashflowtaxrate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ValueLabelIsNewKeyPair? Kashflowtaxrate { get; set; } 
@@ -56,34 +56,34 @@ public class Tax
     public string? Qbocode { get; set; } 
 
     [JsonProperty("qbocode_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Qbocode_name { get; set; } 
+    public string? QbocodeName { get; set; } 
 
     [JsonProperty("qbotaxcode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ValueLabelIsNewKeyPair? Qbotaxcode { get; set; } 
 
     [JsonProperty("qbo_company_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Qbo_company_id { get; set; } 
+    public string? QboCompanyId { get; set; } 
 
     [JsonProperty("qbo_company_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Qbo_company_name { get; set; } 
+    public string? QboCompanyName { get; set; } 
 
     [JsonProperty("sageintacttaxcode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ValueLabelIsNewKeyPair? Sageintacttaxcode { get; set; } 
 
     [JsonProperty("sage_tenant_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Sage_tenant_id { get; set; } 
+    public int? SageTenantId { get; set; } 
 
     [JsonProperty("sage_tenant_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Sage_tenant_name { get; set; } 
+    public string? SageTenantName { get; set; } 
 
     [JsonProperty("sagebusinesscloudtaxcode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ValueLabelIsNewKeyPair? Sagebusinesscloudtaxcode { get; set; } 
 
     [JsonProperty("exact_division", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Exact_division { get; set; } 
+    public int? ExactDivision { get; set; } 
 
     [JsonProperty("exact_division_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Exact_division_name { get; set; } 
+    public string? ExactDivisionName { get; set; } 
 
     [JsonProperty("exacttaxcode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ValueLabelIsNewKeyPair? Exacttaxcode { get; set; } 
@@ -95,21 +95,21 @@ public class Tax
     public ValueLabelIsNewKeyPair? Myobtaxcode { get; set; } 
 
     [JsonProperty("myob_details_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Myob_details_id { get; set; } 
+    public int? MyobDetailsId { get; set; } 
 
     [JsonProperty("myob_details_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Myob_details_name { get; set; } 
+    public string? MyobDetailsName { get; set; } 
 
     [JsonProperty("third_party_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Third_party_id { get; set; } 
+    public string? ThirdPartyId { get; set; } 
 
     [JsonProperty("avalara_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Avalara_id { get; set; } 
+    public string? AvalaraId { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
     [JsonProperty("category_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Category_code { get; set; } 
+    public string? CategoryCode { get; set; } 
 
 }

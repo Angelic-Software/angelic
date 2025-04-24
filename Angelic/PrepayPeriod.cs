@@ -10,48 +10,48 @@ public class PrepayPeriod
     public int? Id { get; set; } 
 
     [JsonProperty("contract_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Contract_id { get; set; } 
+    public int? ContractId { get; set; } 
 
     [JsonProperty("name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Name { get; set; } 
 
     [JsonProperty("start_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Start_date { get; set; } 
+    public DateTimeOffset? StartDate { get; set; } 
 
     [JsonProperty("end_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? End_date { get; set; } 
+    public DateTimeOffset? EndDate { get; set; } 
 
     [JsonProperty("start_date_display", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Start_date_display { get; set; } 
+    public DateTimeOffset? StartDateDisplay { get; set; } 
 
     [JsonProperty("end_date_display", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? End_date_display { get; set; } 
+    public DateTimeOffset? EndDateDisplay { get; set; } 
 
     [JsonProperty("current", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Current { get; set; } 
 
     [JsonProperty("hours_added", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Hours_added { get; set; } 
+    public double? HoursAdded { get; set; } 
 
     [JsonProperty("hours_expired", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Hours_expired { get; set; } 
+    public double? HoursExpired { get; set; } 
 
     [JsonProperty("hours_remaining", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Hours_remaining { get; set; } 
+    public double? HoursRemaining { get; set; } 
 
     [JsonProperty("hours_used_this_period", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Hours_used_this_period { get; set; } 
+    public double? HoursUsedThisPeriod { get; set; } 
 
     [JsonProperty("amount_added", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Amount_added { get; set; } 
+    public double? AmountAdded { get; set; } 
 
     [JsonProperty("amount_expired", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Amount_expired { get; set; } 
+    public double? AmountExpired { get; set; } 
 
     [JsonProperty("amount_remaining", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Amount_remaining { get; set; } 
+    public double? AmountRemaining { get; set; } 
 
     [JsonProperty("amount_used_this_period", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Amount_used_this_period { get; set; } 
+    public double? AmountUsedThisPeriod { get; set; } 
 
 }

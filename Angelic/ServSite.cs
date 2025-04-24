@@ -10,7 +10,7 @@ public class ServSite
     public int? Sendemailtype { get; set; } 
 
     [JsonProperty("email_subscriber_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Email_subscriber_count { get; set; } 
+    public int? EmailSubscriberCount { get; set; } 
 
     [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Id { get; set; } 
@@ -40,109 +40,109 @@ public class ServSite
     public bool? Trackstatus { get; set; } 
 
     [JsonProperty("service_category_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Service_category_id { get; set; } 
+    public int? ServiceCategoryId { get; set; } 
 
     [JsonProperty("service_category_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? Service_category_guid { get; set; } 
+    public Guid? ServiceCategoryGuid { get; set; } 
 
     [JsonProperty("service_category_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Service_category_name { get; set; } 
+    public string? ServiceCategoryName { get; set; } 
 
     [JsonProperty("business_owner_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Business_owner_id { get; set; } 
+    public int? BusinessOwnerId { get; set; } 
 
     [JsonProperty("business_owner_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Business_owner_name { get; set; } 
+    public string? BusinessOwnerName { get; set; } 
 
     [JsonProperty("business_owner_cab_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Business_owner_cab_id { get; set; } 
+    public int? BusinessOwnerCabId { get; set; } 
 
     [JsonProperty("business_owner_cab_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Business_owner_cab_name { get; set; } 
+    public string? BusinessOwnerCabName { get; set; } 
 
     [JsonProperty("technical_owner_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Technical_owner_id { get; set; } 
+    public int? TechnicalOwnerId { get; set; } 
 
     [JsonProperty("technical_owner_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Technical_owner_name { get; set; } 
+    public string? TechnicalOwnerName { get; set; } 
 
     [JsonProperty("technical_owner_cab_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Technical_owner_cab_id { get; set; } 
+    public int? TechnicalOwnerCabId { get; set; } 
 
     [JsonProperty("technical_owner_cab_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Technical_owner_cab_name { get; set; } 
+    public string? TechnicalOwnerCabName { get; set; } 
 
     [JsonProperty("compliance_owner_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Compliance_owner_id { get; set; } 
+    public int? ComplianceOwnerId { get; set; } 
 
     [JsonProperty("compliance_owner_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Compliance_owner_name { get; set; } 
+    public string? ComplianceOwnerName { get; set; } 
 
     [JsonProperty("compliance_owner_cab_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Compliance_owner_cab_id { get; set; } 
+    public int? ComplianceOwnerCabId { get; set; } 
 
     [JsonProperty("compliance_owner_cab_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Compliance_owner_cab_name { get; set; } 
+    public string? ComplianceOwnerCabName { get; set; } 
 
     [JsonProperty("cost", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? Cost { get; set; } 
 
     [JsonProperty("estimated_delivery", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Estimated_delivery { get; set; } 
+    public int? EstimatedDelivery { get; set; } 
 
     [JsonProperty("estimated_delivery_days", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Estimated_delivery_days { get; set; } 
+    public int? EstimatedDeliveryDays { get; set; } 
 
     [JsonProperty("subscribable", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Subscribable { get; set; } 
 
     [JsonProperty("subscriber_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Subscriber_count { get; set; } 
+    public int? SubscriberCount { get; set; } 
 
     [JsonProperty("asset_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Asset_count { get; set; } 
+    public int? AssetCount { get; set; } 
 
     [JsonProperty("assettype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Assettype_id { get; set; } 
+    public int? AssettypeId { get; set; } 
 
     [JsonProperty("assettype_ids", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Assettype_ids { get; set; } 
+    public string? AssettypeIds { get; set; } 
 
     [JsonProperty("current_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Current_status { get; set; } 
+    public int? CurrentStatus { get; set; } 
 
     [JsonProperty("status_message_update_internal", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Status_message_update_internal { get; set; } 
+    public string? StatusMessageUpdateInternal { get; set; } 
 
     [JsonProperty("status_message_update_public", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Status_message_update_public { get; set; } 
+    public string? StatusMessageUpdatePublic { get; set; } 
 
     [JsonProperty("using_default_public_message", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Using_default_public_message { get; set; } 
+    public bool? UsingDefaultPublicMessage { get; set; } 
 
     [JsonProperty("status_ticket_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Status_ticket_id { get; set; } 
+    public int? StatusTicketId { get; set; } 
 
     [JsonProperty("status_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Status_date { get; set; } 
+    public DateTimeOffset? StatusDate { get; set; } 
 
     [JsonProperty("service_tickettype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Service_tickettype_id { get; set; } 
+    public int? ServiceTickettypeId { get; set; } 
 
     [JsonProperty("serviceshownewreqscreen", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Serviceshownewreqscreen { get; set; } 
 
     [JsonProperty("service_template_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Service_template_id { get; set; } 
+    public int? ServiceTemplateId { get; set; } 
 
     [JsonProperty("newservicereqtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Newservicereqtype { get; set; } 
 
     [JsonProperty("incident_tickettype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Incident_tickettype_id { get; set; } 
+    public int? IncidentTickettypeId { get; set; } 
 
     [JsonProperty("incident_template_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Incident_template_id { get; set; } 
+    public int? IncidentTemplateId { get; set; } 
 
     [JsonProperty("newincidenttype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Newincidenttype { get; set; } 
@@ -151,28 +151,28 @@ public class ServSite
     public int? Relatedworkdayid { get; set; } 
 
     [JsonProperty("status_end_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Status_end_date { get; set; } 
+    public DateTimeOffset? StatusEndDate { get; set; } 
 
     [JsonProperty("status_ticket_start_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Status_ticket_start_date { get; set; } 
+    public DateTimeOffset? StatusTicketStartDate { get; set; } 
 
     [JsonProperty("status_ticket_end_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Status_ticket_end_date { get; set; } 
+    public DateTimeOffset? StatusTicketEndDate { get; set; } 
 
     [JsonProperty("requestdetails_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Requestdetails_count { get; set; } 
+    public int? RequestdetailsCount { get; set; } 
 
     [JsonProperty("requestdetails_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Requestdetails_id { get; set; } 
+    public int? RequestdetailsId { get; set; } 
 
     [JsonProperty("requestdetail_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Requestdetail_url { get; set; } 
+    public string? RequestdetailUrl { get; set; } 
 
     [JsonProperty("requestdetail_shownewreqscreen", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Requestdetail_shownewreqscreen { get; set; } 
+    public bool? RequestdetailShownewreqscreen { get; set; } 
 
     [JsonProperty("requestdetail_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Requestdetail_type { get; set; } 
+    public int? RequestdetailType { get; set; } 
 
     [JsonProperty("screenafterlogging", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Screenafterlogging { get; set; } 
@@ -181,7 +181,7 @@ public class ServSite
     public double? Pricingrange { get; set; } 
 
     [JsonProperty("override_site_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Override_site_id { get; set; } 
+    public int? OverrideSiteId { get; set; } 
 
     [JsonProperty("failcreaterequest", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Failcreaterequest { get; set; } 
@@ -199,13 +199,13 @@ public class ServSite
     public int? Criticality { get; set; } 
 
     [JsonProperty("search_score", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Search_score { get; set; } 
+    public double? SearchScore { get; set; } 
 
     [JsonProperty("device_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Device_id { get; set; } 
+    public int? DeviceId { get; set; } 
 
     [JsonProperty("override_site_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Override_site_name { get; set; } 
+    public string? OverrideSiteName { get; set; } 
 
     [JsonProperty("override", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Override { get; set; } 
@@ -256,10 +256,10 @@ public class ServSite
     public string? Note { get; set; } 
 
     [JsonProperty("pop3serverid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Pop3serverid { get; set; } 
+    public int? Pop3Serverid { get; set; } 
 
     [JsonProperty("pop3serverid_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Pop3serverid_name { get; set; } 
+    public string? Pop3ServeridName { get; set; } 
 
     [JsonProperty("subject", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Subject { get; set; } 
@@ -313,7 +313,7 @@ public class ServSite
     public string? Cat2 { get; set; } 
 
     [JsonProperty("workdays_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Workdays_name { get; set; } 
+    public string? WorkdaysName { get; set; } 
 
     [JsonProperty("photopath", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Photopath { get; set; } 
@@ -325,16 +325,16 @@ public class ServSite
     public bool? Allowoptin { get; set; } 
 
     [JsonProperty("service_tickettype_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Service_tickettype_name { get; set; } 
+    public string? ServiceTickettypeName { get; set; } 
 
     [JsonProperty("service_template_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Service_template_name { get; set; } 
+    public string? ServiceTemplateName { get; set; } 
 
     [JsonProperty("incident_tickettype_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Incident_tickettype_name { get; set; } 
+    public string? IncidentTickettypeName { get; set; } 
 
     [JsonProperty("incident_template_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Incident_template_name { get; set; } 
+    public string? IncidentTemplateName { get; set; } 
 
     [JsonProperty("autoemail", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Autoemail { get; set; } 
@@ -358,7 +358,7 @@ public class ServSite
     public bool? Showonmyservicespage { get; set; } 
 
     [JsonProperty("assettype_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Assettype_name { get; set; } 
+    public string? AssettypeName { get; set; } 
 
     [JsonProperty("smsmessage", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Smsmessage { get; set; } 
@@ -378,88 +378,88 @@ public class ServSite
     public string? Incidenthint { get; set; } 
 
     [JsonProperty("allowall_category1", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Allowall_category1 { get; set; } 
+    public bool? AllowallCategory1 { get; set; } 
 
     [JsonProperty("allowed_category1", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CategoryRestriction>? Allowed_category1 { get; set; } 
+    public ICollection<CategoryRestriction>? AllowedCategory1 { get; set; } 
 
     [JsonProperty("allowall_category2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Allowall_category2 { get; set; } 
+    public bool? AllowallCategory2 { get; set; } 
 
     [JsonProperty("allowed_category2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CategoryRestriction>? Allowed_category2 { get; set; } 
+    public ICollection<CategoryRestriction>? AllowedCategory2 { get; set; } 
 
     [JsonProperty("allowall_category3", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Allowall_category3 { get; set; } 
+    public bool? AllowallCategory3 { get; set; } 
 
     [JsonProperty("allowed_category3", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CategoryRestriction>? Allowed_category3 { get; set; } 
+    public ICollection<CategoryRestriction>? AllowedCategory3 { get; set; } 
 
     [JsonProperty("allowall_category4", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Allowall_category4 { get; set; } 
+    public bool? AllowallCategory4 { get; set; } 
 
     [JsonProperty("allowed_category4", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CategoryRestriction>? Allowed_category4 { get; set; } 
+    public ICollection<CategoryRestriction>? AllowedCategory4 { get; set; } 
 
     [JsonProperty("seq", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Seq { get; set; } 
 
     [JsonProperty("unsubscribe_ticketortemplate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Unsubscribe_ticketortemplate { get; set; } 
+    public int? UnsubscribeTicketortemplate { get; set; } 
 
     [JsonProperty("unsubscribe_tickettype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Unsubscribe_tickettype_id { get; set; } 
+    public int? UnsubscribeTickettypeId { get; set; } 
 
     [JsonProperty("unsubscribe_template_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Unsubscribe_template_id { get; set; } 
+    public int? UnsubscribeTemplateId { get; set; } 
 
     [JsonProperty("create_on_unsubscribe", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Create_on_unsubscribe { get; set; } 
+    public bool? CreateOnUnsubscribe { get; set; } 
 
     [JsonProperty("unsubscribe_all", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Unsubscribe_all { get; set; } 
+    public bool? UnsubscribeAll { get; set; } 
 
     [JsonProperty("field_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Field_id { get; set; } 
+    public int? FieldId { get; set; } 
 
     [JsonProperty("field_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Field_name { get; set; } 
+    public string? FieldName { get; set; } 
 
     [JsonProperty("tickettype_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Tickettype_name { get; set; } 
+    public string? TickettypeName { get; set; } 
 
     [JsonProperty("template_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Template_name { get; set; } 
+    public string? TemplateName { get; set; } 
 
     [JsonProperty("recent_servicerequest_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Recent_servicerequest_count { get; set; } 
+    public int? RecentServicerequestCount { get; set; } 
 
     [JsonProperty("recent_incident_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Recent_incident_count { get; set; } 
+    public int? RecentIncidentCount { get; set; } 
 
     [JsonProperty("open_incident_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Open_incident_count { get; set; } 
+    public int? OpenIncidentCount { get; set; } 
 
     [JsonProperty("open_servicerequest_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Open_servicerequest_count { get; set; } 
+    public int? OpenServicerequestCount { get; set; } 
 
     [JsonProperty("user_access", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ServiceRestriction>? User_access { get; set; } 
+    public ICollection<ServiceRestriction>? UserAccess { get; set; } 
 
     [JsonProperty("subscribers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<ServiceUser>? Subscribers { get; set; } 
 
     [JsonProperty("linked_services", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ServiceLinks>? Linked_services { get; set; } 
+    public ICollection<ServiceLinks>? LinkedServices { get; set; } 
 
     [JsonProperty("assets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<Device_List>? Assets { get; set; } 
+    public ICollection<DeviceList>? Assets { get; set; } 
 
     [JsonProperty("update_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Update_status { get; set; } 
+    public bool? UpdateStatus { get; set; } 
 
     [JsonProperty("user_subscribed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? User_subscribed { get; set; } 
+    public bool? UserSubscribed { get; set; } 
 
     [JsonProperty("user", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public Users? User { get; set; } 
@@ -468,40 +468,40 @@ public class ServSite
     public int? Emailtemplate { get; set; } 
 
     [JsonProperty("send_service_email", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Send_service_email { get; set; } 
+    public bool? SendServiceEmail { get; set; } 
 
     [JsonProperty("preview_service_email", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Preview_service_email { get; set; } 
+    public bool? PreviewServiceEmail { get; set; } 
 
     [JsonProperty("service_email_from", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Service_email_from { get; set; } 
+    public int? ServiceEmailFrom { get; set; } 
 
     [JsonProperty("service_email_subject", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Service_email_subject { get; set; } 
+    public string? ServiceEmailSubject { get; set; } 
 
     [JsonProperty("service_email_html", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Service_email_html { get; set; } 
+    public string? ServiceEmailHtml { get; set; } 
 
     [JsonProperty("allowfollowfault", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Allowfollowfault { get; set; } 
 
     [JsonProperty("status_subscribedtoupdates", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Status_subscribedtoupdates { get; set; } 
+    public bool? StatusSubscribedtoupdates { get; set; } 
 
     [JsonProperty("unsubcount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Unsubcount { get; set; } 
 
     [JsonProperty("new_icon", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? New_icon { get; set; } 
+    public string? NewIcon { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
     [JsonProperty("showinrelatedservices", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Showinrelatedservices { get; set; } 
 
     [JsonProperty("user_canunsubscribe", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? User_canunsubscribe { get; set; } 
+    public bool? UserCanunsubscribe { get; set; } 
 
     [JsonProperty("customfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<CustomField>? Customfields { get; set; } 
@@ -510,7 +510,7 @@ public class ServSite
     public ICollection<LanguagePackTranslationsCustom>? Translations { get; set; } 
 
     [JsonProperty("optional_services", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ServiceOption>? Optional_services { get; set; } 
+    public ICollection<ServiceOption>? OptionalServices { get; set; } 
 
     [JsonProperty("isservicedetails", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Isservicedetails { get; set; } 
@@ -519,49 +519,49 @@ public class ServSite
     public bool? Statushistoryportal { get; set; } 
 
     [JsonProperty("status_history", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ServStatus>? Status_history { get; set; } 
+    public ICollection<ServStatus>? StatusHistory { get; set; } 
 
     [JsonProperty("service_request_details", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ServiceRequestDetails>? Service_request_details { get; set; } 
+    public ICollection<ServiceRequestDetails>? ServiceRequestDetails { get; set; } 
 
     [JsonProperty("device_child_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Device_child_id { get; set; } 
+    public int? DeviceChildId { get; set; } 
 
     [JsonProperty("device_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Device_count { get; set; } 
+    public int? DeviceCount { get; set; } 
 
     [JsonProperty("incidentonly", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Incidentonly { get; set; } 
 
     [JsonProperty("cat_phonenumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Cat_phonenumber { get; set; } 
+    public string? CatPhonenumber { get; set; } 
 
     [JsonProperty("kbs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<KBEntry_List>? Kbs { get; set; } 
+    public ICollection<KbEntryList>? Kbs { get; set; } 
 
     [JsonProperty("search_index_sync_timestamp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Search_index_sync_timestamp { get; set; } 
+    public DateTimeOffset? SearchIndexSyncTimestamp { get; set; } 
 
     [JsonProperty("search_index_sync_batches", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Search_index_sync_batches { get; set; } 
+    public int? SearchIndexSyncBatches { get; set; } 
 
     [JsonProperty("preview_when_logging", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Preview_when_logging { get; set; } 
+    public int? PreviewWhenLogging { get; set; } 
 
     [JsonProperty("tags", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<Tag>? Tags { get; set; } 
 
     [JsonProperty("track_availability", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Track_availability { get; set; } 
+    public bool? TrackAvailability { get; set; } 
 
     [JsonProperty("tracking_period", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Tracking_period { get; set; } 
+    public int? TrackingPeriod { get; set; } 
 
     [JsonProperty("tracking_target", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Tracking_target { get; set; } 
+    public int? TrackingTarget { get; set; } 
 
     [JsonProperty("delay_avilability_calc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Delay_avilability_calc { get; set; } 
+    public int? DelayAvilabilityCalc { get; set; } 
 
     [JsonProperty("use", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Use { get; set; } 
@@ -570,48 +570,48 @@ public class ServSite
     public string? Icon { get; set; } 
 
     [JsonProperty("relatedworkdayid_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Relatedworkdayid_name { get; set; } 
+    public string? RelatedworkdayidName { get; set; } 
 
     [JsonProperty("relatedworkdayid_content", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Relatedworkdayid_content { get; set; } 
+    public string? RelatedworkdayidContent { get; set; } 
 
     [JsonProperty("status_message_update_internal_html", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Status_message_update_internal_html { get; set; } 
+    public string? StatusMessageUpdateInternalHtml { get; set; } 
 
     [JsonProperty("status_message_update_public_html", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Status_message_update_public_html { get; set; } 
+    public string? StatusMessageUpdatePublicHtml { get; set; } 
 
     [JsonProperty("future_statuses", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<Int32NullableStringDateTimeNullableInt32NullableTuple>? Future_statuses { get; set; } 
+    public ICollection<Int32NullableStringDateTimeNullableInt32NullableTuple>? FutureStatuses { get; set; } 
 
     [JsonProperty("current_statuses", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<Int32NullableStringDateTimeNullableInt32NullableDateTimeNullableTuple>? Current_statuses { get; set; } 
+    public ICollection<Int32NullableStringDateTimeNullableInt32NullableDateTimeNullableTuple>? CurrentStatuses { get; set; } 
 
     [JsonProperty("service_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Service_url { get; set; } 
+    public string? ServiceUrl { get; set; } 
 
     [JsonProperty("incident_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Incident_url { get; set; } 
+    public string? IncidentUrl { get; set; } 
 
     [JsonProperty("access_control", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AccessControl>? Access_control { get; set; } 
+    public ICollection<AccessControl>? AccessControl { get; set; } 
 
     [JsonProperty("access_control_level", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Access_control_level { get; set; } 
+    public int? AccessControlLevel { get; set; } 
 
     [JsonProperty("_isimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _isimport { get; set; } 
+    public bool? Isimport { get; set; } 
 
     [JsonProperty("link", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Link { get; set; } 
 
     [JsonProperty("tag_string", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Tag_string { get; set; } 
+    public string? TagString { get; set; } 
 
     [JsonProperty("device_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? Device_guid { get; set; } 
+    public Guid? DeviceGuid { get; set; } 
 
     [JsonProperty("device_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Device_name { get; set; } 
+    public string? DeviceName { get; set; } 
 
 }

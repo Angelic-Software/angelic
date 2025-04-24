@@ -10,15 +10,15 @@ public class KbEntryTopLevelAccess
     public int? Id { get; set; } 
 
     [JsonProperty("toplevel_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Toplevel_id { get; set; } 
+    public int? ToplevelId { get; set; } 
 
     [JsonProperty("toplevel_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Toplevel_name { get; set; } 
+    public string? ToplevelName { get; set; } 
 
     [JsonProperty("kb_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Kb_id { get; set; } 
+    public int? KbId { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

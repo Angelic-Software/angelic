@@ -16,12 +16,12 @@ public class ScriptHeader
     public string? Note { get; set; } 
 
     [JsonProperty("category_1", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Category_1 { get; set; } 
+    public string? Category1 { get; set; } 
 
     [JsonProperty("questions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<ScriptLine>? Questions { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

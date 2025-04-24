@@ -31,25 +31,25 @@ public class Mailbox
     public string? Azureemail { get; set; } 
 
     [JsonProperty("display_address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Display_address { get; set; } 
+    public string? DisplayAddress { get; set; } 
 
     [JsonProperty("google_email", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Google_email { get; set; } 
+    public string? GoogleEmail { get; set; } 
 
     [JsonProperty("inbound_method", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Inbound_method { get; set; } 
+    public int? InboundMethod { get; set; } 
 
     [JsonProperty("halointegrator_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Halointegrator_lastsync { get; set; } 
+    public DateTimeOffset? HalointegratorLastsync { get; set; } 
 
     [JsonProperty("halointegrator_outlook_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Halointegrator_outlook_lastsync { get; set; } 
+    public DateTimeOffset? HalointegratorOutlookLastsync { get; set; } 
 
     [JsonProperty("halointegrator_outlook", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Halointegrator_outlook { get; set; } 
+    public bool? HalointegratorOutlook { get; set; } 
 
     [JsonProperty("halointegrator_outlook_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Halointegrator_outlook_lasterror { get; set; } 
+    public string? HalointegratorOutlookLasterror { get; set; } 
 
     [JsonProperty("password", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Password { get; set; } 
@@ -58,25 +58,25 @@ public class Mailbox
     public bool? Usetls { get; set; } 
 
     [JsonProperty("restriction_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Restriction_type { get; set; } 
+    public int? RestrictionType { get; set; } 
 
     [JsonProperty("restrictto_org_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Restrictto_org_id { get; set; } 
+    public int? RestricttoOrgId { get; set; } 
 
     [JsonProperty("restrictto_org_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Restrictto_org_name { get; set; } 
+    public string? RestricttoOrgName { get; set; } 
 
     [JsonProperty("restrictto_department_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Restrictto_department_id { get; set; } 
+    public int? RestricttoDepartmentId { get; set; } 
 
     [JsonProperty("restrictto_department_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Restrictto_department_name { get; set; } 
+    public string? RestricttoDepartmentName { get; set; } 
 
     [JsonProperty("restrictto_team_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Restrictto_team_id { get; set; } 
+    public int? RestricttoTeamId { get; set; } 
 
     [JsonProperty("restrictto_team_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Restrictto_team_name { get; set; } 
+    public string? RestricttoTeamName { get; set; } 
 
     [JsonProperty("exchangemailboxdisplayname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Exchangemailboxdisplayname { get; set; } 
@@ -88,7 +88,7 @@ public class Mailbox
     public bool? Harddeletereadmessages { get; set; } 
 
     [JsonProperty("tickettype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Tickettype_id { get; set; } 
+    public int? TickettypeId { get; set; } 
 
     [JsonProperty("popport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Popport { get; set; } 
@@ -112,7 +112,7 @@ public class Mailbox
     public bool? Usesmtpforazuremailbox { get; set; } 
 
     [JsonProperty("messagegroup_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Messagegroup_id { get; set; } 
+    public int? MessagegroupId { get; set; } 
 
     [JsonProperty("smtpdisplayname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Smtpdisplayname { get; set; } 
@@ -163,67 +163,67 @@ public class Mailbox
     public string? Azuretenant { get; set; } 
 
     [JsonProperty("new_client_secret", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? New_client_secret { get; set; } 
+    public string? NewClientSecret { get; set; } 
 
     [JsonProperty("new_azure_access_token", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? New_azure_access_token { get; set; } 
+    public string? NewAzureAccessToken { get; set; } 
 
     [JsonProperty("new_azure_refresh_token", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? New_azure_refresh_token { get; set; } 
+    public string? NewAzureRefreshToken { get; set; } 
 
     [JsonProperty("oauth_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Oauth_code { get; set; } 
+    public string? OauthCode { get; set; } 
 
     [JsonProperty("azureredirecturi", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Azureredirecturi { get; set; } 
 
     [JsonProperty("_exchangecodefortoken", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _exchangecodefortoken { get; set; } 
+    public bool? Exchangecodefortoken { get; set; } 
 
     [JsonProperty("_testonly", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _testonly { get; set; } 
+    public bool? Testonly { get; set; } 
 
     [JsonProperty("signature_overrides", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<MailboxTechnician>? Signature_overrides { get; set; } 
+    public ICollection<MailboxTechnician>? SignatureOverrides { get; set; } 
 
     [JsonProperty("_isglobalsmtp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _isglobalsmtp { get; set; } 
+    public bool? Isglobalsmtp { get; set; } 
 
     [JsonProperty("new_google_access_token", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? New_google_access_token { get; set; } 
+    public string? NewGoogleAccessToken { get; set; } 
 
     [JsonProperty("new_google_refresh_token", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? New_google_refresh_token { get; set; } 
+    public string? NewGoogleRefreshToken { get; set; } 
 
     [JsonProperty("google_token_expiry", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Google_token_expiry { get; set; } 
+    public DateTimeOffset? GoogleTokenExpiry { get; set; } 
 
     [JsonProperty("google_redirect", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Google_redirect { get; set; } 
+    public string? GoogleRedirect { get; set; } 
 
     [JsonProperty("_getgoogletoken", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _getgoogletoken { get; set; } 
+    public bool? Getgoogletoken { get; set; } 
 
     [JsonProperty("google_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Google_code { get; set; } 
+    public string? GoogleCode { get; set; } 
 
     [JsonProperty("azure_authorized", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Azure_authorized { get; set; } 
+    public bool? AzureAuthorized { get; set; } 
 
     [JsonProperty("google_authorized", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Google_authorized { get; set; } 
+    public bool? GoogleAuthorized { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
     [JsonProperty("shared_mailbox_emailaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Shared_mailbox_emailaddress { get; set; } 
+    public string? SharedMailboxEmailaddress { get; set; } 
 
     [JsonProperty("google_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Google_type { get; set; } 
+    public int? GoogleType { get; set; } 
 
     [JsonProperty("graph_host", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Graph_host { get; set; } 
+    public string? GraphHost { get; set; } 
 
     [JsonProperty("azuredatecutoff", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? Azuredatecutoff { get; set; } 
@@ -238,70 +238,70 @@ public class Mailbox
     public bool? Imapleavemailininbox { get; set; } 
 
     [JsonProperty("azure_subscription_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Azure_subscription_id { get; set; } 
+    public string? AzureSubscriptionId { get; set; } 
 
     [JsonProperty("azure_subscription_expiry", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Azure_subscription_expiry { get; set; } 
+    public DateTimeOffset? AzureSubscriptionExpiry { get; set; } 
 
     [JsonProperty("azure_subscribed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Azure_subscribed { get; set; } 
+    public bool? AzureSubscribed { get; set; } 
 
     [JsonProperty("new_azure_subscription_secret", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? New_azure_subscription_secret { get; set; } 
+    public string? NewAzureSubscriptionSecret { get; set; } 
 
     [JsonProperty("_webhookaction", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public WebhookSubscriptionAction? _webhookaction { get; set; } 
+    public WebhookSubscriptionAction? Webhookaction { get; set; } 
 
     [JsonProperty("ignore_cc_emails", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Ignore_cc_emails { get; set; } 
+    public bool? IgnoreCcEmails { get; set; } 
 
     [JsonProperty("accept_auto_replies", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Accept_auto_replies { get; set; } 
+    public bool? AcceptAutoReplies { get; set; } 
 
     [JsonProperty("allow_email_hashtags", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Allow_email_hashtags { get; set; } 
+    public bool? AllowEmailHashtags { get; set; } 
 
     [JsonProperty("site_prefix_matching", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Site_prefix_matching { get; set; } 
+    public bool? SitePrefixMatching { get; set; } 
 
     [JsonProperty("site_wildcard_matching", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Site_wildcard_matching { get; set; } 
+    public bool? SiteWildcardMatching { get; set; } 
 
     [JsonProperty("site_domain_matching", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Site_domain_matching { get; set; } 
+    public bool? SiteDomainMatching { get; set; } 
 
     [JsonProperty("site_tocc_matching", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Site_tocc_matching { get; set; } 
+    public bool? SiteToccMatching { get; set; } 
 
     [JsonProperty("unmatched_users", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Unmatched_users { get; set; } 
+    public int? UnmatchedUsers { get; set; } 
 
     [JsonProperty("newuser_default_site", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Newuser_default_site { get; set; } 
+    public int? NewuserDefaultSite { get; set; } 
 
     [JsonProperty("newuser_default_site_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Newuser_default_site_name { get; set; } 
+    public string? NewuserDefaultSiteName { get; set; } 
 
     [JsonProperty("newuser_send_welcome_email", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Newuser_send_welcome_email { get; set; } 
+    public bool? NewuserSendWelcomeEmail { get; set; } 
 
     [JsonProperty("newuser_send_ack", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Newuser_send_ack { get; set; } 
+    public bool? NewuserSendAck { get; set; } 
 
     [JsonProperty("halointegrator_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Halointegrator_lasterror { get; set; } 
+    public string? HalointegratorLasterror { get; set; } 
 
     [JsonProperty("azure_authority", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Azure_authority { get; set; } 
+    public int? AzureAuthority { get; set; } 
 
     [JsonProperty("defaultusersite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Defaultusersite { get; set; } 
 
     [JsonProperty("safe_attachment_policy", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Safe_attachment_policy { get; set; } 
+    public int? SafeAttachmentPolicy { get; set; } 
 
     [JsonProperty("safe_attachment_placeholder", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Safe_attachment_placeholder { get; set; } 
+    public string? SafeAttachmentPlaceholder { get; set; } 
 
     [JsonProperty("creationdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? Creationdate { get; set; } 
@@ -310,24 +310,24 @@ public class Mailbox
     public bool? Dontimportbeforecreation { get; set; } 
 
     [JsonProperty("azure_authentication_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Azure_authentication_type { get; set; } 
+    public int? AzureAuthenticationType { get; set; } 
 
     [JsonProperty("_confirmmanagedidentitysetup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _confirmmanagedidentitysetup { get; set; } 
+    public bool? Confirmmanagedidentitysetup { get; set; } 
 
     [JsonProperty("_confirmclientcredentialssetup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _confirmclientcredentialssetup { get; set; } 
+    public bool? Confirmclientcredentialssetup { get; set; } 
 
     [JsonProperty("stopnewticketsviaemail", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Stopnewticketsviaemail { get; set; } 
 
     [JsonProperty("_confirmropcssetup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _confirmropcssetup { get; set; } 
+    public bool? Confirmropcssetup { get; set; } 
 
     [JsonProperty("showinfromaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Showinfromaddress { get; set; } 
 
     [JsonProperty("mappings_user", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<IntegrationFieldMapping>? Mappings_user { get; set; } 
+    public ICollection<IntegrationFieldMapping>? MappingsUser { get; set; } 
 
 }

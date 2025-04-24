@@ -19,43 +19,43 @@ public class OrderHead
     public string? Title { get; set; } 
 
     [JsonProperty("ticket_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Ticket_id { get; set; } 
+    public int? TicketId { get; set; } 
 
     [JsonProperty("user_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? User_id { get; set; } 
+    public int? UserId { get; set; } 
 
     [JsonProperty("user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? User_name { get; set; } 
+    public string? UserName { get; set; } 
 
     [JsonProperty("site_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Site_id { get; set; } 
+    public int? SiteId { get; set; } 
 
     [JsonProperty("site_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Site_name { get; set; } 
+    public string? SiteName { get; set; } 
 
     [JsonProperty("client_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Client_id { get; set; } 
+    public int? ClientId { get; set; } 
 
     [JsonProperty("client_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Client_name { get; set; } 
+    public string? ClientName { get; set; } 
 
     [JsonProperty("client_to_invoice_to_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Client_to_invoice_to_id { get; set; } 
+    public int? ClientToInvoiceToId { get; set; } 
 
     [JsonProperty("assigned_agent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Assigned_agent { get; set; } 
+    public int? AssignedAgent { get; set; } 
 
     [JsonProperty("assigned_agent_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Assigned_agent_name { get; set; } 
+    public string? AssignedAgentName { get; set; } 
 
     [JsonProperty("open_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Open_status { get; set; } 
+    public int? OpenStatus { get; set; } 
 
     [JsonProperty("date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? Date { get; set; } 
 
     [JsonProperty("ship_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Ship_date { get; set; } 
+    public DateTimeOffset? ShipDate { get; set; } 
 
     [JsonProperty("total", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? Total { get; set; } 
@@ -70,10 +70,10 @@ public class OrderHead
     public string? Note { get; set; } 
 
     [JsonProperty("po_number", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Po_number { get; set; } 
+    public string? PoNumber { get; set; } 
 
     [JsonProperty("createdby_agent_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Createdby_agent_id { get; set; } 
+    public int? CreatedbyAgentId { get; set; } 
 
     [JsonProperty("deliverby", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Deliverby { get; set; } 
@@ -88,7 +88,7 @@ public class OrderHead
     public int? Numberbottles { get; set; } 
 
     [JsonProperty("ship_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Ship_status { get; set; } 
+    public string? ShipStatus { get; set; } 
 
     [JsonProperty("soldby", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Soldby { get; set; } 
@@ -106,7 +106,7 @@ public class OrderHead
     public int? Canvasser { get; set; } 
 
     [JsonProperty("invoice_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Invoice_date { get; set; } 
+    public DateTimeOffset? InvoiceDate { get; set; } 
 
     [JsonProperty("invoicenumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Invoicenumber { get; set; } 
@@ -121,22 +121,22 @@ public class OrderHead
     public string? Currency { get; set; } 
 
     [JsonProperty("currency_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Currency_code { get; set; } 
+    public int? CurrencyCode { get; set; } 
 
     [JsonProperty("currency_code_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Currency_code_name { get; set; } 
+    public string? CurrencyCodeName { get; set; } 
 
     [JsonProperty("currency_conversion_rate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Currency_conversion_rate { get; set; } 
+    public double? CurrencyConversionRate { get; set; } 
 
     [JsonProperty("quotation_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Quotation_id { get; set; } 
+    public int? QuotationId { get; set; } 
 
     [JsonProperty("consignment_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Consignment_id { get; set; } 
+    public int? ConsignmentId { get; set; } 
 
     [JsonProperty("do_not_invoice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Do_not_invoice { get; set; } 
+    public bool? DoNotInvoice { get; set; } 
 
     [JsonProperty("closeandconsignwhenpoprocessed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Closeandconsignwhenpoprocessed { get; set; } 
@@ -145,97 +145,97 @@ public class OrderHead
     public ICollection<OrderLine>? Lines { get; set; } 
 
     [JsonProperty("add_lines", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<OrderLine>? Add_lines { get; set; } 
+    public ICollection<OrderLine>? AddLines { get; set; } 
 
     [JsonProperty("_cancel_reserve", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _cancel_reserve { get; set; } 
+    public bool? CancelReserve { get; set; } 
 
     [JsonProperty("_validateonly", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _validateonly { get; set; } 
+    public bool? Validateonly { get; set; } 
 
     [JsonProperty("_print_preview", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _print_preview { get; set; } 
+    public bool? PrintPreview { get; set; } 
 
     [JsonProperty("_print_generate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _print_generate { get; set; } 
+    public bool? PrintGenerate { get; set; } 
 
     [JsonProperty("printhtml", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Printhtml { get; set; } 
 
     [JsonProperty("pdf_attachment_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Pdf_attachment_id { get; set; } 
+    public int? PdfAttachmentId { get; set; } 
 
     [JsonProperty("pdftemplate_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Pdftemplate_id { get; set; } 
+    public int? PdftemplateId { get; set; } 
 
     [JsonProperty("pdftemplate_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Pdftemplate_name { get; set; } 
+    public string? PdftemplateName { get; set; } 
 
     [JsonProperty("purchaseorder_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Purchaseorder_count { get; set; } 
+    public int? PurchaseorderCount { get; set; } 
 
     [JsonProperty("invoice_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Invoice_count { get; set; } 
+    public int? InvoiceCount { get; set; } 
 
     [JsonProperty("percentage_invoiced", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Percentage_invoiced { get; set; } 
+    public double? PercentageInvoiced { get; set; } 
 
     [JsonProperty("outstanding_total", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Outstanding_total { get; set; } 
+    public double? OutstandingTotal { get; set; } 
 
     [JsonProperty("_create_po", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _create_po { get; set; } 
+    public bool? CreatePo { get; set; } 
 
     [JsonProperty("_create_invoice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _create_invoice { get; set; } 
+    public bool? CreateInvoice { get; set; } 
 
     [JsonProperty("_create_invoice_method", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? _create_invoice_method { get; set; } 
+    public int? CreateInvoiceMethod { get; set; } 
 
     [JsonProperty("_create_invoice_percentage", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? _create_invoice_percentage { get; set; } 
+    public double? CreateInvoicePercentage { get; set; } 
 
     [JsonProperty("_create_invoice_amount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? _create_invoice_amount { get; set; } 
+    public double? CreateInvoiceAmount { get; set; } 
 
     [JsonProperty("_create_invoice_qty", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? _create_invoice_qty { get; set; } 
+    public double? CreateInvoiceQty { get; set; } 
 
     [JsonProperty("_create_invoice_lines", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<OrderLine>? _create_invoice_lines { get; set; } 
+    public ICollection<OrderLine>? CreateInvoiceLines { get; set; } 
 
     [JsonProperty("_create_invoice_line_description", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _create_invoice_line_description { get; set; } 
+    public string? CreateInvoiceLineDescription { get; set; } 
 
     [JsonProperty("_create_invoice_invoice_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? _create_invoice_invoice_date { get; set; } 
+    public DateTimeOffset? CreateInvoiceInvoiceDate { get; set; } 
 
     [JsonProperty("_return_invoice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _return_invoice { get; set; } 
+    public bool? ReturnInvoice { get; set; } 
 
     [JsonProperty("createdbyagentname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Createdbyagentname { get; set; } 
 
     [JsonProperty("last_update_time", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Last_update_time { get; set; } 
+    public DateTimeOffset? LastUpdateTime { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
     [JsonProperty("_distributorMessage", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _distributorMessage { get; set; } 
+    public string? DistributorMessage { get; set; } 
 
     [JsonProperty("project_faultid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Project_faultid { get; set; } 
+    public int? ProjectFaultid { get; set; } 
 
     [JsonProperty("order_project_template_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Order_project_template_id { get; set; } 
+    public int? OrderProjectTemplateId { get; set; } 
 
     [JsonProperty("order_project_template_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Order_project_template_name { get; set; } 
+    public string? OrderProjectTemplateName { get; set; } 
 
     [JsonProperty("_iscopy", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _iscopy { get; set; } 
+    public bool? Iscopy { get; set; } 
 
     [JsonProperty("includegrouppriceandqty", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Includegrouppriceandqty { get; set; } 
@@ -247,25 +247,25 @@ public class OrderHead
     public bool? Showpercentageinvoiced { get; set; } 
 
     [JsonProperty("linked_to_opportunity", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Linked_to_opportunity { get; set; } 
+    public bool? LinkedToOpportunity { get; set; } 
 
     [JsonProperty("linked_to_ticket", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Linked_to_ticket { get; set; } 
+    public bool? LinkedToTicket { get; set; } 
 
     [JsonProperty("linked_to_project", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Linked_to_project { get; set; } 
+    public bool? LinkedToProject { get; set; } 
 
     [JsonProperty("intacct_class", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Intacct_class { get; set; } 
+    public string? IntacctClass { get; set; } 
 
     [JsonProperty("intacct_class_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Intacct_class_name { get; set; } 
+    public string? IntacctClassName { get; set; } 
 
     [JsonProperty("intacct_save_location", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Intacct_save_location { get; set; } 
+    public string? IntacctSaveLocation { get; set; } 
 
     [JsonProperty("override_delivery_address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Override_delivery_address { get; set; } 
+    public bool? OverrideDeliveryAddress { get; set; } 
 
     [JsonProperty("deladdress1", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Deladdress1 { get; set; } 
@@ -283,28 +283,28 @@ public class OrderHead
     public string? Deladdress5 { get; set; } 
 
     [JsonProperty("delivery_address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public AddressStore? Delivery_address { get; set; } 
+    public AddressStore? DeliveryAddress { get; set; } 
 
     [JsonProperty("_isimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _isimport { get; set; } 
+    public bool? Isimport { get; set; } 
 
     [JsonProperty("_match_thirdparty_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _match_thirdparty_id { get; set; } 
+    public string? MatchThirdpartyId { get; set; } 
 
     [JsonProperty("_match_integration_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? _match_integration_id { get; set; } 
+    public int? MatchIntegrationId { get; set; } 
 
     [JsonProperty("_match_integration_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _match_integration_name { get; set; } 
+    public string? MatchIntegrationName { get; set; } 
 
     [JsonProperty("dattocommerce_clientid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Dattocommerce_clientid { get; set; } 
+    public int? DattocommerceClientid { get; set; } 
 
     [JsonProperty("dattocommerce_contactname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Dattocommerce_contactname { get; set; } 
+    public string? DattocommerceContactname { get; set; } 
 
     [JsonProperty("dattocommerce_contactemail", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Dattocommerce_contactemail { get; set; } 
+    public string? DattocommerceContactemail { get; set; } 
 
     [JsonProperty("deliveryamount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? Deliveryamount { get; set; } 
@@ -313,16 +313,16 @@ public class OrderHead
     public double? Deliverytax { get; set; } 
 
     [JsonProperty("is_so_screen", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Is_so_screen { get; set; } 
+    public bool? IsSoScreen { get; set; } 
 
     [JsonProperty("_novalidate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _novalidate { get; set; } 
+    public bool? Novalidate { get; set; } 
 
     [JsonProperty("avalara_details_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Avalara_details_id { get; set; } 
+    public int? AvalaraDetailsId { get; set; } 
 
     [JsonProperty("avalara_details_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Avalara_details_name { get; set; } 
+    public string? AvalaraDetailsName { get; set; } 
 
     [JsonProperty("originaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public AddressStore? Originaddress { get; set; } 
@@ -349,27 +349,27 @@ public class OrderHead
     public ICollection<Tabname>? Extratabs { get; set; } 
 
     [JsonProperty("_dotaxsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _dotaxsync { get; set; } 
+    public bool? Dotaxsync { get; set; } 
 
     [JsonProperty("tax_total", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Tax_total { get; set; } 
+    public double? TaxTotal { get; set; } 
 
     [JsonProperty("revenue", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? Revenue { get; set; } 
 
     [JsonProperty("external_links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ExternalLink_List>? External_links { get; set; } 
+    public ICollection<ExternalLinkList>? ExternalLinks { get; set; } 
 
     [JsonProperty("_importtypeid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? _importtypeid { get; set; } 
+    public int? Importtypeid { get; set; } 
 
     [JsonProperty("_importthirdpartyid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _importthirdpartyid { get; set; } 
+    public string? Importthirdpartyid { get; set; } 
 
     [JsonProperty("_importtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _importtype { get; set; } 
+    public string? Importtype { get; set; } 
 
     [JsonProperty("new_external_link", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ExternalLink_List? New_external_link { get; set; } 
+    public ExternalLinkList? NewExternalLink { get; set; } 
 
 }

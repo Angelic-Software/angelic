@@ -10,7 +10,7 @@ public class XTypeMappingCriteria
     public int? Id { get; set; } 
 
     [JsonProperty("xtypemapping_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Xtypemapping_id { get; set; } 
+    public int? XtypemappingId { get; set; } 
 
     [JsonProperty("tablename", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Tablename { get; set; } 
@@ -19,27 +19,27 @@ public class XTypeMappingCriteria
     public string? Fieldname { get; set; } 
 
     [JsonProperty("value_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Value_type { get; set; } 
+    public string? ValueType { get; set; } 
 
     [JsonProperty("value_int", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Value_int { get; set; } 
+    public int? ValueInt { get; set; } 
 
     [JsonProperty("value_float", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Value_float { get; set; } 
+    public double? ValueFloat { get; set; } 
 
     [JsonProperty("value_string", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Value_string { get; set; } 
+    public string? ValueString { get; set; } 
 
     [JsonProperty("value_datetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Value_datetime { get; set; } 
+    public DateTimeOffset? ValueDatetime { get; set; } 
 
     [JsonProperty("value_display", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Value_display { get; set; } 
+    public string? ValueDisplay { get; set; } 
 
     [JsonProperty("type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Type { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

@@ -10,24 +10,24 @@ public class EventMapping
     public int? Id { get; set; } 
 
     [JsonProperty("eventrule_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Eventrule_id { get; set; } 
+    public int? EventruleId { get; set; } 
 
     [JsonProperty("eventrule_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? Eventrule_guid { get; set; } 
+    public Guid? EventruleGuid { get; set; } 
 
     [JsonProperty("integration_method_value_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Integration_method_value_id { get; set; } 
+    public int? IntegrationMethodValueId { get; set; } 
 
     [JsonProperty("integration_method_value_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Integration_method_value_name { get; set; } 
+    public string? IntegrationMethodValueName { get; set; } 
 
     [JsonProperty("field_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Field_id { get; set; } 
+    public int? FieldId { get; set; } 
 
     [JsonProperty("field_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Field_name { get; set; } 
+    public string? FieldName { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

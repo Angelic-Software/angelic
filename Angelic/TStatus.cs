@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 namespace Angelic;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
-public class TStatus
+public class Status
 {
     [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Id { get; set; } 
@@ -35,7 +35,7 @@ public class TStatus
     public string? Slaaction { get; set; } 
 
     [JsonProperty("ticket_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Ticket_count { get; set; } 
+    public int? TicketCount { get; set; } 
 
     [JsonProperty("showonquickchange", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Showonquickchange { get; set; } 
@@ -71,7 +71,7 @@ public class TStatus
     public int? Nochangetemplate { get; set; } 
 
     [JsonProperty("nochangetemplate_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? Nochangetemplate_guid { get; set; } 
+    public Guid? NochangetemplateGuid { get; set; } 
 
     [JsonProperty("includeinloadbalance", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Includeinloadbalance { get; set; } 
@@ -83,7 +83,7 @@ public class TStatus
     public int? Statusemailid { get; set; } 
 
     [JsonProperty("statusemail_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? Statusemail_guid { get; set; } 
+    public Guid? StatusemailGuid { get; set; } 
 
     [JsonProperty("statusemailname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Statusemailname { get; set; } 
@@ -104,19 +104,19 @@ public class TStatus
     public string? Statuschangetoname { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
     [JsonProperty("useworkinghours", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Useworkinghours { get; set; } 
 
     [JsonProperty("useworkinghours_statusnochangehours", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Useworkinghours_statusnochangehours { get; set; } 
+    public int? UseworkinghoursStatusnochangehours { get; set; } 
 
     [JsonProperty("useworkinghours_statusnochangehourssection", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Useworkinghours_statusnochangehourssection { get; set; } 
+    public int? UseworkinghoursStatusnochangehourssection { get; set; } 
 
     [JsonProperty("useworkinghours_statusnochangehoursmanager", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Useworkinghours_statusnochangehoursmanager { get; set; } 
+    public int? UseworkinghoursStatusnochangehoursmanager { get; set; } 
 
     [JsonProperty("tickettypes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<ValueLabelIsNewKeyPair>? Tickettypes { get; set; } 

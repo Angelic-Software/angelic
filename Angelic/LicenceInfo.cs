@@ -10,13 +10,13 @@ public class LicenceInfo
     public Guid? Id { get; set; } 
 
     [JsonProperty("site_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Site_id { get; set; } 
+    public int? SiteId { get; set; } 
 
     [JsonProperty("client_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Client_id { get; set; } 
+    public int? ClientId { get; set; } 
 
     [JsonProperty("client_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Client_name { get; set; } 
+    public string? ClientName { get; set; } 
 
     [JsonProperty("version", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Version { get; set; } 
@@ -28,10 +28,10 @@ public class LicenceInfo
     public string? Organisationname { get; set; } 
 
     [JsonProperty("is_trial", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Is_trial { get; set; } 
+    public bool? IsTrial { get; set; } 
 
     [JsonProperty("support_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Support_type { get; set; } 
+    public int? SupportType { get; set; } 
 
     [JsonProperty("trialexpiry", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? Trialexpiry { get; set; } 

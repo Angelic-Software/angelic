@@ -13,12 +13,12 @@ public class ReleaseComponent
     public string? Name { get; set; } 
 
     [JsonProperty("product_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Product_id { get; set; } 
+    public int? ProductId { get; set; } 
 
     [JsonProperty("product_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Product_name { get; set; } 
+    public string? ProductName { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

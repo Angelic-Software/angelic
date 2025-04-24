@@ -25,37 +25,37 @@ public class DashboardLinks
     public bool? Newtab { get; set; } 
 
     [JsonProperty("in_app", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? In_app { get; set; } 
+    public bool? InApp { get; set; } 
 
     [JsonProperty("admin_only", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Admin_only { get; set; } 
+    public bool? AdminOnly { get; set; } 
 
     [JsonProperty("org_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Org_id { get; set; } 
+    public int? OrgId { get; set; } 
 
     [JsonProperty("department_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Department_id { get; set; } 
+    public int? DepartmentId { get; set; } 
 
     [JsonProperty("team_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Team_id { get; set; } 
+    public int? TeamId { get; set; } 
 
     [JsonProperty("agent_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Agent_id { get; set; } 
+    public int? AgentId { get; set; } 
 
     [JsonProperty("org_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Org_name { get; set; } 
+    public string? OrgName { get; set; } 
 
     [JsonProperty("department_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Department_name { get; set; } 
+    public string? DepartmentName { get; set; } 
 
     [JsonProperty("team_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Team_name { get; set; } 
+    public string? TeamName { get; set; } 
 
     [JsonProperty("display_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Display_type { get; set; } 
+    public string? DisplayType { get; set; } 
 
     [JsonProperty("restriction_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Restriction_type { get; set; } 
+    public string? RestrictionType { get; set; } 
 
     [JsonProperty("layouts", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Layouts { get; set; } 
@@ -64,13 +64,13 @@ public class DashboardLinks
     public ICollection<Widget>? Widgets { get; set; } 
 
     [JsonProperty("access_control", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AccessControl>? Access_control { get; set; } 
+    public ICollection<AccessControl>? AccessControl { get; set; } 
 
     [JsonProperty("access_control_level", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Access_control_level { get; set; } 
+    public int? AccessControlLevel { get; set; } 
 
     [JsonProperty("report_access_token", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Report_access_token { get; set; } 
+    public string? ReportAccessToken { get; set; } 
 
     [JsonProperty("reportingperiod", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Reportingperiod { get; set; } 
@@ -88,30 +88,30 @@ public class DashboardLinks
     public ICollection<DashboardFilter>? Filters { get; set; } 
 
     [JsonProperty("user_access", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<DashboardRestriction>? User_access { get; set; } 
+    public ICollection<DashboardRestriction>? UserAccess { get; set; } 
 
     [JsonProperty("is_published", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Is_published { get; set; } 
+    public bool? IsPublished { get; set; } 
 
     [JsonProperty("published_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Published_id { get; set; } 
+    public string? PublishedId { get; set; } 
 
     [JsonProperty("allow_anonymous", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Allow_anonymous { get; set; } 
+    public bool? AllowAnonymous { get; set; } 
 
     [JsonProperty("rowheight", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Rowheight { get; set; } 
 
     [JsonProperty("manually_load_dashboards", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Manually_load_dashboards { get; set; } 
+    public bool? ManuallyLoadDashboards { get; set; } 
 
     [JsonProperty("dashboard_theme_override", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Dashboard_theme_override { get; set; } 
+    public int? DashboardThemeOverride { get; set; } 
 
     [JsonProperty("list_item_height", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? List_item_height { get; set; } 
+    public int? ListItemHeight { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

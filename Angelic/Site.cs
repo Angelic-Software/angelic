@@ -35,19 +35,19 @@ public class Site
     public string? Name { get; set; } 
 
     [JsonProperty("client_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Client_id { get; set; } 
+    public double? ClientId { get; set; } 
 
     [JsonProperty("client_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Client_name { get; set; } 
+    public string? ClientName { get; set; } 
 
     [JsonProperty("clientsite_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Clientsite_name { get; set; } 
+    public string? ClientsiteName { get; set; } 
 
     [JsonProperty("inactive", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Inactive { get; set; } 
 
     [JsonProperty("sla_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Sla_id { get; set; } 
+    public int? SlaId { get; set; } 
 
     [JsonProperty("phonenumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Phonenumber { get; set; } 
@@ -59,7 +59,7 @@ public class Site
     public string? Timezone { get; set; } 
 
     [JsonProperty("invoice_address_isdelivery", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Invoice_address_isdelivery { get; set; } 
+    public bool? InvoiceAddressIsdelivery { get; set; } 
 
     [JsonProperty("notes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Notes { get; set; } 
@@ -68,22 +68,22 @@ public class Site
     public bool? Isstocklocation { get; set; } 
 
     [JsonProperty("messagegroup_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Messagegroup_id { get; set; } 
+    public int? MessagegroupId { get; set; } 
 
     [JsonProperty("item_quantity_in_stock", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Item_quantity_in_stock { get; set; } 
+    public double? ItemQuantityInStock { get; set; } 
 
     [JsonProperty("item_serialised_assets_in_stock", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Item_serialised_assets_in_stock { get; set; } 
+    public double? ItemSerialisedAssetsInStock { get; set; } 
 
     [JsonProperty("item_quantity_reserved", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Item_quantity_reserved { get; set; } 
+    public double? ItemQuantityReserved { get; set; } 
 
     [JsonProperty("item_quantity_reserved_on_order", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Item_quantity_reserved_on_order { get; set; } 
+    public double? ItemQuantityReservedOnOrder { get; set; } 
 
     [JsonProperty("item_quantity_available", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Item_quantity_available { get; set; } 
+    public double? ItemQuantityAvailable { get; set; } 
 
     [JsonProperty("datecreated", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? Datecreated { get; set; } 
@@ -200,7 +200,7 @@ public class Site
     public DateTimeOffset? Contractlastchecked { get; set; } 
 
     [JsonProperty("maincontact_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Maincontact_name { get; set; } 
+    public string? MaincontactName { get; set; } 
 
     [JsonProperty("wildcardref", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Wildcardref { get; set; } 
@@ -221,61 +221,61 @@ public class Site
     public bool? Monthlyreportemaildirect { get; set; } 
 
     [JsonProperty("language_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Language_id { get; set; } 
+    public int? LanguageId { get; set; } 
 
     [JsonProperty("language_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Language_name { get; set; } 
+    public string? LanguageName { get; set; } 
 
     [JsonProperty("snowname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Snowname { get; set; } 
 
     [JsonProperty("linked_organisation_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Linked_organisation_id { get; set; } 
+    public int? LinkedOrganisationId { get; set; } 
 
     [JsonProperty("slocked", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Slocked { get; set; } 
 
     [JsonProperty("newsite_contactname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Newsite_contactname { get; set; } 
+    public string? NewsiteContactname { get; set; } 
 
     [JsonProperty("newsite_contactemail", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Newsite_contactemail { get; set; } 
+    public string? NewsiteContactemail { get; set; } 
 
     [JsonProperty("newsite_contacttitle", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Newsite_contacttitle { get; set; } 
+    public string? NewsiteContacttitle { get; set; } 
 
     [JsonProperty("newsite_web_access_level", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Newsite_web_access_level { get; set; } 
+    public int? NewsiteWebAccessLevel { get; set; } 
 
     [JsonProperty("newsite_sendwelcomeemail", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Newsite_sendwelcomeemail { get; set; } 
+    public bool? NewsiteSendwelcomeemail { get; set; } 
 
     [JsonProperty("delivery_address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public AddressStore? Delivery_address { get; set; } 
+    public AddressStore? DeliveryAddress { get; set; } 
 
     [JsonProperty("invoice_address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public AddressStore? Invoice_address { get; set; } 
+    public AddressStore? InvoiceAddress { get; set; } 
 
     [JsonProperty("popup_notes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AreaPopup>? Popup_notes { get; set; } 
+    public ICollection<AreaPopup>? PopupNotes { get; set; } 
 
     [JsonProperty("_reassign_all_to_user", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? _reassign_all_to_user { get; set; } 
+    public int? ReassignAllToUser { get; set; } 
 
     [JsonProperty("fields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<FieldHelper>? Fields { get; set; } 
 
     [JsonProperty("open_ticket_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Open_ticket_count { get; set; } 
+    public int? OpenTicketCount { get; set; } 
 
     [JsonProperty("onhold_ticket_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Onhold_ticket_count { get; set; } 
+    public int? OnholdTicketCount { get; set; } 
 
     [JsonProperty("total_ticket_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Total_ticket_count { get; set; } 
+    public int? TotalTicketCount { get; set; } 
 
     [JsonProperty("opened_thismonth_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Opened_thismonth_count { get; set; } 
+    public int? OpenedThismonthCount { get; set; } 
 
     [JsonProperty("guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Guid { get; set; } 
@@ -284,7 +284,7 @@ public class Site
     public ICollection<SiteContact>? Sitecontacts { get; set; } 
 
     [JsonProperty("_isimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _isimport { get; set; } 
+    public bool? Isimport { get; set; } 
 
     [JsonProperty("cautomateid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Cautomateid { get; set; } 
@@ -293,13 +293,13 @@ public class Site
     public int? Ninjarmmid { get; set; } 
 
     [JsonProperty("_importtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _importtype { get; set; } 
+    public string? Importtype { get; set; } 
 
     [JsonProperty("_isxero", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _isxero { get; set; } 
+    public bool? Isxero { get; set; } 
 
     [JsonProperty("_match_first_site", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _match_first_site { get; set; } 
+    public bool? MatchFirstSite { get; set; } 
 
     [JsonProperty("servicenowid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Servicenowid { get; set; } 
@@ -308,16 +308,16 @@ public class Site
     public bool? Isnhserveremaildefault { get; set; } 
 
     [JsonProperty("device42id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Device42id { get; set; } 
+    public int? Device42Id { get; set; } 
 
     [JsonProperty("datto_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Datto_id { get; set; } 
+    public string? DattoId { get; set; } 
 
     [JsonProperty("datto_alternate_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Datto_alternate_id { get; set; } 
+    public int? DattoAlternateId { get; set; } 
 
     [JsonProperty("datto_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Datto_url { get; set; } 
+    public string? DattoUrl { get; set; } 
 
     [JsonProperty("connectwiseid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Connectwiseid { get; set; } 
@@ -338,67 +338,67 @@ public class Site
     public DateTimeOffset? Slastupdate { get; set; } 
 
     [JsonProperty("site_service_tax_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Site_service_tax_code { get; set; } 
+    public int? SiteServiceTaxCode { get; set; } 
 
     [JsonProperty("site_prepay_tax_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Site_prepay_tax_code { get; set; } 
+    public int? SitePrepayTaxCode { get; set; } 
 
     [JsonProperty("site_contract_tax_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Site_contract_tax_code { get; set; } 
+    public int? SiteContractTaxCode { get; set; } 
 
     [JsonProperty("site_item_tax_code_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Site_item_tax_code_name { get; set; } 
+    public string? SiteItemTaxCodeName { get; set; } 
 
     [JsonProperty("site_service_tax_code_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Site_service_tax_code_name { get; set; } 
+    public string? SiteServiceTaxCodeName { get; set; } 
 
     [JsonProperty("site_contract_tax_code_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Site_contract_tax_code_name { get; set; } 
+    public string? SiteContractTaxCodeName { get; set; } 
 
     [JsonProperty("site_prepay_tax_code_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Site_prepay_tax_code_name { get; set; } 
+    public string? SitePrepayTaxCodeName { get; set; } 
 
     [JsonProperty("site_sales_tax_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Site_sales_tax_code { get; set; } 
+    public int? SiteSalesTaxCode { get; set; } 
 
     [JsonProperty("site_purchase_tax_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Site_purchase_tax_code { get; set; } 
+    public int? SitePurchaseTaxCode { get; set; } 
 
     [JsonProperty("site_purchase_tax_code_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Site_purchase_tax_code_name { get; set; } 
+    public string? SitePurchaseTaxCodeName { get; set; } 
 
     [JsonProperty("syncroid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Syncroid { get; set; } 
 
     [JsonProperty("third_party_client_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Third_party_client_name { get; set; } 
+    public string? ThirdPartyClientName { get; set; } 
 
     [JsonProperty("auvik_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Auvik_id { get; set; } 
+    public string? AuvikId { get; set; } 
 
     [JsonProperty("faqlists", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<FAQListHead>? Faqlists { get; set; } 
+    public ICollection<FaqListHead>? Faqlists { get; set; } 
 
     [JsonProperty("all_faqlists_allowed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? All_faqlists_allowed { get; set; } 
+    public bool? AllFaqlistsAllowed { get; set; } 
 
     [JsonProperty("hubspot_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Hubspot_id { get; set; } 
+    public string? HubspotId { get; set; } 
 
     [JsonProperty("passportal_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public long? Passportal_id { get; set; } 
+    public long? PassportalId { get; set; } 
 
     [JsonProperty("import_site_mapping", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Import_site_mapping { get; set; } 
+    public int? ImportSiteMapping { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
     [JsonProperty("issitedetails", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Issitedetails { get; set; } 
 
     [JsonProperty("hudu_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Hudu_url { get; set; } 
+    public string? HuduUrl { get; set; } 
 
     [JsonProperty("liongardid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Liongardid { get; set; } 
@@ -410,70 +410,70 @@ public class Site
     public int? Surchargeid { get; set; } 
 
     [JsonProperty("country_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Country_code { get; set; } 
+    public string? CountryCode { get; set; } 
 
     [JsonProperty("region_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Region_code { get; set; } 
+    public int? RegionCode { get; set; } 
 
     [JsonProperty("stockbins", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<StockBin>? Stockbins { get; set; } 
 
     [JsonProperty("ncentral_details_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Ncentral_details_id { get; set; } 
+    public int? NcentralDetailsId { get; set; } 
 
     [JsonProperty("new_external_link", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ExternalLink_List? New_external_link { get; set; } 
+    public ExternalLinkList? NewExternalLink { get; set; } 
 
     [JsonProperty("_match_thirdparty_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _match_thirdparty_id { get; set; } 
+    public string? MatchThirdpartyId { get; set; } 
 
     [JsonProperty("_match_integration_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? _match_integration_id { get; set; } 
+    public int? MatchIntegrationId { get; set; } 
 
     [JsonProperty("_match_integration_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _match_integration_name { get; set; } 
+    public string? MatchIntegrationName { get; set; } 
 
     [JsonProperty("import_details_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Import_details_id { get; set; } 
+    public int? ImportDetailsId { get; set; } 
 
     [JsonProperty("hasitemsinstock", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Hasitemsinstock { get; set; } 
 
     [JsonProperty("_dont_fire_automations", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _dont_fire_automations { get; set; } 
+    public bool? DontFireAutomations { get; set; } 
 
     [JsonProperty("sqlimport_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Sqlimport_id { get; set; } 
+    public int? SqlimportId { get; set; } 
 
     [JsonProperty("matching_value", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Matching_value { get; set; } 
+    public string? MatchingValue { get; set; } 
 
     [JsonProperty("lapsafe_default_installation_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Lapsafe_default_installation_name { get; set; } 
+    public string? LapsafeDefaultInstallationName { get; set; } 
 
     [JsonProperty("lapsafe_default_installation_obj", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ValueLabelIsNewKeyPair? Lapsafe_default_installation_obj { get; set; } 
+    public ValueLabelIsNewKeyPair? LapsafeDefaultInstallationObj { get; set; } 
 
     [JsonProperty("external_links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ExternalLink_List>? External_links { get; set; } 
+    public ICollection<ExternalLinkList>? ExternalLinks { get; set; } 
 
     [JsonProperty("extratabs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<Tabname>? Extratabs { get; set; } 
 
     [JsonProperty("businesscentral_area_company_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Businesscentral_area_company_id { get; set; } 
+    public int? BusinesscentralAreaCompanyId { get; set; } 
 
     [JsonProperty("businesscentral_billing_client", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public BusinessCentralCustomer? Businesscentral_billing_client { get; set; } 
+    public BusinessCentralCustomer? BusinesscentralBillingClient { get; set; } 
 
     [JsonProperty("_convert_phonenumbers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _convert_phonenumbers { get; set; } 
+    public bool? ConvertPhonenumbers { get; set; } 
 
     [JsonProperty("sequence", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Sequence { get; set; } 
 
     [JsonProperty("authrocket_locale", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Authrocket_locale { get; set; } 
+    public string? AuthrocketLocale { get; set; } 
 
     [JsonProperty("use", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Use { get; set; } 
@@ -482,57 +482,57 @@ public class Site
     public ICollection<CustomField>? Customfields { get; set; } 
 
     [JsonProperty("site_fields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<FieldHelper>? Site_fields { get; set; } 
+    public ICollection<FieldHelper>? SiteFields { get; set; } 
 
     [JsonProperty("gfisiteid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Gfisiteid { get; set; } 
 
     [JsonProperty("delivery_address_line1", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Delivery_address_line1 { get; set; } 
+    public string? DeliveryAddressLine1 { get; set; } 
 
     [JsonProperty("delivery_address_line2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Delivery_address_line2 { get; set; } 
+    public string? DeliveryAddressLine2 { get; set; } 
 
     [JsonProperty("delivery_address_line3", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Delivery_address_line3 { get; set; } 
+    public string? DeliveryAddressLine3 { get; set; } 
 
     [JsonProperty("delivery_address_line4", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Delivery_address_line4 { get; set; } 
+    public string? DeliveryAddressLine4 { get; set; } 
 
     [JsonProperty("delivery_address_line5", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Delivery_address_line5 { get; set; } 
+    public string? DeliveryAddressLine5 { get; set; } 
 
     [JsonProperty("itglue_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Itglue_id { get; set; } 
+    public string? ItglueId { get; set; } 
 
     [JsonProperty("client_itglue_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Client_itglue_id { get; set; } 
+    public string? ClientItglueId { get; set; } 
 
     [JsonProperty("custombuttons", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<CustomButton>? Custombuttons { get; set; } 
 
     [JsonProperty("stockbin_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Stockbin_id { get; set; } 
+    public int? StockbinId { get; set; } 
 
     [JsonProperty("stockbin_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Stockbin_name { get; set; } 
+    public string? StockbinName { get; set; } 
 
     [JsonProperty("country_code_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Country_code_name { get; set; } 
+    public string? CountryCodeName { get; set; } 
 
     [JsonProperty("region_code_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Region_code_name { get; set; } 
+    public string? RegionCodeName { get; set; } 
 
     [JsonProperty("ref", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Ref { get; set; } 
 
     [JsonProperty("lapsafe_default_installation", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Lapsafe_default_installation { get; set; } 
+    public string? LapsafeDefaultInstallation { get; set; } 
 
     [JsonProperty("maincontact_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Maincontact_id { get; set; } 
+    public int? MaincontactId { get; set; } 
 
     [JsonProperty("site_item_tax_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Site_item_tax_code { get; set; } 
+    public int? SiteItemTaxCode { get; set; } 
 
 }

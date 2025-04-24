@@ -16,60 +16,60 @@ public class ServiceRequestDetails
     public Guid? Guid { get; set; } 
 
     [JsonProperty("servicedetail_servsiteid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Servicedetail_servsiteid { get; set; } 
+    public int? ServicedetailServsiteid { get; set; } 
 
     [JsonProperty("servicedetail_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Servicedetail_type { get; set; } 
+    public int? ServicedetailType { get; set; } 
 
     [JsonProperty("servicedetail_requesttypeid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Servicedetail_requesttypeid { get; set; } 
+    public int? ServicedetailRequesttypeid { get; set; } 
 
     [JsonProperty("servicedetail_requesttypeguid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? Servicedetail_requesttypeguid { get; set; } 
+    public Guid? ServicedetailRequesttypeguid { get; set; } 
 
     [JsonProperty("servicedetail_requesttypename", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Servicedetail_requesttypename { get; set; } 
+    public string? ServicedetailRequesttypename { get; set; } 
 
     [JsonProperty("servicedetail_templateid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Servicedetail_templateid { get; set; } 
+    public int? ServicedetailTemplateid { get; set; } 
 
     [JsonProperty("servicedetail_templateguid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? Servicedetail_templateguid { get; set; } 
+    public Guid? ServicedetailTemplateguid { get; set; } 
 
     [JsonProperty("servicedetail_templatename", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Servicedetail_templatename { get; set; } 
+    public string? ServicedetailTemplatename { get; set; } 
 
     [JsonProperty("servicedetail_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Servicedetail_url { get; set; } 
+    public string? ServicedetailUrl { get; set; } 
 
     [JsonProperty("servicedetail_label", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Servicedetail_label { get; set; } 
+    public string? ServicedetailLabel { get; set; } 
 
     [JsonProperty("servicedetail_hint", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Servicedetail_hint { get; set; } 
+    public string? ServicedetailHint { get; set; } 
 
     [JsonProperty("servicedetail_shownewreqscreen", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Servicedetail_shownewreqscreen { get; set; } 
+    public bool? ServicedetailShownewreqscreen { get; set; } 
 
     [JsonProperty("optional_services", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ServiceOption>? Optional_services { get; set; } 
+    public ICollection<ServiceOption>? OptionalServices { get; set; } 
 
     [JsonProperty("sequenceid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Sequenceid { get; set; } 
 
     [JsonProperty("servicedetail_longname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Servicedetail_longname { get; set; } 
+    public string? ServicedetailLongname { get; set; } 
 
     [JsonProperty("allow_all_items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Allow_all_items { get; set; } 
+    public bool? AllowAllItems { get; set; } 
 
     [JsonProperty("allowed_items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ItemRestriction>? Allowed_items { get; set; } 
+    public ICollection<ItemRestriction>? AllowedItems { get; set; } 
 
     [JsonProperty("translations", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<LanguagePackTranslationsCustom>? Translations { get; set; } 
 
     [JsonProperty("show_submission_summary", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Show_submission_summary { get; set; } 
+    public bool? ShowSubmissionSummary { get; set; } 
 
 }

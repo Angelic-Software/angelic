@@ -10,16 +10,16 @@ public class GeoLocationRestriction
     public int? Id { get; set; } 
 
     [JsonProperty("table_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Table_id { get; set; } 
+    public int? TableId { get; set; } 
 
     [JsonProperty("entity_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Entity_id { get; set; } 
+    public int? EntityId { get; set; } 
 
     [JsonProperty("country_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Country_code { get; set; } 
+    public string? CountryCode { get; set; } 
 
     [JsonProperty("continent_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Continent_code { get; set; } 
+    public string? ContinentCode { get; set; } 
 
     [JsonProperty("exclude", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Exclude { get; set; } 

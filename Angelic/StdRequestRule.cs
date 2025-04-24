@@ -10,57 +10,57 @@ public class StdRequestRule
     public int? Id { get; set; } 
 
     [JsonProperty("parent_template_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Parent_template_id { get; set; } 
+    public int? ParentTemplateId { get; set; } 
 
     [JsonProperty("child_template_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Child_template_id { get; set; } 
+    public int? ChildTemplateId { get; set; } 
 
     [JsonProperty("usage", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Usage { get; set; } 
 
     [JsonProperty("rule_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Rule_type { get; set; } 
+    public int? RuleType { get; set; } 
 
     [JsonProperty("createonchildclose_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Createonchildclose_id { get; set; } 
+    public int? CreateonchildcloseId { get; set; } 
 
     [JsonProperty("createonchildclose_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Createonchildclose_name { get; set; } 
+    public string? CreateonchildcloseName { get; set; } 
 
     [JsonProperty("working_days", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Working_days { get; set; } 
+    public int? WorkingDays { get; set; } 
 
     [JsonProperty("outcome_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Outcome_id { get; set; } 
+    public int? OutcomeId { get; set; } 
 
     [JsonProperty("outcome_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Outcome_name { get; set; } 
+    public string? OutcomeName { get; set; } 
 
     [JsonProperty("field_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Field_id { get; set; } 
+    public int? FieldId { get; set; } 
 
     [JsonProperty("field_value", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Field_value { get; set; } 
+    public int? FieldValue { get; set; } 
 
     [JsonProperty("field_value_string", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Field_value_string { get; set; } 
+    public string? FieldValueString { get; set; } 
 
     [JsonProperty("field_contains", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Field_contains { get; set; } 
+    public string? FieldContains { get; set; } 
 
     [JsonProperty("field_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Field_name { get; set; } 
+    public string? FieldName { get; set; } 
 
     [JsonProperty("approvalstatus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Approvalstatus { get; set; } 
 
     [JsonProperty("group_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Group_id { get; set; } 
+    public int? GroupId { get; set; } 
 
     [JsonProperty("optionalservice_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Optionalservice_id { get; set; } 
+    public int? OptionalserviceId { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

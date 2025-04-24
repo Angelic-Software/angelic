@@ -10,7 +10,7 @@ public class LicenceRole
     public int? Id { get; set; } 
 
     [JsonProperty("softwarelicence_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Softwarelicence_id { get; set; } 
+    public int? SoftwarelicenceId { get; set; } 
 
     [JsonProperty("name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Name { get; set; } 
@@ -19,6 +19,6 @@ public class LicenceRole
     public string? Note { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

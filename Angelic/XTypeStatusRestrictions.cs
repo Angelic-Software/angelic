@@ -7,15 +7,15 @@ namespace Angelic;
 public class XTypeStatusRestrictions
 {
     [JsonProperty("xtypestatus_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Xtypestatus_id { get; set; } 
+    public int? XtypestatusId { get; set; } 
 
     [JsonProperty("status_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Status_id { get; set; } 
+    public int? StatusId { get; set; } 
 
     [JsonProperty("status_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Status_name { get; set; } 
+    public string? StatusName { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

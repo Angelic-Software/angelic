@@ -13,13 +13,13 @@ public class Downtime
     public int? Faultid { get; set; } 
 
     [JsonProperty("fault_summary", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Fault_summary { get; set; } 
+    public string? FaultSummary { get; set; } 
 
     [JsonProperty("service", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Service { get; set; } 
 
     [JsonProperty("service_desc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Service_desc { get; set; } 
+    public string? ServiceDesc { get; set; } 
 
     [JsonProperty("workdays", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Workdays { get; set; } 

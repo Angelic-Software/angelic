@@ -10,24 +10,24 @@ public class DashboardRestriction
     public int? Id { get; set; } 
 
     [JsonProperty("dashboard_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Dashboard_id { get; set; } 
+    public int? DashboardId { get; set; } 
 
     [JsonProperty("type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Type { get; set; } 
 
     [JsonProperty("data_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Data_id { get; set; } 
+    public int? DataId { get; set; } 
 
     [JsonProperty("data_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Data_name { get; set; } 
+    public string? DataName { get; set; } 
 
     [JsonProperty("dashboard_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Dashboard_name { get; set; } 
+    public string? DashboardName { get; set; } 
 
     [JsonProperty("data_string", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Data_string { get; set; } 
+    public string? DataString { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

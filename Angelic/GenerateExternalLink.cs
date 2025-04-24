@@ -7,9 +7,9 @@ namespace Angelic;
     public class GenerateExternalLink
     {
         [JsonProperty("module_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Module_id { get; set; } 
+        public int? ModuleId { get; set; } 
 
         [JsonProperty("tenant_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Tenant_id { get; set; } 
+        public int? TenantId { get; set; } 
 
     }

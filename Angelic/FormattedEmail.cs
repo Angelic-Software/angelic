@@ -28,7 +28,7 @@ public class FormattedEmail
     public string? Site { get; set; } 
 
     [JsonProperty("email_to", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Email_to { get; set; } 
+    public string? EmailTo { get; set; } 
 
     [JsonProperty("username", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Username { get; set; } 
@@ -64,30 +64,30 @@ public class FormattedEmail
     public string? Category4 { get; set; } 
 
     [JsonProperty("opportunity_contact_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Opportunity_contact_name { get; set; } 
+    public string? OpportunityContactName { get; set; } 
 
     [JsonProperty("opportunity_company_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Opportunity_company_name { get; set; } 
+    public string? OpportunityCompanyName { get; set; } 
 
     [JsonProperty("opportunity_email", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Opportunity_email { get; set; } 
+    public string? OpportunityEmail { get; set; } 
 
     [JsonProperty("opportunity_phone", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Opportunity_phone { get; set; } 
+    public string? OpportunityPhone { get; set; } 
 
     [JsonProperty("opportunity_value", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Opportunity_value { get; set; } 
+    public string? OpportunityValue { get; set; } 
 
     [JsonProperty("email_cc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Email_cc { get; set; } 
+    public string? EmailCc { get; set; } 
 
     [JsonProperty("opportunity_country", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Opportunity_country { get; set; } 
+    public string? OpportunityCountry { get; set; } 
 
     [JsonProperty("template_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Template_name { get; set; } 
+    public string? TemplateName { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

@@ -106,7 +106,7 @@ public class Attachment
     public int? CopyFromId { get; set; } 
 
     [JsonProperty("new_external_link", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ExternalLink_List? NewExternalLink { get; set; } 
+    public ExternalLinkList? NewExternalLink { get; set; } 
 
     [JsonProperty("_match_thirdparty_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? MatchThirdpartyId { get; set; } 
@@ -121,7 +121,7 @@ public class Attachment
     public int? ImportDetailsId { get; set; } 
 
     [JsonProperty("external_links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ExternalLink_List>? ExternalLinks { get; set; } 
+    public ICollection<ExternalLinkList>? ExternalLinks { get; set; } 
 
     [JsonProperty("showforusers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Showforusers { get; set; } 

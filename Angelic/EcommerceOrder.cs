@@ -34,30 +34,30 @@ public class EcommerceOrder
     public DateTimeOffset? Thirdpartycreateddate { get; set; } 
 
     [JsonProperty("integration_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Integration_name { get; set; } 
+    public string? IntegrationName { get; set; } 
 
     [JsonProperty("ticket_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Ticket_id { get; set; } 
+    public int? TicketId { get; set; } 
 
     [JsonProperty("details_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Details_id { get; set; } 
+    public int? DetailsId { get; set; } 
 
     [JsonProperty("shop_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Shop_name { get; set; } 
+    public string? ShopName { get; set; } 
 
     [JsonProperty("_unlink_from_ticket", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _unlink_from_ticket { get; set; } 
+    public bool? UnlinkFromTicket { get; set; } 
 
     [JsonProperty("jsonobj", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Jsonobj { get; set; } 
 
     [JsonProperty("_amazon_buyer_info", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public AmazonSellerBuyerInfo? _amazon_buyer_info { get; set; } 
+    public AmazonSellerBuyerInfo? AmazonBuyerInfo { get; set; } 
 
     [JsonProperty("_adobecommerce_billing_address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public AdobeCommerceBilling_Address? _adobecommerce_billing_address { get; set; } 
+    public AdobeCommerceBilling_Address? AdobecommerceBillingAddress { get; set; } 
 
     [JsonProperty("linked_tickets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<EcommerceOrderFault>? Linked_tickets { get; set; } 
+    public ICollection<EcommerceOrderFault>? LinkedTickets { get; set; } 
 
 }

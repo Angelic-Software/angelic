@@ -13,51 +13,51 @@ public class WorkflowTarget
     public string? Name { get; set; } 
 
     [JsonProperty("flow_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Flow_id { get; set; } 
+    public int? FlowId { get; set; } 
 
     [JsonProperty("flow_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? Flow_guid { get; set; } 
+    public Guid? FlowGuid { get; set; } 
 
     [JsonProperty("target_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Target_type { get; set; } 
+    public int? TargetType { get; set; } 
 
     [JsonProperty("start_stage_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Start_stage_id { get; set; } 
+    public int? StartStageId { get; set; } 
 
     [JsonProperty("start_stage_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Start_stage_name { get; set; } 
+    public string? StartStageName { get; set; } 
 
     [JsonProperty("end_stage_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? End_stage_id { get; set; } 
+    public int? EndStageId { get; set; } 
 
     [JsonProperty("end_stage_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? End_stage_name { get; set; } 
+    public string? EndStageName { get; set; } 
 
     [JsonProperty("start_steps", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<WorkflowTargetStep>? Start_steps { get; set; } 
+    public ICollection<WorkflowTargetStep>? StartSteps { get; set; } 
 
     [JsonProperty("end_steps", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<WorkflowTargetStep>? End_steps { get; set; } 
+    public ICollection<WorkflowTargetStep>? EndSteps { get; set; } 
 
     [JsonProperty("target", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? Target { get; set; } 
 
     [JsonProperty("target_units", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Target_units { get; set; } 
+    public string? TargetUnits { get; set; } 
 
     [JsonProperty("workday", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Workday { get; set; } 
 
     [JsonProperty("workday_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Workday_name { get; set; } 
+    public string? WorkdayName { get; set; } 
 
     [JsonProperty("rules", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<Autoassign>? Rules { get; set; } 
 
     [JsonProperty("rule_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Rule_id { get; set; } 
+    public int? RuleId { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

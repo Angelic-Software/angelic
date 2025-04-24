@@ -10,18 +10,18 @@ public class SectionRequestType
     public int? Id { get; set; } 
 
     [JsonProperty("tickettype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Tickettype_id { get; set; } 
+    public int? TickettypeId { get; set; } 
 
     [JsonProperty("section_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Section_id { get; set; } 
+    public int? SectionId { get; set; } 
 
     [JsonProperty("section_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Section_name { get; set; } 
+    public string? SectionName { get; set; } 
 
     [JsonProperty("allowedteamsrestriction", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Allowedteamsrestriction { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

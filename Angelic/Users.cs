@@ -574,7 +574,7 @@ public class Users
     public string? SupplierName { get; set; } 
 
     [JsonProperty("claims", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<NHD_Claim>? Claims { get; set; } 
+    public ICollection<NhdClaim>? Claims { get; set; } 
 
     [JsonProperty("app_colour", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? AppColour { get; set; } 
@@ -682,7 +682,7 @@ public class Users
     public string? Oppemailaddress { get; set; } 
 
     [JsonProperty("assets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<Device_List>? Assets { get; set; } 
+    public ICollection<DeviceList>? Assets { get; set; } 
 
     [JsonProperty("locked", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Locked { get; set; } 
@@ -754,10 +754,10 @@ public class Users
     public string? ServicenowCompanyid { get; set; } 
 
     [JsonProperty("external_links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ExternalLink_List>? ExternalLinks { get; set; } 
+    public ICollection<ExternalLinkList>? ExternalLinks { get; set; } 
 
     [JsonProperty("new_external_link", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ExternalLink_List? NewExternalLink { get; set; } 
+    public ExternalLinkList? NewExternalLink { get; set; } 
 
     [JsonProperty("_match_thirdparty_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? MatchThirdpartyId { get; set; } 
@@ -829,7 +829,7 @@ public class Users
     public ICollection<UserThirdPartyGroup>? Thirdpartygroups { get; set; } 
 
     [JsonProperty("linked_sites", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ExternalLink_List>? LinkedSites { get; set; } 
+    public ICollection<ExternalLinkList>? LinkedSites { get; set; } 
 
     [JsonProperty("dontackemails2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Dontackemails2 { get; set; } 

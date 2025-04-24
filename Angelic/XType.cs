@@ -19,31 +19,31 @@ public class XType
     public string? Name { get; set; } 
 
     [JsonProperty("assetgroup_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Assetgroup_id { get; set; } 
+    public int? AssetgroupId { get; set; } 
 
     [JsonProperty("assetgroup_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? Assetgroup_guid { get; set; } 
+    public Guid? AssetgroupGuid { get; set; } 
 
     [JsonProperty("assetgroup_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Assetgroup_name { get; set; } 
+    public string? AssetgroupName { get; set; } 
 
     [JsonProperty("keyfield_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Keyfield_id { get; set; } 
+    public int? KeyfieldId { get; set; } 
 
     [JsonProperty("keyfield_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Keyfield_name { get; set; } 
+    public string? KeyfieldName { get; set; } 
 
     [JsonProperty("keyfield2_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Keyfield2_id { get; set; } 
+    public int? Keyfield2Id { get; set; } 
 
     [JsonProperty("keyfield2_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Keyfield2_name { get; set; } 
+    public string? Keyfield2Name { get; set; } 
 
     [JsonProperty("keyfield3_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Keyfield3_id { get; set; } 
+    public int? Keyfield3Id { get; set; } 
 
     [JsonProperty("keyfield3_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Keyfield3_name { get; set; } 
+    public string? Keyfield3Name { get; set; } 
 
     [JsonProperty("memo", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Memo { get; set; } 
@@ -103,16 +103,16 @@ public class XType
     public string? Icon { get; set; } 
 
     [JsonProperty("show_to_users", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Show_to_users { get; set; } 
+    public bool? ShowToUsers { get; set; } 
 
     [JsonProperty("fields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<TypeInfo>? Fields { get; set; } 
 
     [JsonProperty("field_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<Field>? Field_list { get; set; } 
+    public ICollection<Field>? FieldList { get; set; } 
 
     [JsonProperty("item_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Item_code { get; set; } 
+    public string? ItemCode { get; set; } 
 
     [JsonProperty("defaultsequence", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Defaultsequence { get; set; } 
@@ -121,34 +121,34 @@ public class XType
     public string? Tagprefix { get; set; } 
 
     [JsonProperty("column_profile_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Column_profile_id { get; set; } 
+    public int? ColumnProfileId { get; set; } 
 
     [JsonProperty("column_profile_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? Column_profile_guid { get; set; } 
+    public Guid? ColumnProfileGuid { get; set; } 
 
     [JsonProperty("columnprofileoverride_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Columnprofileoverride_name { get; set; } 
+    public string? ColumnprofileoverrideName { get; set; } 
 
     [JsonProperty("enableresourcebooking", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Enableresourcebooking { get; set; } 
 
     [JsonProperty("resourcebooking_workdays_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Resourcebooking_workdays_id { get; set; } 
+    public int? ResourcebookingWorkdaysId { get; set; } 
 
     [JsonProperty("resourcebooking_workdays_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Resourcebooking_workdays_name { get; set; } 
+    public string? ResourcebookingWorkdaysName { get; set; } 
 
     [JsonProperty("resourcebooking_allow_asset_selection", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Resourcebooking_allow_asset_selection { get; set; } 
+    public bool? ResourcebookingAllowAssetSelection { get; set; } 
 
     [JsonProperty("resourcebooking_asset_restriction_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Resourcebooking_asset_restriction_type { get; set; } 
+    public int? ResourcebookingAssetRestrictionType { get; set; } 
 
     [JsonProperty("resourcebooking_min_hours_advance", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Resourcebooking_min_hours_advance { get; set; } 
+    public double? ResourcebookingMinHoursAdvance { get; set; } 
 
     [JsonProperty("resourcebooking_max_days_advance", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Resourcebooking_max_days_advance { get; set; } 
+    public double? ResourcebookingMaxDaysAdvance { get; set; } 
 
     [JsonProperty("bookingtypes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<BookingType>? Bookingtypes { get; set; } 
@@ -157,13 +157,13 @@ public class XType
     public ICollection<BookingTypeTimeslot>? Timeslots { get; set; } 
 
     [JsonProperty("timeslot_bookingtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Timeslot_bookingtype { get; set; } 
+    public int? TimeslotBookingtype { get; set; } 
 
     [JsonProperty("_isimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _isimport { get; set; } 
+    public bool? Isimport { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
     [JsonProperty("linkedcontracttype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Linkedcontracttype { get; set; } 
@@ -172,99 +172,99 @@ public class XType
     public int? Fiid { get; set; } 
 
     [JsonProperty("fiid_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? Fiid_guid { get; set; } 
+    public Guid? FiidGuid { get; set; } 
 
     [JsonProperty("finame", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Finame { get; set; } 
 
     [JsonProperty("new_icon", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? New_icon { get; set; } 
+    public string? NewIcon { get; set; } 
 
     [JsonProperty("xtype_roles", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<XTypeRole>? Xtype_roles { get; set; } 
+    public ICollection<XTypeRole>? XtypeRoles { get; set; } 
 
     [JsonProperty("asset_details_tab_display", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Asset_details_tab_display { get; set; } 
+    public int? AssetDetailsTabDisplay { get; set; } 
 
     [JsonProperty("tab_config", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<TabConfig>? Tab_config { get; set; } 
+    public ICollection<TabConfig>? TabConfig { get; set; } 
 
     [JsonProperty("resourcebookingtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Resourcebookingtype { get; set; } 
 
     [JsonProperty("allowed_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<XTypeStatus>? Allowed_status { get; set; } 
+    public ICollection<XTypeStatus>? AllowedStatus { get; set; } 
 
     [JsonProperty("allowall_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Allowall_status { get; set; } 
+    public bool? AllowallStatus { get; set; } 
 
     [JsonProperty("businessowner_visibility", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Businessowner_visibility { get; set; } 
+    public int? BusinessownerVisibility { get; set; } 
 
     [JsonProperty("technicalowner_visibility", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Technicalowner_visibility { get; set; } 
+    public int? TechnicalownerVisibility { get; set; } 
 
     [JsonProperty("sla_visibility", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Sla_visibility { get; set; } 
+    public int? SlaVisibility { get; set; } 
 
     [JsonProperty("priority_visibility", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Priority_visibility { get; set; } 
+    public int? PriorityVisibility { get; set; } 
 
     [JsonProperty("status_visibility", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Status_visibility { get; set; } 
+    public int? StatusVisibility { get; set; } 
 
     [JsonProperty("services_visibility", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Services_visibility { get; set; } 
+    public int? ServicesVisibility { get; set; } 
 
     [JsonProperty("dependencies_visibility", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Dependencies_visibility { get; set; } 
+    public int? DependenciesVisibility { get; set; } 
 
     [JsonProperty("notes_visibility", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Notes_visibility { get; set; } 
+    public int? NotesVisibility { get; set; } 
 
     [JsonProperty("visibility_level", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Visibility_level { get; set; } 
+    public int? VisibilityLevel { get; set; } 
 
     [JsonProperty("resourcebooking_site_selection_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Resourcebooking_site_selection_type { get; set; } 
+    public int? ResourcebookingSiteSelectionType { get; set; } 
 
     [JsonProperty("booking_sites", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<Site_List>? Booking_sites { get; set; } 
+    public ICollection<SiteList>? BookingSites { get; set; } 
 
     [JsonProperty("access_control", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AccessControl>? Access_control { get; set; } 
+    public ICollection<AccessControl>? AccessControl { get; set; } 
 
     [JsonProperty("newticket_priority", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Newticket_priority { get; set; } 
+    public int? NewticketPriority { get; set; } 
 
     [JsonProperty("access_control_level", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Access_control_level { get; set; } 
+    public int? AccessControlLevel { get; set; } 
 
     [JsonProperty("licence_visibility", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Licence_visibility { get; set; } 
+    public int? LicenceVisibility { get; set; } 
 
     [JsonProperty("allow_all_view", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Allow_all_view { get; set; } 
+    public bool? AllowAllView { get; set; } 
 
     [JsonProperty("criticality_visibility", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Criticality_visibility { get; set; } 
+    public int? CriticalityVisibility { get; set; } 
 
     [JsonProperty("is_service", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Is_service { get; set; } 
+    public bool? IsService { get; set; } 
 
     [JsonProperty("is_businessapp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Is_businessapp { get; set; } 
+    public bool? IsBusinessapp { get; set; } 
 
     [JsonProperty("service_category_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Service_category_id { get; set; } 
+    public int? ServiceCategoryId { get; set; } 
 
     [JsonProperty("service_category_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Service_category_name { get; set; } 
+    public string? ServiceCategoryName { get; set; } 
 
     [JsonProperty("services", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ServSite_List>? Services { get; set; } 
+    public ICollection<ServSiteList>? Services { get; set; } 
 
     [JsonProperty("field_restrictions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<FieldRoleRestriction>? Field_restrictions { get; set; } 
+    public ICollection<FieldRoleRestriction>? FieldRestrictions { get; set; } 
 
 }

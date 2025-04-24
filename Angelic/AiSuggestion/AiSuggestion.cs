@@ -1,5 +1,4 @@
 using System.CodeDom.Compiler;
-using System.Collections.Generic;
 using Newtonsoft.Json;
 
 namespace Angelic.AiSuggestion;

@@ -22,9 +22,9 @@ public class NotificationContent
     public string? Message { get; set; } 
 
     [JsonProperty("body_text", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Body_text { get; set; } 
+    public string? BodyText { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

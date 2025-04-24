@@ -10,30 +10,30 @@ public class ViewColumnsDetails
     public int? Id { get; set; } 
 
     [JsonProperty("columns_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Columns_id { get; set; } 
+    public int? ColumnsId { get; set; } 
 
     [JsonProperty("column_seq", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Column_seq { get; set; } 
+    public int? ColumnSeq { get; set; } 
 
     [JsonProperty("column_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Column_name { get; set; } 
+    public string? ColumnName { get; set; } 
 
     [JsonProperty("width", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Width { get; set; } 
 
     [JsonProperty("order_seq", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Order_seq { get; set; } 
+    public int? OrderSeq { get; set; } 
 
     [JsonProperty("order_desc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Order_desc { get; set; } 
+    public bool? OrderDesc { get; set; } 
 
     [JsonProperty("column_title_override", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Column_title_override { get; set; } 
+    public string? ColumnTitleOverride { get; set; } 
 
     [JsonProperty("groupbystatus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Groupbystatus { get; set; } 
+    public int? GroupByStatus { get; set; } 
 
     [JsonProperty("columns_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? Columns_guid { get; set; } 
+    public Guid? ColumnsGuid { get; set; } 
 
 }

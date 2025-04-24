@@ -10,36 +10,36 @@ public class MarketingUnsubscribe
     public int? Id { get; set; } 
 
     [JsonProperty("mailcampaign_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Mailcampaign_id { get; set; } 
+    public int? MailcampaignId { get; set; } 
 
     [JsonProperty("user_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? User_id { get; set; } 
+    public int? UserId { get; set; } 
 
     [JsonProperty("email_address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Email_address { get; set; } 
+    public string? EmailAddress { get; set; } 
 
     [JsonProperty("email_unsubscribed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Email_unsubscribed { get; set; } 
+    public int? EmailUnsubscribed { get; set; } 
 
     [JsonProperty("date_unsubscribed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Date_unsubscribed { get; set; } 
+    public DateTimeOffset? DateUnsubscribed { get; set; } 
 
     [JsonProperty("user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? User_name { get; set; } 
+    public string? UserName { get; set; } 
 
     [JsonProperty("mailcampaign_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Mailcampaign_name { get; set; } 
+    public string? MailcampaignName { get; set; } 
 
     [JsonProperty("email_unsubscribed_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Email_unsubscribed_name { get; set; } 
+    public string? EmailUnsubscribedName { get; set; } 
 
     [JsonProperty("token", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Token { get; set; } 
 
     [JsonProperty("validate_token", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Validate_token { get; set; } 
+    public bool? ValidateToken { get; set; } 
 
     [JsonProperty("unsub_all", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Unsub_all { get; set; } 
+    public bool? UnsubAll { get; set; } 
 
 }

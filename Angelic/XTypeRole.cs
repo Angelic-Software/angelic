@@ -10,12 +10,12 @@ public class XTypeRole
     public int? Id { get; set; } 
 
     [JsonProperty("xtype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Xtype_id { get; set; } 
+    public int? XtypeId { get; set; } 
 
     [JsonProperty("name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Name { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

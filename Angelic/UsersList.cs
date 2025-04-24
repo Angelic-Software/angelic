@@ -256,6 +256,6 @@ public class UsersList
     public string? Importtype { get; set; } 
 
     [JsonProperty("new_external_link", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ExternalLink_List? NewExternalLink { get; set; } 
+    public ExternalLinkList? NewExternalLink { get; set; } 
 
 }

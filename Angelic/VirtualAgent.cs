@@ -16,33 +16,33 @@ public class VirtualAgent
     public string? Name { get; set; } 
 
     [JsonProperty("connection_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Connection_type { get; set; } 
+    public int? ConnectionType { get; set; } 
 
     [JsonProperty("use", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Use { get; set; } 
 
     [JsonProperty("third_party_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Third_party_id { get; set; } 
+    public string? ThirdPartyId { get; set; } 
 
     [JsonProperty("access_control", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AccessControl>? Access_control { get; set; } 
+    public ICollection<AccessControl>? AccessControl { get; set; } 
 
     [JsonProperty("access_control_level", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Access_control_level { get; set; } 
+    public int? AccessControlLevel { get; set; } 
 
     [JsonProperty("_connection_enabled", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _connection_enabled { get; set; } 
+    public bool? ConnectionEnabled { get; set; } 
 
     [JsonProperty("_instructions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _instructions { get; set; } 
+    public string? Instructions { get; set; } 
 
     [JsonProperty("_model", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _model { get; set; } 
+    public string? Model { get; set; } 
 
     [JsonProperty("_update_tools", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _update_tools { get; set; } 
+    public bool? UpdateTools { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

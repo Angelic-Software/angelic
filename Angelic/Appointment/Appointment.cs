@@ -1,5 +1,4 @@
 using System.CodeDom.Compiler;
-using System.Collections.Generic;
 using Newtonsoft.Json;
 
 namespace Angelic.Appointment;
@@ -101,5 +100,5 @@ public class Appointment
     public string? Recurrence { get; set; }
     
     [JsonProperty("crmnote_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Crmnote_id { get; set; } 
+    public int? CrmnoteId { get; set; } 
 }

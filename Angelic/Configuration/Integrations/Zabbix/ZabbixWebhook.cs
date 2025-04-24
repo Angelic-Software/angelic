@@ -7,31 +7,31 @@ namespace Angelic.Configuration.Integrations.Zabbix;
 public class ZabbixWebhook
 {
     [JsonProperty("alert_message", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Alert_message { get; set; } 
+    public string? AlertMessage { get; set; } 
 
     [JsonProperty("alert_subject", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Alert_subject { get; set; } 
+    public string? AlertSubject { get; set; } 
 
     [JsonProperty("event_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Event_id { get; set; } 
+    public string? EventId { get; set; } 
 
     [JsonProperty("event_nseverity", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Event_nseverity { get; set; } 
+    public string? EventNseverity { get; set; } 
 
     [JsonProperty("event_source", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Event_source { get; set; } 
+    public string? EventSource { get; set; } 
 
     [JsonProperty("event_tags", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Event_tags { get; set; } 
+    public string? EventTags { get; set; } 
 
     [JsonProperty("event_update_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Event_update_status { get; set; } 
+    public string? EventUpdateStatus { get; set; } 
 
     [JsonProperty("event_value", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Event_value { get; set; } 
+    public string? EventValue { get; set; } 
 
     [JsonProperty("trigger_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Trigger_id { get; set; } 
+    public string? TriggerId { get; set; } 
 
     [JsonProperty("host", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Host { get; set; } 

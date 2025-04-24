@@ -10,13 +10,13 @@ public class DistributionListsLog
     public int? Id { get; set; } 
 
     [JsonProperty("distributionlists_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Distributionlists_id { get; set; } 
+    public int? DistributionlistsId { get; set; } 
 
     [JsonProperty("user_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? User_id { get; set; } 
+    public int? UserId { get; set; } 
 
     [JsonProperty("agent_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Agent_id { get; set; } 
+    public int? AgentId { get; set; } 
 
     [JsonProperty("action", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Action { get; set; } 
@@ -31,9 +31,9 @@ public class DistributionListsLog
     public string? Emailbody { get; set; } 
 
     [JsonProperty("action_desc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Action_desc { get; set; } 
+    public string? ActionDesc { get; set; } 
 
     [JsonProperty("user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? User_name { get; set; } 
+    public string? UserName { get; set; } 
 
 }

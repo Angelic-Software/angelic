@@ -22,6 +22,6 @@ public class ViewListGroup
     public bool? Collapsed { get; set; } 
 
     [JsonProperty("type_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Type_name { get; set; } 
+    public string? TypeName { get; set; } 
 
 }

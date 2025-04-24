@@ -7,7 +7,7 @@ namespace Angelic;
 public class ServStatusSubscribe
 {
     [JsonProperty("service_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Service_id { get; set; } 
+    public int? ServiceId { get; set; } 
 
     [JsonProperty("subscribed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Subscribed { get; set; } 

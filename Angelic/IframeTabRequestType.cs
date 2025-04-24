@@ -10,15 +10,15 @@ public class IframeTabRequestType
     public int? Id { get; set; } 
 
     [JsonProperty("tickettype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Tickettype_id { get; set; } 
+    public int? TickettypeId { get; set; } 
 
     [JsonProperty("iframetab_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Iframetab_id { get; set; } 
+    public int? IframetabId { get; set; } 
 
     [JsonProperty("iframetab_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Iframetab_name { get; set; } 
+    public string? IframetabName { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

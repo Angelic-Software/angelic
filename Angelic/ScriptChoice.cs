@@ -10,18 +10,18 @@ public class ScriptChoice
     public int? Id { get; set; } 
 
     [JsonProperty("script_question_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Script_question_id { get; set; } 
+    public int? ScriptQuestionId { get; set; } 
 
     [JsonProperty("choice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Choice { get; set; } 
 
     [JsonProperty("next_question_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Next_question_id { get; set; } 
+    public int? NextQuestionId { get; set; } 
 
     [JsonProperty("sort_seq", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Sort_seq { get; set; } 
+    public int? SortSeq { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

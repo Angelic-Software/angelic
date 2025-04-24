@@ -13,30 +13,30 @@ public class ReleasePipeline
     public string? Name { get; set; } 
 
     [JsonProperty("integration_link", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Integration_link { get; set; } 
+    public int? IntegrationLink { get; set; } 
 
     [JsonProperty("linked_product", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Linked_product { get; set; } 
+    public int? LinkedProduct { get; set; } 
 
     [JsonProperty("devops_pipeline_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Devops_pipeline_id { get; set; } 
+    public int? DevopsPipelineId { get; set; } 
 
     [JsonProperty("devops_details_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Devops_details_id { get; set; } 
+    public int? DevopsDetailsId { get; set; } 
 
     [JsonProperty("active", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Active { get; set; } 
 
     [JsonProperty("devops_project_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Devops_project_id { get; set; } 
+    public string? DevopsProjectId { get; set; } 
 
     [JsonProperty("pipeline_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<IntegrationFieldMapping>? Pipeline_mappings { get; set; } 
+    public ICollection<IntegrationFieldMapping>? PipelineMappings { get; set; } 
 
     [JsonProperty("linked_product_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Linked_product_name { get; set; } 
+    public string? LinkedProductName { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

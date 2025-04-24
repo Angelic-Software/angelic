@@ -25,31 +25,31 @@ public class EventRule
     public int? Precedence { get; set; } 
 
     [JsonProperty("user_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? User_id { get; set; } 
+    public int? UserId { get; set; } 
 
     [JsonProperty("user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? User_name { get; set; } 
+    public string? UserName { get; set; } 
 
     [JsonProperty("tickettype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Tickettype_id { get; set; } 
+    public int? TickettypeId { get; set; } 
 
     [JsonProperty("tickettype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? Tickettype_guid { get; set; } 
+    public Guid? TickettypeGuid { get; set; } 
 
     [JsonProperty("tickettype_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Tickettype_name { get; set; } 
+    public string? TickettypeName { get; set; } 
 
     [JsonProperty("template_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Template_id { get; set; } 
+    public int? TemplateId { get; set; } 
 
     [JsonProperty("template_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? Template_guid { get; set; } 
+    public Guid? TemplateGuid { get; set; } 
 
     [JsonProperty("template_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Template_name { get; set; } 
+    public string? TemplateName { get; set; } 
 
     [JsonProperty("create_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Create_type { get; set; } 
+    public int? CreateType { get; set; } 
 
     [JsonProperty("values", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<OutboundIntegrationMethodValue>? Values { get; set; } 
@@ -64,12 +64,12 @@ public class EventRule
     public bool? Active { get; set; } 
 
     [JsonProperty("event_key", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Event_key { get; set; } 
+    public string? EventKey { get; set; } 
 
     [JsonProperty("hide_actions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Hide_actions { get; set; } 
+    public bool? HideActions { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

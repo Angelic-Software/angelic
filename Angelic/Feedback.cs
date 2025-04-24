@@ -10,7 +10,7 @@ public class Feedback
     public int? Id { get; set; } 
 
     [JsonProperty("ticket_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Ticket_id { get; set; } 
+    public int? TicketId { get; set; } 
 
     [JsonProperty("key", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Key { get; set; } 
@@ -25,30 +25,30 @@ public class Feedback
     public string? Comment { get; set; } 
 
     [JsonProperty("score_band", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Score_band { get; set; } 
+    public int? ScoreBand { get; set; } 
 
     [JsonProperty("user_message", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? User_message { get; set; } 
+    public string? UserMessage { get; set; } 
 
     [JsonProperty("customsurveyfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<CustomField>? Customsurveyfields { get; set; } 
 
     [JsonProperty("recaptcha_token", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Recaptcha_token { get; set; } 
+    public string? RecaptchaToken { get; set; } 
 
     [JsonProperty("feedback_faultid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Feedback_faultid { get; set; } 
+    public int? FeedbackFaultid { get; set; } 
 
     [JsonProperty("fields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<RequestTypeField>? Fields { get; set; } 
 
     [JsonProperty("automation_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Automation_id { get; set; } 
+    public int? AutomationId { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
     [JsonProperty("ip_address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Ip_address { get; set; } 
+    public string? IpAddress { get; set; } 
 
 }

@@ -11,21 +11,21 @@ public class DlFilterDetails
     public int? Id { get; set; } 
 
     [JsonProperty("list_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? List_id { get; set; } 
+    public int? ListId { get; set; } 
 
     [JsonProperty("filter_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Filter_name { get; set; } 
+    public string? FilterName { get; set; } 
 
     [JsonProperty("filter_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Filter_type { get; set; } 
+    public int? FilterType { get; set; } 
 
     [JsonProperty("filter_value", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Filter_value { get; set; } 
+    public string? FilterValue { get; set; } 
 
     [JsonProperty("filter_values", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<StringIdNameKeyPair>? Filter_values { get; set; } 
+    public ICollection<StringIdNameKeyPair>? FilterValues { get; set; } 
 
     [JsonProperty("filter_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? Filter_guid { get; set; } 
+    public Guid? FilterGuid { get; set; } 
 
 }

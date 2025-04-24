@@ -28,10 +28,10 @@ public class TaxRuleResult
     public string? Taxcode { get; set; } 
 
     [JsonProperty("module_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Module_id { get; set; } 
+    public int? ModuleId { get; set; } 
 
     [JsonProperty("third_party_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Third_party_id { get; set; } 
+    public string? ThirdPartyId { get; set; } 
 
     [JsonProperty("datecreated", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? Datecreated { get; set; } 
@@ -43,6 +43,6 @@ public class TaxRuleResult
     public int? Taxid { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

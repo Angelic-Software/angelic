@@ -104,18 +104,18 @@ public class Schedule
     public DateTimeOffset? Nextrundate { get; set; } 
 
     [JsonProperty("contract_schedule_plan", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ContractSchedulePlan>? Contract_schedule_plan { get; set; } 
+    public ICollection<ContractSchedulePlan>? ContractSchedulePlan { get; set; } 
 
     [JsonProperty("weeklyrecurrenceamount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<StringIdNameKeyPair>? Weeklyrecurrenceamount { get; set; } 
 
     [JsonProperty("_validateonly", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _validateonly { get; set; } 
+    public bool? Validateonly { get; set; } 
 
     [JsonProperty("events", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<Appointment>? Events { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

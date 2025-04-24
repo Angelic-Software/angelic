@@ -10,10 +10,10 @@ public class NotificationConditions
     public int? Id { get; set; } 
 
     [JsonProperty("rule_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Rule_id { get; set; } 
+    public int? RuleId { get; set; } 
 
     [JsonProperty("notification_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? Notification_guid { get; set; } 
+    public Guid? NotificationGuid { get; set; } 
 
     [JsonProperty("fieldname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Fieldname { get; set; } 
@@ -22,25 +22,25 @@ public class NotificationConditions
     public int? Fieldid { get; set; } 
 
     [JsonProperty("change_context", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Change_context { get; set; } 
+    public int? ChangeContext { get; set; } 
 
     [JsonProperty("type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Type { get; set; } 
 
     [JsonProperty("value_int", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Value_int { get; set; } 
+    public int? ValueInt { get; set; } 
 
     [JsonProperty("valueint_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? Valueint_guid { get; set; } 
+    public Guid? ValueintGuid { get; set; } 
 
     [JsonProperty("value_string", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Value_string { get; set; } 
+    public string? ValueString { get; set; } 
 
     [JsonProperty("value_display", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Value_display { get; set; } 
+    public string? ValueDisplay { get; set; } 
 
     [JsonProperty("value_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Value_type { get; set; } 
+    public string? ValueType { get; set; } 
 
     [JsonProperty("timezonestring", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Timezonestring { get; set; } 
@@ -49,7 +49,7 @@ public class NotificationConditions
     public string? Tablename { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
     [JsonProperty("fieldtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Fieldtype { get; set; } 

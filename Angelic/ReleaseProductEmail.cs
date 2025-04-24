@@ -7,27 +7,27 @@ namespace Angelic;
 public class ReleaseProductEmail
 {
     [JsonProperty("product_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Product_id { get; set; } 
+    public int? ProductId { get; set; } 
 
     [JsonProperty("release_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Release_id { get; set; } 
+    public int? ReleaseId { get; set; } 
 
     [JsonProperty("releasetype_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Releasetype_name { get; set; } 
+    public string? ReleasetypeName { get; set; } 
 
     [JsonProperty("emailtemplate_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Emailtemplate_id { get; set; } 
+    public int? EmailtemplateId { get; set; } 
 
     [JsonProperty("emailtemplate_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Emailtemplate_name { get; set; } 
+    public string? EmailtemplateName { get; set; } 
 
     [JsonProperty("change_status_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Change_status_id { get; set; } 
+    public int? ChangeStatusId { get; set; } 
 
     [JsonProperty("push_to_children", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Push_to_children { get; set; } 
+    public bool? PushToChildren { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

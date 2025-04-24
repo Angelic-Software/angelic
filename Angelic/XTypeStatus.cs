@@ -10,16 +10,16 @@ public class XTypeStatus
     public int? Id { get; set; } 
 
     [JsonProperty("xtype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Xtype_id { get; set; } 
+    public int? XtypeId { get; set; } 
 
     [JsonProperty("xtype_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Xtype_name { get; set; } 
+    public string? XtypeName { get; set; } 
 
     [JsonProperty("status_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Status_id { get; set; } 
+    public int? StatusId { get; set; } 
 
     [JsonProperty("status_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Status_name { get; set; } 
+    public string? StatusName { get; set; } 
 
     [JsonProperty("allowafterallstatuses", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Allowafterallstatuses { get; set; } 
@@ -28,6 +28,6 @@ public class XTypeStatus
     public ICollection<XTypeStatusRestrictions>? Allowedafterstatus { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

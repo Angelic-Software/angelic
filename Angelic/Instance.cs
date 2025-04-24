@@ -19,10 +19,10 @@ public class Instance
     public string? Version { get; set; } 
 
     [JsonProperty("commits_ahead", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Commits_ahead { get; set; } 
+    public int? CommitsAhead { get; set; } 
 
     [JsonProperty("commits_behind", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Commits_behind { get; set; } 
+    public int? CommitsBehind { get; set; } 
 
     [JsonProperty("syncid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Syncid { get; set; } 
@@ -52,9 +52,9 @@ public class Instance
     public bool? Isprod { get; set; } 
 
     [JsonProperty("_restore_from_prod", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _restore_from_prod { get; set; } 
+    public bool? RestoreFromProd { get; set; } 
 
     [JsonProperty("_restore_from_prod_result", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _restore_from_prod_result { get; set; } 
+    public string? RestoreFromProdResult { get; set; } 
 
 }

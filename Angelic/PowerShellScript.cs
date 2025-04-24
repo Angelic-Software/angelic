@@ -35,28 +35,28 @@ public class PowerShellScript
     public int? Customtableid { get; set; } 
 
     [JsonProperty("customtable_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Customtable_name { get; set; } 
+    public string? CustomtableName { get; set; } 
 
     [JsonProperty("fieldmappings_powershell", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<PowerShellScriptCriteria>? Fieldmappings_powershell { get; set; } 
+    public ICollection<PowerShellScriptCriteria>? FieldmappingsPowershell { get; set; } 
 
     [JsonProperty("method", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Method { get; set; } 
 
     [JsonProperty("halointegrator_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Halointegrator_lastsync { get; set; } 
+    public DateTimeOffset? HalointegratorLastsync { get; set; } 
 
     [JsonProperty("halointegrator_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Halointegrator_lasterror { get; set; } 
+    public string? HalointegratorLasterror { get; set; } 
 
     [JsonProperty("halointegrator_allowedclientidslist", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ValueLabelKeyPair>? Halointegrator_allowedclientidslist { get; set; } 
+    public ICollection<ValueLabelKeyPair>? HalointegratorAllowedclientidslist { get; set; } 
 
     [JsonProperty("halointegrator_allowedclientids", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Halointegrator_allowedclientids { get; set; } 
+    public string? HalointegratorAllowedclientids { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
     [JsonProperty("usepowershellseven", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Usepowershellseven { get; set; } 

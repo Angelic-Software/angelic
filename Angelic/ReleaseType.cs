@@ -16,18 +16,18 @@ public class ReleaseType
     public int? Releasenoteset { get; set; } 
 
     [JsonProperty("template_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Template_id { get; set; } 
+    public int? TemplateId { get; set; } 
 
     [JsonProperty("template_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Template_name { get; set; } 
+    public string? TemplateName { get; set; } 
 
     [JsonProperty("spotlight_template_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Spotlight_template_id { get; set; } 
+    public int? SpotlightTemplateId { get; set; } 
 
     [JsonProperty("spotlight_template_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Spotlight_template_name { get; set; } 
+    public string? SpotlightTemplateName { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

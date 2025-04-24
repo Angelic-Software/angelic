@@ -7,7 +7,7 @@ namespace Angelic;
 public class OnlineStatus
 {
     [JsonProperty("techID", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? TechID { get; set; } 
+    public int? TechId { get; set; } 
 
     [JsonProperty("lastOnlineDate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? LastOnlineDate { get; set; } 
@@ -19,24 +19,24 @@ public class OnlineStatus
     public string? LastOnline { get; set; } 
 
     [JsonProperty("agent_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Agent_status { get; set; } 
+    public int? AgentStatus { get; set; } 
 
     [JsonProperty("status_overidden", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Status_overidden { get; set; } 
+    public bool? StatusOveridden { get; set; } 
 
     [JsonProperty("fetch_all", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Fetch_all { get; set; } 
+    public bool? FetchAll { get; set; } 
 
     [JsonProperty("is_logout", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Is_logout { get; set; } 
+    public bool? IsLogout { get; set; } 
 
     [JsonProperty("command", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Command { get; set; } 
 
     [JsonProperty("last_active", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Last_active { get; set; } 
+    public DateTimeOffset? LastActive { get; set; } 
 
     [JsonProperty("is_idle", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Is_idle { get; set; } 
+    public bool? IsIdle { get; set; } 
 
 }

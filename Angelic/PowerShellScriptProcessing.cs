@@ -22,30 +22,30 @@ public class PowerShellScriptProcessing
     public bool? Failactionadded { get; set; } 
 
     [JsonProperty("execution_parameters", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public IDictionary<string, object?>? Execution_parameters { get; set; } 
+    public IDictionary<string, object?>? ExecutionParameters { get; set; } 
 
     [JsonProperty("success", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Success { get; set; } 
 
     [JsonProperty("result_message", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Result_message { get; set; } 
+    public string? ResultMessage { get; set; } 
 
     [JsonProperty("run_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Run_date { get; set; } 
+    public DateTimeOffset? RunDate { get; set; } 
 
     [JsonProperty("script_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Script_name { get; set; } 
+    public string? ScriptName { get; set; } 
 
     [JsonProperty("_requeue", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _requeue { get; set; } 
+    public bool? Requeue { get; set; } 
 
     [JsonProperty("requeued", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Requeued { get; set; } 
 
     [JsonProperty("rule_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Rule_id { get; set; } 
+    public int? RuleId { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

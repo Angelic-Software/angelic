@@ -10,15 +10,15 @@ public class ServiceLinks
     public int? Id { get; set; } 
 
     [JsonProperty("service_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Service_id { get; set; } 
+    public int? ServiceId { get; set; } 
 
     [JsonProperty("linked_service_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Linked_service_id { get; set; } 
+    public int? LinkedServiceId { get; set; } 
 
     [JsonProperty("linked_service_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Linked_service_name { get; set; } 
+    public string? LinkedServiceName { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

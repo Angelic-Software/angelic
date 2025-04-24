@@ -7,37 +7,37 @@ namespace Angelic;
 public class TypeInfo
 {
     [JsonProperty("typeinfo_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Typeinfo_id { get; set; } 
+    public double? TypeinfoId { get; set; } 
 
     [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? Id { get; set; } 
 
     [JsonProperty("field_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Field_id { get; set; } 
+    public double? FieldId { get; set; } 
 
     [JsonProperty("field_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Field_name { get; set; } 
+    public string? FieldName { get; set; } 
 
     [JsonProperty("sequence", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Sequence { get; set; } 
 
     [JsonProperty("keyfield_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Keyfield_id { get; set; } 
+    public string? KeyfieldId { get; set; } 
 
     [JsonProperty("type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Type { get; set; } 
 
     [JsonProperty("tab_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Tab_id { get; set; } 
+    public int? TabId { get; set; } 
 
     [JsonProperty("tab_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Tab_name { get; set; } 
+    public string? TabName { get; set; } 
 
     [JsonProperty("tab_sequence", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Tab_sequence { get; set; } 
+    public int? TabSequence { get; set; } 
 
     [JsonProperty("tab_columns", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Tab_columns { get; set; } 
+    public int? TabColumns { get; set; } 
 
     [JsonProperty("groupname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Groupname { get; set; } 
@@ -49,9 +49,9 @@ public class TypeInfo
     public int? Userdetail { get; set; } 
 
     [JsonProperty("visibility_conditions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CustomFieldVisibility>? Visibility_conditions { get; set; } 
+    public ICollection<CustomFieldVisibility>? VisibilityConditions { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

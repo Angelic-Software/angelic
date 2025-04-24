@@ -22,34 +22,34 @@ public class SalesMailbox
     public string? Applicationid { get; set; } 
 
     [JsonProperty("new_client_secret", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? New_client_secret { get; set; } 
+    public string? NewClientSecret { get; set; } 
 
     [JsonProperty("new_access_token", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? New_access_token { get; set; } 
+    public string? NewAccessToken { get; set; } 
 
     [JsonProperty("new_refresh_token", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? New_refresh_token { get; set; } 
+    public string? NewRefreshToken { get; set; } 
 
     [JsonProperty("token_expiry", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Token_expiry { get; set; } 
+    public DateTimeOffset? TokenExpiry { get; set; } 
 
     [JsonProperty("halointegrator_enabled", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Halointegrator_enabled { get; set; } 
+    public bool? HalointegratorEnabled { get; set; } 
 
     [JsonProperty("halointegrator_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Halointegrator_lastsync { get; set; } 
+    public DateTimeOffset? HalointegratorLastsync { get; set; } 
 
     [JsonProperty("halointegrator_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Halointegrator_lasterror { get; set; } 
+    public string? HalointegratorLasterror { get; set; } 
 
     [JsonProperty("redirect_uri", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Redirect_uri { get; set; } 
+    public string? RedirectUri { get; set; } 
 
     [JsonProperty("_authcode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _authcode { get; set; } 
+    public string? Authcode { get; set; } 
 
     [JsonProperty("_exchangecodefortoken", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _exchangecodefortoken { get; set; } 
+    public bool? Exchangecodefortoken { get; set; } 
 
     [JsonProperty("mailboxes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<SalesMailboxDetail>? Mailboxes { get; set; } 
@@ -58,45 +58,45 @@ public class SalesMailbox
     public bool? Authorized { get; set; } 
 
     [JsonProperty("new_method", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? New_method { get; set; } 
+    public bool? NewMethod { get; set; } 
 
     [JsonProperty("google_authorized", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Google_authorized { get; set; } 
+    public bool? GoogleAuthorized { get; set; } 
 
     [JsonProperty("new_google_access_token", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? New_google_access_token { get; set; } 
+    public string? NewGoogleAccessToken { get; set; } 
 
     [JsonProperty("new_google_refresh_token", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? New_google_refresh_token { get; set; } 
+    public string? NewGoogleRefreshToken { get; set; } 
 
     [JsonProperty("google_token_expiry", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Google_token_expiry { get; set; } 
+    public DateTimeOffset? GoogleTokenExpiry { get; set; } 
 
     [JsonProperty("google_redirect", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Google_redirect { get; set; } 
+    public string? GoogleRedirect { get; set; } 
 
     [JsonProperty("google_email", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Google_email { get; set; } 
+    public string? GoogleEmail { get; set; } 
 
     [JsonProperty("_getgoogletoken", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _getgoogletoken { get; set; } 
+    public bool? Getgoogletoken { get; set; } 
 
     [JsonProperty("google_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Google_code { get; set; } 
+    public string? GoogleCode { get; set; } 
 
     [JsonProperty("google_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Google_type { get; set; } 
+    public int? GoogleType { get; set; } 
 
     [JsonProperty("graph_host", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Graph_host { get; set; } 
+    public string? GraphHost { get; set; } 
 
     [JsonProperty("import_sent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Import_sent { get; set; } 
+    public bool? ImportSent { get; set; } 
 
     [JsonProperty("match_method", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Match_method { get; set; } 
+    public int? MatchMethod { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

@@ -10,7 +10,7 @@ public class ReleaseBranch
     public int? Id { get; set; } 
 
     [JsonProperty("product_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Product_id { get; set; } 
+    public int? ProductId { get; set; } 
 
     [JsonProperty("name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     [System.ComponentModel.DataAnnotations.StringLength(255)]
@@ -20,6 +20,6 @@ public class ReleaseBranch
     public int? Releasenoteset { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

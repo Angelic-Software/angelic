@@ -10,12 +10,12 @@ public class OrganisationField
     public int? Id { get; set; } 
 
     [JsonProperty("org_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Org_id { get; set; } 
+    public int? OrgId { get; set; } 
 
     [JsonProperty("org_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Org_name { get; set; } 
+    public string? OrgName { get; set; } 
 
     [JsonProperty("field_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Field_id { get; set; } 
+    public int? FieldId { get; set; } 
 
 }

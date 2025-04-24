@@ -10,7 +10,7 @@ public class PdfTemplateDetail
     public int? Id { get; set; } 
 
     [JsonProperty("pdftemplate_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Pdftemplate_id { get; set; } 
+    public int? PdftemplateId { get; set; } 
 
     [JsonProperty("sequence", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Sequence { get; set; } 
@@ -28,6 +28,6 @@ public class PdfTemplateDetail
     public string? Textalign { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

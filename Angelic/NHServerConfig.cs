@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 namespace Angelic;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
-public class NHServerConfig
+public class NhServerConfig
 {
     [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Id { get; set; } 
@@ -139,7 +139,7 @@ public class NHServerConfig
     public bool? Nooverduescan { get; set; } 
 
     [JsonProperty("pop3interface", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Pop3interface { get; set; } 
+    public bool? Pop3Interface { get; set; } 
 
     [JsonProperty("popuptimeoutseconds", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Popuptimeoutseconds { get; set; } 
@@ -205,6 +205,6 @@ public class NHServerConfig
     public bool? Bulkemail { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

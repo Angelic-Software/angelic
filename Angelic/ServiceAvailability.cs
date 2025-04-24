@@ -13,7 +13,7 @@ public class ServiceAvailability
     public int? Service { get; set; } 
 
     [JsonProperty("service_desc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Service_desc { get; set; } 
+    public string? ServiceDesc { get; set; } 
 
     [JsonProperty("period", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Period { get; set; } 

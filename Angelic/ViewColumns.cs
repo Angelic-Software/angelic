@@ -19,48 +19,48 @@ public class ViewColumns
     public string? Name { get; set; } 
 
     [JsonProperty("tile_html", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Tile_html { get; set; } 
+    public string? TileHtml { get; set; } 
 
     [JsonProperty("columns", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<ViewColumnsDetails>? Columns { get; set; } 
 
     [JsonProperty("_temp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _temp { get; set; } 
+    public bool? Temp { get; set; } 
 
     [JsonProperty("card_html", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Card_html { get; set; } 
+    public string? CardHtml { get; set; } 
 
     [JsonProperty("linked_dashboard_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Linked_dashboard_id { get; set; } 
+    public int? LinkedDashboardId { get; set; } 
 
     [JsonProperty("use_dashboard", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Use_dashboard { get; set; } 
+    public bool? UseDashboard { get; set; } 
 
     [JsonProperty("include_children", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Include_children { get; set; } 
+    public bool? IncludeChildren { get; set; } 
 
     [JsonProperty("restriction_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Restriction_type { get; set; } 
+    public int? RestrictionType { get; set; } 
 
     [JsonProperty("agent_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Agent_id { get; set; } 
+    public int? AgentId { get; set; } 
 
     [JsonProperty("agent_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Agent_name { get; set; } 
+    public string? AgentName { get; set; } 
 
     [JsonProperty("team_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Team_id { get; set; } 
+    public int? TeamId { get; set; } 
 
     [JsonProperty("team_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? Team_guid { get; set; } 
+    public Guid? TeamGuid { get; set; } 
 
     [JsonProperty("team_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Team_name { get; set; } 
+    public string? TeamName { get; set; } 
 
     [JsonProperty("type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Type { get; set; } 
 
     [JsonProperty("type_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Type_name { get; set; } 
+    public string? TypeName { get; set; } 
 
 }

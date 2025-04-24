@@ -13,7 +13,7 @@ public class WorkdayBreak
     public string? Name { get; set; } 
 
     [JsonProperty("workday_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Workday_id { get; set; } 
+    public int? WorkdayId { get; set; } 
 
     [JsonProperty("start", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? Start { get; set; } 

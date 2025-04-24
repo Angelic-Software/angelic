@@ -16,18 +16,18 @@ public class SiteContact
     public int? Uid { get; set; } 
 
     [JsonProperty("user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? User_name { get; set; } 
+    public string? UserName { get; set; } 
 
     [JsonProperty("user_email", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? User_email { get; set; } 
+    public string? UserEmail { get; set; } 
 
     [JsonProperty("type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Type { get; set; } 
 
     [JsonProperty("type_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Type_name { get; set; } 
+    public string? TypeName { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

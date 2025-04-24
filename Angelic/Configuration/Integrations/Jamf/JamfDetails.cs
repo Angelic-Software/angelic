@@ -38,7 +38,7 @@ namespace Angelic.Configuration.Integrations.Jamf;
         public string? DefaultSiteName { get; set; } 
     
         [JsonProperty("site_links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ExternalLink_List>? SiteLinks { get; set; } 
+        public ICollection<ExternalLinkList>? SiteLinks { get; set; } 
     
         [JsonProperty("fieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<IntegrationFieldMapping>? FieldMappings { get; set; } 

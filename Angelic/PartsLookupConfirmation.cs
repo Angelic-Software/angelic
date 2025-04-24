@@ -10,18 +10,18 @@ public class PartsLookupConfirmation
     public int? Id { get; set; } 
 
     [JsonProperty("database_lookup_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Database_lookup_id { get; set; } 
+    public int? DatabaseLookupId { get; set; } 
 
     [JsonProperty("ticket_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Ticket_id { get; set; } 
+    public int? TicketId { get; set; } 
 
     [JsonProperty("form_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Form_id { get; set; } 
+    public string? FormId { get; set; } 
 
     [JsonProperty("value", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Value { get; set; } 
 
     [JsonProperty("lookup_values", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Lookup_values { get; set; } 
+    public string? LookupValues { get; set; } 
 
 }

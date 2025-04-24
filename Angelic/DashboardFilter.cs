@@ -10,7 +10,7 @@ public class DashboardFilter
     public int? Id { get; set; } 
 
     [JsonProperty("dashboard_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Dashboard_id { get; set; } 
+    public int? DashboardId { get; set; } 
 
     [JsonProperty("name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Name { get; set; } 
@@ -19,7 +19,7 @@ public class DashboardFilter
     public string? Column { get; set; } 
 
     [JsonProperty("filter_sql", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Filter_sql { get; set; } 
+    public string? FilterSql { get; set; } 
 
     [JsonProperty("sequence", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Sequence { get; set; } 
@@ -28,6 +28,6 @@ public class DashboardFilter
     public string? Default { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }

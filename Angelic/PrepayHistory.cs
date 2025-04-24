@@ -10,10 +10,10 @@ public class PrepayHistory
     public int? Id { get; set; } 
 
     [JsonProperty("client_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Client_id { get; set; } 
+    public int? ClientId { get; set; } 
 
     [JsonProperty("client_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Client_name { get; set; } 
+    public string? ClientName { get; set; } 
 
     [JsonProperty("date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? Date { get; set; } 
@@ -28,7 +28,7 @@ public class PrepayHistory
     public DateTimeOffset? Invoicedate { get; set; } 
 
     [JsonProperty("invoice_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Invoice_id { get; set; } 
+    public string? InvoiceId { get; set; } 
 
     [JsonProperty("amount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? Amount { get; set; } 
@@ -40,12 +40,12 @@ public class PrepayHistory
     public bool? Expirychecked { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
     [JsonProperty("invoice_number", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Invoice_number { get; set; } 
+    public string? InvoiceNumber { get; set; } 
 
     [JsonProperty("client_to_invoice_to_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Client_to_invoice_to_id { get; set; } 
+    public int? ClientToInvoiceToId { get; set; } 
 
 }

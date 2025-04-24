@@ -10,10 +10,10 @@ public class Expense
     public int? Id { get; set; } 
 
     [JsonProperty("agent_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Agent_id { get; set; } 
+    public int? AgentId { get; set; } 
 
     [JsonProperty("fault_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Fault_id { get; set; } 
+    public int? FaultId { get; set; } 
 
     [JsonProperty("actionnumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Actionnumber { get; set; } 
@@ -25,16 +25,16 @@ public class Expense
     public double? Amount { get; set; } 
 
     [JsonProperty("lookup_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Lookup_id { get; set; } 
+    public int? LookupId { get; set; } 
 
     [JsonProperty("date_added", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Date_added { get; set; } 
+    public DateTimeOffset? DateAdded { get; set; } 
 
     [JsonProperty("date_reimbursed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Date_reimbursed { get; set; } 
+    public DateTimeOffset? DateReimbursed { get; set; } 
 
     [JsonProperty("date_invoiced", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Date_invoiced { get; set; } 
+    public DateTimeOffset? DateInvoiced { get; set; } 
 
     [JsonProperty("invoiceable", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Invoiceable { get; set; } 
@@ -43,6 +43,6 @@ public class Expense
     public int? Ihid { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _warning { get; set; } 
+    public string? Warning { get; set; } 
 
 }
