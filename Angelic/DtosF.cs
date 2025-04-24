@@ -105,7 +105,7 @@ namespace Angelic;
         public int? Access_control_level { get; set; } 
 
         [JsonProperty("clients", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<Area_List>? Clients { get; set; } 
+        public ICollection<AreaList>? Clients { get; set; } 
 
         [JsonProperty("dontshowonportal", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Dontshowonportal { get; set; } 
@@ -659,7 +659,7 @@ namespace Angelic;
         public bool? _includeticketinresponse { get; set; } 
 
         [JsonProperty("attachment_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public Attachment_View? Attachment_list { get; set; } 
+        public AttachmentView? Attachment_list { get; set; } 
 
         [JsonProperty("fields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<RequestTypeField>? Fields { get; set; } 

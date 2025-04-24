@@ -91,7 +91,7 @@ namespace Angelic.Actions;
         public bool? TweetSent { get; set; }
 
         [JsonProperty("attachment_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public Attachment_View? AttachmentList { get; set; }
+        public AttachmentView? AttachmentList { get; set; }
 
         [JsonProperty("customfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<CustomField>? CustomFields { get; set; }
@@ -586,7 +586,7 @@ namespace Angelic.Actions;
         public int? NewApprovalprocessUserId { get; set; }
 
         [JsonProperty("new_approvalprocess_users", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<Users_List>? NewApprovalprocessUsers { get; set; }
+        public ICollection<UsersList>? NewApprovalprocessUsers { get; set; }
 
         [JsonProperty("new_approvalprocess_email", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? NewApprovalprocessEmail { get; set; }
@@ -1081,7 +1081,7 @@ namespace Angelic.Actions;
         public bool? UserCreationFailed { get; set; }
 
         [JsonProperty("followers_user", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<Users_List>? FollowersUser { get; set; }
+        public ICollection<UsersList>? FollowersUser { get; set; }
 
         [JsonProperty("new_items_issued", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<FaultItem>? NewItemsIssued { get; set; }

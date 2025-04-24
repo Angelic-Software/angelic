@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Agent;
 using Angelic.Appointment;
 using Angelic.Dtos;
 using Angelic.KeyPairs;
@@ -54,7 +55,7 @@ namespace Angelic;
         public EWSAppointmentBasic? Item { get; set; } 
 
         [JsonProperty("agent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public Uname_List? Agent { get; set; } 
+        public AgentList? Agent { get; set; } 
 
     }
 

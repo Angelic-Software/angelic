@@ -1,5 +1,4 @@
 using System.CodeDom.Compiler;
-using Angelic.Dtos;
 using Angelic.KeyPairs;
 using Newtonsoft.Json;
 
@@ -12,22 +11,22 @@ namespace Angelic;
         public int? Id { get; set; } 
 
         [JsonProperty("assettype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Assettype_id { get; set; } 
+        public int? AssettypeId { get; set; } 
 
         [JsonProperty("name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Name { get; set; } 
 
         [JsonProperty("duration_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Duration_type { get; set; } 
+        public int? DurationType { get; set; } 
 
         [JsonProperty("duration_mins", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Duration_mins { get; set; } 
+        public int? DurationMins { get; set; } 
 
         [JsonProperty("duration_days", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Duration_days { get; set; } 
+        public int? DurationDays { get; set; } 
 
         [JsonProperty("appointment_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Appointment_type { get; set; } 
+        public int? AppointmentType { get; set; } 
 
         [JsonProperty("customslots", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<Timeslot>? Customslots { get; set; } 
@@ -36,16 +35,16 @@ namespace Angelic;
         public string? Messagehtml { get; set; } 
 
         [JsonProperty("resourcebooking_buffer_minutes_before", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Resourcebooking_buffer_minutes_before { get; set; } 
+        public int? ResourcebookingBufferMinutesBefore { get; set; } 
 
         [JsonProperty("resourcebooking_buffer_minutes_after", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Resourcebooking_buffer_minutes_after { get; set; } 
+        public int? ResourcebookingBufferMinutesAfter { get; set; } 
 
         [JsonProperty("type_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Type_name { get; set; } 
+        public string? TypeName { get; set; } 
 
         [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? _warning { get; set; } 
+        public string? Warning { get; set; } 
 
     }
 
@@ -76,13 +75,13 @@ namespace Angelic;
         public int? Id { get; set; } 
 
         [JsonProperty("entity_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Entity_id { get; set; } 
+        public int? EntityId { get; set; } 
 
         [JsonProperty("entity_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Entity_type { get; set; } 
+        public int? EntityType { get; set; } 
 
         [JsonProperty("agent_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Agent_id { get; set; } 
+        public int? AgentId { get; set; } 
 
         [JsonProperty("bookmarked", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Bookmarked { get; set; } 
@@ -105,7 +104,7 @@ namespace Angelic;
         public int? Chargerate { get; set; } 
 
         [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? _warning { get; set; } 
+        public string? Warning { get; set; } 
 
     }
 
@@ -128,16 +127,16 @@ namespace Angelic;
         public DateTimeOffset? Timestamp { get; set; } 
 
         [JsonProperty("service_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Service_id { get; set; } 
+        public int? ServiceId { get; set; } 
 
         [JsonProperty("status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Status { get; set; } 
 
         [JsonProperty("next_retry_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? Next_retry_date { get; set; } 
+        public DateTimeOffset? NextRetryDate { get; set; } 
 
         [JsonProperty("last_attempt_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? Last_attempt_date { get; set; } 
+        public DateTimeOffset? LastAttemptDate { get; set; } 
 
         [JsonProperty("mailcampaignid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Mailcampaignid { get; set; } 
@@ -155,19 +154,19 @@ namespace Angelic;
         public ICollection<Trace>? Trace { get; set; } 
 
         [JsonProperty("request_body", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Request_body { get; set; } 
+        public string? RequestBody { get; set; } 
 
         [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? _warning { get; set; } 
+        public string? Warning { get; set; } 
 
         [JsonProperty("fault_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Fault_id { get; set; } 
+        public int? FaultId { get; set; } 
 
         [JsonProperty("actionnumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Actionnumber { get; set; } 
 
         [JsonProperty("distribution_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Distribution_list { get; set; } 
+        public int? DistributionList { get; set; } 
 
     }
 
@@ -302,52 +301,52 @@ namespace Angelic;
         public string? Name { get; set; } 
 
         [JsonProperty("tenant_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Tenant_id { get; set; } 
+        public string? TenantId { get; set; } 
 
         [JsonProperty("client_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Client_id { get; set; } 
+        public string? ClientId { get; set; } 
 
         [JsonProperty("new_client_secret", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? New_client_secret { get; set; } 
+        public string? NewClientSecret { get; set; } 
 
         [JsonProperty("new_access_token", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? New_access_token { get; set; } 
+        public string? NewAccessToken { get; set; } 
 
         [JsonProperty("new_refresh_token", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? New_refresh_token { get; set; } 
+        public string? NewRefreshToken { get; set; } 
 
         [JsonProperty("token_expiry", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? Token_expiry { get; set; } 
+        public DateTimeOffset? TokenExpiry { get; set; } 
 
         [JsonProperty("authorized", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Authorized { get; set; } 
 
         [JsonProperty("redirect_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Redirect_url { get; set; } 
+        public string? RedirectUrl { get; set; } 
 
         [JsonProperty("authorization_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Authorization_code { get; set; } 
+        public string? AuthorizationCode { get; set; } 
 
         [JsonProperty("_exchangecodefortoken", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? _exchangecodefortoken { get; set; } 
+        public bool? Exchangecodefortoken { get; set; } 
 
         [JsonProperty("_disconnect", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? _disconnect { get; set; } 
+        public bool? Disconnect { get; set; } 
 
         [JsonProperty("_authcode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? _authcode { get; set; } 
+        public string? Authcode { get; set; } 
 
         [JsonProperty("environment", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public BusinessCentralEnvironment? Environment { get; set; } 
 
         [JsonProperty("environment_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Environment_name { get; set; } 
+        public string? EnvironmentName { get; set; } 
 
         [JsonProperty("environment_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Environment_type { get; set; } 
+        public string? EnvironmentType { get; set; } 
 
         [JsonProperty("web_service_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Web_service_url { get; set; } 
+        public string? WebServiceUrl { get; set; } 
 
         [JsonProperty("country", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Country { get; set; } 
@@ -356,82 +355,82 @@ namespace Angelic;
         public BusinessCentralCompany? Company { get; set; } 
 
         [JsonProperty("company_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Company_id { get; set; } 
+        public string? CompanyId { get; set; } 
 
         [JsonProperty("company_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Company_name { get; set; } 
+        public string? CompanyName { get; set; } 
 
         [JsonProperty("company_version", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Company_version { get; set; } 
+        public string? CompanyVersion { get; set; } 
 
         [JsonProperty("_importtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? _importtype { get; set; } 
+        public string? Importtype { get; set; } 
 
         [JsonProperty("client_top_level", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Client_top_level { get; set; } 
+        public int? ClientTopLevel { get; set; } 
 
         [JsonProperty("client_top_level_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Client_top_level_name { get; set; } 
+        public string? ClientTopLevelName { get; set; } 
 
         [JsonProperty("client_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ExternalLink_List>? Client_mappings { get; set; } 
+        public ICollection<ExternalLink_List>? ClientMappings { get; set; } 
 
         [JsonProperty("item_group_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ExternalLink_List>? Item_group_mappings { get; set; } 
+        public ICollection<ExternalLink_List>? ItemGroupMappings { get; set; } 
 
         [JsonProperty("item_default_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Item_default_group { get; set; } 
+        public int? ItemDefaultGroup { get; set; } 
 
         [JsonProperty("item_default_group_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Item_default_group_name { get; set; } 
+        public string? ItemDefaultGroupName { get; set; } 
 
         [JsonProperty("default_sales_account", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Default_sales_account { get; set; } 
+        public string? DefaultSalesAccount { get; set; } 
 
         [JsonProperty("default_sales_account_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Default_sales_account_name { get; set; } 
+        public string? DefaultSalesAccountName { get; set; } 
 
         [JsonProperty("default_purchase_account", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Default_purchase_account { get; set; } 
+        public string? DefaultPurchaseAccount { get; set; } 
 
         [JsonProperty("default_purchase_account_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Default_purchase_account_name { get; set; } 
+        public string? DefaultPurchaseAccountName { get; set; } 
 
         [JsonProperty("enable_sync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Enable_sync { get; set; } 
+        public bool? EnableSync { get; set; } 
 
         [JsonProperty("sync_entities", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Sync_entities { get; set; } 
+        public string? SyncEntities { get; set; } 
 
         [JsonProperty("sync_entities_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ValueLabelIsNewKeyPair>? Sync_entities_list { get; set; } 
+        public ICollection<ValueLabelIsNewKeyPair>? SyncEntitiesList { get; set; } 
 
         [JsonProperty("show_message", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Show_message { get; set; } 
+        public bool? ShowMessage { get; set; } 
 
         [JsonProperty("default_invoice_item", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Default_invoice_item { get; set; } 
+        public string? DefaultInvoiceItem { get; set; } 
 
         [JsonProperty("default_invoice_item_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Default_invoice_item_name { get; set; } 
+        public string? DefaultInvoiceItemName { get; set; } 
 
         [JsonProperty("graph_host", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Graph_host { get; set; } 
+        public string? GraphHost { get; set; } 
 
         [JsonProperty("sync_inv_groups", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Sync_inv_groups { get; set; } 
+        public bool? SyncInvGroups { get; set; } 
 
         [JsonProperty("use_advanced_cost_endpoint", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Use_advanced_cost_endpoint { get; set; } 
+        public bool? UseAdvancedCostEndpoint { get; set; } 
 
         [JsonProperty("group_increment", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Group_increment { get; set; } 
+        public int? GroupIncrement { get; set; } 
 
         [JsonProperty("line_increment", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Line_increment { get; set; } 
+        public int? LineIncrement { get; set; } 
 
         [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? _warning { get; set; } 
+        public string? Warning { get; set; } 
 
     }
 

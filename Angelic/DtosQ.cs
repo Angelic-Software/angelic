@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Agent;
 using Angelic.Dtos;
 using Angelic.KeyPairs;
 using Newtonsoft.Json;
@@ -59,7 +60,7 @@ namespace Angelic;
         public ICollection<QualificationCategory>? Criteria { get; set; } 
 
         [JsonProperty("agents", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<UnameQualification>? Agents { get; set; } 
+        public ICollection<AgentQualification>? Agents { get; set; } 
 
         [JsonProperty("agent_matched", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Agent_matched { get; set; } 
@@ -965,7 +966,7 @@ namespace Angelic;
         public DateTimeOffset? Last_update_time { get; set; } 
 
         [JsonProperty("images", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<Attachment_List>? Images { get; set; } 
+        public ICollection<AttachmentList>? Images { get; set; } 
 
         [JsonProperty("internal_approval_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Internal_approval_status { get; set; } 
@@ -1109,7 +1110,7 @@ namespace Angelic;
         public int? New_approvalprocess_user_id { get; set; } 
 
         [JsonProperty("new_approvalprocess_users", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<Users_List>? New_approvalprocess_users { get; set; } 
+        public ICollection<UsersList>? New_approvalprocess_users { get; set; } 
 
         [JsonProperty("new_approvalprocess_email", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? New_approvalprocess_email { get; set; } 

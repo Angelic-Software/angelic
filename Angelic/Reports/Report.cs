@@ -1,5 +1,7 @@
 using System.CodeDom.Compiler;
+using Angelic.Agent;
 using Angelic.Dtos;
+using Angelic.KeyPairs;
 using Newtonsoft.Json;
 
 namespace Angelic.Reports;
@@ -158,7 +160,7 @@ public class Report
     public ICollection<ReportColumn>? FilterableColumnsConditions { get; set; }
     
     [JsonProperty("permissions_agent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<UnameAnalyzer>? PermissionsAgent { get; set; }
+    public ICollection<AgentReport>? PermissionsAgent { get; set; }
     
     [JsonProperty("permissions_user", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<UserAnalyzer>? PermissionsUser { get; set; }

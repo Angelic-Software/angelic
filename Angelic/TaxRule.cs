@@ -1,0 +1,30 @@
+using System.CodeDom.Compiler;
+using Newtonsoft.Json;
+
+namespace Angelic;
+
+[GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
+public class TaxRule
+{
+    [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public int? Id { get; set; } 
+
+    [JsonProperty("name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public string? Name { get; set; } 
+
+    [JsonProperty("taxid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public int? Taxid { get; set; } 
+
+    [JsonProperty("sequence", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public int? Sequence { get; set; } 
+
+    [JsonProperty("tax_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public string? Tax_name { get; set; } 
+
+    [JsonProperty("tax_conditions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public ICollection<TaxRuleConditions>? Tax_conditions { get; set; } 
+
+    [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public string? _warning { get; set; } 
+
+}

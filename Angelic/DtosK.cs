@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Agent;
 using Angelic.Dtos;
 using Newtonsoft.Json;
 
@@ -140,7 +141,7 @@ namespace Angelic;
         public bool? Showforall { get; set; } 
 
         [JsonProperty("attachments", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<Attachment_List>? Attachments { get; set; } 
+        public ICollection<AttachmentList>? Attachments { get; set; } 
 
         [JsonProperty("_isimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? _isimport { get; set; } 
@@ -248,7 +249,7 @@ namespace Angelic;
         public string? Importtags { get; set; } 
 
         [JsonProperty("owners", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<Uname_List>? Owners { get; set; } 
+        public ICollection<AgentList>? Owners { get; set; } 
 
         [JsonProperty("search_index_sync_timestamp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public DateTimeOffset? Search_index_sync_timestamp { get; set; } 

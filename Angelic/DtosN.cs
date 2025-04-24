@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Agent;
 using Angelic.Dtos;
 using Angelic.KeyPairs;
 using Newtonsoft.Json;
@@ -401,46 +402,46 @@ namespace Angelic;
         public string? Notes { get; set; } 
 
         [JsonProperty("teams", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<UnameSection>? Teams { get; set; } 
+        public ICollection<AgentSection>? Teams { get; set; } 
 
         [JsonProperty("departments", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<UnameDepartment>? Departments { get; set; } 
+        public ICollection<AgentDepartment>? Departments { get; set; } 
 
         [JsonProperty("clients", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<UnameAreaRestriction>? Clients { get; set; } 
+        public ICollection<AgentAreaRestriction>? Clients { get; set; } 
 
         [JsonProperty("tickettypes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<UnameRequestType>? Tickettypes { get; set; } 
+        public ICollection<AgentRequestType>? Tickettypes { get; set; } 
 
         [JsonProperty("assetfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<UnameField>? Assetfields { get; set; } 
+        public ICollection<AgentField>? Assetfields { get; set; } 
 
         [JsonProperty("unamecustomfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<UnameCustom>? Unamecustomfields { get; set; } 
+        public ICollection<AgentCustom>? Unamecustomfields { get; set; } 
 
         [JsonProperty("unameappointmenttypes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<UnameAppointment>? Unameappointmenttypes { get; set; } 
+        public ICollection<AgentAppointment>? Unameappointmenttypes { get; set; } 
 
         [JsonProperty("notifications", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<UnameNotification>? Notifications { get; set; } 
+        public ICollection<AgentNotification>? Notifications { get; set; } 
 
         [JsonProperty("claims", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<NHD_Claim>? Claims { get; set; } 
 
         [JsonProperty("custombuttons", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<UnameButton>? Custombuttons { get; set; } 
+        public ICollection<AgentButton>? Custombuttons { get; set; } 
 
         [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? _warning { get; set; } 
 
         [JsonProperty("assettypes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<UnameXtype>? Assettypes { get; set; } 
+        public ICollection<AgentXType>? Assettypes { get; set; } 
 
         [JsonProperty("Oo_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Oo_name { get; set; } 
 
         [JsonProperty("uname_usercustomfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<UnameCustom>? Uname_usercustomfields { get; set; } 
+        public ICollection<AgentCustom>? Uname_usercustomfields { get; set; } 
 
         [JsonProperty("access_control", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<AccessControl>? Access_control { get; set; } 
@@ -536,7 +537,7 @@ namespace Angelic;
         public ICollection<AccessControl>? Ac_devices { get; set; } 
 
         [JsonProperty("sites", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<UnameSite>? Sites { get; set; } 
+        public ICollection<AgentSite>? Sites { get; set; } 
 
         [JsonProperty("ac_databaselookups", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<AccessControl>? Ac_databaselookups { get; set; } 

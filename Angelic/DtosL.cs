@@ -706,7 +706,7 @@ namespace Angelic;
         public int? Azure_connection_id { get; set; } 
 
         [JsonProperty("azure_connection", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AzureADConnection? Azure_connection { get; set; } 
+        public AzureAdConnection? Azure_connection { get; set; } 
 
         [JsonProperty("requested_quantity", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Requested_quantity { get; set; } 

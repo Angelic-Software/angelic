@@ -1847,7 +1847,7 @@ namespace Angelic;
         public string? New_subscription_key { get; set; } 
 
         [JsonProperty("azure_connection", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AzureADConnection? Azure_connection { get; set; } 
+        public AzureAdConnection? Azure_connection { get; set; } 
 
         [JsonProperty("_dosave", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? _dosave { get; set; } 

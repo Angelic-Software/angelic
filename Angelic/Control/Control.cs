@@ -1,3 +1,7 @@
+using System.CodeDom.Compiler;
+using Angelic.Agent;
+using Newtonsoft.Json;
+
 namespace Angelic.Control;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
@@ -7636,7 +7640,7 @@ namespace Angelic.Control;
         public ICollection<AreaItem>? _areaitems_to_convert { get; set; } 
 
         [JsonProperty("_contracts_to_convert", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ContractHeader_List>? _contracts_to_convert { get; set; } 
+        public ICollection<ContractHeaderList>? _contracts_to_convert { get; set; } 
 
         [JsonProperty("remotesession_trackingid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Remotesession_trackingid { get; set; } 
@@ -7813,7 +7817,7 @@ namespace Angelic.Control;
         public string? Halointegrator_datto_lasterror { get; set; } 
 
         [JsonProperty("csp_sitemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<AzureADMapping>? Csp_sitemappings { get; set; } 
+        public ICollection<AzureAdMapping>? Csp_sitemappings { get; set; } 
 
         [JsonProperty("_generatecspmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? _generatecspmappings { get; set; } 
@@ -9421,7 +9425,7 @@ namespace Angelic.Control;
         public string? Home_html_top { get; set; } 
 
         [JsonProperty("agent_presence_rules", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<UnamePresenceRule>? Agent_presence_rules { get; set; } 
+        public ICollection<AgentPresenceRule>? Agent_presence_rules { get; set; } 
 
         [JsonProperty("halointegrator_mailchimp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Halointegrator_mailchimp { get; set; } 
@@ -9445,7 +9449,7 @@ namespace Angelic.Control;
         public bool? Recordonlinepresence { get; set; } 
 
         [JsonProperty("exchange_agent_subscriptions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<UnameEventSubscription>? Exchange_agent_subscriptions { get; set; } 
+        public ICollection<AgentEventSubscription>? Exchange_agent_subscriptions { get; set; } 
 
         [JsonProperty("_do_convert_to_prospects", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? _do_convert_to_prospects { get; set; } 

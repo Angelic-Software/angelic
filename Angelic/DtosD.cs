@@ -682,7 +682,7 @@ public class DashboardFilter
         public ICollection<Device>? Hierarchy { get; set; } 
 
         [JsonProperty("users", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<Users_List>? Users { get; set; } 
+        public ICollection<UsersList>? Users { get; set; } 
 
         [JsonProperty("clone_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Clone_count { get; set; } 
@@ -712,7 +712,7 @@ public class DashboardFilter
         public bool? _isclone { get; set; } 
 
         [JsonProperty("contracts", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ContractHeader_List>? Contracts { get; set; } 
+        public ICollection<ContractHeaderList>? Contracts { get; set; } 
 
         [JsonProperty("scheduled_tickets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<StdRequest_List>? Scheduled_tickets { get; set; } 
