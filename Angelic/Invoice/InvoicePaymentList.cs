@@ -46,7 +46,7 @@ public class InvoicePaymentList
     public string? Sage50Reference { get; set; } 
 
     [JsonProperty("thirdpartyid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Thirdpartyid { get; set; } 
+    public string? ThirdPartyid { get; set; } 
 
     [JsonProperty("client_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ClientId { get; set; } 
@@ -73,7 +73,7 @@ public class InvoicePaymentList
     public string? ImportType { get; set; } 
 
     [JsonProperty("sqlimport_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? SqlimportId { get; set; } 
+    public int? SqlImportId { get; set; } 
 
     [JsonProperty("invoice_match_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? InvoiceMatchId { get; set; } 

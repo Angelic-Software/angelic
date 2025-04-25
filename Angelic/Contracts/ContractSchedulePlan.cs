@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Appointments;
 using Newtonsoft.Json;
 
 namespace Angelic.Contracts;
@@ -16,10 +17,10 @@ public class ContractSchedulePlan
     public DateTimeOffset? Date { get; set; } 
 
     [JsonProperty("requesttype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Requesttype { get; set; } 
+    public int? RequestType { get; set; } 
 
     [JsonProperty("requesttype_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? RequesttypeName { get; set; } 
+    public string? RequestTypeName { get; set; } 
 
     [JsonProperty("agent_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? AgentId { get; set; } 

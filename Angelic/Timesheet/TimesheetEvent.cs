@@ -23,7 +23,7 @@ public class TimesheetEvent
     public DateTimeOffset? EndDate { get; set; } 
 
     [JsonProperty("timetaken", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Timetaken { get; set; } 
+    public double? TimeTaken { get; set; } 
 
     [JsonProperty("agent_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? AgentId { get; set; } 

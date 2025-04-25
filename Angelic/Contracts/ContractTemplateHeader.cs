@@ -67,7 +67,7 @@ public class ContractTemplateHeader
     public int? Subtype { get; set; } 
 
     [JsonProperty("billingperiod", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Billingperiod { get; set; } 
+    public int? BillingPeriod { get; set; } 
 
     [JsonProperty("clients", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<int>? Clients { get; set; } 

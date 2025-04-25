@@ -10,13 +10,13 @@ public class ItemDeviceDefaults
     public int? Id { get; set; } 
 
     [JsonProperty("iid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Iid { get; set; } 
+    public int? IId { get; set; } 
 
     [JsonProperty("dtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Dtype { get; set; } 
+    public int? DType { get; set; } 
 
     [JsonProperty("yseq", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Yseq { get; set; } 
+    public int? YSeq { get; set; } 
 
     [JsonProperty("value", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Value { get; set; } 

@@ -1,6 +1,6 @@
 using System.CodeDom.Compiler;
 using Angelic.Attachments;
-using Angelic.Configuration.CustomFields;
+using Angelic.Configuration.Custom.CustomFields;
 using Newtonsoft.Json;
 
 namespace Angelic.Users;
@@ -159,7 +159,7 @@ public class UsersList
     public int? Uduserid { get; set; } 
 
     [JsonProperty("userdevicerolecount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Userdevicerolecount { get; set; } 
+    public int? UserDevicerolecount { get; set; } 
 
     [JsonProperty("site_hubspot_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? SiteHubspotGuid { get; set; } 

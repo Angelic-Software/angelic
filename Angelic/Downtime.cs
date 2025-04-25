@@ -40,6 +40,6 @@ public class Downtime
     public bool? Calculated { get; set; } 
 
     [JsonProperty("allday", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Allday { get; set; } 
+    public bool? AllDay { get; set; } 
 
 }

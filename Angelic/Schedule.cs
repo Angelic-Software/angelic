@@ -39,7 +39,7 @@ public class Schedule
     public int? Rangeofrecurrence { get; set; } 
 
     [JsonProperty("requesttype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Requesttype { get; set; } 
+    public int? RequestType { get; set; } 
 
     [JsonProperty("recurrencepattern", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Recurrencepattern { get; set; } 

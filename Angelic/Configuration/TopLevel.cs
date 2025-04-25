@@ -1,6 +1,8 @@
 using System.CodeDom.Compiler;
 using Angelic.Configuration.TeamsAndAgents;
 using Angelic.Configuration.TeamsAndAgents.Agents;
+using Angelic.Configuration.Tickets.Templates;
+using Angelic.Configuration.Users;
 using Newtonsoft.Json;
 
 namespace Angelic;
@@ -63,7 +65,7 @@ public class TopLevel
     public ICollection<CannedText>? CannedText { get; set; } 
 
     [JsonProperty("templates", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<StdRequestList>? Templates { get; set; } 
+    public ICollection<TemplateList>? Templates { get; set; } 
 
     [JsonProperty("announcement", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Announcement { get; set; } 

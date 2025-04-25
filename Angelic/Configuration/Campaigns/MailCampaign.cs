@@ -38,7 +38,7 @@ public class MailCampaign
     public int? MailboxFrom { get; set; } 
 
     [JsonProperty("mailbox_replyto", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? MailboxReplyto { get; set; } 
+    public string? MailboxReplyTo { get; set; } 
 
     [JsonProperty("type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Type { get; set; } 
@@ -56,7 +56,7 @@ public class MailCampaign
     public ExternalLinkList? NewExternalLink { get; set; } 
 
     [JsonProperty("_match_thirdparty_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? MatchThirdpartyId { get; set; } 
+    public string? MatchThirdPartyId { get; set; } 
 
     [JsonProperty("_match_integration_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? MatchIntegrationId { get; set; } 

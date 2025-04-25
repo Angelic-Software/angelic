@@ -5,9 +5,10 @@ using Angelic.Attachments;
 using Angelic.Configuration;
 using Angelic.Configuration.Billing;
 using Angelic.Configuration.Billing.Prepay;
-using Angelic.Configuration.CustomFields;
+using Angelic.Configuration.Custom.CustomFields;
 using Angelic.Configuration.Integrations.Freshdesk;
 using Angelic.Configuration.Integrations.Google;
+using Angelic.Configuration.Integrations.Lookups;
 using Angelic.Configuration.TeamsAndAgents;
 using Angelic.Configuration.Tickets.Workflows;
 using Angelic.KeyPairs;
@@ -136,7 +137,7 @@ namespace Angelic.Tickets;
         public DateTimeOffset? Projectlatestend { get; set; } 
 
         [JsonProperty("timetaken", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Timetaken { get; set; } 
+        public double? TimeTaken { get; set; } 
 
         [JsonProperty("chargehours", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Chargehours { get; set; } 
@@ -532,19 +533,19 @@ namespace Angelic.Tickets;
         public string? Lastnote { get; set; } 
 
         [JsonProperty("userdef1", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Userdef1 { get; set; } 
+        public string? UserDef1 { get; set; } 
 
         [JsonProperty("userdef2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Userdef2 { get; set; } 
+        public string? UserDef2 { get; set; } 
 
         [JsonProperty("userdef3", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Userdef3 { get; set; } 
+        public string? UserDef3 { get; set; } 
 
         [JsonProperty("userdef4", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Userdef4 { get; set; } 
+        public string? UserDef4 { get; set; } 
 
         [JsonProperty("userdef5", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Userdef5 { get; set; } 
+        public string? UserDef5 { get; set; } 
 
         [JsonProperty("source", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Source { get; set; } 
@@ -628,7 +629,7 @@ namespace Angelic.Tickets;
         public string? ActionOutcome { get; set; } 
 
         [JsonProperty("action_chargerate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? ActionChargerate { get; set; } 
+        public string? ActionChargeRate { get; set; } 
 
         [JsonProperty("action_contract_ref", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? ActionContractRef { get; set; } 
@@ -646,10 +647,10 @@ namespace Angelic.Tickets;
         public int? OrderheadId { get; set; } 
 
         [JsonProperty("budgettype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Budgettype { get; set; } 
+        public string? BudgetType { get; set; } 
 
         [JsonProperty("requesttype_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? RequesttypeName { get; set; } 
+        public string? RequestTypeName { get; set; } 
 
         [JsonProperty("recalculate_billing", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? RecalculateBilling { get; set; } 
@@ -721,7 +722,7 @@ namespace Angelic.Tickets;
         public DateTimeOffset? DateFullyClosed { get; set; } 
 
         [JsonProperty("lastaction_chargerate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? LastactionChargerate { get; set; } 
+        public string? LastactionChargeRate { get; set; } 
 
         [JsonProperty("hover_summary", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? HoverSummary { get; set; } 
@@ -1018,7 +1019,7 @@ namespace Angelic.Tickets;
         public int? Emailpriority { get; set; } 
 
         [JsonProperty("chargerate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Chargerate { get; set; } 
+        public int? ChargeRate { get; set; } 
 
         [JsonProperty("timezonename", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Timezonename { get; set; } 
@@ -1255,10 +1256,10 @@ namespace Angelic.Tickets;
         public bool? Sendack { get; set; } 
 
         [JsonProperty("newaction_emailfrom", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? NewactionEmailfrom { get; set; } 
+        public int? NewActionEmailfrom { get; set; } 
 
         [JsonProperty("newaction_emailfrom_address_override", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? NewactionEmailfromAddressOverride { get; set; } 
+        public string? NewActionEmailfromAddressOverride { get; set; } 
 
         [JsonProperty("_canupdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? CanUpdate { get; set; } 
@@ -1285,19 +1286,19 @@ namespace Angelic.Tickets;
         public string? ParentStatusName { get; set; } 
 
         [JsonProperty("new_approvalprocess", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? NewApprovalprocess { get; set; } 
+        public int? NewApprovalProcess { get; set; } 
 
         [JsonProperty("new_approvalprocess_agent_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? NewApprovalprocessAgentId { get; set; } 
+        public int? NewApprovalProcessAgentId { get; set; } 
 
         [JsonProperty("new_approvalprocess_user_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? NewApprovalprocessUserId { get; set; } 
+        public int? NewApprovalProcessUserId { get; set; } 
 
         [JsonProperty("new_approvalprocess_email", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? NewApprovalprocessEmail { get; set; } 
+        public string? NewApprovalProcessEmail { get; set; } 
 
         [JsonProperty("new_approvalprocess_cab_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? NewApprovalprocessCabId { get; set; } 
+        public int? NewApprovalProcessCabId { get; set; } 
 
         [JsonProperty("approvers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<TicketApproval>? Approvers { get; set; } 
@@ -1492,10 +1493,10 @@ namespace Angelic.Tickets;
         public string? Splunksearch { get; set; } 
 
         [JsonProperty("budgettype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? BudgettypeId { get; set; } 
+        public int? BudgetTypeId { get; set; } 
 
         [JsonProperty("budgettype_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? BudgettypeName { get; set; } 
+        public string? BudgetTypeName { get; set; } 
 
         [JsonProperty("budgets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<TicketBudget>? Budgets { get; set; } 
@@ -1528,7 +1529,7 @@ namespace Angelic.Tickets;
         public string? FormId { get; set; } 
 
         [JsonProperty("database_lookup_result", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public PartsLookupResult? DatabaseLookupResult { get; set; } 
+        public DatabaseLookupResult? DatabaseLookupResult { get; set; } 
 
         [JsonProperty("azure_tenants", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? AzureTenants { get; set; } 
@@ -1921,7 +1922,7 @@ namespace Angelic.Tickets;
         public bool? Domerge { get; set; } 
 
         [JsonProperty("isnew", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Isnew { get; set; } 
+        public bool? IsNew { get; set; } 
 
         [JsonProperty("automate_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? AutomateId { get; set; } 
@@ -1993,7 +1994,7 @@ namespace Angelic.Tickets;
         public ICollection<ExternalLinkList>? ExternalLinks { get; set; } 
 
         [JsonProperty("_match_thirdparty_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? MatchThirdpartyId { get; set; } 
+        public string? MatchThirdPartyId { get; set; } 
 
         [JsonProperty("_match_integration_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? MatchIntegrationId { get; set; } 
@@ -2074,7 +2075,7 @@ namespace Angelic.Tickets;
         public int? NcentralDetailsId { get; set; } 
 
         [JsonProperty("requesttype_published_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? RequesttypePublishedId { get; set; } 
+        public string? RequestTypePublishedId { get; set; } 
 
         [JsonProperty("chat_key_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? ChatKeyId { get; set; } 
@@ -2176,10 +2177,10 @@ namespace Angelic.Tickets;
         public ICollection<Tabname>? Extratabs { get; set; } 
 
         [JsonProperty("new_approvalprocess_role_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? NewApprovalprocessRoleId { get; set; } 
+        public int? NewApprovalProcessRoleId { get; set; } 
 
         [JsonProperty("new_approvalprocess_customfieldid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? NewApprovalprocessCustomfieldid { get; set; } 
+        public int? NewApprovalProcessCustomfieldid { get; set; } 
 
         [JsonProperty("linked_ecommerce_order_number", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? LinkedEcommerceOrderNumber { get; set; } 
@@ -2212,7 +2213,7 @@ namespace Angelic.Tickets;
         public string? SuggestedCategory1 { get; set; } 
 
         [JsonProperty("thirdpartyreviewscore", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Thirdpartyreviewscore { get; set; } 
+        public int? ThirdPartyreviewscore { get; set; } 
 
         [JsonProperty("datto_alert_state", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? DattoAlertState { get; set; } 
@@ -2293,7 +2294,7 @@ namespace Angelic.Tickets;
         public string? MatchingValue { get; set; } 
 
         [JsonProperty("sqlimport_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? SqlimportId { get; set; } 
+        public int? SqlImportId { get; set; } 
 
         [JsonProperty("respondbydateadjusted", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Respondbydateadjusted { get; set; } 
@@ -2440,7 +2441,7 @@ namespace Angelic.Tickets;
         public string? PandadocAttachmentUrl { get; set; } 
 
         [JsonProperty("thirdparty_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? ThirdpartyUrl { get; set; } 
+        public string? ThirdPartyUrl { get; set; } 
 
         [JsonProperty("security_signal_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? SecuritySignalId { get; set; } 
@@ -2587,7 +2588,7 @@ namespace Angelic.Tickets;
         public string? Mailbox { get; set; } 
 
         [JsonProperty("userdepartments", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Userdepartments { get; set; } 
+        public string? UserDepartments { get; set; } 
 
         [JsonProperty("updateservicestatus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Updateservicestatus { get; set; } 
@@ -2596,7 +2597,7 @@ namespace Angelic.Tickets;
         public string? Servicestatusnote { get; set; } 
 
         [JsonProperty("itil_requesttype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? ItilRequesttypeId { get; set; } 
+        public int? ItilRequestTypeId { get; set; } 
 
         [JsonProperty("startdatetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public DateTimeOffset? StartDatetime { get; set; } 

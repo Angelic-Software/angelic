@@ -1,6 +1,6 @@
 using System.CodeDom.Compiler;
 using Angelic.Attachments;
-using Angelic.Configuration.CustomFields;
+using Angelic.Configuration.Custom.CustomFields;
 using Angelic.Configuration.Tickets.TicketTypes;
 using Newtonsoft.Json;
 
@@ -208,7 +208,7 @@ public class TicketApproval
     public string? Targettime { get; set; } 
 
     [JsonProperty("timetaken", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Timetaken { get; set; } 
+    public double? TimeTaken { get; set; } 
 
     [JsonProperty("allow_approver_attachments", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? AllowApproverAttachments { get; set; } 

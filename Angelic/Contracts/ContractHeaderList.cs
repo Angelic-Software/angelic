@@ -1,5 +1,5 @@
 using System.CodeDom.Compiler;
-using Angelic.Configuration.CustomFields;
+using Angelic.Configuration.Custom.CustomFields;
 using Newtonsoft.Json;
 
 namespace Angelic.Contracts;
@@ -38,7 +38,7 @@ public class ContractHeaderList
     public double? Numberofunitsfree { get; set; } 
 
     [JsonProperty("billingperiod", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Billingperiod { get; set; } 
+    public int? BillingPeriod { get; set; } 
 
     [JsonProperty("billingdescription", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Billingdescription { get; set; } 

@@ -55,7 +55,7 @@ namespace Angelic.Configuration.Integrations;
         public int? LastStatus { get; set; } 
 
         [JsonProperty("systemuse", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Systemuse { get; set; } 
+        public string? SystemUse { get; set; } 
 
         [JsonProperty("runbook_start_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? RunbookStartType { get; set; } 

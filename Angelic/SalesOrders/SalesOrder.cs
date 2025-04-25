@@ -1,5 +1,5 @@
 using System.CodeDom.Compiler;
-using Angelic.Configuration.CustomFields;
+using Angelic.Configuration.Custom.CustomFields;
 using Newtonsoft.Json;
 
 namespace Angelic.SalesOrders;
@@ -167,10 +167,10 @@ public class SalesOrder
     public int? PdfAttachmentId { get; set; } 
 
     [JsonProperty("pdftemplate_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? PdftemplateId { get; set; } 
+    public int? PdfTemplateId { get; set; } 
 
     [JsonProperty("pdftemplate_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? PdftemplateName { get; set; } 
+    public string? PdfTemplateName { get; set; } 
 
     [JsonProperty("purchaseorder_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? PurchaseorderCount { get; set; } 
@@ -290,7 +290,7 @@ public class SalesOrder
     public bool? Isimport { get; set; } 
 
     [JsonProperty("_match_thirdparty_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? MatchThirdpartyId { get; set; } 
+    public string? MatchThirdPartyId { get; set; } 
 
     [JsonProperty("_match_integration_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? MatchIntegrationId { get; set; } 
@@ -326,22 +326,22 @@ public class SalesOrder
     public string? AvalaraDetailsName { get; set; } 
 
     [JsonProperty("originaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public AddressStore? Originaddress { get; set; } 
+    public AddressStore? OriginAddress { get; set; } 
 
     [JsonProperty("originaddress1", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Originaddress1 { get; set; } 
+    public string? OriginAddress1 { get; set; } 
 
     [JsonProperty("originaddress2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Originaddress2 { get; set; } 
+    public string? OriginAddress2 { get; set; } 
 
     [JsonProperty("originaddress3", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Originaddress3 { get; set; } 
+    public string? OriginAddress3 { get; set; } 
 
     [JsonProperty("originaddress4", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Originaddress4 { get; set; } 
+    public string? OriginAddress4 { get; set; } 
 
     [JsonProperty("originaddress5", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Originaddress5 { get; set; } 
+    public string? OriginAddress5 { get; set; } 
 
     [JsonProperty("custombuttons", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<CustomButton>? Custombuttons { get; set; } 

@@ -1,7 +1,7 @@
 using System.CodeDom.Compiler;
 using Angelic.Assets;
 using Angelic.Configuration.Billing.Taxes;
-using Angelic.Configuration.CustomFields;
+using Angelic.Configuration.Custom.CustomFields;
 using Angelic.Tickets;
 using Newtonsoft.Json;
 
@@ -38,7 +38,7 @@ public class SalesOrderLine
     public int? AssetTypeId { get; set; } 
 
     [JsonProperty("costprice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Costprice { get; set; } 
+    public double? CostPrice { get; set; } 
 
     [JsonProperty("profit", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? Profit { get; set; } 
@@ -59,7 +59,7 @@ public class SalesOrderLine
     public double? QuantityOnOpenPo { get; set; } 
 
     [JsonProperty("total_costprice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? TotalCostprice { get; set; } 
+    public double? TotalCostPrice { get; set; } 
 
     [JsonProperty("total_profit", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? TotalProfit { get; set; } 
@@ -71,7 +71,7 @@ public class SalesOrderLine
     public double? TotalNetTotalMonthly { get; set; } 
 
     [JsonProperty("total_costprice_monthly", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? TotalCostpriceMonthly { get; set; } 
+    public double? TotalCostPriceMonthly { get; set; } 
 
     [JsonProperty("total_profit_monthly", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? TotalProfitMonthly { get; set; } 
@@ -86,7 +86,7 @@ public class SalesOrderLine
     public double? TotalNetTotalAnnual { get; set; } 
 
     [JsonProperty("total_costprice_annual", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? TotalCostpriceAnnual { get; set; } 
+    public double? TotalCostPriceAnnual { get; set; } 
 
     [JsonProperty("total_profit_annual", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? TotalProfitAnnual { get; set; } 
@@ -101,7 +101,7 @@ public class SalesOrderLine
     public double? TotalNetTotalYearone { get; set; } 
 
     [JsonProperty("total_costprice_yearone", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? TotalCostpriceYearone { get; set; } 
+    public double? TotalCostPriceYearone { get; set; } 
 
     [JsonProperty("total_profit_yearone", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? TotalProfitYearone { get; set; } 
@@ -146,7 +146,7 @@ public class SalesOrderLine
     public double? Poqty { get; set; } 
 
     [JsonProperty("billingperiod", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Billingperiod { get; set; } 
+    public int? BillingPeriod { get; set; } 
 
     [JsonProperty("startdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? StartDate { get; set; } 
@@ -170,7 +170,7 @@ public class SalesOrderLine
     public int? ItemTemplate { get; set; } 
 
     [JsonProperty("item_budgettype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ItemBudgettype { get; set; } 
+    public int? ItemBudgetType { get; set; } 
 
     [JsonProperty("item_doesnotneedconsigning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? ItemDoesnotneedconsigning { get; set; } 
@@ -362,7 +362,7 @@ public class SalesOrderLine
     public bool? IsDeferredRevenue { get; set; } 
 
     [JsonProperty("chargerates", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<Lookup>? Chargerates { get; set; } 
+    public ICollection<Lookup>? ChargeRates { get; set; } 
 
     [JsonProperty("budgets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<TicketBudget>? Budgets { get; set; } 
@@ -422,10 +422,10 @@ public class SalesOrderLine
     public int? BudgetAddType { get; set; } 
 
     [JsonProperty("baseprice_converted", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? BasepriceConverted { get; set; } 
+    public double? BasePriceConverted { get; set; } 
 
     [JsonProperty("baseprice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Baseprice { get; set; } 
+    public double? BasePrice { get; set; } 
 
     [JsonProperty("total_price_monthly_converted", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? TotalPriceMonthlyConverted { get; set; } 

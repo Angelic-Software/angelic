@@ -1,6 +1,6 @@
 using System.CodeDom.Compiler;
 using Angelic.Areas;
-using Angelic.Configuration.CustomFields;
+using Angelic.Configuration.Custom.CustomFields;
 using Angelic.Configuration.Integrations.Microsoft.Dynamics365.BusinessCentral;
 using Angelic.KeyPairs;
 using Newtonsoft.Json;
@@ -11,7 +11,7 @@ namespace Angelic.Sites;
 public class Site
 {
     [JsonProperty("accountsid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Accountsid { get; set; } 
+    public string? AccountsId { get; set; } 
 
     [JsonProperty("accountsfirstname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Accountsfirstname { get; set; } 
@@ -428,7 +428,7 @@ public class Site
     public ExternalLinkList? NewExternalLink { get; set; } 
 
     [JsonProperty("_match_thirdparty_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? MatchThirdpartyId { get; set; } 
+    public string? MatchThirdPartyId { get; set; } 
 
     [JsonProperty("_match_integration_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? MatchIntegrationId { get; set; } 
@@ -446,7 +446,7 @@ public class Site
     public bool? DontFireAutomations { get; set; } 
 
     [JsonProperty("sqlimport_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? SqlimportId { get; set; } 
+    public int? SqlImportId { get; set; } 
 
     [JsonProperty("matching_value", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? MatchingValue { get; set; } 

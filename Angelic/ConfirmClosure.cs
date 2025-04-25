@@ -28,10 +28,10 @@ public class ConfirmClosure
     public string? UserMessage { get; set; } 
 
     [JsonProperty("withfeedback", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Withfeedback { get; set; } 
+    public bool? WithFeedback { get; set; } 
 
     [JsonProperty("feedbackhtml", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Feedbackhtml { get; set; } 
+    public string? FeedbackHtml { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

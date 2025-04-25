@@ -1,5 +1,5 @@
 using System.CodeDom.Compiler;
-using Angelic.Configuration.CustomFields;
+using Angelic.Configuration.Custom.CustomFields;
 using Newtonsoft.Json;
 
 namespace Angelic;
@@ -47,7 +47,7 @@ public class TypeInfo
     public int? Techdetail { get; set; } 
 
     [JsonProperty("userdetail", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Userdetail { get; set; } 
+    public int? UserDetail { get; set; } 
 
     [JsonProperty("visibility_conditions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<CustomFieldVisibility>? VisibilityConditions { get; set; } 

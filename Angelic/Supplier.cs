@@ -1,5 +1,5 @@
 using System.CodeDom.Compiler;
-using Angelic.Configuration.CustomFields;
+using Angelic.Configuration.Custom.CustomFields;
 using Angelic.Configuration.Integrations;
 using Angelic.KeyPairs;
 using Angelic.Users;
@@ -47,7 +47,7 @@ public class Supplier
     public int? DefaultContractSlaId { get; set; } 
 
     [JsonProperty("thirdpartynhdapiurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Thirdpartynhdapiurl { get; set; } 
+    public string? ThirdPartynhdapiurl { get; set; } 
 
     [JsonProperty("customfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<CustomField>? CustomFields { get; set; } 
@@ -146,16 +146,16 @@ public class Supplier
     public string? ApiAccessClientsecret { get; set; } 
 
     [JsonProperty("thirdpartynhdauthurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Thirdpartynhdauthurl { get; set; } 
+    public string? ThirdPartynhdauthurl { get; set; } 
 
     [JsonProperty("thirdpartynhdtenant", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Thirdpartynhdtenant { get; set; } 
+    public string? ThirdPartynhdtenant { get; set; } 
 
     [JsonProperty("thirdpartynhdapiclientid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Thirdpartynhdapiclientid { get; set; } 
+    public string? ThirdPartynhdapiclientid { get; set; } 
 
     [JsonProperty("new_thirdpartynhdapiclientsecret", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? NewThirdpartynhdapiclientsecret { get; set; } 
+    public string? NewThirdPartynhdapiclientsecret { get; set; } 
 
     [JsonProperty("_isimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Isimport { get; set; } 
@@ -218,7 +218,7 @@ public class Supplier
     public ValueLabelIsNewKeyPair? JiraServicedesk { get; set; } 
 
     [JsonProperty("jira_requesttype_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<IntegrationFieldMapping>? JiraRequesttypeMappings { get; set; } 
+    public ICollection<IntegrationFieldMapping>? JiraRequestTypeMappings { get; set; } 
 
     [JsonProperty("jira_user_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? JiraUserId { get; set; } 

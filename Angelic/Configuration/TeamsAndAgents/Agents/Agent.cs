@@ -1,5 +1,5 @@
 using System.CodeDom.Compiler;
-using Angelic.Configuration.CustomFields;
+using Angelic.Configuration.Custom.CustomFields;
 using Angelic.KeyPairs;
 using Newtonsoft.Json;
 
@@ -357,7 +357,7 @@ namespace Angelic.Configuration.TeamsAndAgents.Agents;
         public bool? TwofactorEnabled { get; set; } 
 
         [JsonProperty("_isnew", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Isnew { get; set; } 
+        public bool? IsNew { get; set; } 
 
         [JsonProperty("adconnection", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Adconnection { get; set; } 
@@ -408,7 +408,7 @@ namespace Angelic.Configuration.TeamsAndAgents.Agents;
         public ICollection<CustomField>? CustomFields { get; set; } 
 
         [JsonProperty("chargerates", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<Restriction>? Chargerates { get; set; } 
+        public ICollection<Restriction>? ChargeRates { get; set; } 
 
         [JsonProperty("warnifnoscan_integrator", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? WarnifnoscanIntegrator { get; set; } 
@@ -741,7 +741,7 @@ namespace Angelic.Configuration.TeamsAndAgents.Agents;
         public string? MatchingValue { get; set; } 
 
         [JsonProperty("sqlimport_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? SqlimportId { get; set; } 
+        public int? SqlImportId { get; set; } 
 
         [JsonProperty("splashtop_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? SplashtopUrl { get; set; } 
@@ -816,10 +816,10 @@ namespace Angelic.Configuration.TeamsAndAgents.Agents;
         public bool? ExcludeFromAutomaticAssigning { get; set; } 
 
         [JsonProperty("userdetails_layout_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? UserdetailsLayoutId { get; set; } 
+        public int? UserDetailsLayoutId { get; set; } 
 
         [JsonProperty("userdetails_layout_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? UserdetailsLayoutName { get; set; } 
+        public string? UserDetailsLayoutName { get; set; } 
 
         [JsonProperty("guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public Guid? Guid { get; set; } 
@@ -864,10 +864,10 @@ namespace Angelic.Configuration.TeamsAndAgents.Agents;
         public string? Use { get; set; } 
 
         [JsonProperty("assetfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<AgentField>? Assetfields { get; set; } 
+        public ICollection<AgentField>? AssetFields { get; set; } 
 
         [JsonProperty("unamecustomfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<AgentCustom>? Unamecustomfields { get; set; } 
+        public ICollection<AgentCustom>? UnameCustomFields { get; set; } 
 
         [JsonProperty("unameappointmenttypes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<AgentAppointment>? Unameappointmenttypes { get; set; } 
@@ -930,10 +930,10 @@ namespace Angelic.Configuration.TeamsAndAgents.Agents;
         public string? WorkdayTimezone { get; set; } 
 
         [JsonProperty("costprice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Costprice { get; set; } 
+        public double? CostPrice { get; set; } 
 
         [JsonProperty("chargerate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Chargerate { get; set; } 
+        public int? ChargeRate { get; set; } 
 
         [JsonProperty("first_role_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? FirstRoleId { get; set; } 

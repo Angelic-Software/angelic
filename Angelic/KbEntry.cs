@@ -2,7 +2,7 @@ using System.CodeDom.Compiler;
 using Angelic.Assets;
 using Angelic.Attachments;
 using Angelic.Configuration;
-using Angelic.Configuration.CustomFields;
+using Angelic.Configuration.Custom.CustomFields;
 using Angelic.Configuration.Integrations.Wordpress;
 using Angelic.Configuration.TeamsAndAgents;
 using Angelic.Configuration.TeamsAndAgents.Agents;
@@ -208,10 +208,10 @@ namespace Angelic;
         public int? PdfAttachmentId { get; set; } 
 
         [JsonProperty("pdftemplate_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? PdftemplateId { get; set; } 
+        public int? PdfTemplateId { get; set; } 
 
         [JsonProperty("pdftemplate_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? PdftemplateName { get; set; } 
+        public string? PdfTemplateName { get; set; } 
 
         [JsonProperty("kbentryclientaccess", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<KbEntryAreaAccess>? Kbentryclientaccess { get; set; } 
@@ -232,7 +232,7 @@ namespace Angelic;
         public ExternalLinkList? NewExternalLink { get; set; } 
 
         [JsonProperty("_match_thirdparty_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? MatchThirdpartyId { get; set; } 
+        public string? MatchThirdPartyId { get; set; } 
 
         [JsonProperty("_match_integration_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? MatchIntegrationId { get; set; } 

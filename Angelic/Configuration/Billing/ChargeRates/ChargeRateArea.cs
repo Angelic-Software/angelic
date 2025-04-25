@@ -13,7 +13,7 @@ public class ChargeRateArea
     public int? Area { get; set; } 
 
     [JsonProperty("chargerate_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ChargerateId { get; set; } 
+    public int? ChargeRateId { get; set; } 
 
     [JsonProperty("name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Name { get; set; } 

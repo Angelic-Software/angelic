@@ -44,7 +44,7 @@ public class ConsignmentHeader
     public bool? PrintGenerate { get; set; } 
 
     [JsonProperty("pdftemplate_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? PdftemplateId { get; set; } 
+    public int? PdfTemplateId { get; set; } 
 
     [JsonProperty("printhtml", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Printhtml { get; set; } 

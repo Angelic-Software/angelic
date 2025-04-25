@@ -13,10 +13,10 @@ public class TicketBudget
     public int? TicketId { get; set; } 
 
     [JsonProperty("budgettype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? BudgettypeId { get; set; } 
+    public int? BudgetTypeId { get; set; } 
 
     [JsonProperty("budgettype_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? BudgettypeName { get; set; } 
+    public string? BudgetTypeName { get; set; } 
 
     [JsonProperty("hours", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? Hours { get; set; } 

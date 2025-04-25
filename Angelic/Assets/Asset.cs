@@ -1,8 +1,10 @@
 using System.CodeDom.Compiler;
 using Angelic.Configuration;
-using Angelic.Configuration.CustomFields;
+using Angelic.Configuration.Custom.CustomFields;
+using Angelic.Configuration.Custom.CustomTabs;
 using Angelic.Configuration.Integrations.Lansweeper;
 using Angelic.Configuration.Integrations.Snow;
+using Angelic.Configuration.Tickets.Templates;
 using Angelic.Contracts;
 using Angelic.Items;
 using Angelic.PurchaseOrders;
@@ -327,16 +329,16 @@ public class Asset
     public ICollection<ContractHeaderList>? Contracts { get; set; } 
 
     [JsonProperty("scheduled_tickets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<StdRequestList>? ScheduledTickets { get; set; } 
+    public ICollection<TemplateList>? ScheduledTickets { get; set; } 
 
     [JsonProperty("site_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? SiteGuid { get; set; } 
 
     [JsonProperty("sqlimport_user", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? SqlimportUser { get; set; } 
+    public string? SqlImportUser { get; set; } 
 
     [JsonProperty("sqlimport_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? SqlimportId { get; set; } 
+    public int? SqlImportId { get; set; } 
 
     [JsonProperty("software", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<AssetApplications>? Software { get; set; } 
@@ -522,7 +524,7 @@ public class Asset
     public ExternalLinkList? NewExternalLink { get; set; } 
 
     [JsonProperty("_match_thirdparty_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? MatchThirdpartyId { get; set; } 
+    public string? MatchThirdPartyId { get; set; } 
 
     [JsonProperty("_match_integration_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? MatchIntegrationId { get; set; } 

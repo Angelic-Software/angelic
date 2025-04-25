@@ -41,7 +41,7 @@ public class Generic
     public bool? Moveassetonrequest { get; set; } 
 
     [JsonProperty("defaultsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Defaultsite { get; set; } 
+    public int? DefaultSite { get; set; } 
 
     [JsonProperty("kaseyaid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Kaseyaid { get; set; } 
@@ -56,7 +56,7 @@ public class Generic
     public ICollection<AssetType>? AssetTypes { get; set; } 
 
     [JsonProperty("thirdpartyid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Thirdpartyid { get; set; } 
+    public string? ThirdPartyid { get; set; } 
 
     [JsonProperty("_isimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Isimport { get; set; } 
@@ -107,7 +107,7 @@ public class Generic
     public ExternalLinkList? NewExternalLink { get; set; } 
 
     [JsonProperty("_match_thirdparty_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? MatchThirdpartyId { get; set; } 
+    public string? MatchThirdPartyId { get; set; } 
 
     [JsonProperty("_match_integration_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? MatchIntegrationId { get; set; } 

@@ -1,6 +1,8 @@
 using System.CodeDom.Compiler;
 using Angelic.Areas;
-using Angelic.Configuration.CustomFields;
+using Angelic.Configuration;
+using Angelic.Configuration.Custom.CustomFields;
+using Angelic.Configuration.Tickets.Templates;
 using Angelic.KeyPairs;
 using Newtonsoft.Json;
 
@@ -28,13 +30,13 @@ public class InvoiceHeader
     public string? ClientName { get; set; } 
 
     [JsonProperty("sitenumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Sitenumber { get; set; } 
+    public int? SiteNumber { get; set; } 
 
     [JsonProperty("site_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? SiteName { get; set; } 
 
     [JsonProperty("accountsid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Accountsid { get; set; } 
+    public string? AccountsId { get; set; } 
 
     [JsonProperty("uid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Uid { get; set; } 
@@ -43,7 +45,7 @@ public class InvoiceHeader
     public string? Invoicenumber { get; set; } 
 
     [JsonProperty("thirdpartyinvoicenumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Thirdpartyinvoicenumber { get; set; } 
+    public string? ThirdPartyinvoicenumber { get; set; } 
 
     [JsonProperty("posted", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Posted { get; set; } 
@@ -199,16 +201,16 @@ public class InvoiceHeader
     public double? AmountRemaining { get; set; } 
 
     [JsonProperty("emailstatus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Emailstatus { get; set; } 
+    public int? EmailStatus { get; set; } 
 
     [JsonProperty("address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public AddressStore? Address { get; set; } 
 
     [JsonProperty("shipaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public AddressStore? Shipaddress { get; set; } 
+    public AddressStore? ShipAddress { get; set; } 
 
     [JsonProperty("originaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public AddressStore? Originaddress { get; set; } 
+    public AddressStore? OriginAddress { get; set; } 
 
     [JsonProperty("lines", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<InvoiceDetail>? Lines { get; set; } 
@@ -223,7 +225,7 @@ public class InvoiceHeader
     public bool? PrintGenerate { get; set; } 
 
     [JsonProperty("printhtml", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Printhtml { get; set; } 
+    public string? PrintHtml { get; set; } 
 
     [JsonProperty("pdf_attachment_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? PdfAttachmentId { get; set; } 
@@ -232,10 +234,10 @@ public class InvoiceHeader
     public DateTimeOffset? PdfAttachmentDateCreated { get; set; } 
 
     [JsonProperty("pdftemplate_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? PdftemplateId { get; set; } 
+    public int? PdfTemplateId { get; set; } 
 
     [JsonProperty("pdftemplate_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? PdftemplateName { get; set; } 
+    public string? PdfTemplateName { get; set; } 
 
     [JsonProperty("composite_tax_total", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? CompositeTaxTotal { get; set; } 
@@ -247,7 +249,7 @@ public class InvoiceHeader
     public string? Reference { get; set; } 
 
     [JsonProperty("duedate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Duedate { get; set; } 
+    public DateTimeOffset? DueDate { get; set; } 
 
     [JsonProperty("_is_invoice_run", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? IsInvoiceRun { get; set; } 
@@ -271,7 +273,7 @@ public class InvoiceHeader
     public int? Period { get; set; } 
 
     [JsonProperty("schedule", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public StdRequest? Schedule { get; set; } 
+    public Template? Schedule { get; set; } 
 
     [JsonProperty("create_recurring_invoice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? CreateRecurringInvoice { get; set; } 
@@ -400,7 +402,7 @@ public class InvoiceHeader
     public bool? Isimport { get; set; } 
 
     [JsonProperty("duedatename", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Duedatename { get; set; } 
+    public string? DueDatename { get; set; } 
 
     [JsonProperty("date_created", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? DateCreated { get; set; } 
@@ -415,7 +417,7 @@ public class InvoiceHeader
     public string? QboCompanyId { get; set; } 
 
     [JsonProperty("intacct_recordno", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? IntacctRecordno { get; set; } 
+    public int? IntacctRecordNo { get; set; } 
 
     [JsonProperty("period_start_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? PeriodStartDate { get; set; } 
@@ -451,7 +453,7 @@ public class InvoiceHeader
     public int? Creditlinkedtoinvoiceid { get; set; } 
 
     [JsonProperty("creditlinkedtoinvoiceid_thirdpartynumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? CreditlinkedtoinvoiceidThirdpartynumber { get; set; } 
+    public string? CreditlinkedtoinvoiceidThirdPartynumber { get; set; } 
 
     [JsonProperty("creditlinkedtoinvoiceid_typeid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? CreditlinkedtoinvoiceidTypeid { get; set; } 
@@ -538,7 +540,7 @@ public class InvoiceHeader
     public string? IntacctClassName { get; set; } 
 
     [JsonProperty("take_payment_on_duedate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? TakePaymentOnDuedate { get; set; } 
+    public int? TakePaymentOnDueDate { get; set; } 
 
     [JsonProperty("contains_calculated_quantity", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? ContainsCalculatedQuantity { get; set; } 
@@ -583,7 +585,7 @@ public class InvoiceHeader
     public bool? IncludeInAutopay { get; set; } 
 
     [JsonProperty("_forcethirdpartysync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Forcethirdpartysync { get; set; } 
+    public bool? ForceThirdPartySync { get; set; } 
 
     [JsonProperty("client_to_invoice_to_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ClientToInvoiceToId { get; set; } 
@@ -622,13 +624,13 @@ public class InvoiceHeader
     public ValueLabelIsNewKeyPair? QboTerm { get; set; } 
 
     [JsonProperty("exact_payment_conditon_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ExactPaymentConditonName { get; set; } 
+    public string? ExactPaymentConditionName { get; set; } 
 
     [JsonProperty("exact_payment_conditon_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ExactPaymentConditonId { get; set; } 
+    public string? ExactPaymentConditionId { get; set; } 
 
     [JsonProperty("exact_payment_conditon", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ValueLabelIsNewKeyPair? ExactPaymentConditon { get; set; } 
+    public ValueLabelIsNewKeyPair? ExactPaymentCondition { get; set; } 
 
     [JsonProperty("avalara_details_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? AvalaraDetailsName { get; set; } 
@@ -673,7 +675,7 @@ public class InvoiceHeader
     public bool? Novalidate { get; set; } 
 
     [JsonProperty("sqlimport_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? SqlimportId { get; set; } 
+    public int? SqlImportId { get; set; } 
 
     [JsonProperty("invoice_match_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? InvoiceMatchId { get; set; } 
@@ -694,19 +696,19 @@ public class InvoiceHeader
     public int? TicketClientToInvoiceToId { get; set; } 
 
     [JsonProperty("originaddress1", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Originaddress1 { get; set; } 
+    public string? OriginAddress1 { get; set; } 
 
     [JsonProperty("originaddress2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Originaddress2 { get; set; } 
+    public string? OriginAddress2 { get; set; } 
 
     [JsonProperty("originaddress3", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Originaddress3 { get; set; } 
+    public string? OriginAddress3 { get; set; } 
 
     [JsonProperty("originaddress4", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Originaddress4 { get; set; } 
+    public string? OriginAddress4 { get; set; } 
 
     [JsonProperty("originaddress5", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Originaddress5 { get; set; } 
+    public string? OriginAddress5 { get; set; } 
 
     [JsonProperty("most_recent_invoice_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? MostRecentInvoiceId { get; set; } 
@@ -733,7 +735,7 @@ public class InvoiceHeader
     public bool? IsInvoiceScreen { get; set; } 
 
     [JsonProperty("_dotaxsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Dotaxsync { get; set; } 
+    public bool? DoTaxSync { get; set; } 
 
     [JsonProperty("tax_total", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? TaxTotal { get; set; } 
@@ -748,7 +750,7 @@ public class InvoiceHeader
     public int? ImportTypeId { get; set; } 
 
     [JsonProperty("_importthirdpartyid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Importthirdpartyid { get; set; } 
+    public string? ImportThirdPartyId { get; set; } 
 
     [JsonProperty("_importtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ImportType { get; set; } 

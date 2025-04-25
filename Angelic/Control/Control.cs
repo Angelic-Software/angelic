@@ -1,6 +1,7 @@
 using System.CodeDom.Compiler;
 using Angelic.Areas;
 using Angelic.Assets;
+using Angelic.Configuration.Assets.SoftwareLicensing;
 using Angelic.Configuration.Integrations;
 using Angelic.Configuration.Integrations.Auvik;
 using Angelic.Configuration.Integrations.Google;
@@ -12,6 +13,7 @@ using Angelic.Configuration.SqlImports;
 using Angelic.Configuration.TeamsAndAgents;
 using Angelic.Configuration.TeamsAndAgents.Agents;
 using Angelic.Configuration.Tickets.TicketTypes;
+using Angelic.Configuration.Users;
 using Angelic.Contracts;
 using Angelic.Invoice;
 using Newtonsoft.Json;
@@ -1015,7 +1017,7 @@ namespace Angelic.Control;
         public int? Processstreetuser { get; set; } 
 
         [JsonProperty("chargerateroundmultorder", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Chargerateroundmultorder { get; set; } 
+        public int? ChargeRateroundmultorder { get; set; } 
 
         [JsonProperty("qbodisablecfsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Qbodisablecfsync { get; set; } 
@@ -1045,7 +1047,7 @@ namespace Angelic.Control;
         public bool? ShowModalscreenforcannedtext { get; set; } 
 
         [JsonProperty("logicmonitor_defaultsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? LogicmonitorDefaultsite { get; set; } 
+        public int? LogicmonitorDefaultSite { get; set; } 
 
         [JsonProperty("logicmonitor_defaultassettype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? LogicmonitorDefaultassettype { get; set; } 
@@ -1075,7 +1077,7 @@ namespace Angelic.Control;
         public int? TeamsOptionsStyle { get; set; } 
 
         [JsonProperty("workspace_defaultsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? WorkspaceDefaultsite { get; set; } 
+        public int? WorkspaceDefaultSite { get; set; } 
 
         [JsonProperty("followers_scope", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? FollowersScope { get; set; } 
@@ -1156,7 +1158,7 @@ namespace Angelic.Control;
         public int? LogicmonitorImportType { get; set; } 
 
         [JsonProperty("barracuda_defaultsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? BarracudaDefaultsite { get; set; } 
+        public int? BarracudaDefaultSite { get; set; } 
 
         [JsonProperty("barracudadefaultassettype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Barracudadefaultassettype { get; set; } 
@@ -1474,7 +1476,7 @@ namespace Angelic.Control;
         public bool? Createuserifgeneraluser { get; set; } 
 
         [JsonProperty("icinga_defaultsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? IcingaDefaultsite { get; set; } 
+        public int? IcingaDefaultSite { get; set; } 
 
         [JsonProperty("icinga_defaultgroup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? IcingaDefaultgroup { get; set; } 
@@ -1712,7 +1714,7 @@ namespace Angelic.Control;
         public bool? UseEmbeddingScoresAzureopenai { get; set; } 
 
         [JsonProperty("xensam_defaultsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? XensamDefaultsite { get; set; } 
+        public int? XensamDefaultSite { get; set; } 
 
         [JsonProperty("xensam_defaultassettype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? XensamDefaultassettype { get; set; } 
@@ -2276,7 +2278,7 @@ namespace Angelic.Control;
         public string? AteraDevicetypes { get; set; } 
 
         [JsonProperty("atera_defaultsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? AteraDefaultsite { get; set; } 
+        public int? AteraDefaultSite { get; set; } 
 
         [JsonProperty("atera_defaultgroup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? AteraDefaultgroup { get; set; } 
@@ -2555,7 +2557,7 @@ namespace Angelic.Control;
         public string? AllowedFiles { get; set; } 
 
         [JsonProperty("jamf_defaultsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? JamfDefaultsite { get; set; } 
+        public int? JamfDefaultSite { get; set; } 
 
         [JsonProperty("allow_readall_passwords", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? AllowReadallPasswords { get; set; } 
@@ -2720,7 +2722,7 @@ namespace Angelic.Control;
         public string? SyncroDevicetypes { get; set; } 
 
         [JsonProperty("syncro_defaultsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? SyncroDefaultsite { get; set; } 
+        public int? SyncroDefaultSite { get; set; } 
 
         [JsonProperty("syncro_defaultgroup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? SyncroDefaultgroup { get; set; } 
@@ -3191,7 +3193,7 @@ namespace Angelic.Control;
         public string? SalesforceOpportunitywhere { get; set; } 
 
         [JsonProperty("liongard_defaultsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? LiongardDefaultsite { get; set; } 
+        public int? LiongardDefaultSite { get; set; } 
 
         [JsonProperty("salesforce_casewhere", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? SalesforceCasewhere { get; set; } 
@@ -3362,7 +3364,7 @@ namespace Angelic.Control;
         public string? GcClientId { get; set; } 
 
         [JsonProperty("kaseya_defaultsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? KaseyaDefaultsite { get; set; } 
+        public int? KaseyaDefaultSite { get; set; } 
 
         [JsonProperty("kaseya_defaultassettype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? KaseyaDefaultassettype { get; set; } 
@@ -4286,10 +4288,10 @@ namespace Angelic.Control;
         public bool? ShowMyservices { get; set; } 
 
         [JsonProperty("servicerequestrtid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Servicerequestrtid { get; set; } 
+        public int? ServiceRequestrtid { get; set; } 
 
         [JsonProperty("servicerequestrtid_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public Guid? ServicerequestrtidGuid { get; set; } 
+        public Guid? ServiceRequestrtidGuid { get; set; } 
 
         [JsonProperty("serviceincidentrtid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Serviceincidentrtid { get; set; } 
@@ -5009,7 +5011,7 @@ namespace Angelic.Control;
         public bool? Useagentdefaultrateonlogtime { get; set; } 
 
         [JsonProperty("autogenerate_accountsid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? AutogenerateAccountsid { get; set; } 
+        public bool? AutogenerateAccountsId { get; set; } 
 
         [JsonProperty("item_default_sales_nominal_code_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? ItemDefaultSalesNominalCodeId { get; set; } 
@@ -5480,7 +5482,7 @@ namespace Angelic.Control;
         public int? LogicMonitorClearedStatus { get; set; } 
 
         [JsonProperty("prometheus_defaultsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? PrometheusDefaultsite { get; set; } 
+        public int? PrometheusDefaultSite { get; set; } 
 
         [JsonProperty("prometheus_asset_type_choice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? PrometheusAssetTypeChoice { get; set; } 
@@ -5510,7 +5512,7 @@ namespace Angelic.Control;
         public int? DefaultFortnoxTenant { get; set; } 
 
         [JsonProperty("newagent_apptsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? NewagentApptsync { get; set; } 
+        public int? NewAgentApptsync { get; set; } 
 
         [JsonProperty("lock_submitted_timesheets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? LockSubmittedTimesheets { get; set; } 
@@ -5852,7 +5854,7 @@ namespace Angelic.Control;
         public bool? GocardlessCompanynameMatching { get; set; } 
 
         [JsonProperty("gocardless_defaultsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? GocardlessDefaultsite { get; set; } 
+        public int? GocardlessDefaultSite { get; set; } 
 
         [JsonProperty("gocardless_use_sandbox", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? GocardlessUseSandbox { get; set; } 
@@ -6104,7 +6106,7 @@ namespace Angelic.Control;
         public bool? Useteamshifts { get; set; } 
 
         [JsonProperty("dynamicscrm_sitenamefilter", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? DynamicscrmSitenamefilter { get; set; } 
+        public string? DynamicscrmSiteNamefilter { get; set; } 
 
         [JsonProperty("adobeacrobat_auto_expire_td", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? AdobeacrobatAutoExpireTd { get; set; } 
@@ -6143,10 +6145,10 @@ namespace Angelic.Control;
         public string? HtmlFooter { get; set; } 
 
         [JsonProperty("adobecommercedefaultsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Adobecommercedefaultsite { get; set; } 
+        public int? AdobeCommercedefaultsite { get; set; } 
 
         [JsonProperty("adobecommerce_integratorentitiestoimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? AdobecommerceIntegratorentitiestoimport { get; set; } 
+        public string? AdobeCommerceIntegratorentitiestoimport { get; set; } 
 
         [JsonProperty("update_all_actions_when_contract_changed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? UpdateAllActionsWhenContractChanged { get; set; } 
@@ -6155,10 +6157,10 @@ namespace Angelic.Control;
         public bool? UseNewSearchMethod { get; set; } 
 
         [JsonProperty("assetdiscovery_defaultsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? AssetdiscoveryDefaultsite { get; set; } 
+        public int? AssetdiscoveryDefaultSite { get; set; } 
 
         [JsonProperty("assetdiscovery_defaultsite_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? AssetdiscoveryDefaultsiteName { get; set; } 
+        public string? AssetdiscoveryDefaultSiteName { get; set; } 
 
         [JsonProperty("lansweeper_override_site_rules", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? LansweeperOverrideSiteRules { get; set; } 
@@ -6291,7 +6293,7 @@ namespace Angelic.Control;
         public bool? DistributionlistsCreateusers { get; set; } 
 
         [JsonProperty("distributionlists_defaultsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? DistributionlistsDefaultsite { get; set; } 
+        public int? DistributionlistsDefaultSite { get; set; } 
 
         [JsonProperty("distributionlists_activityinuserfeed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? DistributionlistsActivityinuserfeed { get; set; } 
@@ -6500,7 +6502,7 @@ namespace Angelic.Control;
         public bool? SyncInvoicesManually { get; set; } 
 
         [JsonProperty("set_accountsid_to_sku", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? SetAccountsidToSku { get; set; } 
+        public bool? SetAccountsIdToSku { get; set; } 
 
         [JsonProperty("item_sku_is_unique", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? ItemSkuIsUnique { get; set; } 
@@ -7234,7 +7236,7 @@ namespace Angelic.Control;
         public bool? UseDepartmentMgs { get; set; } 
 
         [JsonProperty("teamviewer_assetfield_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? TeamviewerAssetfieldId { get; set; } 
+        public int? TeamviewerAssetFieldId { get; set; } 
 
         [JsonProperty("teamviewer_sitefield_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? TeamviewerSitefieldId { get; set; } 
@@ -7261,7 +7263,7 @@ namespace Angelic.Control;
         public ICollection<IntegrationFieldMapping>? ContactFieldmappingsSalesforce { get; set; } 
 
         [JsonProperty("anydesk_assetfield_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? AnydeskAssetfieldId { get; set; } 
+        public int? AnydeskAssetFieldId { get; set; } 
 
         [JsonProperty("anydesk_sitefield_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? AnydeskSitefieldId { get; set; } 
@@ -7342,10 +7344,10 @@ namespace Angelic.Control;
         public string? SccmUsermatchingfield { get; set; } 
 
         [JsonProperty("sccm_defaultsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? SccmDefaultsite { get; set; } 
+        public int? SccmDefaultSite { get; set; } 
 
         [JsonProperty("sccm_defaultsite_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? SccmDefaultsiteName { get; set; } 
+        public string? SccmDefaultSiteName { get; set; } 
 
         [JsonProperty("sccm_updateonly", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? SccmUpdateonly { get; set; } 
@@ -7510,10 +7512,10 @@ namespace Angelic.Control;
         public string? LansweeperUsermatchingfield { get; set; } 
 
         [JsonProperty("lansweeper_defaultsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? LansweeperDefaultsite { get; set; } 
+        public int? LansweeperDefaultSite { get; set; } 
 
         [JsonProperty("lansweeper_defaultsite_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? LansweeperDefaultsiteName { get; set; } 
+        public string? LansweeperDefaultSiteName { get; set; } 
 
         [JsonProperty("sccm_userssite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? SccmUserssite { get; set; } 
@@ -7552,19 +7554,19 @@ namespace Angelic.Control;
         public string? CautomateFromaddress { get; set; } 
 
         [JsonProperty("cautomate_requesttype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? CautomateRequesttype { get; set; } 
+        public int? CautomateRequestType { get; set; } 
 
         [JsonProperty("cautomate_requesttype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public Guid? CautomateRequesttypeGuid { get; set; } 
+        public Guid? CautomateRequestTypeGuid { get; set; } 
 
         [JsonProperty("solarwindsrmm_fromaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? SolarwindsrmmFromaddress { get; set; } 
 
         [JsonProperty("solarwindsrmm_requesttype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? SolarwindsrmmRequesttype { get; set; } 
+        public int? SolarwindsrmmRequestType { get; set; } 
 
         [JsonProperty("solarwindsrmm_requesttype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public Guid? SolarwindsrmmRequesttypeGuid { get; set; } 
+        public Guid? SolarwindsrmmRequestTypeGuid { get; set; } 
 
         [JsonProperty("halointegrator_integrations", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<KeyPair2>? HaloIntegratorIntegrations { get; set; } 
@@ -7720,10 +7722,10 @@ namespace Angelic.Control;
         public string? ScomFromaddress { get; set; } 
 
         [JsonProperty("scom_requesttype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? ScomRequesttype { get; set; } 
+        public int? ScomRequestType { get; set; } 
 
         [JsonProperty("scom_requesttype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public Guid? ScomRequesttypeGuid { get; set; } 
+        public Guid? ScomRequestTypeGuid { get; set; } 
 
         [JsonProperty("scom_devicefield", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? ScomDevicefield { get; set; } 
@@ -7837,7 +7839,7 @@ namespace Angelic.Control;
         public int? Generatecspmappings { get; set; } 
 
         [JsonProperty("atera_defaultsite_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? AteraDefaultsiteName { get; set; } 
+        public string? AteraDefaultSiteName { get; set; } 
 
         [JsonProperty("atera_device_types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<KeyPair2>? AteraDeviceTypes { get; set; } 
@@ -8077,7 +8079,7 @@ namespace Angelic.Control;
         public string? Warning { get; set; } 
 
         [JsonProperty("jamf_defaultsite_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? JamfDefaultsiteName { get; set; } 
+        public string? JamfDefaultSiteName { get; set; } 
 
         [JsonProperty("jamf_defaultdtypecomputer_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? JamfDefaultdtypecomputerName { get; set; } 
@@ -8128,7 +8130,7 @@ namespace Angelic.Control;
         public string? AzuremonitoruserName { get; set; } 
 
         [JsonProperty("syncro_defaultsite_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? SyncroDefaultsiteName { get; set; } 
+        public string? SyncroDefaultSiteName { get; set; } 
 
         [JsonProperty("syncro_device_types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<KeyPair2>? SyncroDeviceTypes { get; set; } 
@@ -8380,7 +8382,7 @@ namespace Angelic.Control;
         public string? HaloIntegratorPassportalLasterror { get; set; } 
 
         [JsonProperty("passportal_assetfieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<IntegrationFieldMapping>? PassportalAssetfieldmappings { get; set; } 
+        public ICollection<IntegrationFieldMapping>? PassportalAssetFieldmappings { get; set; } 
 
         [JsonProperty("passportal_defaultassetsite_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? PassportalDefaultassetsiteName { get; set; } 
@@ -8407,7 +8409,7 @@ namespace Angelic.Control;
         public string? AddigyDefaultassetsiteName { get; set; } 
 
         [JsonProperty("addigy_assetfieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<IntegrationFieldMapping>? AddigyAssetfieldmappings { get; set; } 
+        public ICollection<IntegrationFieldMapping>? AddigyAssetFieldmappings { get; set; } 
 
         [JsonProperty("halointegrator_addigy", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? HaloIntegratorAddigy { get; set; } 
@@ -8440,7 +8442,7 @@ namespace Angelic.Control;
         public ICollection<IntegrationFieldMapping>? LiongardFieldmappings { get; set; } 
 
         [JsonProperty("liongard_defaultsite_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? LiongardDefaultsiteName { get; set; } 
+        public string? LiongardDefaultSiteName { get; set; } 
 
         [JsonProperty("liongard_mappings_xtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<XTypeMapping>? LiongardMappingsXtype { get; set; } 
@@ -8572,7 +8574,7 @@ namespace Angelic.Control;
         public bool? Deactivateclients { get; set; } 
 
         [JsonProperty("kaseya_defaultsite_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? KaseyaDefaultsiteName { get; set; } 
+        public string? KaseyaDefaultSiteName { get; set; } 
 
         [JsonProperty("halointegrator_kaseya", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? HaloIntegratorKaseya { get; set; } 
@@ -8914,7 +8916,7 @@ namespace Angelic.Control;
         public ICollection<KeyPair2>? TeamsChatTenantList { get; set; } 
 
         [JsonProperty("workspace_defaultsite_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? WorkspaceDefaultsiteName { get; set; } 
+        public string? WorkspaceDefaultSiteName { get; set; } 
 
         [JsonProperty("halo_status_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<IntegrationFieldMapping>? HaloStatusMappings { get; set; } 
@@ -8947,7 +8949,7 @@ namespace Angelic.Control;
         public string? HaloIntegratorLogicmonitorLasterror { get; set; } 
 
         [JsonProperty("logicmonitor_defaultsite_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? LogicmonitorDefaultsiteName { get; set; } 
+        public string? LogicmonitorDefaultSiteName { get; set; } 
 
         [JsonProperty("logicmonitor_alert_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? LogicmonitorAlertUserName { get; set; } 
@@ -8965,7 +8967,7 @@ namespace Angelic.Control;
         public string? HaloIntegratorBarracudaLasterror { get; set; } 
 
         [JsonProperty("barracuda_defaultsite_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? BarracudaDefaultsiteName { get; set; } 
+        public string? BarracudaDefaultSiteName { get; set; } 
 
         [JsonProperty("barracudadefaultassettype_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? BarracudadefaultassettypeName { get; set; } 
@@ -9046,7 +9048,7 @@ namespace Angelic.Control;
         public ICollection<IntegrationFieldMapping>? IcingaFieldmappings { get; set; } 
 
         [JsonProperty("icinga_defaultsite_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? IcingaDefaultsiteName { get; set; } 
+        public string? IcingaDefaultSiteName { get; set; } 
 
         [JsonProperty("icingadefaultassettype_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? IcingadefaultassettypeName { get; set; } 
@@ -9154,7 +9156,7 @@ namespace Angelic.Control;
         public string? HaloIntegratorXensamLasterror { get; set; } 
 
         [JsonProperty("xensam_defaultsite_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? XensamDefaultsiteName { get; set; } 
+        public string? XensamDefaultSiteName { get; set; } 
 
         [JsonProperty("xensam_import_entities_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<KeyPair2>? XensamImportEntitiesList { get; set; } 
@@ -9220,7 +9222,7 @@ namespace Angelic.Control;
         public string? PrometheusDefaultassettypeName { get; set; } 
 
         [JsonProperty("prometheus_defaultsite_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? PrometheusDefaultsiteName { get; set; } 
+        public string? PrometheusDefaultSiteName { get; set; } 
 
         [JsonProperty("prometheus_xtype_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<XTypeMapping>? PrometheusXtypeMappings { get; set; } 
@@ -9325,7 +9327,7 @@ namespace Angelic.Control;
         public ICollection<IntegrationFieldMapping>? GocardlessUserfieldmappings { get; set; } 
 
         [JsonProperty("gocardless_defaultsite_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? GocardlessDefaultsiteName { get; set; } 
+        public string? GocardlessDefaultSiteName { get; set; } 
 
         [JsonProperty("halointegrator_gocardless", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? HaloIntegratorGocardless { get; set; } 
@@ -9388,19 +9390,19 @@ namespace Angelic.Control;
         public string? XsoarDefaultUsername { get; set; } 
 
         [JsonProperty("halointegrator_adobecommerce", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? HaloIntegratorAdobecommerce { get; set; } 
+        public bool? HaloIntegratorAdobeCommerce { get; set; } 
 
         [JsonProperty("halointegrator_adobecommerce_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorAdobecommerceLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorAdobeCommerceLastsync { get; set; } 
 
         [JsonProperty("halointegrator_adobecommerce_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? HaloIntegratorAdobecommerceLasterror { get; set; } 
+        public string? HaloIntegratorAdobeCommerceLasterror { get; set; } 
 
         [JsonProperty("adobecommercedefaultsite_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? AdobecommercedefaultsiteName { get; set; } 
+        public string? AdobeCommercedefaultsiteName { get; set; } 
 
         [JsonProperty("adobecommerce_import_entities_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<KeyPair2>? AdobecommerceImportEntitiesList { get; set; } 
+        public ICollection<KeyPair2>? AdobeCommerceImportEntitiesList { get; set; } 
 
         [JsonProperty("openai_enabled", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? OpenaiEnabled { get; set; } 
@@ -9418,7 +9420,7 @@ namespace Angelic.Control;
         public ICollection<KeyPair2>? FreshdeskStatusfilterList { get; set; } 
 
         [JsonProperty("distributionlists_defaultsite_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? DistributionlistsDefaultsiteName { get; set; } 
+        public string? DistributionlistsDefaultSiteName { get; set; } 
 
         [JsonProperty("workspace_mobilemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<IntegrationFieldMapping>? WorkspaceMobilemappings { get; set; } 

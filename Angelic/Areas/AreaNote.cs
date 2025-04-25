@@ -1,5 +1,5 @@
 using System.CodeDom.Compiler;
-using Angelic.Configuration.CustomFields;
+using Angelic.Configuration.Custom.CustomFields;
 using Newtonsoft.Json;
 
 namespace Angelic.Areas;
@@ -47,7 +47,7 @@ public class AreaNote
     public string? Detail { get; set; } 
 
     [JsonProperty("timetaken", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Timetaken { get; set; } 
+    public double? TimeTaken { get; set; } 
 
     [JsonProperty("mailentryid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Mailentryid { get; set; } 

@@ -1,6 +1,7 @@
 using System.CodeDom.Compiler;
 using Angelic.Appointments;
 using Angelic.Configuration.TeamsAndAgents.Agents;
+using Angelic.Configuration.Tickets.Templates;
 using Newtonsoft.Json;
 
 namespace Angelic.Configuration.TeamsAndAgents;
@@ -99,7 +100,7 @@ public class Team
     public ICollection<CannedText>? CannedText { get; set; } 
 
     [JsonProperty("templates", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<StdRequestList>? Templates { get; set; } 
+    public ICollection<TemplateList>? Templates { get; set; } 
 
     [JsonProperty("allowall_category1", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? AllowallCategory1 { get; set; } 

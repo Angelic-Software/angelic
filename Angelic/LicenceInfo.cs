@@ -22,10 +22,10 @@ public class LicenceInfo
     public string? Version { get; set; } 
 
     [JsonProperty("apiurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Apiurl { get; set; } 
+    public string? ApiUrl { get; set; } 
 
     [JsonProperty("organisationname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Organisationname { get; set; } 
+    public string? OrganisationName { get; set; } 
 
     [JsonProperty("is_trial", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? IsTrial { get; set; } 
@@ -34,9 +34,9 @@ public class LicenceInfo
     public int? SupportType { get; set; } 
 
     [JsonProperty("trialexpiry", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Trialexpiry { get; set; } 
+    public DateTimeOffset? TrialExpiry { get; set; } 
 
     [JsonProperty("registrationdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Registrationdate { get; set; } 
+    public DateTimeOffset? RegistrationDate { get; set; } 
 
 }

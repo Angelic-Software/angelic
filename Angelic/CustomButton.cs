@@ -34,10 +34,10 @@ public class CustomButton
     public string? Url { get; set; } 
 
     [JsonProperty("newtab", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Newtab { get; set; } 
+    public bool? NewTab { get; set; } 
 
     [JsonProperty("msid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Msid { get; set; } 
+    public int? MsId { get; set; } 
 
     [JsonProperty("type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Type { get; set; } 

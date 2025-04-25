@@ -1,6 +1,7 @@
 using System.CodeDom.Compiler;
 using Angelic.Assets;
-using Angelic.Configuration.CustomFields;
+using Angelic.Configuration;
+using Angelic.Configuration.Custom.CustomFields;
 using Angelic.Invoice;
 using Angelic.Users;
 using Newtonsoft.Json;
@@ -98,7 +99,7 @@ public class PurchaseOrder
     public DateTimeOffset? Approvaldatetime { get; set; } 
 
     [JsonProperty("thirdparty_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ThirdpartyStatus { get; set; } 
+    public int? ThirdPartyStatus { get; set; } 
 
     [JsonProperty("accounts_ref", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? AccountsRef { get; set; } 
@@ -182,10 +183,10 @@ public class PurchaseOrder
     public int? PdfAttachmentId { get; set; } 
 
     [JsonProperty("pdftemplate_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? PdftemplateId { get; set; } 
+    public int? PdfTemplateId { get; set; } 
 
     [JsonProperty("pdftemplate_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? PdftemplateName { get; set; } 
+    public string? PdfTemplateName { get; set; } 
 
     [JsonProperty("createdbyagentname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Createdbyagentname { get; set; } 
@@ -269,7 +270,7 @@ public class PurchaseOrder
     public double? CurrencyConversionRate { get; set; } 
 
     [JsonProperty("duedate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Duedate { get; set; } 
+    public DateTimeOffset? DueDate { get; set; } 
 
     [JsonProperty("intacct_class", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? IntacctClass { get; set; } 
@@ -338,22 +339,22 @@ public class PurchaseOrder
     public bool? Dodistributorsync { get; set; } 
 
     [JsonProperty("originaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public AddressStore? Originaddress { get; set; } 
+    public AddressStore? OriginAddress { get; set; } 
 
     [JsonProperty("originaddress1", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Originaddress1 { get; set; } 
+    public string? OriginAddress1 { get; set; } 
 
     [JsonProperty("originaddress2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Originaddress2 { get; set; } 
+    public string? OriginAddress2 { get; set; } 
 
     [JsonProperty("originaddress3", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Originaddress3 { get; set; } 
+    public string? OriginAddress3 { get; set; } 
 
     [JsonProperty("originaddress4", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Originaddress4 { get; set; } 
+    public string? OriginAddress4 { get; set; } 
 
     [JsonProperty("originaddress5", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Originaddress5 { get; set; } 
+    public string? OriginAddress5 { get; set; } 
 
     [JsonProperty("custombuttons", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<CustomButton>? Custombuttons { get; set; } 
@@ -371,25 +372,25 @@ public class PurchaseOrder
     public bool? UseTicketApproval { get; set; } 
 
     [JsonProperty("new_approvalprocess_agent_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? NewApprovalprocessAgentId { get; set; } 
+    public int? NewApprovalProcessAgentId { get; set; } 
 
     [JsonProperty("new_approvalprocess_user_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? NewApprovalprocessUserId { get; set; } 
+    public int? NewApprovalProcessUserId { get; set; } 
 
     [JsonProperty("new_approvalprocess_users", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<UsersList>? NewApprovalprocessUsers { get; set; } 
+    public ICollection<UsersList>? NewApprovalProcessUsers { get; set; } 
 
     [JsonProperty("new_approvalprocess_email", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? NewApprovalprocessEmail { get; set; } 
+    public string? NewApprovalProcessEmail { get; set; } 
 
     [JsonProperty("new_approvalprocess_cab_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? NewApprovalprocessCabId { get; set; } 
+    public int? NewApprovalProcessCabId { get; set; } 
 
     [JsonProperty("new_approvalprocess_cab", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CabMember>? NewApprovalprocessCab { get; set; } 
+    public ICollection<CabMember>? NewApprovalProcessCab { get; set; } 
 
     [JsonProperty("new_approvalprocess_role_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? NewApprovalprocessRoleId { get; set; } 
+    public int? NewApprovalProcessRoleId { get; set; } 
 
     [JsonProperty("_isbatch", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Isbatch { get; set; } 

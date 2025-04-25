@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Configuration.Tickets.Templates;
 using Newtonsoft.Json;
 
 namespace Angelic;
@@ -40,7 +41,7 @@ public class ServiceOption
     public bool? Include { get; set; } 
 
     [JsonProperty("servicerequestdetails_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ServicerequestdetailsId { get; set; } 
+    public int? ServiceRequestdetailsId { get; set; } 
 
     [JsonProperty("optional_parent_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? OptionalParentId { get; set; } 
@@ -49,7 +50,7 @@ public class ServiceOption
     public int? RuleCount { get; set; } 
 
     [JsonProperty("creation_rules", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<StdRequestRule>? CreationRules { get; set; } 
+    public ICollection<TemplateRule>? CreationRules { get; set; } 
 
     [JsonProperty("optional_service_name_short", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? OptionalServiceNameShort { get; set; } 

@@ -21,7 +21,7 @@ namespace Angelic;
         public string? Value { get; set; } 
 
         [JsonProperty("thirdpartyname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Thirdpartyname { get; set; } 
+        public string? ThirdPartyname { get; set; } 
 
         [JsonProperty("msid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Msid { get; set; } 

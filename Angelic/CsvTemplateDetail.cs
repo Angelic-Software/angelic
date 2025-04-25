@@ -16,7 +16,7 @@ public class CsvTemplateDetail
     public int? Seq { get; set; } 
 
     [JsonProperty("systemuse", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Systemuse { get; set; } 
+    public string? SystemUse { get; set; } 
 
     [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Title { get; set; } 

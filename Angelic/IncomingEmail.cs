@@ -50,7 +50,7 @@ public class IncomingEmail
     public string? To { get; set; } 
 
     [JsonProperty("user", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Users.Users? User { get; set; } 
+    public Users.User? User { get; set; } 
 
     [JsonProperty("subject", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Subject { get; set; } 

@@ -10,7 +10,7 @@ public class RemoteSessionData
     public int? Id { get; set; } 
 
     [JsonProperty("thirdpartyid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Thirdpartyid { get; set; } 
+    public string? ThirdPartyid { get; set; } 
 
     [JsonProperty("ticket_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? TicketId { get; set; } 
@@ -25,7 +25,7 @@ public class RemoteSessionData
     public string? Customername { get; set; } 
 
     [JsonProperty("sitename", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Sitename { get; set; } 
+    public string? SiteName { get; set; } 
 
     [JsonProperty("username", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Username { get; set; } 
@@ -82,7 +82,7 @@ public class RemoteSessionData
     public bool? Resolved { get; set; } 
 
     [JsonProperty("isnewreq", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isnewreq { get; set; } 
+    public bool? IsNewreq { get; set; } 
 
     [JsonProperty("userid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Userid { get; set; } 

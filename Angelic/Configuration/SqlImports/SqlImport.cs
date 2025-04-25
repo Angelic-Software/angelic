@@ -50,10 +50,10 @@ public class SqlImport
     public string? Datafield4 { get; set; } 
 
     [JsonProperty("defaultsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Defaultsite { get; set; } 
+    public int? DefaultSite { get; set; } 
 
     [JsonProperty("defaultsitename", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Defaultsitename { get; set; } 
+    public string? DefaultSitename { get; set; } 
 
     [JsonProperty("lastrundate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? Lastrundate { get; set; } 
@@ -176,6 +176,6 @@ public class SqlImport
     public int? TableUpdateType { get; set; } 
 
     [JsonProperty("match_accountsid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? MatchAccountsid { get; set; } 
+    public bool? MatchAccountsId { get; set; } 
 
 }

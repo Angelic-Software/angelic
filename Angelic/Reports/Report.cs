@@ -2,6 +2,8 @@ using System.CodeDom.Compiler;
 using Angelic.Configuration.Ai;
 using Angelic.Configuration.PdfTemplates;
 using Angelic.Configuration.TeamsAndAgents.Agents;
+using Angelic.Configuration.Tickets.Templates;
+using Angelic.Configuration.Users;
 using Angelic.Dtos;
 using Angelic.KeyPairs;
 using Newtonsoft.Json;
@@ -168,7 +170,7 @@ public class Report
     public ICollection<UserReport>? PermissionsUser { get; set; }
     
     [JsonProperty("schedule", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<StdRequestList>? Schedule { get; set; }
+    public ICollection<TemplateList>? Schedule { get; set; }
     
     [JsonProperty("local_library_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? LocalLibraryId { get; set; }

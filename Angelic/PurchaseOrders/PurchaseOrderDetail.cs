@@ -1,6 +1,6 @@
 using System.CodeDom.Compiler;
 using Angelic.Configuration.Billing.Taxes;
-using Angelic.Configuration.CustomFields;
+using Angelic.Configuration.Custom.CustomFields;
 using Newtonsoft.Json;
 
 namespace Angelic.PurchaseOrders;
@@ -150,10 +150,10 @@ public class PurchaseOrderDetail
     public int? OverrideTaxCode { get; set; } 
 
     [JsonProperty("baseprice_converted", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? BasepriceConverted { get; set; } 
+    public double? BasePriceConverted { get; set; } 
 
     [JsonProperty("baseprice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Baseprice { get; set; } 
+    public double? BasePrice { get; set; } 
 
     [JsonProperty("total_tax", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? TotalTax { get; set; } 

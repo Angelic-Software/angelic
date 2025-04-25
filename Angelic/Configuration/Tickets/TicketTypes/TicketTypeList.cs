@@ -50,7 +50,7 @@ public class TicketTypeList
     public bool? Agentscanselect { get; set; } 
 
     [JsonProperty("itilrequesttype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Itilrequesttype { get; set; } 
+    public int? ItilRequesttype { get; set; } 
 
     [JsonProperty("allowattachments", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Allowattachments { get; set; } 

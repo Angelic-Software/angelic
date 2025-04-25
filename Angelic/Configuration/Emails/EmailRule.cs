@@ -85,7 +85,7 @@ public class EmailRule
     public string? Closestring { get; set; } 
 
     [JsonProperty("requesttype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Requesttype { get; set; } 
+    public int? RequestType { get; set; } 
 
     [JsonProperty("4starttag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? _4starttag { get; set; } 

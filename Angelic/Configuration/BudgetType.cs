@@ -16,7 +16,7 @@ public class BudgetType
     public double? Defaultrate { get; set; } 
 
     [JsonProperty("chargerate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Chargerate { get; set; } 
+    public int? ChargeRate { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

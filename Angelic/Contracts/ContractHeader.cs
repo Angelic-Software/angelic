@@ -3,7 +3,7 @@ using Angelic.Assets;
 using Angelic.Attachments;
 using Angelic.Configuration.Billing.ChargeRates;
 using Angelic.Configuration.Billing.Prepay;
-using Angelic.Configuration.CustomFields;
+using Angelic.Configuration.Custom.CustomFields;
 using Angelic.Configuration.Tickets.TicketTypes;
 using Angelic.Sites;
 using Angelic.Users;
@@ -54,7 +54,7 @@ public class ContractHeader
     public double? Numberofunitsfree { get; set; } 
 
     [JsonProperty("billingperiod", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Billingperiod { get; set; } 
+    public int? BillingPeriod { get; set; } 
 
     [JsonProperty("billingdescription", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Billingdescription { get; set; } 
@@ -225,7 +225,7 @@ public class ContractHeader
     public bool? Hasactions { get; set; } 
 
     [JsonProperty("billingperiods", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Billingperiods { get; set; } 
+    public int? BillingPeriods { get; set; } 
 
     [JsonProperty("assets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<DeviceList>? Assets { get; set; } 
@@ -240,13 +240,13 @@ public class ContractHeader
     public int? Surchargeid { get; set; } 
 
     [JsonProperty("chargerate_method", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ChargerateMethod { get; set; } 
+    public int? ChargeRateMethod { get; set; } 
 
     [JsonProperty("overriding_rates", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<ChargeRate>? OverridingRates { get; set; } 
 
     [JsonProperty("chargerates", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<Lookup>? Chargerates { get; set; } 
+    public ICollection<Lookup>? ChargeRates { get; set; } 
 
     [JsonProperty("_isimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Isimport { get; set; } 
@@ -279,10 +279,10 @@ public class ContractHeader
     public int? PdfAttachmentId { get; set; } 
 
     [JsonProperty("pdftemplate_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? PdftemplateId { get; set; } 
+    public int? PdfTemplateId { get; set; } 
 
     [JsonProperty("pdftemplate_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? PdftemplateName { get; set; } 
+    public string? PdfTemplateName { get; set; } 
 
     [JsonProperty("schedule", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<ContractSchedule>? Schedule { get; set; } 
@@ -318,7 +318,7 @@ public class ContractHeader
     public DateTimeOffset? NewInvoiceEndDate { get; set; } 
 
     [JsonProperty("chargeratemultiplier", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Chargeratemultiplier { get; set; } 
+    public double? ChargeRatemultiplier { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

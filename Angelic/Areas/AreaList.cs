@@ -1,6 +1,6 @@
 using System.CodeDom.Compiler;
 using Angelic.Attachments;
-using Angelic.Configuration.CustomFields;
+using Angelic.Configuration.Custom.CustomFields;
 using Angelic.Configuration.Integrations.Quickbooks;
 using Angelic.Configuration.Integrations.Snow;
 using Angelic.KeyPairs;
@@ -111,7 +111,7 @@ public class AreaList
     public string? Notes { get; set; } 
 
     [JsonProperty("thirdpartynhdapiurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Thirdpartynhdapiurl { get; set; } 
+    public string? ThirdPartynhdapiurl { get; set; } 
 
     [JsonProperty("xeroid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Xeroid { get; set; } 
@@ -153,7 +153,7 @@ public class AreaList
     public string? XeroTenantId { get; set; } 
 
     [JsonProperty("accountsid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Accountsid { get; set; } 
+    public string? AccountsId { get; set; } 
 
     [JsonProperty("excludefrominvoicesync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Excludefrominvoicesync { get; set; } 

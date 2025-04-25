@@ -16,25 +16,25 @@ public class ContractDetail
     public int? Type { get; set; } 
 
     [JsonProperty("itil_requesttype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ItilRequesttype { get; set; } 
+    public int? ItilRequestType { get; set; } 
 
     [JsonProperty("requesttype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Requesttype { get; set; } 
+    public int? RequestType { get; set; } 
 
     [JsonProperty("requesttype_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? RequesttypeName { get; set; } 
+    public string? RequestTypeName { get; set; } 
 
     [JsonProperty("priority", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Priority { get; set; } 
 
     [JsonProperty("chargerate_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ChargerateType { get; set; } 
+    public int? ChargeRateType { get; set; } 
 
     [JsonProperty("chargerate_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ChargerateId { get; set; } 
+    public int? ChargeRateId { get; set; } 
 
     [JsonProperty("chargerate_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ChargerateName { get; set; } 
+    public string? ChargeRateName { get; set; } 
 
     [JsonProperty("multiplier", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? Multiplier { get; set; } 

@@ -13,22 +13,22 @@ public class AgentList
     public string? Name { get; set; } 
 
     [JsonProperty("onlinestatus_actual", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? OnlinestatusActual { get; set; } 
+    public int? OnlineStatusActual { get; set; } 
 
     [JsonProperty("onlinestatus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Onlinestatus { get; set; } 
+    public int? OnlineStatus { get; set; } 
 
     [JsonProperty("is_online", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? IsOnline { get; set; } 
 
     [JsonProperty("lastonline", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Lastonline { get; set; } 
+    public string? LastOnline { get; set; } 
 
     [JsonProperty("team", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Team { get; set; } 
 
     [JsonProperty("isdisabled", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isdisabled { get; set; } 
+    public bool? IsDisabled { get; set; } 
 
     [JsonProperty("email", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Email { get; set; } 
@@ -37,10 +37,10 @@ public class AgentList
     public string? Ad { get; set; } 
 
     [JsonProperty("lastlogindate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Lastlogindate { get; set; } 
+    public DateTimeOffset? LastLoginDate { get; set; } 
 
     [JsonProperty("agentphotopath", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Agentphotopath { get; set; } 
+    public string? AgentPhotoPath { get; set; } 
 
     [JsonProperty("initials", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Initials { get; set; } 
@@ -55,13 +55,13 @@ public class AgentList
     public string? Colour { get; set; } 
 
     [JsonProperty("jobtitle", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Jobtitle { get; set; } 
+    public string? JobTitle { get; set; } 
 
     [JsonProperty("sms", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Sms { get; set; } 
 
     [JsonProperty("extensionnumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Extensionnumber { get; set; } 
+    public string? ExtensionNumber { get; set; } 
 
     [JsonProperty("ticket_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? TicketCount { get; set; } 
@@ -106,13 +106,13 @@ public class AgentList
     public ICollection<AgentAssetType>? AssetTypes { get; set; } 
 
     [JsonProperty("googleemail", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Googleemail { get; set; } 
+    public string? GoogleEmail { get; set; } 
 
     [JsonProperty("linemanager", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Linemanager { get; set; } 
+    public int? LineManager { get; set; } 
 
     [JsonProperty("linemanager_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? LinemanagerName { get; set; } 
+    public string? LineManagerName { get; set; } 
 
     [JsonProperty("inboxes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Inboxes { get; set; } 
@@ -142,10 +142,10 @@ public class AgentList
     public bool? GoogleMailAuthorized { get; set; } 
 
     [JsonProperty("inbox_clientid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? InboxClientid { get; set; } 
+    public string? InboxClientId { get; set; } 
 
     [JsonProperty("isapiagent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isapiagent { get; set; } 
+    public bool? IsApiAgent { get; set; } 
 
     [JsonProperty("splashtop_authorized", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? SplashtopAuthorized { get; set; } 
@@ -157,49 +157,49 @@ public class AgentList
     public string? Use { get; set; } 
 
     [JsonProperty("assetfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AgentField>? Assetfields { get; set; } 
+    public ICollection<AgentField>? AssetFields { get; set; } 
 
     [JsonProperty("unamecustomfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AgentCustom>? Unamecustomfields { get; set; } 
+    public ICollection<AgentCustom>? UnameCustomFields { get; set; } 
 
     [JsonProperty("unameappointmenttypes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AgentAppointment>? Unameappointmenttypes { get; set; } 
+    public ICollection<AgentAppointment>? UnameAppointmentTypes { get; set; } 
 
     [JsonProperty("_canupdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? CanUpdate { get; set; } 
 
     [JsonProperty("_canupdate_moreinfo", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? CanUpdateMoreinfo { get; set; } 
+    public bool? CanUpdateMoreInfo { get; set; } 
 
     [JsonProperty("logmeinid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Logmeinid { get; set; } 
+    public string? LogMeInId { get; set; } 
 
     [JsonProperty("allowbeyondtrustinvites", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Allowbeyondtrustinvites { get; set; } 
+    public bool? AllowBeyondTrustInvites { get; set; } 
 
     [JsonProperty("jira_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? JiraId { get; set; } 
 
     [JsonProperty("custombuttons", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AgentButton>? Custombuttons { get; set; } 
+    public ICollection<AgentButton>? CustomButtons { get; set; } 
 
     [JsonProperty("namewithinactive", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Namewithinactive { get; set; } 
 
     [JsonProperty("apptsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Apptsync { get; set; } 
+    public int? ApptSync { get; set; } 
 
     [JsonProperty("okta_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? OktaId { get; set; } 
 
     [JsonProperty("enableshifts", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Enableshifts { get; set; } 
+    public bool? EnableShifts { get; set; } 
 
     [JsonProperty("sendemailerrors", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Sendemailerrors { get; set; } 
+    public bool? SendEmailErrors { get; set; } 
 
     [JsonProperty("uname_usercustomfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AgentCustom>? UnameUsercustomfields { get; set; } 
+    public ICollection<AgentCustom>? UnameUserCustomFields { get; set; } 
 
     [JsonProperty("can_approve_purchaseorder", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? CanApprovePurchaseorder { get; set; } 
@@ -223,10 +223,10 @@ public class AgentList
     public string? WorkdayTimezone { get; set; } 
 
     [JsonProperty("costprice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Costprice { get; set; } 
+    public double? CostPrice { get; set; } 
 
     [JsonProperty("chargerate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Chargerate { get; set; } 
+    public int? ChargeRate { get; set; } 
 
     [JsonProperty("first_role_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? FirstRoleId { get; set; } 

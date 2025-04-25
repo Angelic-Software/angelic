@@ -103,10 +103,10 @@ public class AzureAdConnection
     public ICollection<IntegrationFieldMapping>? MappingsDevice { get; set; } 
 
     [JsonProperty("defaultsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Defaultsite { get; set; } 
+    public int? DefaultSite { get; set; } 
 
     [JsonProperty("defaultsite_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? DefaultsiteName { get; set; } 
+    public string? DefaultSiteName { get; set; } 
 
     [JsonProperty("assettype_choice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? AssetTypeChoice { get; set; } 

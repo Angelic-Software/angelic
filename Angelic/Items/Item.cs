@@ -1,5 +1,5 @@
 using System.CodeDom.Compiler;
-using Angelic.Configuration.CustomFields;
+using Angelic.Configuration.Custom.CustomFields;
 using Angelic.Configuration.Integrations.Quickbooks;
 using Angelic.KeyPairs;
 using Angelic.Sites;
@@ -74,7 +74,7 @@ public class Item
     public double? Qtyissuedthisyear { get; set; } 
 
     [JsonProperty("baseprice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Baseprice { get; set; } 
+    public double? BasePrice { get; set; } 
 
     [JsonProperty("created_by", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? CreatedBy { get; set; } 
@@ -125,10 +125,10 @@ public class Item
     public string? TaxcodeotherName { get; set; } 
 
     [JsonProperty("costprice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Costprice { get; set; } 
+    public double? CostPrice { get; set; } 
 
     [JsonProperty("accountsid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Accountsid { get; set; } 
+    public string? AccountsId { get; set; } 
 
     [JsonProperty("margin", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? Margin { get; set; } 
@@ -423,7 +423,7 @@ public class Item
     public ExternalLinkList? NewExternalLink { get; set; } 
 
     [JsonProperty("_match_thirdparty_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? MatchThirdpartyId { get; set; } 
+    public string? MatchThirdPartyId { get; set; } 
 
     [JsonProperty("_match_integration_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? MatchIntegrationId { get; set; } 
@@ -441,10 +441,10 @@ public class Item
     public string? SageBusinessCloudDetailsName { get; set; } 
 
     [JsonProperty("budgettype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? BudgettypeId { get; set; } 
+    public int? BudgetTypeId { get; set; } 
 
     [JsonProperty("budgettype_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? BudgettypeName { get; set; } 
+    public string? BudgetTypeName { get; set; } 
 
     [JsonProperty("serialise_only_one", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? SerialiseOnlyOne { get; set; } 

@@ -1,7 +1,8 @@
 using System.CodeDom.Compiler;
 using Angelic.Assets;
 using Angelic.Configuration;
-using Angelic.Configuration.CustomFields;
+using Angelic.Configuration.Custom.CustomFields;
+using Angelic.KeyPairs;
 using Newtonsoft.Json;
 
 namespace Angelic;
@@ -367,11 +368,11 @@ public class ServSite
     public string? Smsmessage { get; set; } 
 
     [JsonProperty("servicerequestlbl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Servicerequestlbl { get; set; } 
+    public string? ServiceRequestlbl { get; set; } 
 
     [JsonProperty("servicerequesthint", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     [System.ComponentModel.DataAnnotations.StringLength(4000)]
-    public string? Servicerequesthint { get; set; } 
+    public string? ServiceRequesthint { get; set; } 
 
     [JsonProperty("incidentlbl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Incidentlbl { get; set; } 
@@ -435,7 +436,7 @@ public class ServSite
     public string? TemplateName { get; set; } 
 
     [JsonProperty("recent_servicerequest_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? RecentServicerequestCount { get; set; } 
+    public int? RecentServiceRequestCount { get; set; } 
 
     [JsonProperty("recent_incident_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? RecentIncidentCount { get; set; } 
@@ -444,7 +445,7 @@ public class ServSite
     public int? OpenIncidentCount { get; set; } 
 
     [JsonProperty("open_servicerequest_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? OpenServicerequestCount { get; set; } 
+    public int? OpenServiceRequestCount { get; set; } 
 
     [JsonProperty("user_access", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<ServiceRestriction>? UserAccess { get; set; } 
@@ -465,7 +466,7 @@ public class ServSite
     public bool? UserSubscribed { get; set; } 
 
     [JsonProperty("user", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Users.Users? User { get; set; } 
+    public Users.User? User { get; set; } 
 
     [JsonProperty("emailtemplate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Emailtemplate { get; set; } 

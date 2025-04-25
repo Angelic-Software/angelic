@@ -23,13 +23,13 @@ public class ServiceRequestDetails
     public int? ServicedetailType { get; set; } 
 
     [JsonProperty("servicedetail_requesttypeid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ServicedetailRequesttypeid { get; set; } 
+    public int? ServicedetailRequestTypeid { get; set; } 
 
     [JsonProperty("servicedetail_requesttypeguid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? ServicedetailRequesttypeguid { get; set; } 
+    public Guid? ServicedetailRequestTypeguid { get; set; } 
 
     [JsonProperty("servicedetail_requesttypename", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ServicedetailRequesttypename { get; set; } 
+    public string? ServicedetailRequestTypename { get; set; } 
 
     [JsonProperty("servicedetail_templateid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ServicedetailTemplateid { get; set; } 

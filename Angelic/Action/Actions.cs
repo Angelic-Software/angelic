@@ -4,7 +4,9 @@ using Angelic.Assets;
 using Angelic.Attachments;
 using Angelic.Configuration;
 using Angelic.Configuration.Billing.Prepay;
-using Angelic.Configuration.CustomFields;
+using Angelic.Configuration.Custom.CustomFields;
+using Angelic.Configuration.Integrations.Lookups;
+using Angelic.Configuration.Tickets.Templates;
 using Angelic.Tickets;
 using Angelic.Users;
 using Newtonsoft.Json;
@@ -342,7 +344,7 @@ namespace Angelic.Action;
         public bool? SendToFacebook { get; set; }
 
         [JsonProperty("replyto_facebook_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? ReplytoFacebookId { get; set; }
+        public string? ReplyToFacebookId { get; set; }
 
         [JsonProperty("senttofb", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Senttofb { get; set; }
@@ -372,7 +374,7 @@ namespace Angelic.Action;
         public string? Mailentryid { get; set; }
 
         [JsonProperty("replytoaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Replytoaddress { get; set; }
+        public string? ReplyToaddress { get; set; }
 
         [JsonProperty("actsapuuid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Actsapuuid { get; set; }
@@ -399,7 +401,7 @@ namespace Angelic.Action;
         public int? NewTicketType { get; set; }
 
         [JsonProperty("new_chargerate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? NewChargerate { get; set; }
+        public int? NewChargeRate { get; set; }
 
         [JsonProperty("new_contract_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? NewContractId { get; set; }
@@ -585,25 +587,25 @@ namespace Angelic.Action;
         public bool? NewOppdontaddtomailinglist { get; set; }
 
         [JsonProperty("new_approvalprocess", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? NewApprovalprocess { get; set; }
+        public int? NewApprovalProcess { get; set; }
 
         [JsonProperty("new_approvalprocess_agent_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? NewApprovalprocessAgentId { get; set; }
+        public int? NewApprovalProcessAgentId { get; set; }
 
         [JsonProperty("new_approvalprocess_user_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? NewApprovalprocessUserId { get; set; }
+        public int? NewApprovalProcessUserId { get; set; }
 
         [JsonProperty("new_approvalprocess_users", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<UsersList>? NewApprovalprocessUsers { get; set; }
+        public ICollection<UsersList>? NewApprovalProcessUsers { get; set; }
 
         [JsonProperty("new_approvalprocess_email", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? NewApprovalprocessEmail { get; set; }
+        public string? NewApprovalProcessEmail { get; set; }
 
         [JsonProperty("new_approvalprocess_cab_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? NewApprovalprocessCabId { get; set; }
+        public int? NewApprovalProcessCabId { get; set; }
 
         [JsonProperty("new_approvalprocess_cab", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<CabMember>? NewApprovalprocessCab { get; set; }
+        public ICollection<CabMember>? NewApprovalProcessCab { get; set; }
 
         [JsonProperty("new_product_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? NewProductId { get; set; }
@@ -1098,7 +1100,7 @@ namespace Angelic.Action;
         public string? PurchaseOrderNumber { get; set; }
 
         [JsonProperty("database_lookup_result", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public PartsLookupResult? DatabaseLookupResult { get; set; }
+        public DatabaseLookupResult? DatabaseLookupResult { get; set; }
 
         [JsonProperty("new_supplier_contact_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? NewSupplierContactId { get; set; }
@@ -1287,7 +1289,7 @@ namespace Angelic.Action;
         public AreaNote? NewCrmNote { get; set; }
 
         [JsonProperty("new_template", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public StdRequest? NewTemplate { get; set; }
+        public Template? NewTemplate { get; set; }
 
         [JsonProperty("_agent03_ok", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Agent03Ok { get; set; }

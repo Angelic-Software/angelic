@@ -1,7 +1,7 @@
 using System.CodeDom.Compiler;
 using Angelic.Attachments;
 using Angelic.Configuration;
-using Angelic.Configuration.CustomFields;
+using Angelic.Configuration.Custom.CustomFields;
 using Angelic.Configuration.PdfTemplates;
 using Angelic.Configuration.Tickets.TicketTypes;
 using Angelic.Configuration.Tickets.Workflows;
@@ -70,7 +70,7 @@ public class QuotationHeader
     public string? Note { get; set; } 
 
     [JsonProperty("user", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Users.Users? User { get; set; } 
+    public Users.User? User { get; set; } 
 
     [JsonProperty("user_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? UserId { get; set; } 
@@ -172,10 +172,10 @@ public class QuotationHeader
     public string? Ponumber { get; set; } 
 
     [JsonProperty("pdftemplate_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? PdftemplateId { get; set; } 
+    public int? PdfTemplateId { get; set; } 
 
     [JsonProperty("pdftemplate_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? PdftemplateName { get; set; } 
+    public string? PdfTemplateName { get; set; } 
 
     [JsonProperty("portal_display_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? PortalDisplayType { get; set; } 
@@ -298,7 +298,7 @@ public class QuotationHeader
     public string? Contactusername { get; set; } 
 
     [JsonProperty("_match_thirdparty_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? MatchThirdpartyId { get; set; } 
+    public string? MatchThirdPartyId { get; set; } 
 
     [JsonProperty("_match_integration_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? MatchIntegrationId { get; set; } 
@@ -349,22 +349,22 @@ public class QuotationHeader
     public int? ApprovalProcessId { get; set; } 
 
     [JsonProperty("new_approvalprocess_agent_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? NewApprovalprocessAgentId { get; set; } 
+    public int? NewApprovalProcessAgentId { get; set; } 
 
     [JsonProperty("new_approvalprocess_user_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? NewApprovalprocessUserId { get; set; } 
+    public int? NewApprovalProcessUserId { get; set; } 
 
     [JsonProperty("new_approvalprocess_users", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<UsersList>? NewApprovalprocessUsers { get; set; } 
+    public ICollection<UsersList>? NewApprovalProcessUsers { get; set; } 
 
     [JsonProperty("new_approvalprocess_email", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? NewApprovalprocessEmail { get; set; } 
+    public string? NewApprovalProcessEmail { get; set; } 
 
     [JsonProperty("new_approvalprocess_cab_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? NewApprovalprocessCabId { get; set; } 
+    public int? NewApprovalProcessCabId { get; set; } 
 
     [JsonProperty("new_approvalprocess_cab", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CabMember>? NewApprovalprocessCab { get; set; } 
+    public ICollection<CabMember>? NewApprovalProcessCab { get; set; } 
 
     [JsonProperty("site_delivery_override", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? SiteDeliveryOverride { get; set; } 
@@ -475,22 +475,22 @@ public class QuotationHeader
     public Site? Site { get; set; } 
 
     [JsonProperty("originaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public AddressStore? Originaddress { get; set; } 
+    public AddressStore? OriginAddress { get; set; } 
 
     [JsonProperty("originaddress1", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Originaddress1 { get; set; } 
+    public string? OriginAddress1 { get; set; } 
 
     [JsonProperty("originaddress2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Originaddress2 { get; set; } 
+    public string? OriginAddress2 { get; set; } 
 
     [JsonProperty("originaddress3", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Originaddress3 { get; set; } 
+    public string? OriginAddress3 { get; set; } 
 
     [JsonProperty("originaddress4", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Originaddress4 { get; set; } 
+    public string? OriginAddress4 { get; set; } 
 
     [JsonProperty("originaddress5", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Originaddress5 { get; set; } 
+    public string? OriginAddress5 { get; set; } 
 
     [JsonProperty("original_revised_from_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? OriginalRevisedFromId { get; set; } 

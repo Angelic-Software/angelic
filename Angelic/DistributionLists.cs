@@ -19,22 +19,22 @@ public class DistributionLists
     public int? MailboxFrom { get; set; } 
 
     [JsonProperty("mailbox_replyto", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? MailboxReplyto { get; set; } 
+    public string? MailboxReplyTo { get; set; } 
 
     [JsonProperty("dynamic_members", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? DynamicMembers { get; set; } 
 
     [JsonProperty("users", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<Users.Users>? Users { get; set; } 
+    public ICollection<Users.User>? Users { get; set; } 
 
     [JsonProperty("members", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<DistributionListsUser>? Members { get; set; } 
 
     [JsonProperty("addtheseusers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<Users.Users>? Addtheseusers { get; set; } 
+    public ICollection<Users.User>? Addtheseusers { get; set; } 
 
     [JsonProperty("removetheseusers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<Users.Users>? Removetheseusers { get; set; } 
+    public ICollection<Users.User>? Removetheseusers { get; set; } 
 
     [JsonProperty("users_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? UsersCount { get; set; } 
@@ -52,7 +52,7 @@ public class DistributionLists
     public ExternalLinkList? NewExternalLink { get; set; } 
 
     [JsonProperty("_match_thirdparty_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? MatchThirdpartyId { get; set; } 
+    public string? MatchThirdPartyId { get; set; } 
 
     [JsonProperty("_match_integration_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? MatchIntegrationId { get; set; } 

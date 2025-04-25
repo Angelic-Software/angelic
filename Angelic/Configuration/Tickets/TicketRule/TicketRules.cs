@@ -1,7 +1,9 @@
 using System.CodeDom.Compiler;
 using Angelic.Areas;
+using Angelic.Configuration.Integrations.Lookups;
 using Angelic.Configuration.TeamsAndAgents.Agents;
 using Angelic.Configuration.Tickets.Workflows;
+using Angelic.Users;
 using Newtonsoft.Json;
 
 namespace Angelic.Configuration.Tickets.TicketRule;
@@ -88,10 +90,10 @@ public class TicketRules
     public ICollection<TicketRulesOutcome>? Outcomes { get; set; } 
 
     [JsonProperty("_domatch", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Domatch { get; set; } 
+    public bool? DoMatch { get; set; } 
 
     [JsonProperty("user", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Users.Users? User { get; set; } 
+    public User? User { get; set; } 
 
     [JsonProperty("matched_rule_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? MatchedRuleCount { get; set; } 
@@ -190,6 +192,6 @@ public class TicketRules
     public ICollection<WorkflowTarget>? Olas { get; set; } 
 
     [JsonProperty("database_lookups", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<PartsLookup>? DatabaseLookups { get; set; } 
+    public ICollection<DatabaseLookup>? DatabaseLookups { get; set; } 
 
 }

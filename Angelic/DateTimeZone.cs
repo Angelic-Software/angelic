@@ -7,9 +7,9 @@ namespace Angelic;
 public class DateTimeZone
 {
     [JsonProperty("datetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Datetime { get; set; } 
+    public DateTimeOffset? DateTime { get; set; } 
 
     [JsonProperty("timezone", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Timezone { get; set; } 
+    public string? TimeZone { get; set; } 
 
 }

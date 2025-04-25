@@ -35,7 +35,7 @@ public class ConsignmentDetail
     public int? StocklocationId { get; set; } 
 
     [JsonProperty("costprice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Costprice { get; set; } 
+    public double? CostPrice { get; set; } 
 
     [JsonProperty("price", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? Price { get; set; } 

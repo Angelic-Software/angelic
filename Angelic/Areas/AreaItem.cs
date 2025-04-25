@@ -22,7 +22,7 @@ public class AreaItem
     public string? Areaitemdesc { get; set; } 
 
     [JsonProperty("billingperiod_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? BillingperiodId { get; set; } 
+    public int? BillingPeriodId { get; set; } 
 
     [JsonProperty("startdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? StartDate { get; set; } 
@@ -43,7 +43,7 @@ public class AreaItem
     public string? Note { get; set; } 
 
     [JsonProperty("costprice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Costprice { get; set; } 
+    public double? CostPrice { get; set; } 
 
     [JsonProperty("sellingprice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? Sellingprice { get; set; } 

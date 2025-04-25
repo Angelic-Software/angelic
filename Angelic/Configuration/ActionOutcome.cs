@@ -4,6 +4,7 @@ using Angelic.Configuration.Integrations;
 using Angelic.Configuration.Integrations.Microsoft.Azure.AzureAd;
 using Angelic.Configuration.Tickets.TicketTypes;
 using Angelic.KeyPairs;
+using Angelic.Users;
 using Newtonsoft.Json;
 
 namespace Angelic.Configuration;
@@ -96,7 +97,7 @@ namespace Angelic.Configuration;
         public bool? Slaholdischecked { get; set; } 
 
         [JsonProperty("userdesc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Userdesc { get; set; } 
+        public string? UserDesc { get; set; } 
 
         [JsonProperty("emailtemplate_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? EmailtemplateId { get; set; } 
@@ -111,7 +112,7 @@ namespace Angelic.Configuration;
         public bool? Slareleaseischecked { get; set; } 
 
         [JsonProperty("chargerate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Chargerate { get; set; } 
+        public int? ChargeRate { get; set; } 
 
         [JsonProperty("defaultuserdef", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Defaultuserdef { get; set; } 
@@ -180,10 +181,10 @@ namespace Angelic.Configuration;
         public bool? Mustassign { get; set; } 
 
         [JsonProperty("requesttype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Requesttype { get; set; } 
+        public int? RequestType { get; set; } 
 
         [JsonProperty("requesttype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public Guid? RequesttypeGuid { get; set; } 
+        public Guid? RequestTypeGuid { get; set; } 
 
         [JsonProperty("mustaddnote", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Mustaddnote { get; set; } 
@@ -297,55 +298,55 @@ namespace Angelic.Configuration;
         public Guid? DefaultLinkedticketStatusGuid { get; set; } 
 
         [JsonProperty("newaction_subject", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? NewactionSubject { get; set; } 
+        public string? NewActionSubject { get; set; } 
 
         [JsonProperty("newaction_subject_close", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? NewactionSubjectClose { get; set; } 
+        public string? NewActionSubjectClose { get; set; } 
 
         [JsonProperty("newaction_emailto", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? NewactionEmailto { get; set; } 
+        public string? NewActionEmailto { get; set; } 
 
         [JsonProperty("newaction_emailcc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? NewactionEmailcc { get; set; } 
+        public string? NewActionEmailcc { get; set; } 
 
         [JsonProperty("newaction_emailbcc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? NewactionEmailbcc { get; set; } 
+        public string? NewActionEmailbcc { get; set; } 
 
         [JsonProperty("newaction_emailfrom", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? NewactionEmailfrom { get; set; } 
+        public int? NewActionEmailfrom { get; set; } 
 
         [JsonProperty("newaction_emailfrom_address_override", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? NewactionEmailfromAddressOverride { get; set; } 
+        public string? NewActionEmailfromAddressOverride { get; set; } 
 
         [JsonProperty("newaction_projecttimebudget", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? NewactionProjecttimebudget { get; set; } 
+        public double? NewActionProjecttimebudget { get; set; } 
 
         [JsonProperty("newaction_supplier", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public Supplier? NewactionSupplier { get; set; } 
+        public Supplier? NewActionSupplier { get; set; } 
 
         [JsonProperty("newaction_supplier_contract_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? NewactionSupplierContractId { get; set; } 
+        public int? NewActionSupplierContractId { get; set; } 
 
         [JsonProperty("newaction_supplier_sla_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? NewactionSupplierSlaId { get; set; } 
+        public int? NewActionSupplierSlaId { get; set; } 
 
         [JsonProperty("newaction_supplier_priority_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? NewactionSupplierPriorityId { get; set; } 
+        public int? NewActionSupplierPriorityId { get; set; } 
 
         [JsonProperty("newaction_thirdpartynhdapiurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? NewactionThirdpartynhdapiurl { get; set; } 
+        public string? NewActionThirdPartynhdapiurl { get; set; } 
 
         [JsonProperty("newaction_thirdpartynhdapiareaid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? NewactionThirdpartynhdapiareaid { get; set; } 
+        public int? NewActionThirdPartynhdapiareaid { get; set; } 
 
         [JsonProperty("newaction_thirdpartynhdapisupplierid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? NewactionThirdpartynhdapisupplierid { get; set; } 
+        public int? NewActionThirdPartynhdapisupplierid { get; set; } 
 
         [JsonProperty("fields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<TicketTypeField>? Fields { get; set; } 
 
         [JsonProperty("newticket_user", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public Users.Users? NewTicketUser { get; set; } 
+        public User? NewTicketUser { get; set; } 
 
         [JsonProperty("from_action_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? FromActionId { get; set; } 
@@ -402,13 +403,13 @@ namespace Angelic.Configuration;
         public string? CallscreencallscriptName { get; set; } 
 
         [JsonProperty("newaction_smsto", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? NewactionSmsto { get; set; } 
+        public string? NewActionSmsto { get; set; } 
 
         [JsonProperty("pdftemplate_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? PdftemplateId { get; set; } 
+        public int? PdfTemplateId { get; set; } 
 
         [JsonProperty("pdftemplate_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? PdftemplateName { get; set; } 
+        public string? PdfTemplateName { get; set; } 
 
         [JsonProperty("excludeFromDynamicLists", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? ExcludeFromDynamicLists { get; set; } 
@@ -450,7 +451,7 @@ namespace Angelic.Configuration;
         public bool? Showevenifnochild { get; set; } 
 
         [JsonProperty("replytype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Replytype { get; set; } 
+        public int? ReplyType { get; set; } 
 
         [JsonProperty("parentdefaultuser", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Parentdefaultuser { get; set; } 
@@ -468,10 +469,10 @@ namespace Angelic.Configuration;
         public bool? ActionResetsResponse { get; set; } 
 
         [JsonProperty("showattachmentstouser", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? ShowAttachmentstouser { get; set; } 
+        public bool? ShowAttachmentsToUser { get; set; } 
 
         [JsonProperty("customurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Customurl { get; set; } 
+        public string? CustomUrl { get; set; } 
 
         [JsonProperty("defaultcat1", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Defaultcat1 { get; set; } 
@@ -519,13 +520,13 @@ namespace Angelic.Configuration;
         public bool? ShowToUser { get; set; } 
 
         [JsonProperty("defaultsupplier_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? DefaultsupplierId { get; set; } 
+        public int? DefaultSupplierId { get; set; } 
 
         [JsonProperty("defaultsupplier_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? DefaultsupplierName { get; set; } 
+        public string? DefaultSupplierName { get; set; } 
 
         [JsonProperty("isbillingaction", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Isbillingaction { get; set; } 
+        public bool? IsBillingAction { get; set; } 
 
         [JsonProperty("ishiddenfrominternalit", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Ishiddenfrominternalit { get; set; } 
@@ -570,7 +571,7 @@ namespace Angelic.Configuration;
         public bool? DefaultSyncToJira { get; set; } 
 
         [JsonProperty("newaction_thirdpartynhdjirasupplierid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? NewactionThirdpartynhdjirasupplierid { get; set; } 
+        public int? NewActionThirdPartynhdjirasupplierid { get; set; } 
 
         [JsonProperty("allow_user_attachments", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? AllowUserAttachments { get; set; } 
@@ -659,7 +660,7 @@ namespace Angelic.Configuration;
         public int? Defaultcommunicationmethod { get; set; } 
 
         [JsonProperty("newaction_thirdpartynhdservicenowsupplierid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? NewactionThirdpartynhdservicenowsupplierid { get; set; } 
+        public int? NewActionThirdPartynhdservicenowsupplierid { get; set; } 
 
         [JsonProperty("related_note_visibility", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? RelatedNoteVisibility { get; set; } 
@@ -695,10 +696,10 @@ namespace Angelic.Configuration;
         public int? ShowOnChild { get; set; } 
 
         [JsonProperty("newactiondisplay", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Newactiondisplay { get; set; } 
+        public int? NewActiondisplay { get; set; } 
 
         [JsonProperty("newactiondisplaysize", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Newactiondisplaysize { get; set; } 
+        public int? NewActiondisplaysize { get; set; } 
 
         [JsonProperty("lapsafe_default_installation", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? LapsafeDefaultInstallation { get; set; } 

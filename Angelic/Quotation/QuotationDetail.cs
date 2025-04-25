@@ -1,6 +1,6 @@
 using System.CodeDom.Compiler;
 using Angelic.Configuration.Billing.Taxes;
-using Angelic.Configuration.CustomFields;
+using Angelic.Configuration.Custom.CustomFields;
 using Angelic.KeyPairs;
 using Angelic.Tickets;
 using Newtonsoft.Json;
@@ -26,7 +26,7 @@ public class QuotationDetail
     public string? Name { get; set; } 
 
     [JsonProperty("costprice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Costprice { get; set; } 
+    public double? CostPrice { get; set; } 
 
     [JsonProperty("total_price_monthly", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? TotalPriceMonthly { get; set; } 
@@ -38,7 +38,7 @@ public class QuotationDetail
     public double? TotalNetTotalMonthly { get; set; } 
 
     [JsonProperty("total_costprice_monthly", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? TotalCostpriceMonthly { get; set; } 
+    public double? TotalCostPriceMonthly { get; set; } 
 
     [JsonProperty("total_profit_monthly", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? TotalProfitMonthly { get; set; } 
@@ -59,7 +59,7 @@ public class QuotationDetail
     public double? TotalNetTotalAnnual { get; set; } 
 
     [JsonProperty("total_costprice_annual", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? TotalCostpriceAnnual { get; set; } 
+    public double? TotalCostPriceAnnual { get; set; } 
 
     [JsonProperty("total_profit_annual", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? TotalProfitAnnual { get; set; } 
@@ -80,7 +80,7 @@ public class QuotationDetail
     public double? TotalNetTotalYearone { get; set; } 
 
     [JsonProperty("total_costprice_yearone", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? TotalCostpriceYearone { get; set; } 
+    public double? TotalCostPriceYearone { get; set; } 
 
     [JsonProperty("total_profit_yearone", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? TotalProfitYearone { get; set; } 
@@ -113,7 +113,7 @@ public class QuotationDetail
     public double? Margin { get; set; } 
 
     [JsonProperty("billingperiod", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Billingperiod { get; set; } 
+    public int? BillingPeriod { get; set; } 
 
     [JsonProperty("startdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? StartDate { get; set; } 
@@ -233,7 +233,7 @@ public class QuotationDetail
     public ICollection<CustomField>? CustomFields { get; set; } 
 
     [JsonProperty("chargerates", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<Lookup>? Chargerates { get; set; } 
+    public ICollection<Lookup>? ChargeRates { get; set; } 
 
     [JsonProperty("budgets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<TicketBudget>? Budgets { get; set; } 
@@ -323,7 +323,7 @@ public class QuotationDetail
     public int? ItemTaxCode { get; set; } 
 
     [JsonProperty("baseprice_converted", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? BasepriceConverted { get; set; } 
+    public double? BasePriceConverted { get; set; } 
 
     [JsonProperty("unitprice_converted", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? UnitpriceConverted { get; set; } 
@@ -332,7 +332,7 @@ public class QuotationDetail
     public int? OverrideTaxCode { get; set; } 
 
     [JsonProperty("baseprice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Baseprice { get; set; } 
+    public double? BasePrice { get; set; } 
 
     [JsonProperty("total_tax", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? TotalTax { get; set; } 

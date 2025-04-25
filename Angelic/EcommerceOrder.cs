@@ -1,4 +1,6 @@
 using System.CodeDom.Compiler;
+using Angelic.Configuration.Integrations.Adobe.AdobeCommerce;
+using Angelic.Configuration.Integrations.Amazon;
 using Newtonsoft.Json;
 
 namespace Angelic;
@@ -13,25 +15,25 @@ public class EcommerceOrder
     public int? Moduleid { get; set; } 
 
     [JsonProperty("thirdpartyid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Thirdpartyid { get; set; } 
+    public string? ThirdPartyid { get; set; } 
 
     [JsonProperty("thirdpartyurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Thirdpartyurl { get; set; } 
+    public string? ThirdPartyurl { get; set; } 
 
     [JsonProperty("thirdpartyordernumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Thirdpartyordernumber { get; set; } 
+    public string? ThirdPartyordernumber { get; set; } 
 
     [JsonProperty("thirdpartycustomerid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Thirdpartycustomerid { get; set; } 
+    public string? ThirdPartycustomerid { get; set; } 
 
     [JsonProperty("thirdpartystatus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Thirdpartystatus { get; set; } 
+    public string? ThirdPartystatus { get; set; } 
 
     [JsonProperty("thirdpartystatus2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Thirdpartystatus2 { get; set; } 
+    public string? ThirdPartystatus2 { get; set; } 
 
     [JsonProperty("thirdpartycreateddate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Thirdpartycreateddate { get; set; } 
+    public DateTimeOffset? ThirdPartyCreatedDate { get; set; } 
 
     [JsonProperty("integration_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? IntegrationName { get; set; } 
@@ -49,13 +51,13 @@ public class EcommerceOrder
     public bool? UnlinkFromTicket { get; set; } 
 
     [JsonProperty("jsonobj", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Jsonobj { get; set; } 
+    public string? JsonObj { get; set; } 
 
     [JsonProperty("_amazon_buyer_info", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public AmazonSellerBuyerInfo? AmazonBuyerInfo { get; set; } 
 
     [JsonProperty("_adobecommerce_billing_address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public AdobeCommerceBilling_Address? AdobecommerceBillingAddress { get; set; } 
+    public AdobeCommerceBillingAddress? AdobeCommerceBillingAddress { get; set; } 
 
     [JsonProperty("linked_tickets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<EcommerceOrderFault>? LinkedTickets { get; set; } 

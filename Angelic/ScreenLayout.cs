@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Configuration.Custom.CustomTabs;
 using Newtonsoft.Json;
 
 namespace Angelic;

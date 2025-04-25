@@ -20,7 +20,7 @@ public class Tax
     public double? Value { get; set; } 
 
     [JsonProperty("thirdparty_tax_rates", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ValueLabelIsNewKeyPair>? ThirdpartyTaxRates { get; set; } 
+    public ICollection<ValueLabelIsNewKeyPair>? ThirdPartyTaxRates { get; set; } 
 
     [JsonProperty("xero_tenant_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? XeroTenantId { get; set; } 

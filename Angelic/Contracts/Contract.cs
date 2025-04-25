@@ -1,6 +1,7 @@
 using System.CodeDom.Compiler;
 using Angelic.Assets;
-using Angelic.Configuration.CustomFields;
+using Angelic.Configuration;
+using Angelic.Configuration.Custom.CustomFields;
 using Newtonsoft.Json;
 
 namespace Angelic.Contracts;

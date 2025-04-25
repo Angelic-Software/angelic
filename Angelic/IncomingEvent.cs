@@ -66,7 +66,7 @@ public class IncomingEvent
     public int? EntityId { get; set; } 
 
     [JsonProperty("thirdparty_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ThirdpartyId { get; set; } 
+    public string? ThirdPartyId { get; set; } 
 
     [JsonProperty("status_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? StatusName { get; set; } 

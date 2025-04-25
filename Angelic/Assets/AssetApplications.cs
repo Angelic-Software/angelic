@@ -58,7 +58,7 @@ public class AssetApplications
     public int? Moduleid { get; set; } 
 
     [JsonProperty("new_users", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<Users.Users>? NewUsers { get; set; } 
+    public ICollection<Users.User>? NewUsers { get; set; } 
 
     [JsonProperty("new_devices", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<Asset>? NewDevices { get; set; } 

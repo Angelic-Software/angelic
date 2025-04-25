@@ -1,5 +1,7 @@
 using System.CodeDom.Compiler;
 using Angelic.Assets;
+using Angelic.Configuration.Tickets.Templates;
+using Angelic.Configuration.Users;
 using Angelic.Contracts;
 using Angelic.Invoice;
 using Angelic.PurchaseOrders;
@@ -167,7 +169,7 @@ public class PdfTemplate
     public ICollection<UserReport>? PermissionsUser { get; set; } 
 
     [JsonProperty("schedule", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<StdRequestList>? Schedule { get; set; } 
+    public ICollection<TemplateList>? Schedule { get; set; } 
 
     [JsonProperty("clientid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Clientid { get; set; } 

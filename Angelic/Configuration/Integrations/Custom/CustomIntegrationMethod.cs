@@ -46,7 +46,7 @@ public class CustomIntegrationMethod
     public int? Authorizationtype { get; set; } 
 
     [JsonProperty("requesttype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Requesttype { get; set; } 
+    public int? RequestType { get; set; } 
 
     [JsonProperty("responsetype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Responsetype { get; set; } 

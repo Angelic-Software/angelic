@@ -13,7 +13,7 @@ public class ItemRestriction
     public int? ItemId { get; set; } 
 
     [JsonProperty("servicerequest_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ServicerequestId { get; set; } 
+    public int? ServiceRequestId { get; set; } 
 
     [JsonProperty("item_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ItemName { get; set; } 

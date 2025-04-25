@@ -12,7 +12,7 @@ public class NhdRoles
     public string? Intent { get; set; } 
 
     [JsonProperty("chargerates", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<Restriction>? Chargerates { get; set; } 
+    public ICollection<Restriction>? ChargeRates { get; set; } 
 
     [JsonProperty("id_int", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? IdInt { get; set; } 
@@ -33,10 +33,10 @@ public class NhdRoles
     public ICollection<AgentTicketType>? TicketTypes { get; set; } 
 
     [JsonProperty("assetfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AgentField>? Assetfields { get; set; } 
+    public ICollection<AgentField>? AssetFields { get; set; } 
 
     [JsonProperty("unamecustomfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AgentCustom>? Unamecustomfields { get; set; } 
+    public ICollection<AgentCustom>? UnameCustomFields { get; set; } 
 
     [JsonProperty("unameappointmenttypes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<AgentAppointment>? Unameappointmenttypes { get; set; } 

@@ -1,5 +1,7 @@
 using System.CodeDom.Compiler;
+using Angelic.Appointments;
 using Angelic.Areas;
+using Angelic.Configuration.Custom.CustomTabs;
 using Angelic.KeyPairs;
 using Newtonsoft.Json;
 
@@ -48,7 +50,7 @@ public class TicketType
     public bool? Agentscanselect { get; set; } 
 
     [JsonProperty("itilrequesttype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Itilrequesttype { get; set; } 
+    public int? ItilRequesttype { get; set; } 
 
     [JsonProperty("allowattachments", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Allowattachments { get; set; } 
@@ -147,7 +149,7 @@ public class TicketType
     public string? Webannouncement { get; set; } 
 
     [JsonProperty("chargerate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Chargerate { get; set; } 
+    public int? ChargeRate { get; set; } 
 
     [JsonProperty("initial_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? InitialStatus { get; set; } 
@@ -270,10 +272,10 @@ public class TicketType
     public string? DefaultProductName { get; set; } 
 
     [JsonProperty("default_budgettype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? DefaultBudgettypeId { get; set; } 
+    public int? DefaultBudgetTypeId { get; set; } 
 
     [JsonProperty("default_budgettype_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? DefaultBudgettypeName { get; set; } 
+    public string? DefaultBudgetTypeName { get; set; } 
 
     [JsonProperty("email_start_tag_override", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? EmailStartTagOverride { get; set; } 
@@ -366,16 +368,16 @@ public class TicketType
     public Guid? StatusaftertechupdateGuid { get; set; } 
 
     [JsonProperty("pdftemplate_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? PdftemplateId { get; set; } 
+    public int? PdfTemplateId { get; set; } 
 
     [JsonProperty("pdftemplate_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? PdftemplateName { get; set; } 
+    public string? PdfTemplateName { get; set; } 
 
     [JsonProperty("quote_pdftemplate_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? QuotePdftemplateId { get; set; } 
+    public int? QuotePdfTemplateId { get; set; } 
 
     [JsonProperty("quote_pdftemplate_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? QuotePdftemplateName { get; set; } 
+    public string? QuotePdfTemplateName { get; set; } 
 
     [JsonProperty("maximumRestrictedPriority", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? MaximumRestrictedPriority { get; set; } 
@@ -624,7 +626,7 @@ public class TicketType
     public int? Ticketlinktype { get; set; } 
 
     [JsonProperty("allowed_appointment_types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AppointmentTypeRequestType>? AllowedAppointmentTypes { get; set; } 
+    public ICollection<AppointmentTypeTicketType>? AllowedAppointmentTypes { get; set; } 
 
     [JsonProperty("allowall_iframe_customtabs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? AllowallIframeCustomtabs { get; set; } 

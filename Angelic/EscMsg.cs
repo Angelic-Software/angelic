@@ -85,7 +85,7 @@ public class EscMsg
     public int? MattermostChannelid { get; set; } 
 
     [JsonProperty("replyto_address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ReplytoAddress { get; set; } 
+    public string? ReplyToAddress { get; set; } 
 
     [JsonProperty("mailbox_from", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? MailboxFrom { get; set; } 
