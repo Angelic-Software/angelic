@@ -529,10 +529,10 @@ public class Users
     public bool? Ismaincontact { get; set; } 
 
     [JsonProperty("primary_address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public AddressStore? PrimaryAddress { get; set; } 
+    public AddressStore.AddressStore? PrimaryAddress { get; set; } 
 
     [JsonProperty("addresses", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AddressStore>? Addresses { get; set; } 
+    public ICollection<AddressStore.AddressStore>? Addresses { get; set; } 
 
     [JsonProperty("departments", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<UserDepartment>? Departments { get; set; } 
@@ -571,7 +571,7 @@ public class Users
     public ICollection<UserCompany>? Usercompany { get; set; } 
 
     [JsonProperty("supplier", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Supplier? Supplier { get; set; } 
+    public UserSupplier? Supplier { get; set; } 
 
     [JsonProperty("supplier_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? SupplierName { get; set; } 

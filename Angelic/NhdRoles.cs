@@ -29,7 +29,7 @@ public class NhdRoles
     public ICollection<AgentAreaRestriction>? Clients { get; set; } 
 
     [JsonProperty("tickettypes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AgentRequestType>? Tickettypes { get; set; } 
+    public ICollection<AgentTicketType>? Tickettypes { get; set; } 
 
     [JsonProperty("assetfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<AgentField>? Assetfields { get; set; } 
@@ -53,7 +53,7 @@ public class NhdRoles
     public string? Warning { get; set; } 
 
     [JsonProperty("assettypes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AgentXType>? Assettypes { get; set; } 
+    public ICollection<AgentAssetType>? Assettypes { get; set; } 
 
     [JsonProperty("Oo_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? OoName { get; set; } 

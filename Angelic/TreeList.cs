@@ -44,7 +44,7 @@ public class TreeList
     public int? Type { get; set; } 
 
     [JsonProperty("teams", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<SectionDetailList>? Teams { get; set; } 
+    public ICollection<TeamList>? Teams { get; set; } 
 
     [JsonProperty("agent_members", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<AgentList>? AgentMembers { get; set; } 

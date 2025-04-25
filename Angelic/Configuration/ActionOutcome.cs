@@ -320,7 +320,7 @@ namespace Angelic.Configuration;
         public double? NewactionProjecttimebudget { get; set; } 
 
         [JsonProperty("newaction_supplier", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public Company? NewactionSupplier { get; set; } 
+        public Supplier? NewactionSupplier { get; set; } 
 
         [JsonProperty("newaction_supplier_contract_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? NewactionSupplierContractId { get; set; } 

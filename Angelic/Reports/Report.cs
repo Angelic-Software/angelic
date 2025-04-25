@@ -163,7 +163,7 @@ public class Report
     public ICollection<AgentReport>? PermissionsAgent { get; set; }
     
     [JsonProperty("permissions_user", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<UserAnalyzer>? PermissionsUser { get; set; }
+    public ICollection<UserReport>? PermissionsUser { get; set; }
     
     [JsonProperty("schedule", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<StdRequestList>? Schedule { get; set; }
