@@ -1,5 +1,5 @@
 using System.CodeDom.Compiler;
-using Angelic.Configuration.CustomField;
+using Angelic.Configuration.CustomFields;
 using Newtonsoft.Json;
 
 namespace Angelic;
@@ -17,6 +17,6 @@ public class CustomTableRow
     public string? Display { get; set; } 
 
     [JsonProperty("customfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CustomField>? Customfields { get; set; } 
+    public ICollection<CustomField>? CustomFields { get; set; } 
 
 }

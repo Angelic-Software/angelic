@@ -1,7 +1,8 @@
 using System.CodeDom.Compiler;
+using Angelic.Appointments;
 using Newtonsoft.Json;
 
-namespace Angelic;
+namespace Angelic.Configuration.TeamsAndAgents;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
 public class Holidays
@@ -10,7 +11,7 @@ public class Holidays
     public Guid? Id { get; set; } 
 
     [JsonProperty("holid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Holid { get; set; } 
+    public int? HolId { get; set; } 
 
     [JsonProperty("workday_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? WorkdayId { get; set; } 
@@ -25,7 +26,7 @@ public class Holidays
     public DateTimeOffset? EndDate { get; set; } 
 
     [JsonProperty("allday", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Allday { get; set; } 
+    public bool? AllDay { get; set; } 
 
     [JsonProperty("name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Name { get; set; } 
@@ -55,22 +56,22 @@ public class Holidays
     public DateTimeOffset? EndDateOnly { get; set; } 
 
     [JsonProperty("isrecurring", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isrecurring { get; set; } 
+    public bool? IsRecurring { get; set; } 
 
     [JsonProperty("schedule", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public Schedule? Schedule { get; set; } 
 
     [JsonProperty("schedulehandledtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Schedulehandledtype { get; set; } 
+    public int? ScheduleHandledType { get; set; } 
 
     [JsonProperty("createnextappt", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Createnextappt { get; set; } 
+    public bool? CreateNextAppt { get; set; } 
 
     [JsonProperty("approval_start", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? ApprovalStart { get; set; } 
 
     [JsonProperty("approvalnote", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Approvalnote { get; set; } 
+    public string? ApprovalNote { get; set; } 
 
     [JsonProperty("approval_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ApprovalStatus { get; set; } 
@@ -79,13 +80,13 @@ public class Holidays
     public bool? ReturnAppointment { get; set; } 
 
     [JsonProperty("appointmentobj", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Appointment? Appointmentobj { get; set; } 
+    public Appointment? AppointmentObj { get; set; } 
 
     [JsonProperty("thirdpartyid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Thirdpartyid { get; set; } 
+    public string? ThirdPartyId { get; set; } 
 
     [JsonProperty("date_datetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? DateDatetime { get; set; } 
+    public DateTimeOffset? DateDateTime { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

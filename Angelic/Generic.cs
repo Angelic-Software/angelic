@@ -29,10 +29,10 @@ public class Generic
     public bool? Connector { get; set; } 
 
     [JsonProperty("showasitem", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Showasitem { get; set; } 
+    public bool? ShowAsitem { get; set; } 
 
     [JsonProperty("showasequip", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Showasequip { get; set; } 
+    public bool? ShowAsequip { get; set; } 
 
     [JsonProperty("showwarningifonrequest", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Showwarningifonrequest { get; set; } 
@@ -53,7 +53,7 @@ public class Generic
     public int? Sequence { get; set; } 
 
     [JsonProperty("assettypes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AssetType>? Assettypes { get; set; } 
+    public ICollection<AssetType>? AssetTypes { get; set; } 
 
     [JsonProperty("thirdpartyid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Thirdpartyid { get; set; } 
@@ -146,7 +146,7 @@ public class Generic
     public bool? ItemContractDefault { get; set; } 
 
     [JsonProperty("item_assettype_default", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ItemAssettypeDefault { get; set; } 
+    public int? ItemAssetTypeDefault { get; set; } 
 
     [JsonProperty("item_billing_period_default", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ItemBillingPeriodDefault { get; set; } 
@@ -155,7 +155,7 @@ public class Generic
     public string? AvalaraItemCode { get; set; } 
 
     [JsonProperty("item_assettype_name_default", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ItemAssettypeNameDefault { get; set; } 
+    public string? ItemAssetTypeNameDefault { get; set; } 
 
     [JsonProperty("xero_category_1_lookup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? XeroCategory1Lookup { get; set; } 

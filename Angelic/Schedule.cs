@@ -1,5 +1,5 @@
 using System.CodeDom.Compiler;
-using Angelic.Contract;
+using Angelic.Contracts;
 using Angelic.KeyPairs;
 using Newtonsoft.Json;
 
@@ -12,10 +12,10 @@ public class Schedule
     public int? Id { get; set; } 
 
     [JsonProperty("startdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Startdate { get; set; } 
+    public DateTimeOffset? StartDate { get; set; } 
 
     [JsonProperty("enddate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Enddate { get; set; } 
+    public DateTimeOffset? EndDate { get; set; } 
 
     [JsonProperty("subject", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Subject { get; set; } 

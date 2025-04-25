@@ -1,5 +1,5 @@
 using System.CodeDom.Compiler;
-using Angelic.Ticket;
+using Angelic.Tickets;
 using Newtonsoft.Json;
 
 namespace Angelic;

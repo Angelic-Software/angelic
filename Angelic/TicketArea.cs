@@ -1,5 +1,5 @@
 using System.CodeDom.Compiler;
-using Angelic.Area;
+using Angelic.Areas;
 using Angelic.KeyPairs;
 using Newtonsoft.Json;
 
@@ -69,7 +69,7 @@ public class TicketArea
     public bool? Enableprojecttreeview { get; set; } 
 
     [JsonProperty("showtabondetailsscreens", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Showtabondetailsscreens { get; set; } 
+    public bool? ShowTabondetailsscreens { get; set; } 
 
     [JsonProperty("filters", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<ViewFilterDetails>? Filters { get; set; } 

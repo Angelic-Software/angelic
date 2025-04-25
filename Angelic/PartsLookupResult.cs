@@ -1,5 +1,5 @@
 using System.CodeDom.Compiler;
-using Angelic.Configuration.CustomField;
+using Angelic.Configuration.CustomFields;
 using Angelic.KeyPairs;
 using Newtonsoft.Json;
 
@@ -30,7 +30,7 @@ public class PartsLookupResult
     public ICollection<StringIdNameKeyPair>? FieldValues { get; set; } 
 
     [JsonProperty("customfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CustomField>? Customfields { get; set; } 
+    public ICollection<CustomField>? CustomFields { get; set; } 
 
     [JsonProperty("lookup_values", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? LookupValues { get; set; } 
@@ -51,7 +51,7 @@ public class PartsLookupResult
     public string? MessageMultiple { get; set; } 
 
     [JsonProperty("customfields_multiple", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ICollection<CustomField>>? CustomfieldsMultiple { get; set; } 
+    public ICollection<ICollection<CustomField>>? CustomFieldsMultiple { get; set; } 
 
     [JsonProperty("mapped_outcome_field_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? MappedOutcomeFieldId { get; set; } 

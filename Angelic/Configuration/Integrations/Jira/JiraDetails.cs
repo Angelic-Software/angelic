@@ -76,7 +76,7 @@ public class JiraDetails
     public ICollection<IntegrationFieldMapping>? StatusMappings { get; set; } // Changed from Status_mappings
 
     [JsonProperty("tickettype_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<JiraMappings>? TicketTypeMappings { get; set; } // Changed from Tickettype_mappings
+    public ICollection<JiraMappings>? TicketTypeMappings { get; set; } // Changed from TicketType_mappings
 
     [JsonProperty("jirafield_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<IntegrationFieldMapping>? JiraFieldMappings { get; set; } // Changed from Jirafield_mappings

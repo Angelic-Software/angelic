@@ -10,7 +10,7 @@ public class IframeTabRequestType
     public int? Id { get; set; } 
 
     [JsonProperty("tickettype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? TickettypeId { get; set; } 
+    public int? TicketTypeId { get; set; } 
 
     [JsonProperty("iframetab_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? IframetabId { get; set; } 

@@ -16,7 +16,7 @@ public class NotificationConditions
     public Guid? NotificationGuid { get; set; } 
 
     [JsonProperty("fieldname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Fieldname { get; set; } 
+    public string? FieldName { get; set; } 
 
     [JsonProperty("fieldid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Fieldid { get; set; } 

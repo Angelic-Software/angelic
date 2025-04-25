@@ -16,6 +16,6 @@ public class UserPrefs
     public string? Theme { get; set; } 
 
     [JsonProperty("userdetails", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Users? Userdetails { get; set; } 
+    public Users.Users? Userdetails { get; set; } 
 
 }

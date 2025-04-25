@@ -10,7 +10,7 @@ public class FaqRequestType
     public int? Id { get; set; } 
 
     [JsonProperty("tickettype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? TickettypeId { get; set; } 
+    public int? TicketTypeId { get; set; } 
 
     [JsonProperty("faq_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? FaqId { get; set; } 

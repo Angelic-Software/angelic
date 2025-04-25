@@ -70,7 +70,7 @@ public class InvoicePaymentList
     public bool? Isimport { get; set; } 
 
     [JsonProperty("_importtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Importtype { get; set; } 
+    public string? ImportType { get; set; } 
 
     [JsonProperty("sqlimport_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? SqlimportId { get; set; } 

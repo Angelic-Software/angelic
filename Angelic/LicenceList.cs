@@ -1,5 +1,5 @@
 using System.CodeDom.Compiler;
-using Angelic.Asset;
+using Angelic.Assets;
 using Angelic.Configuration.Integrations.Microsoft.Azure.AzureAd;
 using Newtonsoft.Json;
 
@@ -105,7 +105,7 @@ public class LicenceList
     public bool? Isimport { get; set; } 
 
     [JsonProperty("_importtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Importtype { get; set; } 
+    public string? ImportType { get; set; } 
 
     [JsonProperty("_importchildren", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Importchildren { get; set; } 

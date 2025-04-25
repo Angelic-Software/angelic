@@ -1,7 +1,7 @@
 using System.CodeDom.Compiler;
 using Newtonsoft.Json;
 
-namespace Angelic.Agent;
+namespace Angelic.Configuration.TeamsAndAgents.Agents;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
 public class AgentList
@@ -82,7 +82,7 @@ public class AgentList
     public ICollection<AgentAreaRestriction>? Clients { get; set; } 
 
     [JsonProperty("tickettypes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AgentTicketType>? Tickettypes { get; set; } 
+    public ICollection<AgentTicketType>? TicketTypes { get; set; } 
 
     [JsonProperty("qualifications", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<AgentQualification>? Qualifications { get; set; } 
@@ -103,7 +103,7 @@ public class AgentList
     public string? CurrentActionName { get; set; } 
 
     [JsonProperty("assettypes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AgentAssetType>? Assettypes { get; set; } 
+    public ICollection<AgentAssetType>? AssetTypes { get; set; } 
 
     [JsonProperty("googleemail", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Googleemail { get; set; } 
@@ -166,10 +166,10 @@ public class AgentList
     public ICollection<AgentAppointment>? Unameappointmenttypes { get; set; } 
 
     [JsonProperty("_canupdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Canupdate { get; set; } 
+    public bool? CanUpdate { get; set; } 
 
     [JsonProperty("_canupdate_moreinfo", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? CanupdateMoreinfo { get; set; } 
+    public bool? CanUpdateMoreinfo { get; set; } 
 
     [JsonProperty("logmeinid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Logmeinid { get; set; } 

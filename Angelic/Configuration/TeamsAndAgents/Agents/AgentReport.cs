@@ -1,7 +1,7 @@
 using System.CodeDom.Compiler;
 using Newtonsoft.Json;
 
-namespace Angelic.Agent;
+namespace Angelic.Configuration.TeamsAndAgents.Agents;
 
 
     

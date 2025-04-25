@@ -1,8 +1,9 @@
 using System.CodeDom.Compiler;
-using Angelic.Agent;
+using Angelic.Appointments;
+using Angelic.Configuration.TeamsAndAgents.Agents;
 using Newtonsoft.Json;
 
-namespace Angelic;
+namespace Angelic.Configuration.TeamsAndAgents;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
 public class Team
@@ -74,7 +75,7 @@ public class Team
     public double? Workinghoursbeforealert { get; set; } 
 
     [JsonProperty("emailaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Emailaddress { get; set; } 
+    public string? EmailAddress { get; set; } 
 
     [JsonProperty("addtoallagents", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Addtoallagents { get; set; } 
@@ -83,7 +84,7 @@ public class Team
     public bool? Allowlivechat { get; set; } 
 
     [JsonProperty("rtid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Rtid { get; set; } 
+    public int? RtId { get; set; } 
 
     [JsonProperty("mailbox_override", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? MailboxOverride { get; set; } 
@@ -95,7 +96,7 @@ public class Team
     public int? OrganisationId { get; set; } 
 
     [JsonProperty("cannedtext", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CannedText>? Cannedtext { get; set; } 
+    public ICollection<CannedText>? CannedText { get; set; } 
 
     [JsonProperty("templates", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<StdRequestList>? Templates { get; set; } 
@@ -137,10 +138,10 @@ public class Team
     public string? Warning { get; set; } 
 
     [JsonProperty("_canupdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Canupdate { get; set; } 
+    public bool? CanUpdate { get; set; } 
 
     [JsonProperty("_canupdate2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Canupdate2 { get; set; } 
+    public bool? CanUpdate2 { get; set; } 
 
     [JsonProperty("main_email_address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? MainEmailAddress { get; set; } 
@@ -170,7 +171,7 @@ public class Team
     public string? BookingWorkdayName { get; set; } 
 
     [JsonProperty("recurring_shifts", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<Appointment_List>? RecurringShifts { get; set; } 
+    public ICollection<AppointmentList>? RecurringShifts { get; set; } 
 
     [JsonProperty("third_party_migration_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ThirdPartyMigrationId { get; set; } 

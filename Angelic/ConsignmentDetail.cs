@@ -1,5 +1,5 @@
 using System.CodeDom.Compiler;
-using Angelic.Asset;
+using Angelic.Assets;
 using Newtonsoft.Json;
 
 namespace Angelic;
@@ -44,7 +44,7 @@ public class ConsignmentDetail
     public int? ItemstockId { get; set; } 
 
     [JsonProperty("item_assettype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ItemAssettypeId { get; set; } 
+    public int? ItemAssetTypeId { get; set; } 
 
     [JsonProperty("supplier_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? SupplierId { get; set; } 

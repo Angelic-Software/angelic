@@ -1,6 +1,7 @@
 using System.CodeDom.Compiler;
 using Angelic.Configuration.Integrations;
-using Angelic.Configuration.TicketRules;
+using Angelic.Configuration.Integrations.Custom;
+using Angelic.Configuration.Tickets.TicketRule;
 using Newtonsoft.Json;
 
 namespace Angelic;
@@ -33,13 +34,13 @@ public class EventRule
     public string? UserName { get; set; } 
 
     [JsonProperty("tickettype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? TickettypeId { get; set; } 
+    public int? TicketTypeId { get; set; } 
 
     [JsonProperty("tickettype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? TickettypeGuid { get; set; } 
+    public Guid? TicketTypeGuid { get; set; } 
 
     [JsonProperty("tickettype_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? TickettypeName { get; set; } 
+    public string? TicketTypeName { get; set; } 
 
     [JsonProperty("template_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? TemplateId { get; set; } 

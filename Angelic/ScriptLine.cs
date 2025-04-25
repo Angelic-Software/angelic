@@ -1,5 +1,5 @@
 using System.CodeDom.Compiler;
-using Angelic.Configuration.CustomField;
+using Angelic.Configuration.CustomFields;
 using Newtonsoft.Json;
 
 namespace Angelic;

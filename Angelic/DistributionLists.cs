@@ -25,16 +25,16 @@ public class DistributionLists
     public bool? DynamicMembers { get; set; } 
 
     [JsonProperty("users", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<Users>? Users { get; set; } 
+    public ICollection<Users.Users>? Users { get; set; } 
 
     [JsonProperty("members", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<DistributionListsUser>? Members { get; set; } 
 
     [JsonProperty("addtheseusers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<Users>? Addtheseusers { get; set; } 
+    public ICollection<Users.Users>? Addtheseusers { get; set; } 
 
     [JsonProperty("removetheseusers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<Users>? Removetheseusers { get; set; } 
+    public ICollection<Users.Users>? Removetheseusers { get; set; } 
 
     [JsonProperty("users_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? UsersCount { get; set; } 
@@ -43,7 +43,7 @@ public class DistributionLists
     public bool? Isimport { get; set; } 
 
     [JsonProperty("_importtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Importtype { get; set; } 
+    public string? ImportType { get; set; } 
 
     [JsonProperty("mailbox_from_address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? MailboxFromAddress { get; set; } 

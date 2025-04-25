@@ -10,7 +10,7 @@ public class IntegrationFieldMapping
     public int? Id { get; set; } 
 
     [JsonProperty("fiid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Fiid { get; set; } 
+    public int? FiId { get; set; } 
 
     [JsonProperty("name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Name { get; set; } 

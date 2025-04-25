@@ -22,7 +22,7 @@ public class ContactGroupContacts
     public string? Name { get; set; } 
 
     [JsonProperty("emailaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Emailaddress { get; set; } 
+    public string? EmailAddress { get; set; } 
 
     [JsonProperty("contacttype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Contacttype { get; set; } 

@@ -1,5 +1,7 @@
 using System.CodeDom.Compiler;
-using Angelic.Agent;
+using Angelic.Configuration.Ai;
+using Angelic.Configuration.PdfTemplates;
+using Angelic.Configuration.TeamsAndAgents.Agents;
 using Angelic.Dtos;
 using Angelic.KeyPairs;
 using Newtonsoft.Json;
@@ -343,7 +345,7 @@ public class Report
     public string? AiRunId { get; set; }
     
     [JsonProperty("assistant_request", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public AiAssistantRequest.AiAssistantRequest? AssistantRequest { get; set; }
+    public AiAssistantRequest? AssistantRequest { get; set; }
     
     [JsonProperty("publish_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? PublishType { get; set; }

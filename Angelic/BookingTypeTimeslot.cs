@@ -11,10 +11,10 @@ public class BookingTypeTimeslot
     public string? Id { get; set; } 
 
     [JsonProperty("startdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Startdate { get; set; } 
+    public DateTimeOffset? StartDate { get; set; } 
 
     [JsonProperty("enddate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Enddate { get; set; } 
+    public DateTimeOffset? EndDate { get; set; } 
 
     [JsonProperty("resources", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<LongIdNameKeyPair>? Resources { get; set; } 

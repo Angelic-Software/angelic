@@ -1,6 +1,6 @@
 using System.CodeDom.Compiler;
-using Angelic.Agent;
-using Angelic.Item;
+using Angelic.Configuration.TeamsAndAgents.Agents;
+using Angelic.Items;
 using Newtonsoft.Json;
 
 namespace Angelic.Configuration.Integrations.Microsoft.ExchangeWebServices;

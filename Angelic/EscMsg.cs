@@ -7,7 +7,7 @@ namespace Angelic;
 public class EscMsg
 {
     [JsonProperty("emailaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Emailaddress { get; set; } 
+    public string? EmailAddress { get; set; } 
 
     [JsonProperty("full", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Full { get; set; } 

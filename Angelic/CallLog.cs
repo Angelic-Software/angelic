@@ -1,4 +1,6 @@
 using System.CodeDom.Compiler;
+using Angelic.Areas;
+using Angelic.Sites;
 using Newtonsoft.Json;
 
 namespace Angelic;
@@ -28,7 +30,7 @@ public class CallLog
     public string? ClientName { get; set; } 
 
     [JsonProperty("client_details", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Area.Area? ClientDetails { get; set; } 
+    public Area? ClientDetails { get; set; } 
 
     [JsonProperty("site_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? SiteId { get; set; } 
@@ -46,7 +48,7 @@ public class CallLog
     public string? UserName { get; set; } 
 
     [JsonProperty("user_details", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Users? UserDetails { get; set; } 
+    public Users.Users? UserDetails { get; set; } 
 
     [JsonProperty("callerid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Callerid { get; set; } 
@@ -88,7 +90,7 @@ public class CallLog
     public bool? Complete { get; set; } 
 
     [JsonProperty("_canupdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Canupdate { get; set; } 
+    public bool? CanUpdate { get; set; } 
 
     [JsonProperty("third_party_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ThirdPartyId { get; set; } 

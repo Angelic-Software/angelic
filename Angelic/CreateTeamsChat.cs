@@ -10,6 +10,6 @@ public class CreateTeamsChat
     public string? Name { get; set; } 
 
     [JsonProperty("members", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<Users>? Members { get; set; } 
+    public ICollection<Users.Users>? Members { get; set; } 
 
 }

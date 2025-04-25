@@ -1,5 +1,5 @@
 using System.CodeDom.Compiler;
-using Angelic.Configuration.CustomField;
+using Angelic.Configuration.CustomFields;
 using Newtonsoft.Json;
 
 namespace Angelic;
@@ -14,16 +14,16 @@ public class CustomTable
     public CustomField? Ctfield { get; set; } 
 
     [JsonProperty("customfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CustomField>? Customfields { get; set; } 
+    public ICollection<CustomField>? CustomFields { get; set; } 
 
     [JsonProperty("add_customfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CustomField>? AddCustomfields { get; set; } 
+    public ICollection<CustomField>? AddCustomFields { get; set; } 
 
     [JsonProperty("edit_customfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CustomField>? EditCustomfields { get; set; } 
+    public ICollection<CustomField>? EditCustomFields { get; set; } 
 
     [JsonProperty("delete_customfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<int>? DeleteCustomfields { get; set; } 
+    public ICollection<int>? DeleteCustomFields { get; set; } 
 
     [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Id { get; set; } 
@@ -101,7 +101,7 @@ public class CustomTable
     public bool? Isimport { get; set; } 
 
     [JsonProperty("_importtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Importtype { get; set; } 
+    public string? ImportType { get; set; } 
 
     [JsonProperty("key", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Key { get; set; } 

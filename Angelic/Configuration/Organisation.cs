@@ -1,9 +1,9 @@
 using System.CodeDom.Compiler;
-using Angelic.Configuration.CustomField;
-using Angelic.Configuration.TicketType;
+using Angelic.Configuration.CustomFields;
+using Angelic.Configuration.Tickets.TicketTypes;
 using Newtonsoft.Json;
 
-namespace Angelic;
+namespace Angelic.Configuration;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
 public class Organisation
@@ -64,22 +64,22 @@ public class Organisation
     public string? Portalfolderlocation { get; set; } 
 
     [JsonProperty("departments", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<TreeList>? Departments { get; set; } 
+    public ICollection<TopLevelList>? Departments { get; set; } 
 
     [JsonProperty("linked_client_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? LinkedClientId { get; set; } 
 
     [JsonProperty("allowall_tickettypes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? AllowallTickettypes { get; set; } 
+    public bool? AllowallTicketTypes { get; set; } 
 
     [JsonProperty("allowed_tickettypes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<TicketTypeList>? AllowedTickettypes { get; set; } 
+    public ICollection<TicketTypeList>? AllowedTicketTypes { get; set; } 
 
     [JsonProperty("faqlists", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<FaqListHead>? Faqlists { get; set; } 
 
     [JsonProperty("customfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CustomField>? Customfields { get; set; } 
+    public ICollection<CustomField>? CustomFields { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

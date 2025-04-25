@@ -56,7 +56,7 @@ public class AvalaraDetails
     public bool? Autosyncentitiesonupdate { get; set; } 
 
     [JsonProperty("showmessage", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Showmessage { get; set; } 
+    public bool? ShowMessage { get; set; } 
 
     [JsonProperty("authorized", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Authorized { get; set; } 

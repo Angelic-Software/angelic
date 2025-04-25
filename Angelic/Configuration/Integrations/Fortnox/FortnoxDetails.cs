@@ -59,7 +59,7 @@ public class FortnoxDetails
     public bool? Exchangecode { get; set; } 
 
     [JsonProperty("_importtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Importtype { get; set; } 
+    public string? ImportType { get; set; } 
 
     [JsonProperty("item_group_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ItemGroupName { get; set; } 

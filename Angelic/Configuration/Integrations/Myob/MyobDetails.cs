@@ -74,7 +74,7 @@ namespace Angelic.Configuration.Integrations.Myob;
         public string? Syncentities { get; set; } 
 
         [JsonProperty("showmessage", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Showmessage { get; set; } 
+        public bool? ShowMessage { get; set; } 
 
         [JsonProperty("defaultinvoiceitem", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Defaultinvoiceitem { get; set; } 
@@ -116,7 +116,7 @@ namespace Angelic.Configuration.Integrations.Myob;
         public bool? Disconnect { get; set; } 
 
         [JsonProperty("_importtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Importtype { get; set; } 
+        public string? ImportType { get; set; } 
 
         [JsonProperty("client_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<ExternalLinkList>? ClientMappings { get; set; } 

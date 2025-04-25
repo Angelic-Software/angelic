@@ -1,8 +1,9 @@
 using System.CodeDom.Compiler;
-using Angelic.Configuration.CustomField;
+using Angelic.Attachments;
+using Angelic.Configuration.CustomFields;
 using Newtonsoft.Json;
 
-namespace Angelic;
+namespace Angelic.Users;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
 public class UsersList
@@ -38,7 +39,7 @@ public class UsersList
     public string? Title { get; set; } 
 
     [JsonProperty("emailaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Emailaddress { get; set; } 
+    public string? EmailAddress { get; set; } 
 
     [JsonProperty("phonenumber_preferred", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? PhonenumberPreferred { get; set; } 
@@ -134,7 +135,7 @@ public class UsersList
     public string? SoftwareRoleName { get; set; } 
 
     [JsonProperty("customfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CustomField>? Customfields { get; set; } 
+    public ICollection<CustomField>? CustomFields { get; set; } 
 
     [JsonProperty("attachments", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<Attachment>? Attachments { get; set; } 
@@ -248,13 +249,13 @@ public class UsersList
     public DateTimeOffset? DateOfBirth { get; set; } 
 
     [JsonProperty("_importtypeid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Importtypeid { get; set; } 
+    public int? ImportTypeId { get; set; } 
 
     [JsonProperty("_importthirdpartyid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Importthirdpartyid { get; set; } 
 
     [JsonProperty("_importtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Importtype { get; set; } 
+    public string? ImportType { get; set; } 
 
     [JsonProperty("new_external_link", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ExternalLinkList? NewExternalLink { get; set; } 

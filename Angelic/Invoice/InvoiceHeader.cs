@@ -1,6 +1,6 @@
 using System.CodeDom.Compiler;
-using Angelic.Area;
-using Angelic.Configuration.CustomField;
+using Angelic.Areas;
+using Angelic.Configuration.CustomFields;
 using Angelic.KeyPairs;
 using Newtonsoft.Json;
 
@@ -13,7 +13,7 @@ public class InvoiceHeader
     public bool? Disabled { get; set; } 
 
     [JsonProperty("customfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CustomField>? Customfields { get; set; } 
+    public ICollection<CustomField>? CustomFields { get; set; } 
 
     [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Id { get; set; } 
@@ -385,10 +385,10 @@ public class InvoiceHeader
     public DateTimeOffset? Time { get; set; } 
 
     [JsonProperty("startdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Startdate { get; set; } 
+    public DateTimeOffset? StartDate { get; set; } 
 
     [JsonProperty("enddate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Enddate { get; set; } 
+    public DateTimeOffset? EndDate { get; set; } 
 
     [JsonProperty("daysplus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Daysplus { get; set; } 
@@ -745,13 +745,13 @@ public class InvoiceHeader
     public ICollection<ExternalLinkList>? ExternalLinks { get; set; } 
 
     [JsonProperty("_importtypeid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Importtypeid { get; set; } 
+    public int? ImportTypeId { get; set; } 
 
     [JsonProperty("_importthirdpartyid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Importthirdpartyid { get; set; } 
 
     [JsonProperty("_importtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Importtype { get; set; } 
+    public string? ImportType { get; set; } 
 
     [JsonProperty("new_external_link", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ExternalLinkList? NewExternalLink { get; set; } 

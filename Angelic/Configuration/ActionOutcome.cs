@@ -1,7 +1,8 @@
 using System.CodeDom.Compiler;
+using Angelic.Attachments;
 using Angelic.Configuration.Integrations;
 using Angelic.Configuration.Integrations.Microsoft.Azure.AzureAd;
-using Angelic.Configuration.TicketType;
+using Angelic.Configuration.Tickets.TicketTypes;
 using Angelic.KeyPairs;
 using Newtonsoft.Json;
 
@@ -344,7 +345,7 @@ namespace Angelic.Configuration;
         public ICollection<TicketTypeField>? Fields { get; set; } 
 
         [JsonProperty("newticket_user", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public Users? NewticketUser { get; set; } 
+        public Users.Users? NewTicketUser { get; set; } 
 
         [JsonProperty("from_action_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? FromActionId { get; set; } 
@@ -353,13 +354,13 @@ namespace Angelic.Configuration;
         public int? ToTicketId { get; set; } 
 
         [JsonProperty("newticket_summary", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? NewticketSummary { get; set; } 
+        public string? NewTicketSummary { get; set; } 
 
         [JsonProperty("newticket_details", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? NewticketDetails { get; set; } 
+        public string? NewTicketDetails { get; set; } 
 
         [JsonProperty("newticket_tickettype_hidden", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? NewticketTickettypeHidden { get; set; } 
+        public bool? NewTicketTicketTypeHidden { get; set; } 
 
         [JsonProperty("attachments", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<AttachmentList>? Attachments { get; set; } 
@@ -467,7 +468,7 @@ namespace Angelic.Configuration;
         public bool? ActionResetsResponse { get; set; } 
 
         [JsonProperty("showattachmentstouser", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Showattachmentstouser { get; set; } 
+        public bool? ShowAttachmentstouser { get; set; } 
 
         [JsonProperty("customurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Customurl { get; set; } 
@@ -542,7 +543,7 @@ namespace Angelic.Configuration;
         public string? DefaultAssetTypeName { get; set; } 
 
         [JsonProperty("showautorelease", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Showautorelease { get; set; } 
+        public bool? ShowAutorelease { get; set; } 
 
         [JsonProperty("workflows", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<ValueLabelIsNewKeyPair>? Workflows { get; set; } 
@@ -557,7 +558,7 @@ namespace Angelic.Configuration;
         public int? DefaultAssetStatus { get; set; } 
 
         [JsonProperty("tickettypes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ValueLabelIsNewKeyPair>? Tickettypes { get; set; } 
+        public ICollection<ValueLabelIsNewKeyPair>? TicketTypes { get; set; } 
 
         [JsonProperty("translations", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<LanguagePackTranslationsCustom>? Translations { get; set; } 

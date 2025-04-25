@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Configuration.Emails;
 using Newtonsoft.Json;
 
 namespace Angelic.Configuration.Integrations.Google;

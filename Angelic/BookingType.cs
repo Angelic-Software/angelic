@@ -10,7 +10,7 @@ namespace Angelic;
         public int? Id { get; set; } 
 
         [JsonProperty("assettype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? AssettypeId { get; set; } 
+        public int? AssetTypeId { get; set; } 
 
         [JsonProperty("name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Name { get; set; } 

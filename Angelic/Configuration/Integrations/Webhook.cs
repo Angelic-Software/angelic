@@ -1,6 +1,7 @@
 using System.CodeDom.Compiler;
-using Angelic.Agent;
-using Angelic.Configuration.Workflow;
+using Angelic.Configuration.Integrations.Custom;
+using Angelic.Configuration.TeamsAndAgents.Agents;
+using Angelic.Configuration.Tickets.Workflows;
 using Newtonsoft.Json;
 
 namespace Angelic.Configuration.Integrations;
@@ -90,7 +91,7 @@ namespace Angelic.Configuration.Integrations;
         public string? ZapierUsername { get; set; } 
 
         [JsonProperty("zapier_tickettype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? ZapierTickettypeId { get; set; } 
+        public int? ZapierTicketTypeId { get; set; } 
 
         [JsonProperty("zapier_status_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? ZapierStatusId { get; set; } 

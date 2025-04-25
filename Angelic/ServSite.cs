@@ -1,6 +1,7 @@
 using System.CodeDom.Compiler;
-using Angelic.Asset;
-using Angelic.Configuration.CustomField;
+using Angelic.Assets;
+using Angelic.Configuration;
+using Angelic.Configuration.CustomFields;
 using Newtonsoft.Json;
 
 namespace Angelic;
@@ -105,10 +106,10 @@ public class ServSite
     public int? AssetCount { get; set; } 
 
     [JsonProperty("assettype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? AssettypeId { get; set; } 
+    public int? AssetTypeId { get; set; } 
 
     [JsonProperty("assettype_ids", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? AssettypeIds { get; set; } 
+    public string? AssetTypeIds { get; set; } 
 
     [JsonProperty("current_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? CurrentStatus { get; set; } 
@@ -129,7 +130,7 @@ public class ServSite
     public DateTimeOffset? StatusDate { get; set; } 
 
     [JsonProperty("service_tickettype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ServiceTickettypeId { get; set; } 
+    public int? ServiceTicketTypeId { get; set; } 
 
     [JsonProperty("serviceshownewreqscreen", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Serviceshownewreqscreen { get; set; } 
@@ -141,7 +142,7 @@ public class ServSite
     public int? Newservicereqtype { get; set; } 
 
     [JsonProperty("incident_tickettype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? IncidentTickettypeId { get; set; } 
+    public int? IncidentTicketTypeId { get; set; } 
 
     [JsonProperty("incident_template_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? IncidentTemplateId { get; set; } 
@@ -327,13 +328,13 @@ public class ServSite
     public bool? Allowoptin { get; set; } 
 
     [JsonProperty("service_tickettype_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ServiceTickettypeName { get; set; } 
+    public string? ServiceTicketTypeName { get; set; } 
 
     [JsonProperty("service_template_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ServiceTemplateName { get; set; } 
 
     [JsonProperty("incident_tickettype_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? IncidentTickettypeName { get; set; } 
+    public string? IncidentTicketTypeName { get; set; } 
 
     [JsonProperty("incident_template_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? IncidentTemplateName { get; set; } 
@@ -357,10 +358,10 @@ public class ServSite
     public int? Userlevel { get; set; } 
 
     [JsonProperty("showonmyservicespage", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Showonmyservicespage { get; set; } 
+    public bool? ShowOnmyservicespage { get; set; } 
 
     [JsonProperty("assettype_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? AssettypeName { get; set; } 
+    public string? AssetTypeName { get; set; } 
 
     [JsonProperty("smsmessage", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Smsmessage { get; set; } 
@@ -410,7 +411,7 @@ public class ServSite
     public int? UnsubscribeTicketortemplate { get; set; } 
 
     [JsonProperty("unsubscribe_tickettype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? UnsubscribeTickettypeId { get; set; } 
+    public int? UnsubscribeTicketTypeId { get; set; } 
 
     [JsonProperty("unsubscribe_template_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? UnsubscribeTemplateId { get; set; } 
@@ -428,7 +429,7 @@ public class ServSite
     public string? FieldName { get; set; } 
 
     [JsonProperty("tickettype_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? TickettypeName { get; set; } 
+    public string? TicketTypeName { get; set; } 
 
     [JsonProperty("template_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? TemplateName { get; set; } 
@@ -464,7 +465,7 @@ public class ServSite
     public bool? UserSubscribed { get; set; } 
 
     [JsonProperty("user", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Users? User { get; set; } 
+    public Users.Users? User { get; set; } 
 
     [JsonProperty("emailtemplate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Emailtemplate { get; set; } 
@@ -506,7 +507,7 @@ public class ServSite
     public bool? UserCanunsubscribe { get; set; } 
 
     [JsonProperty("customfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CustomField>? Customfields { get; set; } 
+    public ICollection<CustomField>? CustomFields { get; set; } 
 
     [JsonProperty("translations", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<LanguagePackTranslationsCustom>? Translations { get; set; } 

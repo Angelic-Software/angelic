@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Configuration;
 using Newtonsoft.Json;
 
 namespace Angelic;
@@ -55,7 +56,7 @@ public class CannedText
     public string? AgentName { get; set; } 
 
     [JsonProperty("_canupdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Canupdate { get; set; } 
+    public bool? CanUpdate { get; set; } 
 
     [JsonProperty("access_control", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<AccessControl>? AccessControl { get; set; } 

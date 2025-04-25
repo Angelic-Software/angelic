@@ -28,10 +28,10 @@ public class Downtime
     public double? Hours { get; set; } 
 
     [JsonProperty("startdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Startdate { get; set; } 
+    public DateTimeOffset? StartDate { get; set; } 
 
     [JsonProperty("enddate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Enddate { get; set; } 
+    public DateTimeOffset? EndDate { get; set; } 
 
     [JsonProperty("ended", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Ended { get; set; } 

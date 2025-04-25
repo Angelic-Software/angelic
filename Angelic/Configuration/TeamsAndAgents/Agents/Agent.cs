@@ -1,10 +1,9 @@
 using System.CodeDom.Compiler;
-using Angelic.Configuration;
-using Angelic.Configuration.CustomField;
+using Angelic.Configuration.CustomFields;
 using Angelic.KeyPairs;
 using Newtonsoft.Json;
 
-namespace Angelic.Agent;
+namespace Angelic.Configuration.TeamsAndAgents.Agents;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
     public class Agent
@@ -88,7 +87,7 @@ namespace Angelic.Agent;
         public ICollection<AgentAreaRestriction>? Clients { get; set; } 
 
         [JsonProperty("tickettypes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<AgentTicketType>? Tickettypes { get; set; } 
+        public ICollection<AgentTicketType>? TicketTypes { get; set; } 
 
         [JsonProperty("qualifications", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<AgentQualification>? Qualifications { get; set; } 
@@ -109,7 +108,7 @@ namespace Angelic.Agent;
         public string? CurrentActionName { get; set; } 
 
         [JsonProperty("assettypes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<AgentAssetType>? Assettypes { get; set; } 
+        public ICollection<AgentAssetType>? AssetTypes { get; set; } 
 
         [JsonProperty("googleemail", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Googleemail { get; set; } 
@@ -394,7 +393,7 @@ namespace Angelic.Agent;
         public bool? Isimport { get; set; } 
 
         [JsonProperty("_importtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Importtype { get; set; } 
+        public string? ImportType { get; set; } 
 
         [JsonProperty("_importtoken", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Importtoken { get; set; } 
@@ -406,7 +405,7 @@ namespace Angelic.Agent;
         public int? AzureRoleid { get; set; } 
 
         [JsonProperty("customfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<CustomField>? Customfields { get; set; } 
+        public ICollection<CustomField>? CustomFields { get; set; } 
 
         [JsonProperty("chargerates", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<Restriction>? Chargerates { get; set; } 
@@ -577,13 +576,13 @@ namespace Angelic.Agent;
         public string? SignatureId { get; set; } 
 
         [JsonProperty("_signature", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Signature { get; set; } 
+        public string? PrefixedUnderscoreSignature { get; set; } 
 
         [JsonProperty("is_admin", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsAdmin { get; set; } 
 
         [JsonProperty("ac_tickettypes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<AccessControl>? AcTickettypes { get; set; } 
+        public ICollection<AccessControl>? AcTicketTypes { get; set; } 
 
         [JsonProperty("ac_approvals", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<AccessControl>? AcApprovals { get; set; } 
@@ -592,10 +591,10 @@ namespace Angelic.Agent;
         public ICollection<AccessControl>? AcRules { get; set; } 
 
         [JsonProperty("ac_cannedtext", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<AccessControl>? AcCannedtext { get; set; } 
+        public ICollection<AccessControl>? AcCannedText { get; set; } 
 
         [JsonProperty("ac_customfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<AccessControl>? AcCustomfields { get; set; } 
+        public ICollection<AccessControl>? AcCustomFields { get; set; } 
 
         [JsonProperty("ac_customtables", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<AccessControl>? AcCustomtables { get; set; } 
@@ -691,7 +690,7 @@ namespace Angelic.Agent;
         public string? PagerdutyEmail { get; set; } 
 
         [JsonProperty("ac_assettypes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<AccessControl>? AcAssettypes { get; set; } 
+        public ICollection<AccessControl>? AcAssetTypes { get; set; } 
 
         [JsonProperty("ac_assetgroups", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<AccessControl>? AcAssetgroups { get; set; } 
@@ -874,10 +873,10 @@ namespace Angelic.Agent;
         public ICollection<AgentAppointment>? Unameappointmenttypes { get; set; } 
 
         [JsonProperty("_canupdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Canupdate { get; set; } 
+        public bool? CanUpdate { get; set; } 
 
         [JsonProperty("_canupdate_moreinfo", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? CanupdateMoreinfo { get; set; } 
+        public bool? CanUpdateMoreinfo { get; set; } 
 
         [JsonProperty("logmeinid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Logmeinid { get; set; } 

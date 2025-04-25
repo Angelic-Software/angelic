@@ -1,9 +1,13 @@
 using System.CodeDom.Compiler;
-using Angelic.Agent;
-using Angelic.Asset;
-using Angelic.Configuration.CustomField;
+using Angelic.Assets;
+using Angelic.Attachments;
+using Angelic.Configuration;
+using Angelic.Configuration.CustomFields;
 using Angelic.Configuration.Integrations.Wordpress;
-using Angelic.Configuration.TicketType;
+using Angelic.Configuration.TeamsAndAgents;
+using Angelic.Configuration.TeamsAndAgents.Agents;
+using Angelic.Configuration.Tickets.TicketTypes;
+using Angelic.Tickets;
 using Newtonsoft.Json;
 
 namespace Angelic;
@@ -48,7 +52,7 @@ namespace Angelic;
         public DateTimeOffset? NextReviewDate { get; set; } 
 
         [JsonProperty("customfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<CustomField>? Customfields { get; set; } 
+        public ICollection<CustomField>? CustomFields { get; set; } 
 
         [JsonProperty("limit_start_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public DateTimeOffset? LimitStartDate { get; set; } 
@@ -141,7 +145,7 @@ namespace Angelic;
         public int? YourVote { get; set; } 
 
         [JsonProperty("showforall", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Showforall { get; set; } 
+        public bool? ShowForall { get; set; } 
 
         [JsonProperty("attachments", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<AttachmentList>? Attachments { get; set; } 
@@ -264,7 +268,7 @@ namespace Angelic;
         public ICollection<Permalinks>? Kbpermalinks { get; set; } 
 
         [JsonProperty("negativeFeedbackTicket", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public Ticket.Ticket? NegativeFeedbackTicket { get; set; } 
+        public Ticket? NegativeFeedbackTicket { get; set; } 
 
         [JsonProperty("generatetoken", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Generatetoken { get; set; } 
@@ -285,12 +289,12 @@ namespace Angelic;
         public int? TicketTemplateId { get; set; } 
 
         [JsonProperty("_importtypeid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Importtypeid { get; set; } 
+        public int? ImportTypeId { get; set; } 
 
         [JsonProperty("_importthirdpartyid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Importthirdpartyid { get; set; } 
 
         [JsonProperty("_importtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Importtype { get; set; } 
+        public string? ImportType { get; set; } 
 
     }

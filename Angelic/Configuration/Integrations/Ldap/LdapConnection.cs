@@ -105,28 +105,28 @@ namespace Angelic.Configuration.Integrations.Ldap;
         public ICollection<LdapString>? CabLdapStrings { get; set; } 
 
         [JsonProperty("halointegratorenabled", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Halointegratorenabled { get; set; } 
+        public bool? HaloIntegratorenabled { get; set; } 
 
         [JsonProperty("halointegrator_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HalointegratorLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorLastSync { get; set; } 
 
         [JsonProperty("halointegrator_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? HalointegratorLasterror { get; set; } 
+        public string? HaloIntegratorLastError { get; set; } 
 
         [JsonProperty("halointegrator_importtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? HalointegratorImporttype { get; set; } 
+        public int? HaloIntegratorImportType { get; set; } 
 
         [JsonProperty("halointegrator_batch", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? HalointegratorBatch { get; set; } 
+        public int? HaloIntegratorBatch { get; set; } 
 
         [JsonProperty("halointegrator_ipaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? HalointegratorIpaddress { get; set; } 
+        public string? HaloIntegratorIpaddress { get; set; } 
 
         [JsonProperty("halointegrator_allowedclientidslist", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ValueLabelKeyPair>? HalointegratorAllowedclientidslist { get; set; } 
+        public ICollection<ValueLabelKeyPair>? HaloIntegratorAllowedclientidslist { get; set; } 
 
         [JsonProperty("halointegrator_allowedclientids", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? HalointegratorAllowedclientids { get; set; } 
+        public string? HaloIntegratorAllowedclientids { get; set; } 
 
         [JsonProperty("user_matching_fields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? UserMatchingFields { get; set; } 

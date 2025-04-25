@@ -12,6 +12,7 @@
 
     <ItemGroup>
       <Folder Include="Configuration\Integrations\Adobe\" />
+      <Folder Include="Configuration\Items\" />
     </ItemGroup>
 
 </Project>

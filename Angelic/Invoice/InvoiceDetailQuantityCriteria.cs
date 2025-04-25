@@ -16,7 +16,7 @@ public class InvoiceDetailQuantityCriteria
     public string? Tablename { get; set; } 
 
     [JsonProperty("fieldname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Fieldname { get; set; } 
+    public string? FieldName { get; set; } 
 
     [JsonProperty("value_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ValueType { get; set; } 

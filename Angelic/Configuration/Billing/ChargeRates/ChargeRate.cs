@@ -1,7 +1,7 @@
 using System.CodeDom.Compiler;
 using Newtonsoft.Json;
 
-namespace Angelic;
+namespace Angelic.Configuration.Billing.ChargeRates;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
 public class ChargeRate
@@ -19,7 +19,7 @@ public class ChargeRate
     public int? ChargeId { get; set; } 
 
     [JsonProperty("startdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Startdate { get; set; } 
+    public DateTimeOffset? StartDate { get; set; } 
 
     [JsonProperty("expirydate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? Expirydate { get; set; } 

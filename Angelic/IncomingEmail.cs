@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Configuration.Emails.Mailboxes;
 using Newtonsoft.Json;
 
 namespace Angelic;
@@ -49,7 +50,7 @@ public class IncomingEmail
     public string? To { get; set; } 
 
     [JsonProperty("user", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Users? User { get; set; } 
+    public Users.Users? User { get; set; } 
 
     [JsonProperty("subject", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Subject { get; set; } 

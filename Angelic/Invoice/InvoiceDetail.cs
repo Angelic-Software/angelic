@@ -1,5 +1,7 @@
 using System.CodeDom.Compiler;
-using Angelic.Configuration.CustomField;
+using Angelic.Configuration.Billing.Taxes;
+using Angelic.Configuration.CustomFields;
+using Angelic.Items;
 using Newtonsoft.Json;
 
 namespace Angelic.Invoice;
@@ -8,7 +10,7 @@ namespace Angelic.Invoice;
 public class InvoiceDetail
 {
     [JsonProperty("customfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CustomField>? Customfields { get; set; } 
+    public ICollection<CustomField>? CustomFields { get; set; } 
 
     [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Id { get; set; } 
@@ -146,7 +148,7 @@ public class InvoiceDetail
     public string? ItemExternalReference { get; set; } 
 
     [JsonProperty("linked_item", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Item.Item? LinkedItem { get; set; } 
+    public Item? LinkedItem { get; set; } 
 
     [JsonProperty("item_tax_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ItemTaxName { get; set; } 
@@ -242,10 +244,10 @@ public class InvoiceDetail
     public int? Sequenceid { get; set; } 
 
     [JsonProperty("startdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Startdate { get; set; } 
+    public DateTimeOffset? StartDate { get; set; } 
 
     [JsonProperty("enddate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Enddate { get; set; } 
+    public DateTimeOffset? EndDate { get; set; } 
 
     [JsonProperty("autorenew", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Autorenew { get; set; } 
@@ -470,7 +472,7 @@ public class InvoiceDetail
     public double? TotalPriceConverted { get; set; } 
 
     [JsonProperty("_importtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Importtype { get; set; } 
+    public string? ImportType { get; set; } 
 
     [JsonProperty("_isimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Isimport { get; set; } 

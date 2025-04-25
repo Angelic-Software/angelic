@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.KeyPairs;
 using Newtonsoft.Json;
 
 namespace Angelic.Configuration.Integrations.Amazon.Aws;
@@ -85,5 +86,5 @@ public class AwsDetails
     public string? Regions { get; set; }
 
     [JsonProperty("regions_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<KeyPair2>? RegionsList { get; set; }
+    public ICollection<ValueLabelIsNewKeyPair>? RegionsList { get; set; }
 }

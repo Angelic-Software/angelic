@@ -1,6 +1,6 @@
 using System.CodeDom.Compiler;
 using Angelic.Configuration.Integrations;
-using Angelic.Configuration.Workflow;
+using Angelic.Configuration.Tickets.Workflows;
 using Angelic.KeyPairs;
 using Newtonsoft.Json;
 
@@ -52,10 +52,10 @@ public class ChatProfile
     public int? Logticket { get; set; } 
 
     [JsonProperty("tickettype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? TickettypeId { get; set; } 
+    public int? TicketTypeId { get; set; } 
 
     [JsonProperty("tickettype_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? TickettypeName { get; set; } 
+    public string? TicketTypeName { get; set; } 
 
     [JsonProperty("icon", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Icon { get; set; } 

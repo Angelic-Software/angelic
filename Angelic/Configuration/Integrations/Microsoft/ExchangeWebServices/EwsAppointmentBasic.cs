@@ -1,6 +1,7 @@
 using System.CodeDom.Compiler;
-using Angelic.Appointment;
-using Angelic.Item;
+using Angelic.Appointments;
+using Angelic.Configuration.Emails;
+using Angelic.Items;
 using Newtonsoft.Json;
 
 namespace Angelic.Configuration.Integrations.Microsoft.ExchangeWebServices;

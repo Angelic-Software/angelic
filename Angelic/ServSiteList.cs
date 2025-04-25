@@ -97,10 +97,10 @@ public class ServSiteList
     public int? AssetCount { get; set; } 
 
     [JsonProperty("assettype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? AssettypeId { get; set; } 
+    public int? AssetTypeId { get; set; } 
 
     [JsonProperty("assettype_ids", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? AssettypeIds { get; set; } 
+    public string? AssetTypeIds { get; set; } 
 
     [JsonProperty("current_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? CurrentStatus { get; set; } 
@@ -121,7 +121,7 @@ public class ServSiteList
     public DateTimeOffset? StatusDate { get; set; } 
 
     [JsonProperty("service_tickettype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ServiceTickettypeId { get; set; } 
+    public int? ServiceTicketTypeId { get; set; } 
 
     [JsonProperty("serviceshownewreqscreen", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Serviceshownewreqscreen { get; set; } 
@@ -133,7 +133,7 @@ public class ServSiteList
     public int? Newservicereqtype { get; set; } 
 
     [JsonProperty("incident_tickettype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? IncidentTickettypeId { get; set; } 
+    public int? IncidentTicketTypeId { get; set; } 
 
     [JsonProperty("incident_template_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? IncidentTemplateId { get; set; } 

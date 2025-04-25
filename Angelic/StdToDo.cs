@@ -1,5 +1,5 @@
 using System.CodeDom.Compiler;
-using Angelic.Area;
+using Angelic.Areas;
 using Newtonsoft.Json;
 
 namespace Angelic;

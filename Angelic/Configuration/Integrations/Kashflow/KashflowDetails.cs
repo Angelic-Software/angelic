@@ -55,7 +55,7 @@ public class KashflowDetails
     public bool? ShowMessage { get; set; } 
 
     [JsonProperty("_importtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Importtype { get; set; } 
+    public string? ImportType { get; set; } 
 
     [JsonProperty("client_item_tax_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ClientItemTaxName { get; set; } 

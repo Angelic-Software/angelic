@@ -1,9 +1,10 @@
 using System.CodeDom.Compiler;
-using Angelic.Asset;
-using Angelic.Configuration.CustomField;
-using Angelic.Configuration.TicketRules;
+using Angelic.Assets;
+using Angelic.Configuration.CustomFields;
+using Angelic.Configuration.Tickets.TicketRule;
 using Angelic.Invoice;
-using Angelic.Ticket;
+using Angelic.Tickets;
+using Angelic.Users;
 using Newtonsoft.Json;
 
 namespace Angelic;
@@ -57,7 +58,7 @@ public class StdRequest
     public string? Summary { get; set; } 
 
     [JsonProperty("tickettype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? TickettypeId { get; set; } 
+    public int? TicketTypeId { get; set; } 
 
     [JsonProperty("rule_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? RuleCount { get; set; } 
@@ -99,7 +100,7 @@ public class StdRequest
     public int? ExecutionType { get; set; } 
 
     [JsonProperty("startdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Startdate { get; set; } 
+    public DateTimeOffset? StartDate { get; set; } 
 
     [JsonProperty("end_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? EndDate { get; set; } 
@@ -183,7 +184,7 @@ public class StdRequest
     public string? AgentName { get; set; } 
 
     [JsonProperty("showforusers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Showforusers { get; set; } 
+    public bool? ShowForusers { get; set; } 
 
     [JsonProperty("excludefromsla", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Excludefromsla { get; set; } 
@@ -300,7 +301,7 @@ public class StdRequest
     public int? CopiedFromId { get; set; } 
 
     [JsonProperty("customfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CustomField>? Customfields { get; set; } 
+    public ICollection<CustomField>? CustomFields { get; set; } 
 
     [JsonProperty("assets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<DeviceList>? Assets { get; set; } 
@@ -357,7 +358,7 @@ public class StdRequest
     public ICollection<ServSiteList>? Services { get; set; } 
 
     [JsonProperty("_canupdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Canupdate { get; set; } 
+    public bool? CanUpdate { get; set; } 
 
     [JsonProperty("user_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? UserId { get; set; } 
@@ -399,10 +400,10 @@ public class StdRequest
     public ICollection<TicketRulesCriteria>? Automationcriteria { get; set; } 
 
     [JsonProperty("isclone", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isclone { get; set; } 
+    public bool? IsClone { get; set; } 
 
     [JsonProperty("showforusers_int", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ShowforusersInt { get; set; } 
+    public int? ShowForusersInt { get; set; } 
 
     [JsonProperty("forwardinboundupdates_int", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ForwardinboundupdatesInt { get; set; } 
@@ -498,7 +499,7 @@ public class StdRequest
     public string? Clients { get; set; } 
 
     [JsonProperty("tickettype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? TickettypeGuid { get; set; } 
+    public Guid? TicketTypeGuid { get; set; } 
 
     [JsonProperty("automationtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Automationtype { get; set; } 
@@ -516,7 +517,7 @@ public class StdRequest
     public int? OptionalStatusId { get; set; } 
 
     [JsonProperty("optional_tickettype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? OptionalTickettypeId { get; set; } 
+    public int? OptionalTicketTypeId { get; set; } 
 
     [JsonProperty("optional_create_locked", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? OptionalCreateLocked { get; set; } 
@@ -528,7 +529,7 @@ public class StdRequest
     public int? OptionalExcludefromsla { get; set; } 
 
     [JsonProperty("optional_customfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CustomField>? OptionalCustomfields { get; set; } 
+    public ICollection<CustomField>? OptionalCustomFields { get; set; } 
 
     [JsonProperty("optional_assets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<DeviceList>? OptionalAssets { get; set; } 
@@ -537,7 +538,7 @@ public class StdRequest
     public int? OptionalForwardinboundupdates { get; set; } 
 
     [JsonProperty("optional_showforusers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? OptionalShowforusers { get; set; } 
+    public int? OptionalShowForusers { get; set; } 
 
     [JsonProperty("optional_urgency", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? OptionalUrgency { get; set; } 

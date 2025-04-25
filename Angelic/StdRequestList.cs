@@ -1,6 +1,6 @@
 using System.CodeDom.Compiler;
-using Angelic.Asset;
-using Angelic.Configuration.CustomField;
+using Angelic.Assets;
+using Angelic.Configuration.CustomFields;
 using Newtonsoft.Json;
 
 namespace Angelic;
@@ -54,7 +54,7 @@ public class StdRequestList
     public string? Summary { get; set; } 
 
     [JsonProperty("tickettype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? TickettypeId { get; set; } 
+    public int? TicketTypeId { get; set; } 
 
     [JsonProperty("rule_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? RuleCount { get; set; } 
@@ -96,7 +96,7 @@ public class StdRequestList
     public int? ExecutionType { get; set; } 
 
     [JsonProperty("startdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Startdate { get; set; } 
+    public DateTimeOffset? StartDate { get; set; } 
 
     [JsonProperty("end_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? EndDate { get; set; } 
@@ -132,7 +132,7 @@ public class StdRequestList
     public string? Clients { get; set; } 
 
     [JsonProperty("tickettype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? TickettypeGuid { get; set; } 
+    public Guid? TicketTypeGuid { get; set; } 
 
     [JsonProperty("automationtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Automationtype { get; set; } 
@@ -150,7 +150,7 @@ public class StdRequestList
     public int? OptionalStatusId { get; set; } 
 
     [JsonProperty("optional_tickettype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? OptionalTickettypeId { get; set; } 
+    public int? OptionalTicketTypeId { get; set; } 
 
     [JsonProperty("optional_create_locked", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? OptionalCreateLocked { get; set; } 
@@ -162,7 +162,7 @@ public class StdRequestList
     public int? OptionalExcludefromsla { get; set; } 
 
     [JsonProperty("optional_customfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CustomField>? OptionalCustomfields { get; set; } 
+    public ICollection<CustomField>? OptionalCustomFields { get; set; } 
 
     [JsonProperty("optional_assets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<DeviceList>? OptionalAssets { get; set; } 
@@ -171,7 +171,7 @@ public class StdRequestList
     public int? OptionalForwardinboundupdates { get; set; } 
 
     [JsonProperty("optional_showforusers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? OptionalShowforusers { get; set; } 
+    public int? OptionalShowForusers { get; set; } 
 
     [JsonProperty("optional_urgency", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? OptionalUrgency { get; set; } 

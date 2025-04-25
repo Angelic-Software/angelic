@@ -1,16 +1,22 @@
 using System.CodeDom.Compiler;
-using Angelic.Configuration.CustomField;
-using Angelic.Configuration.TicketType;
-using Angelic.Configuration.Workflow;
+using Angelic.Attachments;
+using Angelic.Configuration;
+using Angelic.Configuration.CustomFields;
+using Angelic.Configuration.PdfTemplates;
+using Angelic.Configuration.Tickets.TicketTypes;
+using Angelic.Configuration.Tickets.Workflows;
+using Angelic.SalesOrders;
+using Angelic.Sites;
+using Angelic.Users;
 using Newtonsoft.Json;
 
-namespace Angelic;
+namespace Angelic.Quotation;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
 public class QuotationHeader
 {
     [JsonProperty("customfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CustomField>? Customfields { get; set; } 
+    public ICollection<CustomField>? CustomFields { get; set; } 
 
     [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Id { get; set; } 
@@ -64,7 +70,7 @@ public class QuotationHeader
     public string? Note { get; set; } 
 
     [JsonProperty("user", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Users? User { get; set; } 
+    public Users.Users? User { get; set; } 
 
     [JsonProperty("user_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? UserId { get; set; } 
@@ -409,7 +415,7 @@ public class QuotationHeader
     public int? WorkflowId { get; set; } 
 
     [JsonProperty("_isclone", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isclone { get; set; } 
+    public bool? IsClone { get; set; } 
 
     [JsonProperty("_revision_from_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? RevisionFromId { get; set; } 
@@ -427,7 +433,7 @@ public class QuotationHeader
     public PdfTemplate? Customisedpdf { get; set; } 
 
     [JsonProperty("new_approvalprocess_role_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? NewApprovalprocessRoleId { get; set; } 
+    public int? NewApprovalProcessRoleId { get; set; } 
 
     [JsonProperty("is_quote_screen", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? IsQuoteScreen { get; set; } 
@@ -508,13 +514,13 @@ public class QuotationHeader
     public ICollection<ExternalLinkList>? ExternalLinks { get; set; } 
 
     [JsonProperty("_importtypeid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Importtypeid { get; set; } 
+    public int? ImportTypeId { get; set; } 
 
     [JsonProperty("_importthirdpartyid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Importthirdpartyid { get; set; } 
 
     [JsonProperty("_importtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Importtype { get; set; } 
+    public string? ImportType { get; set; } 
 
     [JsonProperty("new_external_link", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ExternalLinkList? NewExternalLink { get; set; } 

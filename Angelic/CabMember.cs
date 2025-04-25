@@ -28,7 +28,7 @@ public class CabMember
     public string? MemberName { get; set; } 
 
     [JsonProperty("emailaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Emailaddress { get; set; } 
+    public string? EmailAddress { get; set; } 
 
     [JsonProperty("is_mandatory", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? IsMandatory { get; set; } 

@@ -1,8 +1,8 @@
 using System.CodeDom.Compiler;
-using Angelic.Configuration.CustomField;
+using Angelic.Configuration.CustomFields;
 using Newtonsoft.Json;
 
-namespace Angelic;
+namespace Angelic.Quotation;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
 public class QuotationApproval
@@ -35,6 +35,6 @@ public class QuotationApproval
     public ICollection<QuotationDetail>? OptionalLines { get; set; } 
 
     [JsonProperty("customfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CustomField>? Customfields { get; set; } 
+    public ICollection<CustomField>? CustomFields { get; set; } 
 
 }

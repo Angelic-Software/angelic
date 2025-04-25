@@ -16,10 +16,10 @@ public class PagerDutyMapping
     public string? ServiceName { get; set; } 
 
     [JsonProperty("default_tickettype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? DefaultTickettype { get; set; } 
+    public int? DefaultTicketType { get; set; } 
 
     [JsonProperty("tickettype_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? TickettypeName { get; set; } 
+    public string? TicketTypeName { get; set; } 
 
     [JsonProperty("default_agent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? DefaultAgent { get; set; } 

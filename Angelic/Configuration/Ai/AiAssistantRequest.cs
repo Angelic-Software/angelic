@@ -1,6 +1,6 @@
 using Newtonsoft.Json;
 
-namespace Angelic.AiAssistantRequest;
+namespace Angelic.Configuration.Ai;
 
 public class AiAssistantRequest
 {

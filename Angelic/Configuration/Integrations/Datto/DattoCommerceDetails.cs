@@ -17,13 +17,13 @@ public class DattoCommerceDetails
     public string? NewApiKey { get; set; } 
 
     [JsonProperty("halointegratorenabled", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Halointegratorenabled { get; set; } 
+    public bool? HaloIntegratorenabled { get; set; } 
 
     [JsonProperty("halointegrator_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? HalointegratorLastsync { get; set; } 
+    public DateTimeOffset? HaloIntegratorLastSync { get; set; } 
 
     [JsonProperty("halointegrator_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? HalointegratorLasterror { get; set; } 
+    public string? HaloIntegratorLastError { get; set; } 
 
     [JsonProperty("item_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ItemGroup { get; set; } 

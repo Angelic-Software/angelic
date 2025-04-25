@@ -13,7 +13,7 @@ public class JiraMappings
     public int? RtId { get; set; } 
 
     [JsonProperty("rtid_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? RtidGuid { get; set; } 
+    public Guid? RtIdGuid { get; set; } 
     
     [JsonProperty("name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Name { get; set; } 

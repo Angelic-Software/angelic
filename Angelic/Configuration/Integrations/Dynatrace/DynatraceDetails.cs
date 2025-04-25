@@ -38,7 +38,7 @@ public class DynatraceDetails
     public int? Assetimportidentifier { get; set; } 
 
     [JsonProperty("assetimportidentifier_fieldname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? AssetimportidentifierFieldname { get; set; } 
+    public string? AssetimportidentifierFieldName { get; set; } 
 
     [JsonProperty("host_fieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<IntegrationFieldMapping>? HostFieldmappings { get; set; } 
@@ -53,7 +53,7 @@ public class DynatraceDetails
     public bool? Enableintegrator { get; set; } 
 
     [JsonProperty("lastsyncdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Lastsyncdate { get; set; } 
+    public DateTimeOffset? LastSyncDate { get; set; } 
 
     [JsonProperty("lastsyncerror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Lastsyncerror { get; set; } 
@@ -92,10 +92,10 @@ public class DynatraceDetails
     public string? DefaultAssetgroupname { get; set; } 
 
     [JsonProperty("assettype_choice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? AssettypeChoice { get; set; } 
+    public int? AssetTypeChoice { get; set; } 
 
     [JsonProperty("assettype_field", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? AssettypeField { get; set; } 
+    public string? AssetTypeField { get; set; } 
 
     [JsonProperty("webhook_username", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? WebhookUsername { get; set; } 

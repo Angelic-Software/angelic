@@ -1,5 +1,5 @@
 using System.CodeDom.Compiler;
-using Angelic.Configuration.TicketType;
+using Angelic.Configuration.Tickets.TicketTypes;
 using Newtonsoft.Json;
 
 namespace Angelic;
@@ -47,10 +47,10 @@ public class UserDashboardButtons
     public bool? Usedefault { get; set; } 
 
     [JsonProperty("showonhomescreen", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Showonhomescreen { get; set; } 
+    public bool? ShowOnhomescreen { get; set; } 
 
     [JsonProperty("showonnavbar", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Showonnavbar { get; set; } 
+    public bool? ShowOnnavbar { get; set; } 
 
     [JsonProperty("iconcolour", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Iconcolour { get; set; } 
@@ -65,7 +65,7 @@ public class UserDashboardButtons
     public int? Udbtickettype { get; set; } 
 
     [JsonProperty("tickettype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? TickettypeGuid { get; set; } 
+    public Guid? TicketTypeGuid { get; set; } 
 
     [JsonProperty("displaytype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Displaytype { get; set; } 
@@ -113,7 +113,7 @@ public class UserDashboardButtons
     public int? TicketColumnOverride { get; set; } 
 
     [JsonProperty("tickettype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Tickettype { get; set; } 
+    public string? TicketType { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

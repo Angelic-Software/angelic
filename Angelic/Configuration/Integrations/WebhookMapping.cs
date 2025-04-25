@@ -19,10 +19,10 @@ public class WebhookMapping
     public string? Fiusagename { get; set; } 
 
     [JsonProperty("fiid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Fiid { get; set; } 
+    public int? FiId { get; set; } 
 
     [JsonProperty("finame", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Finame { get; set; } 
+    public string? FiName { get; set; } 
 
     [JsonProperty("filabel", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Filabel { get; set; } 

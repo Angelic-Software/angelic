@@ -46,9 +46,9 @@ public class PresignedUrlRequest
     public bool? AllowAnonUpload { get; set; } 
 
     [JsonProperty("tickettype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? TickettypeId { get; set; } 
+    public int? TicketTypeId { get; set; } 
 
     [JsonProperty("tickettype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? TickettypeGuid { get; set; } 
+    public string? TicketTypeGuid { get; set; } 
 
 }

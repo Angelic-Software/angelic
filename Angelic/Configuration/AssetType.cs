@@ -1,5 +1,6 @@
 using System.CodeDom.Compiler;
-using Angelic.Configuration.CustomField;
+using Angelic.Configuration.CustomFields;
+using Angelic.Sites;
 using Newtonsoft.Json;
 
 namespace Angelic.Configuration;
@@ -170,13 +171,13 @@ public class AssetType
     public int? Linkedcontracttype { get; set; } 
 
     [JsonProperty("fiid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Fiid { get; set; } 
+    public int? FiId { get; set; } 
 
     [JsonProperty("fiid_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? FiidGuid { get; set; } 
+    public Guid? FiIdGuid { get; set; } 
 
     [JsonProperty("finame", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Finame { get; set; } 
+    public string? FiName { get; set; } 
 
     [JsonProperty("new_icon", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? NewIcon { get; set; } 
@@ -236,7 +237,7 @@ public class AssetType
     public ICollection<AccessControl>? AccessControl { get; set; } 
 
     [JsonProperty("newticket_priority", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? NewticketPriority { get; set; } 
+    public int? NewTicketPriority { get; set; } 
 
     [JsonProperty("access_control_level", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? AccessControlLevel { get; set; } 

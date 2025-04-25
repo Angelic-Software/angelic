@@ -16,7 +16,7 @@ public class CategoryRestriction
     public int? ClientId { get; set; } 
 
     [JsonProperty("tickettype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? TickettypeId { get; set; } 
+    public int? TicketTypeId { get; set; } 
 
     [JsonProperty("team_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? TeamId { get; set; } 

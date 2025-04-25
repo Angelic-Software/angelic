@@ -1,10 +1,11 @@
 using System.CodeDom.Compiler;
-using Angelic.Configuration.CustomField;
+using Angelic.Configuration.Billing.Taxes;
+using Angelic.Configuration.CustomFields;
 using Angelic.KeyPairs;
-using Angelic.Ticket;
+using Angelic.Tickets;
 using Newtonsoft.Json;
 
-namespace Angelic;
+namespace Angelic.Quotation;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
 public class QuotationDetail
@@ -115,7 +116,7 @@ public class QuotationDetail
     public int? Billingperiod { get; set; } 
 
     [JsonProperty("startdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Startdate { get; set; } 
+    public DateTimeOffset? StartDate { get; set; } 
 
     [JsonProperty("autorenew", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Autorenew { get; set; } 
@@ -229,7 +230,7 @@ public class QuotationDetail
     public int? CreatedFromGroupId { get; set; } 
 
     [JsonProperty("customfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CustomField>? Customfields { get; set; } 
+    public ICollection<CustomField>? CustomFields { get; set; } 
 
     [JsonProperty("chargerates", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<Lookup>? Chargerates { get; set; } 
@@ -355,7 +356,7 @@ public class QuotationDetail
     public double? TotalPriceConverted { get; set; } 
 
     [JsonProperty("_importtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Importtype { get; set; } 
+    public string? ImportType { get; set; } 
 
     [JsonProperty("_isimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Isimport { get; set; } 

@@ -31,7 +31,7 @@ public class RemoteSessionData
     public string? Username { get; set; } 
 
     [JsonProperty("emailaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Emailaddress { get; set; } 
+    public string? EmailAddress { get; set; } 
 
     [JsonProperty("sessionstate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Sessionstate { get; set; } 

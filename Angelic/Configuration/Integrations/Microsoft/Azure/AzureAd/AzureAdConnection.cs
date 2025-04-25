@@ -1,5 +1,5 @@
 using System.CodeDom.Compiler;
-using Angelic.Area;
+using Angelic.Areas;
 using Angelic.Configuration.Integrations.Microsoft.Azure.AzureDelta;
 using Angelic.KeyPairs;
 using Newtonsoft.Json;
@@ -73,13 +73,13 @@ public class AzureAdConnection
     public ICollection<ValueLabelIsNewKeyPair>? AgentMatchingList { get; set; } 
 
     [JsonProperty("halointegratorenabled", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Halointegratorenabled { get; set; } 
+    public bool? HaloIntegratorenabled { get; set; } 
 
     [JsonProperty("halointegrator_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? HalointegratorLastsync { get; set; } 
+    public DateTimeOffset? HaloIntegratorLastSync { get; set; } 
 
     [JsonProperty("halointegrator_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? HalointegratorLasterror { get; set; } 
+    public string? HaloIntegratorLastError { get; set; } 
 
     [JsonProperty("redirect_uri", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? RedirectUri { get; set; } 
@@ -109,7 +109,7 @@ public class AzureAdConnection
     public string? DefaultsiteName { get; set; } 
 
     [JsonProperty("assettype_choice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? AssettypeChoice { get; set; } 
+    public int? AssetTypeChoice { get; set; } 
 
     [JsonProperty("default_assetgroup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? DefaultAssetgroup { get; set; } 
@@ -121,25 +121,25 @@ public class AzureAdConnection
     public string? DefaultAssetgroupName { get; set; } 
 
     [JsonProperty("default_assettype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? DefaultAssettype { get; set; } 
+    public int? DefaultAssetType { get; set; } 
 
     [JsonProperty("default_assettype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? DefaultAssettypeGuid { get; set; } 
+    public Guid? DefaultAssetTypeGuid { get; set; } 
 
     [JsonProperty("default_assettype_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? DefaultAssettypeName { get; set; } 
+    public string? DefaultAssetTypeName { get; set; } 
 
     [JsonProperty("assettype_field", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? AssettypeField { get; set; } 
+    public string? AssetTypeField { get; set; } 
 
     [JsonProperty("assettype_fieldname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? AssettypeFieldname { get; set; } 
+    public string? AssetTypeFieldName { get; set; } 
 
     [JsonProperty("import_identifier", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ImportIdentifier { get; set; } 
 
     [JsonProperty("import_identifier_fieldname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ImportIdentifierFieldname { get; set; } 
+    public string? ImportIdentifierFieldName { get; set; } 
 
     [JsonProperty("accountenabled", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Accountenabled { get; set; } 
@@ -310,10 +310,10 @@ public class AzureAdConnection
     public bool? TrackSignInActivity { get; set; } 
 
     [JsonProperty("halointegrator_allowedclientidslist", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ValueLabelKeyPair>? HalointegratorAllowedclientidslist { get; set; } 
+    public ICollection<ValueLabelKeyPair>? HaloIntegratorAllowedclientidslist { get; set; } 
 
     [JsonProperty("halointegrator_allowedclientids", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? HalointegratorAllowedclientids { get; set; } 
+    public string? HaloIntegratorAllowedclientids { get; set; } 
 
     [JsonProperty("user_licence", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<ValueLabelIsNewKeyPair>? UserLicence { get; set; } 

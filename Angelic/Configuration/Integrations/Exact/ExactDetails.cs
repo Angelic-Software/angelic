@@ -35,7 +35,7 @@ public class ExactDetails
     public string? Defaultitemcode { get; set; } 
 
     [JsonProperty("showmessage", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Showmessage { get; set; } 
+    public bool? ShowMessage { get; set; } 
 
     [JsonProperty("client_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ClientId { get; set; } 
@@ -74,7 +74,7 @@ public class ExactDetails
     public ICollection<ValueLabelIsNewKeyPair>? SyncEntitiesList { get; set; } 
 
     [JsonProperty("_importtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Importtype { get; set; } 
+    public string? ImportType { get; set; } 
 
     [JsonProperty("client_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<ExternalLinkList>? ClientMappings { get; set; } 

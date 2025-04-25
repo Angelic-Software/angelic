@@ -37,7 +37,7 @@ public class NCentralDetails
     public int? Alerttickettype { get; set; } 
 
     [JsonProperty("tickettype_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? TickettypeName { get; set; } 
+    public string? TicketTypeName { get; set; } 
 
     [JsonProperty("alertticketuser", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Alertticketuser { get; set; } 
@@ -58,7 +58,7 @@ public class NCentralDetails
     public bool? Enableintegrator { get; set; } 
 
     [JsonProperty("lastsyncdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Lastsyncdate { get; set; } 
+    public DateTimeOffset? LastSyncDate { get; set; } 
 
     [JsonProperty("lastsyncerror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Lastsyncerror { get; set; } 
@@ -76,16 +76,16 @@ public class NCentralDetails
     public int? AssetTypeChoice { get; set; } 
 
     [JsonProperty("default_assettype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? DefaultAssettype { get; set; } 
+    public int? DefaultAssetType { get; set; } 
 
     [JsonProperty("assettype_field", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? AssettypeField { get; set; } 
+    public int? AssetTypeField { get; set; } 
 
     [JsonProperty("mappings_xtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<XTypeMapping>? MappingsXtype { get; set; } 
 
     [JsonProperty("default_assettype_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? DefaultAssettypeName { get; set; } 
+    public string? DefaultAssetTypeName { get; set; } 
 
     [JsonProperty("client_links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<ExternalLinkList>? ClientLinks { get; set; } 

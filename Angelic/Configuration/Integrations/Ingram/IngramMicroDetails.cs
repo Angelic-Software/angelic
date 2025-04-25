@@ -50,13 +50,13 @@ public class IngramMicroDetails
     public string? TopLevelName { get; set; } 
 
     [JsonProperty("halointegrator", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Halointegrator { get; set; } 
+    public bool? HaloIntegrator { get; set; } 
 
     [JsonProperty("halointegrator_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? HalointegratorLastsync { get; set; } 
+    public DateTimeOffset? HaloIntegratorLastSync { get; set; } 
 
     [JsonProperty("halointegrator_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? HalointegratorLasterror { get; set; } 
+    public string? HaloIntegratorLastError { get; set; } 
 
     [JsonProperty("import_entities_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<ValueLabelIsNewKeyPair>? ImportEntitiesList { get; set; } 

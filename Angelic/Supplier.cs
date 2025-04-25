@@ -1,7 +1,8 @@
 using System.CodeDom.Compiler;
-using Angelic.Configuration.CustomField;
+using Angelic.Configuration.CustomFields;
 using Angelic.Configuration.Integrations;
 using Angelic.KeyPairs;
+using Angelic.Users;
 using Newtonsoft.Json;
 
 namespace Angelic;
@@ -49,7 +50,7 @@ public class Supplier
     public string? Thirdpartynhdapiurl { get; set; } 
 
     [JsonProperty("customfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CustomField>? Customfields { get; set; } 
+    public ICollection<CustomField>? CustomFields { get; set; } 
 
     [JsonProperty("custombuttons", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<CustomButton>? Custombuttons { get; set; } 
@@ -160,7 +161,7 @@ public class Supplier
     public bool? Isimport { get; set; } 
 
     [JsonProperty("_importtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Importtype { get; set; } 
+    public string? ImportType { get; set; } 
 
     [JsonProperty("kashflowid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Kashflowid { get; set; } 

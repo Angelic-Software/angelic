@@ -1,4 +1,6 @@
 using System.CodeDom.Compiler;
+using Angelic.Configuration.Emails;
+using Angelic.Configuration.Emails.Mailboxes;
 using Newtonsoft.Json;
 
 namespace Angelic;

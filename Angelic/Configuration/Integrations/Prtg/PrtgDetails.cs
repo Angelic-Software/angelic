@@ -31,7 +31,7 @@ public class PrtgDetails
     public int? Defassettype { get; set; } 
 
     [JsonProperty("assettype_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? AssettypeName { get; set; } 
+    public string? AssetTypeName { get; set; } 
 
     [JsonProperty("assetmatchingfield_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? AssetmatchingfieldName { get; set; } 
@@ -43,13 +43,13 @@ public class PrtgDetails
     public string? Warning { get; set; } 
 
     [JsonProperty("halointegratorenabled", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Halointegratorenabled { get; set; } 
+    public bool? HaloIntegratorenabled { get; set; } 
 
     [JsonProperty("halointegratorlasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Halointegratorlasterror { get; set; } 
+    public string? HaloIntegratorlasterror { get; set; } 
 
     [JsonProperty("halointegratorlastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Halointegratorlastsync { get; set; } 
+    public DateTimeOffset? HaloIntegratorlastsync { get; set; } 
 
     [JsonProperty("asset_fieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<IntegrationFieldMapping>? AssetFieldmappings { get; set; } 

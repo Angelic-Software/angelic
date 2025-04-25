@@ -22,7 +22,7 @@ public class AssignSchedule
     public int? StatusId { get; set; } 
 
     [JsonProperty("tickettype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? TickettypeId { get; set; } 
+    public int? TicketTypeId { get; set; } 
 
     [JsonProperty("last_run_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? LastRunDate { get; set; } 
@@ -34,6 +34,6 @@ public class AssignSchedule
     public bool? Paused { get; set; } 
 
     [JsonProperty("asslinked_tickettype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? AsslinkedTickettype { get; set; } 
+    public int? AsslinkedTicketType { get; set; } 
 
 }

@@ -1,10 +1,12 @@
 using System.CodeDom.Compiler;
-using Angelic.Area;
-using Angelic.Asset;
-using Angelic.Configuration.CustomField;
+using Angelic.Areas;
+using Angelic.Assets;
+using Angelic.Attachments;
+using Angelic.Configuration;
+using Angelic.Configuration.CustomFields;
 using Newtonsoft.Json;
 
-namespace Angelic;
+namespace Angelic.Users;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
 public class Users
@@ -64,7 +66,7 @@ public class Users
     public string? Title { get; set; } 
 
     [JsonProperty("emailaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Emailaddress { get; set; } 
+    public string? EmailAddress { get; set; } 
 
     [JsonProperty("phonenumber_preferred", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? PhonenumberPreferred { get; set; } 
@@ -160,7 +162,7 @@ public class Users
     public string? SoftwareRoleName { get; set; } 
 
     [JsonProperty("customfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CustomField>? Customfields { get; set; } 
+    public ICollection<CustomField>? CustomFields { get; set; } 
 
     [JsonProperty("attachments", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<Attachment>? Attachments { get; set; } 
@@ -244,7 +246,7 @@ public class Users
     public int? WebAccessLevel { get; set; } 
 
     [JsonProperty("showmeonly", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Showmeonly { get; set; } 
+    public int? ShowMeonly { get; set; } 
 
     [JsonProperty("showrecentonly", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Showrecentonly { get; set; } 
@@ -529,10 +531,10 @@ public class Users
     public bool? Ismaincontact { get; set; } 
 
     [JsonProperty("primary_address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public AddressStore.AddressStore? PrimaryAddress { get; set; } 
+    public AddressStore? PrimaryAddress { get; set; } 
 
     [JsonProperty("addresses", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AddressStore.AddressStore>? Addresses { get; set; } 
+    public ICollection<AddressStore>? Addresses { get; set; } 
 
     [JsonProperty("departments", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<UserDepartment>? Departments { get; set; } 
@@ -565,7 +567,7 @@ public class Users
     public string? Memberof { get; set; } 
 
     [JsonProperty("_importtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Importtype { get; set; } 
+    public string? ImportType { get; set; } 
 
     [JsonProperty("usercompany", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<UserCompany>? Usercompany { get; set; } 
@@ -817,7 +819,7 @@ public class Users
     public int? DeviceAccessLevel { get; set; } 
 
     [JsonProperty("ticket_customfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CustomField>? TicketCustomfields { get; set; } 
+    public ICollection<CustomField>? TicketCustomFields { get; set; } 
 
     [JsonProperty("manager_email", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ManagerEmail { get; set; } 
@@ -865,7 +867,7 @@ public class Users
     public string? Lang { get; set; } 
 
     [JsonProperty("gocardless_customfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public IDictionary<string, string?>? GocardlessCustomfields { get; set; } 
+    public IDictionary<string, string?>? GocardlessCustomFields { get; set; } 
 
     [JsonProperty("service_account_overridden", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? ServiceAccountOverridden { get; set; } 
@@ -967,7 +969,7 @@ public class Users
     public DateTimeOffset? DateOfBirth { get; set; } 
 
     [JsonProperty("_importtypeid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Importtypeid { get; set; } 
+    public int? ImportTypeId { get; set; } 
 
     [JsonProperty("_importthirdpartyid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Importthirdpartyid { get; set; } 

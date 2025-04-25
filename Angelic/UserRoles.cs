@@ -1,5 +1,5 @@
 using System.CodeDom.Compiler;
-using Angelic.Agent;
+using Angelic.Configuration.TeamsAndAgents.Agents;
 using Newtonsoft.Json;
 
 namespace Angelic;
@@ -20,7 +20,7 @@ public class UserRoles
     public int? Id { get; set; } 
 
     [JsonProperty("showmeonly", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Showmeonly { get; set; } 
+    public int? ShowMeonly { get; set; } 
 
     [JsonProperty("ischangeapprover2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Ischangeapprover2 { get; set; } 

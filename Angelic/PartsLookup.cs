@@ -1,6 +1,7 @@
 using System.CodeDom.Compiler;
-using Angelic.Configuration.CustomField;
-using Angelic.Configuration.TicketRules;
+using Angelic.Configuration;
+using Angelic.Configuration.CustomFields;
+using Angelic.Configuration.Tickets.TicketRule;
 using Newtonsoft.Json;
 
 namespace Angelic;
@@ -84,7 +85,7 @@ public class PartsLookup
     public string? MessagestringAgent { get; set; } 
 
     [JsonProperty("showmessagetouseroragent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Showmessagetouseroragent { get; set; } 
+    public int? ShowMessagetouseroragent { get; set; } 
 
     [JsonProperty("messagerequiresconfirmationuser", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Messagerequiresconfirmationuser { get; set; } 
@@ -108,7 +109,7 @@ public class PartsLookup
     public string? LookupValue { get; set; } 
 
     [JsonProperty("customfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CustomField>? Customfields { get; set; } 
+    public ICollection<CustomField>? CustomFields { get; set; } 
 
     [JsonProperty("lookup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public PartsLookupResult? Lookup { get; set; } 

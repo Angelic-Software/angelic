@@ -53,7 +53,7 @@ public class SnowDetails
     public int? Assetimportidentifier { get; set; } 
 
     [JsonProperty("assetimportidentifier_fieldname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? AssetimportidentifierFieldname { get; set; } 
+    public string? AssetimportidentifierFieldName { get; set; } 
 
     [JsonProperty("snow_fieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<IntegrationFieldMapping>? SnowFieldmappings { get; set; } 
@@ -62,7 +62,7 @@ public class SnowDetails
     public bool? Enableintegrator { get; set; } 
 
     [JsonProperty("lastsyncdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Lastsyncdate { get; set; } 
+    public DateTimeOffset? LastSyncDate { get; set; } 
 
     [JsonProperty("lastsyncerror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Lastsyncerror { get; set; } 

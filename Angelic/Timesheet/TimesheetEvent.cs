@@ -68,7 +68,7 @@ public class TimesheetEvent
     public int? Mileage { get; set; } 
 
     [JsonProperty("tickettype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? TickettypeId { get; set; } 
+    public int? TicketTypeId { get; set; } 
 
     [JsonProperty("lognewticket", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Lognewticket { get; set; } 

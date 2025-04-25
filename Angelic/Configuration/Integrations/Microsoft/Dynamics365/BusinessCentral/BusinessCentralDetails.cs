@@ -77,7 +77,7 @@ public class BusinessCentralDetails
     public string? CompanyVersion { get; set; } 
 
     [JsonProperty("_importtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Importtype { get; set; } 
+    public string? ImportType { get; set; } 
 
     [JsonProperty("client_top_level", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ClientTopLevel { get; set; } 

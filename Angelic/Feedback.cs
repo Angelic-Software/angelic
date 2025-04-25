@@ -1,6 +1,6 @@
 using System.CodeDom.Compiler;
-using Angelic.Configuration.CustomField;
-using Angelic.Configuration.TicketType;
+using Angelic.Configuration.CustomFields;
+using Angelic.Configuration.Tickets.TicketTypes;
 using Newtonsoft.Json;
 
 namespace Angelic;
