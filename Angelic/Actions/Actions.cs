@@ -1,4 +1,7 @@
 using System.CodeDom.Compiler;
+using Angelic.Area;
+using Angelic.Asset;
+using Angelic.Configuration.CustomField;
 using Angelic.Ticket;
 using Newtonsoft.Json;
 
@@ -1064,7 +1067,7 @@ namespace Angelic.Actions;
         public int? NewServiceId { get; set; }
 
         [JsonProperty("new_asset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public Asset? NewAsset { get; set; }
+        public Asset.Asset? NewAsset { get; set; }
 
         [JsonProperty("contract_date_override", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public DateTimeOffset? ContractDateOverride { get; set; }

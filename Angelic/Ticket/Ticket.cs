@@ -1,4 +1,10 @@
 using System.CodeDom.Compiler;
+using Angelic.Area;
+using Angelic.Asset;
+using Angelic.Configuration.CustomField;
+using Angelic.Configuration.Integrations.Freshdesk;
+using Angelic.Configuration.Integrations.Google;
+using Angelic.Configuration.Workflow;
 using Angelic.KeyPairs;
 using Newtonsoft.Json;
 

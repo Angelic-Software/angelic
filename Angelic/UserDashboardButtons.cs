@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Configuration.TicketType;
 using Newtonsoft.Json;
 
 namespace Angelic;
@@ -106,7 +107,7 @@ public class UserDashboardButtons
     public int? DefaultView { get; set; } 
 
     [JsonProperty("portal_ticket_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<RequestTypeList>? PortalTicketList { get; set; } 
+    public ICollection<TicketTypeList>? PortalTicketList { get; set; } 
 
     [JsonProperty("ticket_column_override", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? TicketColumnOverride { get; set; } 

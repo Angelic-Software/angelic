@@ -1,4 +1,6 @@
 using System.CodeDom.Compiler;
+using Angelic.Asset;
+using Angelic.Configuration.CustomField;
 using Newtonsoft.Json;
 
 namespace Angelic;

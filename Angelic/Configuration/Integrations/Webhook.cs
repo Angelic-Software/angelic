@@ -1,8 +1,9 @@
 using System.CodeDom.Compiler;
 using Angelic.Agent;
+using Angelic.Configuration.Workflow;
 using Newtonsoft.Json;
 
-namespace Angelic;
+namespace Angelic.Configuration.Integrations;
 
     [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
     public class Webhook
@@ -151,13 +152,13 @@ namespace Angelic;
         public ICollection<FlowDetail>? Steps { get; set; } 
 
         [JsonProperty("input_variables", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<OutboundIntegrationMethodValue>? InputVariables { get; set; } 
+        public ICollection<CustomIntegrationMethodValue>? InputVariables { get; set; } 
 
         [JsonProperty("standalone_methods", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<OutboundIntegrationMethod>? StandaloneMethods { get; set; } 
+        public ICollection<CustomIntegrationMethod>? StandaloneMethods { get; set; } 
 
         [JsonProperty("integrations", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<OutboundIntegration>? Integrations { get; set; } 
+        public ICollection<CustomIntegration>? Integrations { get; set; } 
 
         [JsonProperty("schedule_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? ScheduleId { get; set; } 

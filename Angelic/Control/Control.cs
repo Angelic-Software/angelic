@@ -1,5 +1,17 @@
 using System.CodeDom.Compiler;
 using Angelic.Agent;
+using Angelic.Area;
+using Angelic.Configuration.Integrations;
+using Angelic.Configuration.Integrations.Auvik;
+using Angelic.Configuration.Integrations.Google;
+using Angelic.Configuration.Integrations.Microsoft;
+using Angelic.Configuration.Integrations.Microsoft.Azure.AzureAd;
+using Angelic.Configuration.Integrations.Microsoft.Dynamics365;
+using Angelic.Configuration.Integrations.Okta;
+using Angelic.Configuration.SqlImport;
+using Angelic.Configuration.TicketType;
+using Angelic.Contract;
+using Angelic.Invoice;
 using Newtonsoft.Json;
 
 namespace Angelic.Control;
@@ -7592,7 +7604,7 @@ namespace Angelic.Control;
         public bool? Createbusinesscentralasset { get; set; } 
 
         [JsonProperty("businesscentralasset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public Asset? Businesscentralasset { get; set; } 
+        public Asset.Asset? Businesscentralasset { get; set; } 
 
         [JsonProperty("defaultquicktimemethod", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Defaultquicktimemethod { get; set; } 
@@ -9443,7 +9455,7 @@ namespace Angelic.Control;
         public bool? ResetHalointegratorMailchimpLastsync { get; set; } 
 
         [JsonProperty("quoteapprovalfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<RequestTypeField>? Quoteapprovalfields { get; set; } 
+        public ICollection<TicketTypeField>? Quoteapprovalfields { get; set; } 
 
         [JsonProperty("recordonlinepresence", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Recordonlinepresence { get; set; } 
@@ -9461,7 +9473,7 @@ namespace Angelic.Control;
         public string? WebdashboardtitleOverride { get; set; } 
 
         [JsonProperty("contractapprovalfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<RequestTypeField>? Contractapprovalfields { get; set; } 
+        public ICollection<TicketTypeField>? Contractapprovalfields { get; set; } 
 
         [JsonProperty("sccm_dontupdatetype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? SccmDontupdatetype { get; set; } 
@@ -10037,16 +10049,16 @@ namespace Angelic.Control;
         public string? IntegrationTenant { get; set; } 
 
         [JsonProperty("openai_embeddings_tickettypes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<RequestTypeList>? OpenaiEmbeddingsTickettypes { get; set; } 
+        public ICollection<TicketTypeList>? OpenaiEmbeddingsTickettypes { get; set; } 
 
         [JsonProperty("azureopenai_embeddings_tickettypes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<RequestTypeList>? AzureopenaiEmbeddingsTickettypes { get; set; } 
+        public ICollection<TicketTypeList>? AzureopenaiEmbeddingsTickettypes { get; set; } 
 
         [JsonProperty("aiembedding_enabled_tickettypes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<KeyPair4>? AiembeddingEnabledTickettypes { get; set; } 
 
         [JsonProperty("vectorise_tickettypes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<RequestTypeList>? VectoriseTickettypes { get; set; } 
+        public ICollection<TicketTypeList>? VectoriseTickettypes { get; set; } 
 
         [JsonProperty("vectorise_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public DateTimeOffset? VectoriseDate { get; set; } 

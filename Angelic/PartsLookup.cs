@@ -1,4 +1,6 @@
 using System.CodeDom.Compiler;
+using Angelic.Configuration.CustomField;
+using Angelic.Configuration.TicketRules;
 using Newtonsoft.Json;
 
 namespace Angelic;
@@ -166,7 +168,7 @@ public class PartsLookup
     public int? TriggerType { get; set; } 
 
     [JsonProperty("rules", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<Autoassign>? Rules { get; set; } 
+    public ICollection<TicketRules>? Rules { get; set; } 
 
     [JsonProperty("integration_method_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? IntegrationMethodId { get; set; } 

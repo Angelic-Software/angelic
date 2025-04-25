@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Configuration.CustomField;
 using Newtonsoft.Json;
 
 namespace Angelic.Ticket;

@@ -1,7 +1,14 @@
+using Angelic.Configuration.CustomField;
+using Angelic.Configuration.Integrations;
+using Angelic.Configuration.Integrations.Quickbooks;
+using Angelic.Configuration.Integrations.Snow;
+using Angelic.Configuration.Integrations.Stripe;
+using Angelic.Configuration.TicketType;
+using Angelic.Contract;
 using Angelic.KeyPairs;
 using Newtonsoft.Json;
 
-namespace Angelic;
+namespace Angelic.Area;
 
 
     public class Area
@@ -517,7 +524,7 @@ namespace Angelic;
         public bool? AllowallTickettypes { get; set; } 
 
         [JsonProperty("allowed_tickettypes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<RequestTypeList>? AllowedTickettypes { get; set; } 
+        public ICollection<TicketTypeList>? AllowedTickettypes { get; set; } 
 
         [JsonProperty("allowall_category1", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? AllowallCategory1 { get; set; } 

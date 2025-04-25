@@ -1,4 +1,6 @@
 using System.CodeDom.Compiler;
+using Angelic.Configuration.CustomField;
+using Angelic.Configuration.TicketType;
 using Newtonsoft.Json;
 
 namespace Angelic;
@@ -71,7 +73,7 @@ public class Organisation
     public bool? AllowallTickettypes { get; set; } 
 
     [JsonProperty("allowed_tickettypes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<RequestTypeList>? AllowedTickettypes { get; set; } 
+    public ICollection<TicketTypeList>? AllowedTickettypes { get; set; } 
 
     [JsonProperty("faqlists", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<FaqListHead>? Faqlists { get; set; } 

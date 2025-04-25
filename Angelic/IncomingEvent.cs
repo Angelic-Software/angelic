@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Configuration.Integrations;
 using Newtonsoft.Json;
 
 namespace Angelic;
@@ -46,7 +47,7 @@ public class IncomingEvent
     public DateTimeOffset? DeletionDate { get; set; } 
 
     [JsonProperty("output_variables", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<OutboundIntegrationMethodValue>? OutputVariables { get; set; } 
+    public ICollection<CustomIntegrationMethodValue>? OutputVariables { get; set; } 
 
     [JsonProperty("_retry", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Retry { get; set; } 

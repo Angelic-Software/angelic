@@ -1,4 +1,6 @@
 using System.CodeDom.Compiler;
+using Angelic.Configuration.CustomField;
+using Angelic.Configuration.Integrations;
 using Angelic.KeyPairs;
 using Newtonsoft.Json;
 

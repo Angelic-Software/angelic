@@ -1,9 +1,15 @@
-using Guid = System.Guid;
 using System.CodeDom.Compiler;
+using Angelic.Configuration;
+using Angelic.Configuration.CustomField;
+using Angelic.Configuration.Integrations.Lansweeper;
+using Angelic.Configuration.Integrations.Snow;
+using Angelic.Contract;
+using Angelic.Item;
 using Angelic.Ticket;
 using Newtonsoft.Json;
+using Guid = System.Guid;
 
-namespace Angelic;
+namespace Angelic.Asset;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
 public class Asset 
@@ -331,7 +337,7 @@ public class Asset
     public int? SqlimportId { get; set; } 
 
     [JsonProperty("software", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<DeviceApplications>? Software { get; set; } 
+    public ICollection<AssetApplications>? Software { get; set; } 
 
     [JsonProperty("businesscentral_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? BusinesscentralId { get; set; } 
@@ -388,7 +394,7 @@ public class Asset
     public DateTimeOffset? Dlastupdate { get; set; } 
 
     [JsonProperty("createdfrompurchaseorder", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public SupplierOrderHeader? Createdfrompurchaseorder { get; set; } 
+    public PurchaseOrderHeader? Createdfrompurchaseorder { get; set; } 
 
     [JsonProperty("stockdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? Stockdate { get; set; } 
@@ -466,7 +472,7 @@ public class Asset
     public string? QualysId { get; set; } 
 
     [JsonProperty("assettype_config", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public XType? AssettypeConfig { get; set; } 
+    public AssetType? AssettypeConfig { get; set; } 
 
     [JsonProperty("passportal_client_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public long? PassportalClientId { get; set; } 

@@ -1,4 +1,8 @@
 using System.CodeDom.Compiler;
+using Angelic.Asset;
+using Angelic.Configuration.CustomField;
+using Angelic.Configuration.TicketRules;
+using Angelic.Invoice;
 using Angelic.Ticket;
 using Newtonsoft.Json;
 
@@ -392,7 +396,7 @@ public class StdRequest
     public string? Warning { get; set; } 
 
     [JsonProperty("automationcriteria", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AutoassignCriteria>? Automationcriteria { get; set; } 
+    public ICollection<TicketRulesCriteria>? Automationcriteria { get; set; } 
 
     [JsonProperty("isclone", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Isclone { get; set; } 

@@ -1,4 +1,6 @@
 using System.CodeDom.Compiler;
+using Angelic.Configuration.Integrations;
+using Angelic.Configuration.TicketRules;
 using Newtonsoft.Json;
 
 namespace Angelic;
@@ -52,10 +54,10 @@ public class EventRule
     public int? CreateType { get; set; } 
 
     [JsonProperty("values", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<OutboundIntegrationMethodValue>? Values { get; set; } 
+    public ICollection<CustomIntegrationMethodValue>? Values { get; set; } 
 
     [JsonProperty("criteria", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AutoassignCriteria>? Criteria { get; set; } 
+    public ICollection<TicketRulesCriteria>? Criteria { get; set; } 
 
     [JsonProperty("mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<EventMapping>? Mappings { get; set; } 

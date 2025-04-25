@@ -1,4 +1,6 @@
 using System.CodeDom.Compiler;
+using Angelic.Configuration.Integrations;
+using Angelic.Configuration.Integrations.Microsoft.Azure.AzureAd;
 using Newtonsoft.Json;
 
 namespace Angelic.Agent;

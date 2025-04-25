@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Configuration;
 using Newtonsoft.Json;
 
 namespace Angelic;
@@ -116,7 +117,7 @@ public class Widget
     public string? Mode { get; set; } 
 
     [JsonProperty("actions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<Outcome>? Actions { get; set; } 
+    public ICollection<ActionOutcome>? Actions { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

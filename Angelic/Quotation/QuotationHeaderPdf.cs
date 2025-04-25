@@ -16,7 +16,7 @@ public class QuotationHeaderPdf
     public int? Id { get; set; } 
 
     [JsonProperty("quotationheaderid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Quotationheaderid { get; set; } 
+    public int? QuotationHeaderId { get; set; } 
 
     [JsonProperty("prepend", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Prepend { get; set; } 

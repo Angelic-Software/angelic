@@ -1,4 +1,6 @@
 using System.CodeDom.Compiler;
+using Angelic.Configuration.Integrations;
+using Angelic.Configuration.Integrations.Microsoft.Azure.AzureDevOps;
 using Angelic.KeyPairs;
 using Newtonsoft.Json;
 

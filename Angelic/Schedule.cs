@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Contract;
 using Angelic.KeyPairs;
 using Newtonsoft.Json;
 

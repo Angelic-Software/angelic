@@ -2,7 +2,7 @@ using System.CodeDom.Compiler;
 using Angelic.KeyPairs;
 using Newtonsoft.Json;
 
-namespace Angelic;
+namespace Angelic.Configuration.Integrations.Ldap;
 
 
 

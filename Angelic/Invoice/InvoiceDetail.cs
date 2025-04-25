@@ -1,7 +1,8 @@
 using System.CodeDom.Compiler;
+using Angelic.Configuration.CustomField;
 using Newtonsoft.Json;
 
-namespace Angelic;
+namespace Angelic.Invoice;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
 public class InvoiceDetail
@@ -145,7 +146,7 @@ public class InvoiceDetail
     public string? ItemExternalReference { get; set; } 
 
     [JsonProperty("linked_item", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Item? LinkedItem { get; set; } 
+    public Item.Item? LinkedItem { get; set; } 
 
     [JsonProperty("item_tax_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ItemTaxName { get; set; } 

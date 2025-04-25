@@ -1,7 +1,8 @@
 using System.CodeDom.Compiler;
+using Angelic.Configuration.TicketRules;
 using Newtonsoft.Json;
 
-namespace Angelic;
+namespace Angelic.Contract;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
 public class ContractRule
@@ -37,7 +38,7 @@ public class ContractRule
     public DateTimeOffset? OutcomeEndDate { get; set; } 
 
     [JsonProperty("rule_criteria", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AutoassignCriteria>? RuleCriteria { get; set; } 
+    public ICollection<TicketRulesCriteria>? RuleCriteria { get; set; } 
 
     [JsonProperty("is_matched", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? IsMatched { get; set; } 

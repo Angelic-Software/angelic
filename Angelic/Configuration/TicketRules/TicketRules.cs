@@ -1,11 +1,13 @@
 using System.CodeDom.Compiler;
 using Angelic.Agent;
+using Angelic.Area;
+using Angelic.Configuration.Workflow;
 using Newtonsoft.Json;
 
-namespace Angelic;
+namespace Angelic.Configuration.TicketRules;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
-public class Autoassign
+public class TicketRules
 {
     [JsonProperty("guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public Guid? Guid { get; set; } 
@@ -80,10 +82,10 @@ public class Autoassign
     public bool? Dontshownotification { get; set; } 
 
     [JsonProperty("criteria", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AutoassignCriteria>? Criteria { get; set; } 
+    public ICollection<TicketRulesCriteria>? Criteria { get; set; } 
 
     [JsonProperty("outcomes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AutoassignOutcome>? Outcomes { get; set; } 
+    public ICollection<TicketRulesOutcome>? Outcomes { get; set; } 
 
     [JsonProperty("_domatch", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Domatch { get; set; } 

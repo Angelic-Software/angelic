@@ -1,7 +1,10 @@
 using System.CodeDom.Compiler;
+using Angelic.Asset;
+using Angelic.Configuration.CustomField;
+using Angelic.Configuration.TicketType;
 using Newtonsoft.Json;
 
-namespace Angelic;
+namespace Angelic.Contract;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
 public class ContractHeader
@@ -436,7 +439,7 @@ public class ContractHeader
     public int? PortalDisplayType { get; set; } 
 
     [JsonProperty("contractapprovalfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<RequestTypeField>? Contractapprovalfields { get; set; } 
+    public ICollection<TicketTypeField>? Contractapprovalfields { get; set; } 
 
     [JsonProperty("use", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Use { get; set; } 

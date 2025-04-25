@@ -28,7 +28,7 @@ public class CallLog
     public string? ClientName { get; set; } 
 
     [JsonProperty("client_details", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Area? ClientDetails { get; set; } 
+    public Area.Area? ClientDetails { get; set; } 
 
     [JsonProperty("site_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? SiteId { get; set; } 

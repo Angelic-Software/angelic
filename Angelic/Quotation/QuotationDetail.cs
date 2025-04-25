@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Configuration.CustomField;
 using Angelic.KeyPairs;
 using Angelic.Ticket;
 using Newtonsoft.Json;

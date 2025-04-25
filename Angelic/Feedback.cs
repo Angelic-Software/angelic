@@ -1,4 +1,6 @@
 using System.CodeDom.Compiler;
+using Angelic.Configuration.CustomField;
+using Angelic.Configuration.TicketType;
 using Newtonsoft.Json;
 
 namespace Angelic;
@@ -40,7 +42,7 @@ public class Feedback
     public int? FeedbackFaultid { get; set; } 
 
     [JsonProperty("fields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<RequestTypeField>? Fields { get; set; } 
+    public ICollection<TicketTypeField>? Fields { get; set; } 
 
     [JsonProperty("automation_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? AutomationId { get; set; } 

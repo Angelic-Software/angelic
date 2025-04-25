@@ -1,7 +1,7 @@
 using System.CodeDom.Compiler;
 using Newtonsoft.Json;
 
-namespace Angelic;
+namespace Angelic.Configuration.Workflow;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
 public class WorkflowTarget
@@ -52,7 +52,7 @@ public class WorkflowTarget
     public string? WorkdayName { get; set; } 
 
     [JsonProperty("rules", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<Autoassign>? Rules { get; set; } 
+    public ICollection<TicketRules.TicketRules>? Rules { get; set; } 
 
     [JsonProperty("rule_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? RuleId { get; set; } 

@@ -1,4 +1,6 @@
 using System.CodeDom.Compiler;
+using Angelic.Asset;
+using Angelic.Configuration.Integrations.Microsoft.Azure.AzureAd;
 using Newtonsoft.Json;
 
 namespace Angelic;
@@ -181,6 +183,6 @@ public class LicenceList
     public int? DeviceCount { get; set; } 
 
     [JsonProperty("new_software", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DeviceApplications? NewSoftware { get; set; } 
+    public AssetApplications? NewSoftware { get; set; } 
 
 }

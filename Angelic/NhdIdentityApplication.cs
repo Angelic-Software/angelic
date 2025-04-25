@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Configuration.Integrations.OpenIddict;
 using Angelic.KeyPairs;
 using Newtonsoft.Json;
 

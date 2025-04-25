@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Configuration.TicketRules;
 using Newtonsoft.Json;
 
 namespace Angelic;
@@ -16,7 +17,7 @@ public class QualificationCategory
     public Guid? QualificationGuid { get; set; } 
 
     [JsonProperty("fields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AutoassignCriteria>? Fields { get; set; } 
+    public ICollection<TicketRulesCriteria>? Fields { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

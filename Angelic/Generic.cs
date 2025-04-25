@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Configuration;
 using Newtonsoft.Json;
 
 namespace Angelic;
@@ -52,7 +53,7 @@ public class Generic
     public int? Sequence { get; set; } 
 
     [JsonProperty("assettypes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<XType>? Assettypes { get; set; } 
+    public ICollection<AssetType>? Assettypes { get; set; } 
 
     [JsonProperty("thirdpartyid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Thirdpartyid { get; set; } 

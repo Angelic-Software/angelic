@@ -1,13 +1,16 @@
 using System.CodeDom.Compiler;
+using Angelic.Asset;
+using Angelic.Configuration.CustomField;
+using Angelic.Invoice;
 using Newtonsoft.Json;
 
 namespace Angelic;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
-public class SupplierOrderHeader
+public class PurchaseOrderHeader
 {
     [JsonProperty("customfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CustomField>? Customfields { get; set; } 
+    public ICollection<CustomField>? CustomFields { get; set; } 
 
     [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Id { get; set; } 
@@ -31,7 +34,7 @@ public class SupplierOrderHeader
     public DateTimeOffset? Date { get; set; } 
 
     [JsonProperty("datesent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Datesent { get; set; } 
+    public DateTimeOffset? DateSent { get; set; } 
 
     [JsonProperty("carriage_desc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? CarriageDesc { get; set; } 
@@ -157,10 +160,10 @@ public class SupplierOrderHeader
     public int? AttachmentId { get; set; } 
 
     [JsonProperty("lines", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<SupplierOrderDetail>? Lines { get; set; } 
+    public ICollection<PurchaseOrderDetail>? Lines { get; set; } 
 
     [JsonProperty("add_lines", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<SupplierOrderDetail>? AddLines { get; set; } 
+    public ICollection<PurchaseOrderDetail>? AddLines { get; set; } 
 
     [JsonProperty("_validateonly", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Validateonly { get; set; } 
@@ -238,7 +241,7 @@ public class SupplierOrderHeader
     public double? CreateInvoicePercentage { get; set; } 
 
     [JsonProperty("_create_invoice_lines", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<SupplierOrderDetail>? CreateInvoiceLines { get; set; } 
+    public ICollection<PurchaseOrderDetail>? CreateInvoiceLines { get; set; } 
 
     [JsonProperty("_return_invoice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? ReturnInvoice { get; set; } 

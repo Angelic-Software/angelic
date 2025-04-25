@@ -1,7 +1,8 @@
 using System.CodeDom.Compiler;
+using Angelic.Configuration.TicketRules;
 using Newtonsoft.Json;
 
-namespace Angelic;
+namespace Angelic.Configuration.Workflow;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
 public class FlowSubDetail
@@ -91,10 +92,10 @@ public class FlowSubDetail
     public bool? Restricted { get; set; } 
 
     [JsonProperty("conditions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AutoassignCriteria>? Conditions { get; set; } 
+    public ICollection<TicketRulesCriteria>? Conditions { get; set; } 
 
     [JsonProperty("conditions_exec", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AutoassignCriteria>? ConditionsExec { get; set; } 
+    public ICollection<TicketRulesCriteria>? ConditionsExec { get; set; } 
 
     [JsonProperty("restrictions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<FlowSubDetailRestriction>? Restrictions { get; set; } 

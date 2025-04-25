@@ -1,4 +1,7 @@
 using System.CodeDom.Compiler;
+using Angelic.Area;
+using Angelic.Configuration.CustomField;
+using Angelic.Configuration.Integrations.Microsoft.Dynamics365.BusinessCentral;
 using Angelic.KeyPairs;
 using Newtonsoft.Json;
 

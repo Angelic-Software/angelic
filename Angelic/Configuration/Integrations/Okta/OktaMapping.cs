@@ -1,7 +1,7 @@
 using Angelic.KeyPairs;
 using Newtonsoft.Json;
 
-namespace Angelic;
+namespace Angelic.Configuration.Integrations.Okta;
 
 
     public class OktaMapping

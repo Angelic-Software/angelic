@@ -1,5 +1,9 @@
 using System.CodeDom.Compiler;
 using Angelic.Agent;
+using Angelic.Asset;
+using Angelic.Configuration.CustomField;
+using Angelic.Configuration.Integrations.Wordpress;
+using Angelic.Configuration.TicketType;
 using Newtonsoft.Json;
 
 namespace Angelic;
@@ -128,10 +132,10 @@ namespace Angelic;
         public ICollection<FaqListHead>? Faqlists { get; set; } 
 
         [JsonProperty("fields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<RequestTypeField>? Fields { get; set; } 
+        public ICollection<TicketTypeField>? Fields { get; set; } 
 
         [JsonProperty("teams", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<SectionDetail>? Teams { get; set; } 
+        public ICollection<Team>? Teams { get; set; } 
 
         [JsonProperty("your_vote", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? YourVote { get; set; } 

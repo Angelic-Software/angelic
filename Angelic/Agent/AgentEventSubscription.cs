@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Configuration.Integrations;
 using Newtonsoft.Json;
 
 namespace Angelic.Agent;

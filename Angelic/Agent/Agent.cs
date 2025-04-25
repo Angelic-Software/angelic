@@ -1,4 +1,6 @@
 using System.CodeDom.Compiler;
+using Angelic.Configuration;
+using Angelic.Configuration.CustomField;
 using Angelic.KeyPairs;
 using Newtonsoft.Json;
 
@@ -86,7 +88,7 @@ namespace Angelic.Agent;
         public ICollection<AgentAreaRestriction>? Clients { get; set; } 
 
         [JsonProperty("tickettypes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<AgentRequestType>? Tickettypes { get; set; } 
+        public ICollection<AgentTicketType>? Tickettypes { get; set; } 
 
         [JsonProperty("qualifications", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<AgentQualification>? Qualifications { get; set; } 
@@ -107,7 +109,7 @@ namespace Angelic.Agent;
         public string? CurrentActionName { get; set; } 
 
         [JsonProperty("assettypes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<AgentXType>? Assettypes { get; set; } 
+        public ICollection<AgentAssetType>? Assettypes { get; set; } 
 
         [JsonProperty("googleemail", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Googleemail { get; set; } 
@@ -602,7 +604,7 @@ namespace Angelic.Agent;
         public ICollection<AccessControl>? AcDashboards { get; set; } 
 
         [JsonProperty("ac_workflows", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<AccessControl.AccessControl>? AcWorkflows { get; set; } 
+        public ICollection<AccessControl>? AcWorkflows { get; set; } 
 
         [JsonProperty("ac_roles", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<AccessControl>? AcRoles { get; set; } 
@@ -632,7 +634,7 @@ namespace Angelic.Agent;
         public ICollection<AccessControl>? AcFieldgroups { get; set; } 
 
         [JsonProperty("ac_languagepacks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<AccessControl.AccessControl>? AcLanguagepacks { get; set; } 
+        public ICollection<AccessControl>? AcLanguagepacks { get; set; } 
 
         [JsonProperty("ac_itemgroups", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<AccessControl>? AcItemgroups { get; set; } 

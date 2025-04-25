@@ -1,4 +1,7 @@
 using System.CodeDom.Compiler;
+using Angelic.Area;
+using Angelic.Asset;
+using Angelic.Configuration.CustomField;
 using Newtonsoft.Json;
 
 namespace Angelic;
@@ -646,7 +649,7 @@ public class Users
     public string? Sgatewayid { get; set; } 
 
     [JsonProperty("software", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<DeviceApplications>? Software { get; set; } 
+    public ICollection<AssetApplications>? Software { get; set; } 
 
     [JsonProperty("canaccessinvoices", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Canaccessinvoices { get; set; } 

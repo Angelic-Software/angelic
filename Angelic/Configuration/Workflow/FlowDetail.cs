@@ -1,8 +1,10 @@
 using System.CodeDom.Compiler;
 using Angelic.Chat;
+using Angelic.Configuration.Integrations;
+using Angelic.Configuration.TicketRules;
 using Newtonsoft.Json;
 
-namespace Angelic;
+namespace Angelic.Configuration.Workflow;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
 public class FlowDetail
@@ -95,13 +97,13 @@ public class FlowDetail
     public int? NewticketTemplateId { get; set; } 
 
     [JsonProperty("step_conditions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AutoassignCriteria>? StepConditions { get; set; } 
+    public ICollection<TicketRulesCriteria>? StepConditions { get; set; } 
 
     [JsonProperty("chat_teams", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<SectionDetailList>? ChatTeams { get; set; } 
+    public ICollection<TeamList>? ChatTeams { get; set; } 
 
     [JsonProperty("rules", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<Autoassign>? Rules { get; set; } 
+    public ICollection<TicketRules.TicketRules>? Rules { get; set; } 
 
     [JsonProperty("chat_image_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ChatImageType { get; set; } 
@@ -141,10 +143,10 @@ public class FlowDetail
     public bool? NewticketSendlink { get; set; } 
 
     [JsonProperty("output_variables", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<OutboundIntegrationMethodValue>? OutputVariables { get; set; } 
+    public ICollection<CustomIntegrationMethodValue>? OutputVariables { get; set; } 
 
     [JsonProperty("runbook_variable_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<OutboundIntegrationMethodValue>? RunbookVariableMappings { get; set; } 
+    public ICollection<CustomIntegrationMethodValue>? RunbookVariableMappings { get; set; } 
 
     [JsonProperty("chat_input_suggestions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<ChatInputSuggestion>? ChatInputSuggestions { get; set; } 

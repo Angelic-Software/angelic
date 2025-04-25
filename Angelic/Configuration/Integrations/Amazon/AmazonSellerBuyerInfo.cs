@@ -1,7 +1,7 @@
 using System.CodeDom.Compiler;
 using Newtonsoft.Json;
 
-namespace Angelic.AmazonSellerBuyerInfo;
+namespace Angelic.Configuration.Integrations.Amazon;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
 public class AmazonSellerBuyerInfo
@@ -16,7 +16,7 @@ public class AmazonSellerBuyerInfo
     public string? BuyerCountry { get; set; }
     
     [JsonProperty("BuyerTaxInfo", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public AmazonSellerBuyerTaxInfo.AmazonSellerBuyerTaxInfo? BuyerTaxInfo { get; set; }
+    public AmazonSellerBuyerTaxInfo? BuyerTaxInfo { get; set; }
     
     [JsonProperty("PurchaseOrderNumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? PurchaseOrderNumber { get; set; }

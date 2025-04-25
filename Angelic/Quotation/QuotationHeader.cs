@@ -1,4 +1,7 @@
 using System.CodeDom.Compiler;
+using Angelic.Configuration.CustomField;
+using Angelic.Configuration.TicketType;
+using Angelic.Configuration.Workflow;
 using Newtonsoft.Json;
 
 namespace Angelic;
@@ -178,7 +181,7 @@ public class QuotationHeader
     public int? SalesorderId { get; set; } 
 
     [JsonProperty("salesorder", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public OrderHead? Salesorder { get; set; } 
+    public SalesOrder? Salesorder { get; set; } 
 
     [JsonProperty("signature", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Signature { get; set; } 
@@ -487,7 +490,7 @@ public class QuotationHeader
     public int? OriginalRevisedFromId { get; set; } 
 
     [JsonProperty("quoteapprovalfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<RequestTypeField>? Quoteapprovalfields { get; set; } 
+    public ICollection<TicketTypeField>? Quoteapprovalfields { get; set; } 
 
     [JsonProperty("custombuttons", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<CustomButton>? Custombuttons { get; set; } 

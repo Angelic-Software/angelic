@@ -1,8 +1,10 @@
 using System.CodeDom.Compiler;
+using Angelic.Area;
+using Angelic.Configuration.CustomField;
 using Angelic.KeyPairs;
 using Newtonsoft.Json;
 
-namespace Angelic;
+namespace Angelic.Invoice;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
 public class InvoiceHeader
