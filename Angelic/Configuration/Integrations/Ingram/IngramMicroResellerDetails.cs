@@ -101,10 +101,10 @@ public class IngramMicroResellerDetails
     public Guid? Guid { get; set; } 
 
     [JsonProperty("default_assetgroup_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? DefaultAssetgroupId { get; set; } 
+    public int? DefaultAssetGroupId { get; set; } 
 
     [JsonProperty("default_assetgroup_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? DefaultAssetgroupName { get; set; } 
+    public string? DefaultAssetGroupName { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

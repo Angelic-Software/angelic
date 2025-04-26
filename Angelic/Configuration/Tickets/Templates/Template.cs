@@ -1,6 +1,7 @@
 using System.CodeDom.Compiler;
 using Angelic.Assets;
 using Angelic.Configuration.Custom.CustomFields;
+using Angelic.Configuration.SelfServicePortal;
 using Angelic.Configuration.Tickets.TicketRule;
 using Angelic.Invoice;
 using Angelic.Tickets;
@@ -190,10 +191,10 @@ public class Template
     public bool? Excludefromsla { get; set; } 
 
     [JsonProperty("defaultresourcetype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Defaultresourcetype { get; set; } 
+    public int? DefaultResourcetype { get; set; } 
 
     [JsonProperty("defaultresourcetype_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? DefaultresourcetypeName { get; set; } 
+    public string? DefaultResourcetypeName { get; set; } 
 
     [JsonProperty("informlevel", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Informlevel { get; set; } 
@@ -256,7 +257,7 @@ public class Template
     public int? Repeat { get; set; } 
 
     [JsonProperty("toplevel", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Toplevel { get; set; } 
+    public int? TopLevel { get; set; } 
 
     [JsonProperty("report_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ReportId { get; set; } 
@@ -523,7 +524,7 @@ public class Template
     public bool? OptionalCreateLocked { get; set; } 
 
     [JsonProperty("optional_defaultresourcetype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? OptionalDefaultresourcetype { get; set; } 
+    public int? OptionalDefaultResourcetype { get; set; } 
 
     [JsonProperty("optional_excludefromsla", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? OptionalExcludefromsla { get; set; } 

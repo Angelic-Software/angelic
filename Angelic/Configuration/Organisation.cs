@@ -24,7 +24,7 @@ public class Organisation
     public string? ReplyAddress { get; set; } 
 
     [JsonProperty("messagegroup_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? MessagegroupId { get; set; } 
+    public int? MessageGroupId { get; set; } 
 
     [JsonProperty("address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public AddressStore? Address { get; set; } 

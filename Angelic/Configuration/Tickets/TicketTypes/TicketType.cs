@@ -2,6 +2,7 @@ using System.CodeDom.Compiler;
 using Angelic.Appointments;
 using Angelic.Areas;
 using Angelic.Configuration.Custom.CustomTabs;
+using Angelic.Configuration.SelfServicePortal;
 using Angelic.KeyPairs;
 using Newtonsoft.Json;
 
@@ -524,16 +525,16 @@ public class TicketType
     public bool? ItemsAreBillable { get; set; } 
 
     [JsonProperty("defaultresourcetype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Defaultresourcetype { get; set; } 
+    public int? DefaultResourcetype { get; set; } 
 
     [JsonProperty("defaultresourcetype_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? DefaultresourcetypeName { get; set; } 
+    public string? DefaultResourcetypeName { get; set; } 
 
     [JsonProperty("defaultlisttype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Defaultlisttype { get; set; } 
+    public int? DefaultListtype { get; set; } 
 
     [JsonProperty("defaulttab", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Defaulttab { get; set; } 
+    public int? DefaultTab { get; set; } 
 
     [JsonProperty("defaultsync_to_sentinel", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? DefaultsyncToSentinel { get; set; } 
@@ -548,7 +549,7 @@ public class TicketType
     public ICollection<SectionRequestType>? AllowedResourcebookingTeams { get; set; } 
 
     [JsonProperty("defaultresourcetype_name_agent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? DefaultresourcetypeNameAgent { get; set; } 
+    public string? DefaultResourcetypeNameAgent { get; set; } 
 
     [JsonProperty("agentresourcebookingtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Agentresourcebookingtype { get; set; } 
@@ -557,10 +558,10 @@ public class TicketType
     public bool? Userbookfromportal { get; set; } 
 
     [JsonProperty("defaultresourcetype_agent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? DefaultresourcetypeAgent { get; set; } 
+    public int? DefaultResourcetypeAgent { get; set; } 
 
     [JsonProperty("defaultagentresourcebookingduration_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? DefaultagentresourcebookingdurationId { get; set; } 
+    public int? DefaultAgentresourcebookingdurationId { get; set; } 
 
     [JsonProperty("rtdefaultagentresourcebookingduration_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? RtdefaultagentresourcebookingdurationName { get; set; } 
@@ -699,10 +700,10 @@ public class TicketType
     public bool? AddAckAttachments { get; set; } 
 
     [JsonProperty("defaultpagerdutyservice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Defaultpagerdutyservice { get; set; } 
+    public string? DefaultPagerdutyservice { get; set; } 
 
     [JsonProperty("defaultpagerdutyservice_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? DefaultpagerdutyserviceName { get; set; } 
+    public string? DefaultPagerdutyserviceName { get; set; } 
 
     [JsonProperty("defaultsidebarcollapsed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Defaultsidebarcollapsed { get; set; } 

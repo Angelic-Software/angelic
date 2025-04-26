@@ -29,10 +29,10 @@ public class SnowDetails
     public bool? NewIntegrationMethod { get; set; } 
 
     [JsonProperty("toplevel", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Toplevel { get; set; } 
+    public int? TopLevel { get; set; } 
 
     [JsonProperty("toplevel_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ToplevelName { get; set; } 
+    public string? TopLevelName { get; set; } 
 
     [JsonProperty("default_devicesite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? DefaultDevicesite { get; set; } 
@@ -56,7 +56,7 @@ public class SnowDetails
     public string? AssetimportidentifierFieldName { get; set; } 
 
     [JsonProperty("snow_fieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<IntegrationFieldMapping>? SnowFieldmappings { get; set; } 
+    public ICollection<IntegrationFieldMapping>? SnowFieldMappings { get; set; } 
 
     [JsonProperty("enableintegrator", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Enableintegrator { get; set; } 

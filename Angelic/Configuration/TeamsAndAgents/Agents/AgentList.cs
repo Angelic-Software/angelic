@@ -202,7 +202,7 @@ public class AgentList
     public ICollection<AgentCustom>? UnameUserCustomFields { get; set; } 
 
     [JsonProperty("can_approve_purchaseorder", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? CanApprovePurchaseorder { get; set; } 
+    public bool? CanApprovePurchaseOrder { get; set; } 
 
     [JsonProperty("can_approve_quote", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? CanApproveQuote { get; set; } 

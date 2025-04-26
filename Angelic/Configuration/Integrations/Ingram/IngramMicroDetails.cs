@@ -20,7 +20,7 @@ public class IngramMicroDetails
     public string? ImportEntities { get; set; } 
 
     [JsonProperty("toplevel", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Toplevel { get; set; } 
+    public int? TopLevel { get; set; } 
 
     [JsonProperty("update_addresses", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? UpdateAddresses { get; set; } 

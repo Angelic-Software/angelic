@@ -44,7 +44,7 @@ public class Generic
     public int? DefaultSite { get; set; } 
 
     [JsonProperty("kaseyaid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Kaseyaid { get; set; } 
+    public string? KaseyaId { get; set; } 
 
     [JsonProperty("items_in_group_no_consign", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? ItemsInGroupNoConsign { get; set; } 

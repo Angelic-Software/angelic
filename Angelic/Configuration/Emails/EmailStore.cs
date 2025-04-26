@@ -36,7 +36,7 @@ public class EmailStore
     public string? Emailattachments { get; set; } 
 
     [JsonProperty("messagegroup_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? MessagegroupId { get; set; } 
+    public int? MessageGroupId { get; set; } 
 
     [JsonProperty("faultid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Faultid { get; set; } 
@@ -90,10 +90,10 @@ public class EmailStore
     public int? QuotationId { get; set; } 
 
     [JsonProperty("salesorder_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? SalesorderId { get; set; } 
+    public int? SalesOrderId { get; set; } 
 
     [JsonProperty("purchaseorder_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? PurchaseorderId { get; set; } 
+    public int? PurchaseOrderId { get; set; } 
 
     [JsonProperty("invoice_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? InvoiceId { get; set; } 

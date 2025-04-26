@@ -26,13 +26,13 @@ public class ExactDetails
     public int? Clienttoplevel { get; set; } 
 
     [JsonProperty("itemgroup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Itemgroup { get; set; } 
+    public int? ItemGroup { get; set; } 
 
     [JsonProperty("enablesync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Enablesync { get; set; } 
 
     [JsonProperty("defaultitemcode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Defaultitemcode { get; set; } 
+    public string? DefaultItemcode { get; set; } 
 
     [JsonProperty("showmessage", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? ShowMessage { get; set; } 

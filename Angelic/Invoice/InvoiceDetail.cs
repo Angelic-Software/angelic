@@ -109,10 +109,10 @@ public class InvoiceDetail
     public int? Labourdepartmentid { get; set; } 
 
     [JsonProperty("salesorder_line", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? SalesorderLine { get; set; } 
+    public int? SalesOrderLine { get; set; } 
 
     [JsonProperty("salesorder_line_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? SalesorderLineId { get; set; } 
+    public int? SalesOrderLineId { get; set; } 
 
     [JsonProperty("meter_pricing_method", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? MeterPricingMethod { get; set; } 
@@ -265,7 +265,7 @@ public class InvoiceDetail
     public bool? SyncedToIntacct { get; set; } 
 
     [JsonProperty("hideitems", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Hideitems { get; set; } 
+    public bool? HideItems { get; set; } 
 
     [JsonProperty("includegrouppriceandqty", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Includegrouppriceandqty { get; set; } 
@@ -304,10 +304,10 @@ public class InvoiceDetail
     public string? DbcId { get; set; } 
 
     [JsonProperty("purchaseorder_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? PurchaseorderId { get; set; } 
+    public int? PurchaseOrderId { get; set; } 
 
     [JsonProperty("purchaseorder_line_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? PurchaseorderLineId { get; set; } 
+    public int? PurchaseOrderLineId { get; set; } 
 
     [JsonProperty("discount_perc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? DiscountPerc { get; set; } 

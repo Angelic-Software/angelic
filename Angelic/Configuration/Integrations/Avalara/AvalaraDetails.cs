@@ -44,10 +44,10 @@ public class AvalaraDetails
     public StringIdNameKeyPair? CompanyObject { get; set; } 
 
     [JsonProperty("defaulttax", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Defaulttax { get; set; } 
+    public string? DefaultTax { get; set; } 
 
     [JsonProperty("defaultitem", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Defaultitem { get; set; } 
+    public string? DefaultItem { get; set; } 
 
     [JsonProperty("autosyncentities", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Autosyncentities { get; set; } 
@@ -65,7 +65,7 @@ public class AvalaraDetails
     public string? Syncentities { get; set; } 
 
     [JsonProperty("defaultcustomercode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Defaultcustomercode { get; set; } 
+    public string? DefaultCustomercode { get; set; } 
 
     [JsonProperty("default_customer_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? DefaultCustomerName { get; set; } 

@@ -16,7 +16,7 @@ public class Timeslot
     public Guid? WorkdayGuid { get; set; } 
 
     [JsonProperty("bookingtype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? BookingtypeId { get; set; } 
+    public int? BookingTypeId { get; set; } 
 
     [JsonProperty("name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Name { get; set; } 

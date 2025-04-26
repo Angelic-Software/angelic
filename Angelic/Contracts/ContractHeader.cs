@@ -303,10 +303,10 @@ public class ContractHeader
     public string? ImportUser { get; set; } 
 
     [JsonProperty("salesorder_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? SalesorderId { get; set; } 
+    public int? SalesOrderId { get; set; } 
 
     [JsonProperty("salesorder_line_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? SalesorderLineId { get; set; } 
+    public int? SalesOrderLineId { get; set; } 
 
     [JsonProperty("endtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Endtype { get; set; } 
@@ -462,10 +462,10 @@ public class ContractHeader
     public DateTimeOffset? AssetEndDate { get; set; } 
 
     [JsonProperty("contracttype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Contracttype { get; set; } 
+    public int? ContractType { get; set; } 
 
     [JsonProperty("contracttype_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ContracttypeName { get; set; } 
+    public string? ContractTypeName { get; set; } 
 
     [JsonProperty("prepayrecurringchargebp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Prepayrecurringchargebp { get; set; } 

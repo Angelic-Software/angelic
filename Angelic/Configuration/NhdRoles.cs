@@ -111,7 +111,7 @@ public class NhdRoles
     public ICollection<AccessControl>? AcEmailtemplates { get; set; } 
 
     [JsonProperty("ac_messagegroups", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AccessControl>? AcMessagegroups { get; set; } 
+    public ICollection<AccessControl>? AcMessageGroups { get; set; } 
 
     [JsonProperty("ac_reportgroups", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<AccessControl>? AcReportgroups { get; set; } 
@@ -123,7 +123,7 @@ public class NhdRoles
     public ICollection<AccessControl>? AcLanguagepacks { get; set; } 
 
     [JsonProperty("ac_itemgroups", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AccessControl>? AcItemgroups { get; set; } 
+    public ICollection<AccessControl>? AcItemGroups { get; set; } 
 
     [JsonProperty("ac_suppliers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<AccessControl>? AcSuppliers { get; set; } 

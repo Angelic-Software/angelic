@@ -138,7 +138,7 @@ public class InvoiceHeader
     public string? InvoiceTypeCode { get; set; } 
 
     [JsonProperty("salesorder_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? SalesorderId { get; set; } 
+    public int? SalesOrderId { get; set; } 
 
     [JsonProperty("datetype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Datetype { get; set; } 
@@ -174,7 +174,7 @@ public class InvoiceHeader
     public int? Paymentterms { get; set; } 
 
     [JsonProperty("hideinvoice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Hideinvoice { get; set; } 
+    public bool? HideInvoice { get; set; } 
 
     [JsonProperty("ticket_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? TicketId { get; set; } 
@@ -306,7 +306,7 @@ public class InvoiceHeader
     public int? AddPrepay { get; set; } 
 
     [JsonProperty("add_salesorder", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? AddSalesorder { get; set; } 
+    public int? AddSalesOrder { get; set; } 
 
     [JsonProperty("force_creation", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? ForceCreation { get; set; } 
@@ -459,7 +459,7 @@ public class InvoiceHeader
     public int? CreditlinkedtoinvoiceidTypeid { get; set; } 
 
     [JsonProperty("purchaseorder_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? PurchaseorderId { get; set; } 
+    public int? PurchaseOrderId { get; set; } 
 
     [JsonProperty("sage_business_cloud_details_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? SageBusinessCloudDetailsId { get; set; } 

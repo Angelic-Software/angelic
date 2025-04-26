@@ -47,16 +47,16 @@ public class ItemStock
     public string? SupplierName { get; set; } 
 
     [JsonProperty("purchaseorder_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? PurchaseorderId { get; set; } 
+    public int? PurchaseOrderId { get; set; } 
 
     [JsonProperty("purchaseorder_line_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? PurchaseorderLineId { get; set; } 
+    public int? PurchaseOrderLineId { get; set; } 
 
     [JsonProperty("purchaseorder_ref", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? PurchaseorderRef { get; set; } 
+    public string? PurchaseOrderRef { get; set; } 
 
     [JsonProperty("salesorder_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? SalesorderId { get; set; } 
+    public int? SalesOrderId { get; set; } 
 
     [JsonProperty("ticket_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? TicketId { get; set; } 

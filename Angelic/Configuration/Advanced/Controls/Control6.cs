@@ -83,13 +83,13 @@ public partial class Control
         public bool? Loadimagesfromapi { get; set; } 
 
         [JsonProperty("centrify_clientid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? CentrifyClientid { get; set; } 
+        public string? CentrifyClientId { get; set; } 
 
         [JsonProperty("centrify_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? CentrifyUrl { get; set; } 
 
         [JsonProperty("centrify_applicationid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? CentrifyApplicationid { get; set; } 
+        public string? CentrifyApplicationId { get; set; } 
 
         [JsonProperty("centrify_ssotype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? CentrifySsotype { get; set; } 
@@ -140,7 +140,7 @@ public partial class Control
         public bool? Enablekbreview { get; set; } 
 
         [JsonProperty("defaultnumberofdaysbetweenkbreviews", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Defaultnumberofdaysbetweenkbreviews { get; set; } 
+        public int? DefaultNumberofdaysbetweenkbreviews { get; set; } 
 
         [JsonProperty("trackkbsearches", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Trackkbsearches { get; set; } 
@@ -221,7 +221,7 @@ public partial class Control
         public string? DattoUrl { get; set; } 
 
         [JsonProperty("datto_clientid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? DattoClientid { get; set; } 
+        public string? DattoClientId { get; set; } 
 
         [JsonProperty("invoicecsvlocation", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Invoicecsvlocation { get; set; } 
@@ -230,7 +230,7 @@ public partial class Control
         public int? Svsearchmode { get; set; } 
 
         [JsonProperty("defaultcurrencycode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Defaultcurrencycode { get; set; } 
+        public int? DefaultCurrencycode { get; set; } 
 
         [JsonProperty("sendfollowernotifications", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Sendfollowernotifications { get; set; } 
@@ -245,7 +245,7 @@ public partial class Control
         public bool? Mandatoryrejectcomment { get; set; } 
 
         [JsonProperty("kaseya_toplevel", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? KaseyaToplevel { get; set; } 
+        public int? KaseyaTopLevel { get; set; } 
 
         [JsonProperty("googlenewmethod", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Googlenewmethod { get; set; } 
@@ -299,7 +299,7 @@ public partial class Control
         public bool? WestcoastDeleteLicences { get; set; } 
 
         [JsonProperty("defaultconsigmentuser", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Defaultconsigmentuser { get; set; } 
+        public int? DefaultConsigmentuser { get; set; } 
 
         [JsonProperty("show_timezone_input", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? ShowTimezoneInput { get; set; } 
@@ -350,7 +350,7 @@ public partial class Control
         public bool? TrustpilotEnablesurveys { get; set; } 
 
         [JsonProperty("trustpilot_defaultusersite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? TrustpilotDefaultusersite { get; set; } 
+        public int? TrustpilotDefaultUsersite { get; set; } 
 
         [JsonProperty("trustpilot_statusafterupdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? TrustpilotStatusafterupdate { get; set; } 
@@ -596,13 +596,13 @@ public partial class Control
         public int? PrometheusAssetTypeChoice { get; set; } 
 
         [JsonProperty("prometheus_defaultassettype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? PrometheusDefaultassettype { get; set; } 
+        public int? PrometheusDefaultAssettype { get; set; } 
 
         [JsonProperty("prometheus_assettypefield", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? PrometheusAssetTypefield { get; set; } 
 
         [JsonProperty("prometheus_defaultgroup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? PrometheusDefaultgroup { get; set; } 
+        public int? PrometheusDefaultGroup { get; set; } 
 
         [JsonProperty("prometheus_enable_alerting", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? PrometheusEnableAlerting { get; set; } 
@@ -647,7 +647,7 @@ public partial class Control
         public bool? WordpressImportcategories { get; set; } 
 
         [JsonProperty("wordpress_defaultfaqlist", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? WordpressDefaultfaqlist { get; set; } 
+        public int? WordpressDefaultFaqlist { get; set; } 
 
         [JsonProperty("wordpress_tagtoimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? WordpressTagtoimport { get; set; } 
@@ -692,7 +692,7 @@ public partial class Control
         public string? ItglueImportList { get; set; } 
 
         [JsonProperty("itglue_import_types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<KeyPair2>? ItglueImportTypes { get; set; } 
+        public ICollection<ValueLabelIsNewKeyPair>? ItglueImportTypes { get; set; } 
 
         [JsonProperty("childticketsdisplay", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Childticketsdisplay { get; set; } 
@@ -752,7 +752,7 @@ public partial class Control
         public string? NinjaImportList { get; set; } 
 
         [JsonProperty("ninja_import_types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<KeyPair2>? NinjaImportTypes { get; set; } 
+        public ICollection<ValueLabelIsNewKeyPair>? NinjaImportTypes { get; set; } 
 
         [JsonProperty("intacct_use_halo_creds", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IntacctUseHaloCreds { get; set; } 
@@ -926,7 +926,7 @@ public partial class Control
         public bool? WordpressorgImportcategories { get; set; } 
 
         [JsonProperty("wordpressorg_defaultfaqlist", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? WordpressorgDefaultfaqlist { get; set; } 
+        public int? WordpressorgDefaultFaqlist { get; set; } 
 
         [JsonProperty("only_show_needs_order_lines_when_supplier_set", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? OnlyShowNeedsOrderLinesWhenSupplierSet { get; set; } 

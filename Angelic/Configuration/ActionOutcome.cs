@@ -115,13 +115,13 @@ namespace Angelic.Configuration;
         public int? ChargeRate { get; set; } 
 
         [JsonProperty("defaultuserdef", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Defaultuserdef { get; set; } 
+        public int? DefaultUserdef { get; set; } 
 
         [JsonProperty("defaultmanhrs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Defaultmanhrs { get; set; } 
+        public double? DefaultManhrs { get; set; } 
 
         [JsonProperty("defaultnonbill", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Defaultnonbill { get; set; } 
+        public double? DefaultNonbill { get; set; } 
 
         [JsonProperty("securitylevel", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Securitylevel { get; set; } 
@@ -157,16 +157,16 @@ namespace Angelic.Configuration;
         public bool? Hidecloserequest { get; set; } 
 
         [JsonProperty("defaultagent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Defaultagent { get; set; } 
+        public int? DefaultAgent { get; set; } 
 
         [JsonProperty("defaultagent_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? DefaultagentName { get; set; } 
+        public string? DefaultAgentName { get; set; } 
 
         [JsonProperty("defaultpriority", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Defaultpriority { get; set; } 
+        public int? DefaultPriority { get; set; } 
 
         [JsonProperty("defaultteam", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Defaultteam { get; set; } 
+        public string? DefaultTeam { get; set; } 
 
         [JsonProperty("includecc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Includecc { get; set; } 
@@ -253,7 +253,7 @@ namespace Angelic.Configuration;
         public bool? Primaryserviceusersfollow { get; set; } 
 
         [JsonProperty("defaultappointmentstatus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Defaultappointmentstatus { get; set; } 
+        public int? DefaultAppointmentstatus { get; set; } 
 
         [JsonProperty("reportid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Reportid { get; set; } 
@@ -475,16 +475,16 @@ namespace Angelic.Configuration;
         public string? CustomUrl { get; set; } 
 
         [JsonProperty("defaultcat1", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Defaultcat1 { get; set; } 
+        public string? DefaultCat1 { get; set; } 
 
         [JsonProperty("defaultcat2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Defaultcat2 { get; set; } 
+        public string? DefaultCat2 { get; set; } 
 
         [JsonProperty("defaultcat3", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Defaultcat3 { get; set; } 
+        public string? DefaultCat3 { get; set; } 
 
         [JsonProperty("defaultcat4", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Defaultcat4 { get; set; } 
+        public string? DefaultCat4 { get; set; } 
 
         [JsonProperty("includeallattachments", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Includeallattachments { get; set; } 
@@ -636,7 +636,7 @@ namespace Angelic.Configuration;
         public int? Minattachments { get; set; } 
 
         [JsonProperty("defaultappointmenttype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Defaultappointmenttype { get; set; } 
+        public int? DefaultAppointmenttype { get; set; } 
 
         [JsonProperty("showsendsurvey", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Showsendsurvey { get; set; } 
@@ -657,7 +657,7 @@ namespace Angelic.Configuration;
         public bool? AiImproveAgentNoteDefaultOn { get; set; } 
 
         [JsonProperty("defaultcommunicationmethod", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Defaultcommunicationmethod { get; set; } 
+        public int? DefaultCommunicationmethod { get; set; } 
 
         [JsonProperty("newaction_thirdpartynhdservicenowsupplierid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? NewActionThirdPartynhdservicenowsupplierid { get; set; } 

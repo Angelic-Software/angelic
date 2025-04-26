@@ -1,10 +1,11 @@
 using System.CodeDom.Compiler;
 using Angelic.Configuration.Custom.CustomFields;
 using Angelic.Configuration.Custom.CustomTabs;
+using Angelic.Configuration.SelfServicePortal;
 using Angelic.Sites;
 using Newtonsoft.Json;
 
-namespace Angelic.Configuration;
+namespace Angelic.Configuration.Assets;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
 public class AssetType
@@ -22,31 +23,31 @@ public class AssetType
     public string? Name { get; set; } 
 
     [JsonProperty("assetgroup_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? AssetgroupId { get; set; } 
+    public int? AssetGroupId { get; set; } 
 
     [JsonProperty("assetgroup_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? AssetgroupGuid { get; set; } 
+    public Guid? AssetGroupGuid { get; set; } 
 
     [JsonProperty("assetgroup_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? AssetgroupName { get; set; } 
+    public string? AssetGroupName { get; set; } 
 
     [JsonProperty("keyfield_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? KeyfieldId { get; set; } 
+    public int? KeyFieldId { get; set; } 
 
     [JsonProperty("keyfield_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? KeyfieldName { get; set; } 
+    public string? KeyFieldName { get; set; } 
 
     [JsonProperty("keyfield2_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Keyfield2Id { get; set; } 
+    public int? KeyField2Id { get; set; } 
 
     [JsonProperty("keyfield2_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Keyfield2Name { get; set; } 
+    public string? KeyField2Name { get; set; } 
 
     [JsonProperty("keyfield3_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Keyfield3Id { get; set; } 
+    public int? KeyField3Id { get; set; } 
 
     [JsonProperty("keyfield3_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Keyfield3Name { get; set; } 
+    public string? KeyField3Name { get; set; } 
 
     [JsonProperty("memo", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Memo { get; set; } 
@@ -58,7 +59,7 @@ public class AssetType
     public int? Supplier1 { get; set; } 
 
     [JsonProperty("itemno", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Itemno { get; set; } 
+    public int? ItemNo { get; set; } 
 
     [JsonProperty("cost", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? Cost { get; set; } 
@@ -82,25 +83,25 @@ public class AssetType
     public double? Quarterlycost { get; set; } 
 
     [JsonProperty("sixmonthlycost", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Sixmonthlycost { get; set; } 
+    public double? SixMonthlyCost { get; set; } 
 
     [JsonProperty("yearlycost", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Yearlycost { get; set; } 
+    public double? YearlyCost { get; set; } 
 
     [JsonProperty("twoyearlycost", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Twoyearlycost { get; set; } 
+    public double? TwoYearlyCost { get; set; } 
 
     [JsonProperty("threeyearlycost", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Threeyearlycost { get; set; } 
+    public double? ThreeYearlyCost { get; set; } 
 
     [JsonProperty("fouryearlycost", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Fouryearlycost { get; set; } 
+    public double? FourYearlyCost { get; set; } 
 
     [JsonProperty("fiveyearlycost", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Fiveyearlycost { get; set; } 
+    public double? FiveYearlyCost { get; set; } 
 
     [JsonProperty("kaseyaid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Kaseyaid { get; set; } 
+    public string? KaseyaId { get; set; } 
 
     [JsonProperty("icon", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Icon { get; set; } 
@@ -118,7 +119,7 @@ public class AssetType
     public string? ItemCode { get; set; } 
 
     [JsonProperty("defaultsequence", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Defaultsequence { get; set; } 
+    public int? DefaultSequence { get; set; } 
 
     [JsonProperty("tagprefix", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Tagprefix { get; set; } 
@@ -154,13 +155,13 @@ public class AssetType
     public double? ResourcebookingMaxDaysAdvance { get; set; } 
 
     [JsonProperty("bookingtypes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<BookingType>? Bookingtypes { get; set; } 
+    public ICollection<BookingType>? BookingTypes { get; set; } 
 
     [JsonProperty("timeslots", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<BookingTypeTimeslot>? Timeslots { get; set; } 
 
     [JsonProperty("timeslot_bookingtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? TimeslotBookingtype { get; set; } 
+    public int? TimeslotBookingType { get; set; } 
 
     [JsonProperty("_isimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Isimport { get; set; } 
@@ -169,7 +170,7 @@ public class AssetType
     public string? Warning { get; set; } 
 
     [JsonProperty("linkedcontracttype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Linkedcontracttype { get; set; } 
+    public int? LinkedContractType { get; set; } 
 
     [JsonProperty("fiid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? FiId { get; set; } 
@@ -184,7 +185,7 @@ public class AssetType
     public string? NewIcon { get; set; } 
 
     [JsonProperty("xtype_roles", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<XTypeRole>? XtypeRoles { get; set; } 
+    public ICollection<AssetTypeRole>? XTypeRoles { get; set; } 
 
     [JsonProperty("asset_details_tab_display", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? AssetDetailsTabDisplay { get; set; } 
@@ -196,7 +197,7 @@ public class AssetType
     public int? Resourcebookingtype { get; set; } 
 
     [JsonProperty("allowed_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<XTypeStatus>? AllowedStatus { get; set; } 
+    public ICollection<AssetTypeStatus>? AllowedStatus { get; set; } 
 
     [JsonProperty("allowall_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? AllowallStatus { get; set; } 
@@ -205,7 +206,7 @@ public class AssetType
     public int? BusinessownerVisibility { get; set; } 
 
     [JsonProperty("technicalowner_visibility", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? TechnicalownerVisibility { get; set; } 
+    public int? TechnicalOwnerVisibility { get; set; } 
 
     [JsonProperty("sla_visibility", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? SlaVisibility { get; set; } 
@@ -229,7 +230,7 @@ public class AssetType
     public int? VisibilityLevel { get; set; } 
 
     [JsonProperty("resourcebooking_site_selection_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ResourcebookingSiteSelectionType { get; set; } 
+    public int? ResourceBookingSiteSelectionType { get; set; } 
 
     [JsonProperty("booking_sites", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<SiteList>? BookingSites { get; set; } 

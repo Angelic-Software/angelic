@@ -71,7 +71,7 @@ public class Site
     public bool? Isstocklocation { get; set; } 
 
     [JsonProperty("messagegroup_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? MessagegroupId { get; set; } 
+    public int? MessageGroupId { get; set; } 
 
     [JsonProperty("item_quantity_in_stock", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? ItemQuantityInStock { get; set; } 
@@ -407,7 +407,7 @@ public class Site
     public int? Liongardid { get; set; } 
 
     [JsonProperty("kaseyaid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Kaseyaid { get; set; } 
+    public string? KaseyaId { get; set; } 
 
     [JsonProperty("surchargeid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Surchargeid { get; set; } 

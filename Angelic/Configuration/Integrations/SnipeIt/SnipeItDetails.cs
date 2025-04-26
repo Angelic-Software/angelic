@@ -23,10 +23,10 @@ public class SnipeItDetails
     public bool? NewIntegrationMethod { get; set; } 
 
     [JsonProperty("toplevel", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Toplevel { get; set; } 
+    public int? TopLevel { get; set; } 
 
     [JsonProperty("toplevel_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ToplevelName { get; set; } 
+    public string? TopLevelName { get; set; } 
 
     [JsonProperty("default_devicesite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? DefaultDevicesite { get; set; } 
@@ -47,7 +47,7 @@ public class SnipeItDetails
     public string? AssetimportidentifierFieldName { get; set; } 
 
     [JsonProperty("snipeit_fieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<IntegrationFieldMapping>? SnipeitFieldmappings { get; set; } 
+    public ICollection<IntegrationFieldMapping>? SnipeitFieldMappings { get; set; } 
 
     [JsonProperty("enableintegrator", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Enableintegrator { get; set; } 
@@ -86,13 +86,13 @@ public class SnipeItDetails
     public Guid? Guid { get; set; } 
 
     [JsonProperty("mappings_xtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<XTypeMapping>? MappingsXtype { get; set; } 
+    public ICollection<AssetTypeMapping>? MappingsXType { get; set; } 
 
     [JsonProperty("default_assetgroup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? DefaultAssetgroup { get; set; } 
+    public int? DefaultAssetGroup { get; set; } 
 
     [JsonProperty("default_assetgroupname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? DefaultAssetgroupname { get; set; } 
+    public string? DefaultAssetGroupname { get; set; } 
 
     [JsonProperty("assettype_choice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? AssetTypeChoice { get; set; } 

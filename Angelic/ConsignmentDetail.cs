@@ -26,10 +26,10 @@ public class ConsignmentDetail
     public string? InvoiceId { get; set; } 
 
     [JsonProperty("salesorder_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? SalesorderId { get; set; } 
+    public int? SalesOrderId { get; set; } 
 
     [JsonProperty("salesorder_line", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? SalesorderLine { get; set; } 
+    public int? SalesOrderLine { get; set; } 
 
     [JsonProperty("stocklocation_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? StocklocationId { get; set; } 

@@ -55,7 +55,7 @@ public class AzureAdMapping
     public int? SiteMappingType { get; set; } 
 
     [JsonProperty("clientid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Clientid { get; set; } 
+    public int? ClientId { get; set; } 
 
     [JsonProperty("client_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ClientName { get; set; } 

@@ -182,7 +182,7 @@ public class QuotationDetail
     public string? Warning { get; set; } 
 
     [JsonProperty("assetgroup_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? AssetgroupId { get; set; } 
+    public int? AssetGroupId { get; set; } 
 
     [JsonProperty("maxitemdiscount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? Maxitemdiscount { get; set; } 
@@ -197,7 +197,7 @@ public class QuotationDetail
     public int? LinePeriods { get; set; } 
 
     [JsonProperty("hideitems", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Hideitems { get; set; } 
+    public bool? HideItems { get; set; } 
 
     [JsonProperty("ignoretaxcalc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Ignoretaxcalc { get; set; } 

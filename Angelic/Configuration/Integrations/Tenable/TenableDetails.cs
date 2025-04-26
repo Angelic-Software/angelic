@@ -43,7 +43,7 @@ public class TenableDetails
     public string? AssetimportidentifierFieldName { get; set; } 
 
     [JsonProperty("fieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<IntegrationFieldMapping>? Fieldmappings { get; set; } 
+    public ICollection<IntegrationFieldMapping>? FieldMappings { get; set; } 
 
     [JsonProperty("sitemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<IntegrationSiteMapping>? Sitemappings { get; set; } 
@@ -76,13 +76,13 @@ public class TenableDetails
     public Guid? Guid { get; set; } 
 
     [JsonProperty("mappings_xtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<XTypeMapping>? MappingsXtype { get; set; } 
+    public ICollection<AssetTypeMapping>? MappingsXType { get; set; } 
 
     [JsonProperty("default_assetgroup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? DefaultAssetgroup { get; set; } 
+    public int? DefaultAssetGroup { get; set; } 
 
     [JsonProperty("default_assetgroupname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? DefaultAssetgroupname { get; set; } 
+    public string? DefaultAssetGroupname { get; set; } 
 
     [JsonProperty("assettype_choice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? AssetTypeChoice { get; set; } 

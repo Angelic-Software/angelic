@@ -22,7 +22,7 @@ public class ConnectedInstance
     public string? Tenant { get; set; } 
 
     [JsonProperty("clientid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Clientid { get; set; } 
+    public string? ClientId { get; set; } 
 
     [JsonProperty("new_clientsecret", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? NewClientsecret { get; set; } 

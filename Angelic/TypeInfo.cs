@@ -23,7 +23,7 @@ public class TypeInfo
     public int? Sequence { get; set; } 
 
     [JsonProperty("keyfield_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? KeyfieldId { get; set; } 
+    public string? KeyFieldId { get; set; } 
 
     [JsonProperty("type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Type { get; set; } 

@@ -113,7 +113,7 @@ public class Mailbox
     public bool? Usesmtpforazuremailbox { get; set; } 
 
     [JsonProperty("messagegroup_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? MessagegroupId { get; set; } 
+    public int? MessageGroupId { get; set; } 
 
     [JsonProperty("smtpdisplayname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Smtpdisplayname { get; set; } 
@@ -125,10 +125,10 @@ public class Mailbox
     public bool? Dontsendack { get; set; } 
 
     [JsonProperty("defaultuser", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Defaultuser { get; set; } 
+    public string? DefaultUser { get; set; } 
 
     [JsonProperty("defaultuserid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Defaultuserid { get; set; } 
+    public int? DefaultUserid { get; set; } 
 
     [JsonProperty("changeseq", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Changeseq { get; set; } 
@@ -296,7 +296,7 @@ public class Mailbox
     public int? AzureAuthority { get; set; } 
 
     [JsonProperty("defaultusersite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Defaultusersite { get; set; } 
+    public string? DefaultUsersite { get; set; } 
 
     [JsonProperty("safe_attachment_policy", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? SafeAttachmentPolicy { get; set; } 

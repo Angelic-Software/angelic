@@ -16,10 +16,10 @@ public class SalesMailbox
     public string? Name { get; set; } 
 
     [JsonProperty("tenantid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Tenantid { get; set; } 
+    public string? TenantId { get; set; } 
 
     [JsonProperty("applicationid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Applicationid { get; set; } 
+    public string? ApplicationId { get; set; } 
 
     [JsonProperty("new_client_secret", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? NewClientSecret { get; set; } 
@@ -49,7 +49,7 @@ public class SalesMailbox
     public string? Authcode { get; set; } 
 
     [JsonProperty("_exchangecodefortoken", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Exchangecodefortoken { get; set; } 
+    public bool? ExchangeCodeForToken { get; set; } 
 
     [JsonProperty("mailboxes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<SalesMailboxDetail>? Mailboxes { get; set; } 
@@ -79,7 +79,7 @@ public class SalesMailbox
     public string? GoogleEmail { get; set; } 
 
     [JsonProperty("_getgoogletoken", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Getgoogletoken { get; set; } 
+    public bool? GetGoogleToken { get; set; } 
 
     [JsonProperty("google_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? GoogleCode { get; set; } 

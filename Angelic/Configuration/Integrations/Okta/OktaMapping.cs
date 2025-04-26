@@ -31,10 +31,10 @@ namespace Angelic.Configuration.Integrations.Okta;
         public int? Roleid { get; set; } 
 
         [JsonProperty("applicationid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Applicationid { get; set; } 
+        public string? ApplicationId { get; set; } 
 
         [JsonProperty("applicationid_display", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? ApplicationidDisplay { get; set; } 
+        public string? ApplicationIdDisplay { get; set; } 
 
         [JsonProperty("filterbyapp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Filterbyapp { get; set; } 

@@ -184,10 +184,10 @@ public class QuotationHeader
     public bool? CreateSo { get; set; } 
 
     [JsonProperty("salesorder_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? SalesorderId { get; set; } 
+    public int? SalesOrderId { get; set; } 
 
     [JsonProperty("salesorder", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public SalesOrder? Salesorder { get; set; } 
+    public SalesOrder? SalesOrder { get; set; } 
 
     [JsonProperty("signature", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Signature { get; set; } 
@@ -259,7 +259,7 @@ public class QuotationHeader
     public string? ThirdPartyUrl { get; set; } 
 
     [JsonProperty("dattocommerce_clientid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? DattocommerceClientid { get; set; } 
+    public int? DattocommerceClientId { get; set; } 
 
     [JsonProperty("dattocommerce_contactname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? DattocommerceContactname { get; set; } 
@@ -271,7 +271,7 @@ public class QuotationHeader
     public double? Deliveryamount { get; set; } 
 
     [JsonProperty("dattocommerce_tenantid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? DattocommerceTenantid { get; set; } 
+    public int? DattocommerceTenantId { get; set; } 
 
     [JsonProperty("deliverytax", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? Deliverytax { get; set; } 

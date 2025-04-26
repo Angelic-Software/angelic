@@ -26,13 +26,13 @@ public class Item
     public int? Status { get; set; } 
 
     [JsonProperty("assetgroup_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? AssetgroupId { get; set; } 
+    public int? AssetGroupId { get; set; } 
 
     [JsonProperty("assetgroup_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? AssetgroupName { get; set; } 
+    public string? AssetGroupName { get; set; } 
 
     [JsonProperty("third_party_assetgroup_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ThirdPartyAssetgroupId { get; set; } 
+    public string? ThirdPartyAssetGroupId { get; set; } 
 
     [JsonProperty("note", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Note { get; set; } 

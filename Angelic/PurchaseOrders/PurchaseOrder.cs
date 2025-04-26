@@ -120,7 +120,7 @@ public class PurchaseOrder
     public DateTimeOffset? EstDeliveryDate { get; set; } 
 
     [JsonProperty("salesorder_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? SalesorderId { get; set; } 
+    public int? SalesOrderId { get; set; } 
 
     [JsonProperty("currency", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Currency { get; set; } 

@@ -32,7 +32,7 @@ public class ConsignmentHeader
     public string? UserName { get; set; } 
 
     [JsonProperty("salesorder_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? SalesorderId { get; set; } 
+    public int? SalesOrderId { get; set; } 
 
     [JsonProperty("lines", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<ConsignmentDetail>? Lines { get; set; } 

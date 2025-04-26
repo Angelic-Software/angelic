@@ -147,7 +147,7 @@ namespace Angelic.Configuration.TeamsAndAgents.Agents;
         public bool? GoogleMailAuthorized { get; set; } 
 
         [JsonProperty("inbox_clientid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? InboxClientid { get; set; } 
+        public string? InboxClientId { get; set; } 
 
         [JsonProperty("isapiagent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Isapiagent { get; set; } 
@@ -624,7 +624,7 @@ namespace Angelic.Configuration.TeamsAndAgents.Agents;
         public ICollection<AccessControl>? AcEmailtemplates { get; set; } 
 
         [JsonProperty("ac_messagegroups", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<AccessControl>? AcMessagegroups { get; set; } 
+        public ICollection<AccessControl>? AcMessageGroups { get; set; } 
 
         [JsonProperty("ac_reportgroups", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<AccessControl>? AcReportgroups { get; set; } 
@@ -636,7 +636,7 @@ namespace Angelic.Configuration.TeamsAndAgents.Agents;
         public ICollection<AccessControl>? AcLanguagepacks { get; set; } 
 
         [JsonProperty("ac_itemgroups", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<AccessControl>? AcItemgroups { get; set; } 
+        public ICollection<AccessControl>? AcItemGroups { get; set; } 
 
         [JsonProperty("default_columns_id_clients", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? DefaultColumnsIdClients { get; set; } 
@@ -693,7 +693,7 @@ namespace Angelic.Configuration.TeamsAndAgents.Agents;
         public ICollection<AccessControl>? AcAssetTypes { get; set; } 
 
         [JsonProperty("ac_assetgroups", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<AccessControl>? AcAssetgroups { get; set; } 
+        public ICollection<AccessControl>? AcAssetGroups { get; set; } 
 
         [JsonProperty("ac_servicecategories", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<AccessControl>? AcServicecategories { get; set; } 
@@ -909,7 +909,7 @@ namespace Angelic.Configuration.TeamsAndAgents.Agents;
         public ICollection<AgentCustom>? UnameUsercustomfields { get; set; } 
 
         [JsonProperty("can_approve_purchaseorder", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? CanApprovePurchaseorder { get; set; } 
+        public bool? CanApprovePurchaseOrder { get; set; } 
 
         [JsonProperty("can_approve_quote", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? CanApproveQuote { get; set; } 

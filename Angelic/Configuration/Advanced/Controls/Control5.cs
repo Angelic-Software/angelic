@@ -377,13 +377,13 @@ public partial class Control
         public int? Serviceincidentrtid { get; set; } 
 
         [JsonProperty("servicedefaultok", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Servicedefaultok { get; set; } 
+        public string? ServiceDefaultOk { get; set; } 
 
         [JsonProperty("servicedefaultfault", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Servicedefaultfault { get; set; } 
+        public string? ServiceDefaultFault { get; set; } 
 
         [JsonProperty("servicedefaultmaintenance", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Servicedefaultmaintenance { get; set; } 
+        public string? ServiceDefaultMaintenance { get; set; } 
 
         [JsonProperty("servicefailurert", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Servicefailurert { get; set; } 
@@ -497,7 +497,7 @@ public partial class Control
         public string? Lmichannelname { get; set; } 
 
         [JsonProperty("defaultremotesessionuserid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Defaultremotesessionuserid { get; set; } 
+        public int? DefaultRemotesessionuserid { get; set; } 
 
         [JsonProperty("azurecreatesites", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Azurecreatesites { get; set; } 
@@ -536,16 +536,16 @@ public partial class Control
         public int? Sage200Version { get; set; } 
 
         [JsonProperty("sage200toplevel", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Sage200Toplevel { get; set; } 
+        public int? Sage200TopLevel { get; set; } 
 
         [JsonProperty("sage200tenantid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Sage200Tenantid { get; set; } 
+        public string? Sage200TenantId { get; set; } 
 
         [JsonProperty("sage200companyid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Sage200Companyid { get; set; } 
 
         [JsonProperty("sage200itemgroup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Sage200Itemgroup { get; set; } 
+        public int? Sage200ItemGroup { get; set; } 
 
         [JsonProperty("sage200companyname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Sage200Companyname { get; set; } 
@@ -638,10 +638,10 @@ public partial class Control
         public bool? Sendnotificationemailforrtbcc { get; set; } 
 
         [JsonProperty("defaultpdftemplatequote", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Defaultpdftemplatequote { get; set; } 
+        public int? DefaultPdfTemplatequote { get; set; } 
 
         [JsonProperty("defaultcurrency", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Defaultcurrency { get; set; } 
+        public string? DefaultCurrency { get; set; } 
 
         [JsonProperty("pagerdutydefaultagent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Pagerdutydefaultagent { get; set; } 
@@ -722,7 +722,7 @@ public partial class Control
         public string? ContractexpirytemplateName { get; set; } 
 
         [JsonProperty("defaultpdftemplatepo", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Defaultpdftemplatepo { get; set; } 
+        public int? DefaultPdfTemplatepo { get; set; } 
 
         [JsonProperty("poprefixr", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Poprefixr { get; set; } 
@@ -743,22 +743,22 @@ public partial class Control
         public bool? Removeemailfromlistonuserchange { get; set; } 
 
         [JsonProperty("defaultpdftemplateso", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Defaultpdftemplateso { get; set; } 
+        public int? DefaultPdfTemplateso { get; set; } 
 
         [JsonProperty("defaultpdftemplatefault", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Defaultpdftemplatefault { get; set; } 
+        public int? DefaultPdfTemplatefault { get; set; } 
 
         [JsonProperty("sendwindowsappprintrequestonclose", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Sendwindowsappprintrequestonclose { get; set; } 
 
         [JsonProperty("defaultpdftemplateinvoice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Defaultpdftemplateinvoice { get; set; } 
+        public int? DefaultPdfTemplateinvoice { get; set; } 
 
         [JsonProperty("defaultpdftemplatecontract", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Defaultpdftemplatecontract { get; set; } 
+        public int? DefaultPdfTemplatecontract { get; set; } 
 
         [JsonProperty("defaultpdftemplatereport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Defaultpdftemplatereport { get; set; } 
+        public int? DefaultPdfTemplatereport { get; set; } 
 
         [JsonProperty("tracksoftwarechanges", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Tracksoftwarechanges { get; set; } 
@@ -851,13 +851,13 @@ public partial class Control
         public int? NcentralAlerttype { get; set; } 
 
         [JsonProperty("defaultincludegroupeditemqty", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Defaultincludegroupeditemqty { get; set; } 
+        public bool? DefaultIncludegroupeditemqty { get; set; } 
 
         [JsonProperty("defaultincludegroupeditemprice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Defaultincludegroupeditemprice { get; set; } 
+        public bool? DefaultIncludegroupeditemprice { get; set; } 
 
         [JsonProperty("defaultincludegrouppriceandqty", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Defaultincludegrouppriceandqty { get; set; } 
+        public bool? DefaultIncludegrouppriceandqty { get; set; } 
 
         [JsonProperty("callscreenallownewclientcreation", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Callscreenallownewclientcreation { get; set; } 

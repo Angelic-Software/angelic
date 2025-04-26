@@ -35,7 +35,7 @@ public class SqlImport
     public string? Sql { get; set; } 
 
     [JsonProperty("keyfield", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Keyfield { get; set; } 
+    public string? KeyField { get; set; } 
 
     [JsonProperty("datafield1", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Datafield1 { get; set; } 
@@ -107,10 +107,10 @@ public class SqlImport
     public string? HaloIntegratorLastError { get; set; } 
 
     [JsonProperty("halointegrator_allowed_clientids_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ValueLabelIsNewKeyPair>? HaloIntegratorAllowedClientidsList { get; set; } 
+    public ICollection<ValueLabelIsNewKeyPair>? HaloIntegratorAllowedClientIdsList { get; set; } 
 
     [JsonProperty("halointegrator_allowed_clientids", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? HaloIntegratorAllowedClientids { get; set; } 
+    public string? HaloIntegratorAllowedClientIds { get; set; } 
 
     [JsonProperty("new_method", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? NewMethod { get; set; } 

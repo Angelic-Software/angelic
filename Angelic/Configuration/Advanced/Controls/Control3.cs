@@ -185,7 +185,7 @@ public partial class Control
         public string? MigrationCustomFilter { get; set; } 
 
         [JsonProperty("device42_toplevel", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Device42Toplevel { get; set; } 
+        public int? Device42TopLevel { get; set; } 
 
         [JsonProperty("device42defaultsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Device42defaultsite { get; set; } 
@@ -257,7 +257,7 @@ public partial class Control
         public bool? Logclosedpagerduty { get; set; } 
 
         [JsonProperty("defaultischangeapprover", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Defaultischangeapprover { get; set; } 
+        public bool? DefaultIschangeapprover { get; set; } 
 
         [JsonProperty("noapprovalwithnocabmembers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Noapprovalwithnocabmembers { get; set; } 
@@ -302,7 +302,7 @@ public partial class Control
         public bool? Populatephoneworknumberforuserwhennotmatched { get; set; } 
 
         [JsonProperty("atera_toplevel", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? AteraToplevel { get; set; } 
+        public int? AteraTopLevel { get; set; } 
 
         [JsonProperty("atera_devicetypes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? AteraDevicetypes { get; set; } 
@@ -311,10 +311,10 @@ public partial class Control
         public int? AteraDefaultSite { get; set; } 
 
         [JsonProperty("atera_defaultgroup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? AteraDefaultgroup { get; set; } 
+        public int? AteraDefaultGroup { get; set; } 
 
         [JsonProperty("atera_defaultgroup_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public Guid? AteraDefaultgroupGuid { get; set; } 
+        public Guid? AteraDefaultGroupGuid { get; set; } 
 
         [JsonProperty("atera_delete_devices", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? AteraDeleteDevices { get; set; } 
@@ -356,10 +356,10 @@ public partial class Control
         public bool? Senduseremailafterquoteaccepted { get; set; } 
 
         [JsonProperty("defaultcustomersalestax", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Defaultcustomersalestax { get; set; } 
+        public int? DefaultCustomersalestax { get; set; } 
 
         [JsonProperty("defaultcustomerpurchasestax", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Defaultcustomerpurchasestax { get; set; } 
+        public int? DefaultCustomerpurchasestax { get; set; } 
 
         [JsonProperty("merakitickettype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Merakitickettype { get; set; } 
@@ -404,7 +404,7 @@ public partial class Control
         public bool? Delivertouser { get; set; } 
 
         [JsonProperty("defaultappointmentbody", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Defaultappointmentbody { get; set; } 
+        public string? DefaultAppointmentbody { get; set; } 
 
         [JsonProperty("interactUseWhere", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? InteractUseWhere { get; set; } 
@@ -599,7 +599,7 @@ public partial class Control
         public Guid? JamfDefaultdtypemobileGuid { get; set; } 
 
         [JsonProperty("scom_allowed_clientids", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? ScomAllowedClientids { get; set; } 
+        public string? ScomAllowedClientIds { get; set; } 
 
         [JsonProperty("jamf_defaultdtypecomputer", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? JamfDefaultdtypecomputer { get; set; } 
@@ -608,7 +608,7 @@ public partial class Control
         public Guid? JamfDefaultdtypecomputerGuid { get; set; } 
 
         [JsonProperty("orion_allowed_clientids", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? OrionAllowedClientids { get; set; } 
+        public string? OrionAllowedClientIds { get; set; } 
 
         [JsonProperty("google_calendar_authorized", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? GoogleCalendarAuthorized { get; set; } 
@@ -746,7 +746,7 @@ public partial class Control
         public int? DattoConnectType { get; set; } 
 
         [JsonProperty("syncro_toplevel", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? SyncroToplevel { get; set; } 
+        public int? SyncroTopLevel { get; set; } 
 
         [JsonProperty("syncro_devicetypes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? SyncroDevicetypes { get; set; } 
@@ -755,10 +755,10 @@ public partial class Control
         public int? SyncroDefaultSite { get; set; } 
 
         [JsonProperty("syncro_defaultgroup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? SyncroDefaultgroup { get; set; } 
+        public int? SyncroDefaultGroup { get; set; } 
 
         [JsonProperty("syncro_defaultgroup_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public Guid? SyncroDefaultgroupGuid { get; set; } 
+        public Guid? SyncroDefaultGroupGuid { get; set; } 
 
         [JsonProperty("syncro_importtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? SyncroImportType { get; set; } 
@@ -809,7 +809,7 @@ public partial class Control
         public bool? PoNumberMandatory { get; set; } 
 
         [JsonProperty("snow_toplevel", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? SnowToplevel { get; set; } 
+        public int? SnowTopLevel { get; set; } 
 
         [JsonProperty("hideapptactionsfromuser", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Hideapptactionsfromuser { get; set; } 

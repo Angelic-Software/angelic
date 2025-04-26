@@ -23,7 +23,7 @@ public class ManageEngineDetails
     public string? Region { get; set; } 
 
     [JsonProperty("manageengine_clientid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ManageengineClientid { get; set; } 
+    public string? ManageengineClientId { get; set; } 
 
     [JsonProperty("new_access_token", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? NewAccessToken { get; set; } 
@@ -83,7 +83,7 @@ public class ManageEngineDetails
     public string? AssetimportidentifierFieldName { get; set; } 
 
     [JsonProperty("manageengine_fieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<IntegrationFieldMapping>? ManageengineFieldmappings { get; set; } 
+    public ICollection<IntegrationFieldMapping>? ManageengineFieldMappings { get; set; } 
 
     [JsonProperty("sitemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<IntegrationSiteMapping>? Sitemappings { get; set; } 
@@ -125,13 +125,13 @@ public class ManageEngineDetails
     public Guid? Guid { get; set; } 
 
     [JsonProperty("mappings_xtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<XTypeMapping>? MappingsXtype { get; set; } 
+    public ICollection<AssetTypeMapping>? MappingsXType { get; set; } 
 
     [JsonProperty("default_assetgroup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? DefaultAssetgroup { get; set; } 
+    public int? DefaultAssetGroup { get; set; } 
 
     [JsonProperty("default_assetgroupname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? DefaultAssetgroupname { get; set; } 
+    public string? DefaultAssetGroupname { get; set; } 
 
     [JsonProperty("assettype_choice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? AssetTypeChoice { get; set; } 

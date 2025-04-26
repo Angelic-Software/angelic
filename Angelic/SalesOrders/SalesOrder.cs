@@ -173,7 +173,7 @@ public class SalesOrder
     public string? PdfTemplateName { get; set; } 
 
     [JsonProperty("purchaseorder_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? PurchaseorderCount { get; set; } 
+    public int? PurchaseOrderCount { get; set; } 
 
     [JsonProperty("invoice_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? InvoiceCount { get; set; } 
@@ -299,7 +299,7 @@ public class SalesOrder
     public string? MatchIntegrationName { get; set; } 
 
     [JsonProperty("dattocommerce_clientid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? DattocommerceClientid { get; set; } 
+    public int? DattocommerceClientId { get; set; } 
 
     [JsonProperty("dattocommerce_contactname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? DattocommerceContactname { get; set; } 

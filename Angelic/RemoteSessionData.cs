@@ -91,7 +91,7 @@ public class RemoteSessionData
     public int? Livechatid { get; set; } 
 
     [JsonProperty("clientid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Clientid { get; set; } 
+    public int? ClientId { get; set; } 
 
     [JsonProperty("siteid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Siteid { get; set; } 

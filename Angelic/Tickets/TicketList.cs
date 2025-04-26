@@ -626,7 +626,7 @@ namespace Angelic.Tickets;
         public bool? TicketInvoicesForEachSite { get; set; } 
 
         [JsonProperty("salesorder_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? SalesorderId { get; set; } 
+        public int? SalesOrderId { get; set; } 
 
         [JsonProperty("orderhead_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? OrderheadId { get; set; } 
@@ -860,7 +860,7 @@ namespace Angelic.Tickets;
         public bool? Invoiceseperatelyoverride { get; set; } 
 
         [JsonProperty("purchaseordernumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Purchaseordernumber { get; set; } 
+        public string? PurchaseOrdernumber { get; set; } 
 
         [JsonProperty("overrideticketcost", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Overrideticketcost { get; set; } 

@@ -47,7 +47,7 @@ public class SiteList
     public bool? Isstocklocation { get; set; } 
 
     [JsonProperty("messagegroup_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? MessagegroupId { get; set; } 
+    public int? MessageGroupId { get; set; } 
 
     [JsonProperty("item_quantity_in_stock", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? ItemQuantityInStock { get; set; } 

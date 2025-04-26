@@ -46,7 +46,7 @@ public class IntegrationSiteMapping
     public bool? Userules { get; set; } 
 
     [JsonProperty("criteria", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<XTypeMappingCriteria>? Criteria { get; set; } 
+    public ICollection<AssetTypeMappingCriteria>? Criteria { get; set; } 
 
     [JsonProperty("rule_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? RuleCount { get; set; } 

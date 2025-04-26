@@ -51,7 +51,7 @@ public class Schedule
     public int? Monthlyrecurrencepattern { get; set; } 
 
     [JsonProperty("yearlyrecurrencepattern", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Yearlyrecurrencepattern { get; set; } 
+    public int? YearlyRecurrencepattern { get; set; } 
 
     [JsonProperty("monthlyrecurrencespecificdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Monthlyrecurrencespecificdate { get; set; } 
@@ -69,25 +69,25 @@ public class Schedule
     public int? Monthlyrecurrencespecificdayinterval { get; set; } 
 
     [JsonProperty("yearlyrecurrencespecificdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Yearlyrecurrencespecificdate { get; set; } 
+    public int? YearlyRecurrencespecificdate { get; set; } 
 
     [JsonProperty("yearlyrecurrencespecificdatemonth", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Yearlyrecurrencespecificdatemonth { get; set; } 
+    public int? YearlyRecurrencespecificdatemonth { get; set; } 
 
     [JsonProperty("yearlyrecurrencespecificdateinterval", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Yearlyrecurrencespecificdateinterval { get; set; } 
+    public int? YearlyRecurrencespecificdateinterval { get; set; } 
 
     [JsonProperty("yearlyrecurrencespecificday", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Yearlyrecurrencespecificday { get; set; } 
+    public int? YearlyRecurrencespecificday { get; set; } 
 
     [JsonProperty("yearlyrecurrencespecificdayofweek", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Yearlyrecurrencespecificdayofweek { get; set; } 
+    public int? YearlyRecurrencespecificdayofweek { get; set; } 
 
     [JsonProperty("yearlyrecurrencespecificdaymonth", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Yearlyrecurrencespecificdaymonth { get; set; } 
+    public int? YearlyRecurrencespecificdaymonth { get; set; } 
 
     [JsonProperty("yearlyrecurrencespecificdayinterval", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Yearlyrecurrencespecificdayinterval { get; set; } 
+    public int? YearlyRecurrenceSpecificDayInterval { get; set; } 
 
     [JsonProperty("type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Type { get; set; } 

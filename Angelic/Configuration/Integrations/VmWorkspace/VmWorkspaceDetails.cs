@@ -20,7 +20,7 @@ namespace Angelic.Configuration.Integrations.VmWorkspace;
         public string? Url { get; set; } 
 
         [JsonProperty("vmworkspace_clientid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? VmworkspaceClientid { get; set; } 
+        public string? VmworkspaceClientId { get; set; } 
 
         [JsonProperty("new_integration_key", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? NewIntegrationKey { get; set; } 
@@ -47,7 +47,7 @@ namespace Angelic.Configuration.Integrations.VmWorkspace;
         public string? AssetimportidentifierFieldName { get; set; } 
 
         [JsonProperty("vmworkspace_fieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<IntegrationFieldMapping>? VmworkspaceFieldmappings { get; set; } 
+        public ICollection<IntegrationFieldMapping>? VmworkspaceFieldMappings { get; set; } 
 
         [JsonProperty("sitemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<IntegrationSiteMapping>? Sitemappings { get; set; } 
@@ -86,13 +86,13 @@ namespace Angelic.Configuration.Integrations.VmWorkspace;
         public Guid? Guid { get; set; } 
 
         [JsonProperty("mappings_xtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<XTypeMapping>? MappingsXtype { get; set; } 
+        public ICollection<AssetTypeMapping>? MappingsXType { get; set; } 
 
         [JsonProperty("default_assetgroup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? DefaultAssetgroup { get; set; } 
+        public int? DefaultAssetGroup { get; set; } 
 
         [JsonProperty("default_assetgroupname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? DefaultAssetgroupname { get; set; } 
+        public string? DefaultAssetGroupname { get; set; } 
 
         [JsonProperty("assettype_choice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? AssetTypeChoice { get; set; } 

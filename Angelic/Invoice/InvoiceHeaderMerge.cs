@@ -28,7 +28,7 @@ public class InvoiceHeaderMerge
     public string? ContractRef { get; set; } 
 
     [JsonProperty("salesorder_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? SalesorderId { get; set; } 
+    public int? SalesOrderId { get; set; } 
 
     [JsonProperty("percent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? Percent { get; set; } 

@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Configuration.SelfServicePortal;
 using Newtonsoft.Json;
 
 namespace Angelic.Chat;
@@ -67,7 +68,7 @@ public class LiveChatMsg
     public ChatInputField? NextInputFieldinfo { get; set; } 
 
     [JsonProperty("kb_search_results", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<KbEntryList>? KbSearchResults { get; set; } 
+    public ICollection<KbArticleList>? KbSearchResults { get; set; } 
 
     [JsonProperty("services_search_results", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<ServSiteList>? ServicesSearchResults { get; set; } 

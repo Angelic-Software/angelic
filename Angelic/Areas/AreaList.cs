@@ -18,10 +18,10 @@ public class AreaList
     public string? Name { get; set; } 
 
     [JsonProperty("toplevel_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ToplevelId { get; set; } 
+    public int? TopLevelId { get; set; } 
 
     [JsonProperty("toplevel_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ToplevelName { get; set; } 
+    public string? TopLevelName { get; set; } 
 
     [JsonProperty("inactive", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Inactive { get; set; } 
@@ -39,7 +39,7 @@ public class AreaList
     public int? Clearemail { get; set; } 
 
     [JsonProperty("messagegroup_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? MessagegroupId { get; set; } 
+    public int? MessageGroupId { get; set; } 
 
     [JsonProperty("from_address_override", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? FromAddressOverride { get; set; } 
@@ -297,7 +297,7 @@ public class AreaList
     public int? DueDateType { get; set; } 
 
     [JsonProperty("toplevel_quote_currency", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ToplevelQuoteCurrency { get; set; } 
+    public int? TopLevelQuoteCurrency { get; set; } 
 
     [JsonProperty("is_account", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? IsAccount { get; set; } 

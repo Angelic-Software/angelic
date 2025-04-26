@@ -53,7 +53,7 @@ public partial class Control
         public int? LogicmonitorAssetTypefield { get; set; } 
 
         [JsonProperty("logicmonitor_defaultgroup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? LogicmonitorDefaultgroup { get; set; } 
+        public int? LogicmonitorDefaultGroup { get; set; } 
 
         [JsonProperty("show_note_after_completed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? ShowNoteAfterCompleted { get; set; } 
@@ -77,10 +77,10 @@ public partial class Control
         public int? Merakiassettypefield { get; set; } 
 
         [JsonProperty("meraki_defaultgroup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? MerakiDefaultgroup { get; set; } 
+        public int? MerakiDefaultGroup { get; set; } 
 
         [JsonProperty("meraki_defaultgroup_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public Guid? MerakiDefaultgroupGuid { get; set; } 
+        public Guid? MerakiDefaultGroupGuid { get; set; } 
 
         [JsonProperty("lapsafe_default_installation", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? LapsafeDefaultInstallation { get; set; } 
@@ -206,7 +206,7 @@ public partial class Control
         public bool? ShowClosureattachment { get; set; } 
 
         [JsonProperty("defaultinvoicedatetotoday", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Defaultinvoicedatetotoday { get; set; } 
+        public bool? DefaultInvoicedatetotoday { get; set; } 
 
         [JsonProperty("user_match_phonenumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? UserMatchPhonenumber { get; set; } 
@@ -221,7 +221,7 @@ public partial class Control
         public bool? ShowChildTemplatesAlways { get; set; } 
 
         [JsonProperty("whatsapp_defaultclientsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? WhatsappDefaultclientsite { get; set; } 
+        public int? WhatsappDefaultClientsite { get; set; } 
 
         [JsonProperty("xsoar_default_user", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? XsoarDefaultUser { get; set; } 
@@ -248,7 +248,7 @@ public partial class Control
         public bool? AdobeacrobatAutoExpireTd { get; set; } 
 
         [JsonProperty("defaultadobeactenant", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Defaultadobeactenant { get; set; } 
+        public int? DefaultAdobeactenant { get; set; } 
 
         [JsonProperty("adobeacrobat_accept_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? AdobeacrobatAcceptStatus { get; set; } 
@@ -305,7 +305,7 @@ public partial class Control
         public string? SalesforceIntegratorattachmentstoimport { get; set; } 
 
         [JsonProperty("defaultpdftemplatebill", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Defaultpdftemplatebill { get; set; } 
+        public int? DefaultPdfTemplatebill { get; set; } 
 
         [JsonProperty("default_filter_open_tickets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? DefaultFilterOpenTickets { get; set; } 
@@ -710,7 +710,7 @@ public partial class Control
         public int? NagUnknownPriority { get; set; } 
 
         [JsonProperty("defaultbulkdevicepdftemplate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Defaultbulkdevicepdftemplate { get; set; } 
+        public int? DefaultBulkdevicepdftemplate { get; set; } 
 
         [JsonProperty("allow_invoice_deletion_when_sent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? AllowInvoiceDeletionWhenSent { get; set; } 
@@ -773,7 +773,7 @@ public partial class Control
         public bool? EnableClearNableRmmAlertCheck { get; set; } 
 
         [JsonProperty("show_asset_diagram_keyfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? ShowAssetDiagramKeyfields { get; set; } 
+        public bool? ShowAssetDiagramKeyFields { get; set; } 
 
         [JsonProperty("allowkbinfaqgroup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Allowkbinfaqgroup { get; set; } 
@@ -804,7 +804,7 @@ public partial class Control
         public bool? CanEditSentInvoiceLines { get; set; } 
 
         [JsonProperty("defaultcontractdetailslayout", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Defaultcontractdetailslayout { get; set; } 
+        public int? DefaultContractdetailslayout { get; set; } 
 
         [JsonProperty("allow_kb_anonymous", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? AllowKbAnonymous { get; set; } 
@@ -984,7 +984,7 @@ public partial class Control
         public int? Orderingchecktype { get; set; } 
 
         [JsonProperty("purchaseorderstatusafterallitemsreceived", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Purchaseorderstatusafterallitemsreceived { get; set; } 
+        public int? PurchaseOrderstatusafterallitemsreceived { get; set; } 
 
         [JsonProperty("software_audit_level", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? SoftwareAuditLevel { get; set; } 

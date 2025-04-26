@@ -10,13 +10,13 @@ public class Trace
     public long? Id { get; set; } 
 
     [JsonProperty("tracetype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public TraceType? Tracetype { get; set; } 
+    public TraceType? TraceType { get; set; } 
 
     [JsonProperty("relatedid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Relatedid { get; set; } 
+    public int? RelatedId { get; set; } 
 
     [JsonProperty("systemeventid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Systemeventid { get; set; } 
+    public int? SystemEventId { get; set; } 
 
     [JsonProperty("timestamp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? Timestamp { get; set; } 

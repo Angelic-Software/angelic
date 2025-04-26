@@ -175,7 +175,7 @@ public class User
     public int? RelationshipId { get; set; } 
 
     [JsonProperty("user_relationships", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<XTypeRole>? UserRelationships { get; set; } 
+    public ICollection<AssetTypeRole>? UserRelationships { get; set; } 
 
     [JsonProperty("uddevsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Uddevsite { get; set; } 
@@ -208,7 +208,7 @@ public class User
     public int? Autotaskid { get; set; } 
 
     [JsonProperty("messagegroup_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? MessagegroupId { get; set; } 
+    public int? MessageGroupId { get; set; } 
 
     [JsonProperty("role_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? RoleList { get; set; } 

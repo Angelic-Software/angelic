@@ -68,7 +68,7 @@ public class AwsDetails
     public string? Warning { get; set; }
 
     [JsonProperty("mappings_xtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<XTypeMapping>? MappingsXType { get; set; }
+    public ICollection<AssetTypeMapping>? MappingsXType { get; set; }
 
     [JsonProperty("default_assetgroup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? DefaultAssetGroup { get; set; }

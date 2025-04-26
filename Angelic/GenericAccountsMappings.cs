@@ -13,7 +13,7 @@ public class GenericAccountsMappings
     public int? Gid { get; set; } 
 
     [JsonProperty("tenantid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Tenantid { get; set; } 
+    public string? TenantId { get; set; } 
 
     [JsonProperty("tenant_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? TenantName { get; set; } 

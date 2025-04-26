@@ -84,7 +84,7 @@ public partial class Control
     public string? CustomersLabel { get; set; }
 
     [JsonProperty("show_toplevels", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowToplevels { get; set; }
+    public bool? ShowTopLevels { get; set; }
 
     [JsonProperty("file_loc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? FileLoc { get; set; }
@@ -186,7 +186,7 @@ public partial class Control
 
     [JsonProperty("defaultpdftemplatecredit", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public int? Defaultpdftemplatecredit { get; set; }
+    public int? DefaultPdfTemplatecredit { get; set; }
 
     [JsonProperty("allownewuserfromchangeuserscreen", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
@@ -271,7 +271,7 @@ public partial class Control
 
     [JsonProperty("defaultcontractenddatetype", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public int? Defaultcontractenddatetype { get; set; }
+    public int? DefaultContractenddatetype { get; set; }
 
     [JsonProperty("encthumbprint", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Encthumbprint { get; set; }
@@ -442,7 +442,7 @@ public partial class Control
 
     [JsonProperty("defaultclientdetailslayout", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public int? Defaultclientdetailslayout { get; set; }
+    public int? DefaultClientdetailslayout { get; set; }
 
     [JsonProperty("kbviewagentapp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Kbviewagentapp { get; set; }
@@ -550,11 +550,11 @@ public partial class Control
 
     [JsonProperty("defaultmovestocklocation", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public int? Defaultmovestocklocation { get; set; }
+    public int? DefaultMovestocklocation { get; set; }
 
     [JsonProperty("defaultmovestockbinlocation", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public int? Defaultmovestockbinlocation { get; set; }
+    public int? DefaultMovestockbinlocation { get; set; }
 
     [JsonProperty("enableportalgdprscreen", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Enableportalgdprscreen { get; set; }
@@ -641,7 +641,7 @@ public partial class Control
 
     [JsonProperty("defaultfornewopportunityuser", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public int? Defaultfornewopportunityuser { get; set; }
+    public int? DefaultFornewopportunityuser { get; set; }
 
     [JsonProperty("donotshowwarrantyexpiration", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
@@ -858,7 +858,7 @@ public partial class Control
 
     [JsonProperty("connectwisecontrol_defaultassettype", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public int? ConnectwisecontrolDefaultassettype { get; set; }
+    public int? ConnectwisecontrolDefaultAssettype { get; set; }
 
     [JsonProperty("showagentuserfieldsportal", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
@@ -900,11 +900,11 @@ public partial class Control
     public bool? ShowOpenjourneysintodo { get; set; }
 
     [JsonProperty("workspace_defaultgroup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? WorkspaceDefaultgroup { get; set; }
+    public int? WorkspaceDefaultGroup { get; set; }
 
     [JsonProperty("workspace_defaultgroup_guid", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? WorkspaceDefaultgroupGuid { get; set; }
+    public Guid? WorkspaceDefaultGroupGuid { get; set; }
 
     [JsonProperty("workspace_delete_devices", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
@@ -920,7 +920,7 @@ public partial class Control
 
     [JsonProperty("workspace_integrator_import_types", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<KeyPair2>? WorkspaceIntegratorImportTypes { get; set; }
+    public ICollection<ValueLabelIsNewKeyPair>? WorkspaceIntegratorImportTypes { get; set; }
 
     [JsonProperty("workspace_dont_update_asset_type", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
@@ -971,10 +971,10 @@ public partial class Control
     public int? SiteOverrideType { get; set; }
 
     [JsonProperty("defaultcostperweight", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Defaultcostperweight { get; set; }
+    public double? DefaultCostperweight { get; set; }
 
     [JsonProperty("defaultpdftemplatekb", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Defaultpdftemplatekb { get; set; }
+    public int? DefaultPdfTemplatekb { get; set; }
 
     [JsonProperty("show_siteselect_client", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? ShowSiteselectClient { get; set; }

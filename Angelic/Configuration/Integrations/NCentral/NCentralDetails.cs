@@ -19,7 +19,7 @@ public class NCentralDetails
     public string? Username { get; set; } 
 
     [JsonProperty("toplevel", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Toplevel { get; set; } 
+    public int? TopLevel { get; set; } 
 
     [JsonProperty("dontsyncaddr", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Dontsyncaddr { get; set; } 
@@ -82,7 +82,7 @@ public class NCentralDetails
     public int? AssetTypeField { get; set; } 
 
     [JsonProperty("mappings_xtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<XTypeMapping>? MappingsXtype { get; set; } 
+    public ICollection<AssetTypeMapping>? MappingsXType { get; set; } 
 
     [JsonProperty("default_assettype_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? DefaultAssetTypeName { get; set; } 
@@ -94,7 +94,7 @@ public class NCentralDetails
     public ICollection<ExternalLinkList>? SiteLinks { get; set; } 
 
     [JsonProperty("asset_fieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<IntegrationFieldMapping>? AssetFieldmappings { get; set; } 
+    public ICollection<IntegrationFieldMapping>? AssetFieldMappings { get; set; } 
 
     [JsonProperty("new_password", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? NewPassword { get; set; } 

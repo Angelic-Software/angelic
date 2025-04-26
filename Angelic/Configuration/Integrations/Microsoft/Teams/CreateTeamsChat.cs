@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Users;
 using Newtonsoft.Json;
 
 namespace Angelic.Configuration.Integrations.Microsoft.Teams;
@@ -10,6 +11,6 @@ public class CreateTeamsChat
     public string? Name { get; set; } 
 
     [JsonProperty("members", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<Users.User>? Members { get; set; } 
+    public ICollection<User>? Members { get; set; } 
 
 }

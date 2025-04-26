@@ -37,7 +37,7 @@ public class Audit
     public int? Id2 { get; set; } 
 
     [JsonProperty("clientid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Clientid { get; set; } 
+    public int? ClientId { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

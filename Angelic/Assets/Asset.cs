@@ -4,6 +4,7 @@ using Angelic.Configuration.Custom.CustomFields;
 using Angelic.Configuration.Custom.CustomTabs;
 using Angelic.Configuration.Integrations.Lansweeper;
 using Angelic.Configuration.Integrations.Snow;
+using Angelic.Configuration.SelfServicePortal;
 using Angelic.Configuration.Tickets.Templates;
 using Angelic.Contracts;
 using Angelic.Items;
@@ -176,10 +177,10 @@ public class Asset
     public bool? NonConsignable { get; set; } 
 
     [JsonProperty("reserved_salesorder_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ReservedSalesorderId { get; set; } 
+    public int? ReservedSalesOrderId { get; set; } 
 
     [JsonProperty("reserved_salesorder_line_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ReservedSalesorderLineId { get; set; } 
+    public int? ReservedSalesOrderLineId { get; set; } 
 
     [JsonProperty("matching_field", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? MatchingField { get; set; } 
@@ -272,7 +273,7 @@ public class Asset
     public int? Supplierheaderid { get; set; } 
 
     [JsonProperty("purchaseorder_line_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? PurchaseorderLineId { get; set; } 
+    public int? PurchaseOrderLineId { get; set; } 
 
     [JsonProperty("teamviewerpassword", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Teamviewerpassword { get; set; } 
@@ -281,7 +282,7 @@ public class Asset
     public int? Commissioned { get; set; } 
 
     [JsonProperty("kaseyaid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Kaseyaid { get; set; } 
+    public string? KaseyaId { get; set; } 
 
     [JsonProperty("children", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<Asset>? Children { get; set; } 
@@ -362,7 +363,7 @@ public class Asset
     public ItemStock? Stockdetails { get; set; } 
 
     [JsonProperty("assetgroup_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? AssetgroupName { get; set; } 
+    public string? AssetGroupName { get; set; } 
 
     [JsonProperty("prtg_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? PrtgId { get; set; } 
@@ -515,7 +516,7 @@ public class Asset
     public ICollection<QualysHostAssetSoftwareHostAssetSoftware>? QualysSoftware { get; set; } 
 
     [JsonProperty("xtypeunamecanedit", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<RtPermission>? Xtypeunamecanedit { get; set; } 
+    public ICollection<RtPermission>? XTypeunamecanedit { get; set; } 
 
     [JsonProperty("external_links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<ExternalLinkList>? ExternalLinks { get; set; } 
@@ -560,7 +561,7 @@ public class Asset
     public ICollection<LansweeperRelation>? LansweeperRelations { get; set; } 
 
     [JsonProperty("kbs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<KbEntryList>? Kbs { get; set; } 
+    public ICollection<KbArticleList>? Kbs { get; set; } 
 
     [JsonProperty("site_external_link_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? SiteExternalLinkId { get; set; } 

@@ -44,19 +44,19 @@ public partial class Control
         public int? PassportalClienttoplevel { get; set; } 
 
         [JsonProperty("passportal_defaultusersite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? PassportalDefaultusersite { get; set; } 
+        public int? PassportalDefaultUsersite { get; set; } 
 
         [JsonProperty("passportal_defaultassetsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? PassportalDefaultassetsite { get; set; } 
+        public int? PassportalDefaultAssetsite { get; set; } 
 
         [JsonProperty("rpassportal_integratorentitiestoimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? RpassportalIntegratorentitiestoimport { get; set; } 
 
         [JsonProperty("passportal_defaultassetgroup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? PassportalDefaultassetgroup { get; set; } 
+        public int? PassportalDefaultAssetGroup { get; set; } 
 
         [JsonProperty("passportal_defaultassetgroup_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public Guid? PassportalDefaultassetgroupGuid { get; set; } 
+        public Guid? PassportalDefaultAssetGroupGuid { get; set; } 
 
         [JsonProperty("passportal_deactivate_assets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? PassportalDeactivateAssets { get; set; } 
@@ -131,7 +131,7 @@ public partial class Control
         public int? Quotepricedp { get; set; } 
 
         [JsonProperty("defaultassetstatus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Defaultassetstatus { get; set; } 
+        public int? DefaultAssetstatus { get; set; } 
 
         [JsonProperty("negativefeedbackcomment", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Negativefeedbackcomment { get; set; } 
@@ -182,13 +182,13 @@ public partial class Control
         public string? StripeCurrency { get; set; } 
 
         [JsonProperty("addigy_defaultassetsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? AddigyDefaultassetsite { get; set; } 
+        public int? AddigyDefaultAssetsite { get; set; } 
 
         [JsonProperty("addigy_defaultassetgroup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? AddigyDefaultassetgroup { get; set; } 
+        public int? AddigyDefaultAssetGroup { get; set; } 
 
         [JsonProperty("addigy_defaultassetgroup_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public Guid? AddigyDefaultassetgroupGuid { get; set; } 
+        public Guid? AddigyDefaultAssetGroupGuid { get; set; } 
 
         [JsonProperty("addigy_assettypefield", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? AddigyAssetTypefield { get; set; } 
@@ -209,7 +209,7 @@ public partial class Control
         public bool? DomotzDontUpdateSite { get; set; } 
 
         [JsonProperty("showtoplevelontickets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? ShowToplevelontickets { get; set; } 
+        public bool? ShowTopLevelontickets { get; set; } 
 
         [JsonProperty("automatetimezone", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Automatetimezone { get; set; } 
@@ -227,7 +227,7 @@ public partial class Control
         public bool? Deleterowconfirmation { get; set; } 
 
         [JsonProperty("salesforce_toplevel", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? SalesforceToplevel { get; set; } 
+        public int? SalesforceTopLevel { get; set; } 
 
         [JsonProperty("logactionforapprovalresponse", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Logactionforapprovalresponse { get; set; } 
@@ -242,7 +242,7 @@ public partial class Control
         public string? SalesforceContactwhere { get; set; } 
 
         [JsonProperty("liongard_toplevel", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? LiongardToplevel { get; set; } 
+        public int? LiongardTopLevel { get; set; } 
 
         [JsonProperty("salesforce_opportunitywhere", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? SalesforceOpportunitywhere { get; set; } 
@@ -254,10 +254,10 @@ public partial class Control
         public string? SalesforceCasewhere { get; set; } 
 
         [JsonProperty("liongard_defaultgroup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? LiongardDefaultgroup { get; set; } 
+        public int? LiongardDefaultGroup { get; set; } 
 
         [JsonProperty("liongard_defaultgroup_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public Guid? LiongardDefaultgroupGuid { get; set; } 
+        public Guid? LiongardDefaultGroupGuid { get; set; } 
 
         [JsonProperty("salesforce_integratorentitiestoimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? SalesforceIntegratorentitiestoimport { get; set; } 
@@ -353,7 +353,7 @@ public partial class Control
         public bool? Reauthorizeforapprovals { get; set; } 
 
         [JsonProperty("default_itemgroups_hideitems", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? DefaultItemgroupsHideitems { get; set; } 
+        public bool? DefaultItemGroupsHideItems { get; set; } 
 
         [JsonProperty("enableshifts", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Enableshifts { get; set; } 
@@ -422,10 +422,10 @@ public partial class Control
         public int? KaseyaDefaultSite { get; set; } 
 
         [JsonProperty("kaseya_defaultassettype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? KaseyaDefaultassettype { get; set; } 
+        public int? KaseyaDefaultAssettype { get; set; } 
 
         [JsonProperty("kaseya_defaultassettype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public Guid? KaseyaDefaultassettypeGuid { get; set; } 
+        public Guid? KaseyaDefaultAssettypeGuid { get; set; } 
 
         [JsonProperty("kaseya_enable_alerting", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? KaseyaEnableAlerting { get; set; } 
@@ -482,7 +482,7 @@ public partial class Control
         public bool? SelectConsignmentStatus { get; set; } 
 
         [JsonProperty("defaultconsignmentpdftemplate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Defaultconsignmentpdftemplate { get; set; } 
+        public int? DefaultConsignmentpdftemplate { get; set; } 
 
         [JsonProperty("stripenotificationemail", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Stripenotificationemail { get; set; } 
@@ -800,7 +800,7 @@ public partial class Control
         public bool? Continueusingrulesafterlogging { get; set; } 
 
         [JsonProperty("defaultlanguage", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Defaultlanguage { get; set; } 
+        public int? DefaultLanguage { get; set; } 
 
         [JsonProperty("enablemultilanguage", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Enablemultilanguage { get; set; } 

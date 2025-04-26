@@ -38,7 +38,7 @@ public class PowerShellScript
     public string? CustomtableName { get; set; } 
 
     [JsonProperty("fieldmappings_powershell", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<PowerShellScriptCriteria>? FieldmappingsPowershell { get; set; } 
+    public ICollection<PowerShellScriptCriteria>? FieldMappingsPowershell { get; set; } 
 
     [JsonProperty("method", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Method { get; set; } 

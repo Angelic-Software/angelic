@@ -28,7 +28,7 @@ public class AzureAdConnection
     public string? Directoryid { get; set; } 
 
     [JsonProperty("applicationid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Applicationid { get; set; } 
+    public string? ApplicationId { get; set; } 
 
     [JsonProperty("new_client_secret", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? NewClientSecret { get; set; } 
@@ -112,13 +112,13 @@ public class AzureAdConnection
     public int? AssetTypeChoice { get; set; } 
 
     [JsonProperty("default_assetgroup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? DefaultAssetgroup { get; set; } 
+    public int? DefaultAssetGroup { get; set; } 
 
     [JsonProperty("default_assetgroup_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? DefaultAssetgroupGuid { get; set; } 
+    public Guid? DefaultAssetGroupGuid { get; set; } 
 
     [JsonProperty("default_assetgroup_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? DefaultAssetgroupName { get; set; } 
+    public string? DefaultAssetGroupName { get; set; } 
 
     [JsonProperty("default_assettype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? DefaultAssetType { get; set; } 
@@ -256,7 +256,7 @@ public class AzureAdConnection
     public int? DefaultRelationshipType { get; set; } 
 
     [JsonProperty("mappings_xtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<XTypeMapping>? MappingsXtype { get; set; } 
+    public ICollection<AssetTypeMapping>? MappingsXType { get; set; } 
 
     [JsonProperty("intune_delete_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? IntuneDeleteStatus { get; set; } 

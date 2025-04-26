@@ -52,7 +52,7 @@ public class PrtgDetails
     public DateTimeOffset? HaloIntegratorlastsync { get; set; } 
 
     [JsonProperty("asset_fieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<IntegrationFieldMapping>? AssetFieldmappings { get; set; } 
+    public ICollection<IntegrationFieldMapping>? AssetFieldMappings { get; set; } 
 
     [JsonProperty("enable_webhooks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? EnableWebhooks { get; set; } 

@@ -156,7 +156,7 @@ public class TemplateList
     public bool? OptionalCreateLocked { get; set; } 
 
     [JsonProperty("optional_defaultresourcetype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? OptionalDefaultresourcetype { get; set; } 
+    public int? OptionalDefaultResourcetype { get; set; } 
 
     [JsonProperty("optional_excludefromsla", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? OptionalExcludefromsla { get; set; } 

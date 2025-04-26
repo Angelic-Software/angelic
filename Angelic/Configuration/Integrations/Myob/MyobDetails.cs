@@ -44,16 +44,16 @@ namespace Angelic.Configuration.Integrations.Myob;
         public string? ClientId { get; set; } 
 
         [JsonProperty("defaulttaxcodeid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Defaulttaxcodeid { get; set; } 
+        public int? DefaultTaxcodeid { get; set; } 
 
         [JsonProperty("defaulttaxcodename", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Defaulttaxcodename { get; set; } 
+        public string? DefaultTaxcodename { get; set; } 
 
         [JsonProperty("clienttoplevel", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Clienttoplevel { get; set; } 
 
         [JsonProperty("defaultitemgroup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Defaultitemgroup { get; set; } 
+        public int? DefaultItemGroup { get; set; } 
 
         [JsonProperty("defaultsalesaccountid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Defaultsalesaccountid { get; set; } 
@@ -62,10 +62,10 @@ namespace Angelic.Configuration.Integrations.Myob;
         public string? Defaultsalesaccountname { get; set; } 
 
         [JsonProperty("defaultexpenseaccountid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Defaultexpenseaccountid { get; set; } 
+        public int? DefaultExpenseaccountid { get; set; } 
 
         [JsonProperty("defaultexpenseaccountname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Defaultexpenseaccountname { get; set; } 
+        public string? DefaultExpenseaccountname { get; set; } 
 
         [JsonProperty("enablesync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Enablesync { get; set; } 
@@ -77,10 +77,10 @@ namespace Angelic.Configuration.Integrations.Myob;
         public bool? ShowMessage { get; set; } 
 
         [JsonProperty("defaultinvoiceitem", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Defaultinvoiceitem { get; set; } 
+        public int? DefaultInvoiceitem { get; set; } 
 
         [JsonProperty("defaultorderitem", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Defaultorderitem { get; set; } 
+        public int? DefaultOrderitem { get; set; } 
 
         [JsonProperty("suppliertoplevel", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Suppliertoplevel { get; set; } 

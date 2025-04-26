@@ -11,7 +11,7 @@ namespace Angelic;
 public class TopLevel
 {
     [JsonProperty("toplevel_mailbox_override", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ToplevelMailboxOverride { get; set; } 
+    public int? TopLevelMailboxOverride { get; set; } 
 
     [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Id { get; set; } 
@@ -53,7 +53,7 @@ public class TopLevel
     public bool? AgentDepartment { get; set; } 
 
     [JsonProperty("messagegroup_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? MessagegroupId { get; set; } 
+    public int? MessageGroupId { get; set; } 
 
     [JsonProperty("agents", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<AgentDepartment>? Agents { get; set; } 

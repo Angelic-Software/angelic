@@ -37,19 +37,19 @@ public class JiraDetails
     public string? IssueBody { get; set; } // Changed from Issue_body
 
     [JsonProperty("defaulttickettype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? DefaultTicketType { get; set; } // Changed from Defaulttickettype
+    public int? DefaultTicketType { get; set; } // Changed from DefaultTickettype
 
     [JsonProperty("defaulttickettype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? DefaultTicketTypeGuid { get; set; } // Changed from Defaulttickettype_guid
+    public Guid? DefaultTicketTypeGuid { get; set; } // Changed from DefaultTickettype_guid
 
     [JsonProperty("defaulttickettype_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? DefaultTicketTypeName { get; set; } // Changed from Defaulttickettype_name
+    public string? DefaultTicketTypeName { get; set; } // Changed from DefaultTickettype_name
 
     [JsonProperty("defaultuser", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? DefaultUser { get; set; } // Changed from Defaultuser
+    public int? DefaultUser { get; set; } // Changed from DefaultUser
 
     [JsonProperty("defaultuser_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? DefaultUserName { get; set; } // Changed from Defaultuser_name
+    public string? DefaultUserName { get; set; } // Changed from DefaultUser_name
 
     [JsonProperty("visibletoendusers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? VisibleToEndUsers { get; set; } // Changed from Visibletoendusers

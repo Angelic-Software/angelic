@@ -110,7 +110,7 @@ public class FieldInfo
     public bool? CalendarSearchable { get; set; } 
 
     [JsonProperty("defaultvalue", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Defaultvalue { get; set; } 
+    public string? DefaultValue { get; set; } 
 
     [JsonProperty("ordervaluesalphanumerically", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Ordervaluesalphanumerically { get; set; } 
@@ -119,10 +119,10 @@ public class FieldInfo
     public int? Ordervalueby { get; set; } 
 
     [JsonProperty("defaultvalue_lookup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? DefaultvalueLookup { get; set; } 
+    public string? DefaultValueLookup { get; set; } 
 
     [JsonProperty("defaultvalue_table", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CustomTableRow>? DefaultvalueTable { get; set; } 
+    public ICollection<CustomTableRow>? DefaultValueTable { get; set; } 
 
     [JsonProperty("values", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<Lookup>? Values { get; set; } 

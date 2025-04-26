@@ -27,7 +27,7 @@ public class PurchaseOrderDetail
     public double? QuantityReceived { get; set; } 
 
     [JsonProperty("purchaseorder_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? PurchaseorderId { get; set; } 
+    public int? PurchaseOrderId { get; set; } 
 
     [JsonProperty("item_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ItemId { get; set; } 
@@ -45,10 +45,10 @@ public class PurchaseOrderDetail
     public bool? Isgroupdesc { get; set; } 
 
     [JsonProperty("salesorder_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? SalesorderId { get; set; } 
+    public int? SalesOrderId { get; set; } 
 
     [JsonProperty("salesorder_line_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? SalesorderLineId { get; set; } 
+    public int? SalesOrderLineId { get; set; } 
 
     [JsonProperty("sales_order_stock_location", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? SalesOrderStockLocation { get; set; } 
@@ -84,7 +84,7 @@ public class PurchaseOrderDetail
     public string? SiteName { get; set; } 
 
     [JsonProperty("hideitems", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Hideitems { get; set; } 
+    public bool? HideItems { get; set; } 
 
     [JsonProperty("invoiceid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Invoiceid { get; set; } 

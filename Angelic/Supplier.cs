@@ -17,10 +17,10 @@ public class Supplier
     public string? Name { get; set; } 
 
     [JsonProperty("toplevel_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ToplevelId { get; set; } 
+    public int? TopLevelId { get; set; } 
 
     [JsonProperty("toplevel_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ToplevelName { get; set; } 
+    public string? TopLevelName { get; set; } 
 
     [JsonProperty("contact_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ContactName { get; set; } 
@@ -140,7 +140,7 @@ public class Supplier
     public bool? AllowApiAccess { get; set; } 
 
     [JsonProperty("api_access_clientid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ApiAccessClientid { get; set; } 
+    public string? ApiAccessClientId { get; set; } 
 
     [JsonProperty("api_access_clientsecret", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ApiAccessClientsecret { get; set; } 
@@ -209,13 +209,13 @@ public class Supplier
     public bool? TestJira { get; set; } 
 
     [JsonProperty("jira_servicedesk_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? JiraServicedeskId { get; set; } 
+    public string? JiraServiceDeskId { get; set; } 
 
     [JsonProperty("jira_servicedesk_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? JiraServicedeskName { get; set; } 
+    public string? JiraServiceDeskName { get; set; } 
 
     [JsonProperty("jira_servicedesk", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ValueLabelIsNewKeyPair? JiraServicedesk { get; set; } 
+    public ValueLabelIsNewKeyPair? JiraServiceDesk { get; set; } 
 
     [JsonProperty("jira_requesttype_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<IntegrationFieldMapping>? JiraRequestTypeMappings { get; set; } 
@@ -311,13 +311,13 @@ public class Supplier
     public ValueLabelIsNewKeyPair? ServicenowAssignmentgroup { get; set; } 
 
     [JsonProperty("servicenow_defaultuser_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ServicenowDefaultuserId { get; set; } 
+    public string? ServicenowDefaultUserId { get; set; } 
 
     [JsonProperty("servicenow_defaultuser_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ServicenowDefaultuserName { get; set; } 
+    public string? ServicenowDefaultUserName { get; set; } 
 
     [JsonProperty("servicenow_defaultuser", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ValueLabelIsNewKeyPair? ServicenowDefaultuser { get; set; } 
+    public ValueLabelIsNewKeyPair? ServicenowDefaultUser { get; set; } 
 
     [JsonProperty("test_servicenow", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? TestServicenow { get; set; } 
@@ -356,7 +356,7 @@ public class Supplier
     public ICollection<ValueLabelIsNewKeyPair>? ServicenowTicketSyncList { get; set; } 
 
     [JsonProperty("servicenow_fieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<IntegrationFieldMapping>? ServicenowFieldmappings { get; set; } 
+    public ICollection<IntegrationFieldMapping>? ServicenowFieldMappings { get; set; } 
 
     [JsonProperty("jira_webhook_user", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? JiraWebhookUser { get; set; } 
@@ -401,7 +401,7 @@ public class Supplier
     public bool? ServicenowValidated { get; set; } 
 
     [JsonProperty("messagegroup_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? MessagegroupId { get; set; } 
+    public int? MessageGroupId { get; set; } 
 
     [JsonProperty("website", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Website { get; set; } 

@@ -164,10 +164,10 @@ public class DeviceList
     public bool? NonConsignable { get; set; } 
 
     [JsonProperty("reserved_salesorder_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ReservedSalesorderId { get; set; } 
+    public int? ReservedSalesOrderId { get; set; } 
 
     [JsonProperty("reserved_salesorder_line_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ReservedSalesorderLineId { get; set; } 
+    public int? ReservedSalesOrderLineId { get; set; } 
 
     [JsonProperty("matching_field", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? MatchingField { get; set; } 
@@ -320,7 +320,7 @@ public class DeviceList
     public bool? Allowallstatus { get; set; } 
 
     [JsonProperty("allowed_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<XTypeStatus>? AllowedStatus { get; set; } 
+    public ICollection<AssetTypeStatus>? AllowedStatus { get; set; } 
 
     [JsonProperty("datto_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? DattoId { get; set; } 

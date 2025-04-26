@@ -962,7 +962,7 @@ namespace Angelic.Action;
         public ICollection<FaqListHead>? NewFaqLists { get; set; }
 
         [JsonProperty("new_related_articles", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<KbEntryList>? NewRelatedArticles { get; set; }
+        public ICollection<KbArticleList>? NewRelatedArticles { get; set; }
 
         [JsonProperty("ignoredatedoneisstartdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IgnoreDateDoneIsStartDate { get; set; }

@@ -58,7 +58,7 @@ public class SalesMailboxDetail
     public bool? NewMethod { get; set; } 
 
     [JsonProperty("applicationid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Applicationid { get; set; } 
+    public string? ApplicationId { get; set; } 
 
     [JsonProperty("linked_agent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? LinkedAgent { get; set; } 

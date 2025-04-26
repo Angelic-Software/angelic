@@ -8,6 +8,7 @@ using Angelic.Configuration.Integrations.Microsoft.Csp;
 using Angelic.Configuration.Integrations.Quickbooks;
 using Angelic.Configuration.Integrations.Snow;
 using Angelic.Configuration.Integrations.Stripe;
+using Angelic.Configuration.SelfServicePortal;
 using Angelic.Configuration.Tickets.TicketTypes;
 using Angelic.Contracts;
 using Angelic.KeyPairs;
@@ -26,10 +27,10 @@ namespace Angelic.Areas;
         public string? Name { get; set; } 
 
         [JsonProperty("toplevel_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? ToplevelId { get; set; } 
+        public int? TopLevelId { get; set; } 
 
         [JsonProperty("toplevel_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? ToplevelName { get; set; } 
+        public string? TopLevelName { get; set; } 
 
         [JsonProperty("inactive", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Inactive { get; set; } 
@@ -47,7 +48,7 @@ namespace Angelic.Areas;
         public int? Clearemail { get; set; } 
 
         [JsonProperty("messagegroup_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? MessagegroupId { get; set; } 
+        public int? MessageGroupId { get; set; } 
 
         [JsonProperty("from_address_override", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? FromAddressOverride { get; set; } 
@@ -593,7 +594,7 @@ namespace Angelic.Areas;
         public bool? AllowApiAccess { get; set; } 
 
         [JsonProperty("api_access_clientid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? ApiAccessClientid { get; set; } 
+        public string? ApiAccessClientId { get; set; } 
 
         [JsonProperty("api_access_clientsecret", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? ApiAccessClientsecret { get; set; } 
@@ -718,7 +719,7 @@ namespace Angelic.Areas;
         public string? DattoUrl { get; set; } 
 
         [JsonProperty("dattocommerce_tenantid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? DattocommerceTenantid { get; set; } 
+        public int? DattocommerceTenantId { get; set; } 
 
         [JsonProperty("qbodefaulttaxcode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Qbodefaulttaxcode { get; set; } 
@@ -787,7 +788,7 @@ namespace Angelic.Areas;
         public int? Syncroid { get; set; } 
 
         [JsonProperty("kbentries", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<KbEntryList>? Kbentries { get; set; } 
+        public ICollection<KbArticleList>? Kbentries { get; set; } 
 
         [JsonProperty("auvik_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? AuvikId { get; set; } 
@@ -844,10 +845,10 @@ namespace Angelic.Areas;
         public string? Accountsbccemailaddress { get; set; } 
 
         [JsonProperty("defaultcontractoverride", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Defaultcontractoverride { get; set; } 
+        public int? DefaultContractoverride { get; set; } 
 
         [JsonProperty("defaultcontractoverride_ref", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? DefaultcontractoverrideRef { get; set; } 
+        public string? DefaultContractoverrideRef { get; set; } 
 
         [JsonProperty("sqlimport_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? SqlImportId { get; set; } 
@@ -907,7 +908,7 @@ namespace Angelic.Areas;
         public string? PortalchatprofileName { get; set; } 
 
         [JsonProperty("kaseyaid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Kaseyaid { get; set; } 
+        public string? KaseyaId { get; set; } 
 
         [JsonProperty("trading_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? TradingName { get; set; } 
@@ -970,13 +971,13 @@ namespace Angelic.Areas;
         public ValueLabelIsNewKeyPair? ServicenowAssignmentgroup { get; set; } 
 
         [JsonProperty("servicenow_defaultuser_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? ServicenowDefaultuserId { get; set; } 
+        public string? ServicenowDefaultUserId { get; set; } 
 
         [JsonProperty("servicenow_defaultuser_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? ServicenowDefaultuserName { get; set; } 
+        public string? ServicenowDefaultUserName { get; set; } 
 
         [JsonProperty("servicenow_defaultuser", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ValueLabelIsNewKeyPair? ServicenowDefaultuser { get; set; } 
+        public ValueLabelIsNewKeyPair? ServicenowDefaultUser { get; set; } 
 
         [JsonProperty("test_servicenow", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? TestServicenow { get; set; } 
@@ -1024,13 +1025,13 @@ namespace Angelic.Areas;
         public bool? TestJira { get; set; } 
 
         [JsonProperty("jira_servicedesk_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? JiraServicedeskId { get; set; } 
+        public string? JiraServiceDeskId { get; set; } 
 
         [JsonProperty("jira_servicedesk_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? JiraServicedeskName { get; set; } 
+        public string? JiraServiceDeskName { get; set; } 
 
         [JsonProperty("jira_servicedesk", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ValueLabelIsNewKeyPair? JiraServicedesk { get; set; } 
+        public ValueLabelIsNewKeyPair? JiraServiceDesk { get; set; } 
 
         [JsonProperty("jira_requesttype_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<IntegrationFieldMapping>? JiraRequestTypeMappings { get; set; } 
@@ -1057,22 +1058,22 @@ namespace Angelic.Areas;
         public bool? JiraWebhookCreated { get; set; } 
 
         [JsonProperty("defaultpdftemplateinvoicetickets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Defaultpdftemplateinvoicetickets { get; set; } 
+        public int? DefaultPdfTemplateinvoicetickets { get; set; } 
 
         [JsonProperty("defaultpdftemplateinvoiceorders", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Defaultpdftemplateinvoiceorders { get; set; } 
+        public int? DefaultPdfTemplateinvoiceorders { get; set; } 
 
         [JsonProperty("defaultpdftemplateinvoicerecurring", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Defaultpdftemplateinvoicerecurring { get; set; } 
+        public int? DefaultPdfTemplateinvoicerecurring { get; set; } 
 
         [JsonProperty("defaultpdftemplateinvoicetickets_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? DefaultpdftemplateinvoiceticketsName { get; set; } 
+        public string? DefaultPdfTemplateinvoiceticketsName { get; set; } 
 
         [JsonProperty("defaultpdftemplateinvoiceorders_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? DefaultpdftemplateinvoiceordersName { get; set; } 
+        public string? DefaultPdfTemplateinvoiceordersName { get; set; } 
 
         [JsonProperty("defaultpdftemplateinvoicerecurring_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? DefaultpdftemplateinvoicerecurringName { get; set; } 
+        public string? DefaultPdfTemplateinvoicerecurringName { get; set; } 
 
         [JsonProperty("intacct_invoice_save_location", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? IntacctInvoiceSaveLocation { get; set; } 
@@ -1195,7 +1196,7 @@ namespace Angelic.Areas;
         public ICollection<ValueLabelIsNewKeyPair>? ServicenowTicketSyncList { get; set; } 
 
         [JsonProperty("servicenow_fieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<IntegrationFieldMapping>? ServicenowFieldmappings { get; set; } 
+        public ICollection<IntegrationFieldMapping>? ServicenowFieldMappings { get; set; } 
 
         [JsonProperty("matching_value", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? MatchingValue { get; set; } 
@@ -1414,7 +1415,7 @@ namespace Angelic.Areas;
         public int? DueDateType { get; set; } 
 
         [JsonProperty("toplevel_quote_currency", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? ToplevelQuoteCurrency { get; set; } 
+        public int? TopLevelQuoteCurrency { get; set; } 
 
         [JsonProperty("is_account", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsAccount { get; set; } 

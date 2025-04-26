@@ -14,7 +14,7 @@ public class SalesOrderLine
     public int? Id { get; set; } 
 
     [JsonProperty("salesorder_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? SalesorderId { get; set; } 
+    public int? SalesOrderId { get; set; } 
 
     [JsonProperty("sort_seq", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? SortSeq { get; set; } 
@@ -32,7 +32,7 @@ public class SalesOrderLine
     public int? ItemId { get; set; } 
 
     [JsonProperty("assetgroup_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? AssetgroupName { get; set; } 
+    public string? AssetGroupName { get; set; } 
 
     [JsonProperty("assettype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? AssetTypeId { get; set; } 
@@ -299,7 +299,7 @@ public class SalesOrderLine
     public int? LinePeriods { get; set; } 
 
     [JsonProperty("hideitems", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Hideitems { get; set; } 
+    public bool? HideItems { get; set; } 
 
     [JsonProperty("isleased", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Isleased { get; set; } 

@@ -80,7 +80,7 @@ public class TicketItem
     public int? AgentId { get; set; } 
 
     [JsonProperty("assetgroup_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? AssetgroupName { get; set; } 
+    public string? AssetGroupName { get; set; } 
 
     [JsonProperty("assettype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? AssetTypeId { get; set; } 

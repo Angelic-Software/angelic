@@ -65,7 +65,7 @@ public partial class Control
 
     [JsonProperty("logicmonitor_defaultassettype", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public int? LogicmonitorDefaultassettype { get; set; }
+    public int? LogicmonitorDefaultAssettype { get; set; }
 
     [JsonProperty("logicmonitor_enable_alerting", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
@@ -157,15 +157,15 @@ public partial class Control
 
     [JsonProperty("defaultpdftemplateinvoicetickets", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public int? Defaultpdftemplateinvoicetickets { get; set; }
+    public int? DefaultPdfTemplateinvoicetickets { get; set; }
 
     [JsonProperty("defaultpdftemplateinvoiceorders", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public int? Defaultpdftemplateinvoiceorders { get; set; }
+    public int? DefaultPdfTemplateinvoiceorders { get; set; }
 
     [JsonProperty("defaultpdftemplateinvoicerecurring", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public int? Defaultpdftemplateinvoicerecurring { get; set; }
+    public int? DefaultPdfTemplateinvoicerecurring { get; set; }
 
     [JsonProperty("stripetakepaymentonduedate", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
@@ -209,7 +209,7 @@ public partial class Control
     public bool? Enableteamsmsg { get; set; }
 
     [JsonProperty("defaultteamsmsg", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Defaultteamsmsg { get; set; }
+    public string? DefaultTeamsmsg { get; set; }
 
     [JsonProperty("audit_teams_message", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? AuditTeamsMessage { get; set; }
@@ -413,19 +413,19 @@ public partial class Control
 
     [JsonProperty("kaseya_defaultassettype_server", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public int? KaseyaDefaultassettypeServer { get; set; }
+    public int? KaseyaDefaultAssettypeServer { get; set; }
 
     [JsonProperty("kaseya_defaultassettype_server_guid", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? KaseyaDefaultassettypeServerGuid { get; set; }
+    public Guid? KaseyaDefaultAssettypeServerGuid { get; set; }
 
     [JsonProperty("kaseya_defaultassettype_workstation", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public int? KaseyaDefaultassettypeWorkstation { get; set; }
+    public int? KaseyaDefaultAssettypeWorkstation { get; set; }
 
     [JsonProperty("kaseya_defaultassettype_workstation_guid", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? KaseyaDefaultassettypeWorkstationGuid { get; set; }
+    public Guid? KaseyaDefaultAssettypeWorkstationGuid { get; set; }
 
     [JsonProperty("recaptcha_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? RecaptchaType { get; set; }
@@ -543,11 +543,11 @@ public partial class Control
     public int? IcingaDefaultSite { get; set; }
 
     [JsonProperty("icinga_defaultgroup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? IcingaDefaultgroup { get; set; }
+    public int? IcingaDefaultGroup { get; set; }
 
     [JsonProperty("icinga_defaultgroup_guid", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? IcingaDefaultgroupGuid { get; set; }
+    public Guid? IcingaDefaultGroupGuid { get; set; }
 
     [JsonProperty("icingaassettypefield", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Icingaassettypefield { get; set; }
@@ -590,7 +590,7 @@ public partial class Control
     public int? DefaultViewUsersSelectedid { get; set; }
 
     [JsonProperty("defaultnavscreenlayout", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Defaultnavscreenlayout { get; set; }
+    public int? DefaultNavscreenlayout { get; set; }
 
     [JsonProperty("navbar_new_call", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? NavbarNewCall { get; set; }
@@ -687,7 +687,7 @@ public partial class Control
 
     [JsonProperty("show_toplevel_access_portal_option", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowToplevelAccessPortalOption { get; set; }
+    public bool? ShowTopLevelAccessPortalOption { get; set; }
 
     [JsonProperty("show_alllevel_access_portal_option", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
@@ -718,7 +718,7 @@ public partial class Control
 
     [JsonProperty("defaultaideployment", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     [System.ComponentModel.DataAnnotations.StringLength(50)]
-    public string? Defaultaideployment { get; set; }
+    public string? DefaultAideployment { get; set; }
 
     [JsonProperty("connectwise_rmm_default_client", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
@@ -823,7 +823,7 @@ public partial class Control
     public int? XensamDefaultSite { get; set; }
 
     [JsonProperty("xensam_defaultassettype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? XensamDefaultassettype { get; set; }
+    public int? XensamDefaultAssettype { get; set; }
 
     [JsonProperty("xensam_assettype_choice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? XensamAssetTypeChoice { get; set; }
@@ -836,7 +836,7 @@ public partial class Control
     public string? XensamAssetTypeFieldDatacentre { get; set; }
 
     [JsonProperty("xensam_defaultgroup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? XensamDefaultgroup { get; set; }
+    public int? XensamDefaultGroup { get; set; }
 
     [JsonProperty("xensamdefaultgroup_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public Guid? XensamdefaultgroupGuid { get; set; }
@@ -988,7 +988,7 @@ public partial class Control
     public bool? Onlyprocessclosedrequests { get; set; }
 
     [JsonProperty("defaultischargeable", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Defaultischargeable { get; set; }
+    public bool? DefaultIschargeable { get; set; }
 
     [JsonProperty("processunclosedactions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Processunclosedactions { get; set; }

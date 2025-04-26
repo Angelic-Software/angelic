@@ -10,6 +10,7 @@ using Angelic.Configuration.Integrations.Freshdesk;
 using Angelic.Configuration.Integrations.Google;
 using Angelic.Configuration.Integrations.Lookups;
 using Angelic.Configuration.TeamsAndAgents;
+using Angelic.Configuration.Tickets.Slas;
 using Angelic.Configuration.Tickets.Workflows;
 using Angelic.KeyPairs;
 using Newtonsoft.Json;
@@ -641,7 +642,7 @@ namespace Angelic.Tickets;
         public bool? TicketInvoicesForEachSite { get; set; } 
 
         [JsonProperty("salesorder_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? SalesorderId { get; set; } 
+        public int? SalesOrderId { get; set; } 
 
         [JsonProperty("orderhead_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? OrderheadId { get; set; } 
@@ -1451,10 +1452,10 @@ namespace Angelic.Tickets;
         public int? QuotationCount { get; set; } 
 
         [JsonProperty("salesorder_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? SalesorderCount { get; set; } 
+        public int? SalesOrderCount { get; set; } 
 
         [JsonProperty("purchaseorder_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? PurchaseorderCount { get; set; } 
+        public int? PurchaseOrderCount { get; set; } 
 
         [JsonProperty("invoice_line_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? InvoiceLineCount { get; set; } 
@@ -2033,7 +2034,7 @@ namespace Angelic.Tickets;
         public ICollection<StringIdNameKeyPair>? Linktypesarray { get; set; } 
 
         [JsonProperty("kaseyaid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Kaseyaid { get; set; } 
+        public string? KaseyaId { get; set; } 
 
         [JsonProperty("alluserscanview", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Alluserscanview { get; set; } 
@@ -2633,7 +2634,7 @@ namespace Angelic.Tickets;
         public bool? Invoiceseperatelyoverride { get; set; } 
 
         [JsonProperty("purchaseordernumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Purchaseordernumber { get; set; } 
+        public string? PurchaseOrdernumber { get; set; } 
 
         [JsonProperty("overrideticketcost", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Overrideticketcost { get; set; } 

@@ -103,7 +103,7 @@ public class ChatProfile
     public string? Chatserviceurl { get; set; } 
 
     [JsonProperty("_tenantid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Tenantid { get; set; } 
+    public string? TenantId { get; set; } 
 
     [JsonProperty("bubble_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? BubbleType { get; set; } 

@@ -4,6 +4,7 @@ using Angelic.Configuration.Tickets.Templates;
 using Angelic.Configuration.Users;
 using Angelic.Contracts;
 using Angelic.Invoice;
+using Angelic.KnowledgeBase;
 using Angelic.PurchaseOrders;
 using Angelic.Quotation;
 using Angelic.Reports;
@@ -34,58 +35,58 @@ public class PdfTemplate
     public int? Margin { get; set; } 
 
     [JsonProperty("default_mainhtml", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? DefaultMainhtml { get; set; } 
+    public string? DefaultMainHtml { get; set; } 
 
     [JsonProperty("default_subhtml", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? DefaultSubhtml { get; set; } 
+    public string? DefaultSubHtml { get; set; } 
 
     [JsonProperty("default_subhtml2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? DefaultSubhtml2 { get; set; } 
+    public string? DefaultSubHtml2 { get; set; } 
 
     [JsonProperty("default_subhtml3", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? DefaultSubhtml3 { get; set; } 
+    public string? DefaultSubHtml3 { get; set; } 
 
     [JsonProperty("includeheader", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Includeheader { get; set; } 
+    public bool? IncludeHeader { get; set; } 
 
     [JsonProperty("headerl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Headerl { get; set; } 
+    public string? HeaderL { get; set; } 
 
     [JsonProperty("headerc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Headerc { get; set; } 
+    public string? HeaderC { get; set; } 
 
     [JsonProperty("headerr", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Headerr { get; set; } 
+    public string? HeaderR { get; set; } 
 
     [JsonProperty("headerishtml", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Headerishtml { get; set; } 
+    public bool? HeaderIsHtml { get; set; } 
 
     [JsonProperty("headerheight", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Headerheight { get; set; } 
+    public int? HeaderHeight { get; set; } 
 
     [JsonProperty("headerhtml", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Headerhtml { get; set; } 
+    public string? HeaderHtml { get; set; } 
 
     [JsonProperty("includefooter", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Includefooter { get; set; } 
+    public bool? IncludeFooter { get; set; } 
 
     [JsonProperty("footerl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Footerl { get; set; } 
+    public string? FooterL { get; set; } 
 
     [JsonProperty("footerc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Footerc { get; set; } 
+    public string? FooterC { get; set; } 
 
     [JsonProperty("footerr", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Footerr { get; set; } 
+    public string? FooterR { get; set; } 
 
     [JsonProperty("footerishtml", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Footerishtml { get; set; } 
+    public bool? FooterIsHtml { get; set; } 
 
     [JsonProperty("footerheight", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Footerheight { get; set; } 
+    public int? FooterHeight { get; set; } 
 
     [JsonProperty("footerhtml", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Footerhtml { get; set; } 
+    public string? FooterHtml { get; set; } 
 
     [JsonProperty("colour", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Colour { get; set; } 
@@ -95,7 +96,7 @@ public class PdfTemplate
 
     [JsonProperty("backgroundimageurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     [System.ComponentModel.DataAnnotations.StringLength(1000)]
-    public string? Backgroundimageurl { get; set; } 
+    public string? BackgroundImageUrl { get; set; } 
 
     [JsonProperty("width", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Width { get; set; } 
@@ -108,14 +109,14 @@ public class PdfTemplate
     public string? ConfigUrl { get; set; } 
 
     [JsonProperty("reportingperiod", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Reportingperiod { get; set; } 
+    public int? ReportingPeriod { get; set; } 
 
     [JsonProperty("system_use", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     [System.ComponentModel.DataAnnotations.StringLength(50)]
     public string? SystemUse { get; set; } 
 
     [JsonProperty("detailcolumns", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<PdfTemplateDetail>? Detailcolumns { get; set; } 
+    public ICollection<PdfTemplateDetail>? DetailColumns { get; set; } 
 
     [JsonProperty("pages", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<PdfTemplatePage>? Pages { get; set; } 
@@ -127,7 +128,7 @@ public class PdfTemplate
     public bool? IsGenerate { get; set; } 
 
     [JsonProperty("printhtml", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Printhtml { get; set; } 
+    public string? PrintHtml { get; set; } 
 
     [JsonProperty("pdf_attachment_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? PdfAttachmentId { get; set; } 
@@ -139,10 +140,10 @@ public class PdfTemplate
     public QuotationHeader? Quotation { get; set; } 
 
     [JsonProperty("salesorder", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public SalesOrder? Salesorder { get; set; } 
+    public SalesOrder? SalesOrder { get; set; } 
 
     [JsonProperty("purchaseorder", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public PurchaseOrder? Purchaseorder { get; set; } 
+    public PurchaseOrder? PurchaseOrder { get; set; } 
 
     [JsonProperty("invoice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public InvoiceHeader? Invoice { get; set; } 
@@ -163,7 +164,7 @@ public class PdfTemplate
     public int? CompositeReportApid { get; set; } 
 
     [JsonProperty("canbeaccessedbyallusers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Canbeaccessedbyallusers { get; set; } 
+    public bool? CanBeAccessedByAllUsers { get; set; } 
 
     [JsonProperty("permissions_user", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<UserReport>? PermissionsUser { get; set; } 
@@ -172,10 +173,10 @@ public class PdfTemplate
     public ICollection<TemplateList>? Schedule { get; set; } 
 
     [JsonProperty("clientid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Clientid { get; set; } 
+    public int? ClientId { get; set; } 
 
     [JsonProperty("licencename", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Licencename { get; set; } 
+    public string? LicenceName { get; set; } 
 
     [JsonProperty("library_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? LibraryId { get; set; } 
@@ -184,10 +185,10 @@ public class PdfTemplate
     public int? ImageAttachmentId { get; set; } 
 
     [JsonProperty("pagewidthinches", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Pagewidthinches { get; set; } 
+    public double? PageWidthInches { get; set; } 
 
     [JsonProperty("pageheightinches", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Pageheightinches { get; set; } 
+    public double? PageHeightInches { get; set; } 
 
     [JsonProperty("icon_base64", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? IconBase64 { get; set; } 
@@ -196,10 +197,10 @@ public class PdfTemplate
     public string? Icon { get; set; } 
 
     [JsonProperty("kbentry", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public KbEntry? Kbentry { get; set; } 
+    public KbArticle? KbEntry { get; set; } 
 
     [JsonProperty("showinlineimage", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Showinlineimage { get; set; } 
+    public bool? ShowInlineImage { get; set; } 
 
     [JsonProperty("pdf_media_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? PdfMediaType { get; set; } 
@@ -211,10 +212,10 @@ public class PdfTemplate
     public int? PrefixPdfAttachmentId { get; set; } 
 
     [JsonProperty("prefixpdfappend", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Prefixpdfappend { get; set; } 
+    public bool? PrefixPdfAppend { get; set; } 
 
     [JsonProperty("iscustomised", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Iscustomised { get; set; } 
+    public bool? IsCustomised { get; set; } 
 
     [JsonProperty("show_bundled_lines", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ShowBundledLines { get; set; } 
@@ -223,7 +224,7 @@ public class PdfTemplate
     public string? Warning { get; set; } 
 
     [JsonProperty("_xmlwarning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Xmlwarning { get; set; } 
+    public string? XmlWarning { get; set; } 
 
     [JsonProperty("override_attachment_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? OverrideAttachmentName { get; set; } 
@@ -232,12 +233,12 @@ public class PdfTemplate
     public int? PortalDisplayType { get; set; } 
 
     [JsonProperty("bulkprint_asset_id_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<int>? BulkprintAssetIdList { get; set; } 
+    public ICollection<int>? BulkPrintAssetIdList { get; set; } 
 
     [JsonProperty("invoicexmltemplate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Invoicexmltemplate { get; set; } 
+    public int? InvoiceXmlTemplate { get; set; } 
 
     [JsonProperty("pdftinvoicexmltemplate_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? PdftinvoicexmltemplateName { get; set; } 
+    public string? PdfTInvoiceXmlTemplateName { get; set; } 
 
 }

@@ -110,10 +110,10 @@ public class ContractHeaderList
     public DateTimeOffset? AssetEndDate { get; set; } 
 
     [JsonProperty("contracttype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Contracttype { get; set; } 
+    public int? ContractType { get; set; } 
 
     [JsonProperty("contracttype_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ContracttypeName { get; set; } 
+    public string? ContractTypeName { get; set; } 
 
     [JsonProperty("prepayrecurringchargebp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Prepayrecurringchargebp { get; set; } 
