@@ -2,7 +2,7 @@ using System.CodeDom.Compiler;
 using Angelic.Models.Configuration.TeamsAndAgents.Agents;
 using Newtonsoft.Json;
 
-namespace Angelic.Models.Configuration.TeamsAndAgents;
+namespace Angelic.Models.Configuration.TeamsAndAgents.QualificationMatching;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
 public class Qualification
@@ -23,7 +23,7 @@ public class Qualification
     public int? Weight { get; set; } 
 
     [JsonProperty("mustmatch", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Mustmatch { get; set; } 
+    public bool? MustMatch { get; set; } 
 
     [JsonProperty("criteria", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<QualificationCategory>? Criteria { get; set; } 
@@ -35,7 +35,7 @@ public class Qualification
     public bool? AgentMatched { get; set; } 
 
     [JsonProperty("_domatch", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Domatch { get; set; } 
+    public bool? DoMatch { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

@@ -12,6 +12,7 @@ using Angelic.Models.Configuration.Integrations.Freshdesk;
 using Angelic.Models.Configuration.Integrations.Google;
 using Angelic.Models.Configuration.Integrations.Lookups;
 using Angelic.Models.Configuration.TeamsAndAgents;
+using Angelic.Models.Configuration.TeamsAndAgents.QualificationMatching;
 using Angelic.Models.Configuration.Tickets;
 using Angelic.Models.Configuration.Tickets.Slas;
 using Angelic.Models.Configuration.Tickets.Views;
