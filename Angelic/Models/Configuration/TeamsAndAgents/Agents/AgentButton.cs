@@ -1,0 +1,36 @@
+using System.CodeDom.Compiler;
+using Newtonsoft.Json;
+
+namespace Angelic.Models.Configuration.TeamsAndAgents.Agents;
+
+[GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
+public class AgentButton
+{
+    [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public int? Id { get; set; } 
+
+    [JsonProperty("agent_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public int? AgentId { get; set; } 
+
+    [JsonProperty("agent_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public string? AgentName { get; set; } 
+
+    [JsonProperty("roleid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public string? Roleid { get; set; } 
+
+    [JsonProperty("role_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public string? RoleName { get; set; } 
+
+    [JsonProperty("button_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public int? ButtonId { get; set; } 
+
+    [JsonProperty("button_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public string? ButtonName { get; set; } 
+
+    [JsonProperty("can_access", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public bool? CanAccess { get; set; } 
+
+    [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public string? Warning { get; set; } 
+
+}
