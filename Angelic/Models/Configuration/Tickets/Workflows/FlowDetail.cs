@@ -3,6 +3,7 @@ using Angelic.Models.Chat;
 using Angelic.Models.Configuration.Integrations.Custom;
 using Angelic.Models.Configuration.Language;
 using Angelic.Models.Configuration.TeamsAndAgents;
+using Angelic.Models.Configuration.TeamsAndAgents.Teams;
 using Angelic.Models.Configuration.Tickets.TicketRule;
 using Newtonsoft.Json;
 

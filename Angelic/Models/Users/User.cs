@@ -3,6 +3,7 @@ using Angelic.Models.Areas;
 using Angelic.Models.Assets;
 using Angelic.Models.Attachments;
 using Angelic.Models.Configuration;
+using Angelic.Models.Configuration.Assets;
 using Angelic.Models.Configuration.Custom;
 using Angelic.Models.Configuration.Custom.CustomFields;
 using Angelic.Models.Configuration.Users;

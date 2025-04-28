@@ -333,10 +333,10 @@ namespace Angelic.Models.Configuration.TeamsAndAgents.Agents;
         public string? ThirdPartyGuid { get; set; } 
 
         [JsonProperty("roles", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<NhdRoles>? Roles { get; set; } 
+        public ICollection<Roles>? Roles { get; set; } 
 
         [JsonProperty("add_roles", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<NhdRoles>? AddRoles { get; set; } 
+        public ICollection<Roles>? AddRoles { get; set; } 
 
         [JsonProperty("claims", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<NhdClaim>? Claims { get; set; } 

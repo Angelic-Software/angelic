@@ -10,7 +10,7 @@ public class UnsubEmailServiceUsers
     public int? Id { get; set; } 
 
     [JsonProperty("stid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Stid { get; set; } 
+    public int? StId { get; set; } 
 
     [JsonProperty("uid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Uid { get; set; } 

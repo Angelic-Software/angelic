@@ -5,6 +5,7 @@ using Angelic.Models.Configuration.Integrations.Google;
 using Angelic.Models.Configuration.Integrations.Microsoft.Azure.AzureAd;
 using Angelic.Models.Configuration.SqlImports;
 using Angelic.Models.Configuration.TeamsAndAgents;
+using Angelic.Models.Configuration.TeamsAndAgents.Workdays;
 using Angelic.Models.Configuration.Tickets;
 using Angelic.Models.Configuration.Users;
 using Angelic.Models.Contracts;

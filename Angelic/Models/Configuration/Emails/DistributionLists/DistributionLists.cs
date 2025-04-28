@@ -2,7 +2,7 @@ using System.CodeDom.Compiler;
 using Angelic.Models.Configuration.Campaigns;
 using Newtonsoft.Json;
 
-namespace Angelic.Models;
+namespace Angelic.Models.Configuration.Emails.DistributionLists;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
 public class DistributionLists
@@ -26,16 +26,16 @@ public class DistributionLists
     public bool? DynamicMembers { get; set; } 
 
     [JsonProperty("users", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<Users.User>? Users { get; set; } 
+    public ICollection<Models.Users.User>? Users { get; set; } 
 
     [JsonProperty("members", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<DistributionListsUser>? Members { get; set; } 
 
     [JsonProperty("addtheseusers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<Users.User>? Addtheseusers { get; set; } 
+    public ICollection<Models.Users.User>? Addtheseusers { get; set; } 
 
     [JsonProperty("removetheseusers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<Users.User>? Removetheseusers { get; set; } 
+    public ICollection<Models.Users.User>? Removetheseusers { get; set; } 
 
     [JsonProperty("users_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? UsersCount { get; set; } 

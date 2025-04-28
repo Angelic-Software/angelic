@@ -1,6 +1,7 @@
 using System.CodeDom.Compiler;
 using Angelic.Models.Configuration.Language;
 using Angelic.Models.Configuration.TeamsAndAgents;
+using Angelic.Models.Configuration.TeamsAndAgents.Workdays;
 using Newtonsoft.Json;
 
 namespace Angelic.Models.Configuration.Tickets;

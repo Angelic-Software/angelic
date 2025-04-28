@@ -7,6 +7,7 @@ using Angelic.Models.Configuration.Integrations.Wordpress;
 using Angelic.Models.Configuration.Language;
 using Angelic.Models.Configuration.TeamsAndAgents;
 using Angelic.Models.Configuration.TeamsAndAgents.Agents;
+using Angelic.Models.Configuration.TeamsAndAgents.Teams;
 using Angelic.Models.Configuration.Tickets.TicketTypes;
 using Angelic.Models.Tickets;
 using Newtonsoft.Json;

@@ -1,6 +1,7 @@
 using System.CodeDom.Compiler;
 using Angelic.Models.Configuration;
 using Angelic.Models.Configuration.Integrations;
+using Angelic.Models.Configuration.TeamsAndAgents;
 using Angelic.Models.Configuration.Tickets.Workflows;
 using Angelic.Models.KeyPairs;
 using Newtonsoft.Json;
@@ -155,7 +156,7 @@ public class ChatProfile
     public int? TextcolourType { get; set; } 
 
     [JsonProperty("agent_roles", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<NhdRoles>? AgentRoles { get; set; } 
+    public ICollection<Roles>? AgentRoles { get; set; } 
 
     [JsonProperty("enable_start_message_mapping", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? EnableStartMessageMapping { get; set; } 

@@ -3,7 +3,7 @@ using Angelic.Models.Configuration.Integrations.Custom;
 using Angelic.Models.Configuration.Tickets.TicketRule;
 using Newtonsoft.Json;
 
-namespace Angelic.Models;
+namespace Angelic.Models.Configuration.EventManagement;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
 public class EventRule

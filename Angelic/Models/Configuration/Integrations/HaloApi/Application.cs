@@ -3,10 +3,10 @@ using Angelic.Models.Configuration.Integrations.OpenIddict;
 using Angelic.Models.KeyPairs;
 using Newtonsoft.Json;
 
-namespace Angelic.Models.Configuration;
+namespace Angelic.Models.Configuration.Integrations.HaloApi;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
-public class NhdIdentityApplication
+public class Application
 {
     [JsonProperty("grant_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? GrantType { get; set; } 
@@ -42,7 +42,7 @@ public class NhdIdentityApplication
     public ICollection<ValueLabelIsNewKeyPair>? CorsWhitelistList { get; set; } 
 
     [JsonProperty("scopes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<NhdIdentityApplicationScope>? Scopes { get; set; } 
+    public ICollection<ApplicationScope>? Scopes { get; set; } 
 
     [JsonProperty("allowagents", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Allowagents { get; set; } 

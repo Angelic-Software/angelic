@@ -2,10 +2,10 @@ using System.CodeDom.Compiler;
 using Angelic.Models.Configuration.TeamsAndAgents.Agents;
 using Newtonsoft.Json;
 
-namespace Angelic.Models.Configuration;
+namespace Angelic.Models.Configuration.TeamsAndAgents;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
-public class NhdRoles
+public class Roles
 {
     [JsonProperty("intent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Intent { get; set; } 

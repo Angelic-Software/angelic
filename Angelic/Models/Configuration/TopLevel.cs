@@ -1,6 +1,7 @@
 using System.CodeDom.Compiler;
 using Angelic.Models.Configuration.TeamsAndAgents;
 using Angelic.Models.Configuration.TeamsAndAgents.Agents;
+using Angelic.Models.Configuration.TeamsAndAgents.Teams;
 using Angelic.Models.Configuration.Tickets;
 using Angelic.Models.Configuration.Tickets.Templates;
 using Angelic.Models.Configuration.Users;
