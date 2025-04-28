@@ -3,6 +3,7 @@ using Angelic.Areas;
 using Angelic.Assets;
 using Angelic.Attachments;
 using Angelic.Configuration;
+using Angelic.Configuration.Ai;
 using Angelic.Configuration.Billing;
 using Angelic.Configuration.Billing.Prepay;
 using Angelic.Configuration.Custom.CustomFields;
