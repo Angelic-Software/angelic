@@ -22,7 +22,7 @@ public class Workdays
     public string? Summary { get; set; } 
 
     [JsonProperty("timezone", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Timezone { get; set; } 
+    public string? TimeZone { get; set; } 
 
     [JsonProperty("start", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? Start { get; set; } 

@@ -92,7 +92,7 @@ public class ExternalLinkList
     public DateTimeOffset? SubscriptionExpiry { get; set; } 
 
     [JsonProperty("_webhookaction", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public WebhookSubscriptionAction? Webhookaction { get; set; } 
+    public WebhookSubscriptionAction? WebhookAction { get; set; } 
 
     [JsonProperty("revisions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Revisions { get; set; } 

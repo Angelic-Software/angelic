@@ -47,7 +47,7 @@ public class Roles
     public ICollection<NhdClaim>? Claims { get; set; } 
 
     [JsonProperty("custombuttons", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AgentButton>? Custombuttons { get; set; } 
+    public ICollection<AgentButton>? CustomButtons { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 
@@ -107,7 +107,7 @@ public class Roles
     public ICollection<AccessControl>? AcWorkdays { get; set; } 
 
     [JsonProperty("ac_emailtemplates", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AccessControl>? AcEmailtemplates { get; set; } 
+    public ICollection<AccessControl>? AcEmailTemplates { get; set; } 
 
     [JsonProperty("ac_messagegroups", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<AccessControl>? AcMessageGroups { get; set; } 

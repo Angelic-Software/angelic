@@ -1,9 +1,9 @@
 using System.CodeDom.Compiler;
 
-namespace Angelic.Models.Configuration.Emails;
+namespace Angelic.Models.Configuration.Emails.EmailTemplates;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
-public enum MessagePriority
+public enum MessageImportance
 {
 
     _0 = 0,

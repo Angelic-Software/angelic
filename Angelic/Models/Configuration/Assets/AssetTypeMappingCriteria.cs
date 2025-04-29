@@ -31,7 +31,7 @@ public class AssetTypeMappingCriteria
     public string? ValueString { get; set; } 
 
     [JsonProperty("value_datetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? ValueDatetime { get; set; } 
+    public DateTimeOffset? ValueDateTime { get; set; } 
 
     [JsonProperty("value_display", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ValueDisplay { get; set; } 

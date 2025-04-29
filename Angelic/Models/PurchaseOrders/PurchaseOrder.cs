@@ -178,7 +178,7 @@ public class PurchaseOrder
     public bool? PrintGenerate { get; set; } 
 
     [JsonProperty("printhtml", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Printhtml { get; set; } 
+    public string? PrintHtml { get; set; } 
 
     [JsonProperty("pdf_attachment_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? PdfAttachmentId { get; set; } 
@@ -190,7 +190,7 @@ public class PurchaseOrder
     public string? PdfTemplateName { get; set; } 
 
     [JsonProperty("createdbyagentname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Createdbyagentname { get; set; } 
+    public string? CreatedByAgentname { get; set; } 
 
     [JsonProperty("xero_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? XeroId { get; set; } 
@@ -220,7 +220,7 @@ public class PurchaseOrder
     public string? Warning { get; set; } 
 
     [JsonProperty("so_assets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<DeviceList>? SoAssets { get; set; } 
+    public ICollection<AssetList>? SoAssets { get; set; } 
 
     [JsonProperty("warrantyurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warrantyurl { get; set; } 
@@ -232,7 +232,7 @@ public class PurchaseOrder
     public int? QboId { get; set; } 
 
     [JsonProperty("_iscopy", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Iscopy { get; set; } 
+    public bool? IsCopy { get; set; } 
 
     [JsonProperty("_create_invoice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? CreateInvoice { get; set; } 
@@ -337,7 +337,7 @@ public class PurchaseOrder
     public bool? Novalidate { get; set; } 
 
     [JsonProperty("_dodistributorsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Dodistributorsync { get; set; } 
+    public bool? DoDistributorSync { get; set; } 
 
     [JsonProperty("originaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public AddressStore? OriginAddress { get; set; } 
@@ -358,10 +358,10 @@ public class PurchaseOrder
     public string? OriginAddress5 { get; set; } 
 
     [JsonProperty("custombuttons", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CustomButton>? Custombuttons { get; set; } 
+    public ICollection<CustomButton>? CustomButtons { get; set; } 
 
     [JsonProperty("extratabs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<Tabname>? Extratabs { get; set; } 
+    public ICollection<Tabname>? ExtraTabs { get; set; } 
 
     [JsonProperty("_dont_fire_automations", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? DontFireAutomations { get; set; } 
@@ -406,7 +406,7 @@ public class PurchaseOrder
     public DateTimeOffset? ReceiptConfirmationDate { get; set; } 
 
     [JsonProperty("_dotaxsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Dotaxsync { get; set; } 
+    public bool? DoTaxSync { get; set; } 
 
     [JsonProperty("tax_total", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? TaxTotal { get; set; } 
@@ -421,7 +421,7 @@ public class PurchaseOrder
     public int? ImportTypeId { get; set; } 
 
     [JsonProperty("_importthirdpartyid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Importthirdpartyid { get; set; } 
+    public string? ImportThirdPartyId { get; set; } 
 
     [JsonProperty("_importtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ImportType { get; set; } 

@@ -61,7 +61,7 @@ public class LdapString
     public string? CabName { get; set; } 
 
     [JsonProperty("lastsynced", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Lastsynced { get; set; } 
+    public DateTimeOffset? LastSynced { get; set; } 
 
     [JsonProperty("userrole_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? UserroleId { get; set; } 

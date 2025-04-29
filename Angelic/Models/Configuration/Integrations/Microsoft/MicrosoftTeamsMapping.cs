@@ -31,6 +31,6 @@ public class MicrosoftTeamsMapping
     public string? NewSubscriptionKey { get; set; } 
 
     [JsonProperty("_dosave", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Dosave { get; set; } 
+    public bool? DoSave { get; set; } 
 
 }

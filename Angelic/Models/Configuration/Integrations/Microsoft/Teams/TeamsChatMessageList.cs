@@ -31,7 +31,7 @@ public class TeamsChatMessageList
     public string? Who { get; set; } 
 
     [JsonProperty("datetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Datetime { get; set; } 
+    public DateTimeOffset? DateTime { get; set; } 
 
     [JsonProperty("whoagent_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? WhoagentId { get; set; } 

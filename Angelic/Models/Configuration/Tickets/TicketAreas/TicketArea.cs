@@ -1,10 +1,9 @@
 using System.CodeDom.Compiler;
-using Angelic.Models.Areas;
 using Angelic.Models.Configuration.Tickets.Views;
 using Angelic.Models.KeyPairs;
 using Newtonsoft.Json;
 
-namespace Angelic.Models.Configuration.Tickets;
+namespace Angelic.Models.Configuration.Tickets.TicketAreas;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
 public class TicketArea
@@ -43,10 +42,10 @@ public class TicketArea
     public string? DefaultView { get; set; } 
 
     [JsonProperty("default_view_selectedid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? DefaultViewSelectedid { get; set; } 
+    public int? DefaultViewSelectedId { get; set; } 
 
     [JsonProperty("default_view_selectedname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? DefaultViewSelectedname { get; set; } 
+    public string? DefaultViewSelectedName { get; set; } 
 
     [JsonProperty("default_columns_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? DefaultColumnsId { get; set; } 
@@ -64,19 +63,19 @@ public class TicketArea
     public string? DefaultColumnsName { get; set; } 
 
     [JsonProperty("selectservice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Selectservice { get; set; } 
+    public int? SelectService { get; set; } 
 
     [JsonProperty("enableprojecttreeview", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Enableprojecttreeview { get; set; } 
+    public bool? EnableProjectTreeView { get; set; } 
 
     [JsonProperty("showtabondetailsscreens", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowTabondetailsscreens { get; set; } 
+    public bool? ShowTabOnDetailsScreens { get; set; } 
 
     [JsonProperty("filters", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<ViewFilterDetails>? Filters { get; set; } 
 
     [JsonProperty("team_restrictions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AreaSectionDetail>? TeamRestrictions { get; set; } 
+    public ICollection<TicketAreaTeamRestrictions>? TeamRestrictions { get; set; } 
 
     [JsonProperty("area_use", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? AreaUse { get; set; } 
@@ -85,16 +84,16 @@ public class TicketArea
     public string? AreaUseName { get; set; } 
 
     [JsonProperty("shownewticketbutton", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Shownewticketbutton { get; set; } 
+    public bool? ShowNewTicketButton { get; set; } 
 
     [JsonProperty("allow_ticket_type_selection", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? AllowTicketTypeSelection { get; set; } 
 
     [JsonProperty("kanbanstatuschoice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<StringIdNameKeyPair>? Kanbanstatuschoice { get; set; } 
+    public ICollection<StringIdNameKeyPair>? KanbanStatusChoice { get; set; } 
 
     [JsonProperty("kanbanstatuschoice_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? KanbanstatuschoiceList { get; set; } 
+    public string? KanbanStatusChoiceList { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

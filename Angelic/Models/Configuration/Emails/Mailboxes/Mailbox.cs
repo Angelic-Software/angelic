@@ -44,13 +44,13 @@ public class Mailbox
     public DateTimeOffset? HaloIntegratorLastSync { get; set; } 
 
     [JsonProperty("halointegrator_outlook_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? HaloIntegratorOutlookLastsync { get; set; } 
+    public DateTimeOffset? HaloIntegratorOutlookLastSync { get; set; } 
 
     [JsonProperty("halointegrator_outlook", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? HaloIntegratorOutlook { get; set; } 
 
     [JsonProperty("halointegrator_outlook_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? HaloIntegratorOutlookLasterror { get; set; } 
+    public string? HaloIntegratorOutlookLastError { get; set; } 
 
     [JsonProperty("password", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Password { get; set; } 
@@ -122,7 +122,7 @@ public class Mailbox
     public bool? Syncaddressbook { get; set; } 
 
     [JsonProperty("dontsendack", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Dontsendack { get; set; } 
+    public bool? DontSendAck { get; set; } 
 
     [JsonProperty("defaultuser", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? DefaultUser { get; set; } 
@@ -251,7 +251,7 @@ public class Mailbox
     public string? NewAzureSubscriptionSecret { get; set; } 
 
     [JsonProperty("_webhookaction", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public WebhookSubscriptionAction? Webhookaction { get; set; } 
+    public WebhookSubscriptionAction? WebhookAction { get; set; } 
 
     [JsonProperty("ignore_cc_emails", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? IgnoreCcEmails { get; set; } 
@@ -272,7 +272,7 @@ public class Mailbox
     public bool? SiteDomainMatching { get; set; } 
 
     [JsonProperty("site_tocc_matching", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? SiteToccMatching { get; set; } 
+    public bool? SiteToCcMatching { get; set; } 
 
     [JsonProperty("unmatched_users", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? UnmatchedUsers { get; set; } 
@@ -308,7 +308,7 @@ public class Mailbox
     public DateTimeOffset? Creationdate { get; set; } 
 
     [JsonProperty("dontimportbeforecreation", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Dontimportbeforecreation { get; set; } 
+    public bool? DontImportbeforecreation { get; set; } 
 
     [JsonProperty("azure_authentication_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? AzureAuthenticationType { get; set; } 
@@ -317,7 +317,7 @@ public class Mailbox
     public bool? Confirmmanagedidentitysetup { get; set; } 
 
     [JsonProperty("_confirmclientcredentialssetup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Confirmclientcredentialssetup { get; set; } 
+    public bool? ConfirmClientCredentialsSetup { get; set; } 
 
     [JsonProperty("stopnewticketsviaemail", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Stopnewticketsviaemail { get; set; } 
@@ -326,7 +326,7 @@ public class Mailbox
     public bool? Confirmropcssetup { get; set; } 
 
     [JsonProperty("showinfromaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Showinfromaddress { get; set; } 
+    public bool? ShowInfromaddress { get; set; } 
 
     [JsonProperty("mappings_user", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<IntegrationFieldMapping>? MappingsUser { get; set; } 

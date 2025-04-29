@@ -25,7 +25,7 @@ public class Instance
     public int? CommitsBehind { get; set; } 
 
     [JsonProperty("syncid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Syncid { get; set; } 
+    public string? SyncId { get; set; } 
 
     [JsonProperty("offline", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Offline { get; set; } 
@@ -37,10 +37,10 @@ public class Instance
     public bool? Versionmatch { get; set; } 
 
     [JsonProperty("canmerge", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Canmerge { get; set; } 
+    public bool? CanMerge { get; set; } 
 
     [JsonProperty("iscurrent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Iscurrent { get; set; } 
+    public bool? IsCurrent { get; set; } 
 
     [JsonProperty("nomergereason", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Nomergereason { get; set; } 

@@ -63,16 +63,16 @@ public class TemplateList
     public ICollection<TemplateRule>? CreationRules { get; set; } 
 
     [JsonProperty("todo_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<StdToDo>? TodoList { get; set; } 
+    public ICollection<TemplateToDo>? TodoList { get; set; } 
 
     [JsonProperty("emailto", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Emailto { get; set; } 
+    public string? EmailTo { get; set; } 
 
     [JsonProperty("emailcc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Emailcc { get; set; } 
+    public string? EmailCc { get; set; } 
 
     [JsonProperty("emailbcc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Emailbcc { get; set; } 
+    public string? EmailBcc { get; set; } 
 
     [JsonProperty("emailsubject", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Emailsubject { get; set; } 
@@ -159,19 +159,19 @@ public class TemplateList
     public int? OptionalDefaultResourcetype { get; set; } 
 
     [JsonProperty("optional_excludefromsla", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? OptionalExcludefromsla { get; set; } 
+    public int? OptionalExcludeFromSla { get; set; } 
 
     [JsonProperty("optional_customfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<CustomField>? OptionalCustomFields { get; set; } 
 
     [JsonProperty("optional_assets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<DeviceList>? OptionalAssets { get; set; } 
+    public ICollection<AssetList>? OptionalAssets { get; set; } 
 
     [JsonProperty("optional_forwardinboundupdates", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? OptionalForwardinboundupdates { get; set; } 
 
     [JsonProperty("optional_showforusers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? OptionalShowForusers { get; set; } 
+    public int? OptionalShowForUsers { get; set; } 
 
     [JsonProperty("optional_urgency", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? OptionalUrgency { get; set; } 

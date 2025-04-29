@@ -16,10 +16,10 @@ public class ReleaseProductEmail
     public string? ReleasetypeName { get; set; } 
 
     [JsonProperty("emailtemplate_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? EmailtemplateId { get; set; } 
+    public int? EmailTemplateId { get; set; } 
 
     [JsonProperty("emailtemplate_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? EmailtemplateName { get; set; } 
+    public string? EmailTemplateName { get; set; } 
 
     [JsonProperty("change_status_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ChangeStatusId { get; set; } 

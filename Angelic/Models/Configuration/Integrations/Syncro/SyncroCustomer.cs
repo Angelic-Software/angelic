@@ -10,10 +10,10 @@ public class SyncroCustomer
     public int? Id { get; set; } 
 
     [JsonProperty("firstname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Firstname { get; set; } 
+    public string? FirstName { get; set; } 
 
     [JsonProperty("lastname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Lastname { get; set; } 
+    public string? LastName { get; set; } 
 
     [JsonProperty("business_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? BusinessName { get; set; } 

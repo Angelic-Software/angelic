@@ -62,7 +62,7 @@ public class AvalaraDetails
     public bool? Authorized { get; set; } 
 
     [JsonProperty("syncentities", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Syncentities { get; set; } 
+    public string? SyncEntities { get; set; } 
 
     [JsonProperty("defaultcustomercode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? DefaultCustomercode { get; set; } 

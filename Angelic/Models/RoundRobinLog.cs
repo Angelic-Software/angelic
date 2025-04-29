@@ -19,7 +19,7 @@ public class RoundRobinLog
     public int? AgentId { get; set; } 
 
     [JsonProperty("assign_datetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? AssignDatetime { get; set; } 
+    public DateTimeOffset? AssignDateTime { get; set; } 
 
     [JsonProperty("type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Type { get; set; } 

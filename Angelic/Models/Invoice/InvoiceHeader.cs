@@ -1,5 +1,5 @@
 using System.CodeDom.Compiler;
-using Angelic.Models.Areas;
+using Angelic.Models.Clients;
 using Angelic.Models.Configuration;
 using Angelic.Models.Configuration.Custom;
 using Angelic.Models.Configuration.Custom.CustomFields;
@@ -43,7 +43,7 @@ public class InvoiceHeader
     public int? Uid { get; set; } 
 
     [JsonProperty("invoicenumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Invoicenumber { get; set; } 
+    public string? InvoiceNumber { get; set; } 
 
     [JsonProperty("thirdpartyinvoicenumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ThirdPartyinvoicenumber { get; set; } 
@@ -100,7 +100,7 @@ public class InvoiceHeader
     public DateTimeOffset? ScheduleDate { get; set; } 
 
     [JsonProperty("dateposted", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Dateposted { get; set; } 
+    public DateTimeOffset? DatePosted { get; set; } 
 
     [JsonProperty("last_synced", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? LastSynced { get; set; } 
@@ -142,7 +142,7 @@ public class InvoiceHeader
     public int? SalesOrderId { get; set; } 
 
     [JsonProperty("datetype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Datetype { get; set; } 
+    public int? DateType { get; set; } 
 
     [JsonProperty("percentold", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Percentold { get; set; } 
@@ -157,7 +157,7 @@ public class InvoiceHeader
     public string? ContractRef { get; set; } 
 
     [JsonProperty("datesent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Datesent { get; set; } 
+    public DateTimeOffset? DateSent { get; set; } 
 
     [JsonProperty("currency", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Currency { get; set; } 
@@ -181,10 +181,10 @@ public class InvoiceHeader
     public int? TicketId { get; set; } 
 
     [JsonProperty("invoicetype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Invoicetype { get; set; } 
+    public int? InvoiceType { get; set; } 
 
     [JsonProperty("datepaid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Datepaid { get; set; } 
+    public DateTimeOffset? DatePaid { get; set; } 
 
     [JsonProperty("paymentstatus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Paymentstatus { get; set; } 
@@ -313,7 +313,7 @@ public class InvoiceHeader
     public bool? ForceCreation { get; set; } 
 
     [JsonProperty("_create_from_areaitems", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AreaItem>? CreateFromAreaitems { get; set; } 
+    public ICollection<RecurringItem>? CreateFromAreaItems { get; set; } 
 
     [JsonProperty("_create_from_contract", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? CreateFromContract { get; set; } 
@@ -325,7 +325,7 @@ public class InvoiceHeader
     public int? Qboid { get; set; } 
 
     [JsonProperty("billingcategory", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Billingcategory { get; set; } 
+    public int? BillingCategory { get; set; } 
 
     [JsonProperty("_sendmassinvoice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Sendmassinvoice { get; set; } 
@@ -349,7 +349,7 @@ public class InvoiceHeader
     public int? DueDateType { get; set; } 
 
     [JsonProperty("createdbyagentname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Createdbyagentname { get; set; } 
+    public string? CreatedByAgentname { get; set; } 
 
     [JsonProperty("internal_note", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? InternalNote { get; set; } 
@@ -364,7 +364,7 @@ public class InvoiceHeader
     public int? KashflowTenantId { get; set; } 
 
     [JsonProperty("kashflowid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Kashflowid { get; set; } 
+    public int? KashflowId { get; set; } 
 
     [JsonProperty("kashflow_pdf", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? KashflowPdf { get; set; } 
@@ -382,7 +382,7 @@ public class InvoiceHeader
     public ICollection<InvoiceHeaderMerge>? MergeData { get; set; } 
 
     [JsonProperty("snelstart_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? SnelstartId { get; set; } 
+    public string? SnelStartId { get; set; } 
 
     [JsonProperty("time", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? Time { get; set; } 
@@ -397,13 +397,13 @@ public class InvoiceHeader
     public int? Daysplus { get; set; } 
 
     [JsonProperty("periodname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Periodname { get; set; } 
+    public string? PeriodName { get; set; } 
 
     [JsonProperty("_isimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isimport { get; set; } 
+    public bool? IsImport { get; set; } 
 
     [JsonProperty("duedatename", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? DueDatename { get; set; } 
+    public string? DueDateName { get; set; } 
 
     [JsonProperty("date_created", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? DateCreated { get; set; } 
@@ -718,10 +718,10 @@ public class InvoiceHeader
     public int? MostRecentInvoiceType { get; set; } 
 
     [JsonProperty("custombuttons", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CustomButton>? Custombuttons { get; set; } 
+    public ICollection<CustomButton>? CustomButtons { get; set; } 
 
     [JsonProperty("extratabs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<Tabname>? Extratabs { get; set; } 
+    public ICollection<Tabname>? ExtraTabs { get; set; } 
 
     [JsonProperty("update_invoice_conversion_rate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? UpdateInvoiceConversionRate { get; set; } 

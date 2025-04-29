@@ -38,7 +38,7 @@ public class ConsignmentHeader
     public ICollection<ConsignmentDetail>? Lines { get; set; } 
 
     [JsonProperty("assets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<DeviceList>? Assets { get; set; } 
+    public ICollection<AssetList>? Assets { get; set; } 
 
     [JsonProperty("_print_generate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? PrintGenerate { get; set; } 
@@ -47,7 +47,7 @@ public class ConsignmentHeader
     public int? PdfTemplateId { get; set; } 
 
     [JsonProperty("printhtml", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Printhtml { get; set; } 
+    public string? PrintHtml { get; set; } 
 
     [JsonProperty("pdf_attachment_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? PdfAttachmentId { get; set; } 

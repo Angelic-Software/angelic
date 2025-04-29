@@ -1,11 +1,11 @@
 using System.CodeDom.Compiler;
-using Angelic.Models.Areas;
+using Angelic.Models.Clients;
 using Newtonsoft.Json;
 
-namespace Angelic.Models;
+namespace Angelic.Models.Configuration.Tickets.Templates;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
-public class StdToDo
+public class TemplateToDo
 {
     [JsonProperty("template_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? TemplateId { get; set; } 
@@ -20,7 +20,7 @@ public class StdToDo
     public int? Sequence { get; set; } 
 
     [JsonProperty("allowed_clients", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AreaToDo>? AllowedClients { get; set; } 
+    public ICollection<TemplateAllowedClients>? AllowedClients { get; set; } 
 
     [JsonProperty("group_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? GroupId { get; set; } 

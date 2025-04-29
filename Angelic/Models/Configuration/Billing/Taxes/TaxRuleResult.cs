@@ -34,7 +34,7 @@ public class TaxRuleResult
     public string? ThirdPartyId { get; set; } 
 
     [JsonProperty("datecreated", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Datecreated { get; set; } 
+    public DateTimeOffset? DateCreated { get; set; } 
 
     [JsonProperty("thirdpartyname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ThirdPartyname { get; set; } 

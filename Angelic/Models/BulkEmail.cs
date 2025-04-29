@@ -58,7 +58,7 @@ public class BulkEmail
     public int? FaultId { get; set; } 
 
     [JsonProperty("actionnumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Actionnumber { get; set; } 
+    public int? ActionNumber { get; set; } 
 
     [JsonProperty("distribution_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? DistributionList { get; set; } 

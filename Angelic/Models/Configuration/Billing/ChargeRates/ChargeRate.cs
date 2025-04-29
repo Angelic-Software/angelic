@@ -70,7 +70,7 @@ public class ChargeRate
     public bool? UseForMileage { get; set; } 
 
     [JsonProperty("travel_surchargeid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? TravelSurchargeid { get; set; } 
+    public int? TravelSurchargeId { get; set; } 
 
     [JsonProperty("contractmultiplier", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? Contractmultiplier { get; set; } 

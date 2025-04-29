@@ -37,7 +37,7 @@ public class TicketRulesCriteria
     public string? ValueString { get; set; } 
 
     [JsonProperty("value_datetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? ValueDatetime { get; set; } 
+    public DateTimeOffset? ValueDateTime { get; set; } 
 
     [JsonProperty("partialmatch", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Partialmatch { get; set; } 
@@ -67,13 +67,13 @@ public class TicketRulesCriteria
     public int? Use { get; set; } 
 
     [JsonProperty("chatprofile_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ChatprofileId { get; set; } 
+    public string? ChatProfileId { get; set; } 
 
     [JsonProperty("chatprofile_flow_seq", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ChatprofileFlowSeq { get; set; } 
+    public int? ChatProfileFlowSeq { get; set; } 
 
     [JsonProperty("timezonestring", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Timezonestring { get; set; } 
+    public string? TimeZonestring { get; set; } 
 
     [JsonProperty("match_after_start", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? MatchAfterStart { get; set; } 

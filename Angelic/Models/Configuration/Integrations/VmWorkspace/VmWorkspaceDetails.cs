@@ -59,7 +59,7 @@ namespace Angelic.Models.Configuration.Integrations.VmWorkspace;
         public DateTimeOffset? LastSyncDate { get; set; } 
 
         [JsonProperty("lastsyncerror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Lastsyncerror { get; set; } 
+        public string? LastSyncEror { get; set; } 
 
         [JsonProperty("halo_integrator_import_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? HaloIntegratorImportList { get; set; } 

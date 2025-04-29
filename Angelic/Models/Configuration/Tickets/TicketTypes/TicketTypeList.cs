@@ -44,7 +44,7 @@ public class TicketTypeList
     public int? TicketCount { get; set; } 
 
     [JsonProperty("cancreate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Cancreate { get; set; } 
+    public bool? CanCreate { get; set; } 
 
     [JsonProperty("agentscanselect", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Agentscanselect { get; set; } 
@@ -83,10 +83,10 @@ public class TicketTypeList
     public int? ProjectType { get; set; } 
 
     [JsonProperty("kanbanstatuschoice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<StringIdNameKeyPair>? Kanbanstatuschoice { get; set; } 
+    public ICollection<StringIdNameKeyPair>? KanbanStatusChoice { get; set; } 
 
     [JsonProperty("kanbanstatuschoice_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? KanbanstatuschoiceList { get; set; } 
+    public string? KanbanStatusChoiceList { get; set; } 
 
     [JsonProperty("email_start_tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? EmailStartTag { get; set; } 

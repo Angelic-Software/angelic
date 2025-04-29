@@ -13,7 +13,7 @@ public class Priority
     public Guid? Id { get; set; } 
 
     [JsonProperty("slaid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Slaid { get; set; } 
+    public int? SlaId { get; set; } 
 
     [JsonProperty("sla_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public Guid? SlaGuid { get; set; } 

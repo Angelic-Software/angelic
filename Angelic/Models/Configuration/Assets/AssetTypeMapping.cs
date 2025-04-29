@@ -36,7 +36,7 @@ namespace Angelic.Models.Configuration.Assets;
         public string? Category { get; set; } 
 
         [JsonProperty("includesoftware", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Includesoftware { get; set; } 
+        public bool? IncludeSoftware { get; set; } 
 
         [JsonProperty("field_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<IntegrationFieldMapping>? FieldMappings { get; set; } 

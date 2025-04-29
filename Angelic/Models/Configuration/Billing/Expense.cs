@@ -16,7 +16,7 @@ public class Expense
     public int? FaultId { get; set; } 
 
     [JsonProperty("actionnumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Actionnumber { get; set; } 
+    public int? ActionNumber { get; set; } 
 
     [JsonProperty("description", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Description { get; set; } 

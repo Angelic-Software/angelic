@@ -33,13 +33,13 @@ public class Feedback
     public string? UserMessage { get; set; } 
 
     [JsonProperty("customsurveyfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CustomField>? Customsurveyfields { get; set; } 
+    public ICollection<CustomField>? CustomSurveyFields { get; set; } 
 
     [JsonProperty("recaptcha_token", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? RecaptchaToken { get; set; } 
 
     [JsonProperty("feedback_faultid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? FeedbackFaultid { get; set; } 
+    public int? FeedbackFaultId { get; set; } 
 
     [JsonProperty("fields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<TicketTypeField>? Fields { get; set; } 

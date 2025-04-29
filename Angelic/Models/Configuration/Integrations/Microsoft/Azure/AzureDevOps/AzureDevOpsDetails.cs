@@ -125,7 +125,7 @@ public class AzureDevOpsDetails
     public DateTimeOffset? LastSyncDate { get; set; } 
 
     [JsonProperty("lastsyncerror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Lastsyncerror { get; set; } 
+    public string? LastSyncEror { get; set; } 
 
     [JsonProperty("update_days", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? UpdateDays { get; set; } 

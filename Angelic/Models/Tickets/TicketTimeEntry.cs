@@ -10,7 +10,7 @@ public class TicketTimeEntry
     public int? Id { get; set; } 
 
     [JsonProperty("faultid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Faultid { get; set; } 
+    public int? FaultId { get; set; } 
 
     [JsonProperty("actioncode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Actioncode { get; set; } 

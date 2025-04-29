@@ -71,7 +71,7 @@ namespace Angelic.Models.Configuration.Integrations.Myob;
         public bool? Enablesync { get; set; } 
 
         [JsonProperty("syncentities", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Syncentities { get; set; } 
+        public string? SyncEntities { get; set; } 
 
         [JsonProperty("showmessage", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? ShowMessage { get; set; } 

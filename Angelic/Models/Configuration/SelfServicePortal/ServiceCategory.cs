@@ -71,13 +71,13 @@ public class ServiceCategory
     public int? AccessControlLevel { get; set; } 
 
     [JsonProperty("phonenumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Phonenumber { get; set; } 
+    public string? PhoneNumber { get; set; } 
 
     [JsonProperty("portalbackgroundimageurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     [System.ComponentModel.DataAnnotations.StringLength(500)]
-    public string? Portalbackgroundimageurl { get; set; } 
+    public string? PortalBackgroundImageUrl { get; set; } 
 
     [JsonProperty("portaldesc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Portaldesc { get; set; } 
+    public string? PortalDesc { get; set; } 
 
 }

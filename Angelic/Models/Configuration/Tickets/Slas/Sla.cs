@@ -33,7 +33,7 @@ public class Sla
     public bool? ResponseReset { get; set; } 
 
     [JsonProperty("autoreleaseoption", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Autoreleaseoption { get; set; } 
+    public bool? AutoReleaseoption { get; set; } 
 
     [JsonProperty("workdays", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public Workdays? Workdays { get; set; } 

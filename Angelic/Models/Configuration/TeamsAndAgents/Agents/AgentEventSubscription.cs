@@ -32,7 +32,7 @@ public class AgentEventSubscription
     public string? NewSubscriptionKey { get; set; } 
 
     [JsonProperty("_dosave", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Dosave { get; set; } 
+    public bool? DoSave { get; set; } 
 
     [JsonProperty("agent_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? AgentName { get; set; } 

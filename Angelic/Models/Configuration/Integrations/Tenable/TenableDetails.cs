@@ -55,7 +55,7 @@ public class TenableDetails
     public DateTimeOffset? LastSyncDate { get; set; } 
 
     [JsonProperty("lastsyncerror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Lastsyncerror { get; set; } 
+    public string? LastSyncEror { get; set; } 
 
     [JsonProperty("delete_devices", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? DeleteDevices { get; set; } 

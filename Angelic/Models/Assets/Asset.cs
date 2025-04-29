@@ -160,7 +160,7 @@ public class Asset
     public int? RelationshipId { get; set; } 
 
     [JsonProperty("custombuttons", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CustomButton>? Custombuttons { get; set; } 
+    public ICollection<CustomButton>? CustomButtons { get; set; } 
 
     [JsonProperty("default_contract_value", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? DefaultContractValue { get; set; } 
@@ -277,7 +277,7 @@ public class Asset
     public int? PurchaseOrderLineId { get; set; } 
 
     [JsonProperty("teamviewerpassword", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Teamviewerpassword { get; set; } 
+    public string? TeamViewerPassword { get; set; } 
 
     [JsonProperty("commissioned", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Commissioned { get; set; } 
@@ -289,10 +289,10 @@ public class Asset
     public ICollection<Asset>? Children { get; set; } 
 
     [JsonProperty("parent_assets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<DeviceList>? ParentAssets { get; set; } 
+    public ICollection<AssetList>? ParentAssets { get; set; } 
 
     [JsonProperty("child_assets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<DeviceList>? ChildAssets { get; set; } 
+    public ICollection<AssetList>? ChildAssets { get; set; } 
 
     [JsonProperty("hierarchy", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<Asset>? Hierarchy { get; set; } 
@@ -304,10 +304,10 @@ public class Asset
     public int? CloneCount { get; set; } 
 
     [JsonProperty("_dontaddnewfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Dontaddnewfields { get; set; } 
+    public bool? DontAddnewfields { get; set; } 
 
     [JsonProperty("_dontupdatetype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Dontupdatetype { get; set; } 
+    public bool? DontUpdatetype { get; set; } 
 
     [JsonProperty("sla_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? SlaName { get; set; } 
@@ -382,7 +382,7 @@ public class Asset
     public string? DattoSiteUid { get; set; } 
 
     [JsonProperty("ateraid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Ateraid { get; set; } 
+    public string? AteraId { get; set; } 
 
     [JsonProperty("items_issued", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<TicketItem>? ItemsIssued { get; set; } 
@@ -400,7 +400,7 @@ public class Asset
     public DateTimeOffset? Dlastupdate { get; set; } 
 
     [JsonProperty("createdfrompurchaseorder", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public PurchaseOrder? Createdfrompurchaseorder { get; set; } 
+    public PurchaseOrder? CreatedFrompurchaseorder { get; set; } 
 
     [JsonProperty("stockdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? Stockdate { get; set; } 
@@ -418,7 +418,7 @@ public class Asset
     public ICollection<AssetUserCount>? UserRoleBreakdown { get; set; } 
 
     [JsonProperty("itglue_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ItglueId { get; set; } 
+    public string? ItGlueId { get; set; } 
 
     [JsonProperty("area_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? AreaGuid { get; set; } 
@@ -445,7 +445,7 @@ public class Asset
     public int? TotalTicketCount { get; set; } 
 
     [JsonProperty("opened_thismonth_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? OpenedThismonthCount { get; set; } 
+    public int? OpenedThisMonthCount { get; set; } 
 
     [JsonProperty("domotz_agentid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? DomotzAgentid { get; set; } 
@@ -496,19 +496,19 @@ public class Asset
     public string? Warning { get; set; } 
 
     [JsonProperty("isassetdetails", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isassetdetails { get; set; } 
+    public bool? IsAssetdetails { get; set; } 
 
     [JsonProperty("domotz_agent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? DomotzAgent { get; set; } 
 
     [JsonProperty("liongardid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Liongardid { get; set; } 
+    public int? LiongardId { get; set; } 
 
     [JsonProperty("iskaseyaagent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Iskaseyaagent { get; set; } 
 
     [JsonProperty("_donotvalidate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Donotvalidate { get; set; } 
+    public bool? DoNotvalidate { get; set; } 
 
     [JsonProperty("datto_remote_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? DattoRemoteUrl { get; set; } 
@@ -571,7 +571,7 @@ public class Asset
     public string? WorkspaceOrgunitpath { get; set; } 
 
     [JsonProperty("sibling_assets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<DeviceList>? SiblingAssets { get; set; } 
+    public ICollection<AssetList>? SiblingAssets { get; set; } 
 
     [JsonProperty("import_details_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ImportDetailsId { get; set; } 

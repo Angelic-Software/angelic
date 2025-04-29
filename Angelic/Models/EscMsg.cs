@@ -31,28 +31,28 @@ public class EscMsg
     public string? Summary { get; set; } 
 
     [JsonProperty("emailbody", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Emailbody { get; set; } 
+    public string? EmailBody { get; set; } 
 
     [JsonProperty("emailbody_html", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? EmailbodyHtml { get; set; } 
+    public string? EmailBodyHtml { get; set; } 
 
     [JsonProperty("ccaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Ccaddress { get; set; } 
 
     [JsonProperty("smsstatus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Smsstatus { get; set; } 
+    public int? SmsStatus { get; set; } 
 
     [JsonProperty("pushstatus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Pushstatus { get; set; } 
 
     [JsonProperty("smsnos", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Smsnos { get; set; } 
+    public string? SmsNos { get; set; } 
 
     [JsonProperty("smsbody", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Smsbody { get; set; } 
+    public string? SmsBody { get; set; } 
 
     [JsonProperty("sendemailifnopopup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Sendemailifnopopup { get; set; } 
+    public bool? SendEmailifnopopup { get; set; } 
 
     [JsonProperty("slackid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Slackid { get; set; } 
@@ -133,7 +133,7 @@ public class EscMsg
     public int? ReadStatusUpdate { get; set; } 
 
     [JsonProperty("datetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Datetime { get; set; } 
+    public DateTimeOffset? DateTime { get; set; } 
 
     [JsonProperty("ticket_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? TicketId { get; set; } 

@@ -87,7 +87,7 @@ public class TicketTypeField
     public string? TechtabName { get; set; } 
 
     [JsonProperty("showdependency", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Showdependency { get; set; } 
+    public bool? ShowDependency { get; set; } 
 
     [JsonProperty("canupdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? CanUpdate { get; set; } 

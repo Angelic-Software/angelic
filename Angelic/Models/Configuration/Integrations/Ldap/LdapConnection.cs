@@ -45,7 +45,7 @@ namespace Angelic.Models.Configuration.Integrations.Ldap;
         public string? Basedn { get; set; } 
 
         [JsonProperty("synccontacts", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Synccontacts { get; set; } 
+        public bool? SyncContacts { get; set; } 
 
         [JsonProperty("external", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? External { get; set; } 
@@ -150,7 +150,7 @@ namespace Angelic.Models.Configuration.Integrations.Ldap;
         public bool? AllowAccess { get; set; } 
 
         [JsonProperty("syncedstrings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<int>? Syncedstrings { get; set; } 
+        public ICollection<int>? SyncedStrings { get; set; } 
 
         [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Warning { get; set; } 

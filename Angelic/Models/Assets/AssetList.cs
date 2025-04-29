@@ -6,7 +6,7 @@ using Newtonsoft.Json;
 namespace Angelic.Models.Assets;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
-public class DeviceList
+public class AssetList
 {
     [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Id { get; set; } 
@@ -147,7 +147,7 @@ public class DeviceList
     public int? RelationshipId { get; set; } 
 
     [JsonProperty("custombuttons", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CustomButton>? Custombuttons { get; set; } 
+    public ICollection<CustomButton>? CustomButtons { get; set; } 
 
     [JsonProperty("default_contract_value", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? DefaultContractValue { get; set; } 
@@ -243,10 +243,10 @@ public class DeviceList
     public int? Sequence { get; set; } 
 
     [JsonProperty("ncentral_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? NcentralUrl { get; set; } 
+    public string? NCentralUrl { get; set; } 
 
     [JsonProperty("ncentral_remote_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? NcentralRemoteUrl { get; set; } 
+    public string? NCentralRemoteUrl { get; set; } 
 
     [JsonProperty("contract_end_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? ContractEndDate { get; set; } 
@@ -276,10 +276,10 @@ public class DeviceList
     public string? SyncroUrl { get; set; } 
 
     [JsonProperty("syncroid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Syncroid { get; set; } 
+    public int? SyncroId { get; set; } 
 
     [JsonProperty("itglue_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ItglueUrl { get; set; } 
+    public string? ItGlueUrl { get; set; } 
 
     [JsonProperty("defaultsequence", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Defaultsequence { get; set; } 
@@ -318,7 +318,7 @@ public class DeviceList
     public string? AuvikUrl { get; set; } 
 
     [JsonProperty("allowallstatus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Allowallstatus { get; set; } 
+    public bool? AllowAllstatus { get; set; } 
 
     [JsonProperty("allowed_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<AssetTypeStatus>? AllowedStatus { get; set; } 
@@ -372,7 +372,7 @@ public class DeviceList
     public string? DattoUrl { get; set; } 
 
     [JsonProperty("ncentral_details_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? NcentralDetailsId { get; set; } 
+    public int? NCentralDetailsId { get; set; } 
 
     [JsonProperty("nable_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? NableId { get; set; } 
@@ -381,7 +381,7 @@ public class DeviceList
     public string? Connectwisecontrolid { get; set; } 
 
     [JsonProperty("_isimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isimport { get; set; } 
+    public bool? IsImport { get; set; } 
 
     [JsonProperty("_importtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ImportType { get; set; } 

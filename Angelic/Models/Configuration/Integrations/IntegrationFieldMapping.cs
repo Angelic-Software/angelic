@@ -25,7 +25,7 @@ public class IntegrationFieldMapping
     public int? Typeid { get; set; } 
 
     [JsonProperty("isassetfield", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isassetfield { get; set; } 
+    public bool? IsAssetfield { get; set; } 
 
     [JsonProperty("subtypeid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Subtypeid { get; set; } 
@@ -43,13 +43,13 @@ public class IntegrationFieldMapping
     public bool? Sync { get; set; } 
 
     [JsonProperty("synctype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Synctype { get; set; } 
+    public int? SyncType { get; set; } 
 
     [JsonProperty("product", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Product { get; set; } 
 
     [JsonProperty("dontupdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Dontupdate { get; set; } 
+    public bool? DontUpdate { get; set; } 
 
     [JsonProperty("product_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ProductName { get; set; } 

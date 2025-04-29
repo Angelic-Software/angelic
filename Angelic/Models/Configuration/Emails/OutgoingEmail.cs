@@ -10,7 +10,7 @@ public class OutgoingEmail
     public int? Id { get; set; } 
 
     [JsonProperty("datesent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Datesent { get; set; } 
+    public DateTimeOffset? DateSent { get; set; } 
 
     [JsonProperty("memo", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Memo { get; set; } 

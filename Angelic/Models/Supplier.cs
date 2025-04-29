@@ -40,7 +40,7 @@ public class Supplier
     public bool? Inactive { get; set; } 
 
     [JsonProperty("emailtemplate_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? EmailtemplateId { get; set; } 
+    public int? EmailTemplateId { get; set; } 
 
     [JsonProperty("default_contract_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? DefaultContractId { get; set; } 
@@ -49,19 +49,19 @@ public class Supplier
     public int? DefaultContractSlaId { get; set; } 
 
     [JsonProperty("thirdpartynhdapiurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ThirdPartynhdapiurl { get; set; } 
+    public string? ThirdPartyNhdApiUrl { get; set; } 
 
     [JsonProperty("customfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<CustomField>? CustomFields { get; set; } 
 
     [JsonProperty("custombuttons", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CustomButton>? Custombuttons { get; set; } 
+    public ICollection<CustomButton>? CustomButtons { get; set; } 
 
     [JsonProperty("contract_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ContractCount { get; set; } 
 
     [JsonProperty("datecreated", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Datecreated { get; set; } 
+    public DateTimeOffset? DateCreated { get; set; } 
 
     [JsonProperty("phone_number_2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? PhoneNumber2 { get; set; } 
@@ -79,16 +79,16 @@ public class Supplier
     public bool? Switchslatosupplier { get; set; } 
 
     [JsonProperty("emailoverduefixby", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Emailoverduefixby { get; set; } 
+    public bool? EmailOverduefixby { get; set; } 
 
     [JsonProperty("emailoverdueresponse", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Emailoverdueresponse { get; set; } 
+    public bool? EmailOverdueresponse { get; set; } 
 
     [JsonProperty("webserviceurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Webserviceurl { get; set; } 
 
     [JsonProperty("emailtemplate_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? EmailtemplateName { get; set; } 
+    public string? EmailTemplateName { get; set; } 
 
     [JsonProperty("accounts_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? AccountsId { get; set; } 
@@ -133,7 +133,7 @@ public class Supplier
     public int? Parentid { get; set; } 
 
     [JsonProperty("emaildomain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Emaildomain { get; set; } 
+    public string? EmailDomain { get; set; } 
 
     [JsonProperty("users", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<UsersList>? Users { get; set; } 
@@ -148,25 +148,25 @@ public class Supplier
     public string? ApiAccessClientsecret { get; set; } 
 
     [JsonProperty("thirdpartynhdauthurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ThirdPartynhdauthurl { get; set; } 
+    public string? ThirdPartyNhdAuthUrl { get; set; } 
 
     [JsonProperty("thirdpartynhdtenant", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ThirdPartynhdtenant { get; set; } 
+    public string? ThirdPartyNhdtenant { get; set; } 
 
     [JsonProperty("thirdpartynhdapiclientid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ThirdPartynhdapiclientid { get; set; } 
+    public string? ThirdPartyNhdApiclientid { get; set; } 
 
     [JsonProperty("new_thirdpartynhdapiclientsecret", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? NewThirdPartynhdapiclientsecret { get; set; } 
+    public string? NewThirdPartyNhdApiclientsecret { get; set; } 
 
     [JsonProperty("_isimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isimport { get; set; } 
+    public bool? IsImport { get; set; } 
 
     [JsonProperty("_importtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ImportType { get; set; } 
 
     [JsonProperty("kashflowid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Kashflowid { get; set; } 
+    public int? KashflowId { get; set; } 
 
     [JsonProperty("details_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? DetailsId { get; set; } 
@@ -205,7 +205,7 @@ public class Supplier
     public string? JiraUsername { get; set; } 
 
     [JsonProperty("new_jirakey", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? NewJirakey { get; set; } 
+    public string? NewJiraKey { get; set; } 
 
     [JsonProperty("test_jira", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? TestJira { get; set; } 
@@ -277,52 +277,52 @@ public class Supplier
     public string? NewIcon { get; set; } 
 
     [JsonProperty("servicenow_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ServicenowUrl { get; set; } 
+    public string? ServiceNowUrl { get; set; } 
 
     [JsonProperty("servicenow_locale", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ServicenowLocale { get; set; } 
+    public string? ServiceNowLocale { get; set; } 
 
     [JsonProperty("servicenow_username", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ServicenowUsername { get; set; } 
+    public string? ServiceNowUsername { get; set; } 
 
     [JsonProperty("new_servicenowkey", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? NewServicenowkey { get; set; } 
+    public string? NewServiceNowKey { get; set; } 
 
     [JsonProperty("servicenow_priority_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<IntegrationFieldMapping>? ServicenowPriorityMappings { get; set; } 
+    public ICollection<IntegrationFieldMapping>? ServiceNowPriorityMappings { get; set; } 
 
     [JsonProperty("servicenow_status_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<IntegrationFieldMapping>? ServicenowStatusMappings { get; set; } 
+    public ICollection<IntegrationFieldMapping>? ServiceNowStatusMappings { get; set; } 
 
     [JsonProperty("servicenow_impact_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<IntegrationFieldMapping>? ServicenowImpactMappings { get; set; } 
+    public ICollection<IntegrationFieldMapping>? ServiceNowImpactMappings { get; set; } 
 
     [JsonProperty("servicenow_urgency_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<IntegrationFieldMapping>? ServicenowUrgencyMappings { get; set; } 
+    public ICollection<IntegrationFieldMapping>? ServiceNowUrgencyMappings { get; set; } 
 
     [JsonProperty("servicenow_category_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<IntegrationFieldMapping>? ServicenowCategoryMappings { get; set; } 
+    public ICollection<IntegrationFieldMapping>? ServiceNowCategoryMappings { get; set; } 
 
     [JsonProperty("servicenow_assignment_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ServicenowAssignmentGroup { get; set; } 
+    public string? ServiceNowAssignmentGroup { get; set; } 
 
     [JsonProperty("servicenow_assignment_group_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ServicenowAssignmentGroupName { get; set; } 
+    public string? ServiceNowAssignmentGroupName { get; set; } 
 
     [JsonProperty("servicenow_assignmentgroup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ValueLabelIsNewKeyPair? ServicenowAssignmentgroup { get; set; } 
+    public ValueLabelIsNewKeyPair? ServiceNowAssignmentGroup { get; set; } 
 
     [JsonProperty("servicenow_defaultuser_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ServicenowDefaultUserId { get; set; } 
+    public string? ServiceNowDefaultUserId { get; set; } 
 
     [JsonProperty("servicenow_defaultuser_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ServicenowDefaultUserName { get; set; } 
+    public string? ServiceNowDefaultUserName { get; set; } 
 
     [JsonProperty("servicenow_defaultuser", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ValueLabelIsNewKeyPair? ServicenowDefaultUser { get; set; } 
+    public ValueLabelIsNewKeyPair? ServiceNowDefaultUser { get; set; } 
 
     [JsonProperty("test_servicenow", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? TestServicenow { get; set; } 
+    public bool? TestServiceNow { get; set; } 
 
     [JsonProperty("myob_tenant", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? MyobTenant { get; set; } 
@@ -343,22 +343,22 @@ public class Supplier
     public string? PurchaseTaxCodeName { get; set; } 
 
     [JsonProperty("sync_servicenow_attachments", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? SyncServicenowAttachments { get; set; } 
+    public int? SyncServiceNowAttachments { get; set; } 
 
     [JsonProperty("last_modified", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? LastModified { get; set; } 
 
     [JsonProperty("servicenow_team_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<IntegrationFieldMapping>? ServicenowTeamMappings { get; set; } 
+    public ICollection<IntegrationFieldMapping>? ServiceNowTeamMappings { get; set; } 
 
     [JsonProperty("servicenow_ticket_sync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ServicenowTicketSync { get; set; } 
+    public string? ServiceNowTicketSync { get; set; } 
 
     [JsonProperty("servicenow_ticket_sync_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ValueLabelIsNewKeyPair>? ServicenowTicketSyncList { get; set; } 
+    public ICollection<ValueLabelIsNewKeyPair>? ServiceNowTicketSyncList { get; set; } 
 
     [JsonProperty("servicenow_fieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<IntegrationFieldMapping>? ServicenowFieldMappings { get; set; } 
+    public ICollection<IntegrationFieldMapping>? ServiceNowFieldMappings { get; set; } 
 
     [JsonProperty("jira_webhook_user", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? JiraWebhookUser { get; set; } 
@@ -376,7 +376,7 @@ public class Supplier
     public bool? IsManufacturer { get; set; } 
 
     [JsonProperty("servicenow_authtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ServicenowAuthtype { get; set; } 
+    public int? ServiceNowAuthType { get; set; } 
 
     [JsonProperty("use", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Use { get; set; } 
@@ -400,7 +400,7 @@ public class Supplier
     public string? SupplierMailboxAddress { get; set; } 
 
     [JsonProperty("servicenow_validated", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ServicenowValidated { get; set; } 
+    public bool? ServiceNowValidated { get; set; } 
 
     [JsonProperty("messagegroup_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? MessageGroupId { get; set; } 

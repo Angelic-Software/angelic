@@ -10,7 +10,7 @@ public class Downtime
     public int? Id { get; set; } 
 
     [JsonProperty("faultid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Faultid { get; set; } 
+    public int? FaultId { get; set; } 
 
     [JsonProperty("fault_summary", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? FaultSummary { get; set; } 

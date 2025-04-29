@@ -2,10 +2,10 @@ using System.CodeDom.Compiler;
 using Angelic.Models.Configuration.Custom.CustomFields;
 using Newtonsoft.Json;
 
-namespace Angelic.Models.Areas;
+namespace Angelic.CrmNotes;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
-public class AreaNote
+public class CrmNote
 {
     [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Id { get; set; } 
@@ -35,7 +35,7 @@ public class AreaNote
     public int? UserId { get; set; } 
 
     [JsonProperty("datetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Datetime { get; set; } 
+    public DateTimeOffset? DateTime { get; set; } 
 
     [JsonProperty("who_agentid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? WhoAgentid { get; set; } 
@@ -65,7 +65,7 @@ public class AreaNote
     public ICollection<CustomField>? CustomFields { get; set; } 
 
     [JsonProperty("ticketid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Ticketid { get; set; } 
+    public int? TicketId { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 
@@ -89,6 +89,6 @@ public class AreaNote
     public double? Nextcallduration { get; set; } 
 
     [JsonProperty("createdfromaction", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Createdfromaction { get; set; } 
+    public bool? CreatedFromAction { get; set; } 
 
 }

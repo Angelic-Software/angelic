@@ -38,7 +38,7 @@ public class Milestone
     public bool? Complete { get; set; } 
 
     [JsonProperty("_dateschanged", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Dateschanged { get; set; } 
+    public bool? DatesChanged { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 
@@ -59,7 +59,7 @@ public class Milestone
     public DateTimeOffset? ProcessedDate { get; set; } 
 
     [JsonProperty("invoicenumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Invoicenumber { get; set; } 
+    public string? InvoiceNumber { get; set; } 
 
     [JsonProperty("from_template_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? FromTemplateId { get; set; } 

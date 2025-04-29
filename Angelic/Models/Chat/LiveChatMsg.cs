@@ -1,5 +1,6 @@
 using System.CodeDom.Compiler;
 using Angelic.Models.Configuration.SelfServicePortal;
+using Angelic.Models.KnowledgeBase;
 using Newtonsoft.Json;
 
 namespace Angelic.Models.Chat;

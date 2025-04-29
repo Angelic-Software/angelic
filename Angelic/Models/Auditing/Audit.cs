@@ -52,9 +52,9 @@ public class Audit
     public string? Username { get; set; } 
 
     [JsonProperty("datetime_to", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? DatetimeTo { get; set; } 
+    public DateTimeOffset? DateTimeTo { get; set; } 
 
     [JsonProperty("datetime_from", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? DatetimeFrom { get; set; } 
+    public DateTimeOffset? DateTimeFrom { get; set; } 
 
 }

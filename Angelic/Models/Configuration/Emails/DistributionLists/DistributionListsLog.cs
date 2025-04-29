@@ -22,13 +22,13 @@ public class DistributionListsLog
     public int? Action { get; set; } 
 
     [JsonProperty("datetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Datetime { get; set; } 
+    public DateTimeOffset? DateTime { get; set; } 
 
     [JsonProperty("emailsubject", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Emailsubject { get; set; } 
 
     [JsonProperty("emailbody", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Emailbody { get; set; } 
+    public string? EmailBody { get; set; } 
 
     [JsonProperty("action_desc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ActionDesc { get; set; } 

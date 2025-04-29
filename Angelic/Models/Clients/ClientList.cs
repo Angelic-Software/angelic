@@ -1,5 +1,6 @@
 using System.CodeDom.Compiler;
 using Angelic.Models.Attachments;
+using Angelic.Models.Configuration;
 using Angelic.Models.Configuration.Custom;
 using Angelic.Models.Configuration.Custom.CustomFields;
 using Angelic.Models.Configuration.Integrations.Quickbooks;
@@ -7,10 +8,10 @@ using Angelic.Models.Configuration.Integrations.Snow;
 using Angelic.Models.KeyPairs;
 using Newtonsoft.Json;
 
-namespace Angelic.Models.Areas;
+namespace Angelic.Models.Clients;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
-public class AreaList
+public class ClientList
 {
     [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Id { get; set; } 
@@ -31,13 +32,13 @@ public class AreaList
     public string? Colour { get; set; } 
 
     [JsonProperty("confirmemail", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Confirmemail { get; set; } 
+    public int? ConfirmEmail { get; set; } 
 
     [JsonProperty("actionemail", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Actionemail { get; set; } 
+    public int? ActionEmail { get; set; } 
 
     [JsonProperty("clearemail", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Clearemail { get; set; } 
+    public int? ClearEmail { get; set; } 
 
     [JsonProperty("messagegroup_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? MessageGroupId { get; set; } 
@@ -64,7 +65,7 @@ public class AreaList
     public string? OverrideOrgWebsite { get; set; } 
 
     [JsonProperty("override_org_portalurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? OverrideOrgPortalurl { get; set; } 
+    public string? OverrideOrgPortalUrl { get; set; } 
 
     [JsonProperty("mailbox_override", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? MailboxOverride { get; set; } 
@@ -73,7 +74,7 @@ public class AreaList
     public int? DefaultMailboxId { get; set; } 
 
     [JsonProperty("calldate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Calldate { get; set; } 
+    public DateTimeOffset? CallDate { get; set; } 
 
     [JsonProperty("item_tax_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ItemTaxCode { get; set; } 
@@ -91,7 +92,7 @@ public class AreaList
     public ICollection<CustomField>? CustomFields { get; set; } 
 
     [JsonProperty("custombuttons", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CustomButton>? Custombuttons { get; set; } 
+    public ICollection<CustomButton>? CustomButtons { get; set; } 
 
     [JsonProperty("attachments", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<Attachment>? Attachments { get; set; } 
@@ -103,16 +104,16 @@ public class AreaList
     public int? Pritech { get; set; } 
 
     [JsonProperty("sectech", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Sectech { get; set; } 
+    public int? SecTech { get; set; } 
 
     [JsonProperty("accountmanagertech", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Accountmanagertech { get; set; } 
+    public int? AccountManagerTech { get; set; } 
 
     [JsonProperty("notes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Notes { get; set; } 
 
     [JsonProperty("thirdpartynhdapiurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ThirdPartynhdapiurl { get; set; } 
+    public string? ThirdPartyNhdApiUrl { get; set; } 
 
     [JsonProperty("xeroid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Xeroid { get; set; } 
@@ -136,19 +137,19 @@ public class AreaList
     public string? Logo { get; set; } 
 
     [JsonProperty("regmanagertech", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Regmanagertech { get; set; } 
+    public int? RegManagerTech { get; set; } 
 
     [JsonProperty("logmanagertech", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Logmanagertech { get; set; } 
+    public int? LogManagerTech { get; set; } 
 
     [JsonProperty("salesreptech", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Salesreptech { get; set; } 
+    public int? SalesRepTech { get; set; } 
 
     [JsonProperty("accountownertech", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Accountownertech { get; set; } 
+    public int? AccountOwnerTech { get; set; } 
 
     [JsonProperty("cxmleadtech", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Cxmleadtech { get; set; } 
+    public int? CxmLeadTech { get; set; } 
 
     [JsonProperty("xero_tenant_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? XeroTenantId { get; set; } 
@@ -157,16 +158,16 @@ public class AreaList
     public string? AccountsId { get; set; } 
 
     [JsonProperty("excludefrominvoicesync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Excludefrominvoicesync { get; set; } 
+    public bool? ExcludeFromInvoiceSync { get; set; } 
 
     [JsonProperty("gficlientid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Gficlientid { get; set; } 
 
     [JsonProperty("overridepdftemplateinvoice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Overridepdftemplateinvoice { get; set; } 
+    public int? OverridePdfTemplateInvoice { get; set; } 
 
     [JsonProperty("overridepdftemplateinvoice_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? OverridepdftemplateinvoiceName { get; set; } 
+    public string? OverridePdfTemplateInvoiceName { get; set; } 
 
     [JsonProperty("kashflow_tenant_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? KashflowTenantId { get; set; } 
@@ -181,10 +182,10 @@ public class AreaList
     public int? Invoiceduedaysextraclient { get; set; } 
 
     [JsonProperty("itglue_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ItglueId { get; set; } 
+    public string? ItGlueId { get; set; } 
 
     [JsonProperty("clientcurrency", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Clientcurrency { get; set; } 
+    public string? ClientCurrency { get; set; } 
 
     [JsonProperty("sentinel_subscription_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? SentinelSubscriptionId { get; set; } 
@@ -211,7 +212,7 @@ public class AreaList
     public string? ClientToInvoiceRecurringName { get; set; } 
 
     [JsonProperty("azure_tenants", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AreaAzureTenant>? AzureTenants { get; set; } 
+    public ICollection<ClientAzureTenant>? AzureTenants { get; set; } 
 
     [JsonProperty("azure_tenant_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? AzureTenantId { get; set; } 
@@ -229,7 +230,7 @@ public class AreaList
     public bool? AutomaticSalesTax { get; set; } 
 
     [JsonProperty("cautomateid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Cautomateid { get; set; } 
+    public int? CAutomateId { get; set; } 
 
     [JsonProperty("dbc_company_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? DbcCompanyId { get; set; } 
@@ -238,7 +239,7 @@ public class AreaList
     public int? Stopped { get; set; } 
 
     [JsonProperty("customertype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Customertype { get; set; } 
+    public int? CustomerType { get; set; } 
 
     [JsonProperty("customer_relationship", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<StringIdNameKeyPair>? CustomerRelationship { get; set; } 
@@ -247,7 +248,7 @@ public class AreaList
     public string? CustomerRelationshipList { get; set; } 
 
     [JsonProperty("servicenow_validated", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ServicenowValidated { get; set; } 
+    public bool? ServiceNowValidated { get; set; } 
 
     [JsonProperty("sentinel_default_user_override", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? SentinelDefaultUserOverride { get; set; } 
@@ -271,7 +272,7 @@ public class AreaList
     public bool? IsVip { get; set; } 
 
     [JsonProperty("accountownertech_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? AccountownertechName { get; set; } 
+    public string? AccountOwnerTechName { get; set; } 
 
     [JsonProperty("taxable", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Taxable { get; set; } 
@@ -286,10 +287,10 @@ public class AreaList
     public string? BillingPlanText { get; set; } 
 
     [JsonProperty("overridepdftemplatequote", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Overridepdftemplatequote { get; set; } 
+    public int? OverridePdfTemplateQuote { get; set; } 
 
     [JsonProperty("overridepdftemplatequote_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? OverridepdftemplatequoteName { get; set; } 
+    public string? OverridePdfTemplateQuoteName { get; set; } 
 
     [JsonProperty("avalara_tenant", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? AvalaraTenant { get; set; } 
@@ -307,7 +308,7 @@ public class AreaList
     public int? ImportTypeId { get; set; } 
 
     [JsonProperty("_importthirdpartyid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Importthirdpartyid { get; set; } 
+    public string? ImportThirdPartyId { get; set; } 
 
     [JsonProperty("_importtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ImportType { get; set; } 

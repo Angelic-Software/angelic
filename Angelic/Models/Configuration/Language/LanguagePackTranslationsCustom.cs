@@ -30,13 +30,13 @@ public class LanguagePackTranslationsCustom
     public string? Translation { get; set; } 
 
     [JsonProperty("_dotranslate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Dotranslate { get; set; } 
+    public bool? DoTranslate { get; set; } 
 
     [JsonProperty("_translateonly", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Translateonly { get; set; } 
 
     [JsonProperty("_isimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isimport { get; set; } 
+    public bool? IsImport { get; set; } 
 
     [JsonProperty("default_translation", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? DefaultTranslation { get; set; } 

@@ -26,13 +26,13 @@ public class Team
     public int? Sequence { get; set; } 
 
     [JsonProperty("forrequests", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Forrequests { get; set; } 
+    public bool? ForRequests { get; set; } 
 
     [JsonProperty("foropps", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Foropps { get; set; } 
+    public bool? ForOpps { get; set; } 
 
     [JsonProperty("forprojects", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Forprojects { get; set; } 
+    public bool? ForProjects { get; set; } 
 
     [JsonProperty("ticket_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? TicketCount { get; set; } 
@@ -104,28 +104,28 @@ public class Team
     public ICollection<TemplateList>? Templates { get; set; } 
 
     [JsonProperty("allowall_category1", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? AllowallCategory1 { get; set; } 
+    public bool? AllowAllCategory1 { get; set; } 
 
     [JsonProperty("allowed_category1", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<CategoryRestriction>? AllowedCategory1 { get; set; } 
 
     [JsonProperty("allowall_category2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? AllowallCategory2 { get; set; } 
+    public bool? AllowAllCategory2 { get; set; } 
 
     [JsonProperty("allowed_category2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<CategoryRestriction>? AllowedCategory2 { get; set; } 
 
     [JsonProperty("allowall_category3", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? AllowallCategory3 { get; set; } 
+    public bool? AllowAllCategory3 { get; set; } 
 
     [JsonProperty("allowed_category3", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<CategoryRestriction>? AllowedCategory3 { get; set; } 
 
     [JsonProperty("allowall_category4", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? AllowallCategory4 { get; set; } 
+    public bool? AllowAllCategory4 { get; set; } 
 
     [JsonProperty("includeinloadbalance", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Includeinloadbalance { get; set; } 
+    public bool? IncludeInloadbalance { get; set; } 
 
     [JsonProperty("allowed_category4", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<CategoryRestriction>? AllowedCategory4 { get; set; } 
@@ -152,7 +152,7 @@ public class Team
     public string? PhoneNumber { get; set; } 
 
     [JsonProperty("timezone", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Timezone { get; set; } 
+    public string? TimeZone { get; set; } 
 
     [JsonProperty("alternative_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? AlternativeName { get; set; } 
@@ -161,7 +161,7 @@ public class Team
     public string? Logo { get; set; } 
 
     [JsonProperty("dontsendsurvey", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Dontsendsurvey { get; set; } 
+    public bool? DontSendsurvey { get; set; } 
 
     [JsonProperty("team_note", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? TeamNote { get; set; } 

@@ -51,7 +51,7 @@ public class MicrosoftSubscriptionMapping
     public AzureAdConnection? AzureConnection { get; set; } 
 
     [JsonProperty("_dosave", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Dosave { get; set; } 
+    public bool? DoSave { get; set; } 
 
     [JsonProperty("mappings_folder", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<IntegrationFieldMapping>? MappingsFolder { get; set; } 

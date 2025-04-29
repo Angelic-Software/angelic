@@ -29,13 +29,13 @@ public class Generic
     public bool? Connector { get; set; } 
 
     [JsonProperty("showasitem", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowAsitem { get; set; } 
+    public bool? ShowAsItem { get; set; } 
 
     [JsonProperty("showasequip", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowAsequip { get; set; } 
+    public bool? ShowAsEquip { get; set; } 
 
     [JsonProperty("showwarningifonrequest", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Showwarningifonrequest { get; set; } 
+    public bool? ShowWarningifonrequest { get; set; } 
 
     [JsonProperty("moveassetonrequest", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Moveassetonrequest { get; set; } 
@@ -56,10 +56,10 @@ public class Generic
     public ICollection<AssetType>? AssetTypes { get; set; } 
 
     [JsonProperty("thirdpartyid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ThirdPartyid { get; set; } 
+    public string? ThirdPartyId { get; set; } 
 
     [JsonProperty("_isimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isimport { get; set; } 
+    public bool? IsImport { get; set; } 
 
     [JsonProperty("isfixedasset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Isfixedasset { get; set; } 
@@ -137,10 +137,10 @@ public class Generic
     public bool? ItemRecurringDefault { get; set; } 
 
     [JsonProperty("item_donttrackstock_default", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ItemDonttrackstockDefault { get; set; } 
+    public bool? ItemDontTrackstockDefault { get; set; } 
 
     [JsonProperty("item_doesnotneedconsigning_default", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ItemDoesnotneedconsigningDefault { get; set; } 
+    public bool? ItemDoesNotNeedConsigningDefault { get; set; } 
 
     [JsonProperty("item_contract_default", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? ItemContractDefault { get; set; } 

@@ -13,10 +13,10 @@ public class Journey
     public int? Unum { get; set; } 
 
     [JsonProperty("faultid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Faultid { get; set; } 
+    public int? FaultId { get; set; } 
 
     [JsonProperty("actionnumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Actionnumber { get; set; } 
+    public int? ActionNumber { get; set; } 
 
     [JsonProperty("description", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Description { get; set; } 
@@ -43,13 +43,13 @@ public class Journey
     public double? Endgps { get; set; } 
 
     [JsonProperty("datereimbursed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Datereimbursed { get; set; } 
+    public DateTimeOffset? DateReimbursed { get; set; } 
 
     [JsonProperty("dateinvoicedmileage", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Dateinvoicedmileage { get; set; } 
+    public DateTimeOffset? DateInvoicedMileage { get; set; } 
 
     [JsonProperty("dateinvoicedtraveltime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Dateinvoicedtraveltime { get; set; } 
+    public DateTimeOffset? DateInvoicedTravelTime { get; set; } 
 
     [JsonProperty("ihidmileage", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Ihidmileage { get; set; } 

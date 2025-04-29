@@ -49,13 +49,13 @@ public class AgentSection
     public bool? OtheragentAccess { get; set; } 
 
     [JsonProperty("fortickets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Fortickets { get; set; } 
+    public bool? ForTickets { get; set; } 
 
     [JsonProperty("foropps", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Foropps { get; set; } 
+    public bool? ForOpps { get; set; } 
 
     [JsonProperty("forprojects", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Forprojects { get; set; } 
+    public bool? ForProjects { get; set; } 
 
     [JsonProperty("in_section", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? InSection { get; set; } 

@@ -53,7 +53,7 @@ public class ConsignmentDetail
     public double? Stockadjustedamount { get; set; } 
 
     [JsonProperty("serialised_assets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<DeviceList>? SerialisedAssets { get; set; } 
+    public ICollection<AssetList>? SerialisedAssets { get; set; } 
 
     [JsonProperty("stockbin_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? StockbinId { get; set; } 

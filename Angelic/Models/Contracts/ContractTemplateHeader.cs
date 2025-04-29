@@ -13,52 +13,52 @@ public class ContractTemplateHeader
     public string? Name { get; set; } 
 
     [JsonProperty("unmatchedcombinations", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Unmatchedcombinations { get; set; } 
+    public int? UnmatchedCombinations { get; set; } 
 
     [JsonProperty("prepayrecurringchargenextdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Prepayrecurringchargenextdate { get; set; } 
+    public DateTimeOffset? PrepayRecurringChargeNextDate { get; set; } 
 
     [JsonProperty("billforrecurringprepayamount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Billforrecurringprepayamount { get; set; } 
 
     [JsonProperty("prepayrecurringcharge", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Prepayrecurringcharge { get; set; } 
+    public double? PrepayRecurringCharge { get; set; } 
 
     [JsonProperty("prepayrecurringhours", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Prepayrecurringhours { get; set; } 
+    public double? PrepayRecurringHours { get; set; } 
 
     [JsonProperty("prepayrecurringchargebp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Prepayrecurringchargebp { get; set; } 
+    public int? PrepayRecurringChargeBp { get; set; } 
 
     [JsonProperty("autotopupthreshhold", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Autotopupthreshhold { get; set; } 
+    public double? AutoTopUpthreshhold { get; set; } 
 
     [JsonProperty("autotopuptoamount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Autotopuptoamount { get; set; } 
+    public double? AutoTopUptoamount { get; set; } 
 
     [JsonProperty("autotopupcostperhour", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Autotopupcostperhour { get; set; } 
+    public double? AutoTopUpcostperhour { get; set; } 
 
     [JsonProperty("autotopupbyamount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Autotopupbyamount { get; set; } 
+    public double? AutoTopUpbyamount { get; set; } 
 
     [JsonProperty("surchargeid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Surchargeid { get; set; } 
+    public double? SurchargeId { get; set; } 
 
     [JsonProperty("numberofunitsfree", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? Numberofunitsfree { get; set; } 
 
     [JsonProperty("prepayrecurringminimumdeduction", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Prepayrecurringminimumdeduction { get; set; } 
+    public double? PrepayRecurringMinimumDeduction { get; set; } 
 
     [JsonProperty("prepayrecurringminimumdeductiononlyactive", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Prepayrecurringminimumdeductiononlyactive { get; set; } 
+    public bool? PrepayRecurringMinimumDeductionOnlyActive { get; set; } 
 
     [JsonProperty("prepayrecurringautomaticdeduction", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Prepayrecurringautomaticdeduction { get; set; } 
+    public double? PrepayRecurringAutomaticDeduction { get; set; } 
 
     [JsonProperty("billingplans", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ContractTemplateDetail>? Billingplans { get; set; } 
+    public ICollection<ContractTemplateDetail>? BillingPlans { get; set; } 
 
     [JsonProperty("billingdescription", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Billingdescription { get; set; } 

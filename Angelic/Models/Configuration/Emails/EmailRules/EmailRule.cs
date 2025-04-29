@@ -28,10 +28,10 @@ public class EmailRule
     public string? Body { get; set; } 
 
     [JsonProperty("fromaddr", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Fromaddr { get; set; } 
+    public string? FromAddr { get; set; } 
 
     [JsonProperty("toaddr", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Toaddr { get; set; } 
+    public string? ToAddr { get; set; } 
 
     [JsonProperty("enabled", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Enabled { get; set; } 
@@ -109,10 +109,10 @@ public class EmailRule
     public bool? Pagerduty { get; set; } 
 
     [JsonProperty("fromaddrexact", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Fromaddrexact { get; set; } 
+    public bool? FromAddrexact { get; set; } 
 
     [JsonProperty("toaddrexact", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Toaddrexact { get; set; } 
+    public bool? ToAddrexact { get; set; } 
 
     [JsonProperty("privateactions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Privateactions { get; set; } 
@@ -196,7 +196,7 @@ public class EmailRule
     public int? ClosedAlertsReadStatus { get; set; } 
 
     [JsonProperty("dontsendacknowledgement", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Dontsendacknowledgement { get; set; } 
+    public bool? DontSendAcknowledgement { get; set; } 
 
     [JsonProperty("scan_full_body", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? ScanFullBody { get; set; } 

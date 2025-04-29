@@ -19,7 +19,7 @@ public class Dynamics365CrmFieldMapping
     public bool? Enabled { get; set; } 
 
     [JsonProperty("synctype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Synctype { get; set; } 
+    public int? SyncType { get; set; } 
 
     [JsonProperty("idfield", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Idfield { get; set; } 

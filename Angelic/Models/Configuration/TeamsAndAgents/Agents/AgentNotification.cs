@@ -43,13 +43,13 @@ public class AgentNotification
     public int? Eventno { get; set; } 
 
     [JsonProperty("emailtemplate_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? EmailtemplateId { get; set; } 
+    public int? EmailTemplateId { get; set; } 
 
     [JsonProperty("emailtemplate_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? EmailtemplateGuid { get; set; } 
+    public Guid? EmailTemplateGuid { get; set; } 
 
     [JsonProperty("emailtemplate_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? EmailtemplateName { get; set; } 
+    public string? EmailTemplateName { get; set; } 
 
     [JsonProperty("user_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? UserId { get; set; } 

@@ -19,7 +19,7 @@ public class NhServerConfig
     public bool? Acceptautoreplycheckbox { get; set; } 
 
     [JsonProperty("actionemails", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Actionemails { get; set; } 
+    public bool? ActionEmails { get; set; } 
 
     [JsonProperty("actionsendlimit", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Actionsendlimit { get; set; } 
@@ -49,7 +49,7 @@ public class NhServerConfig
     public bool? Autoondiagram { get; set; } 
 
     [JsonProperty("autorequests", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Autorequests { get; set; } 
+    public bool? AutoRequests { get; set; } 
 
     [JsonProperty("calendarsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Calendarsync { get; set; } 
@@ -61,40 +61,40 @@ public class NhServerConfig
     public bool? Confforemails { get; set; } 
 
     [JsonProperty("datefilter", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Datefilter { get; set; } 
+    public DateTimeOffset? DateFilter { get; set; } 
 
     [JsonProperty("deleteerrors", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Deleteerrors { get; set; } 
 
     [JsonProperty("emailcreatenewuser", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Emailcreatenewuser { get; set; } 
+    public bool? EmailCreatenewuser { get; set; } 
 
     [JsonProperty("emaillogfolder", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Emaillogfolder { get; set; } 
+    public string? EmailLogfolder { get; set; } 
 
     [JsonProperty("emailnoack", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Emailnoack { get; set; } 
+    public bool? EmailNoack { get; set; } 
 
     [JsonProperty("emailrequesttype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Emailrequesttype { get; set; } 
+    public string? EmailRequesttype { get; set; } 
 
     [JsonProperty("emailsiteint", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Emailsiteint { get; set; } 
 
     [JsonProperty("emailtechieint", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Emailtechieint { get; set; } 
+    public int? EmailTechieint { get; set; } 
 
     [JsonProperty("emailusefullname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Emailusefullname { get; set; } 
+    public bool? EmailUsefullname { get; set; } 
 
     [JsonProperty("emailuserdefault", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Emailuserdefault { get; set; } 
+    public string? EmailUserdefault { get; set; } 
 
     [JsonProperty("emailuserint", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Emailuserint { get; set; } 
+    public int? EmailUserint { get; set; } 
 
     [JsonProperty("emailusesitedomain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Emailusesitedomain { get; set; } 
+    public bool? EmailUsesitedomain { get; set; } 
 
     [JsonProperty("errorreportemail", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Errorreportemail { get; set; } 
@@ -145,7 +145,7 @@ public class NhServerConfig
     public int? Popuptimeoutseconds { get; set; } 
 
     [JsonProperty("prepayautotopup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Prepayautotopup { get; set; } 
+    public bool? PrepayAutoTopUp { get; set; } 
 
     [JsonProperty("processxmlfiles", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Processxmlfiles { get; set; } 
@@ -187,7 +187,7 @@ public class NhServerConfig
     public string? Emailsitename { get; set; } 
 
     [JsonProperty("emailusername", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Emailusername { get; set; } 
+    public string? EmailUsername { get; set; } 
 
     [JsonProperty("autodevicesitename", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Autodevicesitename { get; set; } 

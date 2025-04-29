@@ -46,7 +46,7 @@ public class InvoicePaymentList
     public string? Sage50Reference { get; set; } 
 
     [JsonProperty("thirdpartyid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ThirdPartyid { get; set; } 
+    public string? ThirdPartyId { get; set; } 
 
     [JsonProperty("client_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ClientId { get; set; } 
@@ -67,7 +67,7 @@ public class InvoicePaymentList
     public string? XeroId { get; set; } 
 
     [JsonProperty("_isimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isimport { get; set; } 
+    public bool? IsImport { get; set; } 
 
     [JsonProperty("_importtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ImportType { get; set; } 
@@ -79,6 +79,6 @@ public class InvoicePaymentList
     public string? InvoiceMatchId { get; set; } 
 
     [JsonProperty("invoice_invoicenumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? InvoiceInvoicenumber { get; set; } 
+    public string? InvoiceInvoiceNumber { get; set; } 
 
 }

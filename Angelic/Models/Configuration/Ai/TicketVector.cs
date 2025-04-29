@@ -10,13 +10,13 @@ public class TicketVector
     public int? Id { get; set; } 
 
     [JsonProperty("faultid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Faultid { get; set; } 
+    public int? FaultId { get; set; } 
 
     [JsonProperty("vector", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Vector { get; set; } 
 
     [JsonProperty("datesynced", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Datesynced { get; set; } 
+    public DateTimeOffset? DateSynced { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

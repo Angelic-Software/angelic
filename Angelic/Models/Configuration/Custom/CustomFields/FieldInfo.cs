@@ -1,5 +1,5 @@
 using System.CodeDom.Compiler;
-using Angelic.Models.Areas;
+using Angelic.Models.Clients;
 using Angelic.Models.Configuration.Custom.CustomTables;
 using Angelic.Models.Configuration.Integrations.Lookups;
 using Angelic.Models.Configuration.SqlImports;
@@ -146,7 +146,7 @@ public class FieldInfo
     public CustomTable? TableInfo { get; set; } 
 
     [JsonProperty("client_restrictions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AreaField>? ClientRestrictions { get; set; } 
+    public ICollection<CustomFieldClientRestrictions>? ClientRestrictions { get; set; } 
 
     [JsonProperty("org_restrictions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<OrganisationField>? OrgRestrictions { get; set; } 
@@ -176,7 +176,7 @@ public class FieldInfo
     public bool? Copytoparentonupdate { get; set; } 
 
     [JsonProperty("showintable", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Showintable { get; set; } 
+    public bool? ShowIntable { get; set; } 
 
     [JsonProperty("importalias", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Importalias { get; set; } 
@@ -200,7 +200,7 @@ public class FieldInfo
     public string? Warning { get; set; } 
 
     [JsonProperty("showhintondetails", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Showhintondetails { get; set; } 
+    public bool? ShowHintondetails { get; set; } 
 
     [JsonProperty("partslookupusedin", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Partslookupusedin { get; set; } 
@@ -253,7 +253,7 @@ public class FieldInfo
     public bool? Onlyshowforagents { get; set; } 
 
     [JsonProperty("excludefromallfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Excludefromallfields { get; set; } 
+    public bool? ExcludeFromallfields { get; set; } 
 
     [JsonProperty("mandatory", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Mandatory { get; set; } 
@@ -358,7 +358,7 @@ public class FieldInfo
     public string? ValueProperty { get; set; } 
 
     [JsonProperty("showinpool", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Showinpool { get; set; } 
+    public bool? ShowInpool { get; set; } 
 
     [JsonProperty("allow_pool_override", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? AllowPoolOverride { get; set; } 

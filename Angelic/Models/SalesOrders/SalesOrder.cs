@@ -75,7 +75,7 @@ public class SalesOrder
     public string? PoNumber { get; set; } 
 
     [JsonProperty("createdby_agent_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? CreatedbyAgentId { get; set; } 
+    public int? CreatedByAgentId { get; set; } 
 
     [JsonProperty("deliverby", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Deliverby { get; set; } 
@@ -84,7 +84,7 @@ public class SalesOrder
     public string? Summary { get; set; } 
 
     [JsonProperty("datereceived", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Datereceived { get; set; } 
+    public DateTimeOffset? DateReceived { get; set; } 
 
     [JsonProperty("numberbottles", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Numberbottles { get; set; } 
@@ -111,13 +111,13 @@ public class SalesOrder
     public DateTimeOffset? InvoiceDate { get; set; } 
 
     [JsonProperty("invoicenumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Invoicenumber { get; set; } 
+    public string? InvoiceNumber { get; set; } 
 
     [JsonProperty("includegroupeditemprice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Includegroupeditemprice { get; set; } 
+    public bool? IncludeGroupeditemprice { get; set; } 
 
     [JsonProperty("includegroupeditemqty", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Includegroupeditemqty { get; set; } 
+    public bool? IncludeGroupeditemqty { get; set; } 
 
     [JsonProperty("currency", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Currency { get; set; } 
@@ -162,7 +162,7 @@ public class SalesOrder
     public bool? PrintGenerate { get; set; } 
 
     [JsonProperty("printhtml", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Printhtml { get; set; } 
+    public string? PrintHtml { get; set; } 
 
     [JsonProperty("pdf_attachment_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? PdfAttachmentId { get; set; } 
@@ -216,7 +216,7 @@ public class SalesOrder
     public bool? ReturnInvoice { get; set; } 
 
     [JsonProperty("createdbyagentname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Createdbyagentname { get; set; } 
+    public string? CreatedByAgentname { get; set; } 
 
     [JsonProperty("last_update_time", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? LastUpdateTime { get; set; } 
@@ -228,7 +228,7 @@ public class SalesOrder
     public string? DistributorMessage { get; set; } 
 
     [JsonProperty("project_faultid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ProjectFaultid { get; set; } 
+    public int? ProjectFaultId { get; set; } 
 
     [JsonProperty("order_project_template_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? OrderProjectTemplateId { get; set; } 
@@ -237,16 +237,16 @@ public class SalesOrder
     public string? OrderProjectTemplateName { get; set; } 
 
     [JsonProperty("_iscopy", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Iscopy { get; set; } 
+    public bool? IsCopy { get; set; } 
 
     [JsonProperty("includegrouppriceandqty", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Includegrouppriceandqty { get; set; } 
+    public bool? IncludeGrouppriceandqty { get; set; } 
 
     [JsonProperty("costperweight", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? Costperweight { get; set; } 
 
     [JsonProperty("showpercentageinvoiced", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Showpercentageinvoiced { get; set; } 
+    public bool? ShowPercentageinvoiced { get; set; } 
 
     [JsonProperty("linked_to_opportunity", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? LinkedToOpportunity { get; set; } 
@@ -288,7 +288,7 @@ public class SalesOrder
     public AddressStore? DeliveryAddress { get; set; } 
 
     [JsonProperty("_isimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isimport { get; set; } 
+    public bool? IsImport { get; set; } 
 
     [JsonProperty("_match_thirdparty_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? MatchThirdPartyId { get; set; } 
@@ -300,13 +300,13 @@ public class SalesOrder
     public string? MatchIntegrationName { get; set; } 
 
     [JsonProperty("dattocommerce_clientid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? DattocommerceClientId { get; set; } 
+    public int? DattoCommerceClientId { get; set; } 
 
     [JsonProperty("dattocommerce_contactname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? DattocommerceContactname { get; set; } 
+    public string? DattoCommerceContactname { get; set; } 
 
     [JsonProperty("dattocommerce_contactemail", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? DattocommerceContactemail { get; set; } 
+    public string? DattoCommerceContactemail { get; set; } 
 
     [JsonProperty("deliveryamount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? Deliveryamount { get; set; } 
@@ -345,13 +345,13 @@ public class SalesOrder
     public string? OriginAddress5 { get; set; } 
 
     [JsonProperty("custombuttons", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CustomButton>? Custombuttons { get; set; } 
+    public ICollection<CustomButton>? CustomButtons { get; set; } 
 
     [JsonProperty("extratabs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<Tabname>? Extratabs { get; set; } 
+    public ICollection<Tabname>? ExtraTabs { get; set; } 
 
     [JsonProperty("_dotaxsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Dotaxsync { get; set; } 
+    public bool? DoTaxSync { get; set; } 
 
     [JsonProperty("tax_total", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? TaxTotal { get; set; } 
@@ -366,7 +366,7 @@ public class SalesOrder
     public int? ImportTypeId { get; set; } 
 
     [JsonProperty("_importthirdpartyid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Importthirdpartyid { get; set; } 
+    public string? ImportThirdPartyId { get; set; } 
 
     [JsonProperty("_importtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ImportType { get; set; } 

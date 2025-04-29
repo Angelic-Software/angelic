@@ -135,7 +135,7 @@ namespace Angelic.Models.KnowledgeBase;
         public ICollection<Tag>? Tags { get; set; } 
 
         [JsonProperty("faqlists", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<FaqListHead>? Faqlists { get; set; } 
+        public ICollection<FaqListHead>? FaqLists { get; set; } 
 
         [JsonProperty("fields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<TicketTypeField>? Fields { get; set; } 
@@ -147,13 +147,13 @@ namespace Angelic.Models.KnowledgeBase;
         public int? YourVote { get; set; } 
 
         [JsonProperty("showforall", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? ShowForall { get; set; } 
+        public bool? ShowForAll { get; set; } 
 
         [JsonProperty("attachments", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<AttachmentList>? Attachments { get; set; } 
 
         [JsonProperty("_isimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Isimport { get; set; } 
+        public bool? IsImport { get; set; } 
 
         [JsonProperty("importfaqs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Importfaqs { get; set; } 
@@ -177,7 +177,7 @@ namespace Angelic.Models.KnowledgeBase;
         public ICollection<KbArticleList>? OtherVersions { get; set; } 
 
         [JsonProperty("servicenow_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? ServicenowId { get; set; } 
+        public string? ServiceNowId { get; set; } 
 
         [JsonProperty("import_attachments", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<Attachment>? ImportAttachments { get; set; } 
@@ -204,7 +204,7 @@ namespace Angelic.Models.KnowledgeBase;
         public bool? PrintGenerate { get; set; } 
 
         [JsonProperty("printhtml", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Printhtml { get; set; } 
+        public string? PrintHtml { get; set; } 
 
         [JsonProperty("pdf_attachment_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? PdfAttachmentId { get; set; } 
@@ -216,16 +216,16 @@ namespace Angelic.Models.KnowledgeBase;
         public string? PdfTemplateName { get; set; } 
 
         [JsonProperty("kbentryclientaccess", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<KbArticleAreaAccess>? Kbentryclientaccess { get; set; } 
+        public ICollection<KbArticleAreaAccess>? KbEntryclientaccess { get; set; } 
 
         [JsonProperty("kbentrytoplevelaccess", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<KbArticleTopLevelAccess>? Kbentrytoplevelaccess { get; set; } 
+        public ICollection<KbArticleTopLevelAccess>? KbEntrytoplevelaccess { get; set; } 
 
         [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Warning { get; set; } 
 
         [JsonProperty("devices", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<DeviceList>? Devices { get; set; } 
+        public ICollection<AssetList>? Devices { get; set; } 
 
         [JsonProperty("faq_write", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? FaqWrite { get; set; } 
@@ -294,7 +294,7 @@ namespace Angelic.Models.KnowledgeBase;
         public int? ImportTypeId { get; set; } 
 
         [JsonProperty("_importthirdpartyid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Importthirdpartyid { get; set; } 
+        public string? ImportThirdPartyId { get; set; } 
 
         [JsonProperty("_importtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? ImportType { get; set; } 

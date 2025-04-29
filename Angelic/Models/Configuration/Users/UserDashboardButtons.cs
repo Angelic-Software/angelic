@@ -69,10 +69,10 @@ public class UserDashboardButtons
     public Guid? TicketTypeGuid { get; set; } 
 
     [JsonProperty("displaytype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Displaytype { get; set; } 
+    public int? DisplayType { get; set; } 
 
     [JsonProperty("displaytype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? DisplaytypeGuid { get; set; } 
+    public Guid? DisplayTypeGuid { get; set; } 
 
     [JsonProperty("useroadmapcolumnsratherthanstatuses", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Useroadmapcolumnsratherthanstatuses { get; set; } 

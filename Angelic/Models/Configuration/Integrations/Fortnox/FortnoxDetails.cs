@@ -23,7 +23,7 @@ public class FortnoxDetails
     public DateTimeOffset? TokenExpiry { get; set; } 
 
     [JsonProperty("isauthorized", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isauthorized { get; set; } 
+    public bool? IsAuthorized { get; set; } 
 
     [JsonProperty("new_method", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? NewMethod { get; set; } 

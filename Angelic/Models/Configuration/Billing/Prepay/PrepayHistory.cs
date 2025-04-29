@@ -25,7 +25,7 @@ public class PrepayHistory
     public string? Description { get; set; } 
 
     [JsonProperty("invoicedate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Invoicedate { get; set; } 
+    public DateTimeOffset? InvoiceDate { get; set; } 
 
     [JsonProperty("invoice_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? InvoiceId { get; set; } 

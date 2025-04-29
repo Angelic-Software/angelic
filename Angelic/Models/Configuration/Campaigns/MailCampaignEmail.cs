@@ -34,7 +34,7 @@ public class MailCampaignEmail
     public int? SendType { get; set; } 
 
     [JsonProperty("send_at_datetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? SendAtDatetime { get; set; } 
+    public DateTimeOffset? SendAtDateTime { get; set; } 
 
     [JsonProperty("send_at_timeafter_days", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? SendAtTimeAfterDays { get; set; } 

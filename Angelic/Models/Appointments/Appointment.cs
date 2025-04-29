@@ -94,7 +94,7 @@ public class Appointment
     public int? Reminder { get; set; }
     
     [JsonProperty("timezone", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Timezone { get; set; }
+    public string? TimeZone { get; set; }
     
     [JsonProperty("recurrence", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Recurrence { get; set; }

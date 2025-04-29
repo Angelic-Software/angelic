@@ -11,7 +11,7 @@ public class MailCampaign
     public int? Id { get; set; } 
 
     [JsonProperty("created_datetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? CreatedDatetime { get; set; } 
+    public DateTimeOffset? CreatedDateTime { get; set; } 
 
     [JsonProperty("status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Status { get; set; } 
@@ -20,7 +20,7 @@ public class MailCampaign
     public string? StatusDesc { get; set; } 
 
     [JsonProperty("sent_datetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? SentDatetime { get; set; } 
+    public DateTimeOffset? SentDateTime { get; set; } 
 
     [JsonProperty("emails_sent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? EmailsSent { get; set; } 
@@ -113,7 +113,7 @@ public class MailCampaign
     public ICollection<MarketingOpen>? AllOpens { get; set; } 
 
     [JsonProperty("_isimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isimport { get; set; } 
+    public bool? IsImport { get; set; } 
 
     [JsonProperty("_importtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ImportType { get; set; } 

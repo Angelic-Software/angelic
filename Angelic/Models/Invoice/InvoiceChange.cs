@@ -28,7 +28,7 @@ public class InvoiceChange
     public string? Who { get; set; } 
 
     [JsonProperty("datetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Datetime { get; set; } 
+    public DateTimeOffset? DateTime { get; set; } 
 
     [JsonProperty("invoice_line_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? InvoiceLineId { get; set; } 

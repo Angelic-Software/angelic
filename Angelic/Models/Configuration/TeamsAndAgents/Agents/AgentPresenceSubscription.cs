@@ -60,6 +60,6 @@ public class AgentPresenceSubscription
     public AzureAdConnection? AzureConnection { get; set; } 
 
     [JsonProperty("_dosave", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Dosave { get; set; } 
+    public bool? DoSave { get; set; } 
 
 }

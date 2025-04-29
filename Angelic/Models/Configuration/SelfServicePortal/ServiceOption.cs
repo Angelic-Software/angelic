@@ -41,7 +41,7 @@ public class ServiceOption
     public bool? Include { get; set; } 
 
     [JsonProperty("servicerequestdetails_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ServiceRequestdetailsId { get; set; } 
+    public int? ServiceRequestDetailsId { get; set; } 
 
     [JsonProperty("optional_parent_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? OptionalParentId { get; set; } 

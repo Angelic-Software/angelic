@@ -134,7 +134,7 @@ public class AssetType
     public string? ColumnprofileoverrideName { get; set; } 
 
     [JsonProperty("enableresourcebooking", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Enableresourcebooking { get; set; } 
+    public bool? EnableResourcebooking { get; set; } 
 
     [JsonProperty("resourcebooking_workdays_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ResourcebookingWorkdaysId { get; set; } 
@@ -164,7 +164,7 @@ public class AssetType
     public int? TimeslotBookingType { get; set; } 
 
     [JsonProperty("_isimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isimport { get; set; } 
+    public bool? IsImport { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 
@@ -200,7 +200,7 @@ public class AssetType
     public ICollection<AssetTypeStatus>? AllowedStatus { get; set; } 
 
     [JsonProperty("allowall_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? AllowallStatus { get; set; } 
+    public bool? AllowAllStatus { get; set; } 
 
     [JsonProperty("businessowner_visibility", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? BusinessownerVisibility { get; set; } 

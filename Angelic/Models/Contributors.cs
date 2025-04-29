@@ -28,7 +28,7 @@ public class Contributors
     public string? Rolename { get; set; } 
 
     [JsonProperty("ticketid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Ticketid { get; set; } 
+    public int? TicketId { get; set; } 
 
     [JsonProperty("note", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Note { get; set; } 

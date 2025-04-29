@@ -16,10 +16,10 @@ public class ContactGroup
     public int? Ownerunum { get; set; } 
 
     [JsonProperty("allowall", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Allowall { get; set; } 
+    public bool? AllowAll { get; set; } 
 
     [JsonProperty("allowalledit", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Allowalledit { get; set; } 
+    public bool? AllowAlledit { get; set; } 
 
     [JsonProperty("contactgroupcontacts", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<ContactGroupContacts>? Contactgroupcontacts { get; set; } 

@@ -46,7 +46,7 @@ public class AgentList
     public string? Initials { get; set; } 
 
     [JsonProperty("firstname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Firstname { get; set; } 
+    public string? FirstName { get; set; } 
 
     [JsonProperty("surname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Surname { get; set; } 
@@ -220,7 +220,7 @@ public class AgentList
     public string? WorkdayName { get; set; } 
 
     [JsonProperty("workday_timezone", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? WorkdayTimezone { get; set; } 
+    public string? WorkdayTimeZone { get; set; } 
 
     [JsonProperty("costprice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? CostPrice { get; set; } 

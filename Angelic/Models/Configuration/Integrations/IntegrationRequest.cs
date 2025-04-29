@@ -25,7 +25,7 @@ public class IntegrationRequest
     public string? RequestBody { get; set; } 
 
     [JsonProperty("datelogged", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Datelogged { get; set; } 
+    public DateTimeOffset? DateLogged { get; set; } 
 
     [JsonProperty("resultcode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Resultcode { get; set; } 

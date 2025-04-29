@@ -17,7 +17,7 @@ namespace Angelic.Models.Configuration.Integrations.NCentral;
         public string? Details { get; set; } 
 
         [JsonProperty("ncentralTicketId", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? NcentralTicketId { get; set; } 
+        public string? NCentralTicketId { get; set; } 
 
         [JsonProperty("psaTicketNumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? PsaTicketNumber { get; set; } 

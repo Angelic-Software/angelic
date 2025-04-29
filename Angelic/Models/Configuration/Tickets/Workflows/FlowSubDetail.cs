@@ -15,7 +15,7 @@ public class FlowSubDetail
     public int? FlowId { get; set; } 
 
     [JsonProperty("chatprofile_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ChatprofileId { get; set; } 
+    public string? ChatProfileId { get; set; } 
 
     [JsonProperty("start_step", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? StartStep { get; set; } 

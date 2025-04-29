@@ -10,7 +10,7 @@ public class MattermostPropsObject
     public string? FromWebhook { get; set; } 
 
     [JsonProperty("haloid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Haloid { get; set; } 
+    public string? HaloId { get; set; } 
 
     [JsonProperty("override_username", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? OverrideUsername { get; set; } 

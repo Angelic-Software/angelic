@@ -22,7 +22,7 @@ public class NCentralDetails
     public int? TopLevel { get; set; } 
 
     [JsonProperty("dontsyncaddr", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Dontsyncaddr { get; set; } 
+    public bool? DontSyncaddr { get; set; } 
 
     [JsonProperty("defassettypegroup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Defassettypegroup { get; set; } 
@@ -52,7 +52,7 @@ public class NCentralDetails
     public string? Alertclientid { get; set; } 
 
     [JsonProperty("syncentities", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Syncentities { get; set; } 
+    public int? SyncEntities { get; set; } 
 
     [JsonProperty("enableintegrator", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Enableintegrator { get; set; } 
@@ -61,7 +61,7 @@ public class NCentralDetails
     public DateTimeOffset? LastSyncDate { get; set; } 
 
     [JsonProperty("lastsyncerror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Lastsyncerror { get; set; } 
+    public string? LastSyncEror { get; set; } 
 
     [JsonProperty("reqcredsremote", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Reqcredsremote { get; set; } 

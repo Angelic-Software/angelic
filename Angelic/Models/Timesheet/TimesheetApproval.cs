@@ -19,7 +19,7 @@ public class TimesheetApproval
     public TimeSheetApprovalStatus? Approvalstatus { get; set; } 
 
     [JsonProperty("approvedby", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Approvedby { get; set; } 
+    public int? ApprovedBy { get; set; } 
 
     [JsonProperty("submissiondate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? Submissiondate { get; set; } 

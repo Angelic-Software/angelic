@@ -35,7 +35,7 @@ public class ManageEngineDetails
     public DateTimeOffset? Tokenexpiry { get; set; } 
 
     [JsonProperty("isauthorized", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isauthorized { get; set; } 
+    public bool? IsAuthorized { get; set; } 
 
     [JsonProperty("new_client_secret", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? NewClientSecret { get; set; } 
@@ -95,7 +95,7 @@ public class ManageEngineDetails
     public DateTimeOffset? LastSyncDate { get; set; } 
 
     [JsonProperty("lastsyncerror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Lastsyncerror { get; set; } 
+    public string? LastSyncEror { get; set; } 
 
     [JsonProperty("halo_integrator_import_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? HaloIntegratorImportList { get; set; } 

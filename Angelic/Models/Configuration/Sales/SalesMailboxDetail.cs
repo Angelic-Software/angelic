@@ -16,16 +16,16 @@ public class SalesMailboxDetail
     public string? Name { get; set; } 
 
     [JsonProperty("enableautomatching", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Enableautomatching { get; set; } 
+    public bool? EnableAutomatching { get; set; } 
 
     [JsonProperty("lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Lastsync { get; set; } 
+    public DateTimeOffset? LastSync { get; set; } 
 
     [JsonProperty("sentlastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? Sentlastsync { get; set; } 
 
     [JsonProperty("lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Lasterror { get; set; } 
+    public string? LastError { get; set; } 
 
     [JsonProperty("_hasAccess", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? HasAccess { get; set; } 

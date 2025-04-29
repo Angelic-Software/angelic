@@ -48,7 +48,7 @@ public class Application
     public bool? Allowagents { get; set; } 
 
     [JsonProperty("allowusers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Allowusers { get; set; } 
+    public bool? AllowUsers { get; set; } 
 
     [JsonProperty("organisation_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? OrganisationId { get; set; } 

@@ -64,7 +64,7 @@ public class CannedText
     public int? AccessControlLevel { get; set; } 
 
     [JsonProperty("_isimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isimport { get; set; } 
+    public bool? IsImport { get; set; } 
 
     [JsonProperty("group_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? GroupName { get; set; } 

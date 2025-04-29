@@ -65,13 +65,13 @@ public class ContractHeaderList
     public int? SlaId { get; set; } 
 
     [JsonProperty("periodicinvoicenextdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Periodicinvoicenextdate { get; set; } 
+    public DateTimeOffset? PeriodIcinvoicenextdate { get; set; } 
 
     [JsonProperty("next_invoice_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? NextInvoiceDate { get; set; } 
 
     [JsonProperty("periodchargeamount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Periodchargeamount { get; set; } 
+    public double? PeriodChargeamount { get; set; } 
 
     [JsonProperty("note", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Note { get; set; } 
@@ -116,7 +116,7 @@ public class ContractHeaderList
     public string? ContractTypeName { get; set; } 
 
     [JsonProperty("prepayrecurringchargebp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Prepayrecurringchargebp { get; set; } 
+    public int? PrepayRecurringChargeBp { get; set; } 
 
     [JsonProperty("force_recalculation", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? ForceRecalculation { get; set; } 
@@ -134,19 +134,19 @@ public class ContractHeaderList
     public ICollection<CustomField>? CustomFields { get; set; } 
 
     [JsonProperty("createdby_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? CreatedbyId { get; set; } 
+    public int? CreatedById { get; set; } 
 
     [JsonProperty("createdby_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? CreatedbyName { get; set; } 
+    public string? CreatedByName { get; set; } 
 
     [JsonProperty("billingcategory", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Billingcategory { get; set; } 
+    public int? BillingCategory { get; set; } 
 
     [JsonProperty("_importtypeid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ImportTypeId { get; set; } 
 
     [JsonProperty("_importthirdpartyid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Importthirdpartyid { get; set; } 
+    public string? ImportThirdPartyId { get; set; } 
 
     [JsonProperty("_importtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ImportType { get; set; } 

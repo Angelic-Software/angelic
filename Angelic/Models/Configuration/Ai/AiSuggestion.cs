@@ -19,7 +19,7 @@ public class AiSuggestion
     public int? Type { get; set; }
     
     [JsonProperty("ticket_types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<KeyPair4>? TicketTypes { get; set; }
+    public ICollection<LongIdNameKeyPair>? TicketTypes { get; set; }
     
     [JsonProperty("auto_apply", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? AutoApply { get; set; }
@@ -58,7 +58,7 @@ public class AiSuggestion
     public int? LastXDays { get; set; }
     
     [JsonProperty("condition_entities", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<KeyPair4>? ConditionEntities { get; set; }
+    public ICollection<LongIdNameKeyPair>? ConditionEntities { get; set; }
     
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; }

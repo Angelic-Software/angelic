@@ -27,7 +27,7 @@ namespace Angelic.Models.Configuration.TeamsAndAgents.Agents;
         public bool? IsOnline { get; set; } 
 
         [JsonProperty("lastonline", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Lastonline { get; set; } 
+        public string? LastOnline { get; set; } 
 
         [JsonProperty("team", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Team { get; set; } 
@@ -51,7 +51,7 @@ namespace Angelic.Models.Configuration.TeamsAndAgents.Agents;
         public string? Initials { get; set; } 
 
         [JsonProperty("firstname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Firstname { get; set; } 
+        public string? FirstName { get; set; } 
 
         [JsonProperty("surname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Surname { get; set; } 
@@ -150,7 +150,7 @@ namespace Angelic.Models.Configuration.TeamsAndAgents.Agents;
         public string? InboxClientId { get; set; } 
 
         [JsonProperty("isapiagent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Isapiagent { get; set; } 
+        public bool? IsApiagent { get; set; } 
 
         [JsonProperty("splashtop_authorized", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? SplashtopAuthorized { get; set; } 
@@ -159,7 +159,7 @@ namespace Angelic.Models.Configuration.TeamsAndAgents.Agents;
         public bool? GotoresolveAuthorized { get; set; } 
 
         [JsonProperty("datecreated", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? Datecreated { get; set; } 
+        public DateTimeOffset? DateCreated { get; set; } 
 
         [JsonProperty("password", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Password { get; set; } 
@@ -192,10 +192,10 @@ namespace Angelic.Models.Configuration.TeamsAndAgents.Agents;
         public string? DefaultViewTickets { get; set; } 
 
         [JsonProperty("default_view_tickets_selectedid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? DefaultViewTicketsSelectedid { get; set; } 
+        public int? DefaultViewTicketsSelectedId { get; set; } 
 
         [JsonProperty("default_view_tickets_selectedname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? DefaultViewTicketsSelectedname { get; set; } 
+        public string? DefaultViewTicketsSelectedName { get; set; } 
 
         [JsonProperty("default_filter_id_opps", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? DefaultFilterIdOpps { get; set; } 
@@ -213,10 +213,10 @@ namespace Angelic.Models.Configuration.TeamsAndAgents.Agents;
         public string? DefaultViewOpps { get; set; } 
 
         [JsonProperty("default_view_opps_selectedid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? DefaultViewOppsSelectedid { get; set; } 
+        public int? DefaultViewOppsSelectedId { get; set; } 
 
         [JsonProperty("default_view_opps_selectedname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? DefaultViewOppsSelectedname { get; set; } 
+        public string? DefaultViewOppsSelectedName { get; set; } 
 
         [JsonProperty("default_action_view", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? DefaultActionView { get; set; } 
@@ -300,10 +300,10 @@ namespace Angelic.Models.Configuration.TeamsAndAgents.Agents;
         public string? Sidemenudashboardname { get; set; } 
 
         [JsonProperty("clientdetails_layout_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? ClientdetailsLayoutId { get; set; } 
+        public int? ClientDetailsLayoutId { get; set; } 
 
         [JsonProperty("clientdetails_layout_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? ClientdetailsLayoutName { get; set; } 
+        public string? ClientDetailsLayoutName { get; set; } 
 
         [JsonProperty("nav_layout_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? NavLayoutId { get; set; } 
@@ -318,7 +318,7 @@ namespace Angelic.Models.Configuration.TeamsAndAgents.Agents;
         public bool? Warnifnoscan { get; set; } 
 
         [JsonProperty("dontemailmeifiloggedit", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Dontemailmeifiloggedit { get; set; } 
+        public bool? DontEmailMeifiloggedit { get; set; } 
 
         [JsonProperty("workhour_start", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? WorkhourStart { get; set; } 
@@ -375,13 +375,13 @@ namespace Angelic.Models.Configuration.TeamsAndAgents.Agents;
         public ICollection<AgentNotification>? NotificationsPersonal { get; set; } 
 
         [JsonProperty("emailconfirmed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Emailconfirmed { get; set; } 
+        public bool? EmailConfirmed { get; set; } 
 
         [JsonProperty("accountconfirmed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Accountconfirmed { get; set; } 
 
         [JsonProperty("isinvite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Isinvite { get; set; } 
+        public bool? IsInvite { get; set; } 
 
         [JsonProperty("is_sales", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsSales { get; set; } 
@@ -390,7 +390,7 @@ namespace Angelic.Models.Configuration.TeamsAndAgents.Agents;
         public bool? Getlogmeinid { get; set; } 
 
         [JsonProperty("_isimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Isimport { get; set; } 
+        public bool? IsImport { get; set; } 
 
         [JsonProperty("_importtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? ImportType { get; set; } 
@@ -423,13 +423,13 @@ namespace Angelic.Models.Configuration.TeamsAndAgents.Agents;
         public string? OrionPassword { get; set; } 
 
         [JsonProperty("ncentral_username", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? NcentralUsername { get; set; } 
+        public string? NCentralUsername { get; set; } 
 
         [JsonProperty("soc_username", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? SocUsername { get; set; } 
 
         [JsonProperty("autotaskid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Autotaskid { get; set; } 
+        public int? AutoTaskId { get; set; } 
 
         [JsonProperty("oktaid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Oktaid { get; set; } 
@@ -438,7 +438,7 @@ namespace Angelic.Models.Configuration.TeamsAndAgents.Agents;
         public string? OktaStatus { get; set; } 
 
         [JsonProperty("new_ncentral_key", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? NewNcentralKey { get; set; } 
+        public string? NewNCentralKey { get; set; } 
 
         [JsonProperty("pomincostforapprovaltype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Pomincostforapprovaltype { get; set; } 
@@ -507,10 +507,10 @@ namespace Angelic.Models.Configuration.TeamsAndAgents.Agents;
         public string? Warning { get; set; } 
 
         [JsonProperty("isagentdetails", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Isagentdetails { get; set; } 
+        public bool? IsAgentdetails { get; set; } 
 
         [JsonProperty("excludefromresourcebooking", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Excludefromresourcebooking { get; set; } 
+        public bool? ExcludeFromresourcebooking { get; set; } 
 
         [JsonProperty("delegation_activated", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? DelegationActivated { get; set; } 
@@ -621,7 +621,7 @@ namespace Angelic.Models.Configuration.TeamsAndAgents.Agents;
         public ICollection<AccessControl>? AcWorkdays { get; set; } 
 
         [JsonProperty("ac_emailtemplates", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<AccessControl>? AcEmailtemplates { get; set; } 
+        public ICollection<AccessControl>? AcEmailTemplates { get; set; } 
 
         [JsonProperty("ac_messagegroups", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<AccessControl>? AcMessageGroups { get; set; } 
@@ -642,10 +642,10 @@ namespace Angelic.Models.Configuration.TeamsAndAgents.Agents;
         public int? DefaultColumnsIdClients { get; set; } 
 
         [JsonProperty("default_view_clients_selectedname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? DefaultViewClientsSelectedname { get; set; } 
+        public string? DefaultViewClientsSelectedName { get; set; } 
 
         [JsonProperty("default_view_assets_selectedname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? DefaultViewAssetsSelectedname { get; set; } 
+        public string? DefaultViewAssetsSelectedName { get; set; } 
 
         [JsonProperty("_do_reassign01", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? DoReassign01 { get; set; } 
@@ -657,34 +657,34 @@ namespace Angelic.Models.Configuration.TeamsAndAgents.Agents;
         public bool? Force { get; set; } 
 
         [JsonProperty("default_view_customers_selectedid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? DefaultViewCustomersSelectedid { get; set; } 
+        public int? DefaultViewCustomersSelectedId { get; set; } 
 
         [JsonProperty("default_view_customers_selectedname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? DefaultViewCustomersSelectedname { get; set; } 
+        public string? DefaultViewCustomersSelectedName { get; set; } 
 
         [JsonProperty("default_view_users_selectedid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? DefaultViewUsersSelectedid { get; set; } 
+        public int? DefaultViewUsersSelectedId { get; set; } 
 
         [JsonProperty("default_view_users_selectedname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? DefaultViewUsersSelectedname { get; set; } 
+        public string? DefaultViewUsersSelectedName { get; set; } 
 
         [JsonProperty("default_columns_id_contracts", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? DefaultColumnsIdContracts { get; set; } 
 
         [JsonProperty("default_view_contracts_selectedname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? DefaultViewContractsSelectedname { get; set; } 
+        public string? DefaultViewContractsSelectedName { get; set; } 
 
         [JsonProperty("default_columns_id_sites", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? DefaultColumnsIdSites { get; set; } 
 
         [JsonProperty("default_columns_sites_selectedname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? DefaultColumnsSitesSelectedname { get; set; } 
+        public string? DefaultColumnsSitesSelectedName { get; set; } 
 
         [JsonProperty("default_columns_id_users", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? DefaultColumnsIdUsers { get; set; } 
 
         [JsonProperty("default_columns_users_selectedname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? DefaultColumnsUsersSelectedname { get; set; } 
+        public string? DefaultColumnsUsersSelectedName { get; set; } 
 
         [JsonProperty("pagerduty_email", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? PagerdutyEmail { get; set; } 
@@ -726,16 +726,16 @@ namespace Angelic.Models.Configuration.TeamsAndAgents.Agents;
         public int? DefaultColumnsIdSupplierContracts { get; set; } 
 
         [JsonProperty("default_view_supplier_contracts_selectedname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? DefaultViewSupplierContractsSelectedname { get; set; } 
+        public string? DefaultViewSupplierContractsSelectedName { get; set; } 
 
         [JsonProperty("default_view_assets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? DefaultViewAssets { get; set; } 
 
         [JsonProperty("default_view_assets_selectedid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? DefaultViewAssetsSelectedid { get; set; } 
+        public int? DefaultViewAssetsSelectedId { get; set; } 
 
         [JsonProperty("default_view_assets_selectedid_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? DefaultViewAssetsSelectedidName { get; set; } 
+        public string? DefaultViewAssetsSelectedIdName { get; set; } 
 
         [JsonProperty("matching_value", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? MatchingValue { get; set; } 
@@ -756,10 +756,10 @@ namespace Angelic.Models.Configuration.TeamsAndAgents.Agents;
         public ValueLabelIsNewKeyPair? SplashtopChannel { get; set; } 
 
         [JsonProperty("ac_chatprofiles", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<AccessControl>? AcChatprofiles { get; set; } 
+        public ICollection<AccessControl>? AcChatProfiles { get; set; } 
 
         [JsonProperty("ac_faqlists", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<AccessControl>? AcFaqlists { get; set; } 
+        public ICollection<AccessControl>? AcFaqLists { get; set; } 
 
         [JsonProperty("allow_automatic_call_scripts", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? AllowAutomaticCallScripts { get; set; } 
@@ -789,13 +789,13 @@ namespace Angelic.Models.Configuration.TeamsAndAgents.Agents;
         public int? DefaultColumnsIdSupplier { get; set; } 
 
         [JsonProperty("default_columns_supplier_selectedname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? DefaultColumnsSupplierSelectedname { get; set; } 
+        public string? DefaultColumnsSupplierSelectedName { get; set; } 
 
         [JsonProperty("default_view_suppliers_selectedid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? DefaultViewSuppliersSelectedid { get; set; } 
+        public int? DefaultViewSuppliersSelectedId { get; set; } 
 
         [JsonProperty("default_view_suppliers_selectedname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? DefaultViewSuppliersSelectedname { get; set; } 
+        public string? DefaultViewSuppliersSelectedName { get; set; } 
 
         [JsonProperty("linked_user_client_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? LinkedUserClientId { get; set; } 
@@ -834,7 +834,7 @@ namespace Angelic.Models.Configuration.TeamsAndAgents.Agents;
         public int? DefaultColumnsIdPos { get; set; } 
 
         [JsonProperty("default_view_pos_selectedname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? DefaultViewPosSelectedname { get; set; } 
+        public string? DefaultViewPosSelectedName { get; set; } 
 
         [JsonProperty("sitedetails_layout_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? SitedetailsLayoutId { get; set; } 
@@ -888,7 +888,7 @@ namespace Angelic.Models.Configuration.TeamsAndAgents.Agents;
         public string? JiraId { get; set; } 
 
         [JsonProperty("custombuttons", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<AgentButton>? Custombuttons { get; set; } 
+        public ICollection<AgentButton>? CustomButtons { get; set; } 
 
         [JsonProperty("namewithinactive", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Namewithinactive { get; set; } 
@@ -903,7 +903,7 @@ namespace Angelic.Models.Configuration.TeamsAndAgents.Agents;
         public bool? Enableshifts { get; set; } 
 
         [JsonProperty("sendemailerrors", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Sendemailerrors { get; set; } 
+        public bool? SendEmailerrors { get; set; } 
 
         [JsonProperty("uname_usercustomfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<AgentCustom>? UnameUsercustomfields { get; set; } 
@@ -927,7 +927,7 @@ namespace Angelic.Models.Configuration.TeamsAndAgents.Agents;
         public string? WorkdayName { get; set; } 
 
         [JsonProperty("workday_timezone", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? WorkdayTimezone { get; set; } 
+        public string? WorkdayTimeZone { get; set; } 
 
         [JsonProperty("costprice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? CostPrice { get; set; } 

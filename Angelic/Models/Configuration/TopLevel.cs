@@ -130,6 +130,6 @@ public class TopLevel
     public int? TotalTicketCount { get; set; } 
 
     [JsonProperty("opened_thismonth_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? OpenedThismonthCount { get; set; } 
+    public int? OpenedThisMonthCount { get; set; } 
 
 }

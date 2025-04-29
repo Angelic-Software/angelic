@@ -1,10 +1,10 @@
 using System.CodeDom.Compiler;
 using Newtonsoft.Json;
 
-namespace Angelic.Models.Areas;
+namespace Angelic.Models.Clients;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
-public class AreaPopup
+public class PopupNote
 {
     [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Id { get; set; } 
@@ -31,13 +31,13 @@ public class AreaPopup
     public int? ReadStatus { get; set; } 
 
     [JsonProperty("displaymodal", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Displaymodal { get; set; } 
+    public bool? DisplayModal { get; set; } 
 
     [JsonProperty("displayhtml", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Displayhtml { get; set; } 
+    public bool? DisplayHtml { get; set; } 
 
     [JsonProperty("limitdaterange", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Limitdaterange { get; set; } 
+    public bool? LimitDateRange { get; set; } 
 
     [JsonProperty("startdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? StartDate { get; set; } 

@@ -28,7 +28,7 @@ public class PagerDutyMapping
     public string? AgentName { get; set; } 
 
     [JsonProperty("dontsyncusertickets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Dontsyncusertickets { get; set; } 
+    public bool? DontSyncUserTickets { get; set; } 
 
     [JsonProperty("new_webhook_signature", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? NewWebhookSignature { get; set; } 
