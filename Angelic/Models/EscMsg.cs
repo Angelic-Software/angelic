@@ -16,7 +16,7 @@ public class EscMsg
     public int? Type { get; set; } 
 
     [JsonProperty("emailstatus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Emailstatus { get; set; } 
+    public int? EmailStatus { get; set; } 
 
     [JsonProperty("popupstatus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Popupstatus { get; set; } 
@@ -55,7 +55,7 @@ public class EscMsg
     public bool? SendEmailifnopopup { get; set; } 
 
     [JsonProperty("slackid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Slackid { get; set; } 
+    public int? SlackId { get; set; } 
 
     [JsonProperty("template_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? TemplateId { get; set; } 
@@ -157,7 +157,7 @@ public class EscMsg
     public int? StatusUpdate { get; set; } 
 
     [JsonProperty("popupcolour", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Popupcolour { get; set; } 
+    public string? PopupColour { get; set; } 
 
     [JsonProperty("attachment_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? AttachmentType { get; set; } 
@@ -166,6 +166,6 @@ public class EscMsg
     public string? AtEntity { get; set; } 
 
     [JsonProperty("at_uniqueid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? AtUniqueid { get; set; } 
+    public int? AtUniqueId { get; set; } 
 
 }

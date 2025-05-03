@@ -94,7 +94,7 @@ public class Schedule
     public int? Type { get; set; } 
 
     [JsonProperty("uniqueid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Uniqueid { get; set; } 
+    public int? UniqueId { get; set; } 
 
     [JsonProperty("weeklyrecurrencestring", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Weeklyrecurrencestring { get; set; } 

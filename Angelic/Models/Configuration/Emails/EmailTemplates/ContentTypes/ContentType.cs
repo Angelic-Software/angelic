@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Models.Configuration.Emails.EmailTemplates.ContentTypes;
 using Newtonsoft.Json;
 
 namespace Angelic.Models.Configuration.Emails.EmailTemplates;
@@ -22,7 +23,7 @@ public class ContentType
     public string? Charset { get; set; } 
 
     [JsonProperty("charsetEncoding", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Encoding? CharsetEncoding { get; set; } 
+    public Encoding.Encoding? CharsetEncoding { get; set; } 
 
     [JsonProperty("format", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Format { get; set; } 

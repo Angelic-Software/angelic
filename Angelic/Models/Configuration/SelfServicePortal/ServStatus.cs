@@ -67,6 +67,6 @@ public class ServStatus
     public string? Warning { get; set; } 
 
     [JsonProperty("uniqueid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? Uniqueid { get; set; } 
+    public Guid? UniqueId { get; set; } 
 
 }

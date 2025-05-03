@@ -5,6 +5,7 @@ using Angelic.Models.Clients;
 using Angelic.Models.Configuration;
 using Angelic.Models.Configuration.Assets;
 using Angelic.Models.Configuration.Assets.AssetTypes;
+using Angelic.Models.Configuration.Campaigns;
 using Angelic.Models.Configuration.Custom;
 using Angelic.Models.Configuration.Custom.CustomFields;
 using Angelic.Models.Configuration.Users;

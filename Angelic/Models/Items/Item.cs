@@ -398,7 +398,7 @@ public class Item
     public string? ItemGroupNominalcodePurchase { get; set; } 
 
     [JsonProperty("item_group_itemcode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ItemGroupItemcode { get; set; } 
+    public int? ItemGroupItemCode { get; set; } 
 
     [JsonProperty("item_group_taxcode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ItemGroupTaxcode { get; set; } 

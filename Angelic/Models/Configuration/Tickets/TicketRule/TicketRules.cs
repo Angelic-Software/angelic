@@ -2,6 +2,7 @@ using System.CodeDom.Compiler;
 using Angelic.Models.Clients;
 using Angelic.Models.Configuration.Integrations.Lookups;
 using Angelic.Models.Configuration.TeamsAndAgents.Agents;
+using Angelic.Models.Configuration.TeamsAndAgents.Agents.AgentNotifications;
 using Angelic.Models.Configuration.Tickets.Workflows;
 using Angelic.Models.Users;
 using Newtonsoft.Json;

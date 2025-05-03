@@ -31,10 +31,10 @@ public class GenericAccountsMappings
     public string? NominalcodeNamePurchase { get; set; } 
 
     [JsonProperty("itemcode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Itemcode { get; set; } 
+    public string? ItemCode { get; set; } 
 
     [JsonProperty("itemcode_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ItemcodeName { get; set; } 
+    public string? ItemCodeName { get; set; } 
 
     [JsonProperty("taxcode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Taxcode { get; set; } 

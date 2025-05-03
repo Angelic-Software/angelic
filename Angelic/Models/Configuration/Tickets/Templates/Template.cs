@@ -5,6 +5,7 @@ using Angelic.Models.Configuration.Custom.CustomFields;
 using Angelic.Models.Configuration.SelfServicePortal;
 using Angelic.Models.Configuration.Tickets.TicketRule;
 using Angelic.Models.Invoice;
+using Angelic.Models.Milestones;
 using Angelic.Models.Tickets;
 using Angelic.Models.Users;
 using Newtonsoft.Json;

@@ -1,12 +1,13 @@
 using System.CodeDom.Compiler;
-using Angelic.Models.Configuration;
-using Angelic.Models.Configuration.Assets;
 using Newtonsoft.Json;
 
-namespace Angelic.Models;
+namespace Angelic.Models.Configuration.Assets;
 
+/// <summary>
+/// SQL database name: GENERIC
+/// </summary>
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
-public class Generic
+public class AssetGroup
 {
     [JsonProperty("guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public Guid? Guid { get; set; } 
@@ -99,10 +100,10 @@ public class Generic
     public string? TaxNamePurchase { get; set; } 
 
     [JsonProperty("itemcode_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ItemcodeId { get; set; } 
+    public string? ItemCodeId { get; set; } 
 
     [JsonProperty("itemcode_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ItemcodeName { get; set; } 
+    public string? ItemCodeName { get; set; } 
 
     [JsonProperty("new_external_link", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ExternalLinkList? NewExternalLink { get; set; } 

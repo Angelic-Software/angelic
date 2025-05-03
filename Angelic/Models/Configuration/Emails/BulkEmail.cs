@@ -34,10 +34,10 @@ public class BulkEmail
     public DateTimeOffset? LastAttemptDate { get; set; } 
 
     [JsonProperty("mailcampaignid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Mailcampaignid { get; set; } 
+    public int? MailCampaignid { get; set; } 
 
     [JsonProperty("mailcampaignemailid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Mailcampaignemailid { get; set; } 
+    public int? MailCampaignemailid { get; set; } 
 
     [JsonProperty("mailboxfrom", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Mailboxfrom { get; set; } 

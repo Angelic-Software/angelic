@@ -184,7 +184,7 @@ public class TicketApproval
     public string? Token { get; set; } 
 
     [JsonProperty("uniqueid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Uniqueid { get; set; } 
+    public int? UniqueId { get; set; } 
 
     [JsonProperty("signature", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Signature { get; set; } 

@@ -581,7 +581,7 @@ public partial class Control
         public string? MailchimpIntegratorentitiestoimport { get; set; } 
 
         [JsonProperty("mailcampaign_activityinuserfeed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? MailcampaignActivityinuserfeed { get; set; } 
+        public bool? MailCampaignActivityinuserfeed { get; set; } 
 
         [JsonProperty("addautosuppressheader", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Addautosuppressheader { get; set; } 

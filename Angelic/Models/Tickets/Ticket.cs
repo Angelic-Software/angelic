@@ -19,6 +19,7 @@ using Angelic.Models.Configuration.Tickets.Slas;
 using Angelic.Models.Configuration.Tickets.Views;
 using Angelic.Models.Configuration.Tickets.Workflows;
 using Angelic.Models.KeyPairs;
+using Angelic.Models.Milestones;
 using Newtonsoft.Json;
 
 namespace Angelic.Models.Tickets;

@@ -32,7 +32,7 @@ public class SageBusinessCloudDetails
     public bool? Enablesync { get; set; } 
 
     [JsonProperty("defaultitemcode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? DefaultItemcode { get; set; } 
+    public string? DefaultItemCode { get; set; } 
 
     [JsonProperty("showmessage", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? ShowMessage { get; set; } 

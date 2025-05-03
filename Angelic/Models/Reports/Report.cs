@@ -310,7 +310,7 @@ public class Report
     public int? TopCount { get; set; }
     
     [JsonProperty("show_trendline", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowTrendline { get; set; }
+    public bool? ShowTrendLine { get; set; }
     
     [JsonProperty("show_datavalues", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? ShowDataValues { get; set; }

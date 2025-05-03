@@ -1,5 +1,6 @@
 using System.CodeDom.Compiler;
 using Angelic.Models.Configuration.Custom.CustomFields;
+using Angelic.Models.Configuration.TeamsAndAgents.Agents.AgentNotifications;
 using Angelic.Models.KeyPairs;
 using Newtonsoft.Json;
 

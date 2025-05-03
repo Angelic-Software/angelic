@@ -1,5 +1,6 @@
 using System.CodeDom.Compiler;
 using Angelic.Models.Configuration;
+using Angelic.Models.Configuration.Emails.EmailTemplates.Encoding;
 using Newtonsoft.Json;
 
 namespace Angelic.Models;

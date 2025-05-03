@@ -10,7 +10,7 @@ public class QuotationHeaderPdf
     public string? Desc { get; set; } 
 
     [JsonProperty("uniqueid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Uniqueid { get; set; } 
+    public int? UniqueId { get; set; } 
 
     [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Id { get; set; } 
