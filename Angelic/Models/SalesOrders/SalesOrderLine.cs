@@ -418,7 +418,7 @@ public class SalesOrderLine
     public bool? MarkAsComplete { get; set; } 
 
     [JsonProperty("consignment_address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public AddressStore? ConsignmentAddress { get; set; } 
+    public Address? ConsignmentAddress { get; set; } 
 
     [JsonProperty("budget_add_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? BudgetAddType { get; set; } 

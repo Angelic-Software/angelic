@@ -304,7 +304,7 @@ public class PurchaseOrder
     public string? Deladdress5 { get; set; } 
 
     [JsonProperty("delivery_address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public AddressStore? DeliveryAddress { get; set; } 
+    public Address? DeliveryAddress { get; set; } 
 
     [JsonProperty("_forcethirdpartysync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Forcethirdpartysync { get; set; } 
@@ -343,7 +343,7 @@ public class PurchaseOrder
     public bool? DoDistributorSync { get; set; } 
 
     [JsonProperty("originaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public AddressStore? OriginAddress { get; set; } 
+    public Address? OriginAddress { get; set; } 
 
     [JsonProperty("originaddress1", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? OriginAddress1 { get; set; } 

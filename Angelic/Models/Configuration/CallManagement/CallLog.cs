@@ -69,7 +69,7 @@ public class CallLog
     public string? UserNumber { get; set; } 
 
     [JsonProperty("caller_address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public AddressStore? CallerAddress { get; set; } 
+    public Address? CallerAddress { get; set; } 
 
     [JsonProperty("outcome_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? OutcomeId { get; set; } 

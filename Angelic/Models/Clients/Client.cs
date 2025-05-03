@@ -64,7 +64,7 @@ public class Client
     public string? OverrideOrgName { get; set; }
 
     [JsonProperty("override_org_address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public AddressStore? OverrideOrgAddress { get; set; }
+    public Address? OverrideOrgAddress { get; set; }
 
     [JsonProperty("override_org_phone", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? OverrideOrgPhone { get; set; }
@@ -524,7 +524,7 @@ public class Client
 
     [JsonProperty("newclient_delivery_address", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public AddressStore? NewClientDeliveryAddress { get; set; }
+    public Address? NewClientDeliveryAddress { get; set; }
 
     [JsonProperty("newclient_countrycode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? NewClientCountrycode { get; set; }
@@ -759,7 +759,7 @@ public class Client
     public int? AutoTaskId { get; set; }
 
     [JsonProperty("import_address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public AddressStore? ImportAddress { get; set; }
+    public Address? ImportAddress { get; set; }
 
     [JsonProperty("import_notes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<CrmNote>? ImportNotes { get; set; }
@@ -1135,10 +1135,10 @@ public class Client
     public bool? DontFireAutomations { get; set; }
 
     [JsonProperty("main_delivery_address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public AddressStore? MainDeliveryAddress { get; set; }
+    public Address? MainDeliveryAddress { get; set; }
 
     [JsonProperty("main_invoice_address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public AddressStore? MainInvoiceAddress { get; set; }
+    public Address? MainInvoiceAddress { get; set; }
 
     [JsonProperty("main_contact_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? MainContactName { get; set; }

@@ -537,10 +537,10 @@ public class User
     public bool? Ismaincontact { get; set; } 
 
     [JsonProperty("primary_address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public AddressStore? PrimaryAddress { get; set; } 
+    public Address? PrimaryAddress { get; set; } 
 
     [JsonProperty("addresses", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AddressStore>? Addresses { get; set; } 
+    public ICollection<Address>? Addresses { get; set; } 
 
     [JsonProperty("departments", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<UserDepartment>? Departments { get; set; } 

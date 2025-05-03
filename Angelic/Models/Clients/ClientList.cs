@@ -54,7 +54,7 @@ public class ClientList
     public string? OverrideOrgName { get; set; } 
 
     [JsonProperty("override_org_address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public AddressStore? OverrideOrgAddress { get; set; } 
+    public Address? OverrideOrgAddress { get; set; } 
 
     [JsonProperty("override_org_phone", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? OverrideOrgPhone { get; set; } 

@@ -968,7 +968,7 @@ namespace Angelic.Models.Tickets;
         public string? Deliverycontact { get; set; } 
 
         [JsonProperty("delivery_address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AddressStore? DeliveryAddress { get; set; } 
+        public Address? DeliveryAddress { get; set; } 
 
         [JsonProperty("surveyneeded", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Surveyneeded { get; set; } 
@@ -1187,7 +1187,7 @@ namespace Angelic.Models.Tickets;
         public string? ContractRef { get; set; } 
 
         [JsonProperty("billing_address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AddressStore? BillingAddress { get; set; } 
+        public Address? BillingAddress { get; set; } 
 
         [JsonProperty("workflow_stepstarted", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public DateTimeOffset? WorkflowStepstarted { get; set; } 
@@ -1418,7 +1418,7 @@ namespace Angelic.Models.Tickets;
         public int? FollowerCount { get; set; } 
 
         [JsonProperty("contact_address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AddressStore? ContactAddress { get; set; } 
+        public Address? ContactAddress { get; set; } 
 
         [JsonProperty("chat_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? ChatId { get; set; } 

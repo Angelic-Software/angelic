@@ -206,13 +206,13 @@ public class InvoiceHeader
     public int? EmailStatus { get; set; } 
 
     [JsonProperty("address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public AddressStore? Address { get; set; } 
+    public Address? Address { get; set; } 
 
     [JsonProperty("shipaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public AddressStore? ShipAddress { get; set; } 
+    public Address? ShipAddress { get; set; } 
 
     [JsonProperty("originaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public AddressStore? OriginAddress { get; set; } 
+    public Address? OriginAddress { get; set; } 
 
     [JsonProperty("lines", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<InvoiceDetail>? Lines { get; set; } 

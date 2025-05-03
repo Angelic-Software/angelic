@@ -257,10 +257,10 @@ public class Site
     public bool? NewSiteSendwelcomeemail { get; set; } 
 
     [JsonProperty("delivery_address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public AddressStore? DeliveryAddress { get; set; } 
+    public Address? DeliveryAddress { get; set; } 
 
     [JsonProperty("invoice_address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public AddressStore? InvoiceAddress { get; set; } 
+    public Address? InvoiceAddress { get; set; } 
 
     [JsonProperty("popup_notes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<PopupNote>? PopupNotes { get; set; } 

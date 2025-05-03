@@ -405,10 +405,10 @@ public class QuotationHeader
     public string? Deladdress5 { get; set; } 
 
     [JsonProperty("address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public AddressStore? Address { get; set; } 
+    public Address? Address { get; set; } 
 
     [JsonProperty("delivery_address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public AddressStore? DeliveryAddress { get; set; } 
+    public Address? DeliveryAddress { get; set; } 
 
     [JsonProperty("workflow_history", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<WorkflowHistory>? WorkflowHistory { get; set; } 
@@ -480,7 +480,7 @@ public class QuotationHeader
     public Site? Site { get; set; } 
 
     [JsonProperty("originaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public AddressStore? OriginAddress { get; set; } 
+    public Address? OriginAddress { get; set; } 
 
     [JsonProperty("originaddress1", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? OriginAddress1 { get; set; } 
