@@ -11,7 +11,7 @@ public class GoogleBusinessDetails : IWarning
     public int? Id { get; set; } 
 
     [JsonProperty("connectionname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Connectionname { get; set; } 
+    public string? ConnectionName { get; set; } 
 
     [JsonProperty("new_integration_method", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? NewIntegrationMethod { get; set; } 

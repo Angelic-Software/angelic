@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Attributes;
 using Angelic.Models.Configuration.Ai;
 using Angelic.Models.Configuration.PdfTemplates;
 using Angelic.Models.Configuration.TeamsAndAgents.Agents;
@@ -9,6 +10,7 @@ using Newtonsoft.Json;
 
 namespace Angelic.Models.Reports;
 
+[HasEndpoint("Report")]
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
 public class Report
 {
