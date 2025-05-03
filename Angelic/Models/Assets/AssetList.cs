@@ -469,7 +469,7 @@ public class AssetList
     public string? ManageEngineCustomerId { get; set; } 
 
     [JsonProperty("lastchangeofvaluedate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Lastchangeofvaluedate { get; set; } 
+    public DateTimeOffset? LastChangeOfValueDate { get; set; } 
 
     [JsonProperty("commissiondate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? CommissionDate { get; set; } 
@@ -478,7 +478,7 @@ public class AssetList
     public int? FirstUserId { get; set; } 
 
     [JsonProperty("changebackupexists", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Changebackupexists { get; set; } 
+    public bool? ChangeBackupExists { get; set; } 
 
     [JsonProperty("_isbatch", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? IsBatch { get; set; } 
