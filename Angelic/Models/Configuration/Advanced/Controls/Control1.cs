@@ -1045,7 +1045,7 @@ public partial class Control
     [JsonProperty("b2cenableazuresinglesignon", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
     public bool? B2Cenableazuresinglesignon { get; set; }
-Perq
+
     [JsonProperty("b2cazureadsso", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? B2Cazureadsso { get; set; }
 
