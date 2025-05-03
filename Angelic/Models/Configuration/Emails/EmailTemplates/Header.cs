@@ -1,7 +1,8 @@
 using System.CodeDom.Compiler;
+using System.ComponentModel.DataAnnotations;
 using Newtonsoft.Json;
 
-namespace Angelic.Models;
+namespace Angelic.Models.Configuration.Emails.EmailTemplates;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
 public class Header
@@ -12,8 +13,9 @@ public class Header
     [JsonProperty("field", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Field { get; set; } 
 
+    [Range(-1, 130)]
     [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public HeaderId? Id { get; set; } 
+    public int? Id { get; set; } 
 
     [JsonProperty("rawField", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public byte[]? RawField { get; set; } 

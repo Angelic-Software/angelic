@@ -1,7 +1,7 @@
 using System.CodeDom.Compiler;
 using Newtonsoft.Json;
 
-namespace Angelic.Models;
+namespace Angelic.Models.Tickets;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
 public class Journey
@@ -28,19 +28,19 @@ public class Journey
     public DateTimeOffset? EndDate { get; set; } 
 
     [JsonProperty("startodometer", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Startodometer { get; set; } 
+    public double? StartOdometer { get; set; } 
 
     [JsonProperty("endodometer", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Endodometer { get; set; } 
+    public double? EndOdometer { get; set; } 
 
     [JsonProperty("vehicle", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Vehicle { get; set; } 
 
     [JsonProperty("startgps", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Startgps { get; set; } 
+    public double? StartGps { get; set; } 
 
     [JsonProperty("endgps", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Endgps { get; set; } 
+    public double? EndGps { get; set; } 
 
     [JsonProperty("datereimbursed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? DateReimbursed { get; set; } 
@@ -52,10 +52,10 @@ public class Journey
     public DateTimeOffset? DateInvoicedTravelTime { get; set; } 
 
     [JsonProperty("ihidmileage", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Ihidmileage { get; set; } 
+    public int? IHidMileage { get; set; } 
 
     [JsonProperty("ihidtraveltime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Ihidtraveltime { get; set; } 
+    public int? IHidTravelTime { get; set; } 
 
     [JsonProperty("invoiceable", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Invoiceable { get; set; } 

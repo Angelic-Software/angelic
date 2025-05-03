@@ -1,5 +1,6 @@
 using System.CodeDom.Compiler;
 using Angelic.Models.Attachments;
+using Angelic.Models.Configuration.Assets.AssetTypes;
 using Angelic.Models.Configuration.Custom;
 using Angelic.Models.Configuration.Custom.CustomFields;
 using Newtonsoft.Json;
@@ -229,7 +230,7 @@ public class UsersList
     public string? AzureId { get; set; } 
 
     [JsonProperty("user_with_clientsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? UserWithClientsite { get; set; } 
+    public string? UserWithClientSite { get; set; } 
 
     [JsonProperty("client_automatic_callscript_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ClientAutomaticCallscriptId { get; set; } 

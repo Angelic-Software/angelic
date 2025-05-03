@@ -49,28 +49,28 @@ public class FieldGroup
     public ICollection<CustomFieldVisibility>? VisibilityConditions { get; set; } 
 
     [JsonProperty("endusernew", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Endusernew { get; set; } 
+    public int? EndUsernew { get; set; } 
 
     [JsonProperty("enduserdetail", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Enduserdetail { get; set; } 
+    public int? EndUserdetail { get; set; } 
 
     [JsonProperty("technew", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Technew { get; set; } 
 
     [JsonProperty("techdetail", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Techdetail { get; set; } 
+    public int? TechDetail { get; set; } 
 
     [JsonProperty("enduseraction", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Enduseraction { get; set; } 
+    public int? EndUseraction { get; set; } 
 
     [JsonProperty("techaction", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Techaction { get; set; } 
 
     [JsonProperty("techdetailhideifempty", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Techdetailhideifempty { get; set; } 
+    public bool? TechDetailhideifempty { get; set; } 
 
     [JsonProperty("enduserdetailhideifempty", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Enduserdetailhideifempty { get; set; } 
+    public bool? EndUserdetailhideifempty { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

@@ -10,7 +10,7 @@ public class ItemDeviceDefaults
     public int? Id { get; set; } 
 
     [JsonProperty("iid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? IId { get; set; } 
+    public int? Iid { get; set; } 
 
     [JsonProperty("dtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? DType { get; set; } 

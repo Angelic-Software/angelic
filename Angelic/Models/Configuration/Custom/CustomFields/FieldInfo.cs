@@ -80,7 +80,7 @@ public class FieldInfo
     public bool? Addunknown { get; set; } 
 
     [JsonProperty("extratype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Extratype { get; set; } 
+    public int? ExtraType { get; set; } 
 
     [JsonProperty("calcfield", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Calcfield { get; set; } 
@@ -191,7 +191,7 @@ public class FieldInfo
     public int? Visibility { get; set; } 
 
     [JsonProperty("groupname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Groupname { get; set; } 
+    public string? GroupName { get; set; } 
 
     [JsonProperty("_testsql", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Testsql { get; set; } 

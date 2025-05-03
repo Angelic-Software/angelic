@@ -33,7 +33,7 @@ namespace Angelic.Models.Configuration.TeamsAndAgents.Agents;
         public string? Team { get; set; } 
 
         [JsonProperty("isdisabled", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Isdisabled { get; set; } 
+        public bool? IsDisabled { get; set; } 
 
         [JsonProperty("email", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Email { get; set; } 
@@ -396,13 +396,13 @@ namespace Angelic.Models.Configuration.TeamsAndAgents.Agents;
         public string? ImportType { get; set; } 
 
         [JsonProperty("_importtoken", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Importtoken { get; set; } 
+        public string? ImportToken { get; set; } 
 
         [JsonProperty("beyondtrust_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? BeyondtrustName { get; set; } 
 
         [JsonProperty("azure_roleid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? AzureRoleid { get; set; } 
+        public int? AzureRoleId { get; set; } 
 
         [JsonProperty("customfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<CustomField>? CustomFields { get; set; } 
@@ -561,7 +561,7 @@ namespace Angelic.Models.Configuration.TeamsAndAgents.Agents;
         public double? RemainingHolidayAllowance { get; set; } 
 
         [JsonProperty("_isbatch", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Isbatch { get; set; } 
+        public bool? IsBatch { get; set; } 
 
         [JsonProperty("import_photo", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? ImportPhoto { get; set; } 
@@ -771,7 +771,7 @@ namespace Angelic.Models.Configuration.TeamsAndAgents.Agents;
         public ICollection<AccessControl>? AcDevices { get; set; } 
 
         [JsonProperty("azure_connectionid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? AzureConnectionid { get; set; } 
+        public int? AzureConnectionId { get; set; } 
 
         [JsonProperty("allow_presence_notifications", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? AllowPresenceNotifications { get; set; } 

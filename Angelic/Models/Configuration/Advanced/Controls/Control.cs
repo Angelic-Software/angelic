@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Models.Configuration.Assets;
 using Angelic.Models.Configuration.Integrations;
 using Angelic.Models.Configuration.Integrations.Microsoft;
 using Angelic.Models.Configuration.Integrations.Microsoft.Dynamics365;
@@ -6,12 +7,13 @@ using Angelic.Models.Configuration.Language;
 using Angelic.Models.Configuration.TeamsAndAgents.Agents;
 using Angelic.Models.Configuration.Tickets.TicketTypes;
 using Angelic.Models.Invoice;
+using Angelic.Models.KeyPairs;
 using Newtonsoft.Json;
 
 namespace Angelic.Models.Configuration.Advanced.Controls;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public class Control
+    public partial class Control
     {
         [JsonProperty("workspace_site_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<ExternalLinkList>? WorkspaceSiteMappings { get; set; } 
@@ -74,25 +76,25 @@ namespace Angelic.Models.Configuration.Advanced.Controls;
         public ICollection<IntegrationFieldMapping>? BarracudaFieldMappings { get; set; } 
 
         [JsonProperty("logicmonitor_fieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<IntegrationFieldMapping>? LogicmonitorFieldMappings { get; set; } 
+        public ICollection<IntegrationFieldMapping>? LogicMonitorFieldMappings { get; set; } 
 
         [JsonProperty("halointegrator_logicmonitor", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? HaloIntegratorLogicmonitor { get; set; } 
+        public bool? HaloIntegratorLogicMonitor { get; set; } 
 
         [JsonProperty("halointegrator_logicmonitor_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorLogicmonitorLastSync { get; set; } 
+        public DateTimeOffset? HaloIntegratorLogicMonitorLastSync { get; set; } 
 
         [JsonProperty("halointegrator_logicmonitor_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? HaloIntegratorLogicmonitorLastError { get; set; } 
+        public string? HaloIntegratorLogicMonitorLastError { get; set; } 
 
         [JsonProperty("logicmonitor_defaultsite_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? LogicmonitorDefaultSiteName { get; set; } 
+        public string? LogicMonitorDefaultSiteName { get; set; } 
 
         [JsonProperty("logicmonitor_alert_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? LogicmonitorAlertUserName { get; set; } 
+        public string? LogicMonitorAlertUserName { get; set; } 
 
         [JsonProperty("logicmonitor_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? LogicmonitorUrl { get; set; } 
+        public string? LogicMonitorUrl { get; set; } 
 
         [JsonProperty("halointegrator_barracuda", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? HaloIntegratorBarracuda { get; set; } 
@@ -122,10 +124,10 @@ namespace Angelic.Models.Configuration.Advanced.Controls;
         public string? TeamsChatHelpMessage { get; set; } 
 
         [JsonProperty("gw_named_roles_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<KeyPair>? GwNamedRolesList { get; set; } 
+        public ICollection<StringIdNameKeyPair>? GwNamedRolesList { get; set; } 
 
         [JsonProperty("okta_named_roles_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<KeyPair>? OktaNamedRolesList { get; set; } 
+        public ICollection<StringIdNameKeyPair>? OktaNamedRolesList { get; set; } 
 
         [JsonProperty("lansweeper_mappings_xtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<AssetTypeMapping>? LansweeperMappingsXType { get; set; } 
@@ -134,7 +136,7 @@ namespace Angelic.Models.Configuration.Advanced.Controls;
         public ICollection<IntegrationFieldMapping>? GwUserrolemappings { get; set; } 
 
         [JsonProperty("whatsapptickettype_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? WhatsapptickettypeName { get; set; } 
+        public string? WhatsappTicketTypeName { get; set; } 
 
         [JsonProperty("twilio_whatsapp_number", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? TwilioWhatsappNumber { get; set; } 
@@ -209,25 +211,25 @@ namespace Angelic.Models.Configuration.Advanced.Controls;
         public ICollection<InvoiceDetailMeterTiers>? DefaultMeterTiers { get; set; } 
 
         [JsonProperty("connectwisermm_sitemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ExternalLinkList>? ConnectwisermmSitemappings { get; set; } 
+        public ICollection<ExternalLinkList>? ConnectWiseRmmSitemappings { get; set; } 
 
         [JsonProperty("connectwisermm_typemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<AssetTypeMapping>? ConnectwisermmTypemappings { get; set; } 
+        public ICollection<AssetTypeMapping>? ConnectWiseRmmTypemappings { get; set; } 
 
         [JsonProperty("connectwise_rmm_defaultclient_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? ConnectwiseRmmDefaultClientName { get; set; } 
+        public string? ConnectWiseRmmDefaultClientName { get; set; } 
 
         [JsonProperty("halointegrator_connectwisermm", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? HaloIntegratorConnectwisermm { get; set; } 
+        public bool? HaloIntegratorConnectWiseRmm { get; set; } 
 
         [JsonProperty("connectwisermm_import_entities_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ValueLabelIsNewKeyPair>? ConnectwisermmImportEntitiesList { get; set; } 
+        public ICollection<ValueLabelIsNewKeyPair>? ConnectWiseRmmImportEntitiesList { get; set; } 
 
         [JsonProperty("halointegrator_connectwisermm_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorConnectwisermmLastSync { get; set; } 
+        public DateTimeOffset? HaloIntegratorConnectWiseRmmLastSync { get; set; } 
 
         [JsonProperty("halointegrator_connectwisermm_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? HaloIntegratorConnectwisermmLastError { get; set; } 
+        public string? HaloIntegratorConnectWiseRmmLastError { get; set; } 
 
         [JsonProperty("cookiemessage", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Cookiemessage { get; set; } 
@@ -236,7 +238,7 @@ namespace Angelic.Models.Configuration.Advanced.Controls;
         public ICollection<AssetTypeMapping>? IcingaXTypeMappings { get; set; } 
 
         [JsonProperty("logicmonitor_xtype_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<AssetTypeMapping>? LogicmonitorXTypeMappings { get; set; } 
+        public ICollection<AssetTypeMapping>? LogicMonitorXTypeMappings { get; set; } 
 
         [JsonProperty("shopifydefaultsite_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? ShopifydefaultsiteName { get; set; } 
@@ -329,7 +331,7 @@ namespace Angelic.Models.Configuration.Advanced.Controls;
         public string? ZabbixAlertUserName { get; set; } 
 
         [JsonProperty("connectwise_rmm_alert_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? ConnectwiseRmmAlertUserName { get; set; } 
+        public string? ConnectWiseRmmAlertUserName { get; set; } 
 
         [JsonProperty("amazon_seller_default_site_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? AmazonSellerDefaultSiteName { get; set; } 
@@ -356,7 +358,7 @@ namespace Angelic.Models.Configuration.Advanced.Controls;
         public ICollection<IntegrationFieldMapping>? PrometheusFieldMappings { get; set; } 
 
         [JsonProperty("prometheus_defaultassettype_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? PrometheusDefaultAssettypeName { get; set; } 
+        public string? PrometheusDefaultAssetTypeName { get; set; } 
 
         [JsonProperty("prometheus_defaultsite_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? PrometheusDefaultSiteName { get; set; } 
@@ -521,7 +523,7 @@ namespace Angelic.Models.Configuration.Advanced.Controls;
         public string? SamlCertififcate { get; set; } 
 
         [JsonProperty("whatsapp_defaultclientsite_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? WhatsappDefaultClientsiteName { get; set; } 
+        public string? WhatsappDefaultClientSiteName { get; set; } 
 
         [JsonProperty("xsoar_default_username", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? XsoarDefaultUsername { get; set; } 
@@ -617,10 +619,10 @@ namespace Angelic.Models.Configuration.Advanced.Controls;
         public ICollection<TicketTypeField>? Contractapprovalfields { get; set; } 
 
         [JsonProperty("sccm_dontupdatetype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? SccmDontUpdatetype { get; set; } 
+        public bool? SccmDontUpdateType { get; set; } 
 
         [JsonProperty("lansweeper_dontupdatetype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? LansweeperDontUpdatetype { get; set; } 
+        public bool? LansweeperDontUpdateType { get; set; } 
 
         [JsonProperty("portal_requestor_display_attribute1", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? PortalRequestorDisplayAttribute1 { get; set; } 
@@ -656,22 +658,22 @@ namespace Angelic.Models.Configuration.Advanced.Controls;
         public string? AteraUrl { get; set; } 
 
         [JsonProperty("businesscentral_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? BusinesscentralUrl { get; set; } 
+        public string? BusinessCentralUrl { get; set; } 
 
         [JsonProperty("businesscentral_appid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? BusinesscentralAppid { get; set; } 
+        public string? BusinessCentralAppid { get; set; } 
 
         [JsonProperty("businesscentral_domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? BusinesscentralDomain { get; set; } 
+        public string? BusinessCentralDomain { get; set; } 
 
         [JsonProperty("businesscentral_tokenexpiry", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? BusinesscentralTokenexpiry { get; set; } 
+        public DateTimeOffset? BusinessCentralTokenexpiry { get; set; } 
 
         [JsonProperty("businesscentral_redirect", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? BusinesscentralRedirect { get; set; } 
+        public string? BusinessCentralRedirect { get; set; } 
 
         [JsonProperty("businesscentral_authorised", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? BusinesscentralAuthorised { get; set; } 
+        public bool? BusinessCentralAuthorised { get; set; } 
 
         [JsonProperty("dynamicscrm_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? DynamicscrmUrl { get; set; } 
@@ -755,13 +757,13 @@ namespace Angelic.Models.Configuration.Advanced.Controls;
         public string? AutoTaskUsername { get; set; } 
 
         [JsonProperty("connectwise_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? ConnectwiseUrl { get; set; } 
+        public string? ConnectWiseUrl { get; set; } 
 
         [JsonProperty("connectwise_public_key", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? ConnectwisePublicKey { get; set; } 
+        public string? ConnectWisePublicKey { get; set; } 
 
         [JsonProperty("connectwise_private_key", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? ConnectwisePrivateKey { get; set; } 
+        public string? ConnectWisePrivateKey { get; set; } 
 
         [JsonProperty("ninja_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? NinjaUrl { get; set; } 
@@ -1067,7 +1069,7 @@ namespace Angelic.Models.Configuration.Advanced.Controls;
         public string? RhipeClientId { get; set; } 
 
         [JsonProperty("techdata_client_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? TechdataClientId { get; set; } 
+        public string? TechDataClientId { get; set; } 
 
         [JsonProperty("inty_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? IntyUrl { get; set; } 
@@ -1142,7 +1144,7 @@ namespace Angelic.Models.Configuration.Advanced.Controls;
         public int? Integrationmoduleid { get; set; } 
 
         [JsonProperty("includeresourcebookingsettings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? IncludeResourcebookingsettings { get; set; } 
+        public bool? IncludeResourceBookingsettings { get; set; } 
 
         [JsonProperty("includecalendarsettings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Includecalendarsettings { get; set; } 
@@ -1166,7 +1168,7 @@ namespace Angelic.Models.Configuration.Advanced.Controls;
         public bool? WhatsappAuthorised { get; set; } 
 
         [JsonProperty("logicmonitor_access_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? LogicmonitorAccessId { get; set; } 
+        public string? LogicMonitorAccessId { get; set; } 
 
         [JsonProperty("openai_default_model", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? OpenaiDefaultModel { get; set; } 

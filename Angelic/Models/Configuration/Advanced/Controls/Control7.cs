@@ -47,13 +47,13 @@ public partial class Control
         public int? DefaultMeterPricingMethod { get; set; } 
 
         [JsonProperty("logicmonitor_asset_type_choice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? LogicmonitorAssetTypeChoice { get; set; } 
+        public int? LogicMonitorAssetTypeChoice { get; set; } 
 
         [JsonProperty("logicmonitor_assettypefield", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? LogicmonitorAssetTypefield { get; set; } 
+        public int? LogicMonitorAssetTypeField { get; set; } 
 
         [JsonProperty("logicmonitor_defaultgroup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? LogicmonitorDefaultGroup { get; set; } 
+        public int? LogicMonitorDefaultGroup { get; set; } 
 
         [JsonProperty("show_note_after_completed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? ShowNoteAfterCompleted { get; set; } 
@@ -119,7 +119,7 @@ public partial class Control
         public bool? AiThankyouDetection { get; set; } 
 
         [JsonProperty("techdata_default_tenant", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? TechdataDefaultTenant { get; set; } 
+        public int? TechDataDefaultTenant { get; set; } 
 
         [JsonProperty("ingram_default_tenant", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? IngramDefaultTenant { get; set; } 
@@ -221,7 +221,7 @@ public partial class Control
         public bool? ShowChildTemplatesAlways { get; set; } 
 
         [JsonProperty("whatsapp_defaultclientsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? WhatsappDefaultClientsite { get; set; } 
+        public int? WhatsappDefaultClientSite { get; set; } 
 
         [JsonProperty("xsoar_default_user", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? XsoarDefaultUser { get; set; } 
@@ -293,10 +293,10 @@ public partial class Control
         public bool? UseNewSearchMethod { get; set; } 
 
         [JsonProperty("assetdiscovery_defaultsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? AssetdiscoveryDefaultSite { get; set; } 
+        public int? AssetDiscoveryDefaultSite { get; set; } 
 
         [JsonProperty("assetdiscovery_defaultsite_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? AssetdiscoveryDefaultSiteName { get; set; } 
+        public string? AssetDiscoveryDefaultSiteName { get; set; } 
 
         [JsonProperty("lansweeper_override_site_rules", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? LansweeperOverrideSiteRules { get; set; } 
@@ -311,7 +311,7 @@ public partial class Control
         public int? DefaultFilterOpenTickets { get; set; } 
 
         [JsonProperty("assetdateformat", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Assetdateformat { get; set; } 
+        public string? AssetDateformat { get; set; } 
 
         [JsonProperty("use_item_catalogue", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? UseItemCatalogue { get; set; } 
@@ -444,7 +444,7 @@ public partial class Control
         public int? GwAssetTypeChoice { get; set; } 
 
         [JsonProperty("gw_default_devicetype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? GwDefaultDevicetype { get; set; } 
+        public int? GwDefaultDeviceType { get; set; } 
 
         [JsonProperty("gw_mobile_site_matching", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? GwMobileSiteMatching { get; set; } 
@@ -761,7 +761,7 @@ public partial class Control
         public bool? OpenReportWithoutLoading { get; set; } 
 
         [JsonProperty("show_livechat_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? ShowLivechatUrl { get; set; } 
+        public bool? ShowLiveChatUrl { get; set; } 
 
         [JsonProperty("category_auto_expand", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? CategoryAutoExpand { get; set; } 
@@ -770,7 +770,7 @@ public partial class Control
         public bool? HideEndDateTimeZone { get; set; } 
 
         [JsonProperty("enable_clear_nable_rmm_alert_check", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? EnableClearNableRmmAlertCheck { get; set; } 
+        public bool? EnableClearNAbleRmmAlertCheck { get; set; } 
 
         [JsonProperty("show_asset_diagram_keyfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? ShowAssetDiagramKeyFields { get; set; } 
@@ -841,7 +841,7 @@ public partial class Control
         public string? ConversionProbabilityColour4 { get; set; } 
 
         [JsonProperty("nextattachmentidcalculationmethod", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Nextattachmentidcalculationmethod { get; set; } 
+        public int? NextAttachmentidcalculationmethod { get; set; } 
 
         [JsonProperty("portal_action_date_display", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? PortalActionDateDisplay { get; set; } 

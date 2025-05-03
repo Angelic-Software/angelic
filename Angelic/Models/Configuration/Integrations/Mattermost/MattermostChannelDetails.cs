@@ -19,7 +19,7 @@ public class MattermostChannelDetails
     public string? Name { get; set; } 
 
     [JsonProperty("agentid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Agentid { get; set; } 
+    public int? AgentId { get; set; } 
 
     [JsonProperty("webhookid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Webhookid { get; set; } 

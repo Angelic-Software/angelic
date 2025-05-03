@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Models.Configuration.Emails;
 using Angelic.Models.Configuration.Integrations.Mailchimp;
 using Newtonsoft.Json;
 

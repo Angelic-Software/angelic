@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Models.Configuration.Assets;
 using Angelic.Models.Configuration.Custom;
 using Angelic.Models.Configuration.Custom.CustomFields;
 using Newtonsoft.Json;
@@ -12,7 +13,7 @@ public class AssetList
     public int? Id { get; set; } 
 
     [JsonProperty("changeguid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? Changeguid { get; set; } 
+    public Guid? ChangeGuid { get; set; } 
 
     [JsonProperty("intent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Intent { get; set; } 
@@ -153,7 +154,7 @@ public class AssetList
     public double? DefaultContractValue { get; set; } 
 
     [JsonProperty("itemstock_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ItemstockId { get; set; } 
+    public int? ItemStockId { get; set; } 
 
     [JsonProperty("item_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ItemId { get; set; } 
@@ -261,10 +262,10 @@ public class AssetList
     public string? AutomateUrl { get; set; } 
 
     [JsonProperty("connectwise_control_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ConnectwiseControlUrl { get; set; } 
+    public string? ConnectWiseControlUrl { get; set; } 
 
     [JsonProperty("ninjarmm_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? NinjarmmId { get; set; } 
+    public int? NinjaRmmId { get; set; } 
 
     [JsonProperty("ninja_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? NinjaUrl { get; set; } 
@@ -282,13 +283,13 @@ public class AssetList
     public string? ItGlueUrl { get; set; } 
 
     [JsonProperty("defaultsequence", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Defaultsequence { get; set; } 
+    public int? DefaultSequence { get; set; } 
 
     [JsonProperty("service_ids", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ServiceIds { get; set; } 
 
     [JsonProperty("bulkcreated", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Bulkcreated { get; set; } 
+    public bool? BulkCreated { get; set; } 
 
     [JsonProperty("bulkbillingperiod", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Bulkbillingperiod { get; set; } 
@@ -300,7 +301,7 @@ public class AssetList
     public int? DattoAlternateId { get; set; } 
 
     [JsonProperty("syncro_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? SyncroId { get; set; } 
+    public string? SyncroIdWithUnderscore { get; set; } 
 
     [JsonProperty("domotz_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? DomotzId { get; set; } 
@@ -318,7 +319,7 @@ public class AssetList
     public string? AuvikUrl { get; set; } 
 
     [JsonProperty("allowallstatus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? AllowAllstatus { get; set; } 
+    public bool? AllowAllStatus { get; set; } 
 
     [JsonProperty("allowed_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<AssetTypeStatus>? AllowedStatus { get; set; } 
@@ -342,7 +343,7 @@ public class AssetList
     public string? KaseyaId { get; set; } 
 
     [JsonProperty("iskaseyaagent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Iskaseyaagent { get; set; } 
+    public bool? IsKaseyaAgent { get; set; } 
 
     [JsonProperty("kaseyavsa_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? KaseyavsaUrl { get; set; } 
@@ -375,10 +376,10 @@ public class AssetList
     public int? NCentralDetailsId { get; set; } 
 
     [JsonProperty("nable_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? NableId { get; set; } 
+    public string? NAbleId { get; set; } 
 
     [JsonProperty("connectwisecontrolid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Connectwisecontrolid { get; set; } 
+    public string? ConnectWiseControlId { get; set; } 
 
     [JsonProperty("_isimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? IsImport { get; set; } 
@@ -396,13 +397,13 @@ public class AssetList
     public string? IntuneId { get; set; } 
 
     [JsonProperty("supplier_purchasedate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? SupplierPurchasedate { get; set; } 
+    public DateTimeOffset? SupplierPurchaseDate { get; set; } 
 
     [JsonProperty("logicmonitor_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? LogicmonitorId { get; set; } 
+    public string? LogicMonitorId { get; set; } 
 
     [JsonProperty("barracudarmm_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? BarracudarmmId { get; set; } 
+    public string? BarracudaRmmId { get; set; } 
 
     [JsonProperty("sla_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? SlaId { get; set; } 
@@ -420,7 +421,7 @@ public class AssetList
     public int? RelatedServiceCount { get; set; } 
 
     [JsonProperty("connectwisermm_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ConnectwisermmId { get; set; } 
+    public string? ConnectWiseRmmId { get; set; } 
 
     [JsonProperty("xensam_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? XensamId { get; set; } 
@@ -438,7 +439,7 @@ public class AssetList
     public string? DynatraceId { get; set; } 
 
     [JsonProperty("vmworkspace_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? VmworkspaceId { get; set; } 
+    public string? VmWorkspaceId { get; set; } 
 
     [JsonProperty("tanium_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? TaniumId { get; set; } 
@@ -462,16 +463,16 @@ public class AssetList
     public string? AwsId { get; set; } 
 
     [JsonProperty("manageengine_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ManageengineId { get; set; } 
+    public string? ManageEngineId { get; set; } 
 
     [JsonProperty("manageengine_customer_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ManageengineCustomerId { get; set; } 
+    public string? ManageEngineCustomerId { get; set; } 
 
     [JsonProperty("lastchangeofvaluedate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? Lastchangeofvaluedate { get; set; } 
 
     [JsonProperty("commissiondate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Commissiondate { get; set; } 
+    public DateTimeOffset? CommissionDate { get; set; } 
 
     [JsonProperty("first_user_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? FirstUserId { get; set; } 
@@ -480,7 +481,7 @@ public class AssetList
     public bool? Changebackupexists { get; set; } 
 
     [JsonProperty("_isbatch", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isbatch { get; set; } 
+    public bool? IsBatch { get; set; } 
 
     [JsonProperty("virima_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? VirimaId { get; set; } 
@@ -492,6 +493,6 @@ public class AssetList
     public string? ServiceName { get; set; } 
 
     [JsonProperty("lansweeperid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Lansweeperid { get; set; } 
+    public string? LansweeperId { get; set; } 
 
 }

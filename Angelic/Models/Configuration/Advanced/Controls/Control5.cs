@@ -8,7 +8,7 @@ public partial class Control
         public int? DefaultSiteOpps { get; set; } 
 
         [JsonProperty("default_clientsite_name_opps", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? DefaultClientsiteNameOpps { get; set; } 
+        public string? DefaultClientSiteNameOpps { get; set; } 
 
         [JsonProperty("newuseremailmandatory", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Newuseremailmandatory { get; set; } 
@@ -299,16 +299,16 @@ public partial class Control
         public int? Clientimportidentifier { get; set; } 
 
         [JsonProperty("siteimportidentifier", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Siteimportidentifier { get; set; } 
+        public int? SiteImportidentifier { get; set; } 
 
         [JsonProperty("userimportidentifier", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Userimportidentifier { get; set; } 
 
         [JsonProperty("assetimportidentifier", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Assetimportidentifier { get; set; } 
+        public int? AssetImportIdentifier { get; set; } 
 
         [JsonProperty("assetimportidentifier_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public Guid? AssetimportidentifierGuid { get; set; } 
+        public Guid? AssetImportIdentifierGuid { get; set; } 
 
         [JsonProperty("supplierimportidentifier", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Supplierimportidentifier { get; set; } 
@@ -548,7 +548,7 @@ public partial class Control
         public int? Sage200ItemGroup { get; set; } 
 
         [JsonProperty("sage200companyname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Sage200Companyname { get; set; } 
+        public string? Sage200CompanyName { get; set; } 
 
         [JsonProperty("usekashflow", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Usekashflow { get; set; } 
@@ -686,19 +686,19 @@ public partial class Control
         public int? Ninjadefaultsite { get; set; } 
 
         [JsonProperty("ninjarmmmatchname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Ninjarmmmatchname { get; set; } 
+        public bool? NinjaRmmmatchname { get; set; } 
 
         [JsonProperty("ninjarmmlocation", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Ninjarmmlocation { get; set; } 
+        public int? NinjaRmmlocation { get; set; } 
 
         [JsonProperty("ninjarmmdefaultgroup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Ninjarmmdefaultgroup { get; set; } 
+        public int? NinjaRmmdefaultgroup { get; set; } 
 
         [JsonProperty("ninjarmmdefaultgroup_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public Guid? NinjarmmdefaultgroupGuid { get; set; } 
+        public Guid? NinjaRmmdefaultgroupGuid { get; set; } 
 
         [JsonProperty("ninjarmmimporttype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Ninjarmmimporttype { get; set; } 
+        public int? NinjaRmmimporttype { get; set; } 
 
         [JsonProperty("solarwindsrmmtoplevel", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Solarwindsrmmtoplevel { get; set; } 
@@ -836,7 +836,7 @@ public partial class Control
         public int? NCentralimporttype { get; set; } 
 
         [JsonProperty("nableticketingusername", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Nableticketingusername { get; set; } 
+        public string? NAbleticketingusername { get; set; } 
 
         [JsonProperty("ncentral_tickettype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? NCentralTicketType { get; set; } 
@@ -863,7 +863,7 @@ public partial class Control
         public bool? Callscreenallownewclientcreation { get; set; } 
 
         [JsonProperty("nextcontractref", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Nextcontractref { get; set; } 
+        public string? NextContractref { get; set; } 
 
         [JsonProperty("displaycategorynoteondetailscreen", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Displaycategorynoteondetailscreen { get; set; } 
@@ -890,7 +890,7 @@ public partial class Control
         public Guid? FixedassettypeGuid { get; set; } 
 
         [JsonProperty("businesscentral_site", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? BusinesscentralSite { get; set; } 
+        public int? BusinessCentralSite { get; set; } 
 
         [JsonProperty("enablebusinesscentralsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Enablebusinesscentralsync { get; set; } 

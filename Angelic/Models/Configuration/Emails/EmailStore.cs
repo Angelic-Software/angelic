@@ -114,7 +114,7 @@ public class EmailStore
     public ICollection<int>? BulkUserIdArray { get; set; } 
 
     [JsonProperty("_isbatch", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isbatch { get; set; } 
+    public bool? IsBatch { get; set; } 
 
     [JsonProperty("kb_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? KbId { get; set; } 

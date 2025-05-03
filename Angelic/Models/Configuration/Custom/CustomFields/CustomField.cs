@@ -69,7 +69,7 @@ public class CustomField
     public string? ThirdPartyName { get; set; } 
 
     [JsonProperty("extratype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Extratype { get; set; } 
+    public int? ExtraType { get; set; } 
 
     [JsonProperty("copytochildonupdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Copytochildonupdate { get; set; } 

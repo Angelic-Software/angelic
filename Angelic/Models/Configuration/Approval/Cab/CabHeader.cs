@@ -1,4 +1,6 @@
 using System.CodeDom.Compiler;
+using Angelic.Models.Configuration.Approval;
+using Angelic.Models.Configuration.Approval.Cab;
 using Newtonsoft.Json;
 
 namespace Angelic.Models;

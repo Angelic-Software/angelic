@@ -1,3 +1,4 @@
+using Angelic.Models.KeyPairs;
 using Newtonsoft.Json;
 
 namespace Angelic.Models.Configuration.Advanced.Controls;
@@ -188,10 +189,10 @@ public partial class Control
         public string? SalesOrderlinedescriptionwhencreatedfromquotation { get; set; } 
 
         [JsonProperty("allowapplytemplatetoexistingticket", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Allowapplytemplatetoexistingticket { get; set; } 
+        public bool? AllowApplytemplatetoexistingticket { get; set; } 
 
         [JsonProperty("defaultstocklocation", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Defaultstocklocation { get; set; } 
+        public int? DefaultStocklocation { get; set; } 
 
         [JsonProperty("mustconsignorderstoinvoice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Mustconsignorderstoinvoice { get; set; } 
@@ -503,13 +504,13 @@ public partial class Control
         public bool? EmbeddingsUseTrialData { get; set; } 
 
         [JsonProperty("connectwise_rmm_enable_alerting", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? ConnectwiseRmmEnableAlerting { get; set; } 
+        public bool? ConnectWiseRmmEnableAlerting { get; set; } 
 
         [JsonProperty("connectwise_rmm_alert_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? ConnectwiseRmmAlertType { get; set; } 
+        public int? ConnectWiseRmmAlertType { get; set; } 
 
         [JsonProperty("connectwise_rmm_alert_user", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? ConnectwiseRmmAlertUser { get; set; } 
+        public int? ConnectWiseRmmAlertUser { get; set; } 
 
         [JsonProperty("amazon_seller_create_users", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? AmazonSellerCreateUsers { get; set; } 
@@ -533,10 +534,10 @@ public partial class Control
         public bool? EnableSuggestionsOnCall { get; set; } 
 
         [JsonProperty("assetdiscovery_connection_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? AssetdiscoveryConnectionType { get; set; } 
+        public int? AssetDiscoveryConnectionType { get; set; } 
 
         [JsonProperty("assetdiscovery_user_field", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? AssetdiscoveryUserField { get; set; } 
+        public int? AssetDiscoveryUserField { get; set; } 
 
         [JsonProperty("show_payment_data_on_portal", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? ShowPaymentDataOnPortal { get; set; } 
@@ -596,10 +597,10 @@ public partial class Control
         public int? PrometheusAssetTypeChoice { get; set; } 
 
         [JsonProperty("prometheus_defaultassettype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? PrometheusDefaultAssettype { get; set; } 
+        public int? PrometheusDefaultAssetType { get; set; } 
 
         [JsonProperty("prometheus_assettypefield", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? PrometheusAssetTypefield { get; set; } 
+        public int? PrometheusAssetTypeField { get; set; } 
 
         [JsonProperty("prometheus_defaultgroup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? PrometheusDefaultGroup { get; set; } 
@@ -803,7 +804,7 @@ public partial class Control
         public Guid? DefaultListAssetsGuid { get; set; } 
 
         [JsonProperty("logicmonitor_alerting_assetidentifier", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? LogicmonitorAlertingAssetidentifier { get; set; } 
+        public int? LogicMonitorAlertingAssetidentifier { get; set; } 
 
         [JsonProperty("project_notes_tab_display", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? ProjectNotesTabDisplay { get; set; } 
@@ -959,7 +960,7 @@ public partial class Control
         public bool? AllowFollowersModifyTicket { get; set; } 
 
         [JsonProperty("gocardless_companyname_matching", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? GocardlessCompanynameMatching { get; set; } 
+        public bool? GocardlessCompanyNameMatching { get; set; } 
 
         [JsonProperty("gocardless_defaultsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? GocardlessDefaultSite { get; set; } 

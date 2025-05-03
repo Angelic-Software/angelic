@@ -2,7 +2,7 @@ using System.CodeDom.Compiler;
 using Angelic.Models.Assets;
 using Newtonsoft.Json;
 
-namespace Angelic.Models;
+namespace Angelic.Models.Consignments;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
 public class ConsignmentDetail
@@ -41,7 +41,7 @@ public class ConsignmentDetail
     public double? Price { get; set; } 
 
     [JsonProperty("itemstock_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ItemstockId { get; set; } 
+    public int? ItemStockId { get; set; } 
 
     [JsonProperty("item_assettype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ItemAssetTypeId { get; set; } 

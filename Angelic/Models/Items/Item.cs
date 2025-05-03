@@ -64,7 +64,7 @@ public class Item
     public double? QuantityOnOrder { get; set; } 
 
     [JsonProperty("goodsinunit", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Goodsinunit { get; set; } 
+    public string? GoodsInunit { get; set; } 
 
     [JsonProperty("goodsoutunit", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Goodsoutunit { get; set; } 

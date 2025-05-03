@@ -22,10 +22,10 @@ public class AssetTypeStatus
     public string? StatusName { get; set; } 
 
     [JsonProperty("allowafterallstatuses", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Allowafterallstatuses { get; set; } 
+    public bool? AllowAfterAllStatuses { get; set; } 
 
     [JsonProperty("allowedafterstatus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AssetTypeStatusRestrictions>? Allowedafterstatus { get; set; } 
+    public ICollection<AssetTypeStatusRestrictions>? AllowedAfterStatus { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

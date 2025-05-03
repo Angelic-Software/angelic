@@ -21,7 +21,7 @@ public class SiteList
     public string? ClientName { get; set; } 
 
     [JsonProperty("clientsite_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ClientsiteName { get; set; } 
+    public string? ClientSiteName { get; set; } 
 
     [JsonProperty("inactive", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Inactive { get; set; } 
@@ -39,13 +39,13 @@ public class SiteList
     public string? TimeZone { get; set; } 
 
     [JsonProperty("invoice_address_isdelivery", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? InvoiceAddressIsdelivery { get; set; } 
+    public bool? InvoiceAddressIsDelivery { get; set; } 
 
     [JsonProperty("notes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Notes { get; set; } 
 
     [JsonProperty("isstocklocation", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isstocklocation { get; set; } 
+    public bool? IsStockLocation { get; set; } 
 
     [JsonProperty("messagegroup_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? MessageGroupId { get; set; } 

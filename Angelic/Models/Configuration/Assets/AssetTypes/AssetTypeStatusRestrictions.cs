@@ -7,7 +7,7 @@ namespace Angelic.Models.Configuration.Assets;
 public class AssetTypeStatusRestrictions
 {
     [JsonProperty("xtypestatus_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? XTypestatusId { get; set; } 
+    public int? XTypeStatusId { get; set; } 
 
     [JsonProperty("status_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? StatusId { get; set; } 

@@ -16,7 +16,7 @@ public class AgentButton
     public string? AgentName { get; set; } 
 
     [JsonProperty("roleid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Roleid { get; set; } 
+    public string? RoleId { get; set; } 
 
     [JsonProperty("role_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? RoleName { get; set; } 

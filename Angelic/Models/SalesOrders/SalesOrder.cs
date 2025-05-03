@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Models.Configuration;
 using Angelic.Models.Configuration.Custom;
 using Angelic.Models.Configuration.Custom.CustomFields;
 using Newtonsoft.Json;
@@ -153,7 +154,7 @@ public class SalesOrder
     public bool? CancelReserve { get; set; } 
 
     [JsonProperty("_validateonly", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Validateonly { get; set; } 
+    public bool? ValidateOnly { get; set; } 
 
     [JsonProperty("_print_preview", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? PrintPreview { get; set; } 
@@ -243,7 +244,7 @@ public class SalesOrder
     public bool? IncludeGrouppriceandqty { get; set; } 
 
     [JsonProperty("costperweight", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Costperweight { get; set; } 
+    public double? CostPerWeight { get; set; } 
 
     [JsonProperty("showpercentageinvoiced", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? ShowPercentageinvoiced { get; set; } 
@@ -303,7 +304,7 @@ public class SalesOrder
     public int? DattoCommerceClientId { get; set; } 
 
     [JsonProperty("dattocommerce_contactname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? DattoCommerceContactname { get; set; } 
+    public string? DattoCommerceContactName { get; set; } 
 
     [JsonProperty("dattocommerce_contactemail", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? DattoCommerceContactemail { get; set; } 
@@ -348,7 +349,7 @@ public class SalesOrder
     public ICollection<CustomButton>? CustomButtons { get; set; } 
 
     [JsonProperty("extratabs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<Tabname>? ExtraTabs { get; set; } 
+    public ICollection<TabName>? ExtraTabs { get; set; } 
 
     [JsonProperty("_dotaxsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? DoTaxSync { get; set; } 

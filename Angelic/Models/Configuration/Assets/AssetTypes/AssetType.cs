@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Models.Configuration.Assets.AssetTypes;
 using Angelic.Models.Configuration.Custom.CustomFields;
 using Angelic.Models.Configuration.Custom.CustomTabs;
 using Angelic.Models.Configuration.SelfServicePortal;
@@ -134,25 +135,25 @@ public class AssetType
     public string? ColumnprofileoverrideName { get; set; } 
 
     [JsonProperty("enableresourcebooking", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? EnableResourcebooking { get; set; } 
+    public bool? EnableResourceBooking { get; set; } 
 
     [JsonProperty("resourcebooking_workdays_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ResourcebookingWorkdaysId { get; set; } 
+    public int? ResourceBookingWorkdaysId { get; set; } 
 
     [JsonProperty("resourcebooking_workdays_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ResourcebookingWorkdaysName { get; set; } 
+    public string? ResourceBookingWorkdaysName { get; set; } 
 
     [JsonProperty("resourcebooking_allow_asset_selection", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ResourcebookingAllowAssetSelection { get; set; } 
+    public bool? ResourceBookingAllowAssetSelection { get; set; } 
 
     [JsonProperty("resourcebooking_asset_restriction_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ResourcebookingAssetRestrictionType { get; set; } 
+    public int? ResourceBookingAssetRestrictionType { get; set; } 
 
     [JsonProperty("resourcebooking_min_hours_advance", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? ResourcebookingMinHoursAdvance { get; set; } 
+    public double? ResourceBookingMinHoursAdvance { get; set; } 
 
     [JsonProperty("resourcebooking_max_days_advance", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? ResourcebookingMaxDaysAdvance { get; set; } 
+    public double? ResourceBookingMaxDaysAdvance { get; set; } 
 
     [JsonProperty("bookingtypes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<BookingType>? BookingTypes { get; set; } 
@@ -194,7 +195,7 @@ public class AssetType
     public ICollection<TabConfig>? TabConfig { get; set; } 
 
     [JsonProperty("resourcebookingtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Resourcebookingtype { get; set; } 
+    public int? ResourceBookingtype { get; set; } 
 
     [JsonProperty("allowed_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<AssetTypeStatus>? AllowedStatus { get; set; } 

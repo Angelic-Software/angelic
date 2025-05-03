@@ -1,5 +1,4 @@
 using System.ComponentModel.DataAnnotations;
-using Angelic.CrmNotes;
 using Angelic.Models.Attachments;
 using Angelic.Models.Configuration;
 using Angelic.Models.Configuration.Billing.ChargeRates;
@@ -14,6 +13,7 @@ using Angelic.Models.Configuration.Integrations.Stripe;
 using Angelic.Models.Configuration.SelfServicePortal;
 using Angelic.Models.Configuration.Tickets.TicketTypes;
 using Angelic.Models.Contracts;
+using Angelic.Models.CrmNotes;
 using Angelic.Models.KeyPairs;
 using Angelic.Models.KnowledgeBase;
 using Angelic.Models.Sites;
@@ -1250,7 +1250,7 @@ public class Client
     public string? OverrideLayoutName { get; set; }
 
     [JsonProperty("extratabs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<Tabname>? ExtraTabs { get; set; }
+    public ICollection<TabName>? ExtraTabs { get; set; }
 
     [JsonProperty("servicenow_team_mappings", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]

@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using System.ComponentModel.DataAnnotations;
 using Angelic.Models.Configuration.Emails.Mailboxes;
 using Newtonsoft.Json;
 
@@ -10,14 +11,17 @@ public class MimeMessage
     [JsonProperty("headers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<Header>? Headers { get; set; } 
 
+    [Range(0, 2)]
     [JsonProperty("importance", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public MessageImportance? Importance { get; set; } 
+    public int? Importance { get; set; } 
 
+    [Range(0, 2)]
     [JsonProperty("priority", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public MessagePriority? Priority { get; set; } 
+    public int? Priority { get; set; } 
 
+    [Range(1, 5)]
     [JsonProperty("xPriority", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public XMessagePriority? XPriority { get; set; } 
+    public int? XPriority { get; set; } 
 
     [JsonProperty("sender", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public MailboxAddress? Sender { get; set; } 

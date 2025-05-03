@@ -171,7 +171,7 @@ namespace Angelic.Models.Configuration.Integrations;
         public DateTimeOffset? Lastcreated { get; set; } 
 
         [JsonProperty("nextcreationdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? Nextcreationdate { get; set; } 
+        public DateTimeOffset? NextCreationdate { get; set; } 
 
         [JsonProperty("log_retention_policy_days", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? LogRetentionPolicyDays { get; set; } 

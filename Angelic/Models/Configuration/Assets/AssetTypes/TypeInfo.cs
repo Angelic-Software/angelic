@@ -8,7 +8,7 @@ namespace Angelic.Models;
 public class TypeInfo
 {
     [JsonProperty("typeinfo_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? TypeinfoId { get; set; } 
+    public double? TypeInfoId { get; set; } 
 
     [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? Id { get; set; } 
@@ -41,10 +41,10 @@ public class TypeInfo
     public int? TabColumns { get; set; } 
 
     [JsonProperty("groupname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Groupname { get; set; } 
+    public string? GroupName { get; set; } 
 
     [JsonProperty("techdetail", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Techdetail { get; set; } 
+    public int? TechDetail { get; set; } 
 
     [JsonProperty("userdetail", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? UserDetail { get; set; } 

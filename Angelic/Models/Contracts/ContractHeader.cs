@@ -1,6 +1,7 @@
 using System.CodeDom.Compiler;
 using Angelic.Models.Assets;
 using Angelic.Models.Attachments;
+using Angelic.Models.Configuration;
 using Angelic.Models.Configuration.Billing.ChargeRates;
 using Angelic.Models.Configuration.Billing.Prepay;
 using Angelic.Models.Configuration.Custom;
@@ -145,7 +146,7 @@ public class ContractHeader
     public bool? Allowprepay { get; set; } 
 
     [JsonProperty("chargeperdevice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ChargePerdevice { get; set; } 
+    public bool? ChargePerDevice { get; set; } 
 
     [JsonProperty("prepayrecurringcharge", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? PrepayRecurringCharge { get; set; } 
@@ -175,7 +176,7 @@ public class ContractHeader
     public double? Percentageincrease { get; set; } 
 
     [JsonProperty("nextincrementdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Nextincrementdate { get; set; } 
+    public DateTimeOffset? NextIncrementdate { get; set; } 
 
     [JsonProperty("datereceived", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? DateReceived { get; set; } 
@@ -196,7 +197,7 @@ public class ContractHeader
     public int? CreatedFromId { get; set; } 
 
     [JsonProperty("costperperiod", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Costperperiod { get; set; } 
+    public double? CostPerPeriod { get; set; } 
 
     [JsonProperty("rollingcontract", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Rollingcontract { get; set; } 
@@ -427,7 +428,7 @@ public class ContractHeader
     public double? AutoTopUpbyamount { get; set; } 
 
     [JsonProperty("extratabs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<Tabname>? ExtraTabs { get; set; } 
+    public ICollection<TabName>? ExtraTabs { get; set; } 
 
     [JsonProperty("approvername", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Approvername { get; set; } 

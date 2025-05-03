@@ -28,16 +28,16 @@ namespace Angelic.Models;
         public int? AppointmentType { get; set; } 
 
         [JsonProperty("customslots", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<Timeslot>? Customslots { get; set; } 
+        public ICollection<Timeslot>? CustomSlots { get; set; } 
 
         [JsonProperty("messagehtml", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Messagehtml { get; set; } 
+        public string? MessageHtml { get; set; } 
 
         [JsonProperty("resourcebooking_buffer_minutes_before", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? ResourcebookingBufferMinutesBefore { get; set; } 
+        public int? ResourceBookingBufferMinutesBefore { get; set; } 
 
         [JsonProperty("resourcebooking_buffer_minutes_after", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? ResourcebookingBufferMinutesAfter { get; set; } 
+        public int? ResourceBookingBufferMinutesAfter { get; set; } 
 
         [JsonProperty("type_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? TypeName { get; set; } 

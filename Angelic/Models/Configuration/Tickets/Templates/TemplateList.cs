@@ -87,10 +87,10 @@ public class TemplateList
     public DateTimeOffset? Lastcreated { get; set; } 
 
     [JsonProperty("nextcreationdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Nextcreationdate { get; set; } 
+    public DateTimeOffset? NextCreationdate { get; set; } 
 
     [JsonProperty("nextcreationdate_after_end", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? NextcreationdateAfterEnd { get; set; } 
+    public DateTimeOffset? NextCreationdateAfterEnd { get; set; } 
 
     [JsonProperty("execution_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ExecutionType { get; set; } 

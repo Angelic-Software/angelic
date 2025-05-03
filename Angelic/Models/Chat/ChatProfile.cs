@@ -120,10 +120,10 @@ public class ChatProfile
     public ICollection<ChatPopupMessage>? PopupMessageMappings { get; set; } 
 
     [JsonProperty("default_ticket_clientsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? DefaultTicketClientsite { get; set; } 
+    public int? DefaultTicketClientSite { get; set; } 
 
     [JsonProperty("default_ticket_clientsite_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? DefaultTicketClientsiteName { get; set; } 
+    public string? DefaultTicketClientSiteName { get; set; } 
 
     [JsonProperty("access_control", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<AccessControl>? AccessControl { get; set; } 

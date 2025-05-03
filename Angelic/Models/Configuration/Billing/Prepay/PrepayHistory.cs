@@ -34,7 +34,7 @@ public class PrepayHistory
     public double? Amount { get; set; } 
 
     [JsonProperty("expirydate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Expirydate { get; set; } 
+    public DateTimeOffset? ExpiryDate { get; set; } 
 
     [JsonProperty("expirychecked", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Expirychecked { get; set; } 

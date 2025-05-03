@@ -19,10 +19,10 @@ public class RemoteSessionData
     public int? ActionNumber { get; set; } 
 
     [JsonProperty("calllogid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Calllogid { get; set; } 
+    public int? CallLogId { get; set; } 
 
     [JsonProperty("customername", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Customername { get; set; } 
+    public string? CustomerName { get; set; } 
 
     [JsonProperty("sitename", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? SiteName { get; set; } 
@@ -34,10 +34,10 @@ public class RemoteSessionData
     public string? EmailAddress { get; set; } 
 
     [JsonProperty("sessionstate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Sessionstate { get; set; } 
+    public int? SessionState { get; set; } 
 
     [JsonProperty("sessionfinished", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Sessionfinished { get; set; } 
+    public bool? SessionFinished { get; set; } 
 
     [JsonProperty("unum", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Unum { get; set; } 
@@ -46,25 +46,25 @@ public class RemoteSessionData
     public string? Uname { get; set; } 
 
     [JsonProperty("queuedate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Queuedate { get; set; } 
+    public DateTimeOffset? QueueDate { get; set; } 
 
     [JsonProperty("leftqueuedate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Leftqueuedate { get; set; } 
+    public DateTimeOffset? LeftQueueDate { get; set; } 
 
     [JsonProperty("sessionstartdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Sessionstartdate { get; set; } 
+    public DateTimeOffset? SessionStartDate { get; set; } 
 
     [JsonProperty("sessionenddate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Sessionenddate { get; set; } 
+    public DateTimeOffset? SessionEndDate { get; set; } 
 
     [JsonProperty("matchedclient", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Matchedclient { get; set; } 
+    public int? MatchedClient { get; set; } 
 
     [JsonProperty("matchedsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Matchedsite { get; set; } 
+    public int? MatchedSite { get; set; } 
 
     [JsonProperty("matcheduser", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Matcheduser { get; set; } 
+    public string? MatchedUser { get; set; } 
 
     [JsonProperty("outcome", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Outcome { get; set; } 
@@ -79,22 +79,22 @@ public class RemoteSessionData
     public string? Summary { get; set; } 
 
     [JsonProperty("resolved", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Resolved { get; set; } 
-
+    public bool? Resolved { get; set; }
+    
     [JsonProperty("isnewreq", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? IsNewreq { get; set; } 
+    public bool? IsNewReq { get; set; } 
 
     [JsonProperty("userid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Userid { get; set; } 
 
     [JsonProperty("livechatid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Livechatid { get; set; } 
+    public int? LiveChatId { get; set; } 
 
     [JsonProperty("clientid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ClientId { get; set; } 
 
     [JsonProperty("siteid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Siteid { get; set; } 
+    public int? SiteId { get; set; } 
 
     [JsonProperty("_override_create_action", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? OverrideCreateAction { get; set; } 

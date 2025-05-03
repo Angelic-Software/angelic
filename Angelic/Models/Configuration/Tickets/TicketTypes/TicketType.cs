@@ -55,7 +55,7 @@ public class TicketType
     public int? ItilRequesttype { get; set; } 
 
     [JsonProperty("allowattachments", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Allowattachments { get; set; } 
+    public bool? AllowAttachments { get; set; } 
 
     [JsonProperty("copyattachmentstochild", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Copyattachmentstochild { get; set; } 
@@ -70,7 +70,7 @@ public class TicketType
     public ICollection<int>? Fieldidlist { get; set; } 
 
     [JsonProperty("enduserscanselect", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Enduserscanselect { get; set; } 
+    public bool? EndUserscanselect { get; set; } 
 
     [JsonProperty("anonymouscanselect", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Anonymouscanselect { get; set; } 
@@ -205,7 +205,7 @@ public class TicketType
     public string? DefaultKbName { get; set; } 
 
     [JsonProperty("default_kb_accessible_for_enduser", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? DefaultKbAccessibleForEnduser { get; set; } 
+    public bool? DefaultKbAccessibleForEndUser { get; set; } 
 
     [JsonProperty("allowall_actions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? AllowAllActions { get; set; } 
@@ -538,7 +538,7 @@ public class TicketType
     public int? DefaultTab { get; set; } 
 
     [JsonProperty("defaultsync_to_sentinel", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? DefaultsyncToSentinel { get; set; } 
+    public bool? DefaultSyncToSentinel { get; set; } 
 
     [JsonProperty("adduserupdatestochildren", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Adduserupdatestochildren { get; set; } 
@@ -547,7 +547,7 @@ public class TicketType
     public int? DefaultTargetDate { get; set; } 
 
     [JsonProperty("allowed_resourcebooking_teams", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<SectionRequestType>? AllowedResourcebookingTeams { get; set; } 
+    public ICollection<SectionRequestType>? AllowedResourceBookingTeams { get; set; } 
 
     [JsonProperty("defaultresourcetype_name_agent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? DefaultResourcetypeNameAgent { get; set; } 
@@ -604,7 +604,7 @@ public class TicketType
     public bool? ShowSuggestionstab { get; set; } 
 
     [JsonProperty("showoppcontacttab", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowOppcontacttab { get; set; } 
+    public bool? ShowOppContacttab { get; set; } 
 
     [JsonProperty("showactivestatuskanban", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? ShowActivestatuskanban { get; set; } 
@@ -631,10 +631,10 @@ public class TicketType
     public ICollection<AppointmentTypeTicketType>? AllowedAppointmentTypes { get; set; } 
 
     [JsonProperty("allowall_iframe_customtabs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? AllowAllIframeCustomtabs { get; set; } 
+    public bool? AllowAllIframeCustomTabs { get; set; } 
 
     [JsonProperty("allowed_iframe_customtabs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<IframeTabRequestType>? AllowedIframeCustomtabs { get; set; } 
+    public ICollection<IframeTabRequestType>? AllowedIframeCustomTabs { get; set; } 
 
     [JsonProperty("default_sync_to_salesforce", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? DefaultSyncToSalesforce { get; set; } 
@@ -686,7 +686,7 @@ public class TicketType
 
     [JsonProperty("newrequestmessage", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     [System.ComponentModel.DataAnnotations.StringLength(4000)]
-    public string? Newrequestmessage { get; set; } 
+    public string? NewRequestMessage { get; set; } 
 
     [JsonProperty("allow_anonymous_logging", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? AllowAnonymousLogging { get; set; } 
@@ -707,7 +707,7 @@ public class TicketType
     public string? DefaultPagerdutyserviceName { get; set; } 
 
     [JsonProperty("defaultsidebarcollapsed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Defaultsidebarcollapsed { get; set; } 
+    public bool? DefaultSidebarcollapsed { get; set; } 
 
     [JsonProperty("logonbehalflabeloverride", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Logonbehalflabeloverride { get; set; } 
@@ -887,7 +887,7 @@ public class TicketType
     public bool? DoAiSurvey { get; set; } 
 
     [JsonProperty("enduserscanlog", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Enduserscanlog { get; set; } 
+    public bool? EndUserscanlog { get; set; } 
 
     [JsonProperty("anonymouscanlog", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Anonymouscanlog { get; set; } 
@@ -908,13 +908,13 @@ public class TicketType
     public int? LoadBalanceScheduleFrequency { get; set; } 
 
     [JsonProperty("load_balance_schedule", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public AssignSchedule? LoadBalanceSchedule { get; set; } 
+    public TicketTypeLoadBalanceSchedule? LoadBalanceSchedule { get; set; } 
 
     [JsonProperty("allowall_child_tickettypes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? AllowAllChildTicketTypes { get; set; } 
 
     [JsonProperty("allowed_child_tickettypes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ChildRequestType>? AllowedChildTicketTypes { get; set; } 
+    public ICollection<AllowedChildTicketType>? AllowedChildTicketTypes { get; set; } 
 
     [JsonProperty("portal_summary_hint_is_placeholder", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? PortalSummaryHintIsPlaceholder { get; set; } 
@@ -941,7 +941,7 @@ public class TicketType
     public bool? HideUserdetails { get; set; } 
 
     [JsonProperty("allowanonattachments", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Allowanonattachments { get; set; } 
+    public bool? AllowAnonattachments { get; set; } 
 
     [JsonProperty("inherit_parent_category1", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? InheritParentCategory1 { get; set; } 

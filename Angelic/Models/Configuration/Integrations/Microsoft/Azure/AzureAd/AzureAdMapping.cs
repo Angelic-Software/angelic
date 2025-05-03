@@ -10,19 +10,19 @@ public class AzureAdMapping
     public int? Id { get; set; } 
 
     [JsonProperty("connectionid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Connectionid { get; set; } 
+    public int? ConnectionId { get; set; } 
 
     [JsonProperty("siteid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Siteid { get; set; } 
+    public int? SiteId { get; set; } 
 
     [JsonProperty("site_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? SiteName { get; set; } 
 
     [JsonProperty("roleid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Roleid { get; set; } 
+    public int? RoleId { get; set; } 
 
     [JsonProperty("client_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ClientId { get; set; } 
+    public int? ClientIdWithUnderscore { get; set; } 
 
     [JsonProperty("tenant_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? TenantId { get; set; } 
@@ -70,7 +70,7 @@ public class AzureAdMapping
     public string? DefaultSiteName { get; set; } 
 
     [JsonProperty("userroleid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Userroleid { get; set; } 
+    public int? UserRoleId { get; set; } 
 
     [JsonProperty("import_photo", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? ImportPhoto { get; set; } 

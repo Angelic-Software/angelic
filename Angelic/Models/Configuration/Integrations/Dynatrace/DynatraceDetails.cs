@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Models.Configuration.Assets;
 using Angelic.Models.KeyPairs;
 using Newtonsoft.Json;
 
@@ -29,16 +30,16 @@ public class DynatraceDetails
     public string? DefaultDevicesiteName { get; set; } 
 
     [JsonProperty("default_devicetype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? DefaultDevicetype { get; set; } 
+    public int? DefaultDeviceType { get; set; } 
 
     [JsonProperty("default_devicetypename", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? DefaultDevicetypename { get; set; } 
+    public string? DefaultDeviceTypeName { get; set; } 
 
     [JsonProperty("assetimportidentifier", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Assetimportidentifier { get; set; } 
+    public int? AssetImportIdentifier { get; set; } 
 
     [JsonProperty("assetimportidentifier_fieldname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? AssetimportidentifierFieldName { get; set; } 
+    public string? AssetImportIdentifierFieldName { get; set; } 
 
     [JsonProperty("host_fieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<IntegrationFieldMapping>? HostFieldMappings { get; set; } 
@@ -89,7 +90,7 @@ public class DynatraceDetails
     public int? DefaultAssetGroup { get; set; } 
 
     [JsonProperty("default_assetgroupname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? DefaultAssetGroupname { get; set; } 
+    public string? DefaultAssetGroupName { get; set; } 
 
     [JsonProperty("assettype_choice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? AssetTypeChoice { get; set; } 

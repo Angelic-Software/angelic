@@ -93,10 +93,10 @@ public class Template
     public DateTimeOffset? Lastcreated { get; set; } 
 
     [JsonProperty("nextcreationdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Nextcreationdate { get; set; } 
+    public DateTimeOffset? NextCreationdate { get; set; } 
 
     [JsonProperty("nextcreationdate_after_end", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? NextcreationdateAfterEnd { get; set; } 
+    public DateTimeOffset? NextCreationdateAfterEnd { get; set; } 
 
     [JsonProperty("execution_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ExecutionType { get; set; } 
@@ -336,7 +336,7 @@ public class Template
     public string? KbName { get; set; } 
 
     [JsonProperty("kb_accessible_for_enduser", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? KbAccessibleForEnduser { get; set; } 
+    public bool? KbAccessibleForEndUser { get; set; } 
 
     [JsonProperty("forwardinboundupdates", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Forwardinboundupdates { get; set; } 

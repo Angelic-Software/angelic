@@ -79,7 +79,7 @@ public class Attachment
     public byte[]? File { get; set; } 
 
     [JsonProperty("_enduserportalpdfprint", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Enduserportalpdfprint { get; set; } 
+    public bool? EndUserportalpdfprint { get; set; } 
 
     [JsonProperty("anon_outcomeid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? AnonOutcomeid { get; set; } 

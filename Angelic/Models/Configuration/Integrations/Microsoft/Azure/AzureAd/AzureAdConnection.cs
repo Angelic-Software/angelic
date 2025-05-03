@@ -1,5 +1,6 @@
 using System.CodeDom.Compiler;
 using Angelic.Models.Clients;
+using Angelic.Models.Configuration.Assets;
 using Angelic.Models.Configuration.Integrations.Microsoft.Azure.AzureDelta;
 using Angelic.Models.KeyPairs;
 using Newtonsoft.Json;

@@ -8,7 +8,7 @@ public partial class Control
         public string? Newrequestmessage { get; set; } 
 
         [JsonProperty("endusersclose", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Endusersclose { get; set; } 
+        public int? EndUsersclose { get; set; } 
 
         [JsonProperty("hideslastatus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? HideSlastatus { get; set; } 
@@ -200,10 +200,10 @@ public partial class Control
         public string? ServiceNowLocale { get; set; } 
 
         [JsonProperty("connectwise_instance_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? ConnectwiseInstanceType { get; set; } 
+        public int? ConnectWiseInstanceType { get; set; } 
 
         [JsonProperty("connectwise_company_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? ConnectwiseCompanyId { get; set; } 
+        public string? ConnectWiseCompanyId { get; set; } 
 
         [JsonProperty("automaticprepaypaymentattheendoflastmonth", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Automaticprepaypaymentattheendoflastmonth { get; set; } 
@@ -278,13 +278,13 @@ public partial class Control
         public bool? DefaultApptToOriginalTime { get; set; } 
 
         [JsonProperty("nablerequireuserdetails", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Nablerequireuserdetails { get; set; } 
+        public bool? NAblerequireuserdetails { get; set; } 
 
         [JsonProperty("sendquotepdf", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Sendquotepdf { get; set; } 
 
         [JsonProperty("ninjarmmassettypefield", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Ninjarmmassettypefield { get; set; } 
+        public int? NinjaRmmassettypefield { get; set; } 
 
         [JsonProperty("oktausermatchingfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Oktausermatchingfields { get; set; } 
@@ -305,7 +305,7 @@ public partial class Control
         public int? AteraTopLevel { get; set; } 
 
         [JsonProperty("atera_devicetypes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? AteraDevicetypes { get; set; } 
+        public string? AteraDeviceTypes { get; set; } 
 
         [JsonProperty("atera_defaultsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? AteraDefaultSite { get; set; } 
@@ -392,7 +392,7 @@ public partial class Control
         public bool? LansweeperDontRemoveUsers { get; set; } 
 
         [JsonProperty("allowappointmentfaultidchange", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Allowappointmentfaultidchange { get; set; } 
+        public bool? AllowAppointmentfaultidchange { get; set; } 
 
         [JsonProperty("autocreateprojectsonso", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Autocreateprojectsonso { get; set; } 
@@ -548,10 +548,10 @@ public partial class Control
         public bool? ShowChildSosOnParent { get; set; } 
 
         [JsonProperty("enduserchange_confirmation", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? EnduserchangeConfirmation { get; set; } 
+        public bool? EndUserchangeConfirmation { get; set; } 
 
         [JsonProperty("connectwise_markbilled", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? ConnectwiseMarkbilled { get; set; } 
+        public bool? ConnectWiseMarkbilled { get; set; } 
 
         [JsonProperty("billing_from_mailbox_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? BillingFromMailboxId { get; set; } 
@@ -581,7 +581,7 @@ public partial class Control
         public string? SnelStartDefaultItem { get; set; } 
 
         [JsonProperty("jamf_devicetypes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? JamfDevicetypes { get; set; } 
+        public string? JamfDeviceTypes { get; set; } 
 
         [JsonProperty("allowed_files", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? AllowedFiles { get; set; } 
@@ -749,7 +749,7 @@ public partial class Control
         public int? SyncroTopLevel { get; set; } 
 
         [JsonProperty("syncro_devicetypes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? SyncroDevicetypes { get; set; } 
+        public string? SyncroDeviceTypes { get; set; } 
 
         [JsonProperty("syncro_defaultsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? SyncroDefaultSite { get; set; } 
@@ -791,10 +791,10 @@ public partial class Control
         public int? DomotzDefaultAgentsite { get; set; } 
 
         [JsonProperty("domotz_default_devicetype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? DomotzDefaultDevicetype { get; set; } 
+        public int? DomotzDefaultDeviceType { get; set; } 
 
         [JsonProperty("domotz_default_devicetype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public Guid? DomotzDefaultDevicetypeGuid { get; set; } 
+        public Guid? DomotzDefaultDeviceTypeGuid { get; set; } 
 
         [JsonProperty("domotz_default_devicesite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? DomotzDefaultDevicesite { get; set; } 
@@ -815,10 +815,10 @@ public partial class Control
         public bool? HideApptactionsfromuser { get; set; } 
 
         [JsonProperty("snow_default_devicetype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? SnowDefaultDevicetype { get; set; } 
+        public int? SnowDefaultDeviceType { get; set; } 
 
         [JsonProperty("snow_default_devicetype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public Guid? SnowDefaultDevicetypeGuid { get; set; } 
+        public Guid? SnowDefaultDeviceTypeGuid { get; set; } 
 
         [JsonProperty("okta_deactivate_entities", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? OktaDeactivateEntities { get; set; } 
@@ -836,10 +836,10 @@ public partial class Control
         public bool? AutomateDeleteDevices { get; set; } 
 
         [JsonProperty("automate_connectwise_control", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? AutomateConnectwiseControl { get; set; } 
+        public bool? AutomateConnectWiseControl { get; set; } 
 
         [JsonProperty("connectwise_control_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? ConnectwiseControlGuid { get; set; } 
+        public string? ConnectWiseControlGuid { get; set; } 
 
         [JsonProperty("automate_enable_alerting", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? AutomateEnableAlerting { get; set; } 

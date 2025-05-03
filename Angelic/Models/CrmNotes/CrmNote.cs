@@ -2,7 +2,7 @@ using System.CodeDom.Compiler;
 using Angelic.Models.Configuration.Custom.CustomFields;
 using Newtonsoft.Json;
 
-namespace Angelic.CrmNotes;
+namespace Angelic.Models.CrmNotes;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
 public class CrmNote
@@ -38,7 +38,7 @@ public class CrmNote
     public DateTimeOffset? DateTime { get; set; } 
 
     [JsonProperty("who_agentid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? WhoAgentid { get; set; } 
+    public int? WhoAgentId { get; set; } 
 
     [JsonProperty("note", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Note { get; set; } 
@@ -50,10 +50,10 @@ public class CrmNote
     public double? TimeTaken { get; set; } 
 
     [JsonProperty("mailentryid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Mailentryid { get; set; } 
+    public string? MailEntryId { get; set; } 
 
     [JsonProperty("nextcalldate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Nextcalldate { get; set; } 
+    public DateTimeOffset? NextCalldate { get; set; } 
 
     [JsonProperty("satisfaction", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Satisfaction { get; set; } 
@@ -86,7 +86,7 @@ public class CrmNote
     public string? AppSubject { get; set; } 
 
     [JsonProperty("nextcallduration", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Nextcallduration { get; set; } 
+    public double? NextCallDuration { get; set; } 
 
     [JsonProperty("createdfromaction", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? CreatedFromAction { get; set; } 

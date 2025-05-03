@@ -1,5 +1,6 @@
 using System.CodeDom.Compiler;
 using Angelic.Models.Clients;
+using Angelic.Models.Configuration;
 using Angelic.Models.Configuration.Custom;
 using Angelic.Models.Configuration.Custom.CustomFields;
 using Angelic.Models.Configuration.Integrations.Microsoft.Dynamics365.BusinessCentral;
@@ -45,7 +46,7 @@ public class Site
     public string? ClientName { get; set; } 
 
     [JsonProperty("clientsite_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ClientsiteName { get; set; } 
+    public string? ClientSiteName { get; set; } 
 
     [JsonProperty("inactive", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Inactive { get; set; } 
@@ -63,13 +64,13 @@ public class Site
     public string? TimeZone { get; set; } 
 
     [JsonProperty("invoice_address_isdelivery", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? InvoiceAddressIsdelivery { get; set; } 
+    public bool? InvoiceAddressIsDelivery { get; set; } 
 
     [JsonProperty("notes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Notes { get; set; } 
 
     [JsonProperty("isstocklocation", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isstocklocation { get; set; } 
+    public bool? IsStockLocation { get; set; } 
 
     [JsonProperty("messagegroup_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? MessageGroupId { get; set; } 
@@ -171,7 +172,7 @@ public class Site
     public string? Todomain { get; set; } 
 
     [JsonProperty("defaultstocklocation", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Defaultstocklocation { get; set; } 
+    public int? DefaultStocklocation { get; set; } 
 
     [JsonProperty("stopped", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Stopped { get; set; } 
@@ -240,7 +241,7 @@ public class Site
     public bool? Slocked { get; set; } 
 
     [JsonProperty("newsite_contactname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? NewSiteContactname { get; set; } 
+    public string? NewSiteContactName { get; set; } 
 
     [JsonProperty("newsite_contactemail", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? NewSiteContactemail { get; set; } 
@@ -462,13 +463,13 @@ public class Site
     public ICollection<ExternalLinkList>? ExternalLinks { get; set; } 
 
     [JsonProperty("extratabs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<Tabname>? ExtraTabs { get; set; } 
+    public ICollection<TabName>? ExtraTabs { get; set; } 
 
     [JsonProperty("businesscentral_area_company_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? BusinesscentralAreaCompanyId { get; set; } 
+    public int? BusinessCentralAreaCompanyId { get; set; } 
 
     [JsonProperty("businesscentral_billing_client", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public BusinessCentralCustomer? BusinesscentralBillingClient { get; set; } 
+    public BusinessCentralCustomer? BusinessCentralBillingClient { get; set; } 
 
     [JsonProperty("_convert_phonenumbers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? ConvertPhoneNumbers { get; set; } 

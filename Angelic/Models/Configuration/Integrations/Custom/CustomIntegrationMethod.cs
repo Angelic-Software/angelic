@@ -88,7 +88,7 @@ public class CustomIntegrationMethod
     public string? Warning { get; set; } 
 
     [JsonProperty("_isbatch", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isbatch { get; set; } 
+    public bool? IsBatch { get; set; } 
 
     [JsonProperty("_is_system_method", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? IsSystemMethod { get; set; } 

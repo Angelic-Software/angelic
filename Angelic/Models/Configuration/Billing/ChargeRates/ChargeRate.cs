@@ -22,7 +22,7 @@ public class ChargeRate
     public DateTimeOffset? StartDate { get; set; } 
 
     [JsonProperty("expirydate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Expirydate { get; set; } 
+    public DateTimeOffset? ExpiryDate { get; set; } 
 
     [JsonProperty("rate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? Rate { get; set; } 

@@ -88,7 +88,7 @@ public class InvoiceHeader
     public string? TelNumber { get; set; } 
 
     [JsonProperty("contactname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Contactname { get; set; } 
+    public string? ContactName { get; set; } 
 
     [JsonProperty("global_tax_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? GlobalTaxCode { get; set; } 
@@ -268,7 +268,7 @@ public class InvoiceHeader
     public DateTimeOffset? Lastcreated { get; set; } 
 
     [JsonProperty("nextcreationdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Nextcreationdate { get; set; } 
+    public DateTimeOffset? NextCreationdate { get; set; } 
 
     [JsonProperty("period", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Period { get; set; } 
@@ -319,7 +319,7 @@ public class InvoiceHeader
     public int? CreateFromContract { get; set; } 
 
     [JsonProperty("_validateonly", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Validateonly { get; set; } 
+    public bool? ValidateOnly { get; set; } 
 
     [JsonProperty("qboid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Qboid { get; set; } 
@@ -412,7 +412,7 @@ public class InvoiceHeader
     public int? InvoiceProrataPeriodsAhead { get; set; } 
 
     [JsonProperty("nextcreationperiod", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Nextcreationperiod { get; set; } 
+    public string? NextCreationperiod { get; set; } 
 
     [JsonProperty("qbo_company_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? QboCompanyId { get; set; } 
@@ -721,7 +721,7 @@ public class InvoiceHeader
     public ICollection<CustomButton>? CustomButtons { get; set; } 
 
     [JsonProperty("extratabs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<Tabname>? ExtraTabs { get; set; } 
+    public ICollection<TabName>? ExtraTabs { get; set; } 
 
     [JsonProperty("update_invoice_conversion_rate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? UpdateInvoiceConversionRate { get; set; } 

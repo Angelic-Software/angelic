@@ -13,7 +13,7 @@ public class TaxRuleResult
     public int? Tableenum { get; set; } 
 
     [JsonProperty("tableid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public TableEnum? Tableid { get; set; } 
+    public TableEnum? TableId { get; set; } 
 
     [JsonProperty("lineid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Lineid { get; set; } 

@@ -1,6 +1,8 @@
 using System.CodeDom.Compiler;
 using Angelic.Models.Assets;
 using Angelic.Models.Configuration;
+using Angelic.Models.Configuration.Approval;
+using Angelic.Models.Configuration.Approval.Cab;
 using Angelic.Models.Configuration.Custom;
 using Angelic.Models.Configuration.Custom.CustomFields;
 using Angelic.Models.Invoice;
@@ -64,7 +66,7 @@ public class PurchaseOrder
     public string? SupplierName { get; set; } 
 
     [JsonProperty("goodsin_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? GoodsinStatus { get; set; } 
+    public int? GoodsInStatus { get; set; } 
 
     [JsonProperty("3rd_party_ponumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? _3rd_party_ponumber { get; set; } 
@@ -169,7 +171,7 @@ public class PurchaseOrder
     public ICollection<PurchaseOrderDetail>? AddLines { get; set; } 
 
     [JsonProperty("_validateonly", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Validateonly { get; set; } 
+    public bool? ValidateOnly { get; set; } 
 
     [JsonProperty("_print_preview", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? PrintPreview { get; set; } 
@@ -361,7 +363,7 @@ public class PurchaseOrder
     public ICollection<CustomButton>? CustomButtons { get; set; } 
 
     [JsonProperty("extratabs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<Tabname>? ExtraTabs { get; set; } 
+    public ICollection<TabName>? ExtraTabs { get; set; } 
 
     [JsonProperty("_dont_fire_automations", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? DontFireAutomations { get; set; } 
@@ -394,7 +396,7 @@ public class PurchaseOrder
     public int? NewApprovalProcessRoleId { get; set; } 
 
     [JsonProperty("_isbatch", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isbatch { get; set; } 
+    public bool? IsBatch { get; set; } 
 
     [JsonProperty("token", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Token { get; set; } 

@@ -36,7 +36,7 @@ public class AgentPresenceSubscription
     public string? RedirectUri { get; set; } 
 
     [JsonProperty("_subscriptionaction", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public WebhookSubscriptionAction? Subscriptionaction { get; set; } 
+    public WebhookSubscriptionAction? SubscriptionAction { get; set; } 
 
     [JsonProperty("subscription_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? SubscriptionId { get; set; } 

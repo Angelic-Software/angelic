@@ -1,6 +1,8 @@
 using System.CodeDom.Compiler;
 using Angelic.Models.Attachments;
 using Angelic.Models.Configuration;
+using Angelic.Models.Configuration.Approval;
+using Angelic.Models.Configuration.Approval.Cab;
 using Angelic.Models.Configuration.Billing;
 using Angelic.Models.Configuration.Custom;
 using Angelic.Models.Configuration.Custom.CustomFields;
@@ -156,7 +158,7 @@ public class QuotationHeader
     public ICollection<QuotationDetail>? Lines { get; set; } 
 
     [JsonProperty("_validateonly", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Validateonly { get; set; } 
+    public bool? ValidateOnly { get; set; } 
 
     [JsonProperty("_print_preview", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? PrintPreview { get; set; } 
@@ -264,7 +266,7 @@ public class QuotationHeader
     public int? DattoCommerceClientId { get; set; } 
 
     [JsonProperty("dattocommerce_contactname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? DattoCommerceContactname { get; set; } 
+    public string? DattoCommerceContactName { get; set; } 
 
     [JsonProperty("dattocommerce_contactemail", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? DattoCommerceContactemail { get; set; } 
@@ -333,7 +335,7 @@ public class QuotationHeader
     public string? Warning { get; set; } 
 
     [JsonProperty("billingcontactname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? BillingContactname { get; set; } 
+    public string? BillingContactName { get; set; } 
 
     [JsonProperty("billingcontactemailaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? BillingContactemailaddress { get; set; } 
@@ -504,7 +506,7 @@ public class QuotationHeader
     public ICollection<CustomButton>? CustomButtons { get; set; } 
 
     [JsonProperty("extratabs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<Tabname>? ExtraTabs { get; set; } 
+    public ICollection<TabName>? ExtraTabs { get; set; } 
 
     [JsonProperty("status_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? StatusName { get; set; } 

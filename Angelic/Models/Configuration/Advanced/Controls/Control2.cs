@@ -42,7 +42,7 @@ public partial class Control
     public bool? Preventuserchange { get; set; }
 
     [JsonProperty("default_showdefaultsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? DefaultShowDefaultsite { get; set; }
+    public bool? DefaultShowDefaultSite { get; set; }
 
     [JsonProperty("default_showgeneralusers", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
@@ -61,25 +61,25 @@ public partial class Control
 
     [JsonProperty("logicmonitor_defaultsite", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public int? LogicmonitorDefaultSite { get; set; }
+    public int? LogicMonitorDefaultSite { get; set; }
 
     [JsonProperty("logicmonitor_defaultassettype", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public int? LogicmonitorDefaultAssettype { get; set; }
+    public int? LogicMonitorDefaultAssetType { get; set; }
 
     [JsonProperty("logicmonitor_enable_alerting", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public bool? LogicmonitorEnableAlerting { get; set; }
+    public bool? LogicMonitorEnableAlerting { get; set; }
 
     [JsonProperty("logicmonitor_alert_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? LogicmonitorAlertType { get; set; }
+    public int? LogicMonitorAlertType { get; set; }
 
     [JsonProperty("logicmonitor_alert_user", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? LogicmonitorAlertUser { get; set; }
+    public int? LogicMonitorAlertUser { get; set; }
 
     [JsonProperty("logicmonitor_delete_devices", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public bool? LogicmonitorDeleteDevices { get; set; }
+    public bool? LogicMonitorDeleteDevices { get; set; }
 
     [JsonProperty("htmltemplateeditortype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Htmltemplateeditortype { get; set; }
@@ -183,7 +183,7 @@ public partial class Control
     public bool? SendNewUsersWelcomeEmail { get; set; }
 
     [JsonProperty("logicmonitor_importtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? LogicmonitorImportType { get; set; }
+    public int? LogicMonitorImportType { get; set; }
 
     [JsonProperty("barracuda_defaultsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? BarracudaDefaultSite { get; set; }
@@ -253,7 +253,7 @@ public partial class Control
 
     [JsonProperty("show_enduser_details_opps", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowEnduserDetailsOpps { get; set; }
+    public bool? ShowEndUserDetailsOpps { get; set; }
 
     [JsonProperty("max_parent_deps", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? MaxParentDeps { get; set; }
@@ -294,7 +294,7 @@ public partial class Control
 
     [JsonProperty("connectwiseautomatealertlastupdated", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Connectwiseautomatealertlastupdated { get; set; }
+    public DateTimeOffset? ConnectWiseautomatealertlastupdated { get; set; }
 
     [JsonProperty("cannedsuggestnewticket", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Cannedsuggestnewticket { get; set; }
@@ -321,7 +321,7 @@ public partial class Control
 
     [JsonProperty("connectwise_automate_control_guid", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public string? ConnectwiseAutomateControlGuid { get; set; }
+    public string? ConnectWiseAutomateControlGuid { get; set; }
 
     [JsonProperty("supp_contract_mandatory", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? SuppContractMandatory { get; set; }
@@ -413,19 +413,19 @@ public partial class Control
 
     [JsonProperty("kaseya_defaultassettype_server", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public int? KaseyaDefaultAssettypeServer { get; set; }
+    public int? KaseyaDefaultAssetTypeServer { get; set; }
 
     [JsonProperty("kaseya_defaultassettype_server_guid", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? KaseyaDefaultAssettypeServerGuid { get; set; }
+    public Guid? KaseyaDefaultAssetTypeServerGuid { get; set; }
 
     [JsonProperty("kaseya_defaultassettype_workstation", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public int? KaseyaDefaultAssettypeWorkstation { get; set; }
+    public int? KaseyaDefaultAssetTypeWorkstation { get; set; }
 
     [JsonProperty("kaseya_defaultassettype_workstation_guid", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? KaseyaDefaultAssettypeWorkstationGuid { get; set; }
+    public Guid? KaseyaDefaultAssetTypeWorkstationGuid { get; set; }
 
     [JsonProperty("recaptcha_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? RecaptchaType { get; set; }
@@ -452,7 +452,7 @@ public partial class Control
 
     [JsonProperty("show_services_cost_tile_endusers", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowServicesCostTileEndusers { get; set; }
+    public bool? ShowServicesCostTileEndUsers { get; set; }
 
     [JsonProperty("exclude_nonticket_app_todo", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
@@ -722,23 +722,23 @@ public partial class Control
 
     [JsonProperty("connectwise_rmm_default_client", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public int? ConnectwiseRmmDefaultClient { get; set; }
+    public int? ConnectWiseRmmDefaultClient { get; set; }
 
     [JsonProperty("connectwise_rmm_default_asset_type", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public int? ConnectwiseRmmDefaultAssetType { get; set; }
+    public int? ConnectWiseRmmDefaultAssetType { get; set; }
 
     [JsonProperty("connectwise_rmm_delete_devices", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ConnectwiseRmmDeleteDevices { get; set; }
+    public bool? ConnectWiseRmmDeleteDevices { get; set; }
 
     [JsonProperty("connectwise_rmm_import_entities", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public string? ConnectwiseRmmImportEntities { get; set; }
+    public string? ConnectWiseRmmImportEntities { get; set; }
 
     [JsonProperty("connectwise_rmm_top_level", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public int? ConnectwiseRmmTopLevel { get; set; }
+    public int? ConnectWiseRmmTopLevel { get; set; }
 
     [JsonProperty("showeventstabforadmins", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? ShowEventstabforadmins { get; set; }
@@ -823,7 +823,7 @@ public partial class Control
     public int? XensamDefaultSite { get; set; }
 
     [JsonProperty("xensam_defaultassettype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? XensamDefaultAssettype { get; set; }
+    public int? XensamDefaultAssetType { get; set; }
 
     [JsonProperty("xensam_assettype_choice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? XensamAssetTypeChoice { get; set; }

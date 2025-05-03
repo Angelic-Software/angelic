@@ -255,7 +255,7 @@ namespace Angelic.Models.KnowledgeBase;
         public IDictionary<string, WordpressComObject>? WordpressCategories { get; set; } 
 
         [JsonProperty("importtags", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Importtags { get; set; } 
+        public string? ImportTags { get; set; } 
 
         [JsonProperty("owners", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<AgentList>? Owners { get; set; } 

@@ -186,8 +186,11 @@ public class Report
     [JsonProperty("filter_lookup_values", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<ValueLabelIsNewKeyPair>? FilterLookupValues { get; set; }
     
+    /// <summary>
+    /// This property had to be renamed to ReportContent from Report as a property name cannot be the same as its class in C#
+    /// </summary>
     [JsonProperty("report", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ReportContent? Report { get; set; }
+    public ReportContent? ReportContent { get; set; }
     
     [JsonProperty("previous_report", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ReportContent? PreviousReport { get; set; }

@@ -191,7 +191,7 @@ public partial class Control
         public Guid? AddigyDefaultAssetGroupGuid { get; set; } 
 
         [JsonProperty("addigy_assettypefield", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? AddigyAssetTypefield { get; set; } 
+        public int? AddigyAssetTypeField { get; set; } 
 
         [JsonProperty("addigy_deactivate_assets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? AddigyDeactivateAssets { get; set; } 
@@ -422,10 +422,10 @@ public partial class Control
         public int? KaseyaDefaultSite { get; set; } 
 
         [JsonProperty("kaseya_defaultassettype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? KaseyaDefaultAssettype { get; set; } 
+        public int? KaseyaDefaultAssetType { get; set; } 
 
         [JsonProperty("kaseya_defaultassettype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public Guid? KaseyaDefaultAssettypeGuid { get; set; } 
+        public Guid? KaseyaDefaultAssetTypeGuid { get; set; } 
 
         [JsonProperty("kaseya_enable_alerting", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? KaseyaEnableAlerting { get; set; } 
@@ -542,10 +542,10 @@ public partial class Control
         public string? RhipeImportEntities { get; set; } 
 
         [JsonProperty("techdata_top_level", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? TechdataTopLevel { get; set; } 
+        public int? TechDataTopLevel { get; set; } 
 
         [JsonProperty("techdata_import_entities", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? TechdataImportEntities { get; set; } 
+        public string? TechDataImportEntities { get; set; } 
 
         [JsonProperty("inty_update_addresses", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IntyUpdateAddresses { get; set; } 
@@ -686,7 +686,7 @@ public partial class Control
         public int? DefaultSite { get; set; } 
 
         [JsonProperty("default_clientsite_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? DefaultClientsiteName { get; set; } 
+        public string? DefaultClientSiteName { get; set; } 
 
         [JsonProperty("deleteforever", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Deleteforever { get; set; } 
@@ -893,28 +893,28 @@ public partial class Control
         public bool? Allowquicktime { get; set; } 
 
         [JsonProperty("livechatallowusers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Livechatallowusers { get; set; } 
+        public bool? LiveChatallowusers { get; set; } 
 
         [JsonProperty("livechatallowvisitors", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Livechatallowvisitors { get; set; } 
+        public bool? LiveChatallowvisitors { get; set; } 
 
         [JsonProperty("livechattechmustonline", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Livechattechmustonline { get; set; } 
+        public bool? LiveChattechmustonline { get; set; } 
 
         [JsonProperty("livechatworkhours", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Livechatworkhours { get; set; } 
+        public int? LiveChatworkhours { get; set; } 
 
         [JsonProperty("livechattechnamevisibility", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Livechattechnamevisibility { get; set; } 
+        public int? LiveChattechnamevisibility { get; set; } 
 
         [JsonProperty("livechattechnamevisibilitytext", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Livechattechnamevisibilitytext { get; set; } 
+        public string? LiveChattechnamevisibilitytext { get; set; } 
 
         [JsonProperty("livechatnewchatmsg", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Livechatnewchatmsg { get; set; } 
+        public string? LiveChatnewchatmsg { get; set; } 
 
         [JsonProperty("livechatincludeemailinname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Livechatincludeemailinname { get; set; } 
+        public bool? LiveChatincludeemailinname { get; set; } 
 
         [JsonProperty("passwordreseturl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Passwordreseturl { get; set; } 

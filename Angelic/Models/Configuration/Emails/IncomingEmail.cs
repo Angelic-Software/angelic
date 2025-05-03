@@ -18,7 +18,7 @@ public class IncomingEmail
     public int? Mbid { get; set; } 
 
     [JsonProperty("agentid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Agentid { get; set; } 
+    public int? AgentId { get; set; } 
 
     [JsonProperty("addactiontofaultid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Addactiontofaultid { get; set; } 

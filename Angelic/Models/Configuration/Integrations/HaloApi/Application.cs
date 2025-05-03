@@ -45,7 +45,7 @@ public class Application
     public ICollection<ApplicationScope>? Scopes { get; set; } 
 
     [JsonProperty("allowagents", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Allowagents { get; set; } 
+    public bool? AllowAgents { get; set; } 
 
     [JsonProperty("allowusers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? AllowUsers { get; set; } 

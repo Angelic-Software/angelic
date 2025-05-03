@@ -4,6 +4,7 @@ using Angelic.Models.Attachments;
 using Angelic.Models.Clients;
 using Angelic.Models.Configuration;
 using Angelic.Models.Configuration.Assets;
+using Angelic.Models.Configuration.Assets.AssetTypes;
 using Angelic.Models.Configuration.Custom;
 using Angelic.Models.Configuration.Custom.CustomFields;
 using Angelic.Models.Configuration.Users;
@@ -603,10 +604,10 @@ public class User
     public int? CAutomateId { get; set; } 
 
     [JsonProperty("azure_connectionid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? AzureConnectionid { get; set; } 
+    public int? AzureConnectionId { get; set; } 
 
     [JsonProperty("_importtoken", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Importtoken { get; set; } 
+    public string? ImportToken { get; set; } 
 
     [JsonProperty("jira_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? JiraId { get; set; } 
@@ -681,10 +682,10 @@ public class User
     public bool? Isopp { get; set; } 
 
     [JsonProperty("oppcompanyname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Oppcompanyname { get; set; } 
+    public string? OppCompanyName { get; set; } 
 
     [JsonProperty("oppcontactname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Oppcontactname { get; set; } 
+    public string? OppContactName { get; set; } 
 
     [JsonProperty("oppemailaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? OppEmailAddress { get; set; } 
@@ -786,13 +787,13 @@ public class User
     public string? NewSiteName { get; set; } 
 
     [JsonProperty("_isbatch", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isbatch { get; set; } 
+    public bool? IsBatch { get; set; } 
 
     [JsonProperty("roles", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<UserRoles>? Roles { get; set; } 
 
     [JsonProperty("azure_roleid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? AzureRoleid { get; set; } 
+    public int? AzureRoleId { get; set; } 
 
     [JsonProperty("add_roles", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<UserRoles>? AddRoles { get; set; } 
@@ -858,7 +859,7 @@ public class User
     public string? ThirdPartyId { get; set; } 
 
     [JsonProperty("no_manager_roleid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? NoManagerRoleid { get; set; } 
+    public int? NoManagerRoleId { get; set; } 
 
     [JsonProperty("matching_value", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? MatchingValue { get; set; } 
@@ -879,7 +880,7 @@ public class User
     public bool? SendAccountsemails { get; set; } 
 
     [JsonProperty("extratabs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<Tabname>? ExtraTabs { get; set; } 
+    public ICollection<TabName>? ExtraTabs { get; set; } 
 
     [JsonProperty("informifack", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Informifack { get; set; } 
@@ -951,7 +952,7 @@ public class User
     public string? AzureId { get; set; } 
 
     [JsonProperty("user_with_clientsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? UserWithClientsite { get; set; } 
+    public string? UserWithClientSite { get; set; } 
 
     [JsonProperty("client_automatic_callscript_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ClientAutomaticCallscriptId { get; set; } 

@@ -304,13 +304,13 @@ public class Supplier
     public ICollection<IntegrationFieldMapping>? ServiceNowCategoryMappings { get; set; } 
 
     [JsonProperty("servicenow_assignment_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ServiceNowAssignmentGroup { get; set; } 
+    public string? ServiceNowAssignmentGroupAsString { get; set; } 
 
     [JsonProperty("servicenow_assignment_group_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ServiceNowAssignmentGroupName { get; set; } 
 
     [JsonProperty("servicenow_assignmentgroup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ValueLabelIsNewKeyPair? ServiceNowAssignmentGroup { get; set; } 
+    public ValueLabelIsNewKeyPair? ServiceNowAssignmentGroupAsKeyPair { get; set; } 
 
     [JsonProperty("servicenow_defaultuser_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ServiceNowDefaultUserId { get; set; } 

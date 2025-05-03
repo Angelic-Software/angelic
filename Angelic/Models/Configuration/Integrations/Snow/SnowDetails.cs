@@ -41,19 +41,19 @@ public class SnowDetails
     public string? DefaultDevicesiteName { get; set; } 
 
     [JsonProperty("default_devicetype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? DefaultDevicetype { get; set; } 
+    public int? DefaultDeviceType { get; set; } 
 
     [JsonProperty("default_devicetypename", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? DefaultDevicetypename { get; set; } 
+    public string? DefaultDeviceTypeName { get; set; } 
 
     [JsonProperty("user_matching_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? UserMatchingType { get; set; } 
 
     [JsonProperty("assetimportidentifier", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Assetimportidentifier { get; set; } 
+    public int? AssetImportIdentifier { get; set; } 
 
     [JsonProperty("assetimportidentifier_fieldname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? AssetimportidentifierFieldName { get; set; } 
+    public string? AssetImportIdentifierFieldName { get; set; } 
 
     [JsonProperty("snow_fieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<IntegrationFieldMapping>? SnowFieldMappings { get; set; } 

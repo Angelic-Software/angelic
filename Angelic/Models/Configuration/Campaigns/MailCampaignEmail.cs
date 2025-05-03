@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Models.HtmlDesigns;
 using Newtonsoft.Json;
 
 namespace Angelic.Models.Configuration.Campaigns;

@@ -53,7 +53,7 @@ public class TicketTypeList
     public int? ItilRequesttype { get; set; } 
 
     [JsonProperty("allowattachments", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Allowattachments { get; set; } 
+    public bool? AllowAttachments { get; set; } 
 
     [JsonProperty("copyattachmentstochild", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Copyattachmentstochild { get; set; } 
@@ -68,7 +68,7 @@ public class TicketTypeList
     public ICollection<int>? Fieldidlist { get; set; } 
 
     [JsonProperty("enduserscanselect", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Enduserscanselect { get; set; } 
+    public bool? EndUserscanselect { get; set; } 
 
     [JsonProperty("anonymouscanselect", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Anonymouscanselect { get; set; } 
