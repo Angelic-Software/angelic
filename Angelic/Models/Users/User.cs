@@ -882,7 +882,7 @@ public class User
     public bool? SendAccountsemails { get; set; } 
 
     [JsonProperty("extratabs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<TabName>? ExtraTabs { get; set; } 
+    public ICollection<Tabs>? ExtraTabs { get; set; } 
 
     [JsonProperty("informifack", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Informifack { get; set; } 
@@ -924,7 +924,7 @@ public class User
     public int? Key { get; set; } 
 
     [JsonProperty("table", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public TableEnum? Table { get; set; } 
+    public int? Table { get; set; } 
 
     [JsonProperty("client_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ClientId { get; set; } 

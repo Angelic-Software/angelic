@@ -101,7 +101,7 @@ public class ContractHeaderList
     public int? Key { get; set; } 
 
     [JsonProperty("table", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public TableEnum? Table { get; set; } 
+    public int? Table { get; set; } 
 
     [JsonProperty("last_modified", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? LastModified { get; set; } 

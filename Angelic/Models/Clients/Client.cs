@@ -1251,7 +1251,7 @@ public class Client
     public string? OverrideLayoutName { get; set; }
 
     [JsonProperty("extratabs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<TabName>? ExtraTabs { get; set; }
+    public ICollection<Tabs>? ExtraTabs { get; set; }
 
     [JsonProperty("servicenow_team_mappings", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
@@ -1319,7 +1319,7 @@ public class Client
     public int? Key { get; set; }
 
     [JsonProperty("table", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public TableEnum? Table { get; set; }
+    public int? Table { get; set; }
 
     [JsonProperty("logo", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Logo { get; set; }

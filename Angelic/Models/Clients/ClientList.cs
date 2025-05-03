@@ -132,7 +132,7 @@ public class ClientList
     public int? Key { get; set; } 
 
     [JsonProperty("table", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public TableEnum? Table { get; set; } 
+    public int? Table { get; set; } 
 
     [JsonProperty("logo", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Logo { get; set; } 

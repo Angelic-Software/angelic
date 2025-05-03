@@ -700,7 +700,7 @@ public class Asset
     public int? SqlImportDid { get; set; }
 
     [JsonProperty("extratabs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<TabName>? ExtraTabs { get; set; }
+    public ICollection<Tabs>? ExtraTabs { get; set; }
 
     [JsonProperty("linked_service", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ServSite? LinkedService { get; set; }

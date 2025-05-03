@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Models.Configuration.Assets.AssetTypes;
 using Newtonsoft.Json;
 
 namespace Angelic.Models.Configuration.Assets;
@@ -85,7 +86,7 @@ public class AssetGroup
     public string? Tcsnote { get; set; } 
 
     [JsonProperty("accounts_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<GenericAccountsMappings>? AccountsMappings { get; set; } 
+    public ICollection<AssetTypeAccountsMappings>? AccountsMappings { get; set; } 
 
     [JsonProperty("tax_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? TaxId { get; set; } 

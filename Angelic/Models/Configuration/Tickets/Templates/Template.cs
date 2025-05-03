@@ -268,7 +268,7 @@ public class Template
     public string? EmailBody { get; set; } 
 
     [JsonProperty("kbid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Kbid { get; set; } 
+    public int? KbId { get; set; } 
 
     [JsonProperty("did", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Did { get; set; } 
@@ -331,7 +331,7 @@ public class Template
     public int? Parentticketid { get; set; } 
 
     [JsonProperty("kb_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? KbId { get; set; } 
+    public int? KbIdWithUnderscore { get; set; } 
 
     [JsonProperty("kb_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? KbName { get; set; } 

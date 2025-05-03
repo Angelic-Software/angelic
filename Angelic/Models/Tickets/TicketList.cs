@@ -728,7 +728,7 @@ namespace Angelic.Models.Tickets;
         public double? SearchScore { get; set; } 
 
         [JsonProperty("table", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public TableEnum? Table { get; set; } 
+        public int? Table { get; set; } 
 
         [JsonProperty("use", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Use { get; set; } 

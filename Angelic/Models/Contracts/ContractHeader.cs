@@ -428,7 +428,7 @@ public class ContractHeader
     public double? AutoTopUpbyamount { get; set; } 
 
     [JsonProperty("extratabs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<TabName>? ExtraTabs { get; set; } 
+    public ICollection<Tabs>? ExtraTabs { get; set; } 
 
     [JsonProperty("approvername", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Approvername { get; set; } 
@@ -455,7 +455,7 @@ public class ContractHeader
     public int? Key { get; set; } 
 
     [JsonProperty("table", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public TableEnum? Table { get; set; } 
+    public int? Table { get; set; } 
 
     [JsonProperty("last_modified", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? LastModified { get; set; } 

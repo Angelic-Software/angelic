@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using System.ComponentModel.DataAnnotations;
 using Newtonsoft.Json;
 
 namespace Angelic.Models;
@@ -18,8 +19,9 @@ public class AuditPasswordField
     [JsonProperty("value", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Value { get; set; } 
 
+    [Range(0, 4)]
     [JsonProperty("object", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public PasswordObjectType? Object { get; set; } 
+    public int? Object { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

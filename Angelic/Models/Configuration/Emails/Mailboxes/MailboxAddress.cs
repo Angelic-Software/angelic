@@ -1,5 +1,5 @@
 using System.CodeDom.Compiler;
-using Angelic.Models.Configuration.Emails.EmailTemplates.Encoding;
+using Angelic.Models.Configuration.Emails.EmailTemplates.Encoder;
 using Newtonsoft.Json;
 
 namespace Angelic.Models.Configuration.Emails.Mailboxes;

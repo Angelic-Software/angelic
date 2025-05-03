@@ -722,7 +722,7 @@ public class InvoiceHeader
     public ICollection<CustomButton>? CustomButtons { get; set; } 
 
     [JsonProperty("extratabs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<TabName>? ExtraTabs { get; set; } 
+    public ICollection<Tabs>? ExtraTabs { get; set; } 
 
     [JsonProperty("update_invoice_conversion_rate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? UpdateInvoiceConversionRate { get; set; } 

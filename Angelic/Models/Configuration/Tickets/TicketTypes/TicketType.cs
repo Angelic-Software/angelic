@@ -4,6 +4,7 @@ using Angelic.Models.Clients;
 using Angelic.Models.Configuration.Custom.CustomTabs;
 using Angelic.Models.Configuration.Language;
 using Angelic.Models.Configuration.SelfServicePortal;
+using Angelic.Models.Configuration.Tickets.TicketTypes.Rules;
 using Angelic.Models.KeyPairs;
 using Newtonsoft.Json;
 
@@ -214,7 +215,7 @@ public class TicketType
     public bool? AllowAllTeam { get; set; } 
 
     [JsonProperty("allowed_teams", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<SectionRequestType>? AllowedTeams { get; set; } 
+    public ICollection<AllowedTeams>? AllowedTeams { get; set; } 
 
     [JsonProperty("allowed_actions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<Restriction>? AllowedActions { get; set; } 
@@ -391,7 +392,7 @@ public class TicketType
     public int? AutoCloseHours { get; set; } 
 
     [JsonProperty("allowed_clients", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<TicketTypeAllowedClients>? AllowedClients { get; set; } 
+    public ICollection<AllowedClients>? AllowedClients { get; set; } 
 
     [JsonProperty("closedrequestreplylimit", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Closedrequestreplylimit { get; set; } 
@@ -547,7 +548,7 @@ public class TicketType
     public int? DefaultTargetDate { get; set; } 
 
     [JsonProperty("allowed_resourcebooking_teams", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<SectionRequestType>? AllowedResourceBookingTeams { get; set; } 
+    public ICollection<AllowedTeams>? AllowedResourceBookingTeams { get; set; } 
 
     [JsonProperty("defaultresourcetype_name_agent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? DefaultResourcetypeNameAgent { get; set; } 
@@ -628,13 +629,13 @@ public class TicketType
     public int? Ticketlinktype { get; set; } 
 
     [JsonProperty("allowed_appointment_types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AppointmentTypeTicketType>? AllowedAppointmentTypes { get; set; } 
+    public ICollection<AllowedAppointmentTypes>? AllowedAppointmentTypes { get; set; } 
 
     [JsonProperty("allowall_iframe_customtabs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? AllowAllIframeCustomTabs { get; set; } 
 
     [JsonProperty("allowed_iframe_customtabs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<IframeTabRequestType>? AllowedIframeCustomTabs { get; set; } 
+    public ICollection<AllowedIframeCustomTabs>? AllowedIframeCustomTabs { get; set; } 
 
     [JsonProperty("default_sync_to_salesforce", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? DefaultSyncToSalesforce { get; set; } 
@@ -815,7 +816,7 @@ public class TicketType
     public bool? AllowAllSuggestionFaqLists { get; set; } 
 
     [JsonProperty("allowed_suggestion_faqlists", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<FaqRequestType>? AllowedSuggestionFaqLists { get; set; } 
+    public ICollection<AllowedSuggestionFaqLists>? AllowedSuggestionFaqLists { get; set; } 
 
     [JsonProperty("startdate_validation", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? StartDateValidation { get; set; } 

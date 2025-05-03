@@ -225,7 +225,7 @@ public partial class Control
         public string? JamfDefaultdtypemobileName { get; set; } 
 
         [JsonProperty("jamf_device_types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ValueLabelIsNewKeyPair>? JamfDeviceTypes { get; set; } 
+        public ICollection<ValueLabelIsNewKeyPair>? JamfDeviceTypesAsKeyPair { get; set; } 
 
         [JsonProperty("jamf_fieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<IntegrationFieldMapping>? JamfFieldMappings { get; set; } 
@@ -270,7 +270,7 @@ public partial class Control
         public string? SyncroDefaultSiteName { get; set; } 
 
         [JsonProperty("syncro_device_types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ValueLabelIsNewKeyPair>? SyncroDeviceTypes { get; set; } 
+        public ICollection<ValueLabelIsNewKeyPair>? SyncroDeviceTypesAsKeyPair { get; set; } 
 
         [JsonProperty("syncro_fieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<IntegrationFieldMapping>? SyncroFieldMappings { get; set; } 

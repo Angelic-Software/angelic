@@ -364,7 +364,7 @@ public class PurchaseOrder
     public ICollection<CustomButton>? CustomButtons { get; set; } 
 
     [JsonProperty("extratabs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<TabName>? ExtraTabs { get; set; } 
+    public ICollection<Tabs>? ExtraTabs { get; set; } 
 
     [JsonProperty("_dont_fire_automations", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? DontFireAutomations { get; set; } 

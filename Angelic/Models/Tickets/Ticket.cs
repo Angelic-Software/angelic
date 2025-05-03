@@ -19,6 +19,7 @@ using Angelic.Models.Configuration.Tickets;
 using Angelic.Models.Configuration.Tickets.Slas;
 using Angelic.Models.Configuration.Tickets.Views;
 using Angelic.Models.Configuration.Tickets.Workflows;
+using Angelic.Models.EcommerceOrders;
 using Angelic.Models.KeyPairs;
 using Angelic.Models.Milestones;
 using Newtonsoft.Json;
@@ -2183,7 +2184,7 @@ namespace Angelic.Models.Tickets;
         public int? ResourceBookingSite { get; set; } 
 
         [JsonProperty("extratabs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<TabName>? ExtraTabs { get; set; } 
+        public ICollection<Tabs>? ExtraTabs { get; set; } 
 
         [JsonProperty("new_approvalprocess_role_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? NewApprovalProcessRoleId { get; set; } 
@@ -2261,7 +2262,7 @@ namespace Angelic.Models.Tickets;
         public int? UnrelateFromTicketId { get; set; } 
 
         [JsonProperty("ecommerce_orders", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<EcommerceOrderFault>? EcommerceOrders { get; set; } 
+        public ICollection<EcommerceOrderTicket>? EcommerceOrders { get; set; } 
 
         [JsonProperty("hide_feedback", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? HideFeedback { get; set; } 
@@ -2513,7 +2514,7 @@ namespace Angelic.Models.Tickets;
         public int? ServiceLinkedDevice { get; set; } 
 
         [JsonProperty("table", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public TableEnum? Table { get; set; } 
+        public int? Table { get; set; } 
 
         [JsonProperty("use", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Use { get; set; } 

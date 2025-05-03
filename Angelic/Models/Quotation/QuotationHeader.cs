@@ -30,7 +30,7 @@ public class QuotationHeader
     public string? Use { get; set; } 
 
     [JsonProperty("table", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public TableEnum? Table { get; set; } 
+    public int? Table { get; set; } 
 
     [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Title { get; set; } 
@@ -507,7 +507,7 @@ public class QuotationHeader
     public ICollection<CustomButton>? CustomButtons { get; set; } 
 
     [JsonProperty("extratabs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<TabName>? ExtraTabs { get; set; } 
+    public ICollection<Tabs>? ExtraTabs { get; set; } 
 
     [JsonProperty("status_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? StatusName { get; set; } 

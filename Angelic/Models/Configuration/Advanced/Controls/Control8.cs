@@ -679,7 +679,7 @@ public partial class Control
         public bool? LansweeperDontUpdatesite { get; set; } 
 
         [JsonProperty("lansweeper_dontremoveusers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? LansweeperDontRemoveUsers { get; set; } 
+        public bool? LansweeperUnderscoreDontRemoveUsers { get; set; } 
 
         [JsonProperty("lansweeper_fieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<SqlImportField>? LansweeperFieldMappings { get; set; } 
@@ -979,7 +979,7 @@ public partial class Control
         public string? HaloIntegratorDattoLastError { get; set; } 
 
         [JsonProperty("csp_sitemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<AzureAdMapping>? CspSitemappings { get; set; } 
+        public ICollection<AzureAdMapping>? CspSiteMappings { get; set; } 
 
         [JsonProperty("_generatecspmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Generatecspmappings { get; set; } 
@@ -988,7 +988,7 @@ public partial class Control
         public string? AteraDefaultSiteName { get; set; } 
 
         [JsonProperty("atera_device_types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ValueLabelIsNewKeyPair>? AteraDeviceTypes { get; set; } 
+        public ICollection<ValueLabelIsNewKeyPair>? AteraDeviceTypesAsKeyPair { get; set; } 
 
         [JsonProperty("atera_fieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<IntegrationFieldMapping>? AteraFieldMappings { get; set; } 

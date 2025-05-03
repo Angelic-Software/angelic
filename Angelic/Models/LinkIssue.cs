@@ -1,5 +1,6 @@
 using System.CodeDom.Compiler;
 using Angelic.Models.Configuration.SoftwareReleases;
+using Angelic.Models.Tickets;
 using Newtonsoft.Json;
 
 namespace Angelic.Models;
@@ -17,7 +18,7 @@ public class LinkIssue
     public int? ExternalLinkId { get; set; } 
 
     [JsonProperty("ticket", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Faults? Ticket { get; set; } 
+    public Ticket? Ticket { get; set; } 
 
     [JsonProperty("product", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ReleaseProduct? Product { get; set; } 

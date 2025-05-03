@@ -13,13 +13,13 @@ public class Tag
     public string? Text { get; set; } 
 
     [JsonProperty("add_to_kbid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? AddToKbid { get; set; } 
+    public int? AddToKbId { get; set; } 
 
     [JsonProperty("add_to_ctid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? AddToCtid { get; set; } 
+    public int? AddToCtId { get; set; } 
 
     [JsonProperty("add_to_stid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? AddToStid { get; set; } 
+    public int? AddToStId { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

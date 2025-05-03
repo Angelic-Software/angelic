@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Attributes;
 using Angelic.Models.Configuration.Assets;
 using Angelic.Models.Configuration.Custom;
 using Angelic.Models.Configuration.Custom.CustomFields;
@@ -6,6 +7,8 @@ using Newtonsoft.Json;
 
 namespace Angelic.Models.Assets;
 
+[HasEndpoint("Asset")]
+[ListVariantOf(typeof(Asset))]
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
 public class AssetList
 {

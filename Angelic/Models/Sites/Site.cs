@@ -464,7 +464,7 @@ public class Site
     public ICollection<ExternalLinkList>? ExternalLinks { get; set; } 
 
     [JsonProperty("extratabs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<TabName>? ExtraTabs { get; set; } 
+    public ICollection<Tabs>? ExtraTabs { get; set; } 
 
     [JsonProperty("businesscentral_area_company_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? BusinessCentralAreaCompanyId { get; set; } 
