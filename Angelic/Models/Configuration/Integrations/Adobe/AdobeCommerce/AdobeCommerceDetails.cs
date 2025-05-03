@@ -1,8 +1,10 @@
 using System.CodeDom.Compiler;
+using Angelic.Attributes;
 using Newtonsoft.Json;
 
 namespace Angelic.Models.Configuration.Integrations.Adobe.AdobeCommerce;
 
+[HasEndpoint("AdobeCommerceDetails")]
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
 public class AdobeCommerceDetails
 {
@@ -10,7 +12,7 @@ public class AdobeCommerceDetails
     public int? Id { get; set; }
 
     [JsonProperty("connectionname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Connectionname { get; set; }
+    public string? ConnectionName { get; set; }
 
     [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Url { get; set; }

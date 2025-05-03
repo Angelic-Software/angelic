@@ -1,9 +1,11 @@
 using System.CodeDom.Compiler;
+using Angelic.Attributes;
 using Angelic.Models.KeyPairs;
 using Newtonsoft.Json;
 
 namespace Angelic.Models.Configuration.Ai;
 
+[HasEndpoint("AISuggestion")]
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
 public class AiSuggestion
 {
