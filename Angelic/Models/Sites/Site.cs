@@ -1,6 +1,7 @@
 using System.CodeDom.Compiler;
 using Angelic.Models.Clients;
 using Angelic.Models.Configuration;
+using Angelic.Models.Configuration.Addresses;
 using Angelic.Models.Configuration.Custom;
 using Angelic.Models.Configuration.Custom.CustomFields;
 using Angelic.Models.Configuration.Integrations.Microsoft.Dynamics365.BusinessCentral;

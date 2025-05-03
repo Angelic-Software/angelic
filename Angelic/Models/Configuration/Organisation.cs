@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Models.Configuration.Addresses;
 using Angelic.Models.Configuration.Custom.CustomFields;
 using Angelic.Models.Configuration.Tickets.TicketTypes;
 using Newtonsoft.Json;

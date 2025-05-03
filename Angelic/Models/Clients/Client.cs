@@ -1,6 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using Angelic.Models.Attachments;
 using Angelic.Models.Configuration;
+using Angelic.Models.Configuration.Addresses;
 using Angelic.Models.Configuration.Billing.ChargeRates;
 using Angelic.Models.Configuration.Billing.Prepay;
 using Angelic.Models.Configuration.Custom;

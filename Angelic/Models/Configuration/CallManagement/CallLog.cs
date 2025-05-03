@@ -1,5 +1,6 @@
 using System.CodeDom.Compiler;
 using System.ComponentModel.DataAnnotations;
+using Angelic.Models.Configuration.Addresses;
 using Angelic.Models.Sites;
 using Angelic.Models.Users;
 using Newtonsoft.Json;

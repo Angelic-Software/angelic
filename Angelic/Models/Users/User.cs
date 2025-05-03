@@ -3,6 +3,7 @@ using Angelic.Models.Assets;
 using Angelic.Models.Attachments;
 using Angelic.Models.Clients;
 using Angelic.Models.Configuration;
+using Angelic.Models.Configuration.Addresses;
 using Angelic.Models.Configuration.Assets;
 using Angelic.Models.Configuration.Assets.AssetTypes;
 using Angelic.Models.Configuration.Campaigns;

@@ -1,6 +1,7 @@
 using System.CodeDom.Compiler;
 using Angelic.Models.Assets;
 using Angelic.Models.Configuration;
+using Angelic.Models.Configuration.Addresses;
 using Angelic.Models.Configuration.Approval;
 using Angelic.Models.Configuration.Approval.Cab;
 using Angelic.Models.Configuration.Custom;

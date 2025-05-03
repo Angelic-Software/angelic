@@ -5,6 +5,7 @@ using Angelic.Models.Attachments;
 using Angelic.Models.Auditing;
 using Angelic.Models.Clients;
 using Angelic.Models.Configuration;
+using Angelic.Models.Configuration.Addresses;
 using Angelic.Models.Configuration.Ai;
 using Angelic.Models.Configuration.Billing;
 using Angelic.Models.Configuration.Billing.Prepay;

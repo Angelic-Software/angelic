@@ -1,6 +1,7 @@
 using System.CodeDom.Compiler;
 using Angelic.Models.Assets;
 using Angelic.Models.Configuration;
+using Angelic.Models.Configuration.Addresses;
 using Angelic.Models.Configuration.Billing.Taxes;
 using Angelic.Models.Configuration.Custom.CustomFields;
 using Angelic.Models.Tickets;
