@@ -82,7 +82,7 @@ public class ContractDetail
     public string? SiteName { get; set; } 
 
     [JsonProperty("allowallcontracts", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Allowallcontracts { get; set; } 
+    public bool? AllowAllcontracts { get; set; } 
 
     [JsonProperty("asset_covered_by_contract", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? AssetCoveredByContract { get; set; } 

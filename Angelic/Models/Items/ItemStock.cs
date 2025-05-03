@@ -68,7 +68,7 @@ public class ItemStock
     public int? SerialisedAssetsInStock { get; set; } 
 
     [JsonProperty("serialised_assets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<DeviceList>? SerialisedAssets { get; set; } 
+    public ICollection<AssetList>? SerialisedAssets { get; set; } 
 
     [JsonProperty("is_stock_take", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? IsStockTake { get; set; } 
@@ -92,7 +92,7 @@ public class ItemStock
     public double? RealQuantityIn { get; set; } 
 
     [JsonProperty("_isimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isimport { get; set; } 
+    public bool? IsImport { get; set; } 
 
     [JsonProperty("stockbin_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? StockbinName { get; set; } 

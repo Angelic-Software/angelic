@@ -22,7 +22,7 @@ public class FormattedEmail
     public string? Priority { get; set; } 
 
     [JsonProperty("dateopened", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Dateopened { get; set; } 
+    public string? DateOpened { get; set; } 
 
     [JsonProperty("site", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Site { get; set; } 

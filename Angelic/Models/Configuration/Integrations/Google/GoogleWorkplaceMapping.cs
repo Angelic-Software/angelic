@@ -13,7 +13,7 @@ public class GoogleWorkplaceMapping
     public string? Customerid { get; set; } 
 
     [JsonProperty("siteid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Siteid { get; set; } 
+    public int? SiteId { get; set; } 
 
     [JsonProperty("site_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? SiteName { get; set; } 
@@ -28,13 +28,13 @@ public class GoogleWorkplaceMapping
     public string? Filtervalue { get; set; } 
 
     [JsonProperty("roleid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Roleid { get; set; } 
+    public int? RoleId { get; set; } 
 
     [JsonProperty("filter", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Filter { get; set; } 
 
     [JsonProperty("userroleid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Userroleid { get; set; } 
+    public int? UserRoleId { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

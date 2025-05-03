@@ -53,7 +53,7 @@ public class Contract
     public DateTimeOffset? EndDate { get; set; } 
 
     [JsonProperty("dontsendalarm", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Dontsendalarm { get; set; } 
+    public bool? DontSendAlarm { get; set; } 
 
     [JsonProperty("costing_information", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? CostingInformation { get; set; } 
@@ -62,10 +62,10 @@ public class Contract
     public bool? IsDefault { get; set; } 
 
     [JsonProperty("assets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<DeviceList>? Assets { get; set; } 
+    public ICollection<AssetList>? Assets { get; set; } 
 
     [JsonProperty("_isimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isimport { get; set; } 
+    public bool? IsImport { get; set; } 
 
     [JsonProperty("sla_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? SlaName { get; set; } 
@@ -74,7 +74,7 @@ public class Contract
     public ICollection<CustomField>? CustomFields { get; set; } 
 
     [JsonProperty("custombuttons", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CustomButton>? Custombuttons { get; set; } 
+    public ICollection<CustomButton>? CustomButtons { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 
@@ -83,7 +83,7 @@ public class Contract
     public bool? Active { get; set; } 
 
     [JsonProperty("iscontractdetails", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Iscontractdetails { get; set; } 
+    public bool? IsContractdetails { get; set; } 
 
     [JsonProperty("contracts", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<ContractHeaderContract>? Contracts { get; set; } 
@@ -95,10 +95,10 @@ public class Contract
     public int? AccessControlLevel { get; set; } 
 
     [JsonProperty("configuration_items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<DeviceList>? ConfigurationItems { get; set; } 
+    public ICollection<AssetList>? ConfigurationItems { get; set; } 
 
     [JsonProperty("add_configuration_items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<DeviceList>? AddConfigurationItems { get; set; } 
+    public ICollection<AssetList>? AddConfigurationItems { get; set; } 
 
     [JsonProperty("renewedfrom_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? RenewedfromId { get; set; } 

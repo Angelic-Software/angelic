@@ -28,12 +28,12 @@ public class TicketTypeFieldRestriction
     public string? Warning { get; set; } 
 
     [JsonProperty("alloweditbeforeapproval", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Alloweditbeforeapproval { get; set; } 
+    public bool? AllowEditBeforeApproval { get; set; } 
 
     [JsonProperty("alloweditafterapproval", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Alloweditafterapproval { get; set; } 
+    public bool? AllowEditAfterApproval { get; set; } 
 
     [JsonProperty("alloweditduringapproval", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Alloweditduringapproval { get; set; } 
+    public bool? AllowEditDuringApproval { get; set; } 
 
 }

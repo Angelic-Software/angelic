@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Models.Appointments;
 using Angelic.Models.Contracts;
 using Angelic.Models.KeyPairs;
 using Newtonsoft.Json;
@@ -45,7 +46,7 @@ public class Schedule
     public int? Recurrencepattern { get; set; } 
 
     [JsonProperty("agentid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Agentid { get; set; } 
+    public int? AgentId { get; set; } 
 
     [JsonProperty("monthlyrecurrencepattern", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Monthlyrecurrencepattern { get; set; } 
@@ -93,16 +94,16 @@ public class Schedule
     public int? Type { get; set; } 
 
     [JsonProperty("uniqueid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Uniqueid { get; set; } 
+    public int? UniqueId { get; set; } 
 
     [JsonProperty("weeklyrecurrencestring", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Weeklyrecurrencestring { get; set; } 
 
     [JsonProperty("nextcreationdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Nextcreationdate { get; set; } 
+    public DateTimeOffset? NextCreationdate { get; set; } 
 
     [JsonProperty("nextrundate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Nextrundate { get; set; } 
+    public DateTimeOffset? NextRundate { get; set; } 
 
     [JsonProperty("contract_schedule_plan", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<ContractSchedulePlan>? ContractSchedulePlan { get; set; } 
@@ -111,7 +112,7 @@ public class Schedule
     public ICollection<StringIdNameKeyPair>? Weeklyrecurrenceamount { get; set; } 
 
     [JsonProperty("_validateonly", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Validateonly { get; set; } 
+    public bool? ValidateOnly { get; set; } 
 
     [JsonProperty("events", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<Appointment>? Events { get; set; } 

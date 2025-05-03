@@ -15,7 +15,7 @@ public class EcommerceOrder
     public int? Moduleid { get; set; } 
 
     [JsonProperty("thirdpartyid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ThirdPartyid { get; set; } 
+    public string? ThirdPartyId { get; set; } 
 
     [JsonProperty("thirdpartyurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ThirdPartyurl { get; set; } 

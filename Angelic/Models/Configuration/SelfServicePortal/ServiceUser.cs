@@ -25,7 +25,7 @@ public class ServiceUser
     public string? DataName { get; set; } 
 
     [JsonProperty("emailupdates", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Emailupdates { get; set; } 
+    public bool? EmailUpdates { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

@@ -99,10 +99,10 @@ public class LicenceList
     public string? Status { get; set; } 
 
     [JsonProperty("autorenew", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Autorenew { get; set; } 
+    public bool? AutoRenew { get; set; } 
 
     [JsonProperty("_isimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isimport { get; set; } 
+    public bool? IsImport { get; set; } 
 
     [JsonProperty("_importtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ImportType { get; set; } 
@@ -168,10 +168,10 @@ public class LicenceList
     public int? ParentId { get; set; } 
 
     [JsonProperty("configuration_items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<DeviceList>? ConfigurationItems { get; set; } 
+    public ICollection<AssetList>? ConfigurationItems { get; set; } 
 
     [JsonProperty("add_configuration_items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<DeviceList>? AddConfigurationItems { get; set; } 
+    public ICollection<AssetList>? AddConfigurationItems { get; set; } 
 
     [JsonProperty("licence_match", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<LicenceMatch>? LicenceMatch { get; set; } 

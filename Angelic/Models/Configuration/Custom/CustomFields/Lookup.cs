@@ -78,10 +78,10 @@ public class Lookup
     public int? OverridingRateId { get; set; } 
 
     [JsonProperty("_isnewcode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? IsNewcode { get; set; } 
+    public bool? IsNewCode { get; set; } 
 
     [JsonProperty("_isimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isimport { get; set; } 
+    public bool? IsImport { get; set; } 
 
     [JsonProperty("_importtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ImportType { get; set; } 

@@ -1,5 +1,6 @@
 using System.CodeDom.Compiler;
 using Angelic.Models.Assets;
+using Angelic.Models.Configuration;
 using Angelic.Models.Configuration.Billing.Taxes;
 using Angelic.Models.Configuration.Custom.CustomFields;
 using Angelic.Models.Tickets;
@@ -152,7 +153,7 @@ public class SalesOrderLine
     public DateTimeOffset? StartDate { get; set; } 
 
     [JsonProperty("autorenew", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Autorenew { get; set; } 
+    public bool? AutoRenew { get; set; } 
 
     [JsonProperty("recurringinvoice_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? RecurringinvoiceId { get; set; } 
@@ -173,7 +174,7 @@ public class SalesOrderLine
     public int? ItemBudgetType { get; set; } 
 
     [JsonProperty("item_doesnotneedconsigning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ItemDoesnotneedconsigning { get; set; } 
+    public bool? ItemDoesNotNeedConsigning { get; set; } 
 
     [JsonProperty("supplier_po", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? SupplierPo { get; set; } 
@@ -245,13 +246,13 @@ public class SalesOrderLine
     public double? QuantityToReserve { get; set; } 
 
     [JsonProperty("assets_to_reserve", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<DeviceList>? AssetsToReserve { get; set; } 
+    public ICollection<AssetList>? AssetsToReserve { get; set; } 
 
     [JsonProperty("reserved_assets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<DeviceList>? ReservedAssets { get; set; } 
+    public ICollection<AssetList>? ReservedAssets { get; set; } 
 
     [JsonProperty("consigned_assets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<DeviceList>? ConsignedAssets { get; set; } 
+    public ICollection<AssetList>? ConsignedAssets { get; set; } 
 
     [JsonProperty("invoice_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? InvoiceId { get; set; } 
@@ -341,7 +342,7 @@ public class SalesOrderLine
     public bool? Taxable { get; set; } 
 
     [JsonProperty("project_child_faultid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ProjectChildFaultid { get; set; } 
+    public int? ProjectChildFaultId { get; set; } 
 
     [JsonProperty("_create_invoice_percentage", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? CreateInvoicePercentage { get; set; } 
@@ -350,7 +351,7 @@ public class SalesOrderLine
     public bool? IsBundledLine { get; set; } 
 
     [JsonProperty("dattocommercelineid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Dattocommercelineid { get; set; } 
+    public int? DattoCommercelineid { get; set; } 
 
     [JsonProperty("line_ticket_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? LineTicketId { get; set; } 
@@ -461,7 +462,7 @@ public class SalesOrderLine
     public string? ImportType { get; set; } 
 
     [JsonProperty("_isimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isimport { get; set; } 
+    public bool? IsImport { get; set; } 
 
     [JsonProperty("tax_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? TaxName { get; set; } 

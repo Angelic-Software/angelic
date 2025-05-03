@@ -56,7 +56,7 @@ public class XeroDetails
     public string? ItemGroupName { get; set; } 
 
     [JsonProperty("isdefault", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isdefault { get; set; } 
+    public bool? IsDefault { get; set; } 
 
     [JsonProperty("enablesync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Enablesync { get; set; } 

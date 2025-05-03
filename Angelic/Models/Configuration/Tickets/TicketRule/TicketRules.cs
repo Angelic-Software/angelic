@@ -1,7 +1,8 @@
 using System.CodeDom.Compiler;
-using Angelic.Models.Areas;
+using Angelic.Models.Clients;
 using Angelic.Models.Configuration.Integrations.Lookups;
 using Angelic.Models.Configuration.TeamsAndAgents.Agents;
+using Angelic.Models.Configuration.TeamsAndAgents.Agents.AgentNotifications;
 using Angelic.Models.Configuration.Tickets.Workflows;
 using Angelic.Models.Users;
 using Newtonsoft.Json;
@@ -48,7 +49,7 @@ public class TicketRules
     public int? NewStatusId { get; set; } 
 
     [JsonProperty("newstatus_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? NewstatusGuid { get; set; } 
+    public Guid? NewStatusGuid { get; set; } 
 
     [JsonProperty("new_sla_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? NewSlaId { get; set; } 
@@ -81,7 +82,7 @@ public class TicketRules
     public string? NewWorkflowName { get; set; } 
 
     [JsonProperty("dontshownotification", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Dontshownotification { get; set; } 
+    public bool? DontShownotification { get; set; } 
 
     [JsonProperty("criteria", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<TicketRulesCriteria>? Criteria { get; set; } 
@@ -159,7 +160,7 @@ public class TicketRules
     public string? Popupmsg { get; set; } 
 
     [JsonProperty("popup_notes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AreaPopup>? PopupNotes { get; set; } 
+    public ICollection<PopupNote>? PopupNotes { get; set; } 
 
     [JsonProperty("flowdetail_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? FlowdetailId { get; set; } 

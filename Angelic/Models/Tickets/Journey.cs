@@ -1,0 +1,69 @@
+using System.CodeDom.Compiler;
+using Newtonsoft.Json;
+
+namespace Angelic.Models.Tickets;
+
+[GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
+public class Journey
+{
+    [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public int? Id { get; set; } 
+
+    [JsonProperty("unum", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public int? Unum { get; set; } 
+
+    [JsonProperty("faultid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public int? FaultId { get; set; } 
+
+    [JsonProperty("actionnumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public int? ActionNumber { get; set; } 
+
+    [JsonProperty("description", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public string? Description { get; set; } 
+
+    [JsonProperty("startdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public DateTimeOffset? StartDate { get; set; } 
+
+    [JsonProperty("enddate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public DateTimeOffset? EndDate { get; set; } 
+
+    [JsonProperty("startodometer", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public double? StartOdometer { get; set; } 
+
+    [JsonProperty("endodometer", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public double? EndOdometer { get; set; } 
+
+    [JsonProperty("vehicle", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public string? Vehicle { get; set; } 
+
+    [JsonProperty("startgps", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public double? StartGps { get; set; } 
+
+    [JsonProperty("endgps", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public double? EndGps { get; set; } 
+
+    [JsonProperty("datereimbursed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public DateTimeOffset? DateReimbursed { get; set; } 
+
+    [JsonProperty("dateinvoicedmileage", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public DateTimeOffset? DateInvoicedMileage { get; set; } 
+
+    [JsonProperty("dateinvoicedtraveltime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public DateTimeOffset? DateInvoicedTravelTime { get; set; } 
+
+    [JsonProperty("ihidmileage", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public int? IHidMileage { get; set; } 
+
+    [JsonProperty("ihidtraveltime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public int? IHidTravelTime { get; set; } 
+
+    [JsonProperty("invoiceable", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public bool? Invoiceable { get; set; } 
+
+    [JsonProperty("type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public int? Type { get; set; } 
+
+    [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+    public string? Warning { get; set; } 
+
+}

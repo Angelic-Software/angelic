@@ -13,7 +13,7 @@ public class ContractTemplateDetail
     public int? Seq { get; set; } 
 
     [JsonProperty("billingtemplate_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? BillingtemplateId { get; set; } 
+    public int? BillingTemplateId { get; set; } 
 
     [JsonProperty("type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Type { get; set; } 

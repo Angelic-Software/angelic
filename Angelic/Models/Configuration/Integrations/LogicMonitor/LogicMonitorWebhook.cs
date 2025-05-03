@@ -31,7 +31,7 @@ public class LogicMonitorWebhook
     public string? Admin { get; set; } 
 
     [JsonProperty("ticketid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Ticketid { get; set; } 
+    public string? TicketId { get; set; } 
 
     [JsonProperty("halo_customer_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? HaloCustomerId { get; set; } 

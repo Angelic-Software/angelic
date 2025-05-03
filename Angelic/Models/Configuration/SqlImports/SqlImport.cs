@@ -56,7 +56,7 @@ public class SqlImport
     public string? DefaultSitename { get; set; } 
 
     [JsonProperty("lastrundate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Lastrundate { get; set; } 
+    public DateTimeOffset? LastRundate { get; set; } 
 
     [JsonProperty("nhdfield3", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Nhdfield3 { get; set; } 
@@ -89,16 +89,16 @@ public class SqlImport
     public bool? UseusersSite { get; set; } 
 
     [JsonProperty("dontupdatesite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Dontupdatesite { get; set; } 
+    public bool? DontUpdatesite { get; set; } 
 
     [JsonProperty("dontremoveusers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Dontremoveusers { get; set; } 
+    public bool? DontRemoveUsers { get; set; } 
 
     [JsonProperty("canupdaterecords", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? CanUpdaterecords { get; set; } 
 
     [JsonProperty("syncto3party", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Syncto3Party { get; set; } 
+    public bool? SyncTo3Party { get; set; } 
 
     [JsonProperty("halointegrator_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? HaloIntegratorLastSync { get; set; } 
@@ -122,19 +122,19 @@ public class SqlImport
     public bool? IncludeLinuxSoftware { get; set; } 
 
     [JsonProperty("dontupdatetoplevel", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Dontupdatetoplevel { get; set; } 
+    public bool? DontUpdateToplevel { get; set; } 
 
     [JsonProperty("donotvalidate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Donotvalidate { get; set; } 
+    public bool? DoNotValidate { get; set; } 
 
     [JsonProperty("assetimportidentifier", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Assetimportidentifier { get; set; } 
+    public int? AssetImportIdentifier { get; set; } 
 
     [JsonProperty("assetimportidentifier_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? AssetimportidentifierGuid { get; set; } 
+    public Guid? AssetImportIdentifierGuid { get; set; } 
 
     [JsonProperty("assetimportidentifier_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? AssetimportidentifierName { get; set; } 
+    public string? AssetImportIdentifierName { get; set; } 
 
     [JsonProperty("sql_provider", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? SqlProvider { get; set; } 
@@ -146,7 +146,7 @@ public class SqlImport
     public string? SqlDriver { get; set; } 
 
     [JsonProperty("dontupdatetype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Dontupdatetype { get; set; } 
+    public bool? DontUpdateType { get; set; } 
 
     [JsonProperty("sql_timeout", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? SqlTimeout { get; set; } 

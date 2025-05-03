@@ -2,6 +2,7 @@ using System.CodeDom.Compiler;
 using Angelic.Models.Assets;
 using Angelic.Models.Configuration.Tickets.Templates;
 using Angelic.Models.Configuration.Users;
+using Angelic.Models.Consignments;
 using Angelic.Models.Contracts;
 using Angelic.Models.Invoice;
 using Angelic.Models.KnowledgeBase;

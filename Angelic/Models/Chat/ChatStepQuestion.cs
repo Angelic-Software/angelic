@@ -10,7 +10,7 @@ public class ChatStepQuestion
     public int? Id { get; set; } 
 
     [JsonProperty("flowdetail_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? FlowdetailId { get; set; } 
+    public int? FlowDetailId { get; set; } 
 
     [JsonProperty("sequence", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Sequence { get; set; } 

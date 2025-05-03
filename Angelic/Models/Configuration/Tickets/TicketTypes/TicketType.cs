@@ -1,6 +1,6 @@
 using System.CodeDom.Compiler;
 using Angelic.Models.Appointments;
-using Angelic.Models.Areas;
+using Angelic.Models.Clients;
 using Angelic.Models.Configuration.Custom.CustomTabs;
 using Angelic.Models.Configuration.Language;
 using Angelic.Models.Configuration.SelfServicePortal;
@@ -46,7 +46,7 @@ public class TicketType
     public int? TicketCount { get; set; } 
 
     [JsonProperty("cancreate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Cancreate { get; set; } 
+    public bool? CanCreate { get; set; } 
 
     [JsonProperty("agentscanselect", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Agentscanselect { get; set; } 
@@ -55,7 +55,7 @@ public class TicketType
     public int? ItilRequesttype { get; set; } 
 
     [JsonProperty("allowattachments", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Allowattachments { get; set; } 
+    public bool? AllowAttachments { get; set; } 
 
     [JsonProperty("copyattachmentstochild", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Copyattachmentstochild { get; set; } 
@@ -70,7 +70,7 @@ public class TicketType
     public ICollection<int>? Fieldidlist { get; set; } 
 
     [JsonProperty("enduserscanselect", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Enduserscanselect { get; set; } 
+    public bool? EndUserscanselect { get; set; } 
 
     [JsonProperty("anonymouscanselect", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Anonymouscanselect { get; set; } 
@@ -100,13 +100,13 @@ public class TicketType
     public int? Pendingrequestswithupdates { get; set; } 
 
     [JsonProperty("portalcanreopen", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Portalcanreopen { get; set; } 
+    public bool? PortalCanReopen { get; set; } 
 
     [JsonProperty("closedrequestswithupdatesincpending", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Closedrequestswithupdatesincpending { get; set; } 
 
     [JsonProperty("includeinmobiledbsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Includeinmobiledbsync { get; set; } 
+    public bool? IncludeInmobiledbsync { get; set; } 
 
     [JsonProperty("workflow_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? WorkflowId { get; set; } 
@@ -187,16 +187,16 @@ public class TicketType
     public string? DefaultDetailsHtml { get; set; } 
 
     [JsonProperty("default_excludefromsla", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? DefaultExcludefromsla { get; set; } 
+    public bool? DefaultExcludeFromSla { get; set; } 
 
     [JsonProperty("default_showforusers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? DefaultShowForusers { get; set; } 
+    public bool? DefaultShowForUsers { get; set; } 
 
     [JsonProperty("default_sendack", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? DefaultSendack { get; set; } 
+    public int? DefaultSendAck { get; set; } 
 
     [JsonProperty("default_sendemail", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? DefaultSendemail { get; set; } 
+    public bool? DefaultSendEmail { get; set; } 
 
     [JsonProperty("default_matchedkbid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? DefaultMatchedkbid { get; set; } 
@@ -205,13 +205,13 @@ public class TicketType
     public string? DefaultKbName { get; set; } 
 
     [JsonProperty("default_kb_accessible_for_enduser", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? DefaultKbAccessibleForEnduser { get; set; } 
+    public bool? DefaultKbAccessibleForEndUser { get; set; } 
 
     [JsonProperty("allowall_actions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? AllowallActions { get; set; } 
+    public bool? AllowAllActions { get; set; } 
 
     [JsonProperty("allowall_team", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? AllowallTeam { get; set; } 
+    public bool? AllowAllTeam { get; set; } 
 
     [JsonProperty("allowed_teams", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<SectionRequestType>? AllowedTeams { get; set; } 
@@ -220,31 +220,31 @@ public class TicketType
     public ICollection<Restriction>? AllowedActions { get; set; } 
 
     [JsonProperty("allowall_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? AllowallStatus { get; set; } 
+    public bool? AllowAllStatus { get; set; } 
 
     [JsonProperty("allowed_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<TicketTypeStatus>? AllowedStatus { get; set; } 
 
     [JsonProperty("allowall_category1", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? AllowallCategory1 { get; set; } 
+    public bool? AllowAllCategory1 { get; set; } 
 
     [JsonProperty("allowed_category1", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<CategoryRestriction>? AllowedCategory1 { get; set; } 
 
     [JsonProperty("allowall_category2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? AllowallCategory2 { get; set; } 
+    public bool? AllowAllCategory2 { get; set; } 
 
     [JsonProperty("allowed_category2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<CategoryRestriction>? AllowedCategory2 { get; set; } 
 
     [JsonProperty("allowall_category3", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? AllowallCategory3 { get; set; } 
+    public bool? AllowAllCategory3 { get; set; } 
 
     [JsonProperty("allowed_category3", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<CategoryRestriction>? AllowedCategory3 { get; set; } 
 
     [JsonProperty("allowall_category4", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? AllowallCategory4 { get; set; } 
+    public bool? AllowAllCategory4 { get; set; } 
 
     [JsonProperty("allowed_category4", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<CategoryRestriction>? AllowedCategory4 { get; set; } 
@@ -304,10 +304,10 @@ public class TicketType
     public string? AcknowledgementtemplateoohName { get; set; } 
 
     [JsonProperty("dontsendslareminders", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Dontsendslareminders { get; set; } 
+    public bool? DontSendslareminders { get; set; } 
 
     [JsonProperty("dontusependingclosure", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Dontusependingclosure { get; set; } 
+    public bool? DontUsependingclosure { get; set; } 
 
     [JsonProperty("database_lookup_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? DatabaseLookupId { get; set; } 
@@ -334,7 +334,7 @@ public class TicketType
     public bool? Mustclosechildbeforeclosurebool { get; set; } 
 
     [JsonProperty("default_sendremoteinvite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? DefaultSendremoteinvite { get; set; } 
+    public int? DefaultSendRemoteinvite { get; set; } 
 
     [JsonProperty("logtimeindays", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Logtimeindays { get; set; } 
@@ -355,7 +355,7 @@ public class TicketType
     public string? ChildticketcolumnsoverrideName { get; set; } 
 
     [JsonProperty("showunborntab", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Showunborntab { get; set; } 
+    public bool? ShowUnborntab { get; set; } 
 
     [JsonProperty("allowcustomiseunborn", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Allowcustomiseunborn { get; set; } 
@@ -391,7 +391,7 @@ public class TicketType
     public int? AutoCloseHours { get; set; } 
 
     [JsonProperty("allowed_clients", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AreaRequestType>? AllowedClients { get; set; } 
+    public ICollection<TicketTypeAllowedClients>? AllowedClients { get; set; } 
 
     [JsonProperty("closedrequestreplylimit", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Closedrequestreplylimit { get; set; } 
@@ -469,7 +469,7 @@ public class TicketType
     public bool? DisplayAuditTab { get; set; } 
 
     [JsonProperty("overwrite_showforusers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? OverwriteShowForusers { get; set; } 
+    public bool? OverwriteShowForUsers { get; set; } 
 
     [JsonProperty("default_services", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<ServSiteList>? DefaultServices { get; set; } 
@@ -481,7 +481,7 @@ public class TicketType
     public int? AccessControlLevel { get; set; } 
 
     [JsonProperty("showdownvote", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Showdownvote { get; set; } 
+    public bool? ShowDownvote { get; set; } 
 
     [JsonProperty("addactionstolinked", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Addactionstolinked { get; set; } 
@@ -490,7 +490,7 @@ public class TicketType
     public bool? Addnoteonlytolinked { get; set; } 
 
     [JsonProperty("dontconfirm_updateparent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? DontconfirmUpdateparent { get; set; } 
+    public bool? DontConfirmUpdateparent { get; set; } 
 
     [JsonProperty("default_impact", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? DefaultImpact { get; set; } 
@@ -538,7 +538,7 @@ public class TicketType
     public int? DefaultTab { get; set; } 
 
     [JsonProperty("defaultsync_to_sentinel", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? DefaultsyncToSentinel { get; set; } 
+    public bool? DefaultSyncToSentinel { get; set; } 
 
     [JsonProperty("adduserupdatestochildren", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Adduserupdatestochildren { get; set; } 
@@ -547,7 +547,7 @@ public class TicketType
     public int? DefaultTargetDate { get; set; } 
 
     [JsonProperty("allowed_resourcebooking_teams", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<SectionRequestType>? AllowedResourcebookingTeams { get; set; } 
+    public ICollection<SectionRequestType>? AllowedResourceBookingTeams { get; set; } 
 
     [JsonProperty("defaultresourcetype_name_agent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? DefaultResourcetypeNameAgent { get; set; } 
@@ -583,7 +583,7 @@ public class TicketType
     public bool? ShowOpendevicetickets { get; set; } 
 
     [JsonProperty("showuserfeed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Showuserfeed { get; set; } 
+    public bool? ShowUserfeed { get; set; } 
 
     [JsonProperty("updateservicestatus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Updateservicestatus { get; set; } 
@@ -598,13 +598,13 @@ public class TicketType
     public bool? ShowAutomationstab { get; set; } 
 
     [JsonProperty("showbillingtab", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Showbillingtab { get; set; } 
+    public bool? ShowBillingTab { get; set; } 
 
     [JsonProperty("showsuggestionstab", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Showsuggestionstab { get; set; } 
+    public bool? ShowSuggestionstab { get; set; } 
 
     [JsonProperty("showoppcontacttab", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowOppcontacttab { get; set; } 
+    public bool? ShowOppContacttab { get; set; } 
 
     [JsonProperty("showactivestatuskanban", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? ShowActivestatuskanban { get; set; } 
@@ -619,7 +619,7 @@ public class TicketType
     public string? Submitlabeloverride { get; set; } 
 
     [JsonProperty("allowall_appointment_types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? AllowallAppointmentTypes { get; set; } 
+    public bool? AllowAllAppointmentTypes { get; set; } 
 
     [JsonProperty("include_appointments_scheduled_hours", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? IncludeAppointmentsScheduledHours { get; set; } 
@@ -631,10 +631,10 @@ public class TicketType
     public ICollection<AppointmentTypeTicketType>? AllowedAppointmentTypes { get; set; } 
 
     [JsonProperty("allowall_iframe_customtabs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? AllowallIframeCustomtabs { get; set; } 
+    public bool? AllowAllIframeCustomTabs { get; set; } 
 
     [JsonProperty("allowed_iframe_customtabs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<IframeTabRequestType>? AllowedIframeCustomtabs { get; set; } 
+    public ICollection<IframeTabRequestType>? AllowedIframeCustomTabs { get; set; } 
 
     [JsonProperty("default_sync_to_salesforce", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? DefaultSyncToSalesforce { get; set; } 
@@ -658,7 +658,7 @@ public class TicketType
     public bool? PinImportantActions { get; set; } 
 
     [JsonProperty("showdecendantwarningoptions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Showdecendantwarningoptions { get; set; } 
+    public bool? ShowDecendantwarningoptions { get; set; } 
 
     [JsonProperty("statusafterresourcebook", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Statusafterresourcebook { get; set; } 
@@ -686,7 +686,7 @@ public class TicketType
 
     [JsonProperty("newrequestmessage", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     [System.ComponentModel.DataAnnotations.StringLength(4000)]
-    public string? Newrequestmessage { get; set; } 
+    public string? NewRequestMessage { get; set; } 
 
     [JsonProperty("allow_anonymous_logging", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? AllowAnonymousLogging { get; set; } 
@@ -707,7 +707,7 @@ public class TicketType
     public string? DefaultPagerdutyserviceName { get; set; } 
 
     [JsonProperty("defaultsidebarcollapsed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Defaultsidebarcollapsed { get; set; } 
+    public bool? DefaultSidebarcollapsed { get; set; } 
 
     [JsonProperty("logonbehalflabeloverride", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Logonbehalflabeloverride { get; set; } 
@@ -728,7 +728,7 @@ public class TicketType
     public ICollection<TabConfig>? TabConfig { get; set; } 
 
     [JsonProperty("enableusermentions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Enableusermentions { get; set; } 
+    public bool? EnableUsermentions { get; set; } 
 
     [JsonProperty("sladontclose", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Sladontclose { get; set; } 
@@ -749,7 +749,7 @@ public class TicketType
     public int? DefaultKanbanView { get; set; } 
 
     [JsonProperty("showgeneralsurveyfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Showgeneralsurveyfields { get; set; } 
+    public bool? ShowGeneralsurveyfields { get; set; } 
 
     [JsonProperty("default_send_to_pagerduty", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? DefaultSendToPagerduty { get; set; } 
@@ -785,10 +785,10 @@ public class TicketType
     public bool? ShowChildAssets { get; set; } 
 
     [JsonProperty("hide_anon_phonenumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? HideAnonPhonenumber { get; set; } 
+    public bool? HideAnonPhoneNumber { get; set; } 
 
     [JsonProperty("showconfirmemail", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowConfirmemail { get; set; } 
+    public bool? ShowConfirmEmail { get; set; } 
 
     [JsonProperty("ticket_status_after_appointment", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? TicketStatusAfterAppointment { get; set; } 
@@ -812,10 +812,10 @@ public class TicketType
     public bool? ShowOpensuppliertickets { get; set; } 
 
     [JsonProperty("allowall_suggestion_faqlists", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? AllowallSuggestionFaqlists { get; set; } 
+    public bool? AllowAllSuggestionFaqLists { get; set; } 
 
     [JsonProperty("allowed_suggestion_faqlists", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<FaqRequestType>? AllowedSuggestionFaqlists { get; set; } 
+    public ICollection<FaqRequestType>? AllowedSuggestionFaqLists { get; set; } 
 
     [JsonProperty("startdate_validation", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? StartDateValidation { get; set; } 
@@ -842,7 +842,7 @@ public class TicketType
     public bool? ShowTeamsChatsAsTabs { get; set; } 
 
     [JsonProperty("default_servicenow_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? DefaultServicenowType { get; set; } 
+    public int? DefaultServiceNowType { get; set; } 
 
     [JsonProperty("enable_task_dependencies", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? EnableTaskDependencies { get; set; } 
@@ -881,13 +881,13 @@ public class TicketType
     public int? HideAnonEmail { get; set; } 
 
     [JsonProperty("continue_autorelease", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ContinueAutorelease { get; set; } 
+    public bool? ContinueAutoRelease { get; set; } 
 
     [JsonProperty("do_ai_survey", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? DoAiSurvey { get; set; } 
 
     [JsonProperty("enduserscanlog", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Enduserscanlog { get; set; } 
+    public bool? EndUserscanlog { get; set; } 
 
     [JsonProperty("anonymouscanlog", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Anonymouscanlog { get; set; } 
@@ -908,13 +908,13 @@ public class TicketType
     public int? LoadBalanceScheduleFrequency { get; set; } 
 
     [JsonProperty("load_balance_schedule", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public AssignSchedule? LoadBalanceSchedule { get; set; } 
+    public TicketTypeLoadBalanceSchedule? LoadBalanceSchedule { get; set; } 
 
     [JsonProperty("allowall_child_tickettypes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? AllowallChildTicketTypes { get; set; } 
+    public bool? AllowAllChildTicketTypes { get; set; } 
 
     [JsonProperty("allowed_child_tickettypes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ChildRequestType>? AllowedChildTicketTypes { get; set; } 
+    public ICollection<AllowedChildTicketType>? AllowedChildTicketTypes { get; set; } 
 
     [JsonProperty("portal_summary_hint_is_placeholder", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? PortalSummaryHintIsPlaceholder { get; set; } 
@@ -938,10 +938,10 @@ public class TicketType
     public int? ShowAllRelated { get; set; } 
 
     [JsonProperty("hideuserdetails", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Hideuserdetails { get; set; } 
+    public bool? HideUserdetails { get; set; } 
 
     [JsonProperty("allowanonattachments", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Allowanonattachments { get; set; } 
+    public bool? AllowAnonattachments { get; set; } 
 
     [JsonProperty("inherit_parent_category1", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? InheritParentCategory1 { get; set; } 
@@ -980,10 +980,10 @@ public class TicketType
     public int? ProjectType { get; set; } 
 
     [JsonProperty("kanbanstatuschoice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<StringIdNameKeyPair>? Kanbanstatuschoice { get; set; } 
+    public ICollection<StringIdNameKeyPair>? KanbanStatusChoice { get; set; } 
 
     [JsonProperty("kanbanstatuschoice_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? KanbanstatuschoiceList { get; set; } 
+    public string? KanbanStatusChoiceList { get; set; } 
 
     [JsonProperty("email_start_tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? EmailStartTag { get; set; } 

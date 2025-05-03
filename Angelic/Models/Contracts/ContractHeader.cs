@@ -1,6 +1,7 @@
 using System.CodeDom.Compiler;
 using Angelic.Models.Assets;
 using Angelic.Models.Attachments;
+using Angelic.Models.Configuration;
 using Angelic.Models.Configuration.Billing.ChargeRates;
 using Angelic.Models.Configuration.Billing.Prepay;
 using Angelic.Models.Configuration.Custom;
@@ -82,13 +83,13 @@ public class ContractHeader
     public int? SlaId { get; set; } 
 
     [JsonProperty("periodicinvoicenextdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Periodicinvoicenextdate { get; set; } 
+    public DateTimeOffset? PeriodIcinvoicenextdate { get; set; } 
 
     [JsonProperty("next_invoice_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? NextInvoiceDate { get; set; } 
 
     [JsonProperty("periodchargeamount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Periodchargeamount { get; set; } 
+    public double? PeriodChargeamount { get; set; } 
 
     [JsonProperty("note", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Note { get; set; } 
@@ -121,10 +122,10 @@ public class ContractHeader
     public int? Paymentscheme { get; set; } 
 
     [JsonProperty("chargehoursperperiod", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Chargehoursperperiod { get; set; } 
+    public double? ChargeHoursperperiod { get; set; } 
 
     [JsonProperty("chargerollover", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Chargerollover { get; set; } 
+    public bool? ChargeRollover { get; set; } 
 
     [JsonProperty("outofhoursmultiplier", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? Outofhoursmultiplier { get; set; } 
@@ -133,7 +134,7 @@ public class ContractHeader
     public double? Requestminimum { get; set; } 
 
     [JsonProperty("invoiceminimum", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Invoiceminimum { get; set; } 
+    public double? InvoiceMinimum { get; set; } 
 
     [JsonProperty("allowfixedprice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Allowfixedprice { get; set; } 
@@ -145,28 +146,28 @@ public class ContractHeader
     public bool? Allowprepay { get; set; } 
 
     [JsonProperty("chargeperdevice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Chargeperdevice { get; set; } 
+    public bool? ChargePerDevice { get; set; } 
 
     [JsonProperty("prepayrecurringcharge", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Prepayrecurringcharge { get; set; } 
+    public double? PrepayRecurringCharge { get; set; } 
 
     [JsonProperty("chargeprepaytravel", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Chargeprepaytravel { get; set; } 
+    public bool? ChargePrepayTravel { get; set; } 
 
     [JsonProperty("chargeprepaymileage", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Chargeprepaymileage { get; set; } 
+    public bool? ChargePrepaymileage { get; set; } 
 
     [JsonProperty("chargepygtravel", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Chargepygtravel { get; set; } 
+    public bool? ChargePygtravel { get; set; } 
 
     [JsonProperty("chargepygmileage", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Chargepygmileage { get; set; } 
+    public bool? ChargePygmileage { get; set; } 
 
     [JsonProperty("onlybillatendofperiod", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Onlybillatendofperiod { get; set; } 
 
     [JsonProperty("unmatchedcombinations", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Unmatchedcombinations { get; set; } 
+    public int? UnmatchedCombinations { get; set; } 
 
     [JsonProperty("termmonths", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Termmonths { get; set; } 
@@ -175,28 +176,28 @@ public class ContractHeader
     public double? Percentageincrease { get; set; } 
 
     [JsonProperty("nextincrementdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Nextincrementdate { get; set; } 
+    public DateTimeOffset? NextIncrementdate { get; set; } 
 
     [JsonProperty("datereceived", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Datereceived { get; set; } 
+    public DateTimeOffset? DateReceived { get; set; } 
 
     [JsonProperty("invoicedescription", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Invoicedescription { get; set; } 
+    public string? InvoiceDescription { get; set; } 
 
     [JsonProperty("datesent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Datesent { get; set; } 
+    public DateTimeOffset? DateSent { get; set; } 
 
     [JsonProperty("paymentmethod", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Paymentmethod { get; set; } 
+    public int? PaymentMethod { get; set; } 
 
     [JsonProperty("dontsendalarm", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Dontsendalarm { get; set; } 
+    public bool? DontSendAlarm { get; set; } 
 
     [JsonProperty("createdfrom_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? CreatedfromId { get; set; } 
+    public int? CreatedFromId { get; set; } 
 
     [JsonProperty("costperperiod", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Costperperiod { get; set; } 
+    public double? CostPerPeriod { get; set; } 
 
     [JsonProperty("rollingcontract", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Rollingcontract { get; set; } 
@@ -205,7 +206,7 @@ public class ContractHeader
     public int? Previouscontract { get; set; } 
 
     [JsonProperty("dontinvoice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Dontinvoice { get; set; } 
+    public bool? DontInvoice { get; set; } 
 
     [JsonProperty("ohid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Ohid { get; set; } 
@@ -220,7 +221,7 @@ public class ContractHeader
     public bool? Schedulesendaccountmanager { get; set; } 
 
     [JsonProperty("accountsdesc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Accountsdesc { get; set; } 
+    public string? AccountsDesc { get; set; } 
 
     [JsonProperty("hasactions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Hasactions { get; set; } 
@@ -229,7 +230,7 @@ public class ContractHeader
     public int? BillingPeriods { get; set; } 
 
     [JsonProperty("assets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<DeviceList>? Assets { get; set; } 
+    public ICollection<AssetList>? Assets { get; set; } 
 
     [JsonProperty("users", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<UsersList>? Users { get; set; } 
@@ -238,7 +239,7 @@ public class ContractHeader
     public ICollection<ContractPeriod>? Periods { get; set; } 
 
     [JsonProperty("surchargeid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Surchargeid { get; set; } 
+    public int? SurchargeId { get; set; } 
 
     [JsonProperty("chargerate_method", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ChargeRateMethod { get; set; } 
@@ -250,7 +251,7 @@ public class ContractHeader
     public ICollection<Lookup>? ChargeRates { get; set; } 
 
     [JsonProperty("_isimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isimport { get; set; } 
+    public bool? IsImport { get; set; } 
 
     [JsonProperty("_ignore_mandatory", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? IgnoreMandatory { get; set; } 
@@ -262,10 +263,10 @@ public class ContractHeader
     public string? BillingPeriodString { get; set; } 
 
     [JsonProperty("dontchargeforitems", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Dontchargeforitems { get; set; } 
+    public bool? DontChargeForItems { get; set; } 
 
     [JsonProperty("custombuttons", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CustomButton>? Custombuttons { get; set; } 
+    public ICollection<CustomButton>? CustomButtons { get; set; } 
 
     [JsonProperty("_print_preview", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? PrintPreview { get; set; } 
@@ -274,7 +275,7 @@ public class ContractHeader
     public bool? PrintGenerate { get; set; } 
 
     [JsonProperty("printhtml", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Printhtml { get; set; } 
+    public string? PrintHtml { get; set; } 
 
     [JsonProperty("pdf_attachment_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? PdfAttachmentId { get; set; } 
@@ -298,7 +299,7 @@ public class ContractHeader
     public bool? SendAppointmentInvites { get; set; } 
 
     [JsonProperty("autotaskid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Autotaskid { get; set; } 
+    public int? AutoTaskId { get; set; } 
 
     [JsonProperty("import_user", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ImportUser { get; set; } 
@@ -325,13 +326,13 @@ public class ContractHeader
     public string? Warning { get; set; } 
 
     [JsonProperty("contract_prepaytotal", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? ContractPrepaytotal { get; set; } 
+    public double? ContractPrepayTotal { get; set; } 
 
     [JsonProperty("contract_prepayused", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? ContractPrepayused { get; set; } 
+    public double? ContractPrepayUsed { get; set; } 
 
     [JsonProperty("contract_prepaybalance", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? ContractPrepaybalance { get; set; } 
+    public double? ContractPrepayBalance { get; set; } 
 
     [JsonProperty("contract_prepayhistory", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<PrepayHistory>? ContractPrepayhistory { get; set; } 
@@ -340,31 +341,31 @@ public class ContractHeader
     public ICollection<PrepayPeriod>? ContractPeriods { get; set; } 
 
     [JsonProperty("contract_prepayasamount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ContractPrepayasamount { get; set; } 
+    public bool? ContractPrepayAsAmount { get; set; } 
 
     [JsonProperty("prepay_periods", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<PrepayPeriod>? PrepayPeriods { get; set; } 
 
     [JsonProperty("prepayrecurringchargenextdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Prepayrecurringchargenextdate { get; set; } 
+    public DateTimeOffset? PrepayRecurringChargeNextDate { get; set; } 
 
     [JsonProperty("prepayrecurringhours", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Prepayrecurringhours { get; set; } 
+    public double? PrepayRecurringHours { get; set; } 
 
     [JsonProperty("billforrecurringprepayamount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Billforrecurringprepayamount { get; set; } 
 
     [JsonProperty("prepayrecurringminimumdeduction", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Prepayrecurringminimumdeduction { get; set; } 
+    public double? PrepayRecurringMinimumDeduction { get; set; } 
 
     [JsonProperty("prepayrecurringminimumdeductiononlyactive", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Prepayrecurringminimumdeductiononlyactive { get; set; } 
+    public bool? PrepayRecurringMinimumDeductionOnlyActive { get; set; } 
 
     [JsonProperty("prepayrecurringautomaticdeduction", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Prepayrecurringautomaticdeduction { get; set; } 
+    public double? PrepayRecurringAutomaticDeduction { get; set; } 
 
     [JsonProperty("iscontractdetails", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Iscontractdetails { get; set; } 
+    public bool? IsContractdetails { get; set; } 
 
     [JsonProperty("labournominalcodeoverride", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Labournominalcodeoverride { get; set; } 
@@ -373,7 +374,7 @@ public class ContractHeader
     public string? LabournominalcodeoverrideName { get; set; } 
 
     [JsonProperty("prepayrecurringexpirymonths", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Prepayrecurringexpirymonths { get; set; } 
+    public int? PrepayRecurringexpirymonths { get; set; } 
 
     [JsonProperty("contracts", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<ContractHeaderContract>? Contracts { get; set; } 
@@ -394,7 +395,7 @@ public class ContractHeader
     public ICollection<AttachmentList>? Attachments { get; set; } 
 
     [JsonProperty("billingplans", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ContractDetail>? Billingplans { get; set; } 
+    public ICollection<ContractDetail>? BillingPlans { get; set; } 
 
     [JsonProperty("send_to_oracle", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? SendToOracle { get; set; } 
@@ -403,7 +404,7 @@ public class ContractHeader
     public int? OracleInvoiceId { get; set; } 
 
     [JsonProperty("datesent_to_oracle", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? DatesentToOracle { get; set; } 
+    public DateTimeOffset? DateSentToOracle { get; set; } 
 
     [JsonProperty("prepay_itemid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? PrepayItemid { get; set; } 
@@ -415,19 +416,19 @@ public class ContractHeader
     public int? CreatedFromOrder { get; set; } 
 
     [JsonProperty("autotopupthreshhold", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Autotopupthreshhold { get; set; } 
+    public double? AutoTopUpthreshhold { get; set; } 
 
     [JsonProperty("autotopuptoamount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Autotopuptoamount { get; set; } 
+    public double? AutoTopUptoamount { get; set; } 
 
     [JsonProperty("autotopupcostperhour", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Autotopupcostperhour { get; set; } 
+    public double? AutoTopUpcostperhour { get; set; } 
 
     [JsonProperty("autotopupbyamount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Autotopupbyamount { get; set; } 
+    public double? AutoTopUpbyamount { get; set; } 
 
     [JsonProperty("extratabs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<Tabname>? Extratabs { get; set; } 
+    public ICollection<TabName>? ExtraTabs { get; set; } 
 
     [JsonProperty("approvername", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Approvername { get; set; } 
@@ -469,7 +470,7 @@ public class ContractHeader
     public string? ContractTypeName { get; set; } 
 
     [JsonProperty("prepayrecurringchargebp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Prepayrecurringchargebp { get; set; } 
+    public int? PrepayRecurringChargeBp { get; set; } 
 
     [JsonProperty("force_recalculation", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? ForceRecalculation { get; set; } 
@@ -487,19 +488,19 @@ public class ContractHeader
     public ICollection<CustomField>? CustomFields { get; set; } 
 
     [JsonProperty("createdby_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? CreatedbyId { get; set; } 
+    public int? CreatedById { get; set; } 
 
     [JsonProperty("createdby_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? CreatedbyName { get; set; } 
+    public string? CreatedByName { get; set; } 
 
     [JsonProperty("billingcategory", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Billingcategory { get; set; } 
+    public int? BillingCategory { get; set; } 
 
     [JsonProperty("_importtypeid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ImportTypeId { get; set; } 
 
     [JsonProperty("_importthirdpartyid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Importthirdpartyid { get; set; } 
+    public string? ImportThirdPartyId { get; set; } 
 
     [JsonProperty("_importtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ImportType { get; set; } 

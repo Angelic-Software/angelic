@@ -10,7 +10,7 @@ namespace Angelic.Models.Configuration.Integrations.Okta;
         public int? Id { get; set; } 
 
         [JsonProperty("siteid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Siteid { get; set; } 
+        public int? SiteId { get; set; } 
 
         [JsonProperty("site_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? SiteName { get; set; } 
@@ -28,7 +28,7 @@ namespace Angelic.Models.Configuration.Integrations.Okta;
         public string? GroupName { get; set; } 
 
         [JsonProperty("roleid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Roleid { get; set; } 
+        public int? RoleId { get; set; } 
 
         [JsonProperty("applicationid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? ApplicationId { get; set; } 
@@ -40,7 +40,7 @@ namespace Angelic.Models.Configuration.Integrations.Okta;
         public bool? Filterbyapp { get; set; } 
 
         [JsonProperty("userroleid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Userroleid { get; set; } 
+        public int? UserRoleId { get; set; } 
 
         [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Warning { get; set; } 

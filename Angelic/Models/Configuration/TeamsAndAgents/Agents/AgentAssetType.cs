@@ -28,13 +28,13 @@ public class AgentAssetType
     public string? RoleName { get; set; } 
 
     [JsonProperty("cancreate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Cancreate { get; set; } 
+    public bool? CanCreate { get; set; } 
 
     [JsonProperty("canview", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Canview { get; set; } 
 
     [JsonProperty("canedit", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Canedit { get; set; } 
+    public bool? CanEdit { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

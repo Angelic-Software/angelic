@@ -1,5 +1,6 @@
 using System.CodeDom.Compiler;
-using Angelic.Models.Areas;
+using Angelic.Models.Clients;
+using Angelic.Models.Configuration.Assets;
 using Angelic.Models.Configuration.Integrations.Microsoft.Azure.AzureDelta;
 using Angelic.Models.KeyPairs;
 using Newtonsoft.Json;
@@ -175,7 +176,7 @@ public class AzureAdConnection
     public string? TopLevelName { get; set; } 
 
     [JsonProperty("mappings_client", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AreaAzureTenant>? MappingsClient { get; set; } 
+    public ICollection<ClientAzureTenant>? MappingsClient { get; set; } 
 
     [JsonProperty("default_ticket_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? DefaultTicketType { get; set; } 
@@ -220,7 +221,7 @@ public class AzureAdConnection
     public ICollection<string>? CurrentScopes { get; set; } 
 
     [JsonProperty("_dosave", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Dosave { get; set; } 
+    public bool? DoSave { get; set; } 
 
     [JsonProperty("dont_sync_new_tenants", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? DontSyncNewTenants { get; set; } 
@@ -334,7 +335,7 @@ public class AzureAdConnection
     public bool? Confirmmanagedidentitysetup { get; set; } 
 
     [JsonProperty("_confirmclientcredentialssetup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Confirmclientcredentialssetup { get; set; } 
+    public bool? ConfirmClientCredentialsSetup { get; set; } 
 
     [JsonProperty("allow_presence_notifications", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? AllowPresenceNotifications { get; set; } 

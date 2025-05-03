@@ -18,34 +18,34 @@ public class EmailStore
     public string? Emailsubject { get; set; } 
 
     [JsonProperty("emailbody", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Emailbody { get; set; } 
+    public string? EmailBody { get; set; } 
 
     [JsonProperty("emailbody_html", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? EmailbodyHtml { get; set; } 
+    public string? EmailBodyHtml { get; set; } 
 
     [JsonProperty("emailto", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Emailto { get; set; } 
+    public string? EmailTo { get; set; } 
 
     [JsonProperty("emailcc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Emailcc { get; set; } 
+    public string? EmailCc { get; set; } 
 
     [JsonProperty("dateemailed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Dateemailed { get; set; } 
+    public DateTimeOffset? DateEmailed { get; set; } 
 
     [JsonProperty("emailattachments", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Emailattachments { get; set; } 
+    public string? EmailAttachments { get; set; } 
 
     [JsonProperty("messagegroup_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? MessageGroupId { get; set; } 
 
     [JsonProperty("faultid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Faultid { get; set; } 
+    public int? FaultId { get; set; } 
 
     [JsonProperty("templateid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Templateid { get; set; } 
 
     [JsonProperty("emailbcc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Emailbcc { get; set; } 
+    public string? EmailBcc { get; set; } 
 
     [JsonProperty("keymessage", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Keymessage { get; set; } 
@@ -102,7 +102,7 @@ public class EmailStore
     public int? SalesMailboxOverrideId { get; set; } 
 
     [JsonProperty("datecreated", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Datecreated { get; set; } 
+    public DateTimeOffset? DateCreated { get; set; } 
 
     [JsonProperty("contract_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ContractId { get; set; } 
@@ -114,7 +114,7 @@ public class EmailStore
     public ICollection<int>? BulkUserIdArray { get; set; } 
 
     [JsonProperty("_isbatch", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isbatch { get; set; } 
+    public bool? IsBatch { get; set; } 
 
     [JsonProperty("kb_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? KbId { get; set; } 

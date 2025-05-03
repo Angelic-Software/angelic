@@ -61,10 +61,10 @@ public class InvoiceDetail
     public bool? Itemonorder { get; set; } 
 
     [JsonProperty("dsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Dsite { get; set; } 
+    public int? DSite { get; set; } 
 
     [JsonProperty("ddevnum", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Ddevnum { get; set; } 
+    public int? DDevNum { get; set; } 
 
     [JsonProperty("_itemid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Itemid { get; set; } 
@@ -175,7 +175,7 @@ public class InvoiceDetail
     public string? ProrataLongdescription { get; set; } 
 
     [JsonProperty("isinactive", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isinactive { get; set; } 
+    public bool? IsInactive { get; set; } 
 
     [JsonProperty("period_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? PeriodType { get; set; } 
@@ -250,10 +250,10 @@ public class InvoiceDetail
     public DateTimeOffset? EndDate { get; set; } 
 
     [JsonProperty("autorenew", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Autorenew { get; set; } 
+    public bool? AutoRenew { get; set; } 
 
     [JsonProperty("autorenewperiod", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Autorenewperiod { get; set; } 
+    public int? AutoRenewperiod { get; set; } 
 
     [JsonProperty("intacct_location_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? IntacctLocationId { get; set; } 
@@ -268,7 +268,7 @@ public class InvoiceDetail
     public bool? HideItems { get; set; } 
 
     [JsonProperty("includegrouppriceandqty", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Includegrouppriceandqty { get; set; } 
+    public bool? IncludeGrouppriceandqty { get; set; } 
 
     [JsonProperty("auto_increase_period", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? AutoIncreasePeriod { get; set; } 
@@ -475,7 +475,7 @@ public class InvoiceDetail
     public string? ImportType { get; set; } 
 
     [JsonProperty("_isimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isimport { get; set; } 
+    public bool? IsImport { get; set; } 
 
     [JsonProperty("tax_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? TaxName { get; set; } 

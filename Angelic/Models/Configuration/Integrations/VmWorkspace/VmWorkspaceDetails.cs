@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Models.Configuration.Assets;
 using Angelic.Models.KeyPairs;
 using Newtonsoft.Json;
 
@@ -20,7 +21,7 @@ namespace Angelic.Models.Configuration.Integrations.VmWorkspace;
         public string? Url { get; set; } 
 
         [JsonProperty("vmworkspace_clientid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? VmworkspaceClientId { get; set; } 
+        public string? VmWorkspaceClientId { get; set; } 
 
         [JsonProperty("new_integration_key", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? NewIntegrationKey { get; set; } 
@@ -35,19 +36,19 @@ namespace Angelic.Models.Configuration.Integrations.VmWorkspace;
         public string? DefaultDevicesiteName { get; set; } 
 
         [JsonProperty("default_devicetype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? DefaultDevicetype { get; set; } 
+        public int? DefaultDeviceType { get; set; } 
 
         [JsonProperty("default_devicetypename", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? DefaultDevicetypename { get; set; } 
+        public string? DefaultDeviceTypeName { get; set; } 
 
         [JsonProperty("assetimportidentifier", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Assetimportidentifier { get; set; } 
+        public int? AssetImportIdentifier { get; set; } 
 
         [JsonProperty("assetimportidentifier_fieldname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? AssetimportidentifierFieldName { get; set; } 
+        public string? AssetImportIdentifierFieldName { get; set; } 
 
         [JsonProperty("vmworkspace_fieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<IntegrationFieldMapping>? VmworkspaceFieldMappings { get; set; } 
+        public ICollection<IntegrationFieldMapping>? VmWorkspaceFieldMappings { get; set; } 
 
         [JsonProperty("sitemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<IntegrationSiteMapping>? Sitemappings { get; set; } 
@@ -59,7 +60,7 @@ namespace Angelic.Models.Configuration.Integrations.VmWorkspace;
         public DateTimeOffset? LastSyncDate { get; set; } 
 
         [JsonProperty("lastsyncerror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Lastsyncerror { get; set; } 
+        public string? LastSyncEror { get; set; } 
 
         [JsonProperty("halo_integrator_import_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? HaloIntegratorImportList { get; set; } 
@@ -92,7 +93,7 @@ namespace Angelic.Models.Configuration.Integrations.VmWorkspace;
         public int? DefaultAssetGroup { get; set; } 
 
         [JsonProperty("default_assetgroupname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? DefaultAssetGroupname { get; set; } 
+        public string? DefaultAssetGroupName { get; set; } 
 
         [JsonProperty("assettype_choice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? AssetTypeChoice { get; set; } 

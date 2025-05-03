@@ -34,6 +34,6 @@ public class AgentDepartment
     public int? Membershiplevel { get; set; } 
 
     [JsonProperty("includeteamsintree", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Includeteamsintree { get; set; } 
+    public bool? IncludeTeamsintree { get; set; } 
 
 }

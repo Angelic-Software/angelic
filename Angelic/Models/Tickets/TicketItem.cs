@@ -140,7 +140,7 @@ public class TicketItem
     public int? FromOrderLine { get; set; } 
 
     [JsonProperty("reserved_assets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<DeviceList>? ReservedAssets { get; set; } 
+    public ICollection<AssetList>? ReservedAssets { get; set; } 
 
     [JsonProperty("inventory_number", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? InventoryNumber { get; set; } 

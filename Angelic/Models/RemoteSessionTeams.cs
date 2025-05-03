@@ -16,7 +16,7 @@ public class RemoteSessionTeams
     public string? ThirdPartyname { get; set; } 
 
     [JsonProperty("thirdpartyid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ThirdPartyid { get; set; } 
+    public string? ThirdPartyId { get; set; } 
 
     [JsonProperty("msid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Msid { get; set; } 

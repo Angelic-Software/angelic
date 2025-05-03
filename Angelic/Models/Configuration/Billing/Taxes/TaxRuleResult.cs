@@ -13,7 +13,7 @@ public class TaxRuleResult
     public int? Tableenum { get; set; } 
 
     [JsonProperty("tableid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public TableEnum? Tableid { get; set; } 
+    public TableEnum? TableId { get; set; } 
 
     [JsonProperty("lineid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Lineid { get; set; } 
@@ -34,7 +34,7 @@ public class TaxRuleResult
     public string? ThirdPartyId { get; set; } 
 
     [JsonProperty("datecreated", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Datecreated { get; set; } 
+    public DateTimeOffset? DateCreated { get; set; } 
 
     [JsonProperty("thirdpartyname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ThirdPartyname { get; set; } 

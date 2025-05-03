@@ -1,6 +1,5 @@
 using System.CodeDom.Compiler;
 using System.ComponentModel.DataAnnotations;
-using Angelic.Models.Areas;
 using Angelic.Models.Sites;
 using Angelic.Models.Users;
 using Newtonsoft.Json;
@@ -32,7 +31,7 @@ public class CallLog
     public string? ClientName { get; set; } 
 
     [JsonProperty("client_details", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Area? ClientDetails { get; set; } 
+    public Clients.Client? ClientDetails { get; set; } 
 
     [JsonProperty("site_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? SiteId { get; set; } 
@@ -111,7 +110,7 @@ public class CallLog
     public string? Warning { get; set; } 
 
     [JsonProperty("displayname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Displayname { get; set; } 
+    public string? DisplayName { get; set; } 
 
     [JsonProperty("existingticketid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Existingticketid { get; set; } 

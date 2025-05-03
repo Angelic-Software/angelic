@@ -1,3 +1,4 @@
+using Angelic.Models.Configuration.Assets;
 using Angelic.Models.Configuration.Assets.SoftwareLicensing;
 using Angelic.Models.Configuration.Integrations;
 using Angelic.Models.Configuration.Integrations.Auvik;
@@ -26,7 +27,7 @@ public partial class Control
         public bool? HaloIntegratorExchange { get; set; } 
 
         [JsonProperty("halointegrator_exchange_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorExchangeLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorExchangeLastSync { get; set; } 
 
         [JsonProperty("halointegrator_exchange_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? HaloIntegratorExchangeLastError { get; set; } 
@@ -59,13 +60,13 @@ public partial class Control
         public bool? HaloIntegratorOkta { get; set; } 
 
         [JsonProperty("halointegrator_okta_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorOktaLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorOktaLastSync { get; set; } 
 
         [JsonProperty("halointegrator_okta_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? HaloIntegratorOktaLastError { get; set; } 
 
         [JsonProperty("reset_okta_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? ResetOktaLastsync { get; set; } 
+        public bool? ResetOktaLastSync { get; set; } 
 
         [JsonProperty("quote_cannedtext", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<CannedText>? QuoteCannedText { get; set; } 
@@ -140,46 +141,46 @@ public partial class Control
         public bool? HaloIntegratorXlsimports { get; set; } 
 
         [JsonProperty("halointegrator_xlsimports_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorXlsimportsLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorXlsimportsLastSync { get; set; } 
 
         [JsonProperty("halointegrator_xlsimports_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? HaloIntegratorXlsimportsLastError { get; set; } 
 
         [JsonProperty("snelstart_old_client_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? SnelstartOldClientId { get; set; } 
+        public string? SnelStartOldClientId { get; set; } 
 
         [JsonProperty("_getsnelstartlink", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Getsnelstartlink { get; set; } 
 
         [JsonProperty("itglue_clientmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ExternalLinkList>? ItglueClientmappings { get; set; } 
+        public ICollection<ExternalLinkList>? ItGlueClientmappings { get; set; } 
 
         [JsonProperty("itglue_sitemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ExternalLinkList>? ItglueSitemappings { get; set; } 
+        public ICollection<ExternalLinkList>? ItGlueSitemappings { get; set; } 
 
         [JsonProperty("itglue_active_statuses_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ValueLabelIsNewKeyPair>? ItglueActiveStatusesList { get; set; } 
+        public ICollection<ValueLabelIsNewKeyPair>? ItGlueActiveStatusesList { get; set; } 
 
         [JsonProperty("itglue_typemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<AssetTypeMapping>? ItglueTypemappings { get; set; } 
+        public ICollection<AssetTypeMapping>? ItGlueTypemappings { get; set; } 
 
         [JsonProperty("itglue_configtypemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<AssetTypeMapping>? ItglueConfigtypemappings { get; set; } 
+        public ICollection<AssetTypeMapping>? ItGlueConfigtypemappings { get; set; } 
 
         [JsonProperty("itglue_statusmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<IntegrationFieldMapping>? ItglueStatusmappings { get; set; } 
+        public ICollection<IntegrationFieldMapping>? ItGlueStatusmappings { get; set; } 
 
         [JsonProperty("itglue_default_site_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? ItglueDefaultSiteName { get; set; } 
+        public string? ItGlueDefaultSiteName { get; set; } 
 
         [JsonProperty("halointegrator_itglue", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? HaloIntegratorItglue { get; set; } 
+        public bool? HaloIntegratorItGlue { get; set; } 
 
         [JsonProperty("halointegrator_itglue_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorItglueLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorItGlueLastSync { get; set; } 
 
         [JsonProperty("halointegrator_itglue_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? HaloIntegratorItglueLastError { get; set; } 
+        public string? HaloIntegratorItGlueLastError { get; set; } 
 
         [JsonProperty("bookingtypes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<BookingType>? BookingTypes { get; set; } 
@@ -206,7 +207,7 @@ public partial class Control
         public bool? HaloIntegratorDynamics365Crm { get; set; } 
 
         [JsonProperty("halointegrator_dynamics365crm_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorDynamics365CrmLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorDynamics365CrmLastSync { get; set; } 
 
         [JsonProperty("halointegrator_dynamics365crm_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? HaloIntegratorDynamics365CrmLastError { get; set; } 
@@ -233,7 +234,7 @@ public partial class Control
         public bool? HaloIntegratorJamf { get; set; } 
 
         [JsonProperty("halointegrator_jamf_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorJamfLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorJamfLastSync { get; set; } 
 
         [JsonProperty("halointegrator_jamf_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? HaloIntegratorJamfLastError { get; set; } 
@@ -245,7 +246,7 @@ public partial class Control
         public bool? HaloIntegratorSentinel { get; set; } 
 
         [JsonProperty("halointegrator_sentinel_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorSentinelLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorSentinelLastSync { get; set; } 
 
         [JsonProperty("halointegrator_sentinel_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? HaloIntegratorSentinelLastError { get; set; } 
@@ -254,7 +255,7 @@ public partial class Control
         public string? ServerTimeZone { get; set; } 
 
         [JsonProperty("use_project_datetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? UseProjectDatetime { get; set; } 
+        public bool? UseProjectDateTime { get; set; } 
 
         [JsonProperty("allow_cf_values_not_on_tickettype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? AllowCfValuesNotOnTicketType { get; set; } 
@@ -278,7 +279,7 @@ public partial class Control
         public bool? HaloIntegratorSyncro { get; set; } 
 
         [JsonProperty("halointegrator_syncro_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorSyncroLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorSyncroLastSync { get; set; } 
 
         [JsonProperty("halointegrator_syncro_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? HaloIntegratorSyncroLastError { get; set; } 
@@ -290,7 +291,7 @@ public partial class Control
         public ICollection<IntegrationFieldMapping>? DomotzAgentfieldmappings { get; set; } 
 
         [JsonProperty("domotz_devicefieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<IntegrationFieldMapping>? DomotzDevicefieldmappings { get; set; } 
+        public ICollection<IntegrationFieldMapping>? DomotzDeviceFieldMappings { get; set; } 
 
         [JsonProperty("domotz_default_agentsite_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? DomotzDefaultAgentsiteName { get; set; } 
@@ -299,13 +300,13 @@ public partial class Control
         public string? DomotzDefaultDevicesiteName { get; set; } 
 
         [JsonProperty("domotz_devicetypemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<AssetTypeMapping>? DomotzDevicetypemappings { get; set; } 
+        public ICollection<AssetTypeMapping>? DomotzDeviceTypemappings { get; set; } 
 
         [JsonProperty("halointegrator_domotz", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? HaloIntegratorDomotz { get; set; } 
 
         [JsonProperty("halointegrator_domotz_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorDomotzLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorDomotzLastSync { get; set; } 
 
         [JsonProperty("halointegrator_domotz_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? HaloIntegratorDomotzLastError { get; set; } 
@@ -335,7 +336,7 @@ public partial class Control
         public bool? HaloIntegratorHaloassetdiscovery { get; set; } 
 
         [JsonProperty("halointegrator_haloassetdiscovery_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorHaloassetdiscoveryLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorHaloassetdiscoveryLastSync { get; set; } 
 
         [JsonProperty("halointegrator_haloassetdiscovery_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? HaloIntegratorHaloassetdiscoveryLastError { get; set; } 
@@ -347,7 +348,7 @@ public partial class Control
         public bool? HaloIntegratorAutomate { get; set; } 
 
         [JsonProperty("halointegrator_automate_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorAutomateLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorAutomateLastSync { get; set; } 
 
         [JsonProperty("halointegrator_automate_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? HaloIntegratorAutomateLastError { get; set; } 
@@ -383,7 +384,7 @@ public partial class Control
         public ICollection<IntegrationSiteMapping>? Device42Sitemappings { get; set; } 
 
         [JsonProperty("ncentral_sitemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<IntegrationSiteMapping>? NcentralSitemappings { get; set; } 
+        public ICollection<IntegrationSiteMapping>? NCentralSitemappings { get; set; } 
 
         [JsonProperty("syncro_sitemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<IntegrationSiteMapping>? SyncroSitemappings { get; set; } 
@@ -392,7 +393,7 @@ public partial class Control
         public bool? HaloIntegratorG2Aremote { get; set; } 
 
         [JsonProperty("halointegrator_g2aremote_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorG2AremoteLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorG2AremoteLastSync { get; set; } 
 
         [JsonProperty("halointegrator_g2aremote_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? HaloIntegratorG2AremoteLastError { get; set; } 
@@ -407,7 +408,7 @@ public partial class Control
         public bool? HaloIntegratorSnow { get; set; } 
 
         [JsonProperty("halointegrator_snow_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorSnowLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorSnowLastSync { get; set; } 
 
         [JsonProperty("halointegrator_snow_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? HaloIntegratorSnowLastError { get; set; } 
@@ -434,7 +435,7 @@ public partial class Control
         public bool? HaloIntegratorAuvik { get; set; } 
 
         [JsonProperty("halointegrator_auvik_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorAuvikLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorAuvikLastSync { get; set; } 
 
         [JsonProperty("halointegrator_auvik_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? HaloIntegratorAuvikLastError { get; set; } 
@@ -470,13 +471,13 @@ public partial class Control
         public string? HubspotDefaultSiteName { get; set; } 
 
         [JsonProperty("hubspot_included_lifecycles_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<KeyPair>? HubspotIncludedLifecyclesList { get; set; } 
+        public ICollection<StringIdNameKeyPair>? HubspotIncludedLifecyclesList { get; set; } 
 
         [JsonProperty("halointegrator_hubspot", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? HaloIntegratorHubspot { get; set; } 
 
         [JsonProperty("halointegrator_hubspot_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorHubspotLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorHubspotLastSync { get; set; } 
 
         [JsonProperty("halointegrator_hubspot_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? HaloIntegratorHubspotLastError { get; set; } 
@@ -494,13 +495,13 @@ public partial class Control
         public bool? HaloIntegratorQualys { get; set; } 
 
         [JsonProperty("halointegrator_qualys_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorQualysLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorQualysLastSync { get; set; } 
 
         [JsonProperty("halointegrator_qualys_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? HaloIntegratorQualysLastError { get; set; } 
 
         [JsonProperty("passportal_defaultclientsite_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? PassportalDefaultClientsiteName { get; set; } 
+        public string? PassportalDefaultClientSiteName { get; set; } 
 
         [JsonProperty("passportal_defaultusersite_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? PassportalDefaultUsersiteName { get; set; } 
@@ -512,7 +513,7 @@ public partial class Control
         public bool? HaloIntegratorPassportal { get; set; } 
 
         [JsonProperty("halointegrator_passportal_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorPassportalLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorPassportalLastSync { get; set; } 
 
         [JsonProperty("halointegrator_passportal_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? HaloIntegratorPassportalLastError { get; set; } 
@@ -551,7 +552,7 @@ public partial class Control
         public bool? HaloIntegratorAddigy { get; set; } 
 
         [JsonProperty("halointegrator_addigy_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorAddigyLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorAddigyLastSync { get; set; } 
 
         [JsonProperty("halointegrator_addigy_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? HaloIntegratorAddigyLastError { get; set; } 
@@ -566,7 +567,7 @@ public partial class Control
         public bool? HaloIntegratorLiongard { get; set; } 
 
         [JsonProperty("halointegrator_liongard_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorLiongardLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorLiongardLastSync { get; set; } 
 
         [JsonProperty("halointegrator_liongard_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? HaloIntegratorLiongardLastError { get; set; } 
@@ -587,7 +588,7 @@ public partial class Control
         public bool? HaloIntegratorStripe { get; set; } 
 
         [JsonProperty("halointegrator_stripe_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorStripeLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorStripeLastSync { get; set; } 
 
         [JsonProperty("halointegrator_stripe_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? HaloIntegratorStripeLastError { get; set; } 
@@ -602,7 +603,7 @@ public partial class Control
         public bool? HaloIntegratorIngramMicro { get; set; } 
 
         [JsonProperty("halointegrator_ingram_micro_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorIngramMicroLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorIngramMicroLastSync { get; set; } 
 
         [JsonProperty("halointegrator_ingram_micro_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? HaloIntegratorIngramMicroLastError { get; set; } 
@@ -626,7 +627,7 @@ public partial class Control
         public bool? HaloIntegratorPax8 { get; set; } 
 
         [JsonProperty("halointegrator_pax8_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorPax8Lastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorPax8LastSync { get; set; } 
 
         [JsonProperty("halointegrator_pax8_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? HaloIntegratorPax8LastError { get; set; } 
@@ -638,7 +639,7 @@ public partial class Control
         public bool? HaloIntegratorGiacom { get; set; } 
 
         [JsonProperty("halointegrator_giacom_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorGiacomLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorGiacomLastSync { get; set; } 
 
         [JsonProperty("halointegrator_giacom_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? HaloIntegratorGiacomLastError { get; set; } 
@@ -662,7 +663,7 @@ public partial class Control
         public bool? HaloIntegratorSalesforce { get; set; } 
 
         [JsonProperty("halointegrator_salesforce_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorSalesforceLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorSalesforceLastSync { get; set; } 
 
         [JsonProperty("halointegrator_salesforce_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? HaloIntegratorSalesforceLastError { get; set; } 
@@ -692,7 +693,7 @@ public partial class Control
         public bool? HaloIntegratorNewrelic { get; set; } 
 
         [JsonProperty("halointegrator_newrelic_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorNewrelicLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorNewrelicLastSync { get; set; } 
 
         [JsonProperty("halointegrator_newrelic_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? HaloIntegratorNewrelicLastError { get; set; } 
@@ -701,7 +702,7 @@ public partial class Control
         public bool? HaloIntegratorBackupradar { get; set; } 
 
         [JsonProperty("halointegrator_backupradar_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorBackupradarLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorBackupradarLastSync { get; set; } 
 
         [JsonProperty("halointegrator_backupradar_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? HaloIntegratorBackupradarLastError { get; set; } 
@@ -716,7 +717,7 @@ public partial class Control
         public bool? HaloIntegratorKaseya { get; set; } 
 
         [JsonProperty("halointegrator_kaseya_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorKaseyaLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorKaseyaLastSync { get; set; } 
 
         [JsonProperty("halointegrator_kaseya_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? HaloIntegratorKaseyaLastError { get; set; } 
@@ -734,10 +735,10 @@ public partial class Control
         public ICollection<ExternalLinkList>? StripeClientMappings { get; set; } 
 
         [JsonProperty("stripe_paymentmethod_options_keypair", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ValueLabelIsNewKeyPair>? StripePaymentmethodOptionsKeypair { get; set; } 
+        public ICollection<ValueLabelIsNewKeyPair>? StripePaymentMethodOptionsKeypair { get; set; } 
 
         [JsonProperty("stripe_manual_paymentmethod_options_keypair", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ValueLabelIsNewKeyPair>? StripeManualPaymentmethodOptionsKeypair { get; set; } 
+        public ICollection<ValueLabelIsNewKeyPair>? StripeManualPaymentMethodOptionsKeypair { get; set; } 
 
         [JsonProperty("zabbix_fieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<IntegrationFieldMapping>? ZabbixFieldMappings { get; set; } 
@@ -755,7 +756,7 @@ public partial class Control
         public bool? HaloIntegratorZabbix { get; set; } 
 
         [JsonProperty("halointegrator_zabbix_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorZabbixLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorZabbixLastSync { get; set; } 
 
         [JsonProperty("halointegrator_zabbix_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? HaloIntegratorZabbixLastError { get; set; } 
@@ -776,7 +777,7 @@ public partial class Control
         public bool? HaloIntegratorRhipe { get; set; } 
 
         [JsonProperty("halointegrator_rhipe_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorRhipeLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorRhipeLastSync { get; set; } 
 
         [JsonProperty("halointegrator_rhipe_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? HaloIntegratorRhipeLastError { get; set; } 
@@ -785,22 +786,22 @@ public partial class Control
         public ICollection<ValueLabelIsNewKeyPair>? RhipeImportEntitiesList { get; set; } 
 
         [JsonProperty("techdata_client_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ExternalLinkList>? TechdataClientMappings { get; set; } 
+        public ICollection<ExternalLinkList>? TechDataClientMappings { get; set; } 
 
         [JsonProperty("techdata_top_level_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? TechdataTopLevelName { get; set; } 
+        public string? TechDataTopLevelName { get; set; } 
 
         [JsonProperty("halointegrator_techdata", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? HaloIntegratorTechdata { get; set; } 
+        public bool? HaloIntegratorTechData { get; set; } 
 
         [JsonProperty("halointegrator_techdata_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorTechdataLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorTechDataLastSync { get; set; } 
 
         [JsonProperty("halointegrator_techdata_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? HaloIntegratorTechdataLastError { get; set; } 
+        public string? HaloIntegratorTechDataLastError { get; set; } 
 
         [JsonProperty("techdata_import_entities_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ValueLabelIsNewKeyPair>? TechdataImportEntitiesList { get; set; } 
+        public ICollection<ValueLabelIsNewKeyPair>? TechDataImportEntitiesList { get; set; } 
 
         [JsonProperty("inty_client_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<ExternalLinkList>? IntyClientMappings { get; set; } 
@@ -812,7 +813,7 @@ public partial class Control
         public bool? HaloIntegratorInty { get; set; } 
 
         [JsonProperty("halointegrator_inty_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorIntyLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorIntyLastSync { get; set; } 
 
         [JsonProperty("halointegrator_inty_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? HaloIntegratorIntyLastError { get; set; } 
@@ -830,7 +831,7 @@ public partial class Control
         public bool? HaloIntegratorWestcoastcloud { get; set; } 
 
         [JsonProperty("halointegrator_westcoastcloud_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorWestcoastcloudLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorWestcoastcloudLastSync { get; set; } 
 
         [JsonProperty("halointegrator_westcoastcloud_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? HaloIntegratorWestcoastcloudLastError { get; set; } 
@@ -848,7 +849,7 @@ public partial class Control
         public bool? HaloIntegratorSherweb { get; set; } 
 
         [JsonProperty("halointegrator_sherweb_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorSherwebLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorSherwebLastSync { get; set; } 
 
         [JsonProperty("halointegrator_sherweb_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? HaloIntegratorSherwebLastError { get; set; } 
@@ -866,7 +867,7 @@ public partial class Control
         public bool? HaloIntegratorAlso { get; set; } 
 
         [JsonProperty("halointegrator_also_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorAlsoLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorAlsoLastSync { get; set; } 
 
         [JsonProperty("halointegrator_also_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? HaloIntegratorAlsoLastError { get; set; } 
@@ -884,7 +885,7 @@ public partial class Control
         public bool? HaloIntegratorArrowsphere { get; set; } 
 
         [JsonProperty("halointegrator_arrowsphere_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorArrowsphereLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorArrowsphereLastSync { get; set; } 
 
         [JsonProperty("halointegrator_arrowsphere_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? HaloIntegratorArrowsphereLastError { get; set; } 
@@ -902,7 +903,7 @@ public partial class Control
         public bool? HaloIntegratorDickerdata { get; set; } 
 
         [JsonProperty("halointegrator_dickerdata_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorDickerdataLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorDickerdataLastSync { get; set; } 
 
         [JsonProperty("halointegrator_dickerdata_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? HaloIntegratorDickerdataLastError { get; set; } 
@@ -914,19 +915,19 @@ public partial class Control
         public bool? HaloIntegratorOracle { get; set; } 
 
         [JsonProperty("halointegrator_oracle_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorOracleLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorOracleLastSync { get; set; } 
 
         [JsonProperty("halointegrator_oracle_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? HaloIntegratorOracleLastError { get; set; } 
 
         [JsonProperty("halointegrator_servicenow", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? HaloIntegratorServicenow { get; set; } 
+        public bool? HaloIntegratorServiceNow { get; set; } 
 
         [JsonProperty("halointegrator_servicenow_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorServicenowLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorServiceNowLastSync { get; set; } 
 
         [JsonProperty("halointegrator_servicenow_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? HaloIntegratorServicenowLastError { get; set; } 
+        public string? HaloIntegratorServiceNowLastError { get; set; } 
 
         [JsonProperty("xerodefaulttenantname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Xerodefaulttenantname { get; set; } 
@@ -980,25 +981,25 @@ public partial class Control
         public ICollection<int>? ClientTenantIds { get; set; } 
 
         [JsonProperty("connectwisecontrol_sitemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ExternalLinkList>? ConnectwisecontrolSitemappings { get; set; } 
+        public ICollection<ExternalLinkList>? ConnectWiseControlSitemappings { get; set; } 
 
         [JsonProperty("connectwisecontrol_typemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<AssetTypeMapping>? ConnectwisecontrolTypemappings { get; set; } 
+        public ICollection<AssetTypeMapping>? ConnectWiseControlTypemappings { get; set; } 
 
         [JsonProperty("halointegrator_connectwisecontrol", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? HaloIntegratorConnectwisecontrol { get; set; } 
+        public bool? HaloIntegratorConnectWiseControl { get; set; } 
 
         [JsonProperty("connectwisecontrol_import_entities_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ValueLabelIsNewKeyPair>? ConnectwisecontrolImportEntitiesList { get; set; } 
+        public ICollection<ValueLabelIsNewKeyPair>? ConnectWiseControlImportEntitiesList { get; set; } 
 
         [JsonProperty("halointegrator_connectwisecontrol_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorConnectwisecontrolLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorConnectWiseControlLastSync { get; set; } 
 
         [JsonProperty("halointegrator_connectwisecontrol_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? HaloIntegratorConnectwisecontrolLastError { get; set; } 
+        public string? HaloIntegratorConnectWiseControlLastError { get; set; } 
 
         [JsonProperty("connectwisecontrolassetdefaultsite_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? ConnectwisecontrolassetdefaultsiteName { get; set; } 
+        public string? ConnectWiseControlassetdefaultsiteName { get; set; } 
 
         [JsonProperty("salesforce_priority_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<IntegrationFieldMapping>? SalesforcePriorityMappings { get; set; } 

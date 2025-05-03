@@ -13,7 +13,7 @@ public class PowerShellScriptProcessing
     public int? Pssid { get; set; } 
 
     [JsonProperty("faultid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Faultid { get; set; } 
+    public int? FaultId { get; set; } 
 
     [JsonProperty("processed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Processed { get; set; } 

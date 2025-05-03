@@ -43,10 +43,10 @@ public class WordpressOrgDetails
     public string? ImportThisTagName { get; set; } 
 
     [JsonProperty("default_faqlist", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? DefaultFaqlist { get; set; } 
+    public int? DefaultFaqList { get; set; } 
 
     [JsonProperty("default_faqlist_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? DefaultFaqlistName { get; set; } 
+    public string? DefaultFaqListName { get; set; } 
 
     [JsonProperty("importcategories", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Importcategories { get; set; } 

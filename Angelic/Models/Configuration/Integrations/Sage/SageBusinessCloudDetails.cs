@@ -17,7 +17,7 @@ public class SageBusinessCloudDetails
     public DateTimeOffset? Tokenexpiry { get; set; } 
 
     [JsonProperty("isauthorized", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isauthorized { get; set; } 
+    public bool? IsAuthorized { get; set; } 
 
     [JsonProperty("redirecturi", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Redirecturi { get; set; } 
@@ -32,7 +32,7 @@ public class SageBusinessCloudDetails
     public bool? Enablesync { get; set; } 
 
     [JsonProperty("defaultitemcode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? DefaultItemcode { get; set; } 
+    public string? DefaultItemCode { get; set; } 
 
     [JsonProperty("showmessage", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? ShowMessage { get; set; } 
@@ -41,7 +41,7 @@ public class SageBusinessCloudDetails
     public string? ClientId { get; set; } 
 
     [JsonProperty("syncentities", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Syncentities { get; set; } 
+    public string? SyncEntities { get; set; } 
 
     [JsonProperty("sbcdnewmethod", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Sbcdnewmethod { get; set; } 

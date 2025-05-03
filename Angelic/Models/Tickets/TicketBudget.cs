@@ -61,13 +61,13 @@ public class TicketBudget
     public double? ScheduledValue { get; set; } 
 
     [JsonProperty("toschedule_hours", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? ToscheduleHours { get; set; } 
+    public double? ToScheduleHours { get; set; } 
 
     [JsonProperty("toschedule_days", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? ToscheduleDays { get; set; } 
+    public double? ToScheduleDays { get; set; } 
 
     [JsonProperty("toschedule_value", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? ToscheduleValue { get; set; } 
+    public double? ToScheduleValue { get; set; } 
 
     [JsonProperty("remaining_hours", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? RemainingHours { get; set; } 

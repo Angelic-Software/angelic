@@ -1,6 +1,9 @@
 using System.CodeDom.Compiler;
 using Angelic.Models.Attachments;
 using Angelic.Models.Configuration;
+using Angelic.Models.Configuration.Approval;
+using Angelic.Models.Configuration.Approval.Cab;
+using Angelic.Models.Configuration.Billing;
 using Angelic.Models.Configuration.Custom;
 using Angelic.Models.Configuration.Custom.CustomFields;
 using Angelic.Models.Configuration.PdfTemplates;
@@ -110,10 +113,10 @@ public class QuotationHeader
     public string? AssignedAgentName { get; set; } 
 
     [JsonProperty("includegroupeditemprice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Includegroupeditemprice { get; set; } 
+    public bool? IncludeGroupeditemprice { get; set; } 
 
     [JsonProperty("includegroupeditemqty", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Includegroupeditemqty { get; set; } 
+    public bool? IncludeGroupeditemqty { get; set; } 
 
     [JsonProperty("daystodeliver", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Daystodeliver { get; set; } 
@@ -131,10 +134,10 @@ public class QuotationHeader
     public double? CurrencyConversionRate { get; set; } 
 
     [JsonProperty("includequotationlinenotes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Includequotationlinenotes { get; set; } 
+    public bool? IncludeQuotationlinenotes { get; set; } 
 
     [JsonProperty("includegrouppriceandqty", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Includegrouppriceandqty { get; set; } 
+    public bool? IncludeGrouppriceandqty { get; set; } 
 
     [JsonProperty("approvalname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Approvalname { get; set; } 
@@ -155,7 +158,7 @@ public class QuotationHeader
     public ICollection<QuotationDetail>? Lines { get; set; } 
 
     [JsonProperty("_validateonly", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Validateonly { get; set; } 
+    public bool? ValidateOnly { get; set; } 
 
     [JsonProperty("_print_preview", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? PrintPreview { get; set; } 
@@ -164,7 +167,7 @@ public class QuotationHeader
     public bool? PrintGenerate { get; set; } 
 
     [JsonProperty("printhtml", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Printhtml { get; set; } 
+    public string? PrintHtml { get; set; } 
 
     [JsonProperty("pdf_attachment_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? PdfAttachmentId { get; set; } 
@@ -194,7 +197,7 @@ public class QuotationHeader
     public string? Signature { get; set; } 
 
     [JsonProperty("createdbyagentname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Createdbyagentname { get; set; } 
+    public string? CreatedByAgentname { get; set; } 
 
     [JsonProperty("quote_viewed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? QuoteViewed { get; set; } 
@@ -248,7 +251,7 @@ public class QuotationHeader
     public int? NewTicketStatus { get; set; } 
 
     [JsonProperty("_isimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isimport { get; set; } 
+    public bool? IsImport { get; set; } 
 
     [JsonProperty("datto_commerce_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? DattoCommerceId { get; set; } 
@@ -260,25 +263,25 @@ public class QuotationHeader
     public string? ThirdPartyUrl { get; set; } 
 
     [JsonProperty("dattocommerce_clientid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? DattocommerceClientId { get; set; } 
+    public int? DattoCommerceClientId { get; set; } 
 
     [JsonProperty("dattocommerce_contactname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? DattocommerceContactname { get; set; } 
+    public string? DattoCommerceContactName { get; set; } 
 
     [JsonProperty("dattocommerce_contactemail", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? DattocommerceContactemail { get; set; } 
+    public string? DattoCommerceContactemail { get; set; } 
 
     [JsonProperty("deliveryamount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? Deliveryamount { get; set; } 
 
     [JsonProperty("dattocommerce_tenantid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? DattocommerceTenantId { get; set; } 
+    public int? DattoCommerceTenantId { get; set; } 
 
     [JsonProperty("deliverytax", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? Deliverytax { get; set; } 
 
     [JsonProperty("dontupdateporef", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Dontupdateporef { get; set; } 
+    public bool? DontUpdateporef { get; set; } 
 
     [JsonProperty("can_approve", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? CanApprove { get; set; } 
@@ -332,13 +335,13 @@ public class QuotationHeader
     public string? Warning { get; set; } 
 
     [JsonProperty("billingcontactname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Billingcontactname { get; set; } 
+    public string? BillingContactName { get; set; } 
 
     [JsonProperty("billingcontactemailaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Billingcontactemailaddress { get; set; } 
+    public string? BillingContactemailaddress { get; set; } 
 
     [JsonProperty("billingcontactphonenumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Billingcontactphonenumber { get; set; } 
+    public string? BillingContactphonenumber { get; set; } 
 
     [JsonProperty("so_number", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? SoNumber { get; set; } 
@@ -500,16 +503,16 @@ public class QuotationHeader
     public ICollection<TicketTypeField>? Quoteapprovalfields { get; set; } 
 
     [JsonProperty("custombuttons", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CustomButton>? Custombuttons { get; set; } 
+    public ICollection<CustomButton>? CustomButtons { get; set; } 
 
     [JsonProperty("extratabs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<Tabname>? Extratabs { get; set; } 
+    public ICollection<TabName>? ExtraTabs { get; set; } 
 
     [JsonProperty("status_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? StatusName { get; set; } 
 
     [JsonProperty("_dotaxsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Dotaxsync { get; set; } 
+    public bool? DoTaxSync { get; set; } 
 
     [JsonProperty("external_links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<ExternalLinkList>? ExternalLinks { get; set; } 
@@ -518,7 +521,7 @@ public class QuotationHeader
     public int? ImportTypeId { get; set; } 
 
     [JsonProperty("_importthirdpartyid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Importthirdpartyid { get; set; } 
+    public string? ImportThirdPartyId { get; set; } 
 
     [JsonProperty("_importtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ImportType { get; set; } 

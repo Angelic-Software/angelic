@@ -25,16 +25,16 @@ public class TicketApproval
     public string? QuoteRef { get; set; } 
 
     [JsonProperty("startdate_timezone", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? StartDateTimezone { get; set; } 
+    public string? StartDateTimeZone { get; set; } 
 
     [JsonProperty("startdate_with_timezone", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeZone? StartDateWithTimezone { get; set; } 
+    public DateTimeZone? StartDateWithTimeZone { get; set; } 
 
     [JsonProperty("targetdate_timezone", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? TargetDateTimezone { get; set; } 
+    public string? TargetDateTimeZone { get; set; } 
 
     [JsonProperty("targetdate_with_timezone", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeZone? TargetDateWithTimezone { get; set; } 
+    public DateTimeZone? TargetDateWithTimeZone { get; set; } 
 
     [JsonProperty("invoice_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? InvoiceId { get; set; } 
@@ -46,7 +46,7 @@ public class TicketApproval
     public int? Seq { get; set; } 
 
     [JsonProperty("actionnumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Actionnumber { get; set; } 
+    public int? ActionNumber { get; set; } 
 
     [JsonProperty("emailstatus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Emailstatus { get; set; } 
@@ -100,7 +100,7 @@ public class TicketApproval
     public int? RequestorUserId { get; set; } 
 
     [JsonProperty("datetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Datetime { get; set; } 
+    public DateTimeOffset? DateTime { get; set; } 
 
     [JsonProperty("approval_process_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ApprovalProcessId { get; set; } 
@@ -130,7 +130,7 @@ public class TicketApproval
     public int? RequestorOnlinestatus { get; set; } 
 
     [JsonProperty("requestor_lastonline", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? RequestorLastonline { get; set; } 
+    public string? RequestorLastOnline { get; set; } 
 
     [JsonProperty("summary", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Summary { get; set; } 
@@ -139,7 +139,7 @@ public class TicketApproval
     public string? Note { get; set; } 
 
     [JsonProperty("_includeticketinresponse", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Includeticketinresponse { get; set; } 
+    public bool? IncludeTicketinresponse { get; set; } 
 
     [JsonProperty("attachment_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public AttachmentView? AttachmentList { get; set; } 
@@ -184,16 +184,16 @@ public class TicketApproval
     public string? Token { get; set; } 
 
     [JsonProperty("uniqueid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Uniqueid { get; set; } 
+    public int? UniqueId { get; set; } 
 
     [JsonProperty("signature", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Signature { get; set; } 
 
     [JsonProperty("newsignatureadded", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Newsignatureadded { get; set; } 
+    public bool? NewSignatureadded { get; set; } 
 
     [JsonProperty("lastreminderdatetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Lastreminderdatetime { get; set; } 
+    public DateTimeOffset? LastReminderdatetime { get; set; } 
 
     [JsonProperty("startdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? StartDate { get; set; } 
@@ -238,7 +238,7 @@ public class TicketApproval
     public bool? SendWebhook { get; set; } 
 
     [JsonProperty("dateapproved", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Dateapproved { get; set; } 
+    public DateTimeOffset? DateApproved { get; set; } 
 
     [JsonProperty("step_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? StepId { get; set; } 

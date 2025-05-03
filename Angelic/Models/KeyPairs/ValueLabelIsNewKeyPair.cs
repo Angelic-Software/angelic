@@ -2,6 +2,7 @@ using Newtonsoft.Json;
 
 namespace Angelic.Models.KeyPairs;
 
+// Previously known as KeyPair2
 public class ValueLabelIsNewKeyPair
 {
     [JsonProperty("value", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

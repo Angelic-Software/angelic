@@ -23,7 +23,7 @@ public partial class Control
         public int? RelatedAssetsColumnProfile { get; set; } 
 
         [JsonProperty("showusersassetsonnewticket", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Showusersassetsonnewticket { get; set; } 
+        public bool? ShowUsersassetsonnewticket { get; set; } 
 
         [JsonProperty("auto_approve_pos", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? AutoApprovePos { get; set; } 
@@ -47,13 +47,13 @@ public partial class Control
         public int? DefaultMeterPricingMethod { get; set; } 
 
         [JsonProperty("logicmonitor_asset_type_choice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? LogicmonitorAssetTypeChoice { get; set; } 
+        public int? LogicMonitorAssetTypeChoice { get; set; } 
 
         [JsonProperty("logicmonitor_assettypefield", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? LogicmonitorAssetTypefield { get; set; } 
+        public int? LogicMonitorAssetTypeField { get; set; } 
 
         [JsonProperty("logicmonitor_defaultgroup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? LogicmonitorDefaultGroup { get; set; } 
+        public int? LogicMonitorDefaultGroup { get; set; } 
 
         [JsonProperty("show_note_after_completed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? ShowNoteAfterCompleted { get; set; } 
@@ -119,7 +119,7 @@ public partial class Control
         public bool? AiThankyouDetection { get; set; } 
 
         [JsonProperty("techdata_default_tenant", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? TechdataDefaultTenant { get; set; } 
+        public int? TechDataDefaultTenant { get; set; } 
 
         [JsonProperty("ingram_default_tenant", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? IngramDefaultTenant { get; set; } 
@@ -128,10 +128,10 @@ public partial class Control
         public int? CreditItem { get; set; } 
 
         [JsonProperty("itglue_sync_entities", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? ItglueSyncEntities { get; set; } 
+        public string? ItGlueSyncEntities { get; set; } 
 
         [JsonProperty("itglue_show_message", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? ItglueShowMessage { get; set; } 
+        public bool? ItGlueShowMessage { get; set; } 
 
         [JsonProperty("slack_channel_management", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? SlackChannelManagement { get; set; } 
@@ -206,10 +206,10 @@ public partial class Control
         public bool? ShowClosureattachment { get; set; } 
 
         [JsonProperty("defaultinvoicedatetotoday", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? DefaultInvoicedatetotoday { get; set; } 
+        public bool? DefaultInvoiceDatetotoday { get; set; } 
 
         [JsonProperty("user_match_phonenumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? UserMatchPhonenumber { get; set; } 
+        public bool? UserMatchPhoneNumber { get; set; } 
 
         [JsonProperty("parent_and_related_cf_copy_priority", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? ParentAndRelatedCfCopyPriority { get; set; } 
@@ -221,7 +221,7 @@ public partial class Control
         public bool? ShowChildTemplatesAlways { get; set; } 
 
         [JsonProperty("whatsapp_defaultclientsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? WhatsappDefaultClientsite { get; set; } 
+        public int? WhatsappDefaultClientSite { get; set; } 
 
         [JsonProperty("xsoar_default_user", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? XsoarDefaultUser { get; set; } 
@@ -293,10 +293,10 @@ public partial class Control
         public bool? UseNewSearchMethod { get; set; } 
 
         [JsonProperty("assetdiscovery_defaultsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? AssetdiscoveryDefaultSite { get; set; } 
+        public int? AssetDiscoveryDefaultSite { get; set; } 
 
         [JsonProperty("assetdiscovery_defaultsite_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? AssetdiscoveryDefaultSiteName { get; set; } 
+        public string? AssetDiscoveryDefaultSiteName { get; set; } 
 
         [JsonProperty("lansweeper_override_site_rules", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? LansweeperOverrideSiteRules { get; set; } 
@@ -311,7 +311,7 @@ public partial class Control
         public int? DefaultFilterOpenTickets { get; set; } 
 
         [JsonProperty("assetdateformat", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Assetdateformat { get; set; } 
+        public string? AssetDateformat { get; set; } 
 
         [JsonProperty("use_item_catalogue", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? UseItemCatalogue { get; set; } 
@@ -354,7 +354,7 @@ public partial class Control
         public bool? AutoExtendEndDatesOnRecurringInvoices { get; set; } 
 
         [JsonProperty("portalservicedetailsdisplaytype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Portalservicedetailsdisplaytype { get; set; } 
+        public bool? PortalServicedetailsdisplaytype { get; set; } 
 
         [JsonProperty("ticket_embeddings_method", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? TicketEmbeddingsMethod { get; set; } 
@@ -444,7 +444,7 @@ public partial class Control
         public int? GwAssetTypeChoice { get; set; } 
 
         [JsonProperty("gw_default_devicetype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? GwDefaultDevicetype { get; set; } 
+        public int? GwDefaultDeviceType { get; set; } 
 
         [JsonProperty("gw_mobile_site_matching", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? GwMobileSiteMatching { get; set; } 
@@ -581,7 +581,7 @@ public partial class Control
         public string? MailchimpIntegratorentitiestoimport { get; set; } 
 
         [JsonProperty("mailcampaign_activityinuserfeed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? MailcampaignActivityinuserfeed { get; set; } 
+        public bool? MailCampaignActivityinuserfeed { get; set; } 
 
         [JsonProperty("addautosuppressheader", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Addautosuppressheader { get; set; } 
@@ -683,7 +683,7 @@ public partial class Control
         public bool? DefaultShowInactiveAssetsOnSite { get; set; } 
 
         [JsonProperty("showemailinuseractivity", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Showemailinuseractivity { get; set; } 
+        public bool? ShowEmailInUseractivity { get; set; } 
 
         [JsonProperty("po_approval_email_addr", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? PoApprovalEmailAddr { get; set; } 
@@ -692,7 +692,7 @@ public partial class Control
         public bool? ShowNegativeTaxInvoices { get; set; } 
 
         [JsonProperty("donotalloweditingpostedinvoicesfreq", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Donotalloweditingpostedinvoicesfreq { get; set; } 
+        public double? DoNotAlloweditingpostedinvoicesfreq { get; set; } 
 
         [JsonProperty("default_quote_revised_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? DefaultQuoteRevisedStatus { get; set; } 
@@ -749,7 +749,7 @@ public partial class Control
         public int? ContractRulesMatchType { get; set; } 
 
         [JsonProperty("snelstart_invoice_template", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? SnelstartInvoiceTemplate { get; set; } 
+        public string? SnelStartInvoiceTemplate { get; set; } 
 
         [JsonProperty("problemmatchcustomfield", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Problemmatchcustomfield { get; set; } 
@@ -761,16 +761,16 @@ public partial class Control
         public bool? OpenReportWithoutLoading { get; set; } 
 
         [JsonProperty("show_livechat_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? ShowLivechatUrl { get; set; } 
+        public bool? ShowLiveChatUrl { get; set; } 
 
         [JsonProperty("category_auto_expand", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? CategoryAutoExpand { get; set; } 
 
         [JsonProperty("hide_enddate_timezone", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? HideEndDateTimezone { get; set; } 
+        public bool? HideEndDateTimeZone { get; set; } 
 
         [JsonProperty("enable_clear_nable_rmm_alert_check", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? EnableClearNableRmmAlertCheck { get; set; } 
+        public bool? EnableClearNAbleRmmAlertCheck { get; set; } 
 
         [JsonProperty("show_asset_diagram_keyfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? ShowAssetDiagramKeyFields { get; set; } 
@@ -823,10 +823,10 @@ public partial class Control
 
         [JsonProperty("services_portalbackgroundimageurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         [System.ComponentModel.DataAnnotations.StringLength(500)]
-        public string? ServicesPortalbackgroundimageurl { get; set; } 
+        public string? ServicesPortalBackgroundImageUrl { get; set; } 
 
         [JsonProperty("itglue_disable_address_sync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? ItglueDisableAddressSync { get; set; } 
+        public bool? ItGlueDisableAddressSync { get; set; } 
 
         [JsonProperty("conversion_probability_colour1", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? ConversionProbabilityColour1 { get; set; } 
@@ -841,7 +841,7 @@ public partial class Control
         public string? ConversionProbabilityColour4 { get; set; } 
 
         [JsonProperty("nextattachmentidcalculationmethod", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Nextattachmentidcalculationmethod { get; set; } 
+        public int? NextAttachmentidcalculationmethod { get; set; } 
 
         [JsonProperty("portal_action_date_display", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? PortalActionDateDisplay { get; set; } 
@@ -853,10 +853,10 @@ public partial class Control
         public bool? IgnoreDuplicateEmails { get; set; } 
 
         [JsonProperty("hidekbviews", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Hidekbviews { get; set; } 
+        public bool? HideKbviews { get; set; } 
 
         [JsonProperty("hidekbratings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Hidekbratings { get; set; } 
+        public bool? HideKbratings { get; set; } 
 
         [JsonProperty("show_markup_for_sales_orders", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? ShowMarkupForSalesOrders { get; set; } 

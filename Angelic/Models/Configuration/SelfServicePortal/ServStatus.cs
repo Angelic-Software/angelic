@@ -31,7 +31,7 @@ public class ServStatus
     public DateTimeOffset? Lastcheck { get; set; } 
 
     [JsonProperty("lastok", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Lastok { get; set; } 
+    public DateTimeOffset? LastOk { get; set; } 
 
     [JsonProperty("lastfailed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? Lastfailed { get; set; } 
@@ -43,7 +43,7 @@ public class ServStatus
     public int? Failedcount { get; set; } 
 
     [JsonProperty("lastemail", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Lastemail { get; set; } 
+    public string? LastEmail { get; set; } 
 
     [JsonProperty("totaldownmins", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Totaldownmins { get; set; } 
@@ -67,6 +67,6 @@ public class ServStatus
     public string? Warning { get; set; } 
 
     [JsonProperty("uniqueid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? Uniqueid { get; set; } 
+    public Guid? UniqueId { get; set; } 
 
 }

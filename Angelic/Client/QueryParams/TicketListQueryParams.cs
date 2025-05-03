@@ -11,7 +11,7 @@ public class TicketListQueryParams
     public int[]? Agent { get; set; }
     /// <param name="agent_id">(int) Filters by the specified agent.</param>
     public int? AgentId { get; set; }
-    /// <param name="alerttype">(string) Includes fninjaalertid field in the response - 'ninjarmm' to use.</param>
+    /// <param name="alerttype">(string) IncludeS fninjaalertid field in the response - 'ninjarmm' to use.</param>
     public string? AlertType { get; set; }
     /// <param name="asset_id">(int) Filters by the specified asset.</param>
     public int? AssetId { get; set; }
@@ -440,7 +440,7 @@ public class TicketListQueryParams
     /// <param name="ticketcontract_id">(int) Filters by the specified ticket contract.</param>
     public int? TicketContractId { get; set; }
 
-    /// <param name="ticketidonly">(bool) Returns only the ID fields (Ticket ID, SLA ID, Status ID, Client ID and Name and Lastincomingemail date) of the Tickets (Not compatible with Pagination).</param>
+    /// <param name="ticketidonly">(bool) Returns only the ID fields (Ticket ID, SLA ID, Status ID, Client ID and Name and LastIncomingEmail date) of the Tickets (Not compatible with Pagination).</param>
     public bool? TicketIdOnly { get; set; }
 
     /// <param name="ticketids">(string) Returns only the tickets specified in the response.</param>

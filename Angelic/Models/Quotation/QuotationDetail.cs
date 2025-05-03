@@ -119,7 +119,7 @@ public class QuotationDetail
     public DateTimeOffset? StartDate { get; set; } 
 
     [JsonProperty("autorenew", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Autorenew { get; set; } 
+    public bool? AutoRenew { get; set; } 
 
     [JsonProperty("item_recurring", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? ItemRecurring { get; set; } 
@@ -359,7 +359,7 @@ public class QuotationDetail
     public string? ImportType { get; set; } 
 
     [JsonProperty("_isimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isimport { get; set; } 
+    public bool? IsImport { get; set; } 
 
     [JsonProperty("tax_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? TaxName { get; set; } 

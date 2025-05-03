@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Models.Configuration.Assets;
 using Angelic.Models.KeyPairs;
 using Newtonsoft.Json;
 

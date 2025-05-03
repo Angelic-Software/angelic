@@ -13,7 +13,7 @@ public class AttachmentList
     public string? Filename { get; set; } 
 
     [JsonProperty("datecreated", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Datecreated { get; set; } 
+    public DateTimeOffset? DateCreated { get; set; } 
 
     [JsonProperty("note", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Note { get; set; } 
@@ -31,10 +31,10 @@ public class AttachmentList
     public string? Desc { get; set; } 
 
     [JsonProperty("isimage", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isimage { get; set; } 
+    public bool? IsImage { get; set; } 
 
     [JsonProperty("showforusers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowForusers { get; set; } 
+    public bool? ShowForUsers { get; set; } 
 
     [JsonProperty("showonchild", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? ShowOnchild { get; set; } 
@@ -58,10 +58,10 @@ public class AttachmentList
     public bool? AlreadyPosted { get; set; } 
 
     [JsonProperty("faultid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Faultid { get; set; } 
+    public int? FaultId { get; set; } 
 
     [JsonProperty("_isimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isimport { get; set; } 
+    public bool? IsImport { get; set; } 
 
     [JsonProperty("_importtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ImportType { get; set; } 

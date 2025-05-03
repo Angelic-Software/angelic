@@ -28,7 +28,7 @@ public class LanguagePackTranslations
     public bool? Incomplete { get; set; } 
 
     [JsonProperty("iscustomised", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Iscustomised { get; set; } 
+    public bool? IsCustomised { get; set; } 
 
     [JsonProperty("description", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Description { get; set; } 

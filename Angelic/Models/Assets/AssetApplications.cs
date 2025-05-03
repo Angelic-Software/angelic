@@ -28,7 +28,7 @@ public class AssetApplications
     public double? Cost { get; set; } 
 
     [JsonProperty("lastused", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Lastused { get; set; } 
+    public DateTimeOffset? LastUsed { get; set; } 
 
     [JsonProperty("install_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? InstallDate { get; set; } 

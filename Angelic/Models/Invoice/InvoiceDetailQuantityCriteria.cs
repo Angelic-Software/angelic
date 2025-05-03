@@ -10,7 +10,7 @@ public class InvoiceDetailQuantityCriteria
     public int? Id { get; set; } 
 
     [JsonProperty("invoicedetailquantity_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? InvoicedetailquantityId { get; set; } 
+    public int? InvoiceDetailquantityId { get; set; } 
 
     [JsonProperty("tablename", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Tablename { get; set; } 
@@ -31,7 +31,7 @@ public class InvoiceDetailQuantityCriteria
     public string? ValueString { get; set; } 
 
     [JsonProperty("value_datetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? ValueDatetime { get; set; } 
+    public DateTimeOffset? ValueDateTime { get; set; } 
 
     [JsonProperty("value_display", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ValueDisplay { get; set; } 

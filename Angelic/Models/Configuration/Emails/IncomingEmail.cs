@@ -18,16 +18,16 @@ public class IncomingEmail
     public int? Mbid { get; set; } 
 
     [JsonProperty("agentid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Agentid { get; set; } 
+    public int? AgentId { get; set; } 
 
     [JsonProperty("addactiontofaultid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Addactiontofaultid { get; set; } 
 
     [JsonProperty("datecreated", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Datecreated { get; set; } 
+    public DateTimeOffset? DateCreated { get; set; } 
 
     [JsonProperty("dateprocessed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Dateprocessed { get; set; } 
+    public DateTimeOffset? DateProcessed { get; set; } 
 
     [JsonProperty("memo", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Memo { get; set; } 

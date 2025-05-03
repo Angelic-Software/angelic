@@ -1,5 +1,6 @@
 using System.CodeDom.Compiler;
 using Angelic.Models.Configuration.TeamsAndAgents.Agents;
+using Angelic.Models.Configuration.TeamsAndAgents.Agents.AgentNotifications;
 using Newtonsoft.Json;
 
 namespace Angelic.Models.Configuration.Users;
@@ -14,7 +15,7 @@ public class UserRoles
     public string? Intent { get; set; } 
 
     [JsonProperty("isimportantcontact2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isimportantcontact2 { get; set; } 
+    public bool? IsImportantcontact2 { get; set; } 
 
     [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Id { get; set; } 
@@ -23,7 +24,7 @@ public class UserRoles
     public int? ShowMeonly { get; set; } 
 
     [JsonProperty("ischangeapprover2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Ischangeapprover2 { get; set; } 
+    public bool? IsChangeapprover2 { get; set; } 
 
     [JsonProperty("ispoapprover", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Ispoapprover { get; set; } 
@@ -32,7 +33,7 @@ public class UserRoles
     public int? WebAccessLevel { get; set; } 
 
     [JsonProperty("canadd", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Canadd { get; set; } 
+    public bool? CanAdd { get; set; } 
 
     [JsonProperty("canviewopps", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Canviewopps { get; set; } 
@@ -47,13 +48,13 @@ public class UserRoles
     public bool? Canviewcontracts { get; set; } 
 
     [JsonProperty("canaccesscatalog", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Canaccesscatalog { get; set; } 
+    public bool? CanAccesscatalog { get; set; } 
 
     [JsonProperty("cataloglevel", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Cataloglevel { get; set; } 
 
     [JsonProperty("canaccessinvoices", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Canaccessinvoices { get; set; } 
+    public bool? CanAccessinvoices { get; set; } 
 
     [JsonProperty("name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Name { get; set; } 
@@ -71,7 +72,7 @@ public class UserRoles
     public string? Warning { get; set; } 
 
     [JsonProperty("dontackemails2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Dontackemails2 { get; set; } 
+    public bool? DontAckemails2 { get; set; } 
 
     [JsonProperty("departments", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<UserDepartment>? Departments { get; set; } 
@@ -80,6 +81,6 @@ public class UserRoles
     public ICollection<AgentNotification>? Notifications { get; set; } 
 
     [JsonProperty("canuploaddocuments", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Canuploaddocuments { get; set; } 
+    public bool? CanUploaddocuments { get; set; } 
 
 }

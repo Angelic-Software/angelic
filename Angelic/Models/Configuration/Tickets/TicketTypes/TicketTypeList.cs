@@ -44,7 +44,7 @@ public class TicketTypeList
     public int? TicketCount { get; set; } 
 
     [JsonProperty("cancreate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Cancreate { get; set; } 
+    public bool? CanCreate { get; set; } 
 
     [JsonProperty("agentscanselect", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Agentscanselect { get; set; } 
@@ -53,7 +53,7 @@ public class TicketTypeList
     public int? ItilRequesttype { get; set; } 
 
     [JsonProperty("allowattachments", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Allowattachments { get; set; } 
+    public bool? AllowAttachments { get; set; } 
 
     [JsonProperty("copyattachmentstochild", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Copyattachmentstochild { get; set; } 
@@ -68,7 +68,7 @@ public class TicketTypeList
     public ICollection<int>? Fieldidlist { get; set; } 
 
     [JsonProperty("enduserscanselect", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Enduserscanselect { get; set; } 
+    public bool? EndUserscanselect { get; set; } 
 
     [JsonProperty("anonymouscanselect", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Anonymouscanselect { get; set; } 
@@ -83,10 +83,10 @@ public class TicketTypeList
     public int? ProjectType { get; set; } 
 
     [JsonProperty("kanbanstatuschoice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<StringIdNameKeyPair>? Kanbanstatuschoice { get; set; } 
+    public ICollection<StringIdNameKeyPair>? KanbanStatusChoice { get; set; } 
 
     [JsonProperty("kanbanstatuschoice_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? KanbanstatuschoiceList { get; set; } 
+    public string? KanbanStatusChoiceList { get; set; } 
 
     [JsonProperty("email_start_tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? EmailStartTag { get; set; } 

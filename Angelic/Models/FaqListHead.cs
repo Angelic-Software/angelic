@@ -1,5 +1,5 @@
 using System.CodeDom.Compiler;
-using Angelic.Models.Areas;
+using Angelic.Models.Clients;
 using Angelic.Models.Configuration;
 using Angelic.Models.Configuration.Language;
 using Angelic.Models.Configuration.Tickets.TicketTypes;
@@ -108,7 +108,7 @@ public class FaqListHead
     public int? AccessControlLevel { get; set; }
 
     [JsonProperty("clients", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AreaList>? Clients { get; set; }
+    public ICollection<ClientList>? Clients { get; set; }
 
     [JsonProperty("dontshowonportal", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? DontShowOnPortal { get; set; }

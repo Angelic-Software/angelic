@@ -5,6 +5,7 @@ using Angelic.Models.Configuration.Custom.CustomFields;
 using Angelic.Models.Configuration.SelfServicePortal;
 using Angelic.Models.Configuration.Tickets.TicketRule;
 using Angelic.Models.Invoice;
+using Angelic.Models.Milestones;
 using Angelic.Models.Tickets;
 using Angelic.Models.Users;
 using Newtonsoft.Json;
@@ -69,16 +70,16 @@ public class Template
     public ICollection<TemplateRule>? CreationRules { get; set; } 
 
     [JsonProperty("todo_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<StdToDo>? TodoList { get; set; } 
+    public ICollection<TemplateToDo>? TodoList { get; set; } 
 
     [JsonProperty("emailto", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Emailto { get; set; } 
+    public string? EmailTo { get; set; } 
 
     [JsonProperty("emailcc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Emailcc { get; set; } 
+    public string? EmailCc { get; set; } 
 
     [JsonProperty("emailbcc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Emailbcc { get; set; } 
+    public string? EmailBcc { get; set; } 
 
     [JsonProperty("emailsubject", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Emailsubject { get; set; } 
@@ -93,10 +94,10 @@ public class Template
     public DateTimeOffset? Lastcreated { get; set; } 
 
     [JsonProperty("nextcreationdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Nextcreationdate { get; set; } 
+    public DateTimeOffset? NextCreationdate { get; set; } 
 
     [JsonProperty("nextcreationdate_after_end", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? NextcreationdateAfterEnd { get; set; } 
+    public DateTimeOffset? NextCreationdateAfterEnd { get; set; } 
 
     [JsonProperty("execution_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ExecutionType { get; set; } 
@@ -186,10 +187,10 @@ public class Template
     public string? AgentName { get; set; } 
 
     [JsonProperty("showforusers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowForusers { get; set; } 
+    public bool? ShowForUsers { get; set; } 
 
     [JsonProperty("excludefromsla", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Excludefromsla { get; set; } 
+    public bool? ExcludeFromSla { get; set; } 
 
     [JsonProperty("defaultresourcetype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? DefaultResourcetype { get; set; } 
@@ -264,7 +265,7 @@ public class Template
     public int? ReportId { get; set; } 
 
     [JsonProperty("emailbody", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Emailbody { get; set; } 
+    public string? EmailBody { get; set; } 
 
     [JsonProperty("kbid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Kbid { get; set; } 
@@ -306,7 +307,7 @@ public class Template
     public ICollection<CustomField>? CustomFields { get; set; } 
 
     [JsonProperty("assets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<DeviceList>? Assets { get; set; } 
+    public ICollection<AssetList>? Assets { get; set; } 
 
     [JsonProperty("users", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<UsersList>? Users { get; set; } 
@@ -336,7 +337,7 @@ public class Template
     public string? KbName { get; set; } 
 
     [JsonProperty("kb_accessible_for_enduser", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? KbAccessibleForEnduser { get; set; } 
+    public bool? KbAccessibleForEndUser { get; set; } 
 
     [JsonProperty("forwardinboundupdates", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Forwardinboundupdates { get; set; } 
@@ -354,7 +355,7 @@ public class Template
     public string? BudgetTypeName { get; set; } 
 
     [JsonProperty("emailcclist", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Emailcclist { get; set; } 
+    public string? EmailCclist { get; set; } 
 
     [JsonProperty("services", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<ServSiteList>? Services { get; set; } 
@@ -405,13 +406,13 @@ public class Template
     public bool? IsClone { get; set; } 
 
     [JsonProperty("showforusers_int", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ShowForusersInt { get; set; } 
+    public int? ShowForUsersInt { get; set; } 
 
     [JsonProperty("forwardinboundupdates_int", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ForwardinboundupdatesInt { get; set; } 
 
     [JsonProperty("excludefromsla_int", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ExcludefromslaInt { get; set; } 
+    public int? ExcludeFromSlaInt { get; set; } 
 
     [JsonProperty("start_num_days_added", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? StartNumDaysAdded { get; set; } 
@@ -528,19 +529,19 @@ public class Template
     public int? OptionalDefaultResourcetype { get; set; } 
 
     [JsonProperty("optional_excludefromsla", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? OptionalExcludefromsla { get; set; } 
+    public int? OptionalExcludeFromSla { get; set; } 
 
     [JsonProperty("optional_customfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<CustomField>? OptionalCustomFields { get; set; } 
 
     [JsonProperty("optional_assets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<DeviceList>? OptionalAssets { get; set; } 
+    public ICollection<AssetList>? OptionalAssets { get; set; } 
 
     [JsonProperty("optional_forwardinboundupdates", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? OptionalForwardinboundupdates { get; set; } 
 
     [JsonProperty("optional_showforusers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? OptionalShowForusers { get; set; } 
+    public int? OptionalShowForUsers { get; set; } 
 
     [JsonProperty("optional_urgency", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? OptionalUrgency { get; set; } 

@@ -1,5 +1,6 @@
-using Angelic.Models.Areas;
 using Angelic.Models.Assets;
+using Angelic.Models.Clients;
+using Angelic.Models.Configuration.Assets;
 using Angelic.Models.Configuration.Integrations;
 using Angelic.Models.Configuration.Integrations.Google;
 using Angelic.Models.Configuration.Integrations.Microsoft.Azure.AzureAd;
@@ -9,6 +10,7 @@ using Angelic.Models.Configuration.TeamsAndAgents.Workdays;
 using Angelic.Models.Configuration.Tickets;
 using Angelic.Models.Configuration.Users;
 using Angelic.Models.Contracts;
+using Angelic.Models.KeyPairs;
 using Newtonsoft.Json;
 
 namespace Angelic.Models.Configuration.Advanced.Controls;
@@ -31,7 +33,7 @@ public partial class Control
         public bool? DefaultUseRpiIncrease { get; set; } 
 
         [JsonProperty("enableemailthreading", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Enableemailthreading { get; set; } 
+        public bool? EnableEmailThreading { get; set; } 
 
         [JsonProperty("att_item_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? AttItemGroup { get; set; } 
@@ -43,13 +45,13 @@ public partial class Control
         public bool? Processunclosedtravel { get; set; } 
 
         [JsonProperty("use_document_management_for_clientsiteuser", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? UseDocumentManagementForClientsiteuser { get; set; } 
+        public bool? UseDocumentManagementForClientSiteuser { get; set; } 
 
         [JsonProperty("use_geo_restrictions_kb", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? UseGeoRestrictionsKb { get; set; } 
 
         [JsonProperty("use_geo_restrictions_faqlist", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? UseGeoRestrictionsFaqlist { get; set; } 
+        public bool? UseGeoRestrictionsFaqList { get; set; } 
 
         [JsonProperty("calculate_composite_tax_after_line_tax", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? CalculateCompositeTaxAfterLineTax { get; set; } 
@@ -76,13 +78,13 @@ public partial class Control
         public bool? OrderGroupsByNameIgnoreEmojis { get; set; } 
 
         [JsonProperty("sendagentemailafterquoterejected", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Sendagentemailafterquoterejected { get; set; } 
+        public bool? SendAgentemailafterquoterejected { get; set; } 
 
         [JsonProperty("guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public Guid? Guid { get; set; } 
 
         [JsonProperty("log_clientsiteuser_views", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? LogClientsiteuserViews { get; set; } 
+        public bool? LogClientSiteuserViews { get; set; } 
 
         [JsonProperty("enable_xml_generation_warnings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? EnableXmlGenerationWarnings { get; set; } 
@@ -190,7 +192,7 @@ public partial class Control
         public bool? AllowAllAssetReturns { get; set; } 
 
         [JsonProperty("liongard_default_devicetype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? LiongardDefaultDevicetype { get; set; } 
+        public int? LiongardDefaultDeviceType { get; set; } 
 
         [JsonProperty("liongard_assettype_choice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? LiongardAssetTypeChoice { get; set; } 
@@ -320,7 +322,7 @@ public partial class Control
 
         [JsonProperty("portalbackgroundimageurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         [System.ComponentModel.DataAnnotations.StringLength(500)]
-        public string? Portalbackgroundimageurl { get; set; } 
+        public string? PortalBackgroundImageUrl { get; set; } 
 
         [JsonProperty("mobileapp_disabled", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? MobileappDisabled { get; set; } 
@@ -476,7 +478,7 @@ public partial class Control
         public string? SccmIdfield { get; set; } 
 
         [JsonProperty("sccm_typefield", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? SccmTypefield { get; set; } 
+        public string? SccmTypeField { get; set; } 
 
         [JsonProperty("sccm_sitefield", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? SccmSitefield { get; set; } 
@@ -497,7 +499,7 @@ public partial class Control
         public bool? SccmUpdateonly { get; set; } 
 
         [JsonProperty("sccm_donotvalidate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? SccmDonotvalidate { get; set; } 
+        public bool? SccmDoNotValidate { get; set; } 
 
         [JsonProperty("sccm_fieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<SqlImportField>? SccmFieldMappings { get; set; } 
@@ -512,7 +514,7 @@ public partial class Control
         public string? SccmSqlusername { get; set; } 
 
         [JsonProperty("sccm_assetimportidentifier", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? SccmAssetimportidentifier { get; set; } 
+        public int? SccmAssetImportIdentifier { get; set; } 
 
         [JsonProperty("sccm_new_sql_password", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? SccmNewSqlPassword { get; set; } 
@@ -524,16 +526,16 @@ public partial class Control
         public bool? SccmUpdated { get; set; } 
 
         [JsonProperty("sccm_dontupdatesite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? SccmDontupdatesite { get; set; } 
+        public bool? SccmDontUpdatesite { get; set; } 
 
         [JsonProperty("sccm_dontremoveusers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? SccmDontremoveusers { get; set; } 
+        public bool? SccmDontRemoveUsers { get; set; } 
 
         [JsonProperty("halointegrator_sccm", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? HaloIntegratorSccm { get; set; } 
 
         [JsonProperty("halointegrator_sccm_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorSccmLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorSccmLastSync { get; set; } 
 
         [JsonProperty("halointegrator_sccm_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? HaloIntegratorSccmLastError { get; set; } 
@@ -560,19 +562,19 @@ public partial class Control
         public ICollection<IntegrationFieldMapping>? NinjaFieldMappings { get; set; } 
 
         [JsonProperty("halointegrator_ninjarmm", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? HaloIntegratorNinjarmm { get; set; } 
+        public bool? HaloIntegratorNinjaRmm { get; set; } 
 
         [JsonProperty("halointegrator_ninjarmm_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorNinjarmmLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorNinjaRmmLastSync { get; set; } 
 
         [JsonProperty("halointegrator_ninjarmm_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? HaloIntegratorNinjarmmLastError { get; set; } 
+        public string? HaloIntegratorNinjaRmmLastError { get; set; } 
 
         [JsonProperty("halointegrator_solarwindsrmm", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? HaloIntegratorSolarwindsrmm { get; set; } 
 
         [JsonProperty("halointegrator_solarwindsrmm_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorSolarwindsrmmLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorSolarwindsrmmLastSync { get; set; } 
 
         [JsonProperty("halointegrator_solarwindsrmm_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? HaloIntegratorSolarwindsrmmLastError { get; set; } 
@@ -587,7 +589,7 @@ public partial class Control
         public bool? Resendunsentemails { get; set; } 
 
         [JsonProperty("_emailprocessed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Emailprocessed { get; set; } 
+        public int? EmailProcessed { get; set; } 
 
         [JsonProperty("_addactiontofaultid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Addactiontofaultid { get; set; } 
@@ -605,7 +607,7 @@ public partial class Control
         public bool? HaloIntegratorLansweeper { get; set; } 
 
         [JsonProperty("halointegrator_lansweeper_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorLansweeperLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorLansweeperLastSync { get; set; } 
 
         [JsonProperty("halointegrator_lansweeper_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? HaloIntegratorLansweeperLastError { get; set; } 
@@ -644,7 +646,7 @@ public partial class Control
         public string? LansweeperIdfield { get; set; } 
 
         [JsonProperty("lansweeper_typefield", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? LansweeperTypefield { get; set; } 
+        public string? LansweeperTypeField { get; set; } 
 
         [JsonProperty("lansweeper_sitefield", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? LansweeperSitefield { get; set; } 
@@ -671,22 +673,22 @@ public partial class Control
         public bool? LansweeperUpdateonly { get; set; } 
 
         [JsonProperty("lansweeper_donotvalidate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? LansweeperDonotvalidate { get; set; } 
+        public bool? LansweeperDoNotValidate { get; set; } 
 
         [JsonProperty("lansweeper_dontupdatesite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? LansweeperDontupdatesite { get; set; } 
+        public bool? LansweeperDontUpdatesite { get; set; } 
 
         [JsonProperty("lansweeper_dontremoveusers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? LansweeperDontremoveusers { get; set; } 
+        public bool? LansweeperDontRemoveUsers { get; set; } 
 
         [JsonProperty("lansweeper_fieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<SqlImportField>? LansweeperFieldMappings { get; set; } 
 
         [JsonProperty("lansweeper_assetimportidentifier", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? LansweeperAssetimportidentifier { get; set; } 
+        public int? LansweeperAssetImportIdentifier { get; set; } 
 
         [JsonProperty("dattormm_fromaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? DattormmFromaddress { get; set; } 
+        public string? DattormmFromAddress { get; set; } 
 
         [JsonProperty("dattormm_tickettype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? DattormmTicketType { get; set; } 
@@ -695,7 +697,7 @@ public partial class Control
         public Guid? DattormmTicketTypeGuid { get; set; } 
 
         [JsonProperty("cautomate_fromaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? CautomateFromaddress { get; set; } 
+        public string? CautomateFromAddress { get; set; } 
 
         [JsonProperty("cautomate_requesttype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? CautomateRequestType { get; set; } 
@@ -704,7 +706,7 @@ public partial class Control
         public Guid? CautomateRequestTypeGuid { get; set; } 
 
         [JsonProperty("solarwindsrmm_fromaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? SolarwindsrmmFromaddress { get; set; } 
+        public string? SolarwindsrmmFromAddress { get; set; } 
 
         [JsonProperty("solarwindsrmm_requesttype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? SolarwindsrmmRequestType { get; set; } 
@@ -719,22 +721,22 @@ public partial class Control
         public string? SplunkuserName { get; set; } 
 
         [JsonProperty("ncentral_fieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<IntegrationFieldMapping>? NcentralFieldMappings { get; set; } 
+        public ICollection<IntegrationFieldMapping>? NCentralFieldMappings { get; set; } 
 
         [JsonProperty("halointegrator_ncentral", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? HaloIntegratorNcentral { get; set; } 
+        public bool? HaloIntegratorNCentral { get; set; } 
 
         [JsonProperty("halointegrator_ncentral_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorNcentralLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorNCentralLastSync { get; set; } 
 
         [JsonProperty("halointegrator_ncentral_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? HaloIntegratorNcentralLastError { get; set; } 
+        public string? HaloIntegratorNCentralLastError { get; set; } 
 
         [JsonProperty("client_secret_ncentral", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? ClientSecretNcentral { get; set; } 
+        public string? ClientSecretNCentral { get; set; } 
 
         [JsonProperty("ncentraluser_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? NcentraluserName { get; set; } 
+        public string? NCentraluserName { get; set; } 
 
         [JsonProperty("azureconnection", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Azureconnection { get; set; } 
@@ -743,16 +745,16 @@ public partial class Control
         public int? Azuremapping { get; set; } 
 
         [JsonProperty("businesscentral_fieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<IntegrationFieldMapping>? BusinesscentralFieldMappings { get; set; } 
+        public ICollection<IntegrationFieldMapping>? BusinessCentralFieldMappings { get; set; } 
 
         [JsonProperty("businesscentralsite_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? BusinesscentralsiteName { get; set; } 
+        public string? BusinessCentralsiteName { get; set; } 
 
         [JsonProperty("_createbusinesscentralasset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Createbusinesscentralasset { get; set; } 
 
         [JsonProperty("businesscentralasset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public Asset? Businesscentralasset { get; set; } 
+        public Asset? BusinessCentralasset { get; set; } 
 
         [JsonProperty("defaultquicktimemethod", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? DefaultQuicktimemethod { get; set; } 
@@ -770,7 +772,7 @@ public partial class Control
         public bool? Getautomationbody { get; set; } 
 
         [JsonProperty("_sendautomationhook", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Sendautomationhook { get; set; } 
+        public bool? SendAutomationhook { get; set; } 
 
         [JsonProperty("_automationwebhookid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public Guid? Automationwebhookid { get; set; } 
@@ -797,7 +799,7 @@ public partial class Control
         public string? Qbozerotaxcode { get; set; } 
 
         [JsonProperty("_areaitems_to_convert", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<AreaItem>? AreaitemsToConvert { get; set; } 
+        public ICollection<RecurringItem>? AreaItemsToConvert { get; set; } 
 
         [JsonProperty("_contracts_to_convert", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<ContractHeaderList>? ContractsToConvert { get; set; } 
@@ -809,7 +811,7 @@ public partial class Control
         public int? TakecontrolDeviceid { get; set; } 
 
         [JsonProperty("showing_customer_fields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? ShowingCustomerFields { get; set; } 
+        public bool? ShowIngCustomerFields { get; set; } 
 
         [JsonProperty("_getgoogletoken", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Getgoogletoken { get; set; } 
@@ -848,13 +850,13 @@ public partial class Control
         public ICollection<ValueLabelIsNewKeyPair>? GwAgentMatchingList { get; set; } 
 
         [JsonProperty("gw_licensed_roles_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<KeyPair>? GwLicensedRolesList { get; set; } 
+        public ICollection<StringIdNameKeyPair>? GwLicensedRolesList { get; set; } 
 
         [JsonProperty("halointegrator_googleworkplace", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? HaloIntegratorGoogleworkplace { get; set; } 
 
         [JsonProperty("halointegrator_googleworkplace_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorGoogleworkplaceLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorGoogleworkplaceLastSync { get; set; } 
 
         [JsonProperty("halointegrator_googleworkplace_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? HaloIntegratorGoogleworkplaceLastError { get; set; } 
@@ -863,7 +865,7 @@ public partial class Control
         public ICollection<IntegrationFieldMapping>? DynamicscrmFieldMappings { get; set; } 
 
         [JsonProperty("scom_fromaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? ScomFromaddress { get; set; } 
+        public string? ScomFromAddress { get; set; } 
 
         [JsonProperty("scom_requesttype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? ScomRequestType { get; set; } 
@@ -878,13 +880,13 @@ public partial class Control
         public bool? HaloIntegratorScom { get; set; } 
 
         [JsonProperty("halointegrator_scom_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorScomLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorScomLastSync { get; set; } 
 
         [JsonProperty("halointegrator_scom_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? HaloIntegratorScomLastError { get; set; } 
 
         [JsonProperty("ncentral_customerid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? NcentralCustomerid { get; set; } 
+        public int? NCentralCustomerid { get; set; } 
 
         [JsonProperty("rdattodefaultassettypegroup_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? RdattodefaultassettypegroupName { get; set; } 
@@ -902,7 +904,7 @@ public partial class Control
         public bool? HaloIntegratorPrtg { get; set; } 
 
         [JsonProperty("halointegrator_prtg_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorPrtgLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorPrtgLastSync { get; set; } 
 
         [JsonProperty("halointegrator_prtg_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? HaloIntegratorPrtgLastError { get; set; } 
@@ -920,7 +922,7 @@ public partial class Control
         public bool? HaloIntegratorOrion { get; set; } 
 
         [JsonProperty("halointegrator_orion_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorOrionLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorOrionLastSync { get; set; } 
 
         [JsonProperty("halointegrator_orion_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? HaloIntegratorOrionLastError { get; set; } 
@@ -971,7 +973,7 @@ public partial class Control
         public bool? HaloIntegratorDatto { get; set; } 
 
         [JsonProperty("halointegrator_datto_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorDattoLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorDattoLastSync { get; set; } 
 
         [JsonProperty("halointegrator_datto_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? HaloIntegratorDattoLastError { get; set; } 
@@ -995,7 +997,7 @@ public partial class Control
         public bool? HaloIntegratorAtera { get; set; } 
 
         [JsonProperty("halointegrator_atera_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorAteraLastsync { get; set; } 
+        public DateTimeOffset? HaloIntegratorAteraLastSync { get; set; } 
 
         [JsonProperty("halointegrator_atera_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? HaloIntegratorAteraLastError { get; set; } 

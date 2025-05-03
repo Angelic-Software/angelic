@@ -16,7 +16,7 @@ public class MicrosoftTeamsMapping
     public string? TeamName { get; set; } 
 
     [JsonProperty("_subscriptionaction", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public WebhookSubscriptionAction? Subscriptionaction { get; set; } 
+    public WebhookSubscriptionAction? SubscriptionAction { get; set; } 
 
     [JsonProperty("subscription_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? SubscriptionId { get; set; } 
@@ -31,6 +31,6 @@ public class MicrosoftTeamsMapping
     public string? NewSubscriptionKey { get; set; } 
 
     [JsonProperty("_dosave", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Dosave { get; set; } 
+    public bool? DoSave { get; set; } 
 
 }

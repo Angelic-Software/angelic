@@ -33,7 +33,7 @@ public class MicrosoftSubscriptionMapping
     public int? AzureConnectionId { get; set; } 
 
     [JsonProperty("_subscriptionaction", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public WebhookSubscriptionAction? Subscriptionaction { get; set; } 
+    public WebhookSubscriptionAction? SubscriptionAction { get; set; } 
 
     [JsonProperty("subscription_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? SubscriptionId { get; set; } 
@@ -51,7 +51,7 @@ public class MicrosoftSubscriptionMapping
     public AzureAdConnection? AzureConnection { get; set; } 
 
     [JsonProperty("_dosave", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Dosave { get; set; } 
+    public bool? DoSave { get; set; } 
 
     [JsonProperty("mappings_folder", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<IntegrationFieldMapping>? MappingsFolder { get; set; } 

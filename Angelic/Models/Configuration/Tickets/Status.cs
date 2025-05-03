@@ -75,7 +75,7 @@ public class Status
     public Guid? NochangetemplateGuid { get; set; } 
 
     [JsonProperty("includeinloadbalance", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Includeinloadbalance { get; set; } 
+    public bool? IncludeInloadbalance { get; set; } 
 
     [JsonProperty("statusemailfreqdays", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Statusemailfreqdays { get; set; } 
@@ -93,13 +93,13 @@ public class Status
     public int? Notifystatuschange { get; set; } 
 
     [JsonProperty("dontsendslareminders", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Dontsendslareminders { get; set; } 
+    public bool? DontSendslareminders { get; set; } 
 
     [JsonProperty("nochangetemplatename", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Nochangetemplatename { get; set; } 
 
     [JsonProperty("slaignorerelease", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Slaignorerelease { get; set; } 
+    public bool? SlaIgnorerelease { get; set; } 
 
     [JsonProperty("statuschangetoname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Statuschangetoname { get; set; } 

@@ -34,13 +34,13 @@ public class AgentCustom
     public int? Level { get; set; } 
 
     [JsonProperty("canadd", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Canadd { get; set; } 
+    public bool? CanAdd { get; set; } 
 
     [JsonProperty("candelete", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Candelete { get; set; } 
+    public bool? CanDelete { get; set; } 
 
     [JsonProperty("canedit", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Canedit { get; set; } 
+    public bool? CanEdit { get; set; } 
 
     [JsonProperty("customfield_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? CustomfieldType { get; set; } 

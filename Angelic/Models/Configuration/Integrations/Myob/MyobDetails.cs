@@ -11,7 +11,7 @@ namespace Angelic.Models.Configuration.Integrations.Myob;
         public int? Id { get; set; } 
 
         [JsonProperty("isdesktop", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Isdesktop { get; set; } 
+        public bool? IsDesktop { get; set; } 
 
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Url { get; set; } 
@@ -56,10 +56,10 @@ namespace Angelic.Models.Configuration.Integrations.Myob;
         public int? DefaultItemGroup { get; set; } 
 
         [JsonProperty("defaultsalesaccountid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Defaultsalesaccountid { get; set; } 
+        public int? DefaultSalesaccountid { get; set; } 
 
         [JsonProperty("defaultsalesaccountname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Defaultsalesaccountname { get; set; } 
+        public string? DefaultSalesaccountname { get; set; } 
 
         [JsonProperty("defaultexpenseaccountid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? DefaultExpenseaccountid { get; set; } 
@@ -71,7 +71,7 @@ namespace Angelic.Models.Configuration.Integrations.Myob;
         public bool? Enablesync { get; set; } 
 
         [JsonProperty("syncentities", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Syncentities { get; set; } 
+        public string? SyncEntities { get; set; } 
 
         [JsonProperty("showmessage", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? ShowMessage { get; set; } 

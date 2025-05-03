@@ -49,19 +49,19 @@ public class Organisation
 
     [JsonProperty("portalbackgroundimageurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     [System.ComponentModel.DataAnnotations.StringLength(500)]
-    public string? Portalbackgroundimageurl { get; set; } 
+    public string? PortalBackgroundImageUrl { get; set; } 
 
     [JsonProperty("deliverysite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Deliverysite { get; set; } 
 
     [JsonProperty("portalurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Portalurl { get; set; } 
+    public string? PortalUrl { get; set; } 
 
     [JsonProperty("portalcolour", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Portalcolour { get; set; } 
+    public string? PortalColour { get; set; } 
 
     [JsonProperty("portalfolderlocation", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Portalfolderlocation { get; set; } 
+    public string? PortalFolderlocation { get; set; } 
 
     [JsonProperty("departments", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<TopLevelList>? Departments { get; set; } 
@@ -70,13 +70,13 @@ public class Organisation
     public int? LinkedClientId { get; set; } 
 
     [JsonProperty("allowall_tickettypes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? AllowallTicketTypes { get; set; } 
+    public bool? AllowAllTicketTypes { get; set; } 
 
     [JsonProperty("allowed_tickettypes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<TicketTypeList>? AllowedTicketTypes { get; set; } 
 
     [JsonProperty("faqlists", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<FaqListHead>? Faqlists { get; set; } 
+    public ICollection<FaqListHead>? FaqLists { get; set; } 
 
     [JsonProperty("customfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<CustomField>? CustomFields { get; set; } 
@@ -112,10 +112,10 @@ public class Organisation
     public string? PortalTitle { get; set; } 
 
     [JsonProperty("user_faqlists", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<FaqListHead>? UserFaqlists { get; set; } 
+    public ICollection<FaqListHead>? UserFaqLists { get; set; } 
 
     [JsonProperty("all_user_faqlists_allowed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? AllUserFaqlistsAllowed { get; set; } 
+    public bool? AllUserFaqListsAllowed { get; set; } 
 
     [JsonProperty("portal_chat_profile_override", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? PortalChatProfileOverride { get; set; } 

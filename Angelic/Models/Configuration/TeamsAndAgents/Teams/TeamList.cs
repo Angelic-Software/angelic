@@ -23,13 +23,13 @@ public class TeamList
     public int? Sequence { get; set; } 
 
     [JsonProperty("forrequests", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Forrequests { get; set; } 
+    public bool? ForRequests { get; set; } 
 
     [JsonProperty("foropps", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Foropps { get; set; } 
+    public bool? ForOpps { get; set; } 
 
     [JsonProperty("forprojects", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Forprojects { get; set; } 
+    public bool? ForProjects { get; set; } 
 
     [JsonProperty("ticket_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? TicketCount { get; set; } 

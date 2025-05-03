@@ -10,7 +10,7 @@ public class InvoiceDetailProRata
     public int? Id { get; set; } 
 
     [JsonProperty("invoicedetailid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Invoicedetailid { get; set; } 
+    public int? InvoiceDetailid { get; set; } 
 
     [JsonProperty("recurring_invoice_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? RecurringInvoiceId { get; set; } 
@@ -58,7 +58,7 @@ public class InvoiceDetailProRata
     public bool? ProrataNextInvoice { get; set; } 
 
     [JsonProperty("invoiceheaderid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Invoiceheaderid { get; set; } 
+    public int? InvoiceHeaderId { get; set; } 
 
     [JsonProperty("dont_auto_calculate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? DontAutoCalculate { get; set; } 
@@ -67,7 +67,7 @@ public class InvoiceDetailProRata
     public string? Warning { get; set; } 
 
     [JsonProperty("isinvoiced", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isinvoiced { get; set; } 
+    public bool? IsInvoiced { get; set; } 
 
     [JsonProperty("isfuturepr", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Isfuturepr { get; set; } 

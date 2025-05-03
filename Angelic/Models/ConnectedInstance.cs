@@ -13,10 +13,10 @@ public class ConnectedInstance
     public string? Name { get; set; } 
 
     [JsonProperty("apiurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Apiurl { get; set; } 
+    public string? ApiUrl { get; set; } 
 
     [JsonProperty("authurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Authurl { get; set; } 
+    public string? AuthUrl { get; set; } 
 
     [JsonProperty("tenant", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Tenant { get; set; } 
@@ -25,7 +25,7 @@ public class ConnectedInstance
     public string? ClientId { get; set; } 
 
     [JsonProperty("new_clientsecret", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? NewClientsecret { get; set; } 
+    public string? NewClientSecret { get; set; } 
 
     [JsonProperty("_test", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Test { get; set; } 

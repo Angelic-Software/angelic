@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Models.KeyPairs;
 using Newtonsoft.Json;
 
 namespace Angelic.Models.Reports;
@@ -31,7 +32,7 @@ public class ReportFilter
     public double? NumericValue { get; set; }
     
     [JsonProperty("stringrulevalues", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<KeyPair2>? StringRuleValues { get; set; }
+    public ICollection<ValueLabelIsNewKeyPair>? StringRuleValues { get; set; }
     
     [JsonProperty("stringruletext", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? StringRuleText { get; set; }

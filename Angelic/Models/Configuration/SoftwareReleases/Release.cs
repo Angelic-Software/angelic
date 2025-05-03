@@ -67,13 +67,13 @@ public class Release
     public int? ReleasenoteCount { get; set; } 
 
     [JsonProperty("release1_emaildate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Release1Emaildate { get; set; } 
+    public DateTimeOffset? Release1EmailDate { get; set; } 
 
     [JsonProperty("release2_emaildate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Release2Emaildate { get; set; } 
+    public DateTimeOffset? Release2EmailDate { get; set; } 
 
     [JsonProperty("release3_emaildate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Release3Emaildate { get; set; } 
+    public DateTimeOffset? Release3EmailDate { get; set; } 
 
     [JsonProperty("send_release1_email", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? SendRelease1Email { get; set; } 

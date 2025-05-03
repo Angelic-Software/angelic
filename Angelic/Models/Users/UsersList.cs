@@ -1,5 +1,6 @@
 using System.CodeDom.Compiler;
 using Angelic.Models.Attachments;
+using Angelic.Models.Configuration.Assets.AssetTypes;
 using Angelic.Models.Configuration.Custom;
 using Angelic.Models.Configuration.Custom.CustomFields;
 using Newtonsoft.Json;
@@ -28,7 +29,7 @@ public class UsersList
     public string? ClientName { get; set; } 
 
     [JsonProperty("firstname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Firstname { get; set; } 
+    public string? FirstName { get; set; } 
 
     [JsonProperty("surname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Surname { get; set; } 
@@ -43,13 +44,13 @@ public class UsersList
     public string? EmailAddress { get; set; } 
 
     [JsonProperty("phonenumber_preferred", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? PhonenumberPreferred { get; set; } 
+    public string? PhoneNumberPreferred { get; set; } 
 
     [JsonProperty("sitephonenumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Sitephonenumber { get; set; } 
 
     [JsonProperty("phonenumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Phonenumber { get; set; } 
+    public string? PhoneNumber { get; set; } 
 
     [JsonProperty("homenumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Homenumber { get; set; } 
@@ -85,7 +86,7 @@ public class UsersList
     public string? Colour { get; set; } 
 
     [JsonProperty("isimportantcontact", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isimportantcontact { get; set; } 
+    public bool? IsImportantcontact { get; set; } 
 
     [JsonProperty("other1", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Other1 { get; set; } 
@@ -142,7 +143,7 @@ public class UsersList
     public ICollection<Attachment>? Attachments { get; set; } 
 
     [JsonProperty("custombuttons", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CustomButton>? Custombuttons { get; set; } 
+    public ICollection<CustomButton>? CustomButtons { get; set; } 
 
     [JsonProperty("relationship_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? RelationshipId { get; set; } 
@@ -172,13 +173,13 @@ public class UsersList
     public bool? Ignoreautomatedbilling { get; set; } 
 
     [JsonProperty("isimportantcontact2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isimportantcontact2 { get; set; } 
+    public bool? IsImportantcontact2 { get; set; } 
 
     [JsonProperty("connectwiseid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Connectwiseid { get; set; } 
+    public int? ConnectWiseId { get; set; } 
 
     [JsonProperty("autotaskid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Autotaskid { get; set; } 
+    public int? AutoTaskId { get; set; } 
 
     [JsonProperty("messagegroup_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? MessageGroupId { get; set; } 
@@ -214,10 +215,10 @@ public class UsersList
     public bool? ClientTaxable { get; set; } 
 
     [JsonProperty("overridepdftemplatequote", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Overridepdftemplatequote { get; set; } 
+    public int? OverridePdfTemplateQuote { get; set; } 
 
     [JsonProperty("overridepdftemplatequote_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? OverridepdftemplatequoteName { get; set; } 
+    public string? OverridePdfTemplateQuoteName { get; set; } 
 
     [JsonProperty("contract_end_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? ContractEndDate { get; set; } 
@@ -229,7 +230,7 @@ public class UsersList
     public string? AzureId { get; set; } 
 
     [JsonProperty("user_with_clientsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? UserWithClientsite { get; set; } 
+    public string? UserWithClientSite { get; set; } 
 
     [JsonProperty("client_automatic_callscript_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ClientAutomaticCallscriptId { get; set; } 
@@ -253,7 +254,7 @@ public class UsersList
     public int? ImportTypeId { get; set; } 
 
     [JsonProperty("_importthirdpartyid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Importthirdpartyid { get; set; } 
+    public string? ImportThirdPartyId { get; set; } 
 
     [JsonProperty("_importtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ImportType { get; set; } 

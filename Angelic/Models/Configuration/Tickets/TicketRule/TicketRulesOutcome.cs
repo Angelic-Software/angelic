@@ -31,7 +31,7 @@ public class TicketRulesOutcome
     public string? ValueString { get; set; } 
 
     [JsonProperty("value_datetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? ValueDatetime { get; set; } 
+    public DateTimeOffset? ValueDateTime { get; set; } 
 
     [JsonProperty("value_float", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? ValueFloat { get; set; } 

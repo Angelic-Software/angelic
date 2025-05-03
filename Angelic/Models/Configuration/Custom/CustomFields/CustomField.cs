@@ -69,7 +69,7 @@ public class CustomField
     public string? ThirdPartyName { get; set; } 
 
     [JsonProperty("extratype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Extratype { get; set; } 
+    public int? ExtraType { get; set; } 
 
     [JsonProperty("copytochildonupdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Copytochildonupdate { get; set; } 
@@ -150,7 +150,7 @@ public class CustomField
     public int? TableDataEntryType { get; set; } 
 
     [JsonProperty("showintable", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Showintable { get; set; } 
+    public bool? ShowIntable { get; set; } 
 
     [JsonProperty("table_height", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? TableHeight { get; set; } 
@@ -177,7 +177,7 @@ public class CustomField
     public ICollection<int>? DeleteTheseRows { get; set; } 
 
     [JsonProperty("showinpool", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Showinpool { get; set; } 
+    public bool? ShowInpool { get; set; } 
 
     [JsonProperty("allow_pool_override", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? AllowPoolOverride { get; set; } 

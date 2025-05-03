@@ -19,7 +19,7 @@ public class Field
     public int? Id { get; set; } 
 
     [JsonProperty("typeinfo_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? TypeinfoId { get; set; } 
+    public int? TypeInfoId { get; set; } 
 
     [JsonProperty("name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Name { get; set; } 
@@ -100,10 +100,10 @@ public class Field
     public int? TabColumns { get; set; } 
 
     [JsonProperty("groupname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Groupname { get; set; } 
+    public string? GroupName { get; set; } 
 
     [JsonProperty("techdetail", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Techdetail { get; set; } 
+    public int? TechDetail { get; set; } 
 
     [JsonProperty("userdetail", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? UserDetail { get; set; } 

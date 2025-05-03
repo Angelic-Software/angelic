@@ -26,10 +26,10 @@ public class ServSiteList
     public int? Sequence { get; set; } 
 
     [JsonProperty("showinusercatalog", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Showinusercatalog { get; set; } 
+    public bool? ShowInUsercatalog { get; set; } 
 
     [JsonProperty("showintechcatalog", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Showintechcatalog { get; set; } 
+    public bool? ShowIntechcatalog { get; set; } 
 
     [JsonProperty("trackstatus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Trackstatus { get; set; } 
@@ -131,7 +131,7 @@ public class ServSiteList
     public int? ServiceTemplateId { get; set; } 
 
     [JsonProperty("newservicereqtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Newservicereqtype { get; set; } 
+    public int? NewServiceReqType { get; set; } 
 
     [JsonProperty("incident_tickettype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? IncidentTicketTypeId { get; set; } 
@@ -140,7 +140,7 @@ public class ServSiteList
     public int? IncidentTemplateId { get; set; } 
 
     [JsonProperty("newincidenttype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Newincidenttype { get; set; } 
+    public int? NewIncidentType { get; set; } 
 
     [JsonProperty("relatedworkdayid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Relatedworkdayid { get; set; } 
@@ -155,19 +155,19 @@ public class ServSiteList
     public DateTimeOffset? StatusTicketEndDate { get; set; } 
 
     [JsonProperty("requestdetails_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? RequestdetailsCount { get; set; } 
+    public int? RequestDetailsCount { get; set; } 
 
     [JsonProperty("requestdetails_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? RequestdetailsId { get; set; } 
+    public int? RequestDetailsId { get; set; } 
 
     [JsonProperty("requestdetail_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? RequestdetailUrl { get; set; } 
+    public string? RequestDetailUrl { get; set; } 
 
     [JsonProperty("requestdetail_shownewreqscreen", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? RequestdetailShownewreqscreen { get; set; } 
+    public bool? RequestDetailShowNewreqscreen { get; set; } 
 
     [JsonProperty("requestdetail_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? RequestdetailType { get; set; } 
+    public int? RequestDetailType { get; set; } 
 
     [JsonProperty("screenafterlogging", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Screenafterlogging { get; set; } 
@@ -236,7 +236,7 @@ public class ServSiteList
     public int? AccessControlLevel { get; set; } 
 
     [JsonProperty("_isimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isimport { get; set; } 
+    public bool? IsImport { get; set; } 
 
     [JsonProperty("link", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Link { get; set; } 

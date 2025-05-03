@@ -68,10 +68,10 @@ public class ViewLists
     public int? LockViewType { get; set; } 
 
     [JsonProperty("connectedinstance_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ConnectedinstanceId { get; set; } 
+    public int? ConnectedInstanceId { get; set; } 
 
     [JsonProperty("connectedinstance_list_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ConnectedinstanceListId { get; set; } 
+    public int? ConnectedInstanceListId { get; set; } 
 
     [JsonProperty("show_in_team_tree", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? ShowInTeamTree { get; set; } 
@@ -86,7 +86,7 @@ public class ViewLists
     public int? TicketCount { get; set; } 
 
     [JsonProperty("connectedinstance_error", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ConnectedinstanceError { get; set; } 
+    public bool? ConnectedInstanceError { get; set; } 
 
     [JsonProperty("column_profile_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ColumnProfileName { get; set; } 
@@ -95,7 +95,7 @@ public class ViewLists
     public string? FilterProfileName { get; set; } 
 
     [JsonProperty("connectedinstance_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ConnectedinstanceName { get; set; } 
+    public string? ConnectedInstanceName { get; set; } 
 
     [JsonProperty("filters", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<ViewFilterDetails>? Filters { get; set; } 

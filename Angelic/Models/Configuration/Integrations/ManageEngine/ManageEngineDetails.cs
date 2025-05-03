@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Models.Configuration.Assets;
 using Angelic.Models.KeyPairs;
 using Newtonsoft.Json;
 
@@ -23,7 +24,7 @@ public class ManageEngineDetails
     public string? Region { get; set; } 
 
     [JsonProperty("manageengine_clientid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ManageengineClientId { get; set; } 
+    public string? ManageEngineClientId { get; set; } 
 
     [JsonProperty("new_access_token", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? NewAccessToken { get; set; } 
@@ -35,7 +36,7 @@ public class ManageEngineDetails
     public DateTimeOffset? Tokenexpiry { get; set; } 
 
     [JsonProperty("isauthorized", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isauthorized { get; set; } 
+    public bool? IsAuthorized { get; set; } 
 
     [JsonProperty("new_client_secret", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? NewClientSecret { get; set; } 
@@ -71,19 +72,19 @@ public class ManageEngineDetails
     public string? DefaultDevicesiteName { get; set; } 
 
     [JsonProperty("default_devicetype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? DefaultDevicetype { get; set; } 
+    public int? DefaultDeviceType { get; set; } 
 
     [JsonProperty("default_devicetypename", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? DefaultDevicetypename { get; set; } 
+    public string? DefaultDeviceTypeName { get; set; } 
 
     [JsonProperty("assetimportidentifier", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Assetimportidentifier { get; set; } 
+    public int? AssetImportIdentifier { get; set; } 
 
     [JsonProperty("assetimportidentifier_fieldname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? AssetimportidentifierFieldName { get; set; } 
+    public string? AssetImportIdentifierFieldName { get; set; } 
 
     [JsonProperty("manageengine_fieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<IntegrationFieldMapping>? ManageengineFieldMappings { get; set; } 
+    public ICollection<IntegrationFieldMapping>? ManageEngineFieldMappings { get; set; } 
 
     [JsonProperty("sitemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<IntegrationSiteMapping>? Sitemappings { get; set; } 
@@ -95,7 +96,7 @@ public class ManageEngineDetails
     public DateTimeOffset? LastSyncDate { get; set; } 
 
     [JsonProperty("lastsyncerror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Lastsyncerror { get; set; } 
+    public string? LastSyncEror { get; set; } 
 
     [JsonProperty("halo_integrator_import_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? HaloIntegratorImportList { get; set; } 
@@ -131,7 +132,7 @@ public class ManageEngineDetails
     public int? DefaultAssetGroup { get; set; } 
 
     [JsonProperty("default_assetgroupname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? DefaultAssetGroupname { get; set; } 
+    public string? DefaultAssetGroupName { get; set; } 
 
     [JsonProperty("assettype_choice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? AssetTypeChoice { get; set; } 

@@ -45,10 +45,10 @@ public class Application
     public ICollection<ApplicationScope>? Scopes { get; set; } 
 
     [JsonProperty("allowagents", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Allowagents { get; set; } 
+    public bool? AllowAgents { get; set; } 
 
     [JsonProperty("allowusers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Allowusers { get; set; } 
+    public bool? AllowUsers { get; set; } 
 
     [JsonProperty("organisation_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? OrganisationId { get; set; } 
