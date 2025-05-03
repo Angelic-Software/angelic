@@ -1,14 +1,17 @@
 using System.CodeDom.Compiler;
 using Angelic.Models.Configuration;
+using Angelic.Models.Configuration.Assets;
 using Angelic.Models.Configuration.Custom;
 using Angelic.Models.Configuration.Custom.CustomFields;
 using Angelic.Models.Configuration.Custom.CustomTabs;
+using Angelic.Models.Configuration.Integrations.Addigy;
 using Angelic.Models.Configuration.Integrations.Lansweeper;
 using Angelic.Models.Configuration.Integrations.Snow;
 using Angelic.Models.Configuration.SelfServicePortal;
 using Angelic.Models.Configuration.Tickets.Templates;
 using Angelic.Models.Contracts;
 using Angelic.Models.Items;
+using Angelic.Models.KnowledgeBase;
 using Angelic.Models.PurchaseOrders;
 using Angelic.Models.Tickets;
 using Angelic.Models.Users;
@@ -20,7 +23,6 @@ namespace Angelic.Models.Assets;
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
 public class Asset 
 {
-
     [JsonProperty("os_override", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? OsOverride { get; set; } 
 
@@ -603,4 +605,376 @@ public class Asset
     [JsonProperty("_print_generate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? PrintGenerate { get; set; } 
 
-    [JsonProperty("pdftemplate_id", Required = Required.Default, NullValue
+           [JsonProperty("pdftemplate_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? PdftemplateId { get; set; } 
+
+        [JsonProperty("printhtml", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? Printhtml { get; set; } 
+
+        [JsonProperty("pdf_attachment_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? PdfAttachmentId { get; set; } 
+
+        [JsonProperty("_dont_fire_automations", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public bool? DontFireAutomations { get; set; } 
+
+        [JsonProperty("last_modified", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public System.DateTimeOffset? LastModified { get; set; } 
+
+        [JsonProperty("asset_chart_json", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? AssetChartJson { get; set; } 
+
+        [JsonProperty("lansweeper_site_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? LansweeperSiteId { get; set; } 
+
+        [JsonProperty("thirdparty_client_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? ThirdpartyClientId { get; set; } 
+
+        [JsonProperty("syncro_asset_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? SyncroAssetType { get; set; } 
+
+        [JsonProperty("dynatrace_to_relations", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public ICollection<DynatraceRelationship>? DynatraceToRelations { get; set; } 
+
+        [JsonProperty("dynatrace_from_relations", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public ICollection<DynatraceRelationship>? DynatraceFromRelations { get; set; } 
+
+        [JsonProperty("open_incident_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? OpenIncidentCount { get; set; } 
+
+        [JsonProperty("open_change_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? OpenChangeCount { get; set; } 
+
+        [JsonProperty("thirdparty_type_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? ThirdpartyTypeId { get; set; } 
+
+        [JsonProperty("is_stock_site", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public bool? IsStockSite { get; set; } 
+
+        [JsonProperty("matching_value", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? MatchingValue { get; set; } 
+
+        [JsonProperty("related_service_names", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? RelatedServiceNames { get; set; } 
+
+        [JsonProperty("parent_asset_names", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? ParentAssetNames { get; set; } 
+
+        [JsonProperty("child_asset_names", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? ChildAssetNames { get; set; } 
+
+        [JsonProperty("sibling_asset_names", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? SiblingAssetNames { get; set; } 
+
+        [JsonProperty("related_kb_names", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? RelatedKbNames { get; set; } 
+
+        [JsonProperty("licences", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public ICollection<Licence_List>? Licences { get; set; } 
+
+        [JsonProperty("add_licences", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public ICollection<Licence_List>? AddLicences { get; set; } 
+
+        [JsonProperty("licences_hierarchy", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public ICollection<Licence_List>? LicencesHierarchy { get; set; } 
+
+        [JsonProperty("sqlimport_accountsid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? SqlimportAccountsid { get; set; } 
+
+        [JsonProperty("created_from_template", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? CreatedFromTemplate { get; set; } 
+
+        [JsonProperty("sqlimport_did", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? SqlimportDid { get; set; } 
+
+        [JsonProperty("extratabs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public ICollection<Tabname>? Extratabs { get; set; } 
+
+        [JsonProperty("linked_service", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public ServSite? LinkedService { get; set; } 
+
+        [JsonProperty("is_linked_service", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public bool? IsLinkedService { get; set; } 
+
+        [JsonProperty("runbook_button_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? RunbookButtonId { get; set; } 
+
+        [JsonProperty("use", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? Use { get; set; } 
+
+        [JsonProperty("device_number", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? DeviceNumber { get; set; } 
+
+        [JsonProperty("assettype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public System.Guid? AssettypeGuid { get; set; } 
+
+        [JsonProperty("warranty_start", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public System.DateTimeOffset? WarrantyStart { get; set; } 
+
+        [JsonProperty("labour_warranty_start", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public System.DateTimeOffset? LabourWarrantyStart { get; set; } 
+
+        [JsonProperty("labour_warranty_end", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public System.DateTimeOffset? LabourWarrantyEnd { get; set; } 
+
+        [JsonProperty("parent_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public System.Guid? ParentGuid { get; set; } 
+
+        [JsonProperty("child_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public System.Guid? ChildGuid { get; set; } 
+
+        [JsonProperty("status_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? StatusId { get; set; } 
+
+        [JsonProperty("third_party_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? ThirdPartyId { get; set; } 
+
+        [JsonProperty("latest_contract_ref", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? LatestContractRef { get; set; } 
+
+        [JsonProperty("sequence", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? Sequence { get; set; } 
+
+        [JsonProperty("ncentral_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? NcentralUrl { get; set; } 
+
+        [JsonProperty("ncentral_remote_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? NcentralRemoteUrl { get; set; } 
+
+        [JsonProperty("contract_end_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public System.DateTimeOffset? ContractEndDate { get; set; } 
+
+        [JsonProperty("atera_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? AteraId { get; set; } 
+
+        [JsonProperty("automate_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? AutomateId { get; set; } 
+
+        [JsonProperty("automate_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? AutomateUrl { get; set; } 
+
+        [JsonProperty("connectwise_control_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? ConnectwiseControlUrl { get; set; } 
+
+        [JsonProperty("ninjarmm_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? NinjarmmId { get; set; } 
+
+        [JsonProperty("ninja_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? NinjaUrl { get; set; } 
+
+        [JsonProperty("ninja_remote_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? NinjaRemoteUrl { get; set; } 
+
+        [JsonProperty("syncro_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? SyncroUrl { get; set; } 
+
+        [JsonProperty("syncroid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? Syncroid { get; set; } 
+
+        [JsonProperty("itglue_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? ItglueUrl { get; set; } 
+
+        [JsonProperty("defaultsequence", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? Defaultsequence { get; set; } 
+
+        [JsonProperty("service_ids", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? ServiceIds { get; set; } 
+
+        [JsonProperty("bulkcreated", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public bool? Bulkcreated { get; set; } 
+
+        [JsonProperty("bulkbillingperiod", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? Bulkbillingperiod { get; set; } 
+
+        [JsonProperty("asset_field", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? AssetField { get; set; } 
+
+        [JsonProperty("datto_alternate_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? DattoAlternateId { get; set; } 
+
+        [JsonProperty("syncro_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? SyncroId { get; set; } 
+
+        [JsonProperty("snow_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? SnowId { get; set; } 
+
+        [JsonProperty("passportal_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public long? PassportalId { get; set; } 
+
+        [JsonProperty("auvik_device_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? AuvikDeviceId { get; set; } 
+
+        [JsonProperty("auvik_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? AuvikUrl { get; set; } 
+
+        [JsonProperty("allowallstatus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public bool? Allowallstatus { get; set; } 
+
+        [JsonProperty("allowed_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public ICollection<XTypeStatus>? AllowedStatus { get; set; } 
+
+        [JsonProperty("datto_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? DattoId { get; set; } 
+
+        [JsonProperty("addigy_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? AddigyId { get; set; } 
+
+        [JsonProperty("liongard_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? LiongardUrl { get; set; } 
+
+        [JsonProperty("liongard_environmnet_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? LiongardEnvironmnetId { get; set; } 
+
+        [JsonProperty("liongard_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? LiongardId { get; set; } 
+
+        [JsonProperty("kaseya_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? KaseyaId { get; set; } 
+
+        [JsonProperty("kaseyavsa_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? KaseyavsaUrl { get; set; } 
+
+        [JsonProperty("teamviewerid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? Teamviewerid { get; set; } 
+
+        [JsonProperty("serialization_user", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? SerializationUser { get; set; } 
+
+        [JsonProperty("zabbix_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? ZabbixId { get; set; } 
+
+        [JsonProperty("zabbix_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? ZabbixUrl { get; set; } 
+
+        [JsonProperty("stockbin_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? StockbinName { get; set; } 
+
+        [JsonProperty("issue_consignment_line_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? IssueConsignmentLineId { get; set; } 
+
+        [JsonProperty("item_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? ItemName { get; set; } 
+
+        [JsonProperty("datto_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? DattoUrl { get; set; } 
+
+        [JsonProperty("ncentral_details_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? NcentralDetailsId { get; set; } 
+
+        [JsonProperty("nable_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? NableId { get; set; } 
+
+        [JsonProperty("connectwisecontrolid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? Connectwisecontrolid { get; set; } 
+
+        [JsonProperty("_isimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public bool? Isimport { get; set; } 
+
+        [JsonProperty("_importtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? Importtype { get; set; } 
+
+        [JsonProperty("workspace_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? WorkspaceId { get; set; } 
+
+        [JsonProperty("workspace_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? WorkspaceUrl { get; set; } 
+
+        [JsonProperty("supplier_purchasedate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public System.DateTimeOffset? SupplierPurchasedate { get; set; } 
+
+        [JsonProperty("logicmonitor_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? LogicmonitorId { get; set; } 
+
+        [JsonProperty("barracudarmm_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? BarracudarmmId { get; set; } 
+
+        [JsonProperty("sla_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? SlaId { get; set; } 
+
+        [JsonProperty("priority_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? PriorityId { get; set; } 
+
+        [JsonProperty("icinga_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? IcingaId { get; set; } 
+
+        [JsonProperty("related_service_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? RelatedServiceName { get; set; } 
+
+        [JsonProperty("related_service_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? RelatedServiceCount { get; set; } 
+
+        [JsonProperty("connectwisermm_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? ConnectwisermmId { get; set; } 
+
+        [JsonProperty("xensam_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? XensamId { get; set; } 
+
+        [JsonProperty("asset_type_priority", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? AssetTypePriority { get; set; } 
+
+        [JsonProperty("snipeit_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? SnipeitId { get; set; } 
+
+        [JsonProperty("prometheus_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? PrometheusId { get; set; } 
+
+        [JsonProperty("dynatrace_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? DynatraceId { get; set; } 
+
+        [JsonProperty("vmworkspace_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? VmworkspaceId { get; set; } 
+
+        [JsonProperty("tanium_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? TaniumId { get; set; } 
+
+        [JsonProperty("tenable_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? TenableId { get; set; } 
+
+        [JsonProperty("kandji_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? KandjiId { get; set; } 
+
+        [JsonProperty("criticality_description", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? CriticalityDescription { get; set; } 
+
+        [JsonProperty("auvik_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? AuvikId { get; set; } 
+
+        [JsonProperty("is_template", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public bool? IsTemplate { get; set; } 
+
+        [JsonProperty("aws_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? AwsId { get; set; } 
+
+        [JsonProperty("manageengine_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? ManageengineId { get; set; } 
+
+        [JsonProperty("manageengine_customer_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? ManageengineCustomerId { get; set; } 
+
+        [JsonProperty("lastchangeofvaluedate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Lastchangeofvaluedate { get; set; } 
+
+        [JsonProperty("commissiondate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public System.DateTimeOffset? Commissiondate { get; set; } 
+
+        [JsonProperty("first_user_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? FirstUserId { get; set; } 
+
+        [JsonProperty("changebackupexists", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public bool? Changebackupexists { get; set; } 
+
+        [JsonProperty("_isbatch", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public bool? Isbatch { get; set; } 
+
+        [JsonProperty("virima_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? VirimaId { get; set; } 
+
+        [JsonProperty("service_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public System.Guid? ServiceGuid { get; set; } 
+
+        [JsonProperty("service_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? ServiceName { get; set; } 
+
+        [JsonProperty("lansweeperid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string? Lansweeperid { get; set; } 
+
+    }
