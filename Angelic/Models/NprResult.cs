@@ -13,10 +13,10 @@ public class NprResult
     public string? EmailAddress { get; set; } 
 
     [JsonProperty("activedirectory_dn", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ActivedirectoryDn { get; set; } 
+    public string? ActiveDirectoryDn { get; set; } 
 
     [JsonProperty("onpremise_activedirectory_dn", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? OnpremiseActivedirectoryDn { get; set; } 
+    public string? OnPremiseActiveDirectoryDn { get; set; } 
 
     [JsonProperty("enrolled", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Enrolled { get; set; } 

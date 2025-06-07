@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Models.ExternalLinks;
 using Angelic.Models.KeyPairs;
 using Newtonsoft.Json;
 
@@ -119,10 +120,10 @@ namespace Angelic.Models.Configuration.Integrations.Myob;
         public string? ImportType { get; set; } 
 
         [JsonProperty("client_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ExternalLinkList>? ClientMappings { get; set; } 
+        public ICollection<ExternalLink>? ClientMappings { get; set; } 
 
         [JsonProperty("supplier_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ExternalLinkList>? SupplierMappings { get; set; } 
+        public ICollection<ExternalLink>? SupplierMappings { get; set; } 
 
         [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Warning { get; set; } 

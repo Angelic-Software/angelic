@@ -1,11 +1,10 @@
 using System.CodeDom.Compiler;
-using Angelic.Models.Internal;
 using Newtonsoft.Json;
 
 namespace Angelic.Models.Configuration.Integrations.Google;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
-public class GoogleBusinessDetails : IWarning
+public class GoogleBusinessDetails
 {
     [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Id { get; set; } 
@@ -26,7 +25,7 @@ public class GoogleBusinessDetails : IWarning
     public string? Code { get; set; } 
 
     [JsonProperty("_exchangecode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Exchangecode { get; set; } 
+    public bool? ExchangeCode { get; set; } 
 
     [JsonProperty("authorized", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Authorized { get; set; } 

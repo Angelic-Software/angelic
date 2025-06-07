@@ -20,6 +20,7 @@ using Angelic.Models.Configuration.Tickets.Slas;
 using Angelic.Models.Configuration.Tickets.Views;
 using Angelic.Models.Configuration.Tickets.Workflows;
 using Angelic.Models.EcommerceOrders;
+using Angelic.Models.ExternalLinks;
 using Angelic.Models.KeyPairs;
 using Angelic.Models.Milestones;
 using Newtonsoft.Json;
@@ -2001,7 +2002,7 @@ namespace Angelic.Models.Tickets;
         public int? FreshdeskId { get; set; } 
 
         [JsonProperty("external_links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ExternalLinkList>? ExternalLinks { get; set; } 
+        public ICollection<ExternalLink>? ExternalLinks { get; set; } 
 
         [JsonProperty("_match_thirdparty_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? MatchThirdPartyId { get; set; } 
@@ -2484,7 +2485,7 @@ namespace Angelic.Models.Tickets;
         public bool? DontCopyHistory { get; set; } 
 
         [JsonProperty("user_linked_sites", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ExternalLinkList>? UserLinkedSites { get; set; } 
+        public ICollection<ExternalLink>? UserLinkedSites { get; set; } 
 
         [JsonProperty("prepay_threshold", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public PrePayThreshold? PrepayThreshold { get; set; } 
@@ -2661,10 +2662,10 @@ namespace Angelic.Models.Tickets;
         public int? ClientToInvoiceToId { get; set; } 
 
         [JsonProperty("primary_issue", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ExternalLinkList? PrimaryIssue { get; set; } 
+        public ExternalLink? PrimaryIssue { get; set; } 
 
         [JsonProperty("primary_workitem", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ExternalLinkList? PrimaryWorkitem { get; set; } 
+        public ExternalLink? PrimaryWorkitem { get; set; } 
 
         [JsonProperty("billing_plan_text", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? BillingPlanText { get; set; } 
@@ -2697,6 +2698,6 @@ namespace Angelic.Models.Tickets;
         public string? ImportType { get; set; } 
 
         [JsonProperty("new_external_link", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ExternalLinkList? NewExternalLink { get; set; } 
+        public ExternalLink? NewExternalLink { get; set; } 
 
     }

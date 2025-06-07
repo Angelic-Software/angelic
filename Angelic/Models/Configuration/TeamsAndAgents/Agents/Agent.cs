@@ -328,7 +328,7 @@ namespace Angelic.Models.Configuration.TeamsAndAgents.Agents;
         public double? WorkhourEnd { get; set; } 
 
         [JsonProperty("activedirectory_dn", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? ActivedirectoryDn { get; set; } 
+        public string? ActiveDirectoryDn { get; set; } 
 
         [JsonProperty("third_party_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? ThirdPartyGuid { get; set; } 

@@ -1,6 +1,7 @@
 using System.CodeDom.Compiler;
 using Angelic.Models.Configuration.Billing.Taxes;
 using Angelic.Models.Configuration.Custom.CustomFields;
+using Angelic.Models.ExternalLinks;
 using Newtonsoft.Json;
 
 namespace Angelic.Models.PurchaseOrders;
@@ -138,10 +139,10 @@ public class PurchaseOrderDetail
     public double? TaxConverted { get; set; } 
 
     [JsonProperty("quote_line_distributor_external_link", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ExternalLinkList? QuoteLineDistributorExternalLink { get; set; } 
+    public ExternalLink? QuoteLineDistributorExternalLink { get; set; } 
 
     [JsonProperty("new_external_link", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ExternalLinkList? NewExternalLink { get; set; } 
+    public ExternalLink? NewExternalLink { get; set; } 
 
     [JsonProperty("date_received", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? DateReceived { get; set; } 

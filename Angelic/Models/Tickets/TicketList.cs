@@ -1,5 +1,6 @@
 using System.CodeDom.Compiler;
 using Angelic.Models.Configuration.Custom.CustomFields;
+using Angelic.Models.ExternalLinks;
 using Newtonsoft.Json;
 
 namespace Angelic.Models.Tickets;
@@ -878,10 +879,10 @@ namespace Angelic.Models.Tickets;
         public int? ClientToInvoiceToId { get; set; } 
 
         [JsonProperty("primary_issue", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ExternalLinkList? PrimaryIssue { get; set; } 
+        public ExternalLink? PrimaryIssue { get; set; } 
 
         [JsonProperty("primary_workitem", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ExternalLinkList? PrimaryWorkitem { get; set; } 
+        public ExternalLink? PrimaryWorkitem { get; set; } 
 
         [JsonProperty("billing_plan_text", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? BillingPlanText { get; set; } 
@@ -917,6 +918,6 @@ namespace Angelic.Models.Tickets;
         public string? ImportType { get; set; } 
 
         [JsonProperty("new_external_link", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ExternalLinkList? NewExternalLink { get; set; } 
+        public ExternalLink? NewExternalLink { get; set; } 
 
     }

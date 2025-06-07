@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Models.ExternalLinks;
 using Angelic.Models.KeyPairs;
 using Newtonsoft.Json;
 
@@ -35,7 +36,7 @@ public class DattoCommerceDetails
     public ICollection<IntegrationFieldMapping>? CustomerFieldMappings { get; set; } 
 
     [JsonProperty("item_group_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ExternalLinkList>? ItemGroupMappings { get; set; } 
+    public ICollection<ExternalLink>? ItemGroupMappings { get; set; } 
 
     [JsonProperty("quote_status_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<IntegrationFieldMapping>? QuoteStatusMappings { get; set; } 

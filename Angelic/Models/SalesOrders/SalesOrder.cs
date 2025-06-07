@@ -3,6 +3,7 @@ using Angelic.Models.Configuration;
 using Angelic.Models.Configuration.Addresses;
 using Angelic.Models.Configuration.Custom;
 using Angelic.Models.Configuration.Custom.CustomFields;
+using Angelic.Models.ExternalLinks;
 using Newtonsoft.Json;
 
 namespace Angelic.Models.SalesOrders;
@@ -362,7 +363,7 @@ public class SalesOrder
     public double? Revenue { get; set; } 
 
     [JsonProperty("external_links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ExternalLinkList>? ExternalLinks { get; set; } 
+    public ICollection<ExternalLink>? ExternalLinks { get; set; } 
 
     [JsonProperty("_importtypeid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ImportTypeId { get; set; } 
@@ -374,6 +375,6 @@ public class SalesOrder
     public string? ImportType { get; set; } 
 
     [JsonProperty("new_external_link", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ExternalLinkList? NewExternalLink { get; set; } 
+    public ExternalLink? NewExternalLink { get; set; } 
 
 }

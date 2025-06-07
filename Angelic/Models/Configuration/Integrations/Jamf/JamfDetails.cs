@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Models.ExternalLinks;
 using Angelic.Models.KeyPairs;
 using Newtonsoft.Json;
 
@@ -38,7 +39,7 @@ namespace Angelic.Models.Configuration.Integrations.Jamf;
         public string? DefaultSiteName { get; set; } 
     
         [JsonProperty("site_links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ExternalLinkList>? SiteLinks { get; set; } 
+        public ICollection<ExternalLink>? SiteLinks { get; set; } 
     
         [JsonProperty("fieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<IntegrationFieldMapping>? FieldMappings { get; set; } 

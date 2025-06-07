@@ -1,9 +1,11 @@
 using Angelic.Models.Configuration.Assets;
 using Angelic.Models.Configuration.Assets.SoftwareLicensing;
+using Angelic.Models.Configuration.BookingTypes;
 using Angelic.Models.Configuration.Integrations;
 using Angelic.Models.Configuration.Integrations.Auvik;
 using Angelic.Models.Configuration.Integrations.Okta;
 using Angelic.Models.Configuration.Tickets;
+using Angelic.Models.ExternalLinks;
 using Angelic.Models.KeyPairs;
 using Newtonsoft.Json;
 
@@ -153,10 +155,10 @@ public partial class Control
         public bool? Getsnelstartlink { get; set; } 
 
         [JsonProperty("itglue_clientmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ExternalLinkList>? ItGlueClientmappings { get; set; } 
+        public ICollection<ExternalLink>? ItGlueClientmappings { get; set; } 
 
         [JsonProperty("itglue_sitemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ExternalLinkList>? ItGlueSitemappings { get; set; } 
+        public ICollection<ExternalLink>? ItGlueSitemappings { get; set; } 
 
         [JsonProperty("itglue_active_statuses_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<ValueLabelIsNewKeyPair>? ItGlueActiveStatusesList { get; set; } 
@@ -594,7 +596,7 @@ public partial class Control
         public string? HaloIntegratorStripeLastError { get; set; } 
 
         [JsonProperty("ingram_micro_client_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ExternalLinkList>? IngramMicroClientMappings { get; set; } 
+        public ICollection<ExternalLink>? IngramMicroClientMappings { get; set; } 
 
         [JsonProperty("ingram_micro_top_level_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? IngramMicroTopLevelName { get; set; } 
@@ -612,13 +614,13 @@ public partial class Control
         public ICollection<ValueLabelIsNewKeyPair>? IngramMicroImportEntitiesList { get; set; } 
 
         [JsonProperty("pax8_client_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ExternalLinkList>? Pax8ClientMappings { get; set; } 
+        public ICollection<ExternalLink>? Pax8ClientMappings { get; set; } 
 
         [JsonProperty("quoter_item_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ExternalLinkList>? QuoterItemMappings { get; set; } 
+        public ICollection<ExternalLink>? QuoterItemMappings { get; set; } 
 
         [JsonProperty("etilize_item_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ExternalLinkList>? EtilizeItemMappings { get; set; } 
+        public ICollection<ExternalLink>? EtilizeItemMappings { get; set; } 
 
         [JsonProperty("pax8_top_level_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Pax8TopLevelName { get; set; } 
@@ -675,7 +677,7 @@ public partial class Control
         public ICollection<ValueLabelIsNewKeyPair>? SalesforceImportAttachmentsList { get; set; } 
 
         [JsonProperty("salesforce_clientmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ExternalLinkList>? SalesforceClientmappings { get; set; } 
+        public ICollection<ExternalLink>? SalesforceClientmappings { get; set; } 
 
         [JsonProperty("azure_allowed_tenants", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? AzureAllowedTenants { get; set; } 
@@ -732,7 +734,7 @@ public partial class Control
         public ICollection<AssetTypeMapping>? KaseyaTypemappings { get; set; } 
 
         [JsonProperty("stripe_client_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ExternalLinkList>? StripeClientMappings { get; set; } 
+        public ICollection<ExternalLink>? StripeClientMappings { get; set; } 
 
         [JsonProperty("stripe_paymentmethod_options_keypair", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<ValueLabelIsNewKeyPair>? StripePaymentMethodOptionsKeypair { get; set; } 
@@ -762,13 +764,13 @@ public partial class Control
         public string? HaloIntegratorZabbixLastError { get; set; } 
 
         [JsonProperty("giacom_client_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ExternalLinkList>? GiacomClientMappings { get; set; } 
+        public ICollection<ExternalLink>? GiacomClientMappings { get; set; } 
 
         [JsonProperty("giacom_top_level_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? GiacomTopLevelName { get; set; } 
 
         [JsonProperty("rhipe_client_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ExternalLinkList>? RhipeClientMappings { get; set; } 
+        public ICollection<ExternalLink>? RhipeClientMappings { get; set; } 
 
         [JsonProperty("rhipe_top_level_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? RhipeTopLevelName { get; set; } 
@@ -786,7 +788,7 @@ public partial class Control
         public ICollection<ValueLabelIsNewKeyPair>? RhipeImportEntitiesList { get; set; } 
 
         [JsonProperty("techdata_client_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ExternalLinkList>? TechDataClientMappings { get; set; } 
+        public ICollection<ExternalLink>? TechDataClientMappings { get; set; } 
 
         [JsonProperty("techdata_top_level_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? TechDataTopLevelName { get; set; } 
@@ -804,7 +806,7 @@ public partial class Control
         public ICollection<ValueLabelIsNewKeyPair>? TechDataImportEntitiesList { get; set; } 
 
         [JsonProperty("inty_client_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ExternalLinkList>? IntyClientMappings { get; set; } 
+        public ICollection<ExternalLink>? IntyClientMappings { get; set; } 
 
         [JsonProperty("inty_top_level_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? IntyTopLevelName { get; set; } 
@@ -822,7 +824,7 @@ public partial class Control
         public ICollection<ValueLabelIsNewKeyPair>? IntyImportEntitiesList { get; set; } 
 
         [JsonProperty("westcoastcloud_client_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ExternalLinkList>? WestcoastcloudClientMappings { get; set; } 
+        public ICollection<ExternalLink>? WestcoastcloudClientMappings { get; set; } 
 
         [JsonProperty("westcoastcloud_top_level_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? WestcoastcloudTopLevelName { get; set; } 
@@ -840,7 +842,7 @@ public partial class Control
         public ICollection<ValueLabelIsNewKeyPair>? WestcoastcloudImportEntitiesList { get; set; } 
 
         [JsonProperty("sherweb_client_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ExternalLinkList>? SherwebClientMappings { get; set; } 
+        public ICollection<ExternalLink>? SherwebClientMappings { get; set; } 
 
         [JsonProperty("sherweb_top_level_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? SherwebTopLevelName { get; set; } 
@@ -858,7 +860,7 @@ public partial class Control
         public ICollection<ValueLabelIsNewKeyPair>? SherwebImportEntitiesList { get; set; } 
 
         [JsonProperty("also_client_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ExternalLinkList>? AlsoClientMappings { get; set; } 
+        public ICollection<ExternalLink>? AlsoClientMappings { get; set; } 
 
         [JsonProperty("also_top_level_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? AlsoTopLevelName { get; set; } 
@@ -876,7 +878,7 @@ public partial class Control
         public ICollection<ValueLabelIsNewKeyPair>? AlsoImportEntitiesList { get; set; } 
 
         [JsonProperty("arrowsphere_client_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ExternalLinkList>? ArrowsphereClientMappings { get; set; } 
+        public ICollection<ExternalLink>? ArrowsphereClientMappings { get; set; } 
 
         [JsonProperty("arrowsphere_top_level_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? ArrowsphereTopLevelName { get; set; } 
@@ -894,7 +896,7 @@ public partial class Control
         public ICollection<ValueLabelIsNewKeyPair>? ArrowsphereImportEntitiesList { get; set; } 
 
         [JsonProperty("dickerdata_client_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ExternalLinkList>? DickerdataClientMappings { get; set; } 
+        public ICollection<ExternalLink>? DickerdataClientMappings { get; set; } 
 
         [JsonProperty("dickerdata_top_level_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? DickerdataTopLevelName { get; set; } 
@@ -981,7 +983,7 @@ public partial class Control
         public ICollection<int>? ClientTenantIds { get; set; } 
 
         [JsonProperty("connectwisecontrol_sitemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ExternalLinkList>? ConnectWiseControlSitemappings { get; set; } 
+        public ICollection<ExternalLink>? ConnectWiseControlSitemappings { get; set; } 
 
         [JsonProperty("connectwisecontrol_typemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<AssetTypeMapping>? ConnectWiseControlTypemappings { get; set; } 

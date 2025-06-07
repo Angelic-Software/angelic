@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Models.ExternalLinks;
 using Newtonsoft.Json;
 
 namespace Angelic.Models.Attachments;
@@ -106,7 +107,7 @@ public class Attachment
     public int? CopyFromId { get; set; } 
 
     [JsonProperty("new_external_link", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ExternalLinkList? NewExternalLink { get; set; } 
+    public ExternalLink? NewExternalLink { get; set; } 
 
     [JsonProperty("_match_thirdparty_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? MatchThirdPartyId { get; set; } 
@@ -121,7 +122,7 @@ public class Attachment
     public int? ImportDetailsId { get; set; } 
 
     [JsonProperty("external_links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ExternalLinkList>? ExternalLinks { get; set; } 
+    public ICollection<ExternalLink>? ExternalLinks { get; set; } 
 
     [JsonProperty("showforusers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? ShowForUsers { get; set; } 

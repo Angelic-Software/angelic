@@ -1,5 +1,6 @@
 using System.CodeDom.Compiler;
 using Angelic.Models.Configuration.Assets;
+using Angelic.Models.ExternalLinks;
 using Newtonsoft.Json;
 
 namespace Angelic.Models.Configuration.Integrations.NCentral;
@@ -89,10 +90,10 @@ public class NCentralDetails
     public string? DefaultAssetTypeName { get; set; } 
 
     [JsonProperty("client_links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ExternalLinkList>? ClientLinks { get; set; } 
+    public ICollection<ExternalLink>? ClientLinks { get; set; } 
 
     [JsonProperty("site_links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ExternalLinkList>? SiteLinks { get; set; } 
+    public ICollection<ExternalLink>? SiteLinks { get; set; } 
 
     [JsonProperty("asset_fieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<IntegrationFieldMapping>? AssetFieldMappings { get; set; } 

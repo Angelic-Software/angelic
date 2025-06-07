@@ -1,5 +1,6 @@
 using System.CodeDom.Compiler;
 using Angelic.Models.Clients;
+using Angelic.Models.Configuration.Custom.CustomFields.Restrictions;
 using Angelic.Models.Configuration.Custom.CustomTables;
 using Angelic.Models.Configuration.Integrations.Lookups;
 using Angelic.Models.Configuration.SqlImports;
@@ -146,10 +147,10 @@ public class FieldInfo
     public CustomTable? TableInfo { get; set; } 
 
     [JsonProperty("client_restrictions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CustomFieldClientRestrictions>? ClientRestrictions { get; set; } 
+    public ICollection<ClientRestrictions>? ClientRestrictions { get; set; } 
 
     [JsonProperty("org_restrictions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<OrganisationField>? OrgRestrictions { get; set; } 
+    public ICollection<OrgRestrictions>? OrgRestrictions { get; set; } 
 
     [JsonProperty("database_lookup_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? DatabaseLookupId { get; set; } 

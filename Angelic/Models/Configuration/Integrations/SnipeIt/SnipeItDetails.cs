@@ -1,5 +1,6 @@
 using System.CodeDom.Compiler;
 using Angelic.Models.Configuration.Assets;
+using Angelic.Models.ExternalLinks;
 using Angelic.Models.KeyPairs;
 using Newtonsoft.Json;
 
@@ -81,7 +82,7 @@ public class SnipeItDetails
     public string? Warning { get; set; } 
 
     [JsonProperty("client_links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ExternalLinkList>? ClientLinks { get; set; } 
+    public ICollection<ExternalLink>? ClientLinks { get; set; } 
 
     [JsonProperty("guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public Guid? Guid { get; set; } 

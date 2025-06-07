@@ -10,6 +10,7 @@ using Angelic.Models.Configuration.Campaigns;
 using Angelic.Models.Configuration.Custom;
 using Angelic.Models.Configuration.Custom.CustomFields;
 using Angelic.Models.Configuration.Users;
+using Angelic.Models.ExternalLinks;
 using Newtonsoft.Json;
 
 namespace Angelic.Models.Users;
@@ -99,10 +100,10 @@ public class User
     public int? Telpref { get; set; } 
 
     [JsonProperty("activedirectory_dn", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ActivedirectoryDn { get; set; } 
+    public string? ActiveDirectoryDn { get; set; } 
 
     [JsonProperty("onpremise_activedirectory_dn", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? OnpremiseActivedirectoryDn { get; set; } 
+    public string? OnPremiseActiveDirectoryDn { get; set; } 
 
     [JsonProperty("container_dn", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ContainerDn { get; set; } 
@@ -765,10 +766,10 @@ public class User
     public string? ServiceNowCompanyid { get; set; } 
 
     [JsonProperty("external_links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ExternalLinkList>? ExternalLinks { get; set; } 
+    public ICollection<ExternalLink>? ExternalLinks { get; set; } 
 
     [JsonProperty("new_external_link", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ExternalLinkList? NewExternalLink { get; set; } 
+    public ExternalLink? NewExternalLink { get; set; } 
 
     [JsonProperty("_match_thirdparty_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? MatchThirdPartyId { get; set; } 
@@ -840,7 +841,7 @@ public class User
     public ICollection<UserThirdPartyGroup>? ThirdPartygroups { get; set; } 
 
     [JsonProperty("linked_sites", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ExternalLinkList>? LinkedSites { get; set; } 
+    public ICollection<ExternalLink>? LinkedSites { get; set; } 
 
     [JsonProperty("dontackemails2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? DontAckemails2 { get; set; } 

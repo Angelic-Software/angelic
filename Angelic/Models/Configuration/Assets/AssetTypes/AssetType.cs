@@ -1,6 +1,8 @@
 using System.CodeDom.Compiler;
 using Angelic.Models.Configuration.Assets.AssetTypes;
+using Angelic.Models.Configuration.BookingTypes;
 using Angelic.Models.Configuration.Custom.CustomFields;
+using Angelic.Models.Configuration.Custom.CustomFields.Restrictions;
 using Angelic.Models.Configuration.Custom.CustomTabs;
 using Angelic.Models.Configuration.SelfServicePortal;
 using Angelic.Models.Sites;

@@ -15,6 +15,7 @@ using Angelic.Models.Configuration.SelfServicePortal;
 using Angelic.Models.Configuration.Tickets.TicketTypes;
 using Angelic.Models.Contracts;
 using Angelic.Models.CrmNotes;
+using Angelic.Models.ExternalLinks;
 using Angelic.Models.KeyPairs;
 using Angelic.Models.KnowledgeBase;
 using Angelic.Models.Sites;
@@ -879,10 +880,10 @@ public class Client
     public int? SqlImportId { get; set; }
 
     [JsonProperty("external_links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ExternalLinkList>? ExternalLinks { get; set; }
+    public ICollection<ExternalLink>? ExternalLinks { get; set; }
 
     [JsonProperty("new_external_link", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ExternalLinkList? NewExternalLink { get; set; }
+    public ExternalLink? NewExternalLink { get; set; }
 
     [JsonProperty("_match_thirdparty_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? MatchThirdPartyId { get; set; }

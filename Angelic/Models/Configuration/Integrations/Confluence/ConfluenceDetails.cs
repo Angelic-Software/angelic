@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Models.ExternalLinks;
 using Newtonsoft.Json;
 
 namespace Angelic.Models.Configuration.Integrations.Confluence;
@@ -25,7 +26,7 @@ public class ConfluenceDetails
     public string? NewPassword { get; set; } 
 
     [JsonProperty("faq_links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ExternalLinkList>? FaqLinks { get; set; } 
+    public ICollection<ExternalLink>? FaqLinks { get; set; } 
 
     [JsonProperty("enabled", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Enabled { get; set; } 

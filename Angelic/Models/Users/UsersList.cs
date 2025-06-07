@@ -3,6 +3,7 @@ using Angelic.Models.Attachments;
 using Angelic.Models.Configuration.Assets.AssetTypes;
 using Angelic.Models.Configuration.Custom;
 using Angelic.Models.Configuration.Custom.CustomFields;
+using Angelic.Models.ExternalLinks;
 using Newtonsoft.Json;
 
 namespace Angelic.Models.Users;
@@ -68,10 +69,10 @@ public class UsersList
     public int? Telpref { get; set; } 
 
     [JsonProperty("activedirectory_dn", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ActivedirectoryDn { get; set; } 
+    public string? ActiveDirectoryDn { get; set; } 
 
     [JsonProperty("onpremise_activedirectory_dn", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? OnpremiseActivedirectoryDn { get; set; } 
+    public string? OnPremiseActiveDirectoryDn { get; set; } 
 
     [JsonProperty("container_dn", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ContainerDn { get; set; } 
@@ -260,6 +261,6 @@ public class UsersList
     public string? ImportType { get; set; } 
 
     [JsonProperty("new_external_link", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ExternalLinkList? NewExternalLink { get; set; } 
+    public ExternalLink? NewExternalLink { get; set; } 
 
 }

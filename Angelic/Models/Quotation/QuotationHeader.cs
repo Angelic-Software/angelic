@@ -10,6 +10,7 @@ using Angelic.Models.Configuration.Custom.CustomFields;
 using Angelic.Models.Configuration.PdfTemplates;
 using Angelic.Models.Configuration.Tickets.TicketTypes;
 using Angelic.Models.Configuration.Tickets.Workflows;
+using Angelic.Models.ExternalLinks;
 using Angelic.Models.SalesOrders;
 using Angelic.Models.Sites;
 using Angelic.Models.Users;
@@ -516,7 +517,7 @@ public class QuotationHeader
     public bool? DoTaxSync { get; set; } 
 
     [JsonProperty("external_links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ExternalLinkList>? ExternalLinks { get; set; } 
+    public ICollection<ExternalLink>? ExternalLinks { get; set; } 
 
     [JsonProperty("_importtypeid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ImportTypeId { get; set; } 
@@ -528,6 +529,6 @@ public class QuotationHeader
     public string? ImportType { get; set; } 
 
     [JsonProperty("new_external_link", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ExternalLinkList? NewExternalLink { get; set; } 
+    public ExternalLink? NewExternalLink { get; set; } 
 
 }

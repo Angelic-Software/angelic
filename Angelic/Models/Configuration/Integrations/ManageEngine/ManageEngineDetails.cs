@@ -1,5 +1,6 @@
 using System.CodeDom.Compiler;
 using Angelic.Models.Configuration.Assets;
+using Angelic.Models.ExternalLinks;
 using Angelic.Models.KeyPairs;
 using Newtonsoft.Json;
 
@@ -63,7 +64,7 @@ public class ManageEngineDetails
     public string? NewIntegrationKey { get; set; } 
 
     [JsonProperty("client_links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ExternalLinkList>? ClientLinks { get; set; } 
+    public ICollection<ExternalLink>? ClientLinks { get; set; } 
 
     [JsonProperty("default_devicesite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? DefaultDevicesite { get; set; } 

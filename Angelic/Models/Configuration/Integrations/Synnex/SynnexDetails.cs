@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Models.ExternalLinks;
 using Angelic.Models.KeyPairs;
 using Newtonsoft.Json;
 
@@ -29,7 +30,7 @@ public class SynnexDetails
     public Guid? Guid { get; set; } 
 
     [JsonProperty("client_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ExternalLinkList>? ClientMappings { get; set; } 
+    public ICollection<ExternalLink>? ClientMappings { get; set; } 
 
     [JsonProperty("import_entities", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ImportEntities { get; set; } 

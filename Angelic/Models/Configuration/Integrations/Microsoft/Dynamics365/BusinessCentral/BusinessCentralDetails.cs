@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Models.ExternalLinks;
 using Angelic.Models.KeyPairs;
 using Newtonsoft.Json;
 
@@ -86,10 +87,10 @@ public class BusinessCentralDetails
     public string? ClientTopLevelName { get; set; } 
 
     [JsonProperty("client_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ExternalLinkList>? ClientMappings { get; set; } 
+    public ICollection<ExternalLink>? ClientMappings { get; set; } 
 
     [JsonProperty("item_group_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ExternalLinkList>? ItemGroupMappings { get; set; } 
+    public ICollection<ExternalLink>? ItemGroupMappings { get; set; } 
 
     [JsonProperty("item_default_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ItemDefaultGroup { get; set; } 

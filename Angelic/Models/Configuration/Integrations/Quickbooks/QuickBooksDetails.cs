@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Models.ExternalLinks;
 using Angelic.Models.KeyPairs;
 using Newtonsoft.Json;
 
@@ -254,7 +255,7 @@ public class QuickBooksDetails
     public ValueLabelIsNewKeyPair? DefaultDeferredAccount { get; set; } 
 
     [JsonProperty("qbo_sitemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ExternalLinkList>? QboSitemappings { get; set; } 
+    public ICollection<ExternalLink>? QboSitemappings { get; set; } 
 
     [JsonProperty("mark_as_void", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? MarkAsVoid { get; set; } 

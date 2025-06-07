@@ -7,6 +7,7 @@ using Angelic.Models.Configuration.Billing.Prepay;
 using Angelic.Models.Configuration.Custom;
 using Angelic.Models.Configuration.Custom.CustomFields;
 using Angelic.Models.Configuration.Tickets.TicketTypes;
+using Angelic.Models.ExternalLinks;
 using Angelic.Models.Sites;
 using Angelic.Models.Users;
 using Newtonsoft.Json;
@@ -506,6 +507,6 @@ public class ContractHeader
     public string? ImportType { get; set; } 
 
     [JsonProperty("new_external_link", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ExternalLinkList? NewExternalLink { get; set; } 
+    public ExternalLink? NewExternalLink { get; set; } 
 
 }

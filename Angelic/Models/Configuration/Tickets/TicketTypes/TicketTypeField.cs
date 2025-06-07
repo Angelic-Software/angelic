@@ -1,5 +1,6 @@
 using System.CodeDom.Compiler;
 using Angelic.Models.Configuration.Custom.CustomFields;
+using Angelic.Models.Configuration.Custom.CustomFields.Restrictions;
 using Angelic.Models.Configuration.Language;
 using Newtonsoft.Json;
 
@@ -66,7 +67,7 @@ public class TicketTypeField
     public ICollection<CustomFieldVisibility>? VisibilityConditionsValue { get; set; } 
 
     [JsonProperty("value_restrictions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CustomFieldValueRestrictions>? ValueRestrictions { get; set; } 
+    public ICollection<ValueRestrictions>? ValueRestrictions { get; set; } 
 
     [JsonProperty("group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public FieldGroup? Group { get; set; } 

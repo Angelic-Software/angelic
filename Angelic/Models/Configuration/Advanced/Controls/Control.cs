@@ -6,6 +6,7 @@ using Angelic.Models.Configuration.Integrations.Microsoft.Dynamics365;
 using Angelic.Models.Configuration.Language;
 using Angelic.Models.Configuration.TeamsAndAgents.Agents;
 using Angelic.Models.Configuration.Tickets.TicketTypes;
+using Angelic.Models.ExternalLinks;
 using Angelic.Models.Invoice;
 using Angelic.Models.KeyPairs;
 using Newtonsoft.Json;
@@ -16,7 +17,7 @@ namespace Angelic.Models.Configuration.Advanced.Controls;
     public partial class Control
     {
         [JsonProperty("workspace_site_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ExternalLinkList>? WorkspaceSiteMappings { get; set; } 
+        public ICollection<ExternalLink>? WorkspaceSiteMappings { get; set; } 
 
         [JsonProperty("twilio_ticket_type_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? TwilioTicketTypeName { get; set; } 
@@ -67,10 +68,10 @@ namespace Angelic.Models.Configuration.Advanced.Controls;
         public string? Etilizeurl { get; set; } 
 
         [JsonProperty("barracuda_sitemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ExternalLinkList>? BarracudaSitemappings { get; set; } 
+        public ICollection<ExternalLink>? BarracudaSitemappings { get; set; } 
 
         [JsonProperty("barracuda_clientmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ExternalLinkList>? BarracudaClientmappings { get; set; } 
+        public ICollection<ExternalLink>? BarracudaClientmappings { get; set; } 
 
         [JsonProperty("barracuda_fieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<IntegrationFieldMapping>? BarracudaFieldMappings { get; set; } 
@@ -163,7 +164,7 @@ namespace Angelic.Models.Configuration.Advanced.Controls;
         public string? RecaptchaSiteKey { get; set; } 
 
         [JsonProperty("jamf_site_links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ExternalLinkList>? JamfSiteLinks { get; set; } 
+        public ICollection<ExternalLink>? JamfSiteLinks { get; set; } 
 
         [JsonProperty("total_setup_steps", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? TotalSetupSteps { get; set; } 
@@ -211,7 +212,7 @@ namespace Angelic.Models.Configuration.Advanced.Controls;
         public ICollection<InvoiceDetailMeterTiers>? DefaultMeterTiers { get; set; } 
 
         [JsonProperty("connectwisermm_sitemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ExternalLinkList>? ConnectWiseRmmSitemappings { get; set; } 
+        public ICollection<ExternalLink>? ConnectWiseRmmSitemappings { get; set; } 
 
         [JsonProperty("connectwisermm_typemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<AssetTypeMapping>? ConnectWiseRmmTypemappings { get; set; } 
@@ -307,7 +308,7 @@ namespace Angelic.Models.Configuration.Advanced.Controls;
         public ICollection<IntegrationFieldMapping>? XensamDatacentreFieldMappings { get; set; } 
 
         [JsonProperty("xensam_clientmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ExternalLinkList>? XensamClientmappings { get; set; } 
+        public ICollection<ExternalLink>? XensamClientmappings { get; set; } 
 
         [JsonProperty("xensam_mappings_xtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<AssetTypeMapping>? XensamMappingsXType { get; set; } 
@@ -316,7 +317,7 @@ namespace Angelic.Models.Configuration.Advanced.Controls;
         public string? TrustpilotDefaultUsersiteName { get; set; } 
 
         [JsonProperty("okta_sitegroup_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ExternalLinkList>? OktaSitegroupMappings { get; set; } 
+        public ICollection<ExternalLink>? OktaSitegroupMappings { get; set; } 
 
         [JsonProperty("lansweeper_sql_port", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? LansweeperSqlPort { get; set; } 
@@ -496,7 +497,7 @@ namespace Angelic.Models.Configuration.Advanced.Controls;
         public string? MerakiTopLevelName { get; set; } 
 
         [JsonProperty("meraki_client_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ExternalLinkList>? MerakiClientMappings { get; set; } 
+        public ICollection<ExternalLink>? MerakiClientMappings { get; set; } 
 
         [JsonProperty("meraki_device_fieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<IntegrationFieldMapping>? MerakiDeviceFieldMappings { get; set; } 
@@ -1282,7 +1283,7 @@ namespace Angelic.Models.Configuration.Advanced.Controls;
         public string? HopewiserMaf { get; set; } 
 
         [JsonProperty("teamsshifts_shifttype_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ExternalLinkList>? TeamsshiftsShifttypeMappings { get; set; } 
+        public ICollection<ExternalLink>? TeamsshiftsShifttypeMappings { get; set; } 
 
         [JsonProperty("webhook_iterations", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? WebhookIterations { get; set; } 

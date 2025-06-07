@@ -9,6 +9,7 @@ using Angelic.Models.Configuration.TeamsAndAgents;
 using Angelic.Models.Configuration.TeamsAndAgents.Agents;
 using Angelic.Models.Configuration.TeamsAndAgents.Teams;
 using Angelic.Models.Configuration.Tickets.TicketTypes;
+using Angelic.Models.ExternalLinks;
 using Angelic.Models.Tickets;
 using Newtonsoft.Json;
 
@@ -231,7 +232,7 @@ namespace Angelic.Models.KnowledgeBase;
         public bool? FaqWrite { get; set; } 
 
         [JsonProperty("new_external_link", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ExternalLinkList? NewExternalLink { get; set; } 
+        public ExternalLink? NewExternalLink { get; set; } 
 
         [JsonProperty("_match_thirdparty_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? MatchThirdPartyId { get; set; } 
@@ -246,7 +247,7 @@ namespace Angelic.Models.KnowledgeBase;
         public int? ImportDetailsId { get; set; } 
 
         [JsonProperty("external_links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ExternalLinkList>? ExternalLinks { get; set; } 
+        public ICollection<ExternalLink>? ExternalLinks { get; set; } 
 
         [JsonProperty("wordpress_tags", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IDictionary<string, WordpressComObject>? WordpressTags { get; set; } 

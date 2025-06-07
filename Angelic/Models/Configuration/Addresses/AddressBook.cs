@@ -1,6 +1,6 @@
 using System.CodeDom.Compiler;
 using Angelic.Attributes;
-using Angelic.ContactGroups;
+using Angelic.Models.ContactGroups;
 using Newtonsoft.Json;
 
 namespace Angelic.Models.Configuration.Addresses;

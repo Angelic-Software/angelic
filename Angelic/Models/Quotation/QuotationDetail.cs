@@ -1,6 +1,7 @@
 using System.CodeDom.Compiler;
 using Angelic.Models.Configuration.Billing.Taxes;
 using Angelic.Models.Configuration.Custom.CustomFields;
+using Angelic.Models.ExternalLinks;
 using Angelic.Models.KeyPairs;
 using Angelic.Models.Tickets;
 using Newtonsoft.Json;
@@ -308,10 +309,10 @@ public class QuotationDetail
     public double? TaxConverted { get; set; } 
 
     [JsonProperty("new_external_link", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ExternalLinkList? NewExternalLink { get; set; } 
+    public ExternalLink? NewExternalLink { get; set; } 
 
     [JsonProperty("external_link", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ExternalLinkList? ExternalLink { get; set; } 
+    public ExternalLink? ExternalLink { get; set; } 
 
     [JsonProperty("ingram_quote", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? IngramQuote { get; set; } 

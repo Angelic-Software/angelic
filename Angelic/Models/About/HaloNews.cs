@@ -69,7 +69,7 @@ namespace Angelic.Models.About;
         public int? MaxVersionSeq { get; set; } 
 
         [JsonProperty("one_dbid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? OneDbid { get; set; } 
+        public string? OneDbId { get; set; } 
 
         [JsonProperty("one_product", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? OneProduct { get; set; } 

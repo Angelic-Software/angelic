@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Models.ExternalLinks;
 using Angelic.Models.KeyPairs;
 using Newtonsoft.Json;
 
@@ -44,7 +45,7 @@ public class IngramMicroDetails
     public string? NewAccessToken { get; set; } 
 
     [JsonProperty("client_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ExternalLinkList>? ClientMappings { get; set; } 
+    public ICollection<ExternalLink>? ClientMappings { get; set; } 
 
     [JsonProperty("top_level_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? TopLevelName { get; set; } 

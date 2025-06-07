@@ -1,10 +1,16 @@
 using System.CodeDom.Compiler;
+using Angelic.Attributes;
 using Angelic.Models.Configuration.Custom.CustomFields;
 using Newtonsoft.Json;
 
 namespace Angelic.Models.CrmNotes;
 
+/// <summary>
+/// A CRM note is any note that may appear on an invoice, a purchase order, a sales order, or a quote.
+/// Use this class to POST notes onto any of the above, referencing the relevant ID of the sales order, purchase order, invoice or quote.
+/// </summary>
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
+[HasEndpoint("CrmNote")]
 public class CrmNote
 {
     [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -53,7 +59,7 @@ public class CrmNote
     public string? MailEntryId { get; set; } 
 
     [JsonProperty("nextcalldate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? NextCalldate { get; set; } 
+    public DateTimeOffset? NextCallDate { get; set; } 
 
     [JsonProperty("satisfaction", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Satisfaction { get; set; } 

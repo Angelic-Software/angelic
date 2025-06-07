@@ -10,13 +10,13 @@ public class InvoiceDetailMeterTiers
     public int? Id { get; set; } 
 
     [JsonProperty("idid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Idid { get; set; } 
+    public int? IdId { get; set; } 
 
     [JsonProperty("minquantity", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Minquantity { get; set; } 
+    public double? MinQuantity { get; set; } 
 
     [JsonProperty("maxquantity", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Maxquantity { get; set; } 
+    public double? MaxQuantity { get; set; } 
 
     [JsonProperty("price", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? Price { get; set; } 

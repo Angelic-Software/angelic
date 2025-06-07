@@ -12,25 +12,25 @@ public class EcommerceOrder
     public int? Id { get; set; } 
 
     [JsonProperty("moduleid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Moduleid { get; set; } 
+    public int? ModuleId { get; set; } 
 
     [JsonProperty("thirdpartyid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ThirdPartyId { get; set; } 
 
     [JsonProperty("thirdpartyurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ThirdPartyurl { get; set; } 
+    public string? ThirdPartyUrl { get; set; } 
 
     [JsonProperty("thirdpartyordernumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ThirdPartyordernumber { get; set; } 
+    public string? ThirdPartyOrderNumber { get; set; } 
 
     [JsonProperty("thirdpartycustomerid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ThirdPartycustomerid { get; set; } 
+    public string? ThirdPartyCustomerId { get; set; } 
 
     [JsonProperty("thirdpartystatus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ThirdPartystatus { get; set; } 
+    public string? ThirdPartyStatus { get; set; } 
 
     [JsonProperty("thirdpartystatus2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ThirdPartystatus2 { get; set; } 
+    public string? ThirdPartyStatus2 { get; set; } 
 
     [JsonProperty("thirdpartycreateddate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? ThirdPartyCreatedDate { get; set; } 
