@@ -37,13 +37,13 @@ public class WebhookEvent
     public string? Requestbody { get; set; } 
 
     [JsonProperty("responsestatus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Responsestatus { get; set; } 
+    public int? ResponseStatus { get; set; } 
 
     [JsonProperty("responseheaders", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Responseheaders { get; set; } 
+    public string? ResponseHeaders { get; set; } 
 
     [JsonProperty("responsebody", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Responsebody { get; set; } 
+    public string? ResponseBody { get; set; } 
 
     [JsonProperty("automation_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? AutomationId { get; set; } 

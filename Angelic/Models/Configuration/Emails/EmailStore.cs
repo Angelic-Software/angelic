@@ -42,7 +42,7 @@ public class EmailStore
     public int? FaultId { get; set; } 
 
     [JsonProperty("templateid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Templateid { get; set; } 
+    public int? TemplateId { get; set; } 
 
     [JsonProperty("emailbcc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? EmailBcc { get; set; } 

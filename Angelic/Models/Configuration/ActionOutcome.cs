@@ -95,7 +95,7 @@ namespace Angelic.Models.Configuration;
         public Guid? NewStatusGuid { get; set; } 
 
         [JsonProperty("slaholdischecked", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Slaholdischecked { get; set; } 
+        public bool? SlaHoldischecked { get; set; } 
 
         [JsonProperty("userdesc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? UserDesc { get; set; } 
@@ -110,7 +110,7 @@ namespace Angelic.Models.Configuration;
         public string? EmailTemplateName { get; set; } 
 
         [JsonProperty("slareleaseischecked", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Slareleaseischecked { get; set; } 
+        public bool? SlaReleaseischecked { get; set; } 
 
         [JsonProperty("chargerate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? ChargeRate { get; set; } 
@@ -236,7 +236,7 @@ namespace Angelic.Models.Configuration;
         public bool? ShowHideCheckbox { get; set; } 
 
         [JsonProperty("showslacheckbox", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? ShowSlacheckbox { get; set; } 
+        public bool? ShowSlaCheckbox { get; set; } 
 
         [JsonProperty("showimportantcheckbox", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? ShowImportantcheckbox { get; set; } 
@@ -455,10 +455,10 @@ namespace Angelic.Models.Configuration;
         public int? ReplyType { get; set; } 
 
         [JsonProperty("parentdefaultuser", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Parentdefaultuser { get; set; } 
+        public int? ParentDefaultUser { get; set; } 
 
         [JsonProperty("parentdefaultuser_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? ParentdefaultuserName { get; set; } 
+        public string? ParentDefaultUserName { get; set; } 
 
         [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Warning { get; set; } 
@@ -649,7 +649,7 @@ namespace Angelic.Models.Configuration;
         public bool? ShowSendinstagram { get; set; } 
 
         [JsonProperty("showslacheckbox_mandatory", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? ShowSlacheckboxMandatory { get; set; } 
+        public bool? ShowSlaCheckboxMandatory { get; set; } 
 
         [JsonProperty("ai_preview", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? AiPreview { get; set; } 

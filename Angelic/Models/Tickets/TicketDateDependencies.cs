@@ -10,7 +10,7 @@ public class TicketDateDependencies
     public int? Id { get; set; } 
 
     [JsonProperty("parentfaultid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Parentfaultid { get; set; } 
+    public int? ParentFaultId { get; set; } 
 
     [JsonProperty("faultid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? FaultId { get; set; } 

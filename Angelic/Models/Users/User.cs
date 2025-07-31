@@ -199,7 +199,7 @@ public class User
     public string? SiteHubspotGuid { get; set; } 
 
     [JsonProperty("isserviceaccount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isserviceaccount { get; set; } 
+    public bool? IsServiceaccount { get; set; } 
 
     [JsonProperty("ignoreautomatedbilling", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Ignoreautomatedbilling { get; set; } 
@@ -469,7 +469,7 @@ public class User
     public bool? Viewallcleared { get; set; } 
 
     [JsonProperty("isexternal", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isexternal { get; set; } 
+    public bool? IsExternal { get; set; } 
 
     [JsonProperty("question1", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Question1 { get; set; } 
@@ -508,7 +508,7 @@ public class User
     public bool? Canviewcontracts { get; set; } 
 
     [JsonProperty("ispoapprover", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Ispoapprover { get; set; } 
+    public bool? IsPoapprover { get; set; } 
 
     [JsonProperty("encmethod", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Encmethod { get; set; } 
@@ -682,7 +682,7 @@ public class User
     public DateTimeOffset? Ulastupdate { get; set; } 
 
     [JsonProperty("_isopp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isopp { get; set; } 
+    public bool? IsOpp { get; set; } 
 
     [JsonProperty("oppcompanyname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? OppCompanyName { get; set; } 
@@ -742,7 +742,7 @@ public class User
     public string? Warning { get; set; } 
 
     [JsonProperty("isuserdetails", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isuserdetails { get; set; } 
+    public bool? IsUserdetails { get; set; } 
 
     [JsonProperty("hudu_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? HuduUrl { get; set; } 

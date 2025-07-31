@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Angelic", "Angelic\Angelic.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Angelic.Tests", "Angelic.Tests\Angelic.Tests.csproj", "{3481DFEA-8122-49E4-AFB6-A947EF90082A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngelicWebPortal", "AngelicWebPortal\AngelicWebPortal.csproj", "{EA499090-E36F-4C15-8D15-3709FC55746C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{3481DFEA-8122-49E4-AFB6-A947EF90082A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3481DFEA-8122-49E4-AFB6-A947EF90082A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3481DFEA-8122-49E4-AFB6-A947EF90082A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA499090-E36F-4C15-8D15-3709FC55746C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA499090-E36F-4C15-8D15-3709FC55746C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA499090-E36F-4C15-8D15-3709FC55746C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA499090-E36F-4C15-8D15-3709FC55746C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

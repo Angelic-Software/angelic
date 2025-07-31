@@ -40,7 +40,7 @@ public class LdapString
     public bool? Agentmapping { get; set; } 
 
     [JsonProperty("isrecursive", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isrecursive { get; set; } 
+    public bool? IsRecursive { get; set; } 
 
     [JsonProperty("mapping_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? MappingType { get; set; } 

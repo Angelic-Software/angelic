@@ -13,7 +13,6 @@ using Angelic.Models.Configuration.Custom.CustomFields;
 using Angelic.Models.Configuration.Integrations.Freshdesk;
 using Angelic.Models.Configuration.Integrations.Google;
 using Angelic.Models.Configuration.Integrations.Lookups;
-using Angelic.Models.Configuration.TeamsAndAgents;
 using Angelic.Models.Configuration.TeamsAndAgents.QualificationMatching;
 using Angelic.Models.Configuration.Tickets;
 using Angelic.Models.Configuration.Tickets.Slas;
@@ -28,8 +27,7 @@ using Newtonsoft.Json;
 namespace Angelic.Models.Tickets;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public class Ticket
-    {
+    public class Ticket {
         [JsonProperty("oppjobtitle", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? OppJobTitle { get; set; } 
 
@@ -199,19 +197,19 @@ namespace Angelic.Models.Tickets;
         public DateTimeOffset? Respondbydate { get; set; } 
 
         [JsonProperty("responsedate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? Responsedate { get; set; } 
+        public DateTimeOffset? ResponseDate { get; set; } 
 
         [JsonProperty("first_responsedate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? FirstResponsedate { get; set; } 
+        public DateTimeOffset? FirstResponseDate { get; set; } 
 
         [JsonProperty("responsestartdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? Responsestartdate { get; set; } 
+        public DateTimeOffset? ResponseStartDate { get; set; } 
 
         [JsonProperty("slaresponsestate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Slaresponsestate { get; set; } 
+        public string? SlaResponseState { get; set; } 
 
         [JsonProperty("fixbydate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? Fixbydate { get; set; } 
+        public DateTimeOffset? FixByDate { get; set; } 
 
         [JsonProperty("dateclosed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public DateTimeOffset? DateClosed { get; set; } 
@@ -223,28 +221,28 @@ namespace Angelic.Models.Tickets;
         public bool? ExcludeFromSla { get; set; } 
 
         [JsonProperty("slaholdtime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Slaholdtime { get; set; } 
+        public double? SlaHoldtime { get; set; } 
 
         [JsonProperty("site_timezone", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? SiteTimeZone { get; set; } 
 
         [JsonProperty("parentguid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Parentguid { get; set; } 
+        public string? ParentGuid { get; set; } 
 
         [JsonProperty("parentassign", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Parentassign { get; set; } 
+        public bool? ParentAssign { get; set; } 
 
         [JsonProperty("slaactiondate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? Slaactiondate { get; set; } 
+        public DateTimeOffset? SlaActiondate { get; set; } 
 
         [JsonProperty("slapercused", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Slapercused { get; set; } 
+        public double? SlaPercUsed { get; set; } 
 
         [JsonProperty("slatimeleft", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? SlaTimeleft { get; set; } 
 
         [JsonProperty("currentelapsedhours", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Currentelapsedhours { get; set; } 
+        public double? CurrentElapsedHours { get; set; } 
 
         [JsonProperty("lastactiondate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public DateTimeOffset? LastActiondate { get; set; } 
@@ -400,10 +398,10 @@ namespace Angelic.Models.Tickets;
         public DateTimeZone? StartDateWithTimeZone { get; set; } 
 
         [JsonProperty("starttime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Starttime { get; set; } 
+        public string? StartTime { get; set; } 
 
         [JsonProperty("starttimeslot", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Starttimeslot { get; set; } 
+        public int? StartTimeslot { get; set; } 
 
         [JsonProperty("targetdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public DateTimeOffset? TargetDate { get; set; } 
@@ -415,10 +413,10 @@ namespace Angelic.Models.Tickets;
         public DateTimeZone? TargetDateWithTimeZone { get; set; } 
 
         [JsonProperty("targettime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Targettime { get; set; } 
+        public string? TargetTime { get; set; } 
 
         [JsonProperty("targettimeslot", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Targettimeslot { get; set; } 
+        public int? TargetTimeslot { get; set; } 
 
         [JsonProperty("deadlinedate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public DateTimeOffset? Deadlinedate { get; set; } 
@@ -793,7 +791,7 @@ namespace Angelic.Models.Tickets;
         public int? AssetSite { get; set; } 
 
         [JsonProperty("slastate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Slastate { get; set; } 
+        public string? SlaState { get; set; } 
 
         [JsonProperty("slaexcuse", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? SlaExcuse { get; set; } 
@@ -823,19 +821,19 @@ namespace Angelic.Models.Tickets;
         public int? SupplierPriorityId { get; set; } 
 
         [JsonProperty("supplier_responsestate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? SupplierResponsestate { get; set; } 
+        public string? SupplierResponseState { get; set; } 
 
         [JsonProperty("supplier_responsedate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? SupplierResponsedate { get; set; } 
+        public DateTimeOffset? SupplierResponseDate { get; set; } 
 
         [JsonProperty("supplier_responsetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? SupplierResponsetime { get; set; } 
+        public double? SupplierResponseTime { get; set; } 
 
         [JsonProperty("supplier_respondbydate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public DateTimeOffset? SupplierRespondbydate { get; set; } 
 
         [JsonProperty("supplier_slastate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? SupplierSlastate { get; set; } 
+        public string? SupplierSlaState { get; set; } 
 
         [JsonProperty("supplier_slatimeelapsed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? SupplierSlaTimeelapsed { get; set; } 
@@ -844,7 +842,7 @@ namespace Angelic.Models.Tickets;
         public DateTimeOffset? SupplierDateClosed { get; set; } 
 
         [JsonProperty("supplier_fixbydate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? SupplierFixbydate { get; set; } 
+        public DateTimeOffset? SupplierFixByDate { get; set; } 
 
         [JsonProperty("supplier_breachrespsent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? SupplierBreachrespsent { get; set; } 
@@ -898,10 +896,10 @@ namespace Angelic.Models.Tickets;
         public bool? Agreedcleared { get; set; } 
 
         [JsonProperty("responsetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Responsetime { get; set; } 
+        public double? ResponseTime { get; set; } 
 
         [JsonProperty("first_responsetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? FirstResponsetime { get; set; } 
+        public double? FirstResponseTime { get; set; } 
 
         [JsonProperty("alsoinform", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Alsoinform { get; set; } 
@@ -931,7 +929,7 @@ namespace Angelic.Models.Tickets;
         public int? ServiceId { get; set; } 
 
         [JsonProperty("isparentservice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Isparentservice { get; set; } 
+        public bool? IsParentservice { get; set; } 
 
         [JsonProperty("surveysent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Surveysent { get; set; } 
@@ -1006,7 +1004,7 @@ namespace Angelic.Models.Tickets;
         public int? ChildTemplateId { get; set; } 
 
         [JsonProperty("slaholdreminderdatelastemailed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? Slaholdreminderdatelastemailed { get; set; } 
+        public DateTimeOffset? SlaHoldreminderdatelastemailed { get; set; } 
 
         [JsonProperty("closurereminderdatelastemailed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public DateTimeOffset? Closurereminderdatelastemailed { get; set; } 
@@ -1099,7 +1097,7 @@ namespace Angelic.Models.Tickets;
         public string? FacebookId { get; set; } 
 
         [JsonProperty("fixbydateadjusted", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Fixbydateadjusted { get; set; } 
+        public bool? FixByDateadjusted { get; set; } 
 
         [JsonProperty("loggedonbehalfby", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Loggedonbehalfby { get; set; } 
@@ -1390,7 +1388,7 @@ namespace Angelic.Models.Tickets;
         public string? CurrentActionName { get; set; } 
 
         [JsonProperty("_ispreview", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Ispreview { get; set; } 
+        public bool? IsPreview { get; set; } 
 
         [JsonProperty("assets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<AssetList>? Assets { get; set; } 
@@ -1489,7 +1487,7 @@ namespace Angelic.Models.Tickets;
         public bool? IsClosureReminderClosure { get; set; } 
 
         [JsonProperty("is_slahold_reminder_closure", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? IsSlaholdReminderClosure { get; set; } 
+        public bool? IsSlaHoldReminderClosure { get; set; } 
 
         [JsonProperty("_importid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Importid { get; set; } 
@@ -1873,7 +1871,7 @@ namespace Angelic.Models.Tickets;
         public string? TeamsUserId { get; set; } 
 
         [JsonProperty("_isteams", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Isteams { get; set; } 
+        public bool? IsTeams { get; set; } 
 
         [JsonProperty("faultapprovalfailed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Faultapprovalfailed { get; set; } 
@@ -2023,7 +2021,7 @@ namespace Angelic.Models.Tickets;
         public string? SalesforceAccountid { get; set; } 
 
         [JsonProperty("salesforce_parentid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? SalesforceParentid { get; set; } 
+        public string? SalesforceParentId { get; set; } 
 
         [JsonProperty("salesforce_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? SalesforceStatus { get; set; } 
@@ -2320,7 +2318,7 @@ namespace Angelic.Models.Tickets;
         public ICollection<ViewColumnsDetails>? AssetsColumns { get; set; } 
 
         [JsonProperty("slaresponseexcuse", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Slaresponseexcuse { get; set; } 
+        public string? SlaResponseexcuse { get; set; } 
 
         [JsonProperty("can_add_cc_followers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? CanAddCcFollowers { get; set; } 

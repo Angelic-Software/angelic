@@ -10,7 +10,7 @@ public class IntegrationRequest
     public int? Id { get; set; } 
 
     [JsonProperty("isoutgoing", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isoutgoing { get; set; } 
+    public bool? IsOutgoing { get; set; } 
 
     [JsonProperty("operation", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Operation { get; set; } 

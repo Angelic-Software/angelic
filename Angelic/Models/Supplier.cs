@@ -131,7 +131,7 @@ public class Supplier
     public string? Nhdpassword { get; set; } 
 
     [JsonProperty("parentid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Parentid { get; set; } 
+    public int? ParentId { get; set; } 
 
     [JsonProperty("emaildomain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? EmailDomain { get; set; } 
@@ -197,7 +197,7 @@ public class Supplier
     public string? Warning { get; set; } 
 
     [JsonProperty("issupplierdetails", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Issupplierdetails { get; set; } 
+    public bool? IsSupplierdetails { get; set; } 
 
     [JsonProperty("jira_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? JiraUrl { get; set; } 

@@ -87,7 +87,7 @@ public class Organisation
     public string? Warning { get; set; } 
 
     [JsonProperty("isorganisationdetails", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isorganisationdetails { get; set; } 
+    public bool? IsOrganisationdetails { get; set; } 
 
     [JsonProperty("bank_details_line_1", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? BankDetailsLine1 { get; set; } 

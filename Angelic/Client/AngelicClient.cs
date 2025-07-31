@@ -1,27 +1,36 @@
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Options;
 using RestSharp;
 using RestSharp.Authenticators;
 using RestSharp.Authenticators.OAuth2;
 
 namespace Angelic.Client;
 
-public class AngelicClient<T>(IConfiguration configuration) : IAngelicClient where T : class, new()
+public class AngelicClient(IOptionsSnapshot<AngelicClientOptions> angelicClientOptions, IAngelicTokenService tokenService) : IAngelicClient
 {
-    private readonly string haloUrl = configuration.GetSection("HaloUrl").Value;
-    private readonly string haloClientId = configuration.GetSection("HaloClientId").Value;
-    private readonly string haloClientSecret = configuration.GetSection("HaloClientSecret").Value;
-    private readonly IEnumerable<KeyValuePair<string, string?>> scope = configuration.GetSection("Scope").AsEnumerable();
+    private readonly string haloUrl = angelicClientOptions.Value.HaloBaseUrl;
     
-    public async Task<T> GetAsync<T>(int id, Dictionary<string, string> queryParams = null)
+    public async Task<T> GetAsync<T>(string endpoint, Dictionary<string, string> queryParams = null)
     {
-        IAuthenticator authenticator = new OAuth2AuthorizationRequestHeaderAuthenticator("yadadadasdd");
+        string token = await tokenService.GetTokenAsync();
+        IAuthenticator authenticator = new OAuth2AuthorizationRequestHeaderAuthenticator(token);
         
-        var clientOpts = new RestClientOptions
+        RestClientOptions clientOpts = new RestClientOptions
         {
             BaseUrl = new Uri(haloUrl),
-            
+            Authenticator = authenticator
         };
-        var client = new RestClient();
+        RestClient client = new RestClient(clientOpts);
+
+        RestRequest request = new RestRequest(endpoint, Method.Get);
+        foreach (KeyValuePair<string, string?> param in queryParams)
+        {
+            request.AddQueryParameter(param.Key, param.Value);
+        }
+        request.AddHeader("Content-Type", "application/json");
+
+        RestResponse<T> response = await client.ExecuteGetAsync<T>(request);
+        return response.Data;
     }
 
     public async Task<T> PostAsync<T>(T body)

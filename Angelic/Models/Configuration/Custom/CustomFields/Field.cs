@@ -43,7 +43,7 @@ public class Field
     public int? Datalength { get; set; } 
 
     [JsonProperty("issoftware", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Issoftware { get; set; } 
+    public bool? IsSoftware { get; set; } 
 
     [JsonProperty("sequence", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Sequence { get; set; } 

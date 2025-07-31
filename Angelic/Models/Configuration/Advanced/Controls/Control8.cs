@@ -373,7 +373,7 @@ public partial class Control
         public bool? Actisbillable { get; set; } 
 
         [JsonProperty("use_slaholdcolour", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? UseSlaholdcolour { get; set; } 
+        public bool? UseSlaHoldcolour { get; set; } 
 
         [JsonProperty("use_team_mgs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? UseTeamMgs { get; set; } 

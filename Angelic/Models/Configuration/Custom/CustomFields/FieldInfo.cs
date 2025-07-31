@@ -287,7 +287,7 @@ public class FieldInfo
     public int? TableDataEntryType { get; set; } 
 
     [JsonProperty("isencrypted", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isencrypted { get; set; } 
+    public bool? IsEncrypted { get; set; } 
 
     [JsonProperty("table_height", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? TableHeight { get; set; } 

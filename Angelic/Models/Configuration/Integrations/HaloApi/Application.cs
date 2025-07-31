@@ -108,7 +108,7 @@ public class Application
     public string? Warning { get; set; } 
 
     [JsonProperty("_issystem", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Issystem { get; set; } 
+    public bool? IsSystem { get; set; } 
 
     [JsonProperty("authorizations", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<OpenIddictAuthorization>? Authorizations { get; set; } 

@@ -33,7 +33,7 @@ public class ServiceRequestDetails
     public string? ServiceDetailRequestTypename { get; set; } 
 
     [JsonProperty("servicedetail_templateid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ServiceDetailTemplateid { get; set; } 
+    public int? ServiceDetailTemplateId { get; set; } 
 
     [JsonProperty("servicedetail_templateguid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public Guid? ServiceDetailTemplateguid { get; set; } 

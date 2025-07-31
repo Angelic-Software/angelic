@@ -665,10 +665,10 @@ public class TicketType
     public int? Statusafterresourcebook { get; set; } 
 
     [JsonProperty("parentstatusafterallchildclosed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Parentstatusafterallchildclosed { get; set; } 
+    public int? ParentStatusAfterAllChildClosed { get; set; } 
 
     [JsonProperty("parentstatusafterallchildclosed_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ParentstatusafterallchildclosedName { get; set; } 
+    public string? ParentStatusAfterAllChildClosedName { get; set; } 
 
     [JsonProperty("allowlogonbehalfof", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Allowlogonbehalfof { get; set; } 
@@ -732,7 +732,7 @@ public class TicketType
     public bool? EnableUsermentions { get; set; } 
 
     [JsonProperty("sladontclose", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Sladontclose { get; set; } 
+    public bool? SlaDontclose { get; set; } 
 
     [JsonProperty("pendingdontclose", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Pendingdontclose { get; set; } 

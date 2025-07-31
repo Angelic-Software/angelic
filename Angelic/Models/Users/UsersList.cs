@@ -168,7 +168,7 @@ public class UsersList
     public string? SiteHubspotGuid { get; set; } 
 
     [JsonProperty("isserviceaccount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isserviceaccount { get; set; } 
+    public bool? IsServiceaccount { get; set; } 
 
     [JsonProperty("ignoreautomatedbilling", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Ignoreautomatedbilling { get; set; } 

@@ -35,7 +35,7 @@ namespace Angelic.Models.Configuration.PdfTemplates;
         public string? Subhtml3 { get; set; } 
 
         [JsonProperty("istitlepage", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Istitlepage { get; set; } 
+        public bool? IsTitlepage { get; set; } 
 
         [JsonProperty("backgroundimageurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Backgroundimageurl { get; set; } 

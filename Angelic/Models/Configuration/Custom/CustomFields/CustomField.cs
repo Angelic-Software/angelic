@@ -123,7 +123,7 @@ public class CustomField
     public bool? Copied { get; set; } 
 
     [JsonProperty("isencrypted", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isencrypted { get; set; } 
+    public bool? IsEncrypted { get; set; } 
 
     [JsonProperty("max_selection", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? MaxSelection { get; set; } 

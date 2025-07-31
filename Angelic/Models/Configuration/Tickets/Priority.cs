@@ -34,7 +34,7 @@ public class Priority
     public bool? Enterslaexcuse { get; set; } 
 
     [JsonProperty("responsetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Responsetime { get; set; } 
+    public double? ResponseTime { get; set; } 
 
     [JsonProperty("responseunits", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Responseunits { get; set; } 
@@ -58,10 +58,10 @@ public class Priority
     public int? Workdaysoverride { get; set; } 
 
     [JsonProperty("responsestartofday", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Responsestartofday { get; set; } 
+    public bool? ResponseStartofday { get; set; } 
 
     [JsonProperty("responsestartofdaytime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Responsestartofdaytime { get; set; } 
+    public string? ResponseStartofdaytime { get; set; } 
 
     [JsonProperty("startofday", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Startofday { get; set; } 

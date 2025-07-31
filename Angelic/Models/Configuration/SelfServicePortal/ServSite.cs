@@ -519,7 +519,7 @@ public class ServSite
     public ICollection<ServiceOption>? OptionalServices { get; set; } 
 
     [JsonProperty("isservicedetails", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isservicedetails { get; set; } 
+    public bool? IsServicedetails { get; set; } 
 
     [JsonProperty("statushistoryportal", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Statushistoryportal { get; set; } 

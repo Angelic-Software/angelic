@@ -39,7 +39,7 @@ public class IncomingEmail
     public bool? Delete { get; set; } 
 
     [JsonProperty("issalesmb", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Issalesmb { get; set; } 
+    public bool? IsSalesmb { get; set; } 
 
     [JsonProperty("from", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? From { get; set; } 

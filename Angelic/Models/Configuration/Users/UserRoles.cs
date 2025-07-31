@@ -27,7 +27,7 @@ public class UserRoles
     public bool? IsChangeapprover2 { get; set; } 
 
     [JsonProperty("ispoapprover", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Ispoapprover { get; set; } 
+    public bool? IsPoapprover { get; set; } 
 
     [JsonProperty("web_access_level", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? WebAccessLevel { get; set; } 

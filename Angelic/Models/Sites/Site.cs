@@ -342,7 +342,7 @@ public class Site
     public int? AteraId { get; set; } 
 
     [JsonProperty("slastupdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Slastupdate { get; set; } 
+    public DateTimeOffset? SlaStupdate { get; set; } 
 
     [JsonProperty("site_service_tax_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? SiteServiceTaxCode { get; set; } 
@@ -402,7 +402,7 @@ public class Site
     public string? Warning { get; set; } 
 
     [JsonProperty("issitedetails", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Issitedetails { get; set; } 
+    public bool? IsSitedetails { get; set; } 
 
     [JsonProperty("hudu_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? HuduUrl { get; set; } 

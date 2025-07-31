@@ -49,7 +49,7 @@ public class TicketApproval
     public int? ActionNumber { get; set; } 
 
     [JsonProperty("emailstatus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Emailstatus { get; set; } 
+    public int? EmailStatus { get; set; } 
 
     [JsonProperty("result", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Result { get; set; } 
@@ -79,7 +79,7 @@ public class TicketApproval
     public int? CabId { get; set; } 
 
     [JsonProperty("templateid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Templateid { get; set; } 
+    public int? TemplateId { get; set; } 
 
     [JsonProperty("name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Name { get; set; } 
@@ -118,7 +118,7 @@ public class TicketApproval
     public string? RequestorName { get; set; } 
 
     [JsonProperty("requestor_imgpath", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? RequestorImgpath { get; set; } 
+    public string? RequestorImgPath { get; set; } 
 
     [JsonProperty("requestor_colour", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? RequestorColour { get; set; } 
@@ -127,7 +127,7 @@ public class TicketApproval
     public string? RequestorInitials { get; set; } 
 
     [JsonProperty("requestor_onlinestatus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? RequestorOnlinestatus { get; set; } 
+    public int? RequestorOnlineStatus { get; set; } 
 
     [JsonProperty("requestor_lastonline", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? RequestorLastOnline { get; set; } 
@@ -139,7 +139,7 @@ public class TicketApproval
     public string? Note { get; set; } 
 
     [JsonProperty("_includeticketinresponse", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? IncludeTicketinresponse { get; set; } 
+    public bool? IncludeTicketInResponse { get; set; } 
 
     [JsonProperty("attachment_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public AttachmentView? AttachmentList { get; set; } 
@@ -160,7 +160,7 @@ public class TicketApproval
     public string? AgentRequestorColour { get; set; } 
 
     [JsonProperty("agent_requestor_imgpath", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? AgentRequestorImgpath { get; set; } 
+    public string? AgentRequestorImgPath { get; set; } 
 
     [JsonProperty("delegated_by_uid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? DelegatedByUid { get; set; } 
@@ -178,7 +178,7 @@ public class TicketApproval
     public string? Warning { get; set; } 
 
     [JsonProperty("faresultchanged", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Faresultchanged { get; set; } 
+    public int? FaResultChanged { get; set; } 
 
     [JsonProperty("token", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Token { get; set; } 
@@ -190,10 +190,10 @@ public class TicketApproval
     public string? Signature { get; set; } 
 
     [JsonProperty("newsignatureadded", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? NewSignatureadded { get; set; } 
+    public bool? NewSignatureAdded { get; set; } 
 
     [JsonProperty("lastreminderdatetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? LastReminderdatetime { get; set; } 
+    public DateTimeOffset? LastReminderDatetime { get; set; } 
 
     [JsonProperty("startdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? StartDate { get; set; } 
@@ -202,10 +202,10 @@ public class TicketApproval
     public DateTimeOffset? TargetDate { get; set; } 
 
     [JsonProperty("starttime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Starttime { get; set; } 
+    public string? StartTime { get; set; } 
 
     [JsonProperty("targettime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Targettime { get; set; } 
+    public string? TargetTime { get; set; } 
 
     [JsonProperty("timetaken", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? TimeTaken { get; set; } 
@@ -253,7 +253,7 @@ public class TicketApproval
     public string? RoleName { get; set; } 
 
     [JsonProperty("_isportalagentnote", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isportalagentnote { get; set; } 
+    public bool? IsPortalAgentNote { get; set; } 
 
     [JsonProperty("delegated_by_username", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? DelegatedByUsername { get; set; } 

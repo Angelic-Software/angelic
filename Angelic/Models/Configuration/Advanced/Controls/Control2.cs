@@ -304,7 +304,7 @@ public partial class Control
 
     [JsonProperty("includeslaholdloadbalancing", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public bool? IncludeSlaholdloadbalancing { get; set; }
+    public bool? IncludeSlaHoldloadbalancing { get; set; }
 
     [JsonProperty("milestone_update_all_dates", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
@@ -383,7 +383,7 @@ public partial class Control
     public string? Intacctdefaulttaxsol { get; set; }
 
     [JsonProperty("showslaonkanban", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowSlaonkanban { get; set; }
+    public bool? ShowSlaOnkanban { get; set; }
 
     [JsonProperty("site24x7_alert_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Site24X7AlertType { get; set; }
@@ -491,7 +491,7 @@ public partial class Control
     public bool? ShowFeedbackcaptcha { get; set; }
 
     [JsonProperty("recaptcha_isenterprise", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? RecaptchaIsenterprise { get; set; }
+    public bool? RecaptchaIsEnterprise { get; set; }
 
     [JsonProperty("call_charge_rate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? CallChargeRate { get; set; }
@@ -809,7 +809,7 @@ public partial class Control
 
     [JsonProperty("log_action_responses_on_action_submit", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public int? LogActionResponsesOnActionSubmit { get; set; }
+    public int? LogActionResponseSOnActionSubmit { get; set; }
 
     [JsonProperty("use_embedding_scores_openai", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
@@ -971,10 +971,10 @@ public partial class Control
     public bool? Enableslareminders { get; set; }
 
     [JsonProperty("slareminderintervalhrs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Slareminderintervalhrs { get; set; }
+    public int? SlaReminderintervalhrs { get; set; }
 
     [JsonProperty("slareminderautoclosehrs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Slareminderautoclosehrs { get; set; }
+    public int? SlaReminderautoclosehrs { get; set; }
 
     [JsonProperty("hourswarningnotapproved", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Hourswarningnotapproved { get; set; }

@@ -128,7 +128,7 @@ public partial class Control
         public string? Assetlinesbillingdesc { get; set; } 
 
         [JsonProperty("slaholdcolour", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Slaholdcolour { get; set; } 
+        public string? SlaHoldcolour { get; set; } 
 
         [JsonProperty("pagesize", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Pagesize { get; set; } 

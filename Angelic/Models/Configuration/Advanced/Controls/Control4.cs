@@ -692,10 +692,10 @@ public partial class Control
         public bool? Deleteforever { get; set; } 
 
         [JsonProperty("parentstatusafterallchildclosed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Parentstatusafterallchildclosed { get; set; } 
+        public int? ParentStatusAfterAllChildClosed { get; set; } 
 
         [JsonProperty("parentstatusafterallchildclosed_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public Guid? ParentstatusafterallchildclosedGuid { get; set; } 
+        public Guid? ParentStatusAfterAllChildClosedGuid { get; set; } 
 
         [JsonProperty("newchilduserisagent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? NewChilduserisagent { get; set; } 

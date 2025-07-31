@@ -605,7 +605,7 @@ public partial class Control
     public bool? XeroPostGroupHeaders { get; set; }
 
     [JsonProperty("responsedontassign", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Responsedontassign { get; set; }
+    public bool? ResponseDontassign { get; set; }
 
     [JsonProperty("automaticallysendsignedticketclosurepdf", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]

@@ -49,7 +49,7 @@ public class CustomIntegrationMethod
     public int? RequestType { get; set; } 
 
     [JsonProperty("responsetype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Responsetype { get; set; } 
+    public int? ResponseType { get; set; } 
 
     [JsonProperty("requestbody", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Requestbody { get; set; } 

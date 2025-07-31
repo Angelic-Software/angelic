@@ -46,10 +46,10 @@ public class Instance
     public string? Nomergereason { get; set; } 
 
     [JsonProperty("isself", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isself { get; set; } 
+    public bool? IsSelf { get; set; } 
 
     [JsonProperty("isprod", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isprod { get; set; } 
+    public bool? IsProd { get; set; } 
 
     [JsonProperty("_restore_from_prod", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? RestoreFromProd { get; set; } 

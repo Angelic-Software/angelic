@@ -29,10 +29,10 @@ public class IncomingEvent
     public string? Requestbody { get; set; } 
 
     [JsonProperty("responsestatus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Responsestatus { get; set; } 
+    public int? ResponseStatus { get; set; } 
 
     [JsonProperty("responsebody", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Responsebody { get; set; } 
+    public string? ResponseBody { get; set; } 
 
     [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Url { get; set; } 
@@ -71,7 +71,7 @@ public class IncomingEvent
     public string? StatusName { get; set; } 
 
     [JsonProperty("responsetype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Responsetype { get; set; } 
+    public int? ResponseType { get; set; } 
 
     [JsonProperty("response_desc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ResponseDesc { get; set; } 

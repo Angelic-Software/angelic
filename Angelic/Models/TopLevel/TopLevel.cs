@@ -35,7 +35,7 @@ public class TopLevel
     public int? ConcurrentLicLimit { get; set; } 
 
     [JsonProperty("parentid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Parentid { get; set; } 
+    public int? ParentId { get; set; } 
 
     [JsonProperty("notes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Notes { get; set; } 

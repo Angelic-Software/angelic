@@ -79,7 +79,7 @@ public class InvoiceDetailProRata
     public int? ChangeId { get; set; } 
 
     [JsonProperty("istempprorata", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Istempprorata { get; set; } 
+    public bool? IsTempprorata { get; set; } 
 
     [JsonProperty("include_in_roi", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? IncludeInRoi { get; set; } 

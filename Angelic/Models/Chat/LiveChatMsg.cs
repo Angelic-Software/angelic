@@ -48,7 +48,7 @@ public class LiveChatMsg
     public int? Lastmessageid { get; set; } 
 
     [JsonProperty("_isremoteinvite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isremoteinvite { get; set; } 
+    public bool? IsRemoteinvite { get; set; } 
 
     [JsonProperty("_remoteintegration", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Remoteintegration { get; set; } 

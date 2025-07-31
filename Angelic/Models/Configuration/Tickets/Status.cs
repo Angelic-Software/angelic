@@ -33,7 +33,7 @@ public class Status
     public string? Colour { get; set; } 
 
     [JsonProperty("slaaction", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Slaaction { get; set; } 
+    public string? SlaAction { get; set; } 
 
     [JsonProperty("ticket_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? TicketCount { get; set; } 

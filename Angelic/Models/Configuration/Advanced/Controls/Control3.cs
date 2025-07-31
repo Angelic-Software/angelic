@@ -11,7 +11,7 @@ public partial class Control
         public int? EndUsersclose { get; set; } 
 
         [JsonProperty("hideslastatus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? HideSlastatus { get; set; } 
+        public bool? HideSlaStatus { get; set; } 
 
         [JsonProperty("miscitemidsupppo", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Miscitemidsupppo { get; set; } 
@@ -107,7 +107,7 @@ public partial class Control
         public bool? ShowKbEntrytags { get; set; } 
 
         [JsonProperty("isphonemandatory", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Isphonemandatory { get; set; } 
+        public bool? IsPhonemandatory { get; set; } 
 
         [JsonProperty("enableteamscall", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? EnableTeamscall { get; set; } 

@@ -19,10 +19,10 @@ namespace Angelic.Models.Configuration.TeamsAndAgents.Agents;
         public string? Name { get; set; } 
 
         [JsonProperty("onlinestatus_actual", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? OnlinestatusActual { get; set; } 
+        public int? OnlineStatusActual { get; set; } 
 
         [JsonProperty("onlinestatus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Onlinestatus { get; set; } 
+        public int? OnlineStatus { get; set; } 
 
         [JsonProperty("is_online", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsOnline { get; set; } 
@@ -547,7 +547,7 @@ namespace Angelic.Models.Configuration.TeamsAndAgents.Agents;
         public bool? RevokeAuthenticatorapp { get; set; } 
 
         [JsonProperty("ispasswordreset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Ispasswordreset { get; set; } 
+        public bool? IsPasswordreset { get; set; } 
 
         [JsonProperty("graph_host", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? GraphHost { get; set; } 
