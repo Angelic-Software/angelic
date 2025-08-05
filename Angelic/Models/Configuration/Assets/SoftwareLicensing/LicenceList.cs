@@ -39,7 +39,7 @@ public class LicenceList
     public DateTimeOffset? StartDate { get; set; } 
 
     [JsonProperty("snowid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Snowid { get; set; } 
+    public string? SnowId { get; set; } 
 
     [JsonProperty("manufacturer", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Manufacturer { get; set; } 

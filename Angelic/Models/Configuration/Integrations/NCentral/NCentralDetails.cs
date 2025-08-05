@@ -1,5 +1,6 @@
 using System.CodeDom.Compiler;
 using Angelic.Models.Configuration.Assets;
+using Angelic.Models.Configuration.Assets.AssetTypes;
 using Angelic.Models.ExternalLinks;
 using Newtonsoft.Json;
 
@@ -33,7 +34,7 @@ public class NCentralDetails
     public string? DefassettypegroupName { get; set; } 
 
     [JsonProperty("newmethod", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Newmethod { get; set; } 
+    public bool? NewMethod { get; set; } 
 
     [JsonProperty("alerttickettype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Alerttickettype { get; set; } 

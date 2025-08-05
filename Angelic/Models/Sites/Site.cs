@@ -330,7 +330,7 @@ public class Site
     public int? ConnectWiseId { get; set; } 
 
     [JsonProperty("azuretenantid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Azuretenantid { get; set; } 
+    public string? AzureTenantid { get; set; } 
 
     [JsonProperty("autotaskid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? AutoTaskId { get; set; } 

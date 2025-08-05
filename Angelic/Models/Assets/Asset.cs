@@ -1,6 +1,7 @@
 using System.CodeDom.Compiler;
 using Angelic.Models.Configuration;
 using Angelic.Models.Configuration.Assets;
+using Angelic.Models.Configuration.Assets.AssetTypes;
 using Angelic.Models.Configuration.Assets.SoftwareLicensing;
 using Angelic.Models.Configuration.Custom;
 using Angelic.Models.Configuration.Custom.CustomFields;

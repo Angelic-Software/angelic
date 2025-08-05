@@ -37,7 +37,7 @@ public class User
     public long? Mobileint { get; set; } 
 
     [JsonProperty("mobilenumber2int", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public long? Mobilenumber2Int { get; set; } 
+    public long? MobileNumber2Int { get; set; } 
 
     [JsonProperty("faxint", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public long? Faxint { get; set; } 
@@ -88,10 +88,10 @@ public class User
     public string? Homenumber { get; set; } 
 
     [JsonProperty("mobilenumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Mobilenumber { get; set; } 
+    public string? MobileNumber { get; set; } 
 
     [JsonProperty("mobilenumber2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Mobilenumber2 { get; set; } 
+    public string? MobileNumber2 { get; set; } 
 
     [JsonProperty("fax", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Fax { get; set; } 
@@ -577,7 +577,7 @@ public class User
     public string? ImportType { get; set; } 
 
     [JsonProperty("usercompany", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<UserCompany>? Usercompany { get; set; } 
+    public ICollection<UserCompany>? UserCompany { get; set; } 
 
     [JsonProperty("supplier", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public UserSupplier? Supplier { get; set; } 
@@ -637,7 +637,7 @@ public class User
     public string? DelegationUserName { get; set; } 
 
     [JsonProperty("googleworkplace_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? GoogleworkplaceId { get; set; } 
+    public string? GoogleWorkplaceId { get; set; } 
 
     [JsonProperty("isnhserveremaildefault", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? IsNhServerEmailDefault { get; set; } 
@@ -835,7 +835,7 @@ public class User
     public bool? RemoveLicenses { get; set; } 
 
     [JsonProperty("_new_usersite_only", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? NewUsersiteOnly { get; set; } 
+    public bool? NewUserSiteOnly { get; set; } 
 
     [JsonProperty("thirdpartygroups", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<UserThirdPartyGroup>? ThirdPartygroups { get; set; } 
@@ -874,7 +874,7 @@ public class User
     public string? Lang { get; set; } 
 
     [JsonProperty("gocardless_customfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public IDictionary<string, string?>? GocardlessCustomFields { get; set; } 
+    public IDictionary<string, string?>? GoCardlessCustomFields { get; set; } 
 
     [JsonProperty("service_account_overridden", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? ServiceAccountOverridden { get; set; } 
@@ -970,7 +970,7 @@ public class User
     public string? WhatsappNumber { get; set; } 
 
     [JsonProperty("azureoid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Azureoid { get; set; } 
+    public string? AzureOid { get; set; } 
 
     [JsonProperty("date_of_birth", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? DateOfBirth { get; set; } 

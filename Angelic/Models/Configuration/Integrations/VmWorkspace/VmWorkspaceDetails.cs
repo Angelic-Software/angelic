@@ -1,5 +1,6 @@
 using System.CodeDom.Compiler;
 using Angelic.Models.Configuration.Assets;
+using Angelic.Models.Configuration.Assets.AssetTypes;
 using Angelic.Models.KeyPairs;
 using Newtonsoft.Json;
 
@@ -51,7 +52,7 @@ namespace Angelic.Models.Configuration.Integrations.VmWorkspace;
         public ICollection<IntegrationFieldMapping>? VmWorkspaceFieldMappings { get; set; } 
 
         [JsonProperty("sitemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<IntegrationSiteMapping>? Sitemappings { get; set; } 
+        public ICollection<IntegrationSiteMapping>? SiteMappings { get; set; } 
 
         [JsonProperty("enableintegrator", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Enableintegrator { get; set; } 

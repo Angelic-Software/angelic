@@ -22,7 +22,7 @@ public class Dynamics365CrmFieldMapping
     public int? SyncType { get; set; } 
 
     [JsonProperty("idfield", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Idfield { get; set; } 
+    public string? IdField { get; set; } 
 
     [JsonProperty("details_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? DetailsId { get; set; } 

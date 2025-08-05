@@ -37,7 +37,7 @@ public class ServSite
     public int? Sequence { get; set; } 
 
     [JsonProperty("showinusercatalog", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowInUsercatalog { get; set; } 
+    public bool? ShowInUserCatalog { get; set; } 
 
     [JsonProperty("showintechcatalog", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? ShowIntechcatalog { get; set; } 

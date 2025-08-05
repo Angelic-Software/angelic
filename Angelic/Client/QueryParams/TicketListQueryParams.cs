@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 // ReSharper disable InvalidXmlDocComment
 
-namespace Angelic.Models.Tickets.Client;
+namespace Angelic.Client.QueryParams;
 
 public class TicketListQueryParams
 {
@@ -11,7 +11,7 @@ public class TicketListQueryParams
     public int[]? Agent { get; set; }
     /// <param name="agent_id">(int) Filters by the specified agent.</param>
     public int? AgentId { get; set; }
-    /// <param name="alerttype">(string) IncludeS fninjaalertid field in the response - 'ninjarmm' to use.</param>
+    /// <param name="alerttype">(string) Includes fninjaalertid field in the response - 'ninjarmm' to use.</param>
     public string? AlertType { get; set; }
     /// <param name="asset_id">(int) Filters by the specified asset.</param>
     public int? AssetId { get; set; }

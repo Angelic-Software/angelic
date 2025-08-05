@@ -1,5 +1,6 @@
 using System.CodeDom.Compiler;
 using Angelic.Models.Configuration.Assets;
+using Angelic.Models.Configuration.Assets.AssetTypes;
 using Angelic.Models.KeyPairs;
 using Newtonsoft.Json;
 
@@ -27,7 +28,7 @@ public class TaniumDetails
     public bool? NewIntegrationMethod { get; set; } 
 
     [JsonProperty("tokenexpiry", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Tokenexpiry { get; set; } 
+    public DateTimeOffset? TokenExpiry { get; set; } 
 
     [JsonProperty("default_devicesite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? DefaultDevicesite { get; set; } 
@@ -51,7 +52,7 @@ public class TaniumDetails
     public ICollection<IntegrationFieldMapping>? AssetFieldMappings { get; set; } 
 
     [JsonProperty("sitemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<IntegrationSiteMapping>? Sitemappings { get; set; } 
+    public ICollection<IntegrationSiteMapping>? SiteMappings { get; set; } 
 
     [JsonProperty("enableintegrator", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Enableintegrator { get; set; } 

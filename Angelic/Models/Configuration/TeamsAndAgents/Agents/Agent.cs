@@ -598,7 +598,7 @@ namespace Angelic.Models.Configuration.TeamsAndAgents.Agents;
         public ICollection<AccessControl>? AcCustomFields { get; set; } 
 
         [JsonProperty("ac_customtables", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<AccessControl>? AcCustomtables { get; set; } 
+        public ICollection<AccessControl>? AcCustomTables { get; set; } 
 
         [JsonProperty("ac_dashboards", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<AccessControl>? AcDashboards { get; set; } 
@@ -907,7 +907,7 @@ namespace Angelic.Models.Configuration.TeamsAndAgents.Agents;
         public bool? SendEmailerrors { get; set; } 
 
         [JsonProperty("uname_usercustomfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<AgentCustom>? UnameUsercustomfields { get; set; } 
+        public ICollection<AgentCustom>? UnameUserCustomfields { get; set; } 
 
         [JsonProperty("can_approve_purchaseorder", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? CanApprovePurchaseOrder { get; set; } 

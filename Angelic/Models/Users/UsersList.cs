@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Attributes;
 using Angelic.Models.Attachments;
 using Angelic.Models.Configuration.Assets.AssetTypes;
 using Angelic.Models.Configuration.Custom;
@@ -9,6 +10,8 @@ using Newtonsoft.Json;
 namespace Angelic.Models.Users;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
+[HasEndpoint("Users")]
+[ListVariantOf(typeof(User))]
 public class UsersList
 {
     [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -57,10 +60,10 @@ public class UsersList
     public string? Homenumber { get; set; } 
 
     [JsonProperty("mobilenumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Mobilenumber { get; set; } 
+    public string? MobileNumber { get; set; } 
 
     [JsonProperty("mobilenumber2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Mobilenumber2 { get; set; } 
+    public string? MobileNumber2 { get; set; } 
 
     [JsonProperty("fax", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Fax { get; set; } 
@@ -246,7 +249,7 @@ public class UsersList
     public string? WhatsappNumber { get; set; } 
 
     [JsonProperty("azureoid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Azureoid { get; set; } 
+    public string? AzureOid { get; set; } 
 
     [JsonProperty("date_of_birth", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? DateOfBirth { get; set; } 

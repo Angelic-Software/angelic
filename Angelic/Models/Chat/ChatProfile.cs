@@ -27,7 +27,7 @@ public class ChatProfile
     public int? AccessType { get; set; } 
 
     [JsonProperty("chatnameoverride", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Chatnameoverride { get; set; } 
+    public string? ChatNameOverride { get; set; } 
 
     [JsonProperty("greeting", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Greeting { get; set; } 
@@ -36,13 +36,13 @@ public class ChatProfile
     public string? BotName { get; set; } 
 
     [JsonProperty("technamevisibility", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Technamevisibility { get; set; } 
+    public int? TechNameVisibility { get; set; } 
 
     [JsonProperty("technamevisibilitytext", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Technamevisibilitytext { get; set; } 
+    public string? TechNameVisibilityText { get; set; } 
 
     [JsonProperty("techmustonline", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Techmustonline { get; set; } 
+    public bool? TechMustOnline { get; set; } 
 
     [JsonProperty("workdays_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? WorkdaysId { get; set; } 
@@ -51,7 +51,7 @@ public class ChatProfile
     public string? WorkdaysName { get; set; } 
 
     [JsonProperty("logticket", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Logticket { get; set; } 
+    public int? LogTicket { get; set; } 
 
     [JsonProperty("tickettype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? TicketTypeId { get; set; } 
@@ -102,7 +102,7 @@ public class ChatProfile
     public string? ChatMode { get; set; } 
 
     [JsonProperty("_chatserviceurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Chatserviceurl { get; set; } 
+    public string? ChatServiceUrl { get; set; } 
 
     [JsonProperty("_tenantid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? TenantId { get; set; } 
@@ -150,10 +150,10 @@ public class ChatProfile
     public int? BotHeightUnits { get; set; } 
 
     [JsonProperty("textcolour", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Textcolour { get; set; } 
+    public string? TextColour { get; set; } 
 
     [JsonProperty("textcolour_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? TextcolourType { get; set; } 
+    public int? TextColourType { get; set; } 
 
     [JsonProperty("agent_roles", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<Roles>? AgentRoles { get; set; } 
@@ -198,7 +198,7 @@ public class ChatProfile
     public string? NewUserSiteName { get; set; } 
 
     [JsonProperty("usermappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<IntegrationFieldMapping>? Usermappings { get; set; } 
+    public ICollection<IntegrationFieldMapping>? UserMappings { get; set; } 
 
     [JsonProperty("enable_feedback_comments", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? EnableFeedbackComments { get; set; } 

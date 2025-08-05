@@ -1,6 +1,7 @@
 using System.CodeDom.Compiler;
 using Angelic.Attributes;
 using Angelic.Models.Configuration.Assets;
+using Angelic.Models.Configuration.Assets.AssetTypes;
 using Angelic.Models.Configuration.Custom;
 using Angelic.Models.Configuration.Custom.CustomFields;
 using Newtonsoft.Json;
@@ -295,7 +296,7 @@ public class AssetList
     public bool? BulkCreated { get; set; } 
 
     [JsonProperty("bulkbillingperiod", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Bulkbillingperiod { get; set; } 
+    public int? BulkBillingPeriod { get; set; } 
 
     [JsonProperty("asset_field", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? AssetField { get; set; } 
@@ -337,7 +338,7 @@ public class AssetList
     public string? LiongardUrl { get; set; } 
 
     [JsonProperty("liongard_environmnet_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? LiongardEnvironmnetId { get; set; } 
+    public int? LiongardEnvironmentId { get; set; } 
 
     [JsonProperty("liongard_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? LiongardId { get; set; } 
@@ -349,10 +350,10 @@ public class AssetList
     public bool? IsKaseyaAgent { get; set; } 
 
     [JsonProperty("kaseyavsa_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? KaseyavsaUrl { get; set; } 
+    public string? KaseyaVsaUrl { get; set; } 
 
     [JsonProperty("teamviewerid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Teamviewerid { get; set; } 
+    public string? TeamViewerId { get; set; } 
 
     [JsonProperty("serialization_user", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? SerializationUser { get; set; } 
@@ -433,7 +434,7 @@ public class AssetList
     public int? AssetTypePriority { get; set; } 
 
     [JsonProperty("snipeit_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? SnipeitId { get; set; } 
+    public string? SnipeItId { get; set; } 
 
     [JsonProperty("prometheus_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? PrometheusId { get; set; } 

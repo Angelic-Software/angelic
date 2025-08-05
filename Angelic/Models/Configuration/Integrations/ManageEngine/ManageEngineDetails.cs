@@ -1,5 +1,6 @@
 using System.CodeDom.Compiler;
 using Angelic.Models.Configuration.Assets;
+using Angelic.Models.Configuration.Assets.AssetTypes;
 using Angelic.Models.ExternalLinks;
 using Angelic.Models.KeyPairs;
 using Newtonsoft.Json;
@@ -34,7 +35,7 @@ public class ManageEngineDetails
     public string? NewRefreshToken { get; set; } 
 
     [JsonProperty("tokenexpiry", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Tokenexpiry { get; set; } 
+    public DateTimeOffset? TokenExpiry { get; set; } 
 
     [JsonProperty("isauthorized", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? IsAuthorized { get; set; } 
@@ -88,7 +89,7 @@ public class ManageEngineDetails
     public ICollection<IntegrationFieldMapping>? ManageEngineFieldMappings { get; set; } 
 
     [JsonProperty("sitemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<IntegrationSiteMapping>? Sitemappings { get; set; } 
+    public ICollection<IntegrationSiteMapping>? SiteMappings { get; set; } 
 
     [JsonProperty("enableintegrator", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Enableintegrator { get; set; } 

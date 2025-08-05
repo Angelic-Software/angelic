@@ -68,7 +68,7 @@ public class TicketType
     public bool? IsSprint { get; set; } 
 
     [JsonProperty("fieldidlist", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<int>? Fieldidlist { get; set; } 
+    public ICollection<int>? FieldIdlist { get; set; } 
 
     [JsonProperty("enduserscanselect", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? EndUserscanselect { get; set; } 

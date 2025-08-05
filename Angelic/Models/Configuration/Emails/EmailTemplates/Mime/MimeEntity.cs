@@ -1,4 +1,6 @@
 using System.CodeDom.Compiler;
+using Angelic.Models.Configuration.Emails.EmailTemplates.ContentTypes;
+using Angelic.Models.Configuration.Emails.EmailTemplates.Message;
 using Newtonsoft.Json;
 
 namespace Angelic.Models.Configuration.Emails.EmailTemplates.Mime;

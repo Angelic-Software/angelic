@@ -89,13 +89,13 @@ public class CustomTable
     public string? Warning { get; set; } 
 
     [JsonProperty("customtable_orderby", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? CustomtableOrderby { get; set; } 
+    public int? CustomTableOrderby { get; set; } 
 
     [JsonProperty("customtable_orderby_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? CustomtableOrderbyGuid { get; set; } 
+    public Guid? CustomTableOrderbyGuid { get; set; } 
 
     [JsonProperty("customtable_orderby_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? CustomtableOrderbyName { get; set; } 
+    public string? CustomTableOrderbyName { get; set; } 
 
     [JsonProperty("_isimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? IsImport { get; set; } 

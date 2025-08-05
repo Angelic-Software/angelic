@@ -10,7 +10,7 @@ public class AssetMeterReading
     public int? Id { get; set; } 
 
     [JsonProperty("recurringinvoice_line_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? RecurringinvoiceLineId { get; set; } 
+    public int? RecurringInvoiceLineId { get; set; } 
 
     [JsonProperty("asset_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? AssetId { get; set; } 

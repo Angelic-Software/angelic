@@ -39,7 +39,7 @@ namespace Angelic.Models.Configuration.Integrations.Myob;
         public bool? Authorized { get; set; } 
 
         [JsonProperty("newmethod", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Newmethod { get; set; } 
+        public bool? NewMethod { get; set; } 
 
         [JsonProperty("client_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? ClientId { get; set; } 

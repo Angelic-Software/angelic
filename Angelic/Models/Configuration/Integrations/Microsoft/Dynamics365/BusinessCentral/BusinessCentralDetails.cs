@@ -42,7 +42,7 @@ public class BusinessCentralDetails
     public string? AuthorizationCode { get; set; } 
 
     [JsonProperty("_exchangecodefortoken", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Exchangecodefortoken { get; set; } 
+    public bool? ExchangeCodeForToken { get; set; } 
 
     [JsonProperty("_disconnect", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Disconnect { get; set; } 

@@ -13,7 +13,7 @@ public class EmailRuleFieldMapping
     public int? EmailRuleid { get; set; } 
 
     [JsonProperty("fieldid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Fieldid { get; set; } 
+    public int? FieldId { get; set; } 
 
     [JsonProperty("fieldtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Fieldtype { get; set; } 

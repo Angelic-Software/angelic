@@ -37,10 +37,10 @@ public class AttachmentList
     public bool? ShowForUsers { get; set; } 
 
     [JsonProperty("showonchild", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowOnchild { get; set; } 
+    public bool? ShowOnChild { get; set; } 
 
     [JsonProperty("showonrelated", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowOnrelated { get; set; } 
+    public bool? ShowOnRelated { get; set; } 
 
     [JsonProperty("data_base64", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? DataBase64 { get; set; } 

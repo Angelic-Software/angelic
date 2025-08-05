@@ -102,5 +102,5 @@ public class Appointment
     public string? Recurrence { get; set; }
     
     [JsonProperty("crmnote_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? CrmnoteId { get; set; } 
+    public int? CrmNoteId { get; set; } 
 }

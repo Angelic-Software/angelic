@@ -1,5 +1,6 @@
 using System.CodeDom.Compiler;
 using Angelic.Models.Configuration.Assets;
+using Angelic.Models.Configuration.Assets.AssetTypes;
 using Newtonsoft.Json;
 
 namespace Angelic.Models.Configuration.Integrations;

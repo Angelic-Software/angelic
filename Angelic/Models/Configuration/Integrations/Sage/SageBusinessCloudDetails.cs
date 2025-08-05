@@ -15,7 +15,7 @@ public class SageBusinessCloudDetails
     public string? Name { get; set; } 
 
     [JsonProperty("tokenexpiry", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Tokenexpiry { get; set; } 
+    public DateTimeOffset? TokenExpiry { get; set; } 
 
     [JsonProperty("isauthorized", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? IsAuthorized { get; set; } 

@@ -55,7 +55,7 @@ public class AssetChange
     public int? NewSite { get; set; } 
 
     [JsonProperty("customfield_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? CustomfieldId { get; set; } 
+    public int? CustomFieldId { get; set; } 
 
     [JsonProperty("item_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ItemId { get; set; } 

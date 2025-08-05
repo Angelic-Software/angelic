@@ -13,9 +13,9 @@ public class MailchimpMergeFields
     public object? Property2 { get; set; } 
 
     [JsonProperty("fname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Fname { get; set; } 
+    public string? FName { get; set; } 
 
     [JsonProperty("lname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Lname { get; set; } 
+    public string? LName { get; set; } 
 
 }

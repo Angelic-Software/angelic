@@ -25,7 +25,7 @@ public class JiraDetails
     public string? Username { get; set; }
 
     [JsonProperty("newmethod", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? NewMethod { get; set; } // Changed from Newmethod
+    public bool? NewMethod { get; set; } // Changed from NewMethod
 
     [JsonProperty("new_password", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? NewPassword { get; set; } // Changed from New_password

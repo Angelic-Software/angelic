@@ -22,7 +22,7 @@ public class AssetApplications
     public int? Did { get; set; } 
 
     [JsonProperty("bundledesc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Bundledesc { get; set; } 
+    public string? BundleDesc { get; set; } 
 
     [JsonProperty("cost", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? Cost { get; set; } 
@@ -34,7 +34,7 @@ public class AssetApplications
     public DateTimeOffset? InstallDate { get; set; } 
 
     [JsonProperty("snowid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Snowid { get; set; } 
+    public string? SnowId { get; set; } 
 
     [JsonProperty("licence_required", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? LicenceRequired { get; set; } 
@@ -55,7 +55,7 @@ public class AssetApplications
     public string? RoleName { get; set; } 
 
     [JsonProperty("moduleid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Moduleid { get; set; } 
+    public int? ModuleId { get; set; } 
 
     [JsonProperty("new_users", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<Users.User>? NewUsers { get; set; } 

@@ -453,13 +453,13 @@ public class InvoiceHeader
     public string? Xmlwarning { get; set; } 
 
     [JsonProperty("creditlinkedtoinvoiceid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Creditlinkedtoinvoiceid { get; set; } 
+    public int? CreditLinkedtoinvoiceid { get; set; } 
 
     [JsonProperty("creditlinkedtoinvoiceid_thirdpartynumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? CreditlinkedtoinvoiceidThirdPartynumber { get; set; } 
+    public string? CreditLinkedtoinvoiceidThirdPartynumber { get; set; } 
 
     [JsonProperty("creditlinkedtoinvoiceid_typeid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? CreditlinkedtoinvoiceidTypeid { get; set; } 
+    public int? CreditLinkedtoinvoiceidTypeid { get; set; } 
 
     [JsonProperty("purchaseorder_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? PurchaseOrderId { get; set; } 

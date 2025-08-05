@@ -19,7 +19,7 @@ public class TicketTypeField
     public int? RtId { get; set; } 
 
     [JsonProperty("fieldid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Fieldid { get; set; } 
+    public int? FieldId { get; set; } 
 
     [JsonProperty("fieldguid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public Guid? Fieldguid { get; set; } 
@@ -136,7 +136,7 @@ public class TicketTypeField
     public int? EndUseraction { get; set; } 
 
     [JsonProperty("endusercheckboxmandatory", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? EndUsercheckboxmandatory { get; set; } 
+    public bool? EndUserCheckboxmandatory { get; set; } 
 
     [JsonProperty("translations", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<LanguagePackTranslationsCustom>? Translations { get; set; } 

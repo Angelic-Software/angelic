@@ -43,7 +43,7 @@ public class AgentCustom
     public bool? CanEdit { get; set; } 
 
     [JsonProperty("customfield_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? CustomfieldType { get; set; } 
+    public int? CustomFieldType { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

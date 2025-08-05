@@ -250,10 +250,10 @@ namespace Angelic.Models.KnowledgeBase;
         public ICollection<ExternalLink>? ExternalLinks { get; set; } 
 
         [JsonProperty("wordpress_tags", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IDictionary<string, WordpressComObject>? WordpressTags { get; set; } 
+        public IDictionary<string, WordPressComObject>? WordPressTags { get; set; } 
 
         [JsonProperty("wordpress_categories", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IDictionary<string, WordpressComObject>? WordpressCategories { get; set; } 
+        public IDictionary<string, WordPressComObject>? WordPressCategories { get; set; } 
 
         [JsonProperty("importtags", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? ImportTags { get; set; } 

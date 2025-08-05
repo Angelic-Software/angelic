@@ -20,7 +20,7 @@ public class ConfluenceDetails
     public string? Username { get; set; } 
 
     [JsonProperty("newmethod", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Newmethod { get; set; } 
+    public bool? NewMethod { get; set; } 
 
     [JsonProperty("new_password", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? NewPassword { get; set; } 

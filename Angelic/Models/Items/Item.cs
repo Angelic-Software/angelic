@@ -185,7 +185,7 @@ public class Item
     public int? Meterlife { get; set; } 
 
     [JsonProperty("isrecurringitem", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? IsRecurringitem { get; set; } 
+    public bool? IsRecurringItem { get; set; } 
 
     [JsonProperty("template_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? TemplateId { get; set; } 

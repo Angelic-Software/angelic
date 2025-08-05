@@ -430,7 +430,7 @@ public class Client
     public int? ClientPackage { get; set; }
 
     [JsonProperty("scopeofbusiness", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Scopeofbusiness { get; set; }
+    public int? ScopeOfBusiness { get; set; }
 
     [JsonProperty("preferredagent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? PreferredAgent { get; set; }
@@ -701,10 +701,10 @@ public class Client
     public double? PrepayBalance { get; set; }
 
     [JsonProperty("preferreddeliverymethod", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Preferreddeliverymethod { get; set; }
+    public int? PreferredDeliveryMethod { get; set; }
 
     [JsonProperty("qbodefaulttax", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? QboDefaulttax { get; set; }
+    public int? QboDefaultTax { get; set; }
 
     [JsonProperty("default_contract", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? DefaultContract { get; set; }
@@ -864,7 +864,7 @@ public class Client
 
     [JsonProperty("prepayrecurringexpirymonths", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public int? PrepayRecurringexpirymonths { get; set; }
+    public int? PrepayRecurringExpiryMonths { get; set; }
 
     [JsonProperty("accountsbccemailaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? AccountsBccEmailAddress { get; set; }

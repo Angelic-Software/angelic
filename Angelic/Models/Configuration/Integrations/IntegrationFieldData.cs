@@ -16,7 +16,7 @@ public class IntegrationFieldData
     public string? Name { get; set; } 
 
     [JsonProperty("fieldid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Fieldid { get; set; } 
+    public string? FieldId { get; set; } 
 
     [JsonProperty("type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Type { get; set; } 

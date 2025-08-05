@@ -16,7 +16,7 @@ public class TicketRulesOutcome
     public Guid? AutoassignGuid { get; set; } 
 
     [JsonProperty("fieldid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Fieldid { get; set; } 
+    public int? FieldId { get; set; } 
 
     [JsonProperty("fieldname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? FieldName { get; set; } 

@@ -157,7 +157,7 @@ public class SalesOrderLine
     public bool? AutoRenew { get; set; } 
 
     [JsonProperty("recurringinvoice_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? RecurringinvoiceId { get; set; } 
+    public int? RecurringInvoiceId { get; set; } 
 
     [JsonProperty("item_recurring", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? ItemRecurring { get; set; } 

@@ -1,7 +1,7 @@
 using System.CodeDom.Compiler;
 using Newtonsoft.Json;
 
-namespace Angelic.Models.Configuration.Assets;
+namespace Angelic.Models.Configuration.Assets.AssetTypes;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
 public class AssetTypeMappingCriteria
@@ -10,7 +10,7 @@ public class AssetTypeMappingCriteria
     public int? Id { get; set; } 
 
     [JsonProperty("xtypemapping_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? XTypemappingId { get; set; } 
+    public int? XTypeMappingId { get; set; } 
 
     [JsonProperty("tablename", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Tablename { get; set; } 

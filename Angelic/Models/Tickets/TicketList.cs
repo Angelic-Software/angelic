@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using System.ComponentModel.DataAnnotations.Schema;
 using Angelic.Attributes;
 using Angelic.Models.Configuration.Custom.CustomFields;
 using Angelic.Models.ExternalLinks;
@@ -9,6 +10,7 @@ namespace Angelic.Models.Tickets;
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
 [HasEndpoint("Tickets")]
 [ListVariantOf(typeof(Ticket))]
+[Table("FAULTS")]
 public class TicketList
 {
     [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

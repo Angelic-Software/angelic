@@ -16,10 +16,10 @@ public class Dynamics365CrmSubTable
     public string? DynamicsTable { get; set; } 
 
     [JsonProperty("entityname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Entityname { get; set; } 
+    public string? EntityName { get; set; } 
 
     [JsonProperty("parentidfield", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ParentIdfield { get; set; } 
+    public string? ParentIdField { get; set; } 
 
     [JsonProperty("child_field_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<IntegrationFieldMapping>? ChildFieldMappings { get; set; } 

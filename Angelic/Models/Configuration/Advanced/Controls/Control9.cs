@@ -1,4 +1,5 @@
 using Angelic.Models.Configuration.Assets;
+using Angelic.Models.Configuration.Assets.AssetTypes;
 using Angelic.Models.Configuration.Assets.SoftwareLicensing;
 using Angelic.Models.Configuration.BookingTypes;
 using Angelic.Models.Configuration.Integrations;
@@ -23,7 +24,7 @@ public partial class Control
         public string? TeamsDefaultUserName { get; set; } 
 
         [JsonProperty("_exchangeaction", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Exchangeaction { get; set; } 
+        public string? ExchangeAction { get; set; } 
 
         [JsonProperty("halointegrator_exchange", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? HaloIntegratorExchange { get; set; } 
@@ -35,19 +36,19 @@ public partial class Control
         public string? HaloIntegratorExchangeLastError { get; set; } 
 
         [JsonProperty("okta_sitemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<OktaMapping>? OktaSitemappings { get; set; } 
+        public ICollection<OktaMapping>? OktaSiteMappings { get; set; } 
 
         [JsonProperty("okta_usermappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<IntegrationFieldMapping>? OktaUsermappings { get; set; } 
+        public ICollection<IntegrationFieldMapping>? OktaUserMappings { get; set; } 
 
         [JsonProperty("okta_agentmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<IntegrationFieldMapping>? OktaAgentmappings { get; set; } 
+        public ICollection<IntegrationFieldMapping>? OktaAgentMappings { get; set; } 
 
         [JsonProperty("okta_rolemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<IntegrationFieldMapping>? OktaRolemappings { get; set; } 
+        public ICollection<IntegrationFieldMapping>? OktaRoleMappings { get; set; } 
 
         [JsonProperty("okta_cabmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<IntegrationFieldMapping>? OktaCabmappings { get; set; } 
+        public ICollection<IntegrationFieldMapping>? OktaCabMappings { get; set; } 
 
         [JsonProperty("okta_user_matching_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<ValueLabelIsNewKeyPair>? OktaUserMatchingList { get; set; } 
@@ -74,37 +75,37 @@ public partial class Control
         public ICollection<CannedText>? QuoteCannedText { get; set; } 
 
         [JsonProperty("merakiapplicationsecret", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Merakiapplicationsecret { get; set; } 
+        public string? MerakiApplicationSecret { get; set; } 
 
         [JsonProperty("merakiusername", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Merakiusername { get; set; } 
+        public string? MerakiUsername { get; set; } 
 
         [JsonProperty("merakitickettypename", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Merakitickettypename { get; set; } 
+        public string? MerakiTicketTypeName { get; set; } 
 
         [JsonProperty("lansweeper_authorized", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? LansweeperAuthorized { get; set; } 
 
         [JsonProperty("_getoauthtoken", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Getoauthtoken { get; set; } 
+        public bool? GetOAuthToken { get; set; } 
 
         [JsonProperty("oauth_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? OauthCode { get; set; } 
+        public string? OAuthCode { get; set; } 
 
         [JsonProperty("oauth_redirect", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? OauthRedirect { get; set; } 
+        public string? OAuthRedirect { get; set; } 
 
         [JsonProperty("oauth_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? OauthType { get; set; } 
+        public string? OAuthType { get; set; } 
 
         [JsonProperty("graph_host", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? GraphHost { get; set; } 
 
         [JsonProperty("_disconnectintegration", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Disconnectintegration { get; set; } 
+        public string? DisconnectIntegration { get; set; } 
 
         [JsonProperty("lansweeper_sitemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<IntegrationSiteMapping>? LansweeperSitemappings { get; set; } 
+        public ICollection<IntegrationSiteMapping>? LansweeperSiteMappings { get; set; } 
 
         [JsonProperty("lansweeper_site_rules", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<IntegrationSiteMapping>? LansweeperSiteRules { get; set; } 
@@ -113,64 +114,64 @@ public partial class Control
         public ICollection<IntegrationFieldMapping>? LansweeperFieldMappingsApi { get; set; } 
 
         [JsonProperty("alarmminutes_bool", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? AlarmminutesBool { get; set; } 
+        public bool? AlarmMinutesBool { get; set; } 
 
         [JsonProperty("_integrationid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Integrationid { get; set; } 
+        public int? IntegrationId { get; set; } 
 
         [JsonProperty("ninja_sitemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<IntegrationSiteMapping>? NinjaSitemappings { get; set; } 
+        public ICollection<IntegrationSiteMapping>? NinjaSiteMappings { get; set; } 
 
         [JsonProperty("ninja_alert_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? NinjaAlertUserName { get; set; } 
 
         [JsonProperty("dattormm_alert_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? DattormmAlertUserName { get; set; } 
+        public string? DattoRmmAlertUserName { get; set; } 
 
         [JsonProperty("_closealerts", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Closealerts { get; set; } 
+        public bool? CloseAlerts { get; set; } 
 
         [JsonProperty("_closealerts_integration", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? ClosealertsIntegration { get; set; } 
+        public string? CloseAlertsIntegration { get; set; } 
 
         [JsonProperty("alert_guids", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<string>? AlertGuids { get; set; } 
 
         [JsonProperty("hashostedintegrator", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Hashostedintegrator { get; set; } 
+        public bool? HasHostedIntegrator { get; set; } 
 
         [JsonProperty("halointegrator_xlsimports", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? HaloIntegratorXlsimports { get; set; } 
+        public bool? HaloIntegratorXlsImports { get; set; } 
 
         [JsonProperty("halointegrator_xlsimports_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorXlsimportsLastSync { get; set; } 
+        public DateTimeOffset? HaloIntegratorXlsImportsLastSync { get; set; } 
 
         [JsonProperty("halointegrator_xlsimports_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? HaloIntegratorXlsimportsLastError { get; set; } 
+        public string? HaloIntegratorXlsImportsLastError { get; set; } 
 
         [JsonProperty("snelstart_old_client_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? SnelStartOldClientId { get; set; } 
 
         [JsonProperty("_getsnelstartlink", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Getsnelstartlink { get; set; } 
+        public bool? GetSnelStartLink { get; set; } 
 
         [JsonProperty("itglue_clientmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ExternalLink>? ItGlueClientmappings { get; set; } 
+        public ICollection<ExternalLink>? ItGlueClientMappings { get; set; } 
 
         [JsonProperty("itglue_sitemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ExternalLink>? ItGlueSitemappings { get; set; } 
+        public ICollection<ExternalLink>? ItGlueSiteMappings { get; set; } 
 
         [JsonProperty("itglue_active_statuses_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<ValueLabelIsNewKeyPair>? ItGlueActiveStatusesList { get; set; } 
 
         [JsonProperty("itglue_typemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<AssetTypeMapping>? ItGlueTypemappings { get; set; } 
+        public ICollection<AssetTypeMapping>? ItGlueTypeMappings { get; set; } 
 
         [JsonProperty("itglue_configtypemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<AssetTypeMapping>? ItGlueConfigtypemappings { get; set; } 
+        public ICollection<AssetTypeMapping>? ItGlueConfigTypeMappings { get; set; } 
 
         [JsonProperty("itglue_statusmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<IntegrationFieldMapping>? ItGlueStatusmappings { get; set; } 
+        public ICollection<IntegrationFieldMapping>? ItGlueStatusMappings { get; set; } 
 
         [JsonProperty("itglue_default_site_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? ItGlueDefaultSiteName { get; set; } 
@@ -188,7 +189,7 @@ public partial class Control
         public ICollection<BookingType>? BookingTypes { get; set; } 
 
         [JsonProperty("appsettings_encthumbprint", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? AppsettingsEncthumbprint { get; set; } 
+        public bool? AppSettingsEncThumbPrint { get; set; } 
 
         [JsonProperty("old_pwd_enc_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? OldPwdEncCount { get; set; } 
@@ -200,10 +201,10 @@ public partial class Control
         public ICollection<ValueLabelIsNewKeyPair>? OrionAllowedClientIdsList { get; set; } 
 
         [JsonProperty("teamsbot_disabled", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? TeamsbotDisabled { get; set; } 
+        public bool? TeamsBotDisabled { get; set; } 
 
         [JsonProperty("datto_sitemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<IntegrationSiteMapping>? DattoSitemappings { get; set; } 
+        public ICollection<IntegrationSiteMapping>? DattoSiteMappings { get; set; } 
 
         [JsonProperty("halointegrator_dynamics365crm", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? HaloIntegratorDynamics365Crm { get; set; } 
@@ -221,10 +222,10 @@ public partial class Control
         public string? JamfDefaultSiteName { get; set; } 
 
         [JsonProperty("jamf_defaultdtypecomputer_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? JamfDefaultdtypecomputerName { get; set; } 
+        public string? JamfDefaultDTypeComputerName { get; set; } 
 
         [JsonProperty("jamf_defaultdtypemobile_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? JamfDefaultdtypemobileName { get; set; } 
+        public string? JamfDefaultDTypeMobileName { get; set; } 
 
         [JsonProperty("jamf_device_types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<ValueLabelIsNewKeyPair>? JamfDeviceTypesAsKeyPair { get; set; } 
@@ -242,7 +243,7 @@ public partial class Control
         public string? HaloIntegratorJamfLastError { get; set; } 
 
         [JsonProperty("sentinel_ticketmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<IntegrationFieldMapping>? SentinelTicketmappings { get; set; } 
+        public ICollection<IntegrationFieldMapping>? SentinelTicketMappings { get; set; } 
 
         [JsonProperty("halointegrator_sentinel", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? HaloIntegratorSentinel { get; set; } 
@@ -263,10 +264,10 @@ public partial class Control
         public bool? AllowCfValuesNotOnTicketType { get; set; } 
 
         [JsonProperty("azuremonitor_fieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<IntegrationFieldMapping>? AzuremonitorFieldMappings { get; set; } 
+        public ICollection<IntegrationFieldMapping>? AzureMonitorFieldMappings { get; set; } 
 
         [JsonProperty("azuremonitoruser_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? AzuremonitoruserName { get; set; } 
+        public string? AzureMonitorUserName { get; set; } 
 
         [JsonProperty("syncro_defaultsite_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? SyncroDefaultSiteName { get; set; } 
@@ -290,19 +291,19 @@ public partial class Control
         public string? SyncroAlertUserName { get; set; } 
 
         [JsonProperty("domotz_agentfieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<IntegrationFieldMapping>? DomotzAgentfieldmappings { get; set; } 
+        public ICollection<IntegrationFieldMapping>? DomotzAgentFieldMappings { get; set; } 
 
         [JsonProperty("domotz_devicefieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<IntegrationFieldMapping>? DomotzDeviceFieldMappings { get; set; } 
 
         [JsonProperty("domotz_default_agentsite_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? DomotzDefaultAgentsiteName { get; set; } 
+        public string? DomotzDefaultAgentSiteName { get; set; } 
 
         [JsonProperty("domotz_default_devicesite_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? DomotzDefaultDevicesiteName { get; set; } 
+        public string? DomotzDefaultDeviceSiteName { get; set; } 
 
         [JsonProperty("domotz_devicetypemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<AssetTypeMapping>? DomotzDeviceTypemappings { get; set; } 
+        public ICollection<AssetTypeMapping>? DomotzDeviceTypeMappings { get; set; } 
 
         [JsonProperty("halointegrator_domotz", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? HaloIntegratorDomotz { get; set; } 
@@ -314,10 +315,10 @@ public partial class Control
         public string? HaloIntegratorDomotzLastError { get; set; } 
 
         [JsonProperty("_deactivateusers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Deactivateusers { get; set; } 
+        public bool? DeactivateUsers { get; set; } 
 
         [JsonProperty("_deactivateusers_integration", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? DeactivateusersIntegration { get; set; } 
+        public string? DeactivateUsersIntegration { get; set; } 
 
         [JsonProperty("user_guids", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<string>? UserGuids { get; set; } 
@@ -326,25 +327,25 @@ public partial class Control
         public ICollection<string>? UserTenantIds { get; set; } 
 
         [JsonProperty("_deactivateagents", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Deactivateagents { get; set; } 
+        public bool? DeactivateAgents { get; set; } 
 
         [JsonProperty("_deactivateagents_integration", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? DeactivateagentsIntegration { get; set; } 
+        public string? DeactivateAgentsIntegration { get; set; } 
 
         [JsonProperty("agent_guids", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<string>? AgentGuids { get; set; } 
 
         [JsonProperty("halointegrator_haloassetdiscovery", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? HaloIntegratorHaloassetdiscovery { get; set; } 
+        public bool? HaloIntegratorHaloAssetDiscovery { get; set; } 
 
         [JsonProperty("halointegrator_haloassetdiscovery_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorHaloassetdiscoveryLastSync { get; set; } 
+        public DateTimeOffset? HaloIntegratorHaloAssetDiscoveryLastSync { get; set; } 
 
         [JsonProperty("halointegrator_haloassetdiscovery_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? HaloIntegratorHaloassetdiscoveryLastError { get; set; } 
+        public string? HaloIntegratorHaloAssetDiscoveryLastError { get; set; } 
 
         [JsonProperty("automate_sitemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<IntegrationSiteMapping>? AutomateSitemappings { get; set; } 
+        public ICollection<IntegrationSiteMapping>? AutomateSiteMappings { get; set; } 
 
         [JsonProperty("halointegrator_automate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? HaloIntegratorAutomate { get; set; } 
@@ -374,34 +375,34 @@ public partial class Control
         public ICollection<IntegrationExport>? LansweeperExports { get; set; } 
 
         [JsonProperty("_checkexportprogress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Checkexportprogress { get; set; } 
+        public bool? CheckExportProgress { get; set; } 
 
         [JsonProperty("export_module", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? ExportModule { get; set; } 
 
         [JsonProperty("atera_sitemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<IntegrationSiteMapping>? AteraSitemappings { get; set; } 
+        public ICollection<IntegrationSiteMapping>? AteraSiteMappings { get; set; } 
 
         [JsonProperty("device42_sitemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<IntegrationSiteMapping>? Device42Sitemappings { get; set; } 
+        public ICollection<IntegrationSiteMapping>? Device42SiteMappings { get; set; } 
 
         [JsonProperty("ncentral_sitemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<IntegrationSiteMapping>? NCentralSitemappings { get; set; } 
+        public ICollection<IntegrationSiteMapping>? NCentralSiteMappings { get; set; } 
 
         [JsonProperty("syncro_sitemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<IntegrationSiteMapping>? SyncroSitemappings { get; set; } 
+        public ICollection<IntegrationSiteMapping>? SyncroSiteMappings { get; set; } 
 
         [JsonProperty("halointegrator_g2aremote", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? HaloIntegratorG2Aremote { get; set; } 
+        public bool? HaloIntegratorG2ARemote { get; set; } 
 
         [JsonProperty("halointegrator_g2aremote_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorG2AremoteLastSync { get; set; } 
+        public DateTimeOffset? HaloIntegratorG2ARemoteLastSync { get; set; } 
 
         [JsonProperty("halointegrator_g2aremote_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? HaloIntegratorG2AremoteLastError { get; set; } 
+        public string? HaloIntegratorG2ARemoteLastError { get; set; } 
 
         [JsonProperty("snow_default_devicesite_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? SnowDefaultDevicesiteName { get; set; } 
+        public string? SnowDefaultDeviceSiteName { get; set; } 
 
         [JsonProperty("snow_fieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<IntegrationFieldMapping>? SnowFieldMappings { get; set; } 
@@ -416,13 +417,13 @@ public partial class Control
         public string? HaloIntegratorSnowLastError { get; set; } 
 
         [JsonProperty("auvik_sitemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<IntegrationSiteMapping>? AuvikSitemappings { get; set; } 
+        public ICollection<IntegrationSiteMapping>? AuvikSiteMappings { get; set; } 
 
         [JsonProperty("auvik_network_typemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<AssetTypeMapping>? AuvikNetworkTypemappings { get; set; } 
+        public ICollection<AssetTypeMapping>? AuvikNetworkTypeMappings { get; set; } 
 
         [JsonProperty("auvik_device_typemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<AssetTypeMapping>? AuvikDeviceTypemappings { get; set; } 
+        public ICollection<AssetTypeMapping>? AuvikDeviceTypeMappings { get; set; } 
 
         [JsonProperty("auvik_network_fieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<IntegrationFieldMapping>? AuvikNetworkFieldMappings { get; set; } 
@@ -446,10 +447,10 @@ public partial class Control
         public string? AuvikAlertUserName { get; set; } 
 
         [JsonProperty("teamsbot_allowed_tenants_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ValueLabelIsNewKeyPair>? TeamsbotAllowedTenantsList { get; set; } 
+        public ICollection<ValueLabelIsNewKeyPair>? TeamsBotAllowedTenantsList { get; set; } 
 
         [JsonProperty("hubspot_sitemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<IntegrationSiteMapping>? HubspotSitemappings { get; set; } 
+        public ICollection<IntegrationSiteMapping>? HubspotSiteMappings { get; set; } 
 
         [JsonProperty("hubspot_company_fieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<IntegrationFieldMapping>? HubspotCompanyFieldMappings { get; set; } 
@@ -485,7 +486,7 @@ public partial class Control
         public string? HaloIntegratorHubspotLastError { get; set; } 
 
         [JsonProperty("qualys_typemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<AssetTypeMapping>? QualysTypemappings { get; set; } 
+        public ICollection<AssetTypeMapping>? QualysTypeMappings { get; set; } 
 
         [JsonProperty("qualys_fieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<IntegrationFieldMapping>? QualysFieldMappings { get; set; } 
@@ -506,10 +507,10 @@ public partial class Control
         public string? PassportalDefaultClientSiteName { get; set; } 
 
         [JsonProperty("passportal_defaultusersite_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? PassportalDefaultUsersiteName { get; set; } 
+        public string? PassportalDefaultUserSiteName { get; set; } 
 
         [JsonProperty("passportal_clientmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<IntegrationSiteMapping>? PassportalClientmappings { get; set; } 
+        public ICollection<IntegrationSiteMapping>? PassportalClientMappings { get; set; } 
 
         [JsonProperty("halointegrator_passportal", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? HaloIntegratorPassportal { get; set; } 
@@ -524,7 +525,7 @@ public partial class Control
         public ICollection<IntegrationFieldMapping>? PassportalAssetFieldMappings { get; set; } 
 
         [JsonProperty("passportal_defaultassetsite_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? PassportalDefaultAssetsiteName { get; set; } 
+        public string? PassportalDefaultAssetSiteName { get; set; } 
 
         [JsonProperty("passportal_import_entities_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<ValueLabelIsNewKeyPair>? PassportalImportEntitiesList { get; set; } 
@@ -542,10 +543,10 @@ public partial class Control
         public LicenseModel? LicenseModel { get; set; } 
 
         [JsonProperty("addigy_clientmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<IntegrationSiteMapping>? AddigyClientmappings { get; set; } 
+        public ICollection<IntegrationSiteMapping>? AddigyClientMappings { get; set; } 
 
         [JsonProperty("addigy_defaultassetsite_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? AddigyDefaultAssetsiteName { get; set; } 
+        public string? AddigyDefaultAssetSiteName { get; set; } 
 
         [JsonProperty("addigy_assetfieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<IntegrationFieldMapping>? AddigyAssetFieldMappings { get; set; } 
@@ -563,7 +564,7 @@ public partial class Control
         public string? AddigyAlertUserName { get; set; } 
 
         [JsonProperty("domotz_sitemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<IntegrationSiteMapping>? DomotzSitemappings { get; set; } 
+        public ICollection<IntegrationSiteMapping>? DomotzSiteMappings { get; set; } 
 
         [JsonProperty("halointegrator_liongard", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? HaloIntegratorLiongard { get; set; } 
@@ -575,7 +576,7 @@ public partial class Control
         public string? HaloIntegratorLiongardLastError { get; set; } 
 
         [JsonProperty("liongard_sitemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<IntegrationSiteMapping>? LiongardSitemappings { get; set; } 
+        public ICollection<IntegrationSiteMapping>? LiongardSiteMappings { get; set; } 
 
         [JsonProperty("liongard_fieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<IntegrationFieldMapping>? LiongardFieldMappings { get; set; } 
@@ -650,16 +651,16 @@ public partial class Control
         public ICollection<ValueLabelIsNewKeyPair>? GiacomImportEntitiesList { get; set; } 
 
         [JsonProperty("salesforce_contactfieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<IntegrationFieldMapping>? SalesforceContactfieldmappings { get; set; } 
+        public ICollection<IntegrationFieldMapping>? SalesforceContactFieldMappings { get; set; } 
 
         [JsonProperty("salesforce_accountfieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<IntegrationFieldMapping>? SalesforceAccountfieldmappings { get; set; } 
+        public ICollection<IntegrationFieldMapping>? SalesforceAccountFieldMappings { get; set; } 
 
         [JsonProperty("salesforce_opportunityfieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<IntegrationFieldMapping>? SalesforceOpportunityfieldmappings { get; set; } 
+        public ICollection<IntegrationFieldMapping>? SalesforceOpportunityFieldMappings { get; set; } 
 
         [JsonProperty("salesforce_casefieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<IntegrationFieldMapping>? SalesforceCasefieldmappings { get; set; } 
+        public ICollection<IntegrationFieldMapping>? SalesforceCaseFieldMappings { get; set; } 
 
         [JsonProperty("halointegrator_salesforce", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? HaloIntegratorSalesforce { get; set; } 
@@ -677,7 +678,7 @@ public partial class Control
         public ICollection<ValueLabelIsNewKeyPair>? SalesforceImportAttachmentsList { get; set; } 
 
         [JsonProperty("salesforce_clientmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ExternalLink>? SalesforceClientmappings { get; set; } 
+        public ICollection<ExternalLink>? SalesforceClientMappings { get; set; } 
 
         [JsonProperty("azure_allowed_tenants", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? AzureAllowedTenants { get; set; } 
@@ -689,7 +690,7 @@ public partial class Control
         public string? AzureAutoCreationSiteName { get; set; } 
 
         [JsonProperty("b2cazure_auto_creation_site_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? B2CazureAutoCreationSiteName { get; set; } 
+        public string? B2CAzureAutoCreationSiteName { get; set; } 
 
         [JsonProperty("halointegrator_newrelic", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? HaloIntegratorNewrelic { get; set; } 
@@ -701,16 +702,16 @@ public partial class Control
         public string? HaloIntegratorNewrelicLastError { get; set; } 
 
         [JsonProperty("halointegrator_backupradar", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? HaloIntegratorBackupradar { get; set; } 
+        public bool? HaloIntegratorBackupRadar { get; set; } 
 
         [JsonProperty("halointegrator_backupradar_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorBackupradarLastSync { get; set; } 
+        public DateTimeOffset? HaloIntegratorBackupRadarLastSync { get; set; } 
 
         [JsonProperty("halointegrator_backupradar_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? HaloIntegratorBackupradarLastError { get; set; } 
+        public string? HaloIntegratorBackupRadarLastError { get; set; } 
 
         [JsonProperty("_deactivateclients", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Deactivateclients { get; set; } 
+        public bool? DeactivateClients { get; set; } 
 
         [JsonProperty("kaseya_defaultsite_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? KaseyaDefaultSiteName { get; set; } 
@@ -725,13 +726,13 @@ public partial class Control
         public string? HaloIntegratorKaseyaLastError { get; set; } 
 
         [JsonProperty("kaseya_agentfieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<IntegrationFieldMapping>? KaseyaAgentfieldmappings { get; set; } 
+        public ICollection<IntegrationFieldMapping>? KaseyaAgentFieldMappings { get; set; } 
 
         [JsonProperty("kaseya_sitemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<IntegrationSiteMapping>? KaseyaSitemappings { get; set; } 
+        public ICollection<IntegrationSiteMapping>? KaseyaSiteMappings { get; set; } 
 
         [JsonProperty("kaseya_typemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<AssetTypeMapping>? KaseyaTypemappings { get; set; } 
+        public ICollection<AssetTypeMapping>? KaseyaTypeMappings { get; set; } 
 
         [JsonProperty("stripe_client_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<ExternalLink>? StripeClientMappings { get; set; } 
@@ -746,7 +747,7 @@ public partial class Control
         public ICollection<IntegrationFieldMapping>? ZabbixFieldMappings { get; set; } 
 
         [JsonProperty("zabbix_typemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<AssetTypeMapping>? ZabbixTypemappings { get; set; } 
+        public ICollection<AssetTypeMapping>? ZabbixTypeMappings { get; set; } 
 
         [JsonProperty("zabbix_default_type_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? ZabbixDefaultTypeName { get; set; } 
@@ -824,22 +825,22 @@ public partial class Control
         public ICollection<ValueLabelIsNewKeyPair>? IntyImportEntitiesList { get; set; } 
 
         [JsonProperty("westcoastcloud_client_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ExternalLink>? WestcoastcloudClientMappings { get; set; } 
+        public ICollection<ExternalLink>? WestCoastCloudClientMappings { get; set; } 
 
         [JsonProperty("westcoastcloud_top_level_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? WestcoastcloudTopLevelName { get; set; } 
+        public string? WestCoastCloudTopLevelName { get; set; } 
 
         [JsonProperty("halointegrator_westcoastcloud", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? HaloIntegratorWestcoastcloud { get; set; } 
+        public bool? HaloIntegratorWestCoastCloud { get; set; } 
 
         [JsonProperty("halointegrator_westcoastcloud_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorWestcoastcloudLastSync { get; set; } 
+        public DateTimeOffset? HaloIntegratorWestCoastCloudLastSync { get; set; } 
 
         [JsonProperty("halointegrator_westcoastcloud_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? HaloIntegratorWestcoastcloudLastError { get; set; } 
+        public string? HaloIntegratorWestCoastCloudLastError { get; set; } 
 
         [JsonProperty("westcoastcloud_import_entities_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ValueLabelIsNewKeyPair>? WestcoastcloudImportEntitiesList { get; set; } 
+        public ICollection<ValueLabelIsNewKeyPair>? WestCoastCloudImportEntitiesList { get; set; } 
 
         [JsonProperty("sherweb_client_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<ExternalLink>? SherwebClientMappings { get; set; } 
@@ -896,22 +897,22 @@ public partial class Control
         public ICollection<ValueLabelIsNewKeyPair>? ArrowsphereImportEntitiesList { get; set; } 
 
         [JsonProperty("dickerdata_client_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ExternalLink>? DickerdataClientMappings { get; set; } 
+        public ICollection<ExternalLink>? DickerDataClientMappings { get; set; } 
 
         [JsonProperty("dickerdata_top_level_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? DickerdataTopLevelName { get; set; } 
+        public string? DickerDataTopLevelName { get; set; } 
 
         [JsonProperty("halointegrator_dickerdata", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? HaloIntegratorDickerdata { get; set; } 
+        public bool? HaloIntegratorDickerData { get; set; } 
 
         [JsonProperty("halointegrator_dickerdata_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? HaloIntegratorDickerdataLastSync { get; set; } 
+        public DateTimeOffset? HaloIntegratorDickerDataLastSync { get; set; } 
 
         [JsonProperty("halointegrator_dickerdata_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? HaloIntegratorDickerdataLastError { get; set; } 
+        public string? HaloIntegratorDickerDataLastError { get; set; } 
 
         [JsonProperty("dickerdata_import_entities_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ValueLabelIsNewKeyPair>? DickerdataImportEntitiesList { get; set; } 
+        public ICollection<ValueLabelIsNewKeyPair>? DickerDataImportEntitiesList { get; set; } 
 
         [JsonProperty("halointegrator_oracle", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? HaloIntegratorOracle { get; set; } 
@@ -932,16 +933,16 @@ public partial class Control
         public string? HaloIntegratorServiceNowLastError { get; set; } 
 
         [JsonProperty("xerodefaulttenantname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Xerodefaulttenantname { get; set; } 
+        public string? XeroDefaultTenantName { get; set; } 
 
         [JsonProperty("qbdefaultcompanyname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Qbdefaultcompanyname { get; set; } 
+        public string? QbDefaultCompanyName { get; set; } 
 
         [JsonProperty("kashflowdefaultconnectionname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Kashflowdefaultconnectionname { get; set; } 
+        public string? KashflowDefaultConnectionName { get; set; } 
 
         [JsonProperty("dbcdefaulttenantname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Dbcdefaulttenantname { get; set; } 
+        public string? DbcDefaultTenantName { get; set; } 
 
         [JsonProperty("datadog_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? DatadogUrl { get; set; } 
@@ -950,22 +951,22 @@ public partial class Control
         public int? ClearBillingMappings { get; set; } 
 
         [JsonProperty("clearunsentactions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Clearunsentactions { get; set; } 
+        public bool? ClearUnsentActions { get; set; } 
 
         [JsonProperty("clearunsentemailstore", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Clearunsentemailstore { get; set; } 
+        public bool? ClearUnsentEmailStore { get; set; } 
 
         [JsonProperty("clearunsentescmsg", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Clearunsentescmsg { get; set; } 
+        public bool? ClearUnsentEscMsg { get; set; } 
 
         [JsonProperty("clearunsentactions_attempted", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? ClearunsentactionsAttempted { get; set; } 
+        public bool? ClearUnsentActionsAttempted { get; set; } 
 
         [JsonProperty("clearunsentemailstore_attempted", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? ClearunsentemailstoreAttempted { get; set; } 
+        public bool? ClearUnsentEmailStoreAttempted { get; set; } 
 
         [JsonProperty("clearunsentescmsg_attempted", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? ClearunsentescmsgAttempted { get; set; } 
+        public bool? ClearUnsentEscMsgAttempted { get; set; } 
 
         [JsonProperty("slack_ticket_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? SlackTicketUserName { get; set; } 
@@ -974,7 +975,7 @@ public partial class Control
         public string? SlackCommandUserName { get; set; } 
 
         [JsonProperty("_checkexport_returnerrors", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? CheckexportReturnerrors { get; set; } 
+        public bool? CheckExportReturnErrors { get; set; } 
 
         [JsonProperty("device_tenantids", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<int>? DeviceTenantIds { get; set; } 
@@ -983,10 +984,10 @@ public partial class Control
         public ICollection<int>? ClientTenantIds { get; set; } 
 
         [JsonProperty("connectwisecontrol_sitemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<ExternalLink>? ConnectWiseControlSitemappings { get; set; } 
+        public ICollection<ExternalLink>? ConnectWiseControlSiteMappings { get; set; } 
 
         [JsonProperty("connectwisecontrol_typemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<AssetTypeMapping>? ConnectWiseControlTypemappings { get; set; } 
+        public ICollection<AssetTypeMapping>? ConnectWiseControlTypeMappings { get; set; } 
 
         [JsonProperty("halointegrator_connectwisecontrol", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? HaloIntegratorConnectWiseControl { get; set; } 
@@ -1001,7 +1002,7 @@ public partial class Control
         public string? HaloIntegratorConnectWiseControlLastError { get; set; } 
 
         [JsonProperty("connectwisecontrolassetdefaultsite_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? ConnectWiseControlassetdefaultsiteName { get; set; } 
+        public string? ConnectWiseControlAssetDefaultSiteName { get; set; } 
 
         [JsonProperty("salesforce_priority_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<IntegrationFieldMapping>? SalesforcePriorityMappings { get; set; } 
@@ -1010,8 +1011,8 @@ public partial class Control
         public ICollection<ValueLabelIsNewKeyPair>? CorsWhitelistList { get; set; } 
 
         [JsonProperty("okta_userrolemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<IntegrationFieldMapping>? OktaUserrolemappings { get; set; } 
+        public ICollection<IntegrationFieldMapping>? OktaUserRoleMappings { get; set; } 
 
         [JsonProperty("workspace_devicemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<IntegrationFieldMapping>? WorkspaceDevicemappings { get; set; }   
+        public ICollection<IntegrationFieldMapping>? WorkspaceDeviceMappings { get; set; }   
 }

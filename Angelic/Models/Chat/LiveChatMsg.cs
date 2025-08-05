@@ -45,16 +45,16 @@ public class LiveChatMsg
     public string? DisplayName { get; set; } 
 
     [JsonProperty("lastmessageid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Lastmessageid { get; set; } 
+    public int? LastMessageId { get; set; } 
 
     [JsonProperty("_isremoteinvite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? IsRemoteinvite { get; set; } 
+    public bool? IsRemoteInvite { get; set; } 
 
     [JsonProperty("_remoteintegration", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Remoteintegration { get; set; } 
+    public string? RemoteIntegration { get; set; } 
 
     [JsonProperty("remotetechid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Remotetechid { get; set; } 
+    public int? RemoteTechId { get; set; } 
 
     [JsonProperty("user_chat_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? UserChatUrl { get; set; } 
@@ -66,7 +66,7 @@ public class LiveChatMsg
     public int? NextInputId { get; set; } 
 
     [JsonProperty("next_input_fieldinfo", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ChatInputField? NextInputFieldinfo { get; set; } 
+    public ChatInputField? NextInputFieldInfo { get; set; } 
 
     [JsonProperty("kb_search_results", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<KbArticleList>? KbSearchResults { get; set; } 

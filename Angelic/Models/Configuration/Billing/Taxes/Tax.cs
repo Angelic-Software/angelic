@@ -77,7 +77,7 @@ public class Tax
     public string? SageTenantName { get; set; } 
 
     [JsonProperty("sagebusinesscloudtaxcode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ValueLabelIsNewKeyPair? Sagebusinesscloudtaxcode { get; set; } 
+    public ValueLabelIsNewKeyPair? SageBusinessCloudtaxcode { get; set; } 
 
     [JsonProperty("exact_division", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ExactDivision { get; set; } 

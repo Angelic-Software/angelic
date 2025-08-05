@@ -31,6 +31,6 @@ public class GoogleBusinessQuestion
     public ICollection<GoogleBusinessAnswer>? TopAnswers { get; set; } 
 
     [JsonProperty("gbdid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Gbdid { get; set; } 
+    public int? GbdId { get; set; } 
 
 }

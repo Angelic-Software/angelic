@@ -6,7 +6,7 @@ public partial class Control
 {
     [JsonProperty("salesforceimportcasefeed", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Salesforceimportcasefeed { get; set; }
+    public bool? SalesforceImportCaseFeed { get; set; }
 
     [JsonProperty("suzuki_gateway", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? SuzukiGateway { get; set; }
@@ -20,44 +20,44 @@ public partial class Control
     public bool? AutoLoadDependencyChart { get; set; }
 
     [JsonProperty("processstreettickettype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Processstreettickettype { get; set; }
+    public int? ProcessStreetTicketType { get; set; }
 
     [JsonProperty("processstreetuser", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Processstreetuser { get; set; }
+    public int? ProcessStreetUser { get; set; }
 
     [JsonProperty("chargerateroundmultorder", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public int? ChargeRateroundmultorder { get; set; }
+    public int? ChargeRateRoundMultOrder { get; set; }
 
     [JsonProperty("qbodisablecfsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? QboDisablecfsync { get; set; }
+    public bool? QboDisableCfSync { get; set; }
 
     [JsonProperty("qbocfdefinition", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Qbocfdefinition { get; set; }
+    public string? QboCfDefinition { get; set; }
 
     [JsonProperty("qbocfname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Qbocfname { get; set; }
+    public string? QboCfName { get; set; }
 
     [JsonProperty("preventuserchange", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Preventuserchange { get; set; }
+    public bool? PreventUserChange { get; set; }
 
     [JsonProperty("default_showdefaultsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? DefaultShowDefaultSite { get; set; }
 
     [JsonProperty("default_showgeneralusers", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public bool? DefaultShowGeneralusers { get; set; }
+    public bool? DefaultShowGeneralUsers { get; set; }
 
     [JsonProperty("default_showagentusers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? DefaultShowAgentusers { get; set; }
+    public bool? DefaultShowAgentUsers { get; set; }
 
     [JsonProperty("default_showinternalcustomers", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public bool? DefaultShowInternalcustomers { get; set; }
+    public bool? DefaultShowInternalCustomers { get; set; }
 
     [JsonProperty("showmodalscreenforcannedtext", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowModalscreenforcannedtext { get; set; }
+    public bool? ShowModalScreenForCannedText { get; set; }
 
     [JsonProperty("logicmonitor_defaultsite", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
@@ -82,7 +82,7 @@ public partial class Control
     public bool? LogicMonitorDeleteDevices { get; set; }
 
     [JsonProperty("htmltemplateeditortype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Htmltemplateeditortype { get; set; }
+    public int? HtmlTemplateEditorType { get; set; }
 
     [JsonProperty("allow_live_chat_teams", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? AllowLiveChatTeams { get; set; }
@@ -103,57 +103,57 @@ public partial class Control
     public int? CcScope { get; set; }
 
     [JsonProperty("adjustpriceforsoinvoice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Adjustpriceforsoinvoice { get; set; }
+    public bool? AdjustPriceForSoInvoice { get; set; }
 
     [JsonProperty("showallforopplink", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowAllforopplink { get; set; }
+    public bool? ShowAllForOppLink { get; set; }
 
     [JsonProperty("intacct_sync_halo_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? IntacctSyncHaloId { get; set; }
 
     [JsonProperty("intacctdefaultwarid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Intacctdefaultwarid { get; set; }
+    public string? IntacctDefaultWarId { get; set; }
 
     [JsonProperty("default_intacct_save_location", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
     public string? DefaultIntacctSaveLocation { get; set; }
 
     [JsonProperty("intacctdonttaxpos", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Intacctdonttaxpos { get; set; }
+    public bool? IntacctDontTaxPos { get; set; }
 
     [JsonProperty("intacctdefaultglgroup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Intacctdefaultglgroup { get; set; }
+    public string? IntacctDefaultGlGroup { get; set; }
 
     [JsonProperty("intacctdefaultmanualitemtype", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public string? Intacctdefaultmanualitemtype { get; set; }
+    public string? IntacctDefaultManualItemType { get; set; }
 
     [JsonProperty("intacctdefaultautoitemtype", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public string? Intacctdefaultautoitemtype { get; set; }
+    public string? IntacctDefaultAutoItemType { get; set; }
 
     [JsonProperty("intaccttaxonseparateline", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Intaccttaxonseparateline { get; set; }
+    public bool? IntacctTaxOnSeparateLine { get; set; }
 
     [JsonProperty("intaccttaxonseparatelineitem", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public string? Intaccttaxonseparatelineitem { get; set; }
+    public string? IntacctTaxOnSeparateLineItem { get; set; }
 
     [JsonProperty("intacctcredittransdef", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Intacctcredittransdef { get; set; }
+    public string? IntacctCreditTransDef { get; set; }
 
     [JsonProperty("intacctpotransdef", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Intacctpotransdef { get; set; }
+    public string? IntacctPoTransDef { get; set; }
 
     [JsonProperty("intacctbilltransdef", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Intacctbilltransdef { get; set; }
+    public string? IntacctBillTransDef { get; set; }
 
     [JsonProperty("intacctsigtax", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Intacctsigtax { get; set; }
+    public bool? IntacctSigTax { get; set; }
 
     [JsonProperty("allowusermerging", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? AllowUsermerging { get; set; }
+    public bool? AllowUserMerging { get; set; }
 
     [JsonProperty("defaultpdftemplateinvoicetickets", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
@@ -169,7 +169,7 @@ public partial class Control
 
     [JsonProperty("stripetakepaymentonduedate", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public int? Stripetakepaymentonduedate { get; set; }
+    public int? StripeTakePaymentOnDueDate { get; set; }
 
     [JsonProperty("hubspot_default_lifecycle_stage", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
@@ -190,7 +190,7 @@ public partial class Control
 
     [JsonProperty("barracudadefaultassettype", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public int? Barracudadefaultassettype { get; set; }
+    public int? BarracudaDefaultAssetType { get; set; }
 
     [JsonProperty("barracuda_alert_user", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? BarracudaAlertUser { get; set; }
@@ -203,22 +203,22 @@ public partial class Control
     public bool? BarracudaDeleteDevices { get; set; }
 
     [JsonProperty("useoutgoingservice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Useoutgoingservice { get; set; }
+    public bool? UseOutgoingService { get; set; }
 
     [JsonProperty("enableteamsmsg", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? EnableTeamsmsg { get; set; }
+    public bool? EnableTeamsMsg { get; set; }
 
     [JsonProperty("defaultteamsmsg", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? DefaultTeamsmsg { get; set; }
+    public string? DefaultTeamsMsg { get; set; }
 
     [JsonProperty("audit_teams_message", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? AuditTeamsMessage { get; set; }
 
     [JsonProperty("whatsappcreatetickets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Whatsappcreatetickets { get; set; }
+    public bool? WhatsAppCreateTickets { get; set; }
 
     [JsonProperty("prmerge_outcome_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? PrmergeOutcomeId { get; set; }
+    public int? PrMergeOutcomeId { get; set; }
 
     [JsonProperty("hide_halo_invoice_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? HideHaloInvoiceId { get; set; }
@@ -243,13 +243,13 @@ public partial class Control
     public string? UsersLabel { get; set; }
 
     [JsonProperty("showusernoteswhenempty", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowUsernoteswhenempty { get; set; }
+    public bool? ShowUserNotesWhenEmpty { get; set; }
 
     [JsonProperty("showsitenoteswhenempty", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowSitenoteswhenempty { get; set; }
+    public bool? ShowSiteNotesWhenEmpty { get; set; }
 
     [JsonProperty("showareanoteswhenempty", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowAreanoteswhenempty { get; set; }
+    public bool? ShowAreaNotesWhenEmpty { get; set; }
 
     [JsonProperty("show_enduser_details_opps", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
@@ -263,11 +263,11 @@ public partial class Control
 
     [JsonProperty("invoiceitembillingdescriptionlong", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public string? Invoiceitembillingdescriptionlong { get; set; }
+    public string? InvoiceItemBillingDescriptionLong { get; set; }
 
     [JsonProperty("invoiceitembillingdescriptionshort", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public string? Invoiceitembillingdescriptionshort { get; set; }
+    public string? InvoiceItemBillingDescriptionShort { get; set; }
 
     [JsonProperty("default_columns_id_clients", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
@@ -281,30 +281,30 @@ public partial class Control
     public bool? HideOtherDepTeams { get; set; }
 
     [JsonProperty("kbeditorrich", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? KbEditorrich { get; set; }
+    public bool? KbEditorRich { get; set; }
 
     [JsonProperty("kbeditormarkdown", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? KbEditormarkdown { get; set; }
+    public bool? KbEditorMarkdown { get; set; }
 
     [JsonProperty("chat_image_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ChatImageType { get; set; }
 
     [JsonProperty("cognigyendpoint", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Cognigyendpoint { get; set; }
+    public string? CognigyEndpoint { get; set; }
 
     [JsonProperty("connectwiseautomatealertlastupdated", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? ConnectWiseautomatealertlastupdated { get; set; }
+    public DateTimeOffset? ConnectWiseAutomateAlertLastUpdated { get; set; }
 
     [JsonProperty("cannedsuggestnewticket", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Cannedsuggestnewticket { get; set; }
+    public bool? CannedSuggestNewTicket { get; set; }
 
     [JsonProperty("service_permission_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ServicePermissionType { get; set; }
 
     [JsonProperty("includeslaholdloadbalancing", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public bool? IncludeSlaHoldloadbalancing { get; set; }
+    public bool? IncludeSlaHoldLoadBalancing { get; set; }
 
     [JsonProperty("milestone_update_all_dates", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
@@ -314,10 +314,10 @@ public partial class Control
     public bool? MatchNinjaUser { get; set; }
 
     [JsonProperty("uselistgroups", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Uselistgroups { get; set; }
+    public bool? UseListGroups { get; set; }
 
     [JsonProperty("allowquickuseradd", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Allowquickuseradd { get; set; }
+    public bool? AllowQuickUserAdd { get; set; }
 
     [JsonProperty("connectwise_automate_control_guid", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
@@ -327,17 +327,17 @@ public partial class Control
     public bool? SuppContractMandatory { get; set; }
 
     [JsonProperty("searchfullticketids", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Searchfullticketids { get; set; }
+    public bool? SearchFullTicketIds { get; set; }
 
     [JsonProperty("qualysusertype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Qualysusertype { get; set; }
+    public int? QualysUserType { get; set; }
 
     [JsonProperty("googleworkspacenamedroles", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public string? Googleworkspacenamedroles { get; set; }
+    public string? GoogleWorkspaceNamedRoles { get; set; }
 
     [JsonProperty("oktanamedroles", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Oktanamedroles { get; set; }
+    public string? OktaNamedRoles { get; set; }
 
     [JsonProperty("lansweeper_assettype_choice", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
@@ -355,7 +355,7 @@ public partial class Control
     public int? BarracudaAlertType { get; set; }
 
     [JsonProperty("preventparentchange", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Preventparentchange { get; set; }
+    public bool? PreventParentChange { get; set; }
 
     [JsonProperty("planning_orange_percentage", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
@@ -365,25 +365,25 @@ public partial class Control
     public double? PlanningRedPercentage { get; set; }
 
     [JsonProperty("whatsappreopentickets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Whatsappreopentickets { get; set; }
+    public bool? WhatsAppReopenTickets { get; set; }
 
     [JsonProperty("whatsapptickettype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Whatsapptickettype { get; set; }
+    public int? WhatsAppTicketType { get; set; }
 
     [JsonProperty("intacct_use_apinvoices", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? IntacctUseApinvoices { get; set; }
+    public bool? IntacctUseApInvoices { get; set; }
 
     [JsonProperty("intacct_use_arinvoices", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? IntacctUseArinvoices { get; set; }
+    public bool? IntacctUseArInvoices { get; set; }
 
     [JsonProperty("intacctitemgroup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Intacctitemgroup { get; set; }
+    public int? IntacctItemGroup { get; set; }
 
     [JsonProperty("intacctdefaulttaxsol", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Intacctdefaulttaxsol { get; set; }
+    public string? IntacctDefaultTaxSol { get; set; }
 
     [JsonProperty("showslaonkanban", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowSlaOnkanban { get; set; }
+    public bool? ShowSlaOnKanban { get; set; }
 
     [JsonProperty("site24x7_alert_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Site24X7AlertType { get; set; }
@@ -463,32 +463,32 @@ public partial class Control
 
     [JsonProperty("mergesalesorderinvoicessite", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Mergesalesorderinvoicessite { get; set; }
+    public bool? MergeSalesOrderInvoicesSite { get; set; }
 
     [JsonProperty("prepay_itemid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? PrepayItemid { get; set; }
+    public int? PrepayItemId { get; set; }
 
     [JsonProperty("showintelrouting", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowIntelrouting { get; set; }
+    public bool? ShowIntelRouting { get; set; }
 
     [JsonProperty("showintelroutingonactions", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowIntelroutingonactions { get; set; }
+    public bool? ShowIntelRoutingOnActions { get; set; }
 
     [JsonProperty("intelroutingcutoffdays", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Intelroutingcutoffdays { get; set; }
+    public int? IntelRoutingCutoffDays { get; set; }
 
     [JsonProperty("intelroutingmaxtickets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Intelroutingmaxtickets { get; set; }
+    public int? IntelRoutingMaxTickets { get; set; }
 
     [JsonProperty("close_all_children", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? CloseAllChildren { get; set; }
 
     [JsonProperty("showtraveltimesheet", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowTraveltimesheet { get; set; }
+    public bool? ShowTravelTimesheet { get; set; }
 
     [JsonProperty("showfeedbackcaptcha", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowFeedbackcaptcha { get; set; }
+    public bool? ShowFeedbackCaptcha { get; set; }
 
     [JsonProperty("recaptcha_isenterprise", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? RecaptchaIsEnterprise { get; set; }
@@ -501,14 +501,14 @@ public partial class Control
     public bool? UseStripeReceiptEmails { get; set; }
 
     [JsonProperty("invoicecreationengine", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? InvoiceCreationengine { get; set; }
+    public int? InvoiceCreationEngine { get; set; }
 
     [JsonProperty("showponumonapproval", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowPonumonapproval { get; set; }
+    public bool? ShowPoNumOnApproval { get; set; }
 
     [JsonProperty("multientitysearchincludecontracts", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Multientitysearchincludecontracts { get; set; }
+    public bool? MultiEntitySearchIncludeContracts { get; set; }
 
     [JsonProperty("hide_add_to_project_and_create_child", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
@@ -522,22 +522,22 @@ public partial class Control
 
     [JsonProperty("timefieldstoshowontimesheet", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public int? Timefieldstoshowontimesheet { get; set; }
+    public int? TimeFieldsToShowOnTimesheet { get; set; }
 
     [JsonProperty("showjsonexportbutton", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowJsonexportbutton { get; set; }
+    public bool? ShowJsonExportButton { get; set; }
 
     [JsonProperty("issueditemsdesclong", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Issueditemsdesclong { get; set; }
+    public string? IssuedItemsDescLong { get; set; }
 
     [JsonProperty("overridefeedbacklink", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Overridefeedbacklink { get; set; }
+    public bool? OverrideFeedbackLink { get; set; }
 
     [JsonProperty("allow_user_drafts", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? AllowUserDrafts { get; set; }
 
     [JsonProperty("createuserifgeneraluser", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Createuserifgeneraluser { get; set; }
+    public bool? CreateUserIfGeneralUser { get; set; }
 
     [JsonProperty("icinga_defaultsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? IcingaDefaultSite { get; set; }
@@ -550,10 +550,10 @@ public partial class Control
     public Guid? IcingaDefaultGroupGuid { get; set; }
 
     [JsonProperty("icingaassettypefield", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Icingaassettypefield { get; set; }
+    public int? IcingaAssetTypeField { get; set; }
 
     [JsonProperty("icingadefaultassettype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Icingadefaultassettype { get; set; }
+    public int? IcingaDefaultAssetType { get; set; }
 
     [JsonProperty("icinga_importtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? IcingaImportType { get; set; }
@@ -562,7 +562,7 @@ public partial class Control
     public bool? IcingaDeleteDevices { get; set; }
 
     [JsonProperty("icinga_selfsigned_cert", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? IcingaSelfsignedCert { get; set; }
+    public bool? IcingaSelfSignedCert { get; set; }
 
     [JsonProperty("icinga_alert_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? IcingaAlertType { get; set; }
@@ -590,16 +590,16 @@ public partial class Control
     public int? DefaultViewUsersSelectedId { get; set; }
 
     [JsonProperty("defaultnavscreenlayout", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? DefaultNavscreenlayout { get; set; }
+    public int? DefaultNavScreenLayout { get; set; }
 
     [JsonProperty("navbar_new_call", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? NavbarNewCall { get; set; }
 
     [JsonProperty("actiondatedisplay", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Actiondatedisplay { get; set; }
+    public int? ActionDateDisplay { get; set; }
 
     [JsonProperty("showcalllogonticket", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowCalllogonticket { get; set; }
+    public bool? ShowCallLogonTicket { get; set; }
 
     [JsonProperty("use_charge_for_budgets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? UseChargeForBudgets { get; set; }
@@ -643,7 +643,7 @@ public partial class Control
 
     [JsonProperty("billingcontactinfoonportal", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public bool? BillingContactinfoonportal { get; set; }
+    public bool? BillingContactInfoOnPortal { get; set; }
 
     [JsonProperty("rhipe_subscription_client", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
@@ -662,10 +662,10 @@ public partial class Control
 
     [JsonProperty("spellchecksuggestionscore", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public double? Spellchecksuggestionscore { get; set; }
+    public double? SpellCheckSuggestionScore { get; set; }
 
     [JsonProperty("load_rinvoices_lines", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? LoadRinvoicesLines { get; set; }
+    public bool? LoadRInvoicesLines { get; set; }
 
     [JsonProperty("user_ticket_profile", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? UserTicketProfile { get; set; }
@@ -691,10 +691,10 @@ public partial class Control
 
     [JsonProperty("show_alllevel_access_portal_option", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowAlllevelAccessPortalOption { get; set; }
+    public bool? ShowAllLevelAccessPortalOption { get; set; }
 
     [JsonProperty("donttrackleavesite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? DontTrackleavesite { get; set; }
+    public bool? DontTrackLeaveSite { get; set; }
 
     [JsonProperty("meter_min_quantity", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? MeterMinQuantity { get; set; }
@@ -718,7 +718,7 @@ public partial class Control
 
     [JsonProperty("defaultaideployment", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     [System.ComponentModel.DataAnnotations.StringLength(50)]
-    public string? DefaultAideployment { get; set; }
+    public string? DefaultAiDeployment { get; set; }
 
     [JsonProperty("connectwise_rmm_default_client", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
@@ -741,7 +741,7 @@ public partial class Control
     public int? ConnectWiseRmmTopLevel { get; set; }
 
     [JsonProperty("showeventstabforadmins", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowEventstabforadmins { get; set; }
+    public bool? ShowEventStabForAdmins { get; set; }
 
     [JsonProperty("def_inv_manual_pr_immediately", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
@@ -749,75 +749,75 @@ public partial class Control
 
     [JsonProperty("salesorderstatusafterinvoicedeleted", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public int? SalesOrderstatusafterinvoicedeleted { get; set; }
+    public int? SalesOrderStatusAfterInvoiceDeleted { get; set; }
 
     [JsonProperty("show_related_of_related", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? ShowRelatedOfRelated { get; set; }
 
     [JsonProperty("invertactionhistory", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Invertactionhistory { get; set; }
+    public bool? InvertActionHistory { get; set; }
 
     [JsonProperty("enablekbdraftsnews", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Enablekbdraftsnews { get; set; }
+    public bool? EnableKbDraftsNews { get; set; }
 
     [JsonProperty("kbdrafttickettypenews", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Kbdrafttickettypenews { get; set; }
+    public int? KbDraftTicketTypeNews { get; set; }
 
     [JsonProperty("kbdrafttickettype_guidnews", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? KbdrafttickettypeGuidnews { get; set; }
+    public Guid? KbDraftTicketTypeGuidNews { get; set; }
 
     [JsonProperty("halonewssandbox", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Halonewssandbox { get; set; }
+    public int? HaloNewsSandbox { get; set; }
 
     [JsonProperty("shopifycustomerimporttype", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public int? Shopifycustomerimporttype { get; set; }
+    public int? ShopifyCustomerImportType { get; set; }
 
     [JsonProperty("shopifydefaultsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Shopifydefaultsite { get; set; }
+    public int? ShopifyDefaultSite { get; set; }
 
     [JsonProperty("shopify_integratorcustomerslastsync", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? ShopifyIntegratorcustomerslastsync { get; set; }
+    public DateTimeOffset? ShopifyIntegratorCustomersLastSync { get; set; }
 
     [JsonProperty("shopify_integratororderslastsync", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? ShopifyIntegratororderslastsync { get; set; }
+    public DateTimeOffset? ShopifyIntegratorOrdersLastSync { get; set; }
 
     [JsonProperty("shopify_integratorentitiestoimport", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public string? ShopifyIntegratorentitiestoimport { get; set; }
+    public string? ShopifyIntegratorEntitiesToImport { get; set; }
 
     [JsonProperty("ecommerceshowordersarea", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Ecommerceshowordersarea { get; set; }
+    public bool? EcommerceShowOrdersArea { get; set; }
 
     [JsonProperty("device42preventdeviceimport", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Device42Preventdeviceimport { get; set; }
+    public bool? Device42PreventDeviceImport { get; set; }
 
     [JsonProperty("admins_access_all_reports", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
     public bool? AdminsAccessAllReports { get; set; }
 
     [JsonProperty("adminsecurityprompt", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Adminsecurityprompt { get; set; }
+    public int? AdminSecurityPrompt { get; set; }
 
     [JsonProperty("stripemanualpaymentmethodoptions", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public string? Stripemanualpaymentmethodoptions { get; set; }
+    public string? StripeManualPaymentMethodOptions { get; set; }
 
     [JsonProperty("log_action_responses_on_action_submit", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public int? LogActionResponseSOnActionSubmit { get; set; }
+    public int? LogActionResponsesOnActionSubmit { get; set; }
 
     [JsonProperty("use_embedding_scores_openai", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public bool? UseEmbeddingScoresOpenai { get; set; }
+    public bool? UseEmbeddingScoresOpenAi { get; set; }
 
     [JsonProperty("use_embedding_scores_azureopenai", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public bool? UseEmbeddingScoresAzureopenai { get; set; }
+    public bool? UseEmbeddingScoresAzureOpenai { get; set; }
 
     [JsonProperty("xensam_defaultsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? XensamDefaultSite { get; set; }
@@ -839,11 +839,11 @@ public partial class Control
     public int? XensamDefaultGroup { get; set; }
 
     [JsonProperty("xensamdefaultgroup_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? XensamdefaultgroupGuid { get; set; }
+    public Guid? XensamDefaultGroupGuid { get; set; }
 
     [JsonProperty("xensam_integratorentitiestoimport", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public string? XensamIntegratorentitiestoimport { get; set; }
+    public string? XensamIntegratorEntitiesToImport { get; set; }
 
     [JsonProperty("xensam_delete_devices", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? XensamDeleteDevices { get; set; }
@@ -853,7 +853,7 @@ public partial class Control
     public bool? XensamDontUpdateAssetType { get; set; }
 
     [JsonProperty("useincomingservice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Useincomingservice { get; set; }
+    public bool? UseIncomingService { get; set; }
 
     [JsonProperty("atera_alert_method", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? AteraAlertMethod { get; set; }
@@ -865,66 +865,66 @@ public partial class Control
     public int? AutomateAlertMethod { get; set; }
 
     [JsonProperty("dattormm_alert_method", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? DattormmAlertMethod { get; set; }
+    public int? DattoRmmAlertMethod { get; set; }
 
     [JsonProperty("default_view_suppliers_selectedid", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
     public int? DefaultViewSuppliersSelectedId { get; set; }
 
     [JsonProperty("trackresponsetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Trackresponsetime { get; set; }
+    public bool? TrackResponseTime { get; set; }
 
     [JsonProperty("trackfixbytime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Trackfixbytime { get; set; }
+    public bool? TrackFixByTime { get; set; }
 
     [JsonProperty("reviewprocessenabled", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Reviewprocessenabled { get; set; }
+    public bool? ReviewProcessEnabled { get; set; }
 
     [JsonProperty("usedynamicemaillist", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Usedynamicemaillist { get; set; }
+    public bool? UseDynamicEmailList { get; set; }
 
     [JsonProperty("emailmustmatchrule", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? EmailMustmatchrule { get; set; }
+    public bool? EmailMustMatchRule { get; set; }
 
     [JsonProperty("donteditemail", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? DontEditemail { get; set; }
+    public bool? DontEditEmail { get; set; }
 
     [JsonProperty("sendacknowledgementemailstoccaddresses", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public bool? SendAcknowledgementemailstoccaddresses { get; set; }
+    public bool? SendAcknowledgementEmailsToCcAddresses { get; set; }
 
     [JsonProperty("autoforwardemailupdates", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Autoforwardemailupdates { get; set; }
+    public bool? AutoForwardEmailUpdates { get; set; }
 
     [JsonProperty("disablereplytome", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Disablereplytome { get; set; }
+    public bool? DisableReplyToMe { get; set; }
 
     [JsonProperty("useintellisense", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Useintellisense { get; set; }
+    public bool? UseIntellisense { get; set; }
 
     [JsonProperty("smtpserver", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Smtpserver { get; set; }
+    public string? SmtpServer { get; set; }
 
     [JsonProperty("smtpaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Smtpaddress { get; set; }
+    public string? SmtpAddress { get; set; }
 
     [JsonProperty("smtpusername", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Smtpusername { get; set; }
+    public string? SmtpUsername { get; set; }
 
     [JsonProperty("new_smtppassword", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? NewSmtppassword { get; set; }
+    public string? NewSmtpPassword { get; set; }
 
     [JsonProperty("smtpusetls", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Smtpusetls { get; set; }
+    public bool? SmtpUseTls { get; set; }
 
     [JsonProperty("smtpport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Smtpport { get; set; }
+    public int? SmtpPort { get; set; }
 
     [JsonProperty("generalusername", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Generalusername { get; set; }
+    public string? GeneralUserName { get; set; }
 
     [JsonProperty("enableuserclosureconf", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? EnableUserclosureconf { get; set; }
+    public bool? EnableUserClosureConf { get; set; }
 
     [JsonProperty("auto_close_hrs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? AutoCloseHrs { get; set; }
@@ -934,22 +934,22 @@ public partial class Control
     public int? PendingCloseReminderHrs { get; set; }
 
     [JsonProperty("shownotrespondedwarning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Shownotrespondedwarning { get; set; }
+    public bool? ShowNotRespondedWarning { get; set; }
 
     [JsonProperty("statusafterrespond", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Statusafterrespond { get; set; }
+    public int? StatusAfterRespond { get; set; }
 
     [JsonProperty("statusafterrespond_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? StatusafterrespondGuid { get; set; }
+    public Guid? StatusAfterRespondGuid { get; set; }
 
     [JsonProperty("tracknonbill", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Tracknonbill { get; set; }
+    public bool? TrackNonBill { get; set; }
 
     [JsonProperty("tracktravel", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Tracktravel { get; set; }
+    public bool? TrackTravel { get; set; }
 
     [JsonProperty("trackmileage", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Trackmileage { get; set; }
+    public bool? TrackMileage { get; set; }
 
     [JsonProperty("default_tickettype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? DefaultTicketTypeId { get; set; }
@@ -962,133 +962,133 @@ public partial class Control
     public bool? AllowTicketTypeSelectionAgents { get; set; }
 
     [JsonProperty("hide_generaluser", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? HideGeneraluser { get; set; }
+    public bool? HideGeneralUser { get; set; }
 
     [JsonProperty("addactionstolinked", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Addactionstolinked { get; set; }
+    public int? AddActionsToLinked { get; set; }
 
     [JsonProperty("enableslareminders", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Enableslareminders { get; set; }
+    public bool? EnableSlaReminders { get; set; }
 
     [JsonProperty("slareminderintervalhrs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? SlaReminderintervalhrs { get; set; }
+    public int? SlaReminderIntervalHrs { get; set; }
 
     [JsonProperty("slareminderautoclosehrs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? SlaReminderautoclosehrs { get; set; }
+    public int? SlaReminderAutoCloseHrs { get; set; }
 
     [JsonProperty("hourswarningnotapproved", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Hourswarningnotapproved { get; set; }
+    public int? HoursWarningNotApproved { get; set; }
 
     [JsonProperty("enablequalificationmatching", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Enablequalificationmatching { get; set; }
+    public bool? EnableQualificationMatching { get; set; }
 
     [JsonProperty("onlyprocessclosedrequests", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Onlyprocessclosedrequests { get; set; }
+    public bool? OnlyProcessClosedRequests { get; set; }
 
     [JsonProperty("defaultischargeable", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? DefaultIsChargeable { get; set; }
 
     [JsonProperty("processunclosedactions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Processunclosedactions { get; set; }
+    public bool? ProcessUnclosedActions { get; set; }
 
     [JsonProperty("useactioneventtimes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Useactioneventtimes { get; set; }
+    public bool? UseActionEventTimes { get; set; }
 
     [JsonProperty("acctinterfacefolder", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Acctinterfacefolder { get; set; }
+    public string? AcctInterfaceFolder { get; set; }
 
     [JsonProperty("xmlinterfacefolder", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Xmlinterfacefolder { get; set; }
+    public string? XmlInterfaceFolder { get; set; }
 
     [JsonProperty("allow_response_edit", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? AllowResponseEdit { get; set; }
 
     [JsonProperty("cat2mandclear", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Cat2Mandclear { get; set; }
+    public bool? Cat2MandClear { get; set; }
 
     [JsonProperty("cat3mandclear", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Cat3Mandclear { get; set; }
+    public bool? Cat3MandClear { get; set; }
 
     [JsonProperty("cat4mandclear", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Cat4Mandclear { get; set; }
+    public bool? Cat4MandClear { get; set; }
 
     [JsonProperty("cat5mandclear", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Cat5Mandclear { get; set; }
+    public bool? Cat5MandClear { get; set; }
 
     [JsonProperty("showactioncalendaroption", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowActioncalendaroption { get; set; }
+    public bool? ShowActionCalendarOption { get; set; }
 
     [JsonProperty("matchchargecodes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Matchchargecodes { get; set; }
+    public bool? MatchChargeCodes { get; set; }
 
     [JsonProperty("forcestrongpasswords", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Forcestrongpasswords { get; set; }
+    public bool? ForceStrongPasswords { get; set; }
 
     [JsonProperty("auditdelete", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Auditdelete { get; set; }
+    public bool? AuditDelete { get; set; }
 
     [JsonProperty("outofhourspriority", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Outofhourspriority { get; set; }
+    public int? OutOfHoursPriority { get; set; }
 
     [JsonProperty("informownertech", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Informownertech { get; set; }
+    public bool? InformOwnerTech { get; set; }
 
     [JsonProperty("sageslaitemcode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Sageslaitemcode { get; set; }
+    public string? SageSlaItemCode { get; set; }
 
     [JsonProperty("sageslaitemcodedesc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Sageslaitemcodedesc { get; set; }
+    public string? SageSlaItemCodeDesc { get; set; }
 
     [JsonProperty("sagedetaildesc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Sagedetaildesc { get; set; }
+    public string? SageDetailDesc { get; set; }
 
     [JsonProperty("billingreportvariable", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Billingreportvariable { get; set; }
+    public string? BillingReportVariable { get; set; }
 
     [JsonProperty("allowinvoicenumberedit", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Allowinvoicenumberedit { get; set; }
+    public bool? AllowInvoiceNumberEdit { get; set; }
 
     [JsonProperty("actionlineitems", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Actionlineitems { get; set; }
+    public int? ActionLineItems { get; set; }
 
     [JsonProperty("projectlineitems", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Projectlineitems { get; set; }
+    public int? ProjectLineItems { get; set; }
 
     [JsonProperty("invoiceaddgroupheaders", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? InvoiceAddGroupHeaders { get; set; }
 
     [JsonProperty("includezerocharge", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? IncludeZerocharge { get; set; }
+    public bool? IncludeZeroCharge { get; set; }
 
     [JsonProperty("linknonchargabletoinvoice", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Linknonchargabletoinvoice { get; set; }
+    public bool? LinkNonChargeableToInvoice { get; set; }
 
     [JsonProperty("weeksaheadtocreateperiodicinvoice", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public int? Weeksaheadtocreateperiodicinvoice { get; set; }
+    public int? WeeksAheadToCreatePeriodicInvoice { get; set; }
 
     [JsonProperty("contractexpirydays", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Contractexpirydays { get; set; }
+    public int? ContractExpiryDays { get; set; }
 
     [JsonProperty("apptservername", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Apptservername { get; set; }
+    public string? ApptServerName { get; set; }
 
     [JsonProperty("apptsetting", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Apptsetting { get; set; }
+    public int? ApptSetting { get; set; }
 
     [JsonProperty("syncallappts", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Syncallappts { get; set; }
+    public bool? SyncAllAppts { get; set; }
 
     [JsonProperty("calendarchoice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Calendarchoice { get; set; }
+    public int? CalendarChoice { get; set; }
 
     [JsonProperty("miscitemidquote", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Miscitemidquote { get; set; }
+    public int? MiscItemIdQuote { get; set; }
 
     [JsonProperty("rtdefwebendusers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Rtdefwebendusers { get; set; }
+    public int? RtDefWebEndUsers { get; set; }
 }

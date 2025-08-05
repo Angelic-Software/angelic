@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 namespace Angelic.Models.Configuration.Integrations.Wordpress;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
-public class WordpressComObject
+public class WordPressComObject
 {
     [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Id { get; set; } 
@@ -25,6 +25,6 @@ public class WordpressComObject
     public int? Parent { get; set; } 
 
     [JsonProperty("meta", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public WordpressComMeta? Meta { get; set; } 
+    public WordPressComMeta? Meta { get; set; } 
 
 }

@@ -61,7 +61,7 @@ public class Roles
     public string? OoName { get; set; } 
 
     [JsonProperty("uname_usercustomfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AgentCustom>? UnameUsercustomfields { get; set; } 
+    public ICollection<AgentCustom>? UnameUserCustomfields { get; set; } 
 
     [JsonProperty("access_control", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<AccessControl>? AccessControl { get; set; } 
@@ -85,7 +85,7 @@ public class Roles
     public ICollection<AccessControl>? AcCustomFields { get; set; } 
 
     [JsonProperty("ac_customtables", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AccessControl>? AcCustomtables { get; set; } 
+    public ICollection<AccessControl>? AcCustomTables { get; set; } 
 
     [JsonProperty("ac_dashboards", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<AccessControl>? AcDashboards { get; set; } 

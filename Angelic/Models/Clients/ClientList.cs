@@ -163,7 +163,7 @@ public class ClientList
     public bool? ExcludeFromInvoiceSync { get; set; } 
 
     [JsonProperty("gficlientid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Gficlientid { get; set; } 
+    public string? GfiClientId { get; set; } 
 
     [JsonProperty("overridepdftemplateinvoice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? OverridePdfTemplateInvoice { get; set; } 
@@ -181,7 +181,7 @@ public class ClientList
     public string? ClientToInvoiceName { get; set; } 
 
     [JsonProperty("invoiceduedaysextraclient", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Invoiceduedaysextraclient { get; set; } 
+    public int? InvoiceDueDaysExtraClient { get; set; } 
 
     [JsonProperty("itglue_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ItGlueId { get; set; } 

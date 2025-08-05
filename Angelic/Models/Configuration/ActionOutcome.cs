@@ -608,7 +608,7 @@ namespace Angelic.Models.Configuration;
         public bool? ShowSendfacebook { get; set; } 
 
         [JsonProperty("lastusercontactmethod", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? LastUsercontactmethod { get; set; } 
+        public string? LastUserContactmethod { get; set; } 
 
         [JsonProperty("default_private_note", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? DefaultPrivateNote { get; set; } 

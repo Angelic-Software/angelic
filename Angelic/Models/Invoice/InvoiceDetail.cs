@@ -133,7 +133,7 @@ public class InvoiceDetail
     public bool? CalculatePriceFromUsers { get; set; } 
 
     [JsonProperty("creditlinkedidid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Creditlinkedidid { get; set; } 
+    public int? CreditLinkedidid { get; set; } 
 
     [JsonProperty("recurring_invoice_price_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? RecurringInvoicePriceType { get; set; } 

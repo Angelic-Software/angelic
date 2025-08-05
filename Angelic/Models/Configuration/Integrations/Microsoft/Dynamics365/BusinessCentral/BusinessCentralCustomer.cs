@@ -7,7 +7,7 @@ namespace Angelic.Models.Configuration.Integrations.Microsoft.Dynamics365.Busine
 public class BusinessCentralCustomer
 {
     [JsonProperty("odataetag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Odataetag { get; set; } 
+    public string? ODataEtag { get; set; } 
 
     [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Id { get; set; } 

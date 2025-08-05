@@ -32,10 +32,10 @@ public class PowerShellScript
     public int? Resultfailedstatus { get; set; } 
 
     [JsonProperty("customtableid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Customtableid { get; set; } 
+    public int? CustomTableid { get; set; } 
 
     [JsonProperty("customtable_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? CustomtableName { get; set; } 
+    public string? CustomTableName { get; set; } 
 
     [JsonProperty("fieldmappings_powershell", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<PowerShellScriptCriteria>? FieldMappingsPowershell { get; set; } 

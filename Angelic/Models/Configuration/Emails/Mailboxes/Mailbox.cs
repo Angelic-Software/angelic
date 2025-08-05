@@ -29,7 +29,7 @@ public class Mailbox
     public int? Type { get; set; } 
 
     [JsonProperty("azureemail", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Azureemail { get; set; } 
+    public string? AzureEmail { get; set; } 
 
     [JsonProperty("display_address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? DisplayAddress { get; set; } 
@@ -158,10 +158,10 @@ public class Mailbox
     public string? Ewsusername { get; set; } 
 
     [JsonProperty("azureappid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Azureappid { get; set; } 
+    public string? AzureAppid { get; set; } 
 
     [JsonProperty("azuretenant", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Azuretenant { get; set; } 
+    public string? AzureTenant { get; set; } 
 
     [JsonProperty("new_client_secret", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? NewClientSecret { get; set; } 
@@ -176,7 +176,7 @@ public class Mailbox
     public string? OauthCode { get; set; } 
 
     [JsonProperty("azureredirecturi", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Azureredirecturi { get; set; } 
+    public string? AzureRedirecturi { get; set; } 
 
     [JsonProperty("_exchangecodefortoken", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Exchangecodefortoken { get; set; } 
@@ -227,10 +227,10 @@ public class Mailbox
     public string? GraphHost { get; set; } 
 
     [JsonProperty("azuredatecutoff", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Azuredatecutoff { get; set; } 
+    public DateTimeOffset? AzureDatecutoff { get; set; } 
 
     [JsonProperty("azureleavemailininbox", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Azureleavemailininbox { get; set; } 
+    public bool? AzureLeavemailininbox { get; set; } 
 
     [JsonProperty("imapdatecutoff", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? Imapdatecutoff { get; set; } 
@@ -278,16 +278,16 @@ public class Mailbox
     public int? UnmatchedUsers { get; set; } 
 
     [JsonProperty("newuser_default_site", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? NewuserDefaultSite { get; set; } 
+    public int? NewUserDefaultSite { get; set; } 
 
     [JsonProperty("newuser_default_site_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? NewuserDefaultSiteName { get; set; } 
+    public string? NewUserDefaultSiteName { get; set; } 
 
     [JsonProperty("newuser_send_welcome_email", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? NewuserSendWelcomeEmail { get; set; } 
+    public bool? NewUserSendWelcomeEmail { get; set; } 
 
     [JsonProperty("newuser_send_ack", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? NewuserSendAck { get; set; } 
+    public bool? NewUserSendAck { get; set; } 
 
     [JsonProperty("halointegrator_lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? HaloIntegratorLastError { get; set; } 
@@ -296,7 +296,7 @@ public class Mailbox
     public int? AzureAuthority { get; set; } 
 
     [JsonProperty("defaultusersite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? DefaultUsersite { get; set; } 
+    public string? DefaultUserSite { get; set; } 
 
     [JsonProperty("safe_attachment_policy", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? SafeAttachmentPolicy { get; set; } 

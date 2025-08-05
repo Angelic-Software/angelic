@@ -13,10 +13,10 @@ public class PresignedUrlRequest
     public long? Filesize { get; set; } 
 
     [JsonProperty("_tempid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? Tempid { get; set; } 
+    public Guid? TempId { get; set; } 
 
     [JsonProperty("originalfilename", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Originalfilename { get; set; } 
+    public string? OriginalFileName { get; set; } 
 
     [JsonProperty("type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Type { get; set; } 
@@ -28,19 +28,19 @@ public class PresignedUrlRequest
     public int? TicketId { get; set; } 
 
     [JsonProperty("atfilename", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Atfilename { get; set; } 
+    public string? AtFileName { get; set; } 
 
     [JsonProperty("atdesc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Atdesc { get; set; } 
+    public string? AtDesc { get; set; } 
 
     [JsonProperty("atparentid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Atparentid { get; set; } 
+    public int? AtParentId { get; set; } 
 
     [JsonProperty("atlinkedversionid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Atlinkedversionid { get; set; } 
+    public int? AtLinkedVersionId { get; set; } 
 
     [JsonProperty("atnote", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Atnote { get; set; } 
+    public string? AtNote { get; set; } 
 
     [JsonProperty("allow_anon_upload", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? AllowAnonUpload { get; set; } 

@@ -10,7 +10,7 @@ public class DistributionListsUser
     public int? Id { get; set; } 
 
     [JsonProperty("distributionlists_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? DistributionlistsId { get; set; } 
+    public int? DistributionListsId { get; set; } 
 
     [JsonProperty("user_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? UserId { get; set; } 

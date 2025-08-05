@@ -62,7 +62,7 @@ public class Attachment
     public int? AgentId { get; set; } 
 
     [JsonProperty("attachmentaction_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? AttachmentactionId { get; set; } 
+    public int? AttachmentActionId { get; set; } 
 
     [JsonProperty("_canupdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? CanUpdate { get; set; } 
@@ -80,10 +80,10 @@ public class Attachment
     public byte[]? File { get; set; } 
 
     [JsonProperty("_enduserportalpdfprint", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? EndUserportalpdfprint { get; set; } 
+    public bool? EndUserPortalPdfPrint { get; set; } 
 
     [JsonProperty("anon_outcomeid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? AnonOutcomeid { get; set; } 
+    public int? AnonOutcomeId { get; set; } 
 
     [JsonProperty("has_scanned", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? HasScanned { get; set; } 
@@ -101,7 +101,7 @@ public class Attachment
     public int? VersionCount { get; set; } 
 
     [JsonProperty("_alreadyuploaded", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Alreadyuploaded { get; set; } 
+    public bool? AlreadyUploaded { get; set; } 
 
     [JsonProperty("copy_from_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? CopyFromId { get; set; } 
@@ -128,10 +128,10 @@ public class Attachment
     public bool? ShowForUsers { get; set; } 
 
     [JsonProperty("showonchild", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowOnchild { get; set; } 
+    public bool? ShowOnChild { get; set; } 
 
     [JsonProperty("showonrelated", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowOnrelated { get; set; } 
+    public bool? ShowOnRelated { get; set; } 
 
     [JsonProperty("data_base64", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? DataBase64 { get; set; } 

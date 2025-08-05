@@ -19,13 +19,13 @@ public class Contributors
     public int? AgentId { get; set; } 
 
     [JsonProperty("agentname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Agentname { get; set; } 
+    public string? AgentName { get; set; } 
 
     [JsonProperty("code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Code { get; set; } 
 
     [JsonProperty("rolename", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Rolename { get; set; } 
+    public string? RoleName { get; set; } 
 
     [JsonProperty("ticketid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? TicketId { get; set; } 

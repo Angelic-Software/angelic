@@ -1,5 +1,6 @@
 using System.CodeDom.Compiler;
 using Angelic.Models.Configuration.Assets;
+using Angelic.Models.Configuration.Assets.AssetTypes;
 using Newtonsoft.Json;
 
 namespace Angelic.Models.Configuration.Integrations.Kandji;
@@ -47,7 +48,7 @@ public class KandjiDetails
     public ICollection<IntegrationFieldMapping>? FieldMappings { get; set; } 
 
     [JsonProperty("sitemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<IntegrationSiteMapping>? Sitemappings { get; set; } 
+    public ICollection<IntegrationSiteMapping>? SiteMappings { get; set; } 
 
     [JsonProperty("enableintegrator", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Enableintegrator { get; set; } 

@@ -43,7 +43,7 @@ public class Audit
     public string? Warning { get; set; } 
 
     [JsonProperty("actoutcome", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Actoutcome { get; set; } 
+    public string? ActOutcome { get; set; } 
 
     [JsonProperty("user_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? UserId { get; set; } 
