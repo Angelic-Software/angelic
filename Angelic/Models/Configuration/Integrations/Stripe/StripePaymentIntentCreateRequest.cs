@@ -10,6 +10,6 @@ public class StripePaymentIntentCreateRequest
     public ICollection<StripeItem>? Items { get; set; } 
 
     [JsonProperty("cardid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Cardid { get; set; } 
+    public string? CardId { get; set; } 
 
 }

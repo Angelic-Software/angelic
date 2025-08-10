@@ -117,6 +117,6 @@ public class VirimaDetails
     public int? UserMatchingField { get; set; } 
 
     [JsonProperty("_clearlastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Clearlastsync { get; set; } 
+    public bool? ClearLastSync { get; set; } 
 
 }

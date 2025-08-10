@@ -52,7 +52,7 @@ public class Tweet
     public int? FavoriteCount { get; set; } 
 
     [JsonProperty("favorited", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Favorited { get; set; } 
+    public bool? Favourited { get; set; } 
 
     [JsonProperty("retweeted", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Retweeted { get; set; } 

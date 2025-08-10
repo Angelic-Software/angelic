@@ -25,7 +25,7 @@ public class WordpressOrgDetails
     public bool? Enabled { get; set; } 
 
     [JsonProperty("blogurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Blogurl { get; set; } 
+    public string? BlogUrl { get; set; } 
 
     [JsonProperty("import_this_tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ImportThisTag { get; set; } 
@@ -49,10 +49,10 @@ public class WordpressOrgDetails
     public string? DefaultFaqListName { get; set; } 
 
     [JsonProperty("importcategories", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Importcategories { get; set; } 
+    public bool? ImportCategories { get; set; } 
 
     [JsonProperty("nocategoryupdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Nocategoryupdate { get; set; } 
+    public bool? NoCategoryUpdate { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

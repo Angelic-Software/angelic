@@ -19,7 +19,7 @@ public class TaniumDetails
     public string? Url { get; set; } 
 
     [JsonProperty("apiurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Apiurl { get; set; } 
+    public string? ApiUrl { get; set; } 
 
     [JsonProperty("new_integration_key", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? NewIntegrationKey { get; set; } 
@@ -55,7 +55,7 @@ public class TaniumDetails
     public ICollection<IntegrationSiteMapping>? SiteMappings { get; set; } 
 
     [JsonProperty("enableintegrator", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Enableintegrator { get; set; } 
+    public bool? EnableIntegrator { get; set; } 
 
     [JsonProperty("lastsyncdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? LastSyncDate { get; set; } 

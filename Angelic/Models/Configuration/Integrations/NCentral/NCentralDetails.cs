@@ -109,7 +109,7 @@ public class NCentralDetails
     public string? NewClientSecret { get; set; } 
 
     [JsonProperty("automaticclientsitelink", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Automaticclientsitelink { get; set; } 
+    public bool? AutomaticClientSiteLink { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

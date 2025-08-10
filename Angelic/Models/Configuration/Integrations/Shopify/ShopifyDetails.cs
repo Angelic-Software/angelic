@@ -10,7 +10,7 @@ public class ShopifyDetails
     public int? Id { get; set; } 
 
     [JsonProperty("shopname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Shopname { get; set; } 
+    public string? ShopName { get; set; } 
 
     [JsonProperty("new_integration_method", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? NewIntegrationMethod { get; set; } 

@@ -22,34 +22,34 @@ public class PrtgDetails
     public bool? NewMethod { get; set; } 
 
     [JsonProperty("defsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Defsite { get; set; } 
+    public int? DefSite { get; set; } 
 
     [JsonProperty("site_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? SiteName { get; set; } 
 
     [JsonProperty("defassettype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Defassettype { get; set; } 
+    public int? DefAssetType { get; set; } 
 
     [JsonProperty("assettype_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? AssetTypeName { get; set; } 
 
     [JsonProperty("assetmatchingfield_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? AssetmatchingfieldName { get; set; } 
+    public string? AssetMatchingFieldName { get; set; } 
 
     [JsonProperty("assetmatchingfield", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Assetmatchingfield { get; set; } 
+    public int? AssetMatchingField { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 
 
     [JsonProperty("halointegratorenabled", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? HaloIntegratorenabled { get; set; } 
+    public bool? HaloIntegratorEnabled { get; set; } 
 
     [JsonProperty("halointegratorlasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? HaloIntegratorlasterror { get; set; } 
+    public string? HaloIntegratorLastError { get; set; } 
 
     [JsonProperty("halointegratorlastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? HaloIntegratorlastsync { get; set; } 
+    public DateTimeOffset? HaloIntegratorLastSync { get; set; } 
 
     [JsonProperty("asset_fieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<IntegrationFieldMapping>? AssetFieldMappings { get; set; } 
@@ -76,6 +76,6 @@ public class PrtgDetails
     public string? WebhookTicketDetails { get; set; } 
 
     [JsonProperty("webhook_autoclosure_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? WebhookAutoclosureStatus { get; set; } 
+    public string? WebhookAutoClosureStatus { get; set; } 
 
 }

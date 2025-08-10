@@ -10,7 +10,7 @@ public class SlackDetails
     public int? Id { get; set; } 
 
     [JsonProperty("teamname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Teamname { get; set; } 
+    public string? TeamName { get; set; } 
 
     [JsonProperty("name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Name { get; set; } 
@@ -19,7 +19,7 @@ public class SlackDetails
     public string? NewAccessToken { get; set; } 
 
     [JsonProperty("webhookurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Webhookurl { get; set; } 
+    public string? WebhookUrl { get; set; } 
 
     [JsonProperty("enabled", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Enabled { get; set; } 

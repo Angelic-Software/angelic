@@ -7,9 +7,9 @@ namespace Angelic.Models.Configuration.Integrations.Stripe;
 public class StripeCreatePortalSession
 {
     [JsonProperty("customerid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Customerid { get; set; } 
+    public string? CustomerId { get; set; } 
 
     [JsonProperty("returnurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Returnurl { get; set; } 
+    public string? ReturnUrl { get; set; } 
 
 }

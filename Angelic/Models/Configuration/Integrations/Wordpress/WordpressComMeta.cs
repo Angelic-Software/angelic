@@ -13,6 +13,6 @@ public class WordPressComMeta
     public string? NextPage { get; set; } 
 
     [JsonProperty("wpcom", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Wpcom { get; set; } 
+    public bool? WpCom { get; set; } 
 
 }

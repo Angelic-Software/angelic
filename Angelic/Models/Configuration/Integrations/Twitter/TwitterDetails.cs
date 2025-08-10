@@ -26,13 +26,13 @@ public class TwitterDetails
     public bool? Authorized { get; set; } 
 
     [JsonProperty("_gettoken", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Gettoken { get; set; } 
+    public bool? GetToken { get; set; } 
 
     [JsonProperty("_oauthtoken", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Oauthtoken { get; set; } 
+    public string? OAuthToken { get; set; } 
 
     [JsonProperty("_oauthverifier", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Oauthverifier { get; set; } 
+    public string? OAuthVerifier { get; set; } 
 
     [JsonProperty("create_direct_message_tickets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? CreateDirectMessageTickets { get; set; } 

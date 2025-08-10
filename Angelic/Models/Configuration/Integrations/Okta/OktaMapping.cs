@@ -37,7 +37,7 @@ namespace Angelic.Models.Configuration.Integrations.Okta;
         public string? ApplicationIdDisplay { get; set; } 
 
         [JsonProperty("filterbyapp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Filterbyapp { get; set; } 
+        public bool? FilterByApp { get; set; } 
 
         [JsonProperty("userroleid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? UserRoleId { get; set; } 

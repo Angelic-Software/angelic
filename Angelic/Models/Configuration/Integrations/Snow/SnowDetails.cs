@@ -21,7 +21,7 @@ public class SnowDetails
     public string? Username { get; set; } 
 
     [JsonProperty("sdpassword", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Sdpassword { get; set; } 
+    public string? SdPassword { get; set; } 
 
     [JsonProperty("new_integration_key", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? NewIntegrationKey { get; set; } 

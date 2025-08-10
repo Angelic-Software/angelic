@@ -19,7 +19,7 @@ public class StripeWebhookEndpoint
     public ICollection<string>? EnabledEvents { get; set; } 
 
     [JsonProperty("livemode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Livemode { get; set; } 
+    public bool? LiveMode { get; set; } 
 
     [JsonProperty("status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Status { get; set; } 

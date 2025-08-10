@@ -31,10 +31,10 @@ public class WordpressDetails
     public bool? Enabled { get; set; } 
 
     [JsonProperty("blogid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Blogid { get; set; } 
+    public string? BlogId { get; set; } 
 
     [JsonProperty("blogurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Blogurl { get; set; } 
+    public string? BlogUrl { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

@@ -21,16 +21,16 @@ public class SageBusinessCloudDetails
     public bool? IsAuthorized { get; set; } 
 
     [JsonProperty("redirecturi", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Redirecturi { get; set; } 
+    public string? RedirectUri { get; set; } 
 
     [JsonProperty("clienttoplevel", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Clienttoplevel { get; set; } 
+    public int? ClientTopLevel { get; set; } 
 
     [JsonProperty("itemgroup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ItemGroup { get; set; } 
 
     [JsonProperty("enablesync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Enablesync { get; set; } 
+    public bool? EnableSync { get; set; } 
 
     [JsonProperty("defaultitemcode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? DefaultItemCode { get; set; } 
@@ -45,7 +45,7 @@ public class SageBusinessCloudDetails
     public string? SyncEntities { get; set; } 
 
     [JsonProperty("sbcdnewmethod", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Sbcdnewmethod { get; set; } 
+    public bool? SbcdNewMethod { get; set; } 
 
     [JsonProperty("new_client_secret", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? NewClientSecret { get; set; } 
