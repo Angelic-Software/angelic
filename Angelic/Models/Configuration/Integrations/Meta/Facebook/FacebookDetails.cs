@@ -14,7 +14,7 @@ public class FacebookDetails
     public string? UserId { get; set; } 
 
     [JsonProperty("user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? UserName { get; set; } 
+    public string? Username { get; set; } 
 
     [JsonProperty("page_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? PageId { get; set; } 
@@ -23,7 +23,7 @@ public class FacebookDetails
     public string? PageName { get; set; } 
 
     [JsonProperty("_exchangecode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Exchangecode { get; set; } 
+    public bool? ExchangeCode { get; set; } 
 
     [JsonProperty("oauth_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? OauthCode { get; set; } 
@@ -62,7 +62,7 @@ public class FacebookDetails
     public int? MessengerUser { get; set; } 
 
     [JsonProperty("messenger_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? MessengerUserName { get; set; } 
+    public string? MessengerUsername { get; set; } 
 
     [JsonProperty("reopen_messenger_tickets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? ReopenMessengerTickets { get; set; } 
@@ -77,7 +77,7 @@ public class FacebookDetails
     public int? PostUser { get; set; } 
 
     [JsonProperty("post_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? PostUserName { get; set; } 
+    public string? PostUsername { get; set; } 
 
     [JsonProperty("post_ticket_type_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? PostTicketTypeName { get; set; } 
@@ -152,7 +152,7 @@ public class FacebookDetails
     public string? RatingsTicketTypeName { get; set; } 
 
     [JsonProperty("ratings_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? RatingsUserName { get; set; } 
+    public string? RatingsUsername { get; set; } 
 
     [JsonProperty("ads_site_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? AdsSiteName { get; set; } 
@@ -161,7 +161,7 @@ public class FacebookDetails
     public string? AdsTicketTypeName { get; set; } 
 
     [JsonProperty("ads_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? AdsUserName { get; set; } 
+    public string? AdsUsername { get; set; } 
 
     [JsonProperty("ratings_status_after_update_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? RatingsStatusAfterUpdateName { get; set; } 
@@ -191,7 +191,7 @@ public class FacebookDetails
     public string? InstaMessengerTicketTypeName { get; set; } 
 
     [JsonProperty("insta_messenger_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? InstaMessengerUserName { get; set; } 
+    public string? InstaMessengerUsername { get; set; } 
 
     [JsonProperty("insta_messenger_site_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? InstaMessengerSiteName { get; set; } 
@@ -206,7 +206,7 @@ public class FacebookDetails
     public int? InstaPostUser { get; set; } 
 
     [JsonProperty("insta_post_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? InstaPostUserName { get; set; } 
+    public string? InstaPostUsername { get; set; } 
 
     [JsonProperty("insta_post_ticket_type_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? InstaPostTicketTypeName { get; set; } 

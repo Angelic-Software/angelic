@@ -46,7 +46,7 @@ public class AzureAdMapping
     public int? GroupId { get; set; } 
 
     [JsonProperty("sequenceid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Sequenceid { get; set; } 
+    public int? SequenceId { get; set; } 
 
     [JsonProperty("description", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Description { get; set; } 

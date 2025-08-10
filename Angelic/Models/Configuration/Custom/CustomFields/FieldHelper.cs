@@ -25,7 +25,7 @@ public class FieldHelper
     public bool? Mandatory { get; set; } 
 
     [JsonProperty("showonactivity", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowOnactivity { get; set; } 
+    public bool? ShowOnActivity { get; set; } 
 
     [JsonProperty("lookup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Lookup { get; set; } 
@@ -34,7 +34,7 @@ public class FieldHelper
     public int? SystemUse { get; set; } 
 
     [JsonProperty("parenttype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ParenttypeId { get; set; } 
+    public int? ParentTypeId { get; set; } 
 
     [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Url { get; set; } 

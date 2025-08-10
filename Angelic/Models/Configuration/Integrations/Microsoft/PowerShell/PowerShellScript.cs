@@ -20,19 +20,19 @@ public class PowerShellScript
     public string? Location { get; set; } 
 
     [JsonProperty("resultstring", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Resultstring { get; set; } 
+    public string? ResultString { get; set; } 
 
     [JsonProperty("resultpartialmatch", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Resultpartialmatch { get; set; } 
+    public bool? ResultPartialMatch { get; set; } 
 
     [JsonProperty("resultstatus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Resultstatus { get; set; } 
+    public int? ResultStatus { get; set; } 
 
     [JsonProperty("resultfailedstatus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Resultfailedstatus { get; set; } 
+    public int? ResultFailedStatus { get; set; } 
 
     [JsonProperty("customtableid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? CustomTableid { get; set; } 
+    public int? CustomTableId { get; set; } 
 
     [JsonProperty("customtable_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? CustomTableName { get; set; } 
@@ -50,10 +50,10 @@ public class PowerShellScript
     public string? HaloIntegratorLastError { get; set; } 
 
     [JsonProperty("halointegrator_allowedclientidslist", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ValueLabelKeyPair>? HaloIntegratorAllowedclientidslist { get; set; } 
+    public ICollection<ValueLabelKeyPair>? HaloIntegratorAllowedClientIdsList { get; set; } 
 
     [JsonProperty("halointegrator_allowedclientids", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? HaloIntegratorAllowedclientids { get; set; } 
+    public string? HaloIntegratorAllowedClientIds { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

@@ -16,7 +16,7 @@ public class SiteContact
     public int? Uid { get; set; } 
 
     [JsonProperty("user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? UserName { get; set; } 
+    public string? Username { get; set; } 
 
     [JsonProperty("user_email", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? UserEmail { get; set; } 

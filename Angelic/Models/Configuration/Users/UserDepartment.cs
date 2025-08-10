@@ -13,7 +13,7 @@ public class UserDepartment
     public int? UserId { get; set; } 
 
     [JsonProperty("user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? UserName { get; set; } 
+    public string? Username { get; set; } 
 
     [JsonProperty("department_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? DepartmentId { get; set; } 

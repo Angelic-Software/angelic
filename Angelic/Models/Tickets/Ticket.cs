@@ -85,7 +85,7 @@ public class Ticket
     public int? UserId { get; set; }
 
     [JsonProperty("user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? UserName { get; set; }
+    public string? Username { get; set; }
 
     [JsonProperty("team", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Team { get; set; }
@@ -1879,7 +1879,7 @@ public class Ticket
     public bool? Actionworkflowset { get; set; }
 
     [JsonProperty("isbillable", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isbillable { get; set; }
+    public bool? IsBillable { get; set; }
 
     [JsonProperty("itemsarebillable", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Itemsarebillable { get; set; }
@@ -2593,7 +2593,7 @@ public class Ticket
     public string? TopLevelName { get; set; }
 
     [JsonProperty("isbeingclosed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isbeingclosed { get; set; }
+    public bool? IsBeingClosed { get; set; }
 
     [JsonProperty("maximumRestrictedPriority", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]

@@ -67,7 +67,7 @@ public class PrtgDetails
     public int? WebhookTicketUserId { get; set; } 
 
     [JsonProperty("webhook_ticket_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? WebhookTicketUserName { get; set; } 
+    public string? WebhookTicketUsername { get; set; } 
 
     [JsonProperty("webhook_ticket_summary", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? WebhookTicketSummary { get; set; } 

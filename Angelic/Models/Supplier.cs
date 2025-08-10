@@ -227,7 +227,7 @@ public class Supplier
     public string? JiraUserId { get; set; } 
 
     [JsonProperty("jira_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? JiraUserName { get; set; } 
+    public string? JiraUsername { get; set; } 
 
     [JsonProperty("jira_user", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ValueLabelIsNewKeyPair? JiraUser { get; set; } 
@@ -317,7 +317,7 @@ public class Supplier
     public string? ServiceNowDefaultUserId { get; set; } 
 
     [JsonProperty("servicenow_defaultuser_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ServiceNowDefaultUserName { get; set; } 
+    public string? ServiceNowDefaultUsername { get; set; } 
 
     [JsonProperty("servicenow_defaultuser", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ValueLabelIsNewKeyPair? ServiceNowDefaultUser { get; set; } 

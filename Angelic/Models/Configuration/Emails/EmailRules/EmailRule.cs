@@ -16,7 +16,7 @@ public class EmailRule
     public string? Name { get; set; } 
 
     [JsonProperty("pop3serverid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Pop3Serverid { get; set; } 
+    public int? Pop3ServerId { get; set; } 
 
     [JsonProperty("mailbox_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? MailboxName { get; set; } 
@@ -37,10 +37,10 @@ public class EmailRule
     public bool? Enabled { get; set; } 
 
     [JsonProperty("starttag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Starttag { get; set; } 
+    public string? StartTag { get; set; } 
 
     [JsonProperty("endtag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Endtag { get; set; } 
+    public string? EndTag { get; set; } 
 
     [JsonProperty("fieldname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? FieldName { get; set; } 
@@ -49,58 +49,58 @@ public class EmailRule
     public int? Length { get; set; } 
 
     [JsonProperty("useendofline", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Useendofline { get; set; } 
+    public bool? UseEndOfLine { get; set; } 
 
     [JsonProperty("2starttag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _2starttag { get; set; } 
+    public string? TwoStartTag { get; set; } 
 
     [JsonProperty("2endtag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _2endtag { get; set; } 
+    public string? TwoEndTag { get; set; } 
 
     [JsonProperty("2fieldname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _2fieldname { get; set; } 
+    public string? TwoFieldName { get; set; } 
 
     [JsonProperty("2length", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? _2length { get; set; } 
+    public int? TwoLength { get; set; } 
 
     [JsonProperty("2useendofline", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _2useendofline { get; set; } 
+    public bool? TwoUseEndOfLine { get; set; } 
 
     [JsonProperty("3starttag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _3starttag { get; set; } 
+    public string? ThreeStartTag { get; set; } 
 
     [JsonProperty("3endtag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _3endtag { get; set; } 
+    public string? ThreeEndTag { get; set; } 
 
     [JsonProperty("3fieldname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _3fieldname { get; set; } 
+    public string? ThreeFieldName { get; set; } 
 
     [JsonProperty("3length", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? _3length { get; set; } 
+    public int? ThreeLength { get; set; } 
 
     [JsonProperty("3useendofline", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _3useendofline { get; set; } 
+    public bool? ThreeUseEndOfLine { get; set; } 
 
     [JsonProperty("closestring", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Closestring { get; set; } 
+    public string? CloseString { get; set; } 
 
     [JsonProperty("requesttype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? RequestType { get; set; } 
 
     [JsonProperty("4starttag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _4starttag { get; set; } 
+    public string? FourStartTag { get; set; } 
 
     [JsonProperty("4endtag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _4endtag { get; set; } 
+    public string? FourEndTag { get; set; } 
 
     [JsonProperty("4fieldname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _4fieldname { get; set; } 
+    public string? FourFieldName { get; set; } 
 
     [JsonProperty("4length", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? _4length { get; set; } 
+    public int? FourLength { get; set; } 
 
     [JsonProperty("4useendofline", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _4useendofline { get; set; } 
+    public bool? FourUseEndOfLine { get; set; } 
 
     [JsonProperty("seq", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Seq { get; set; } 
@@ -109,31 +109,31 @@ public class EmailRule
     public bool? Pagerduty { get; set; } 
 
     [JsonProperty("fromaddrexact", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? FromAddrexact { get; set; } 
+    public bool? FromAddrExact { get; set; } 
 
     [JsonProperty("toaddrexact", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ToAddrexact { get; set; } 
+    public bool? ToAddrExact { get; set; } 
 
     [JsonProperty("privateactions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Privateactions { get; set; } 
+    public bool? PrivateActions { get; set; } 
 
     [JsonProperty("3useticketuser", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _3useticketuser { get; set; } 
+    public bool? ThreeUseTicketUser { get; set; } 
 
     [JsonProperty("fieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<EmailRuleFieldMapping>? FieldMappings { get; set; } 
 
     [JsonProperty("endtagmatchtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Endtagmatchtype { get; set; } 
+    public int? EndTagMatchType { get; set; } 
 
     [JsonProperty("3matchtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? _3matchtype { get; set; } 
+    public int? ThreeMatchType { get; set; } 
 
     [JsonProperty("3endtagmatchtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? _3endtagmatchtype { get; set; } 
+    public int? ThreeEndTagMatchType { get; set; } 
 
     [JsonProperty("pagerdutyagent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Pagerdutyagent { get; set; } 
+    public int? PagerDutyAgent { get; set; } 
 
     [JsonProperty("pagerduty_service", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? PagerdutyService { get; set; } 
@@ -142,52 +142,52 @@ public class EmailRule
     public string? PagerdutyServiceName { get; set; } 
 
     [JsonProperty("5starttag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _5starttag { get; set; } 
+    public string? FiveStartTag { get; set; } 
 
     [JsonProperty("5endtag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _5endtag { get; set; } 
+    public string? FiveEndTag { get; set; } 
 
     [JsonProperty("5fieldname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _5fieldname { get; set; } 
+    public string? FiveFieldName { get; set; } 
 
     [JsonProperty("5length", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? _5length { get; set; } 
+    public int? FiveLength { get; set; } 
 
     [JsonProperty("5useendofline", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _5useendofline { get; set; } 
+    public bool? FiveUseEndOfLine { get; set; } 
 
     [JsonProperty("5endtagmatchtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? _5endtagmatchtype { get; set; } 
+    public int? FiveEndTagMatchType { get; set; } 
 
     [JsonProperty("splunkoncall", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Splunkoncall { get; set; } 
+    public bool? SplunkOnCall { get; set; } 
 
     [JsonProperty("attachmentname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Attachmentname { get; set; } 
+    public string? AttachmentName { get; set; } 
 
     [JsonProperty("attachmentmatchtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Attachmentmatchtype { get; set; } 
+    public int? AttachmentMatchType { get; set; } 
 
     [JsonProperty("matchonattachment", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Matchonattachment { get; set; } 
+    public bool? MatchOnAttachment { get; set; } 
 
     [JsonProperty("matchccandbcc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Matchccandbcc { get; set; } 
+    public bool? MatchCcAndBcc { get; set; } 
 
     [JsonProperty("6starttag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _6starttag { get; set; } 
+    public string? SixStartTag { get; set; } 
 
     [JsonProperty("6endtag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _6endtag { get; set; } 
+    public string? SixEndTag { get; set; } 
 
     [JsonProperty("6length", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? _6length { get; set; } 
+    public int? SixLength { get; set; } 
 
     [JsonProperty("6useendofline", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? _6useendofline { get; set; } 
+    public bool? SixUseEndOfLine { get; set; } 
 
     [JsonProperty("6endtagmatchtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? _6endtagmatchtype { get; set; } 
+    public int? SixEndTagMatchType { get; set; } 
 
     [JsonProperty("always_close_alerts", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? AlwaysCloseAlerts { get; set; } 

@@ -634,7 +634,7 @@ public class User
     public int? DelegationUserId { get; set; } 
 
     [JsonProperty("delegation_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? DelegationUserName { get; set; } 
+    public string? DelegationUsername { get; set; } 
 
     [JsonProperty("googleworkplace_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? GoogleWorkplaceId { get; set; } 
@@ -715,7 +715,7 @@ public class User
     public int? LinkedUserId { get; set; } 
 
     [JsonProperty("linked_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? LinkedUserName { get; set; } 
+    public string? LinkedUsername { get; set; } 
 
     [JsonProperty("hubspot_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? HubspotId { get; set; } 

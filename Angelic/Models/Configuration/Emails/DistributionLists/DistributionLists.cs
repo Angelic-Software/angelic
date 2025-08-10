@@ -33,10 +33,10 @@ public class DistributionLists
     public ICollection<DistributionListsUser>? Members { get; set; } 
 
     [JsonProperty("addtheseusers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<Models.Users.User>? Addtheseusers { get; set; } 
+    public ICollection<Models.Users.User>? AddTheseUsers { get; set; } 
 
     [JsonProperty("removetheseusers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<Models.Users.User>? Removetheseusers { get; set; } 
+    public ICollection<Models.Users.User>? RemoveTheseUsers { get; set; } 
 
     [JsonProperty("users_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? UsersCount { get; set; } 

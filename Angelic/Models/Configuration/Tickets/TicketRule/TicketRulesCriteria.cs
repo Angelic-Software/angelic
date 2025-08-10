@@ -55,7 +55,7 @@ public class TicketRulesCriteria
     public string? AltValueDisplay { get; set; } 
 
     [JsonProperty("tablename", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Tablename { get; set; } 
+    public string? TableName { get; set; } 
 
     [JsonProperty("type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Type { get; set; } 

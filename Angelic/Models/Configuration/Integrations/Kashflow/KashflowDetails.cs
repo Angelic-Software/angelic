@@ -46,7 +46,7 @@ public class KashflowDetails
     public bool? IsDefault { get; set; } 
 
     [JsonProperty("enablesync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Enablesync { get; set; } 
+    public bool? EnableSync { get; set; } 
 
     [JsonProperty("default_item_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? DefaultItemCode { get; set; } 

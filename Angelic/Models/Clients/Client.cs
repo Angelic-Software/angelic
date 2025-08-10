@@ -1014,7 +1014,7 @@ public class Client
 
     [JsonProperty("servicenow_defaultuser_name", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public string? ServiceNowDefaultUserName { get; set; }
+    public string? ServiceNowDefaultUsername { get; set; }
 
     [JsonProperty("servicenow_defaultuser", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ValueLabelIsNewKeyPair? ServiceNowDefaultUser { get; set; }
@@ -1084,7 +1084,7 @@ public class Client
     public string? JiraUserId { get; set; }
 
     [JsonProperty("jira_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? JiraUserName { get; set; }
+    public string? JiraUsername { get; set; }
 
     [JsonProperty("jira_user", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ValueLabelIsNewKeyPair? JiraUser { get; set; }
@@ -1187,7 +1187,7 @@ public class Client
 
     [JsonProperty("servicenow_webhook_user_name", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public string? ServiceNowWebhookUserName { get; set; }
+    public string? ServiceNowWebhookUsername { get; set; }
 
     [JsonProperty("servicenow_webhook_tickettype", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]

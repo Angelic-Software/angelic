@@ -13,13 +13,13 @@ public class CustomFieldValidation
     public int? FiId { get; set; } 
 
     [JsonProperty("filinktoid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Filinktoid { get; set; } 
+    public int? FiLinkToId { get; set; } 
 
     [JsonProperty("validationtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Validationtype { get; set; } 
+    public int? ValidationType { get; set; } 
 
     [JsonProperty("askforreason", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Askforreason { get; set; } 
+    public bool? AskForReason { get; set; } 
 
     [JsonProperty("hours", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Hours { get; set; } 

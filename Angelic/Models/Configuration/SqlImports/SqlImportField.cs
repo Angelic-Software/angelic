@@ -13,7 +13,7 @@ public class SqlImportField
     public int? Siid { get; set; } 
 
     [JsonProperty("thirdpartyname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ThirdPartyname { get; set; } 
+    public string? ThirdPartyName { get; set; } 
 
     [JsonProperty("nhdname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Nhdname { get; set; } 

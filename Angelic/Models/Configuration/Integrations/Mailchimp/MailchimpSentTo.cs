@@ -28,7 +28,7 @@ public class MailchimpSentTo
     public DateTimeOffset? LastOpen { get; set; } 
 
     [JsonProperty("absplit_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? AbsplitGroup { get; set; } 
+    public string? AbSplitGroup { get; set; } 
 
     [JsonProperty("gmt_offset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public float? GmtOffset { get; set; } 

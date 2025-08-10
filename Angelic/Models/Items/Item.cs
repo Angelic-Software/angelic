@@ -116,16 +116,16 @@ public class Item
     public double? Sleeveprice { get; set; } 
 
     [JsonProperty("taxcode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Taxcode { get; set; } 
+    public int? TaxCode { get; set; } 
 
     [JsonProperty("taxcode_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? TaxcodeName { get; set; } 
+    public string? TaxCodeName { get; set; } 
 
     [JsonProperty("taxcodeother", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Taxcodeother { get; set; } 
+    public int? TaxCodeother { get; set; } 
 
     [JsonProperty("taxcodeother_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? TaxcodeotherName { get; set; } 
+    public string? TaxCodeotherName { get; set; } 
 
     [JsonProperty("costprice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? CostPrice { get; set; } 
@@ -143,7 +143,7 @@ public class Item
     public string? Binlocation { get; set; } 
 
     [JsonProperty("nominalcode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Nominalcode { get; set; } 
+    public string? NominalCode { get; set; } 
 
     [JsonProperty("costingmethod", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Costingmethod { get; set; } 
@@ -323,7 +323,7 @@ public class Item
     public string? KashflowTenantName { get; set; } 
 
     [JsonProperty("nominalcode_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? NominalcodeName { get; set; } 
+    public string? NominalCodeName { get; set; } 
 
     [JsonProperty("purchasenominalcode_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? PurchasenominalcodeName { get; set; } 
@@ -393,19 +393,19 @@ public class Item
     public string? IntacctType { get; set; } 
 
     [JsonProperty("item_group_nominalcode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ItemGroupNominalcode { get; set; } 
+    public string? ItemGroupNominalCode { get; set; } 
 
     [JsonProperty("item_group_nominalcode_purchase", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ItemGroupNominalcodePurchase { get; set; } 
+    public string? ItemGroupNominalCodePurchase { get; set; } 
 
     [JsonProperty("item_group_itemcode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ItemGroupItemCode { get; set; } 
 
     [JsonProperty("item_group_taxcode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ItemGroupTaxcode { get; set; } 
+    public int? ItemGroupTaxCode { get; set; } 
 
     [JsonProperty("item_group_taxcode_purchase", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ItemGroupTaxcodePurchase { get; set; } 
+    public int? ItemGroupTaxCodePurchase { get; set; } 
 
     [JsonProperty("recurringcost", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? Recurringcost { get; set; } 
@@ -543,10 +543,10 @@ public class Item
     public int? AutoReorderType { get; set; } 
 
     [JsonProperty("relatedcategories", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<IdValueKeyPair>? Relatedcategories { get; set; } 
+    public ICollection<IdValueKeyPair>? RelatedCategories { get; set; } 
 
     [JsonProperty("relatedcategories_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? RelatedcategoriesList { get; set; } 
+    public string? RelatedCategoriesList { get; set; } 
 
     [JsonProperty("item_listed_only_on_bundle_setup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? ItemListedOnlyOnBundleSetup { get; set; } 

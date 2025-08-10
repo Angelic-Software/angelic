@@ -22,7 +22,7 @@ public class LdapName
     public bool? IsUser { get; set; } 
 
     [JsonProperty("is_userticket", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? IsUserticket { get; set; } 
+    public bool? IsUserTicket { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

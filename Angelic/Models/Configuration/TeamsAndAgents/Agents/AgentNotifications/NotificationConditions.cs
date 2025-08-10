@@ -46,7 +46,7 @@ public class NotificationConditions
     public string? TimeZonestring { get; set; } 
 
     [JsonProperty("tablename", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Tablename { get; set; } 
+    public string? TableName { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

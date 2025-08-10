@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using Angelic.Models.Configuration.Addresses;
 using Angelic.Models.Sites;
 using Angelic.Models.Users;
+using Angelic.Models.Clients;
 using Newtonsoft.Json;
 
 namespace Angelic.Models.Configuration.CallManagement;
@@ -47,7 +48,7 @@ public class CallLog
     public int? UserId { get; set; } 
 
     [JsonProperty("user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? UserName { get; set; } 
+    public string? Username { get; set; } 
 
     [JsonProperty("user_details", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public User? UserDetails { get; set; } 
@@ -114,7 +115,7 @@ public class CallLog
     public string? DisplayName { get; set; } 
 
     [JsonProperty("existingticketid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Existingticketid { get; set; } 
+    public string? ExistingTicketId { get; set; } 
 
     [JsonProperty("call_direction", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? CallDirection { get; set; } 

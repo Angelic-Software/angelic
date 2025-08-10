@@ -47,7 +47,7 @@ public class TwitterDetails
     public int? DirectMessageUser { get; set; } 
 
     [JsonProperty("direct_message_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? DirectMessageUserName { get; set; } 
+    public string? DirectMessageUsername { get; set; } 
 
     [JsonProperty("reopen_direct_message_tickets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? ReopenDirectMessageTickets { get; set; } 
@@ -65,7 +65,7 @@ public class TwitterDetails
     public int? MentionUser { get; set; } 
 
     [JsonProperty("mention_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? MentionUserName { get; set; } 
+    public string? MentionUsername { get; set; } 
 
     [JsonProperty("days_after_mention", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? DaysAfterMention { get; set; } 

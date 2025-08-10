@@ -67,22 +67,22 @@ public class AssetType
     public double? Cost { get; set; } 
 
     [JsonProperty("useteamviewer", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Useteamviewer { get; set; } 
+    public bool? UseTeamViewer { get; set; } 
 
     [JsonProperty("accountscode1", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Accountscode1 { get; set; } 
+    public string? AccountsCode1 { get; set; } 
 
     [JsonProperty("accountscode2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Accountscode2 { get; set; } 
+    public string? AccountsCode2 { get; set; } 
 
     [JsonProperty("weeklycost", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Weeklycost { get; set; } 
+    public double? WeeklyCost { get; set; } 
 
     [JsonProperty("monthlycost", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Monthlycost { get; set; } 
+    public double? MonthlyCost { get; set; } 
 
     [JsonProperty("quarterlycost", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Quarterlycost { get; set; } 
+    public double? QuarterlyCost { get; set; } 
 
     [JsonProperty("sixmonthlycost", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? SixMonthlyCost { get; set; } 
@@ -124,7 +124,7 @@ public class AssetType
     public int? DefaultSequence { get; set; } 
 
     [JsonProperty("tagprefix", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Tagprefix { get; set; } 
+    public string? TagPrefix { get; set; } 
 
     [JsonProperty("column_profile_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ColumnProfileId { get; set; } 
@@ -133,7 +133,7 @@ public class AssetType
     public Guid? ColumnProfileGuid { get; set; } 
 
     [JsonProperty("columnprofileoverride_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ColumnprofileoverrideName { get; set; } 
+    public string? ColumnProfileOverrideName { get; set; } 
 
     [JsonProperty("enableresourcebooking", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? EnableResourceBooking { get; set; } 
@@ -196,7 +196,7 @@ public class AssetType
     public ICollection<TabConfig>? TabConfig { get; set; } 
 
     [JsonProperty("resourcebookingtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ResourceBookingtype { get; set; } 
+    public int? ResourceBookingType { get; set; } 
 
     [JsonProperty("allowed_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<AssetTypeStatus>? AllowedStatus { get; set; } 
@@ -205,7 +205,7 @@ public class AssetType
     public bool? AllowAllStatus { get; set; } 
 
     [JsonProperty("businessowner_visibility", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? BusinessownerVisibility { get; set; } 
+    public int? BusinessOwnerVisibility { get; set; } 
 
     [JsonProperty("technicalowner_visibility", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? TechnicalOwnerVisibility { get; set; } 
@@ -259,7 +259,7 @@ public class AssetType
     public bool? IsService { get; set; } 
 
     [JsonProperty("is_businessapp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? IsBusinessapp { get; set; } 
+    public bool? IsBusinessApp { get; set; } 
 
     [JsonProperty("service_category_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ServiceCategoryId { get; set; } 

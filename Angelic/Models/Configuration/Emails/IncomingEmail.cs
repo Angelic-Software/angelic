@@ -15,13 +15,13 @@ public class IncomingEmail
     public int? Id { get; set; } 
 
     [JsonProperty("mbid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Mbid { get; set; } 
+    public int? MbId { get; set; } 
 
     [JsonProperty("agentid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? AgentId { get; set; } 
 
     [JsonProperty("addactiontofaultid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Addactiontofaultid { get; set; } 
+    public int? AddActionToFaultId { get; set; } 
 
     [JsonProperty("datecreated", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? DateCreated { get; set; } 
@@ -39,7 +39,7 @@ public class IncomingEmail
     public bool? Delete { get; set; } 
 
     [JsonProperty("issalesmb", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? IsSalesmb { get; set; } 
+    public bool? IsSalesMb { get; set; } 
 
     [JsonProperty("from", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? From { get; set; } 
@@ -57,7 +57,7 @@ public class IncomingEmail
     public string? Subject { get; set; } 
 
     [JsonProperty("mailid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Mailid { get; set; } 
+    public string? MailId { get; set; } 
 
     [JsonProperty("data", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public byte[]? Data { get; set; } 
@@ -78,10 +78,10 @@ public class IncomingEmail
     public DateTimeOffset? LastAttemptDate { get; set; } 
 
     [JsonProperty("_checkmailid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Checkmailid { get; set; } 
+    public bool? CheckMailId { get; set; } 
 
     [JsonProperty("_downloadmail", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Downloadmail { get; set; } 
+    public bool? DownloadMail { get; set; } 
 
     [JsonProperty("mailbox", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public Mailbox? Mailbox { get; set; } 

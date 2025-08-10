@@ -34,13 +34,13 @@ public class TeamsChatMessageList
     public DateTimeOffset? DateTime { get; set; } 
 
     [JsonProperty("whoagent_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? WhoagentId { get; set; } 
+    public int? WhoAgentId { get; set; } 
 
     [JsonProperty("whoagent_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? WhoagentName { get; set; } 
+    public string? WhoAgentName { get; set; } 
 
     [JsonProperty("_sendmessage", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Sendmessage { get; set; } 
+    public bool? SendMessage { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

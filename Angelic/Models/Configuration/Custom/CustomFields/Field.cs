@@ -34,13 +34,13 @@ public class Field
     public string? Url { get; set; } 
 
     [JsonProperty("idstring", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Idstring { get; set; } 
+    public string? IdString { get; set; } 
 
     [JsonProperty("datafrom", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Datafrom { get; set; } 
+    public int? DataFrom { get; set; } 
 
     [JsonProperty("datalength", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Datalength { get; set; } 
+    public int? DataLength { get; set; } 
 
     [JsonProperty("issoftware", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? IsSoftware { get; set; } 
@@ -55,19 +55,19 @@ public class Field
     public bool? Mandatory { get; set; } 
 
     [JsonProperty("showoncalendar", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowOncalendar { get; set; } 
+    public bool? ShowOnCalendar { get; set; } 
 
     [JsonProperty("moveupdatetype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Moveupdatetype { get; set; } 
+    public int? MoveUpdateType { get; set; } 
 
     [JsonProperty("inactiveupdatetype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Inactiveupdatetype { get; set; } 
+    public int? InactiveUpdateType { get; set; } 
 
     [JsonProperty("moveupdatedefault", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Moveupdatedefault { get; set; } 
+    public string? MoveUpdateDefault { get; set; } 
 
     [JsonProperty("showonactivity", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowOnactivity { get; set; } 
+    public bool? ShowOnActivity { get; set; } 
 
     [JsonProperty("values", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<Lookup>? Values { get; set; } 
@@ -76,10 +76,10 @@ public class Field
     public string? NewValues { get; set; } 
 
     [JsonProperty("parenttype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ParenttypeId { get; set; } 
+    public int? ParentTypeId { get; set; } 
 
     [JsonProperty("parenttype_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ParenttypeName { get; set; } 
+    public string? ParentTypeName { get; set; } 
 
     [JsonProperty("mapping_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? MappingId { get; set; } 

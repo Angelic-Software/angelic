@@ -13,7 +13,7 @@ public class TaxRule
     public string? Name { get; set; } 
 
     [JsonProperty("taxid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Taxid { get; set; } 
+    public int? TaxId { get; set; } 
 
     [JsonProperty("sequence", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Sequence { get; set; } 

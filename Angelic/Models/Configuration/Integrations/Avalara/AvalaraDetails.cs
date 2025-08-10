@@ -26,7 +26,7 @@ public class AvalaraDetails
     public bool? NewMethod { get; set; } 
 
     [JsonProperty("companyid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Companyid { get; set; } 
+    public int? CompanyId { get; set; } 
 
     [JsonProperty("client_top_level", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ClientTopLevel { get; set; } 
@@ -50,10 +50,10 @@ public class AvalaraDetails
     public string? DefaultItem { get; set; } 
 
     [JsonProperty("autosyncentities", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Autosyncentities { get; set; } 
+    public bool? AutoSyncEntities { get; set; } 
 
     [JsonProperty("autosyncentitiesonupdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Autosyncentitiesonupdate { get; set; } 
+    public bool? AutoSyncEntitiesOnUpdate { get; set; } 
 
     [JsonProperty("showmessage", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? ShowMessage { get; set; } 
@@ -65,13 +65,13 @@ public class AvalaraDetails
     public string? SyncEntities { get; set; } 
 
     [JsonProperty("defaultcustomercode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? DefaultCustomercode { get; set; } 
+    public string? DefaultCustomerCode { get; set; } 
 
     [JsonProperty("default_customer_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? DefaultCustomerName { get; set; } 
 
     [JsonProperty("disablerecording", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Disablerecording { get; set; } 
+    public bool? DisableRecording { get; set; } 
 
     [JsonProperty("address_mapping_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? AddressMappingType { get; set; } 

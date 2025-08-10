@@ -809,7 +809,7 @@ public partial class Control
     public int? NagTicketType { get; set; }
 
     [JsonProperty("nag_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? NagUserName { get; set; }
+    public string? NagUsername { get; set; }
 
     [JsonProperty("nag_warning_priority", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? NagWarningPriority { get; set; }

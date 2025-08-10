@@ -10,10 +10,10 @@ public class FormattedEmail
     public int? Id { get; set; } 
 
     [JsonProperty("fmid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Fmid { get; set; } 
+    public int? FmId { get; set; } 
 
     [JsonProperty("fmdata", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Fmdata { get; set; } 
+    public string? FmData { get; set; } 
 
     [JsonProperty("customer", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Customer { get; set; } 
@@ -34,7 +34,7 @@ public class FormattedEmail
     public string? Username { get; set; } 
 
     [JsonProperty("timeopened", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Timeopened { get; set; } 
+    public string? TimeOpened { get; set; } 
 
     [JsonProperty("subject", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Subject { get; set; } 

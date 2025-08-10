@@ -21,13 +21,13 @@ namespace Angelic.Models.Configuration.Assets.AssetTypes;
         public string? Value { get; set; } 
 
         [JsonProperty("thirdpartyname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? ThirdPartyname { get; set; } 
+        public string? ThirdPartyName { get; set; } 
 
         [JsonProperty("msid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Msid { get; set; } 
+        public int? MsId { get; set; } 
 
         [JsonProperty("isbladehost", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Isbladehost { get; set; } 
+        public int? IsBladeHost { get; set; } 
 
         [JsonProperty("tags", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Tags { get; set; } 
@@ -60,10 +60,10 @@ namespace Angelic.Models.Configuration.Assets.AssetTypes;
         public bool? PartialMatch { get; set; } 
 
         [JsonProperty("detailsid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Detailsid { get; set; } 
+        public int? DetailsId { get; set; } 
 
         [JsonProperty("userules", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Userules { get; set; } 
+        public bool? UseRules { get; set; } 
 
         [JsonProperty("criteria", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<AssetTypeMappingCriteria>? Criteria { get; set; } 

@@ -19,16 +19,16 @@ public class AssetTypeAccountsMappings
     public string? TenantName { get; set; } 
 
     [JsonProperty("nominalcode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Nominalcode { get; set; } 
+    public string? NominalCode { get; set; } 
 
     [JsonProperty("nominalcode_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? NominalcodeName { get; set; } 
+    public string? NominalCodeName { get; set; } 
 
     [JsonProperty("nominalcode_purchase", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? NominalcodePurchase { get; set; } 
+    public string? NominalCodePurchase { get; set; } 
 
     [JsonProperty("nominalcode_name_purchase", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? NominalcodeNamePurchase { get; set; } 
+    public string? NominalCodeNamePurchase { get; set; } 
 
     [JsonProperty("itemcode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ItemCode { get; set; } 
@@ -37,13 +37,13 @@ public class AssetTypeAccountsMappings
     public string? ItemCodeName { get; set; } 
 
     [JsonProperty("taxcode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Taxcode { get; set; } 
+    public int? TaxCode { get; set; } 
 
     [JsonProperty("tax_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? TaxName { get; set; } 
 
     [JsonProperty("taxcode_purchase", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? TaxcodePurchase { get; set; } 
+    public int? TaxCodePurchase { get; set; } 
 
     [JsonProperty("tax_name_purchase", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? TaxNamePurchase { get; set; } 

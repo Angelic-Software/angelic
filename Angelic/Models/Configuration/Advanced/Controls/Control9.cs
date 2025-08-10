@@ -18,10 +18,10 @@ public partial class Control
         public ICollection<string>? LicenceGuids { get; set; } 
 
         [JsonProperty("atera_alert_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? AteraAlertUserName { get; set; } 
+        public string? AteraAlertUsername { get; set; } 
 
         [JsonProperty("teams_default_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? TeamsDefaultUserName { get; set; } 
+        public string? TeamsDefaultUsername { get; set; } 
 
         [JsonProperty("_exchangeaction", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? ExchangeAction { get; set; } 
@@ -123,10 +123,10 @@ public partial class Control
         public ICollection<IntegrationSiteMapping>? NinjaSiteMappings { get; set; } 
 
         [JsonProperty("ninja_alert_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? NinjaAlertUserName { get; set; } 
+        public string? NinjaAlertUsername { get; set; } 
 
         [JsonProperty("dattormm_alert_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? DattoRmmAlertUserName { get; set; } 
+        public string? DattoRmmAlertUsername { get; set; } 
 
         [JsonProperty("_closealerts", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? CloseAlerts { get; set; } 
@@ -267,7 +267,7 @@ public partial class Control
         public ICollection<IntegrationFieldMapping>? AzureMonitorFieldMappings { get; set; } 
 
         [JsonProperty("azuremonitoruser_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? AzureMonitorUserName { get; set; } 
+        public string? AzureMonitorUsername { get; set; } 
 
         [JsonProperty("syncro_defaultsite_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? SyncroDefaultSiteName { get; set; } 
@@ -288,7 +288,7 @@ public partial class Control
         public string? HaloIntegratorSyncroLastError { get; set; } 
 
         [JsonProperty("syncro_alert_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? SyncroAlertUserName { get; set; } 
+        public string? SyncroAlertUsername { get; set; } 
 
         [JsonProperty("domotz_agentfieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<IntegrationFieldMapping>? DomotzAgentFieldMappings { get; set; } 
@@ -369,7 +369,7 @@ public partial class Control
         public ICollection<ValueLabelIsNewKeyPair>? MerakiImportEntitiesList { get; set; } 
 
         [JsonProperty("automate_alert_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? AutomateAlertUserName { get; set; } 
+        public string? AutomateAlertUsername { get; set; } 
 
         [JsonProperty("lansweeper_exports", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<IntegrationExport>? LansweeperExports { get; set; } 
@@ -444,7 +444,7 @@ public partial class Control
         public string? HaloIntegratorAuvikLastError { get; set; } 
 
         [JsonProperty("auvik_alert_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? AuvikAlertUserName { get; set; } 
+        public string? AuvikAlertUsername { get; set; } 
 
         [JsonProperty("teamsbot_allowed_tenants_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<ValueLabelIsNewKeyPair>? TeamsBotAllowedTenantsList { get; set; } 
@@ -561,7 +561,7 @@ public partial class Control
         public string? HaloIntegratorAddigyLastError { get; set; } 
 
         [JsonProperty("addigy_alert_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? AddigyAlertUserName { get; set; } 
+        public string? AddigyAlertUsername { get; set; } 
 
         [JsonProperty("domotz_sitemappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<IntegrationSiteMapping>? DomotzSiteMappings { get; set; } 
@@ -969,10 +969,10 @@ public partial class Control
         public bool? ClearUnsentEscMsgAttempted { get; set; } 
 
         [JsonProperty("slack_ticket_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? SlackTicketUserName { get; set; } 
+        public string? SlackTicketUsername { get; set; } 
 
         [JsonProperty("slack_command_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? SlackCommandUserName { get; set; } 
+        public string? SlackCommandUsername { get; set; } 
 
         [JsonProperty("_checkexport_returnerrors", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? CheckExportReturnErrors { get; set; } 

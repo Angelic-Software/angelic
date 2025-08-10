@@ -13,196 +13,196 @@ public class NhServerConfig
     public string? Name { get; set; } 
 
     [JsonProperty("acceptattachments", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Acceptattachments { get; set; } 
+    public bool? AcceptAttachments { get; set; } 
 
     [JsonProperty("acceptautoreplycheckbox", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Acceptautoreplycheckbox { get; set; } 
+    public bool? AcceptAutoReplyCheckbox { get; set; } 
 
     [JsonProperty("actionemails", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? ActionEmails { get; set; } 
 
     [JsonProperty("actionsendlimit", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Actionsendlimit { get; set; } 
+    public int? ActionSendLimit { get; set; } 
 
     [JsonProperty("approvalscan", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Approvalscan { get; set; } 
+    public bool? ApprovalScan { get; set; } 
 
     [JsonProperty("assetattachmentmaintenance", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Assetattachmentmaintenance { get; set; } 
+    public bool? AssetAttachmentMaintenance { get; set; } 
 
     [JsonProperty("autocreatedevice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Autocreatedevice { get; set; } 
+    public bool? AutoCreateDevice { get; set; } 
 
     [JsonProperty("autodevicesite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Autodevicesite { get; set; } 
+    public string? AutoDeviceSite { get; set; } 
 
     [JsonProperty("autodevicetype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Autodevicetype { get; set; } 
+    public string? AutoDeviceType { get; set; } 
 
     [JsonProperty("autolinkdevices", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Autolinkdevices { get; set; } 
+    public bool? AutoLinkDevices { get; set; } 
 
     [JsonProperty("automatchlocation2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Automatchlocation2 { get; set; } 
+    public bool? AutoMatchLocation2 { get; set; } 
 
     [JsonProperty("autoondiagram", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Autoondiagram { get; set; } 
+    public bool? AutoOnDiagram { get; set; } 
 
     [JsonProperty("autorequests", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? AutoRequests { get; set; } 
 
     [JsonProperty("calendarsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Calendarsync { get; set; } 
+    public bool? CalendarSync { get; set; } 
 
     [JsonProperty("clearlogboxes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Clearlogboxes { get; set; } 
+    public bool? ClearLogBoxes { get; set; } 
 
     [JsonProperty("confforemails", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Confforemails { get; set; } 
+    public bool? ConfForEmails { get; set; } 
 
     [JsonProperty("datefilter", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? DateFilter { get; set; } 
 
     [JsonProperty("deleteerrors", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Deleteerrors { get; set; } 
+    public bool? DeleteErrors { get; set; } 
 
     [JsonProperty("emailcreatenewuser", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? EmailCreatenewuser { get; set; } 
+    public bool? EmailCreateNewUser { get; set; } 
 
     [JsonProperty("emaillogfolder", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? EmailLogfolder { get; set; } 
+    public string? EmailLogFolder { get; set; } 
 
     [JsonProperty("emailnoack", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? EmailNoack { get; set; } 
+    public bool? EmailNoAck { get; set; } 
 
     [JsonProperty("emailrequesttype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? EmailRequesttype { get; set; } 
+    public string? EmailRequestType { get; set; } 
 
     [JsonProperty("emailsiteint", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Emailsiteint { get; set; } 
+    public int? EmailSiteInt { get; set; } 
 
     [JsonProperty("emailtechieint", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? EmailTechieint { get; set; } 
+    public int? EmailTechIeInt { get; set; } 
 
     [JsonProperty("emailusefullname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? EmailUsefullname { get; set; } 
+    public bool? EmailUseFullName { get; set; } 
 
     [JsonProperty("emailuserdefault", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? EmailUserdefault { get; set; } 
+    public string? EmailUserDefault { get; set; } 
 
     [JsonProperty("emailuserint", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? EmailUserint { get; set; } 
+    public int? EmailUserInt { get; set; } 
 
     [JsonProperty("emailusesitedomain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? EmailUsesitedomain { get; set; } 
+    public bool? EmailUseSiteDomain { get; set; } 
 
     [JsonProperty("errorreportemail", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Errorreportemail { get; set; } 
+    public bool? ErrorReportEmail { get; set; } 
 
     [JsonProperty("errorreportemailaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Errorreportemailaddress { get; set; } 
+    public string? ErrorReportEmailAddress { get; set; } 
 
     [JsonProperty("errorreportrequest", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Errorreportrequest { get; set; } 
+    public bool? ErrorReportRequest { get; set; } 
 
     [JsonProperty("ewslastapptsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Ewslastapptsync { get; set; } 
+    public DateTimeOffset? EwsLastApptSync { get; set; } 
 
     [JsonProperty("forcehtml", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Forcehtml { get; set; } 
+    public bool? ForceHtml { get; set; } 
 
     [JsonProperty("highlevellogging", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Highlevellogging { get; set; } 
+    public bool? HighLevelLogging { get; set; } 
 
     [JsonProperty("ignorecc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Ignorecc { get; set; } 
+    public bool? IgnoreCc { get; set; } 
 
     [JsonProperty("ignoreduplicateemails", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Ignoreduplicateemails { get; set; } 
+    public bool? IgnoreDuplicateEmails { get; set; } 
 
     [JsonProperty("ignoreifsitenotmatched", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Ignoreifsitenotmatched { get; set; } 
+    public bool? IgnoreIfSiteNotMatched { get; set; } 
 
     [JsonProperty("intervalseconds", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Intervalseconds { get; set; } 
+    public int? IntervalSeconds { get; set; } 
 
     [JsonProperty("maintenancerequests", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Maintenancerequests { get; set; } 
+    public bool? MaintenanceRequests { get; set; } 
 
     [JsonProperty("mainttime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Mainttime { get; set; } 
+    public string? MaintTime { get; set; } 
 
     [JsonProperty("nhdsuppliersync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Nhdsuppliersync { get; set; } 
+    public bool? NhdSupplierSync { get; set; } 
 
     [JsonProperty("nooverduescan", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Nooverduescan { get; set; } 
+    public bool? NoOverdueScan { get; set; } 
 
     [JsonProperty("pop3interface", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Pop3Interface { get; set; } 
 
     [JsonProperty("popuptimeoutseconds", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Popuptimeoutseconds { get; set; } 
+    public int? PopupTimeoutSeconds { get; set; } 
 
     [JsonProperty("prepayautotopup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? PrepayAutoTopUp { get; set; } 
 
     [JsonProperty("processxmlfiles", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Processxmlfiles { get; set; } 
+    public bool? ProcessXmlFiles { get; set; } 
 
     [JsonProperty("recurringcalendarsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Recurringcalendarsync { get; set; } 
+    public bool? RecurringCalendarSync { get; set; } 
 
     [JsonProperty("refreshautoinv", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Refreshautoinv { get; set; } 
+    public bool? RefreshAutoInv { get; set; } 
 
     [JsonProperty("requestscan", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Requestscan { get; set; } 
+    public bool? RequestScan { get; set; } 
 
     [JsonProperty("saverawemail", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Saverawemail { get; set; } 
+    public bool? SaveRawEmail { get; set; } 
 
     [JsonProperty("sendsmtp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Sendsmtp { get; set; } 
+    public bool? SendSmtp { get; set; } 
 
     [JsonProperty("sendtray", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Sendtray { get; set; } 
+    public bool? SendTray { get; set; } 
 
     [JsonProperty("sendwelcomeemail", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Sendwelcomeemail { get; set; } 
+    public bool? SendWelcomeEmail { get; set; } 
 
     [JsonProperty("servicestatus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Servicestatus { get; set; } 
+    public bool? ServiceStatus { get; set; } 
 
     [JsonProperty("statussendlimit", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Statussendlimit { get; set; } 
+    public int? StatusSendLimit { get; set; } 
 
     [JsonProperty("storeemailsindb", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Storeemailsindb { get; set; } 
+    public bool? StoreEmailsInDb { get; set; } 
 
     [JsonProperty("timeoutseconds", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Timeoutseconds { get; set; } 
+    public int? TimeoutSeconds { get; set; } 
 
     [JsonProperty("emailsitename", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Emailsitename { get; set; } 
+    public string? EmailSiteName { get; set; } 
 
     [JsonProperty("emailusername", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? EmailUsername { get; set; } 
 
     [JsonProperty("autodevicesitename", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Autodevicesitename { get; set; } 
+    public string? AutoDeviceSiteName { get; set; } 
 
     [JsonProperty("autodevicetypename", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Autodevicetypename { get; set; } 
+    public string? AutoDeviceTypeName { get; set; } 
 
     [JsonProperty("reporttimeout", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Reporttimeout { get; set; } 
+    public int? ReportTimeout { get; set; } 
 
     [JsonProperty("deletecustomdata", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Deletecustomdata { get; set; } 
+    public bool? DeleteCustomData { get; set; } 
 
     [JsonProperty("bulkemail", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Bulkemail { get; set; } 
+    public bool? BulkEmail { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

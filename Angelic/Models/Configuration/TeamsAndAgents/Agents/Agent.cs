@@ -529,7 +529,7 @@ namespace Angelic.Models.Configuration.TeamsAndAgents.Agents;
         public int? DelegationUserId { get; set; } 
 
         [JsonProperty("delegation_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? DelegationUserName { get; set; } 
+        public string? DelegationUsername { get; set; } 
 
         [JsonProperty("_reassign_all_accounts_to_agent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? ReassignAllAccountsToAgent { get; set; } 

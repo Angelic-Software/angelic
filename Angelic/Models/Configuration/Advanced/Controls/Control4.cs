@@ -164,7 +164,7 @@ public partial class Control
         public int? AnonymousUserId { get; set; } 
 
         [JsonProperty("anonymoususer_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? AnonymousUserName { get; set; } 
+        public string? AnonymousUsername { get; set; } 
 
         [JsonProperty("globalaccountsbccemailaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? GlobalAccountsBccEmailAddress { get; set; } 

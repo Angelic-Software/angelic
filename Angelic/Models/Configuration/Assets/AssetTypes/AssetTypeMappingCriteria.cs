@@ -13,7 +13,7 @@ public class AssetTypeMappingCriteria
     public int? XTypeMappingId { get; set; } 
 
     [JsonProperty("tablename", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Tablename { get; set; } 
+    public string? TableName { get; set; }
 
     [JsonProperty("fieldname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? FieldName { get; set; } 

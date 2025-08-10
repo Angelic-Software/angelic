@@ -57,40 +57,40 @@ public class DatabaseLookup
     public string? LookupField { get; set; } 
 
     [JsonProperty("itemdesc1_field", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Itemdesc1Field { get; set; } 
+    public string? ItemDesc1Field { get; set; } 
 
     [JsonProperty("itemdesc2_field", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Itemdesc2Field { get; set; } 
+    public string? ItemDesc2Field { get; set; } 
 
     [JsonProperty("itemdesc3_field", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Itemdesc3Field { get; set; } 
+    public string? ItemDesc3Field { get; set; } 
 
     [JsonProperty("itemvalue_field", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ItemvalueField { get; set; } 
+    public string? ItemValueField { get; set; } 
 
     [JsonProperty("matchedhint", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Matchedhint { get; set; } 
+    public string? MatchedHint { get; set; } 
 
     [JsonProperty("notmatchedhint", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Notmatchedhint { get; set; } 
+    public string? NotMatchedHint { get; set; } 
 
     [JsonProperty("lookuponrefresh", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Lookuponrefresh { get; set; } 
+    public bool? LookupOnRefresh { get; set; } 
 
     [JsonProperty("messagestring_user", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? MessagestringUser { get; set; } 
+    public string? MessageStringUser { get; set; } 
 
     [JsonProperty("messagestring_agent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? MessagestringAgent { get; set; } 
+    public string? MessageStringAgent { get; set; } 
 
     [JsonProperty("showmessagetouseroragent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ShowMessagetouseroragent { get; set; } 
+    public int? ShowMessageToUserOrAgent { get; set; } 
 
     [JsonProperty("messagerequiresconfirmationuser", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Messagerequiresconfirmationuser { get; set; } 
+    public bool? MessageRequiresConfirmationUser { get; set; } 
 
     [JsonProperty("messagerequiresconfirmationagent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Messagerequiresconfirmationagent { get; set; } 
+    public bool? MessageRequiresConfirmationAgent { get; set; } 
 
     [JsonProperty("fields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<DatabaseLookupField>? Fields { get; set; } 
@@ -129,7 +129,7 @@ public class DatabaseLookup
     public int? TicketId { get; set; } 
 
     [JsonProperty("lookupconnectiontype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Lookupconnectiontype { get; set; } 
+    public int? LookupConnectionType { get; set; } 
 
     [JsonProperty("lookup_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? LookupType { get; set; } 
@@ -147,7 +147,7 @@ public class DatabaseLookup
     public string? CertificateName { get; set; } 
 
     [JsonProperty("allowmultipleresults", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Allowmultipleresults { get; set; } 
+    public bool? AllowMultipleResults { get; set; } 
 
     [JsonProperty("lookup_field_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? LookupFieldId { get; set; } 

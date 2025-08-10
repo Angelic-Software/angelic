@@ -199,7 +199,7 @@ public class SalesOrderLine
     public bool? Isgroupdesc { get; set; } 
 
     [JsonProperty("nominalcode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Nominalcode { get; set; } 
+    public string? NominalCode { get; set; } 
 
     [JsonProperty("cost_centre", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? CostCentre { get; set; } 
@@ -274,7 +274,7 @@ public class SalesOrderLine
     public string? ClientName { get; set; } 
 
     [JsonProperty("user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? UserName { get; set; } 
+    public string? Username { get; set; } 
 
     [JsonProperty("user_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? UserId { get; set; } 

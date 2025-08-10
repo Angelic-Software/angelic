@@ -11,7 +11,7 @@ public class CustomTable
     public string? Intent { get; set; } 
 
     [JsonProperty("ctfield", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public CustomField? Ctfield { get; set; } 
+    public CustomField? CtField { get; set; } 
 
     [JsonProperty("customfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<CustomField>? CustomFields { get; set; } 
@@ -38,13 +38,13 @@ public class CustomTable
     public string? DbName { get; set; } 
 
     [JsonProperty("linkto_table_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? LinktoTableId { get; set; } 
+    public int? LinkToTableId { get; set; } 
 
     [JsonProperty("linkto_table_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? LinktoTableGuid { get; set; } 
+    public Guid? LinkToTableGuid { get; set; } 
 
     [JsonProperty("linkto_table_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? LinktoTableName { get; set; } 
+    public string? LinkToTableName { get; set; } 
 
     [JsonProperty("note", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Note { get; set; } 
@@ -80,7 +80,7 @@ public class CustomTable
     public ICollection<FieldInfo>? Fields { get; set; } 
 
     [JsonProperty("customextratableid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Customextratableid { get; set; } 
+    public int? CustomExtraTableId { get; set; } 
 
     [JsonProperty("can_load_data", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? CanLoadData { get; set; } 
@@ -89,13 +89,13 @@ public class CustomTable
     public string? Warning { get; set; } 
 
     [JsonProperty("customtable_orderby", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? CustomTableOrderby { get; set; } 
+    public int? CustomTableOrderBy { get; set; } 
 
     [JsonProperty("customtable_orderby_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? CustomTableOrderbyGuid { get; set; } 
+    public Guid? CustomTableOrderByGuid { get; set; } 
 
     [JsonProperty("customtable_orderby_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? CustomTableOrderbyName { get; set; } 
+    public string? CustomTableOrderByName { get; set; } 
 
     [JsonProperty("_isimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? IsImport { get; set; } 

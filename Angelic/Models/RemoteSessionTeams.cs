@@ -13,13 +13,13 @@ public class RemoteSessionTeams
     public string? Name { get; set; } 
 
     [JsonProperty("thirdpartyname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ThirdPartyname { get; set; } 
+    public string? ThirdPartyName { get; set; } 
 
     [JsonProperty("thirdpartyid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ThirdPartyId { get; set; } 
 
     [JsonProperty("msid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Msid { get; set; } 
+    public int? MsId { get; set; } 
 
     [JsonProperty("active", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Active { get; set; } 

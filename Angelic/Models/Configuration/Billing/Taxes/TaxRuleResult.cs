@@ -10,7 +10,7 @@ public class TaxRuleResult
     public int? Id { get; set; } 
 
     [JsonProperty("tableenum", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Tableenum { get; set; } 
+    public int? TableEnum { get; set; } 
 
     [JsonProperty("tableid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? TableId { get; set; } 
@@ -19,13 +19,13 @@ public class TaxRuleResult
     public int? Lineid { get; set; } 
 
     [JsonProperty("entityid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Entityid { get; set; } 
+    public int? EntityId { get; set; } 
 
     [JsonProperty("taxamount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Taxamount { get; set; } 
+    public double? TaxAmount { get; set; } 
 
     [JsonProperty("taxcode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Taxcode { get; set; } 
+    public string? TaxCode { get; set; } 
 
     [JsonProperty("module_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ModuleId { get; set; } 
@@ -37,10 +37,10 @@ public class TaxRuleResult
     public DateTimeOffset? DateCreated { get; set; } 
 
     [JsonProperty("thirdpartyname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ThirdPartyname { get; set; } 
+    public string? ThirdPartyName { get; set; } 
 
     [JsonProperty("taxid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Taxid { get; set; } 
+    public int? TaxId { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

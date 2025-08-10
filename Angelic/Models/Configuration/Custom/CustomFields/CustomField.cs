@@ -33,28 +33,28 @@ public class CustomField
     public string? Display { get; set; } 
 
     [JsonProperty("characterlimit", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Characterlimit { get; set; } 
+    public int? CharacterLimit { get; set; } 
 
     [JsonProperty("characterlimittype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Characterlimittype { get; set; } 
+    public int? CharacterLimitType { get; set; } 
 
     [JsonProperty("inputtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Inputtype { get; set; } 
+    public int? InputType { get; set; } 
 
     [JsonProperty("copytochild", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Copytochild { get; set; } 
+    public bool? CopyToChild { get; set; } 
 
     [JsonProperty("copytoparent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Copytoparent { get; set; } 
+    public bool? CopyToParent { get; set; } 
 
     [JsonProperty("searchable", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Searchable { get; set; } 
 
     [JsonProperty("ordervalues", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Ordervalues { get; set; } 
+    public bool? OrderValues { get; set; } 
 
     [JsonProperty("ordervaluesby", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Ordervaluesby { get; set; } 
+    public int? OrderValuesBy { get; set; } 
 
     [JsonProperty("database_lookup_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? DatabaseLookupId { get; set; } 
@@ -72,10 +72,10 @@ public class CustomField
     public int? ExtraType { get; set; } 
 
     [JsonProperty("copytochildonupdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Copytochildonupdate { get; set; } 
+    public bool? CopyToChildOnUpdate { get; set; } 
 
     [JsonProperty("copytoparentonupdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Copytoparentonupdate { get; set; } 
+    public bool? CopyToParentOnUpdate { get; set; } 
 
     [JsonProperty("hyperlink", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Hyperlink { get; set; } 
@@ -87,7 +87,7 @@ public class CustomField
     public int? LinkedTableId { get; set; } 
 
     [JsonProperty("showondetailsscreen", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowOndetailsscreen { get; set; } 
+    public bool? ShowOnDetailsScreen { get; set; } 
 
     [JsonProperty("third_party_value", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ThirdPartyValue { get; set; } 
@@ -96,7 +96,7 @@ public class CustomField
     public int? CustomExtraTableId { get; set; } 
 
     [JsonProperty("copytorelated", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Copytorelated { get; set; } 
+    public bool? CopyToRelated { get; set; } 
 
     [JsonProperty("calculation", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Calculation { get; set; } 
@@ -114,7 +114,7 @@ public class CustomField
     public string? Regex { get; set; } 
 
     [JsonProperty("onlyshowforagents", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Onlyshowforagents { get; set; } 
+    public bool? OnlyShowForAgents { get; set; } 
 
     [JsonProperty("is_horizontal", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? IsHorizontal { get; set; } 
@@ -150,7 +150,7 @@ public class CustomField
     public int? TableDataEntryType { get; set; } 
 
     [JsonProperty("showintable", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowIntable { get; set; } 
+    public bool? ShowInTable { get; set; } 
 
     [JsonProperty("table_height", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? TableHeight { get; set; } 
@@ -177,7 +177,7 @@ public class CustomField
     public ICollection<int>? DeleteTheseRows { get; set; } 
 
     [JsonProperty("showinpool", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowInpool { get; set; } 
+    public bool? ShowInPool { get; set; } 
 
     [JsonProperty("allow_pool_override", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? AllowPoolOverride { get; set; } 

@@ -12,10 +12,10 @@ public class Application
     public string? GrantType { get; set; } 
 
     [JsonProperty("loginas_agent_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? LoginasAgentId { get; set; } 
+    public int? LoginAsAgentId { get; set; } 
 
     [JsonProperty("loginas_agent_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? LoginasAgentName { get; set; } 
+    public string? LoginAsAgentName { get; set; } 
 
     [JsonProperty("inactive", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Inactive { get; set; } 
@@ -24,19 +24,19 @@ public class Application
     public string? SystemUse { get; set; } 
 
     [JsonProperty("redirecturi", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Redirecturi { get; set; } 
+    public string? RedirectUri { get; set; } 
 
     [JsonProperty("logoutredirecturi", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Logoutredirecturi { get; set; } 
+    public string? LogoutRedirectUri { get; set; } 
 
     [JsonProperty("cors_whitelist", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? CorsWhitelist { get; set; } 
 
     [JsonProperty("redirecturi_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ValueLabelIsNewKeyPair>? RedirecturiList { get; set; } 
+    public ICollection<ValueLabelIsNewKeyPair>? RedirectUriList { get; set; } 
 
     [JsonProperty("postlogoutredirecturi_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ValueLabelIsNewKeyPair>? PostlogoutredirecturiList { get; set; } 
+    public ICollection<ValueLabelIsNewKeyPair>? PostLogoutRedirectUriList { get; set; } 
 
     [JsonProperty("cors_whitelist_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<ValueLabelIsNewKeyPair>? CorsWhitelistList { get; set; } 
@@ -57,19 +57,19 @@ public class Application
     public string? OrganisationName { get; set; } 
 
     [JsonProperty("loginas_client_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? LoginasClientId { get; set; } 
+    public int? LoginAsClientId { get; set; } 
 
     [JsonProperty("loginas_client_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? LoginasClientName { get; set; } 
+    public string? LoginAsClientName { get; set; } 
 
     [JsonProperty("loginas_supplier_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? LoginasSupplierId { get; set; } 
+    public int? LoginAsSupplierId { get; set; } 
 
     [JsonProperty("loginas_supplier_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? LoginasSupplierName { get; set; } 
+    public string? LoginAsSupplierName { get; set; }
 
     [JsonProperty("loginentity", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Loginentity { get; set; } 
+    public int? LoginEntity { get; set; } 
 
     [JsonProperty("language_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? LanguageId { get; set; } 
@@ -78,7 +78,7 @@ public class Application
     public string? LanguageName { get; set; } 
 
     [JsonProperty("disable_windowsauth", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? DisableWindowsauth { get; set; } 
+    public bool? DisableWindowsAuth { get; set; } 
 
     [JsonProperty("disable_azure", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? DisableAzure { get; set; } 

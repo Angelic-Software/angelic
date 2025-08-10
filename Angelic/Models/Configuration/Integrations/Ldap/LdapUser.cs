@@ -11,13 +11,13 @@ public class LdapUser
     public string? Name { get; set; } 
 
     [JsonProperty("distinguishedname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Distinguishedname { get; set; } 
+    public string? DistinguishedName { get; set; } 
 
     [JsonProperty("userAccountControl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? UserAccountControl { get; set; } 
 
     [JsonProperty("objectguid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Objectguid { get; set; } 
+    public string? ObjectGuid { get; set; } 
 
     [JsonProperty("manager", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Manager { get; set; } 
@@ -29,6 +29,6 @@ public class LdapUser
     public ICollection<StringIdNameKeyPair>? Attributes { get; set; } 
 
     [JsonProperty("uactguidMapping", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? UactguidMapping { get; set; } 
+    public string? UActGuidMapping { get; set; } 
 
 }

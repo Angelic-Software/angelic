@@ -458,7 +458,7 @@ namespace Angelic.Models.Configuration;
         public int? ParentDefaultUser { get; set; } 
 
         [JsonProperty("parentdefaultuser_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? ParentDefaultUserName { get; set; } 
+        public string? ParentDefaultUsername { get; set; } 
 
         [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Warning { get; set; } 

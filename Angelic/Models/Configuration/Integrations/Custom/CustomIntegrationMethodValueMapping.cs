@@ -10,7 +10,7 @@ public class CustomIntegrationMethodValueMapping
     public int? Id { get; set; } 
 
     [JsonProperty("methodvalue_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? MethodvalueId { get; set; } 
+    public int? MethodValueId { get; set; } 
 
     [JsonProperty("sequence", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Sequence { get; set; } 

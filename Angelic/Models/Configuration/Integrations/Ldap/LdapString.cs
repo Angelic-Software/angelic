@@ -18,8 +18,11 @@ public class LdapString
     [JsonProperty("dn", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Dn { get; set; } 
 
+    /// <summary>
+    /// This property contains an underscore because the class name is the same as the property, and this is illegal.
+    /// </summary>
     [JsonProperty("ldapstring", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Ldapstring { get; set; } 
+    public string? _LdapString { get; set; } 
 
     [JsonProperty("site_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? SiteId { get; set; } 
@@ -31,13 +34,13 @@ public class LdapString
     public int? ClientId { get; set; } 
 
     [JsonProperty("lastnewuserdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Lastnewuserdate { get; set; } 
+    public DateTimeOffset? LastNewUserDate { get; set; } 
 
     [JsonProperty("filter", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Filter { get; set; } 
 
     [JsonProperty("agentmapping", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Agentmapping { get; set; } 
+    public bool? AgentMapping { get; set; } 
 
     [JsonProperty("isrecursive", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? IsRecursive { get; set; } 
@@ -52,7 +55,7 @@ public class LdapString
     public ICollection<LdapUser>? Users { get; set; } 
 
     [JsonProperty("cabmapping", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Cabmapping { get; set; } 
+    public bool? CabMapping { get; set; } 
 
     [JsonProperty("cab_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? CabId { get; set; } 
@@ -64,7 +67,7 @@ public class LdapString
     public DateTimeOffset? LastSynced { get; set; } 
 
     [JsonProperty("userrole_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? UserroleId { get; set; } 
+    public int? UserRoleId { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

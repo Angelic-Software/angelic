@@ -40,7 +40,7 @@ public class Expense
     public bool? Invoiceable { get; set; } 
 
     [JsonProperty("ihid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Ihid { get; set; } 
+    public int? IHId { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

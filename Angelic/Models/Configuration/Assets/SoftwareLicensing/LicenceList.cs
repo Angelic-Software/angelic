@@ -108,7 +108,7 @@ public class LicenceList
     public string? ImportType { get; set; } 
 
     [JsonProperty("_importchildren", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Importchildren { get; set; } 
+    public bool? ImportChildren { get; set; } 
 
     [JsonProperty("third_party_product", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ThirdPartyProduct { get; set; } 

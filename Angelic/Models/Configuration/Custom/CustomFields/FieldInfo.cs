@@ -27,7 +27,7 @@ public class FieldInfo
     public string? Label { get; set; } 
 
     [JsonProperty("labellong", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Labellong { get; set; } 
+    public string? LabelLong { get; set; } 
 
     [JsonProperty("summary", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Summary { get; set; } 
@@ -78,28 +78,28 @@ public class FieldInfo
     public bool? Readonly { get; set; } 
 
     [JsonProperty("addunknown", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Addunknown { get; set; } 
+    public bool? AddUnknown { get; set; } 
 
     [JsonProperty("extratype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ExtraType { get; set; } 
 
     [JsonProperty("calcfield", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Calcfield { get; set; } 
+    public string? CalcField { get; set; } 
 
     [JsonProperty("characterlimit", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Characterlimit { get; set; } 
+    public int? CharacterLimit { get; set; } 
 
     [JsonProperty("characterlimittype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Characterlimittype { get; set; } 
+    public int? CharacterLimitType { get; set; } 
 
     [JsonProperty("inputtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Inputtype { get; set; } 
+    public int? InputType { get; set; } 
 
     [JsonProperty("copytochild", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Copytochild { get; set; } 
+    public bool? CopyToChild { get; set; } 
 
     [JsonProperty("copytoparent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Copytoparent { get; set; } 
+    public bool? CopyToParent { get; set; } 
 
     [JsonProperty("searchable", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Searchable { get; set; } 
@@ -114,10 +114,10 @@ public class FieldInfo
     public string? DefaultValue { get; set; } 
 
     [JsonProperty("ordervaluesalphanumerically", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Ordervaluesalphanumerically { get; set; } 
+    public bool? OrderValuesAlphanumerically { get; set; } 
 
     [JsonProperty("ordervalueby", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Ordervalueby { get; set; } 
+    public int? OrderValueBy { get; set; } 
 
     [JsonProperty("defaultvalue_lookup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? DefaultValueLookup { get; set; } 
@@ -168,19 +168,19 @@ public class FieldInfo
     public string? ThirdPartyName { get; set; } 
 
     [JsonProperty("sqllookup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Sqllookup { get; set; } 
+    public string? SqlLookup { get; set; } 
 
     [JsonProperty("copytochildonupdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Copytochildonupdate { get; set; } 
+    public bool? CopyToChildOnUpdate { get; set; } 
 
     [JsonProperty("copytoparentonupdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Copytoparentonupdate { get; set; } 
+    public bool? CopyToParentOnUpdate { get; set; } 
 
     [JsonProperty("showintable", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowIntable { get; set; } 
+    public bool? ShowInTable { get; set; } 
 
     [JsonProperty("importalias", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Importalias { get; set; } 
+    public string? ImportAlias { get; set; } 
 
     [JsonProperty("hyperlink", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Hyperlink { get; set; } 
@@ -195,19 +195,19 @@ public class FieldInfo
     public string? GroupName { get; set; } 
 
     [JsonProperty("_testsql", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Testsql { get; set; } 
+    public bool? TestSql { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 
 
     [JsonProperty("showhintondetails", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowHintondetails { get; set; } 
+    public bool? ShowHintOnDetails { get; set; } 
 
     [JsonProperty("partslookupusedin", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Partslookupusedin { get; set; } 
+    public string? PartsLookupUsedIn { get; set; } 
 
     [JsonProperty("showondetailsscreen", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowOndetailsscreen { get; set; } 
+    public bool? ShowOnDetailsScreen { get; set; } 
 
     [JsonProperty("selection_field_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? SelectionFieldId { get; set; } 
@@ -224,19 +224,19 @@ public class FieldInfo
     public string? VariableFormat2 { get; set; } 
 
     [JsonProperty("customextratableid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Customextratableid { get; set; } 
+    public int? CustomExtraTableId { get; set; } 
 
     [JsonProperty("copytorelated", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Copytorelated { get; set; } 
+    public bool? CopyToRelated { get; set; } 
 
     [JsonProperty("deleteafterclosure", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Deleteafterclosure { get; set; } 
+    public bool? DeleteAfterClosure { get; set; } 
 
     [JsonProperty("deleteafterclosuredays", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Deleteafterclosuredays { get; set; } 
+    public int? DeleteAfterClosureDays { get; set; } 
 
     [JsonProperty("defaultdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Defaultdate { get; set; } 
+    public int? DefaultDate { get; set; } 
 
     [JsonProperty("validation_data", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<CustomFieldValidation>? ValidationData { get; set; } 
@@ -251,10 +251,10 @@ public class FieldInfo
     public string? Regex { get; set; } 
 
     [JsonProperty("onlyshowforagents", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Onlyshowforagents { get; set; } 
+    public bool? OnlyShowForAgents { get; set; } 
 
     [JsonProperty("excludefromallfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ExcludeFromallfields { get; set; } 
+    public bool? ExcludeFromAllFields { get; set; } 
 
     [JsonProperty("mandatory", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Mandatory { get; set; } 
@@ -275,10 +275,10 @@ public class FieldInfo
     public bool? IsHorizontal { get; set; } 
 
     [JsonProperty("sqlcfvariables", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<int>? Sqlcfvariables { get; set; } 
+    public ICollection<int>? SqlCfVariables { get; set; } 
 
     [JsonProperty("showoncrmnote", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowOncrmnote { get; set; } 
+    public bool? ShowOnCrmNote { get; set; } 
 
     [JsonProperty("database_lookup_input", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? DatabaseLookupInput { get; set; } 
@@ -323,7 +323,7 @@ public class FieldInfo
     public int? HintType { get; set; } 
 
     [JsonProperty("defaultdays", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Defaultdays { get; set; } 
+    public int? DefaultDays { get; set; } 
 
     [JsonProperty("new_storage_method", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? NewStorageMethod { get; set; } 
@@ -359,7 +359,7 @@ public class FieldInfo
     public string? ValueProperty { get; set; } 
 
     [JsonProperty("showinpool", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowInpool { get; set; } 
+    public bool? ShowInPool { get; set; } 
 
     [JsonProperty("allow_pool_override", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? AllowPoolOverride { get; set; } 

@@ -476,7 +476,7 @@ public partial class Control
         public bool? ShowUserSiteCustomerNotesOnTicketDetails { get; set; } 
 
         [JsonProperty("lmirescueusername", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? LmiRescueUserName { get; set; } 
+        public string? LmiRescueUsername { get; set; } 
 
         [JsonProperty("expandtimelineitemtofillblock", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? ExpandTimeLineItemToFillBlock { get; set; } 

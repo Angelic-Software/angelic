@@ -73,7 +73,7 @@ public class TicketApproval
     public int? TicketUserId { get; set; } 
 
     [JsonProperty("ticket_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? TicketUserName { get; set; } 
+    public string? TicketUsername { get; set; } 
 
     [JsonProperty("cab_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? CabId { get; set; } 

@@ -719,7 +719,7 @@ public partial class Control
         public ICollection<ValueLabelIsNewKeyPair>? HaloIntegratorIntegrations { get; set; } 
 
         [JsonProperty("splunkuser_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? SplunkUserName { get; set; } 
+        public string? SplunkUsername { get; set; } 
 
         [JsonProperty("ncentral_fieldmappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<IntegrationFieldMapping>? NCentralFieldMappings { get; set; } 
@@ -737,7 +737,7 @@ public partial class Control
         public string? ClientSecretNCentral { get; set; } 
 
         [JsonProperty("ncentraluser_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? NCentralUserName { get; set; } 
+        public string? NCentralUsername { get; set; } 
 
         [JsonProperty("azureconnection", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? AzureConnection { get; set; } 
@@ -917,7 +917,7 @@ public partial class Control
         public string? ClientSecretOrion { get; set; } 
 
         [JsonProperty("orionuser_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? OrionUserName { get; set; } 
+        public string? OrionUsername { get; set; } 
 
         [JsonProperty("halointegrator_orion", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? HaloIntegratorOrion { get; set; } 
@@ -953,7 +953,7 @@ public partial class Control
         public ValueLabelIsNewKeyPair? ItemDefaultAssetAccount { get; set; } 
 
         [JsonProperty("socuser_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? SocUserName { get; set; } 
+        public string? SocUsername { get; set; } 
 
         [JsonProperty("client_secret_device42", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? ClientSecretDevice42 { get; set; } 

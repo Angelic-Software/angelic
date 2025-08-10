@@ -36,8 +36,8 @@ internal class AngelicTokenService(IOptionsSnapshot<AngelicClientOptions> angeli
             throw new InvalidOperationException("One or more Halo API configuration values (Url, ClientId, ClientSecret) are missing or empty.");
         }
         
-        RestClient restClient = new RestClient(haloUrl);
-        RestRequest request = new RestRequest("auth/token", Method.Post);
+        RestClient restClient = new(haloUrl);
+        RestRequest request = new("auth/token", Method.Post);
         
         request.AddHeader("Content-Type", "application/x-www-form-urlencoded");
 

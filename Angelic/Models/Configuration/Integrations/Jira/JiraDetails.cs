@@ -49,7 +49,7 @@ public class JiraDetails
     public int? DefaultUser { get; set; } // Changed from DefaultUser
 
     [JsonProperty("defaultuser_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? DefaultUserName { get; set; } // Changed from DefaultUser_name
+    public string? DefaultUsername { get; set; } // Changed from DefaultUser_name
 
     [JsonProperty("visibletoendusers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? VisibleToEndUsers { get; set; } // Changed from Visibletoendusers

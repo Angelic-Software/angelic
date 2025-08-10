@@ -33,7 +33,7 @@ namespace Angelic.Models.Configuration.Integrations.Myob;
         public string? NewClientSecret { get; set; } 
 
         [JsonProperty("_exchangecode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Exchangecode { get; set; } 
+        public bool? ExchangeCode { get; set; } 
 
         [JsonProperty("authorized", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Authorized { get; set; } 
@@ -45,31 +45,31 @@ namespace Angelic.Models.Configuration.Integrations.Myob;
         public string? ClientId { get; set; } 
 
         [JsonProperty("defaulttaxcodeid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? DefaultTaxcodeid { get; set; } 
+        public int? DefaultTaxCodeId { get; set; } 
 
         [JsonProperty("defaulttaxcodename", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? DefaultTaxcodename { get; set; } 
+        public string? DefaultTaxCodeName { get; set; } 
 
         [JsonProperty("clienttoplevel", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Clienttoplevel { get; set; } 
+        public int? ClientTopLevel { get; set; } 
 
         [JsonProperty("defaultitemgroup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? DefaultItemGroup { get; set; } 
 
         [JsonProperty("defaultsalesaccountid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? DefaultSalesaccountid { get; set; } 
+        public int? DefaultSalesAccountId { get; set; } 
 
         [JsonProperty("defaultsalesaccountname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? DefaultSalesaccountname { get; set; } 
+        public string? DefaultSalesAccountName { get; set; } 
 
         [JsonProperty("defaultexpenseaccountid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? DefaultExpenseaccountid { get; set; } 
+        public int? DefaultExpenseAccountId { get; set; } 
 
         [JsonProperty("defaultexpenseaccountname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? DefaultExpenseaccountname { get; set; } 
+        public string? DefaultExpenseAccountName { get; set; } 
 
         [JsonProperty("enablesync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Enablesync { get; set; } 
+        public bool? EnableSync { get; set; } 
 
         [JsonProperty("syncentities", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? SyncEntities { get; set; } 
@@ -78,16 +78,16 @@ namespace Angelic.Models.Configuration.Integrations.Myob;
         public bool? ShowMessage { get; set; } 
 
         [JsonProperty("defaultinvoiceitem", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? DefaultInvoiceitem { get; set; } 
+        public int? DefaultInvoiceItem { get; set; } 
 
         [JsonProperty("defaultorderitem", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? DefaultOrderitem { get; set; } 
+        public int? DefaultOrderItem { get; set; } 
 
         [JsonProperty("suppliertoplevel", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Suppliertoplevel { get; set; } 
+        public int? SupplierTopLevel { get; set; } 
 
         [JsonProperty("suppliernamefield", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Suppliernamefield { get; set; } 
+        public int? SupplierNameField { get; set; } 
 
         [JsonProperty("username", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Username { get; set; } 

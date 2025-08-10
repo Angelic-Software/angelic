@@ -22,13 +22,13 @@ public class CustomIntegration
     public int? ModuleId { get; set; } 
 
     [JsonProperty("authorizationtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Authorizationtype { get; set; } 
+    public int? AuthorizationType { get; set; } 
 
     [JsonProperty("granttype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Granttype { get; set; } 
+    public int? GrantType { get; set; } 
 
     [JsonProperty("authorizationurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Authorizationurl { get; set; } 
+    public string? AuthorizationUrl { get; set; } 
 
     [JsonProperty("client_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ClientId { get; set; } 
@@ -43,7 +43,7 @@ public class CustomIntegration
     public string? NewPassword { get; set; } 
 
     [JsonProperty("tokenurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Tokenurl { get; set; } 
+    public string? TokenUrl { get; set; } 
 
     [JsonProperty("scope", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Scope { get; set; } 
@@ -53,23 +53,23 @@ public class CustomIntegration
 
     [JsonProperty("headername", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     [System.ComponentModel.DataAnnotations.StringLength(100)]
-    public string? Headername { get; set; } 
+    public string? HeaderName { get; set; } 
 
     [JsonProperty("headerprefix", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     [System.ComponentModel.DataAnnotations.StringLength(100)]
-    public string? Headerprefix { get; set; } 
+    public string? HeaderPrefix { get; set; } 
 
     [JsonProperty("algorithm", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Algorithm { get; set; } 
 
     [JsonProperty("bearername", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Bearername { get; set; } 
+    public string? BearerName { get; set; } 
 
     [JsonProperty("bearerlocation", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Bearerlocation { get; set; } 
+    public int? BearerLocation { get; set; } 
 
     [JsonProperty("resourcebaseurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Resourcebaseurl { get; set; } 
+    public string? ResourceBaseUrl { get; set; } 
 
     [JsonProperty("certificate_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? CertificateId { get; set; } 

@@ -39,10 +39,10 @@ public class AssetGroup
     public bool? ShowAsEquip { get; set; } 
 
     [JsonProperty("showwarningifonrequest", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowWarningifonrequest { get; set; } 
+    public bool? ShowWarningIfOnRequest { get; set; } 
 
     [JsonProperty("moveassetonrequest", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Moveassetonrequest { get; set; } 
+    public bool? MoveAssetOnRequest { get; set; } 
 
     [JsonProperty("defaultsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? DefaultSite { get; set; } 
@@ -66,25 +66,25 @@ public class AssetGroup
     public bool? IsImport { get; set; } 
 
     [JsonProperty("isfixedasset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isfixedasset { get; set; } 
+    public bool? IsFixedAsset { get; set; } 
 
     [JsonProperty("nominalcode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Nominalcode { get; set; } 
+    public string? NominalCode { get; set; } 
 
     [JsonProperty("nominalcode_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? NominalcodeName { get; set; } 
+    public string? NominalCodeName { get; set; } 
 
     [JsonProperty("nominalcodepurchase", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Nominalcodepurchase { get; set; } 
+    public string? NominalCodePurchase { get; set; } 
 
     [JsonProperty("nominalcode_name_purchase", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? NominalcodeNamePurchase { get; set; } 
+    public string? NominalCodeNamePurchase { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 
 
     [JsonProperty("tcsnote", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Tcsnote { get; set; } 
+    public string? TcsNote { get; set; } 
 
     [JsonProperty("accounts_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<AssetTypeAccountsMappings>? AccountsMappings { get; set; } 
@@ -123,7 +123,7 @@ public class AssetGroup
     public int? ImportDetailsId { get; set; } 
 
     [JsonProperty("multipleaccountstenants", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Multipleaccountstenants { get; set; } 
+    public bool? MultipleAccountsTenants { get; set; } 
 
     [JsonProperty("invoice_class", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? InvoiceClass { get; set; } 
@@ -141,7 +141,7 @@ public class AssetGroup
     public bool? ItemRecurringDefault { get; set; } 
 
     [JsonProperty("item_donttrackstock_default", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ItemDontTrackstockDefault { get; set; } 
+    public bool? ItemDontTrackStockDefault { get; set; } 
 
     [JsonProperty("item_doesnotneedconsigning_default", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? ItemDoesNotNeedConsigningDefault { get; set; } 

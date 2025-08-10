@@ -14,7 +14,7 @@ namespace Angelic.Models.Configuration.Integrations.Soc;
         public string? Details { get; set; } 
 
         [JsonProperty("userName", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? UserName { get; set; } 
+        public string? Username { get; set; } 
 
         [JsonProperty("isMultiResponder", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsMultiResponder { get; set; } 

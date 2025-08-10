@@ -375,7 +375,7 @@ public class TicketListQueryParams
     public string? SearchSupplierReference { get; set; }
 
     /// <param name="search_user_name">(string) Returns tickets based on users matching the search.</param>
-    public string? SearchUserName { get; set; }
+    public string? SearchUsername { get; set; }
 
     /// <param name="search_version">(string) Returns tickets based on the software version matching the search.</param>
     public string? SearchVersion { get; set; }
@@ -456,7 +456,7 @@ public class TicketListQueryParams
     public int? UserId { get; set; }
 
     /// <param name="username">(string) Filters by the specified username.</param>
-    public string? UserName { get; set; }
+    public string? Username { get; set; }
 
     /// <param name="utcoffsetQuery">(double) Adds an offset to the UTC date.</param>
     public double? UtcOffsetQuery { get; set; }

@@ -37,13 +37,13 @@ public class ChargeRate
     public double? Increment { get; set; } 
 
     [JsonProperty("oohmultiplier", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Oohmultiplier { get; set; } 
+    public double? OohMultiplier { get; set; } 
 
     [JsonProperty("holidaymultiplier", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Holidaymultiplier { get; set; } 
+    public double? HolidayMultiplier { get; set; } 
 
     [JsonProperty("weekendmultiplier", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Weekendmultiplier { get; set; } 
+    public double? WeekendMultiplier { get; set; } 
 
     [JsonProperty("surcharge", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Surcharge { get; set; } 
@@ -52,7 +52,7 @@ public class ChargeRate
     public int? Round { get; set; } 
 
     [JsonProperty("useagentworkinghours", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Useagentworkinghours { get; set; } 
+    public bool? UseAgentWorkingHours { get; set; } 
 
     [JsonProperty("use_budget_rate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? UseBudgetRate { get; set; } 
@@ -73,10 +73,10 @@ public class ChargeRate
     public int? TravelSurchargeId { get; set; } 
 
     [JsonProperty("contractmultiplier", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Contractmultiplier { get; set; } 
+    public double? ContractMultiplier { get; set; } 
 
     [JsonProperty("rateoverride", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Rateoverride { get; set; } 
+    public double? RateOverride { get; set; } 
 
     [JsonProperty("override_surcharge", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? OverrideSurcharge { get; set; } 

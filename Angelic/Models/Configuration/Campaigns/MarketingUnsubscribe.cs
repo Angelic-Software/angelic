@@ -25,7 +25,7 @@ public class MarketingUnsubscribe
     public DateTimeOffset? DateUnsubscribed { get; set; } 
 
     [JsonProperty("user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? UserName { get; set; } 
+    public string? Username { get; set; } 
 
     [JsonProperty("mailcampaign_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? MailCampaignName { get; set; } 

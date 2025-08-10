@@ -12,7 +12,7 @@ public class Lookup
     public string? Intent { get; set; } 
 
     [JsonProperty("lookupid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Lookupid { get; set; } 
+    public int? LookupId { get; set; } 
 
     [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Id { get; set; } 
@@ -123,7 +123,7 @@ public class Lookup
     public string? DynamicsCompanyName { get; set; } 
 
     [JsonProperty("valueint1", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Valueint1 { get; set; } 
+    public int? ValueInt1 { get; set; } 
 
     [JsonProperty("linked_item", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? LinkedItem { get; set; } 

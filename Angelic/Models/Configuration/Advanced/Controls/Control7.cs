@@ -421,7 +421,7 @@ public partial class Control
         public string? FreshdeskStatusFilter { get; set; } 
 
         [JsonProperty("freshdesk_matchusername", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? FreshdeskMatchUserName { get; set; } 
+        public bool? FreshdeskMatchUsername { get; set; } 
 
         [JsonProperty("enhancedAnnouncement", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? EnhancedAnnouncement { get; set; } 
@@ -723,7 +723,7 @@ public partial class Control
         public int? DatadogTicketType { get; set; } 
 
         [JsonProperty("datadog_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? DatadogUserName { get; set; } 
+        public string? DatadogUsername { get; set; } 
 
         [JsonProperty("truncate_salesmb_reply_chain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? TruncateSalesMbReplyChain { get; set; } 

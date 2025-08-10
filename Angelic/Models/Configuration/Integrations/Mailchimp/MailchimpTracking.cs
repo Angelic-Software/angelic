@@ -19,13 +19,13 @@ public class MailchimpTracking
     public bool? GoalTracking { get; set; } 
 
     [JsonProperty("ecomm360", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Ecomm360 { get; set; } 
+    public bool? EComm360 { get; set; } 
 
     [JsonProperty("google_analytics", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? GoogleAnalytics { get; set; } 
 
     [JsonProperty("clicktale", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Clicktale { get; set; } 
+    public string? ClickTale { get; set; } 
 
     [JsonProperty("salesforce", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public MailchimpSalesforce? Salesforce { get; set; } 

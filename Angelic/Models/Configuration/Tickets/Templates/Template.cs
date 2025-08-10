@@ -367,7 +367,7 @@ public class Template
     public int? UserId { get; set; } 
 
     [JsonProperty("user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? UserName { get; set; } 
+    public string? Username { get; set; } 
 
     [JsonProperty("updateparent_status_close", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? UpdateparentStatusClose { get; set; } 

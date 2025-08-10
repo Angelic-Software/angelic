@@ -31,7 +31,7 @@ public class CabHeader
     public ICollection<CabMember>? Members { get; set; } 
 
     [JsonProperty("ldapstring", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Ldapstring { get; set; } 
+    public string? LdapString { get; set; } 
 
     [JsonProperty("roles", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<CabRole>? Roles { get; set; } 

@@ -10,28 +10,28 @@ public class EmailRuleFieldMapping
     public int? Id { get; set; } 
 
     [JsonProperty("emailruleid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? EmailRuleid { get; set; } 
+    public int? EmailRuleId { get; set; } 
 
     [JsonProperty("fieldid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? FieldId { get; set; } 
 
     [JsonProperty("fieldtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Fieldtype { get; set; } 
+    public int? FieldType { get; set; } 
 
     [JsonProperty("searchtext", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Searchtext { get; set; } 
+    public string? SearchText { get; set; } 
 
     [JsonProperty("starttag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Starttag { get; set; } 
+    public string? StartTag { get; set; } 
 
     [JsonProperty("endtag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Endtag { get; set; } 
+    public string? EndTag { get; set; } 
 
     [JsonProperty("value", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Value { get; set; } 
 
     [JsonProperty("searchresult", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Searchresult { get; set; } 
+    public string? SearchResult { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

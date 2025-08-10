@@ -25,7 +25,7 @@ public class MattermostDetails
     public string? Code { get; set; } 
 
     [JsonProperty("_exchangecode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Exchangecode { get; set; } 
+    public bool? ExchangeCode { get; set; } 
 
     [JsonProperty("authorized", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Authorized { get; set; } 
@@ -34,10 +34,10 @@ public class MattermostDetails
     public ICollection<MattermostChannelDetails>? Channels { get; set; } 
 
     [JsonProperty("enableintegrator", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Enableintegrator { get; set; } 
+    public bool? EnableIntegrator { get; set; } 
 
     [JsonProperty("integratorhours", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Integratorhours { get; set; } 
+    public int? IntegratorHours { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

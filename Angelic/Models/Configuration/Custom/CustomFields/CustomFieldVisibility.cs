@@ -40,7 +40,7 @@ public class CustomFieldVisibility
     public bool? ValueModified { get; set; } 
 
     [JsonProperty("conditiontype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Conditiontype { get; set; } 
+    public int? ConditionType { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

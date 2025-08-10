@@ -25,7 +25,7 @@ public class LogicMonitorWebhook
     public string? Host { get; set; } 
 
     [JsonProperty("datasource", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Datasource { get; set; } 
+    public string? DataSource { get; set; } 
 
     [JsonProperty("admin", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Admin { get; set; } 

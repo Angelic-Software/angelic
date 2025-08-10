@@ -37,19 +37,19 @@ public class OutgoingEmail
     public string? LikelyCause { get; set; } 
 
     [JsonProperty("changeseq", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Changeseq { get; set; } 
+    public int? ChangeSeq { get; set; } 
 
     [JsonProperty("type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Type { get; set; } 
 
     [JsonProperty("idone", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Idone { get; set; } 
+    public int? IdOne { get; set; } 
 
     [JsonProperty("idtwo", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Idtwo { get; set; } 
+    public int? IdTwo { get; set; } 
 
     [JsonProperty("actiondate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Actiondate { get; set; } 
+    public DateTimeOffset? ActionDate { get; set; } 
 
     [JsonProperty("error", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Error { get; set; } 

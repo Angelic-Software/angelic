@@ -25,7 +25,7 @@ public class DistributionListsLog
     public DateTimeOffset? DateTime { get; set; } 
 
     [JsonProperty("emailsubject", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Emailsubject { get; set; } 
+    public string? EmailSubject { get; set; } 
 
     [JsonProperty("emailbody", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? EmailBody { get; set; } 
@@ -34,6 +34,6 @@ public class DistributionListsLog
     public string? ActionDesc { get; set; } 
 
     [JsonProperty("user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? UserName { get; set; } 
+    public string? Username { get; set; } 
 
 }

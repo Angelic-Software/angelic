@@ -11,7 +11,7 @@ public class CustomTableRow
     public int? Id { get; set; } 
 
     [JsonProperty("fkid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Fkid { get; set; } 
+    public int? FkId { get; set; } 
 
     [JsonProperty("display", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Display { get; set; } 

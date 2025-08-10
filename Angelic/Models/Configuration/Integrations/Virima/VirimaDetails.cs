@@ -24,10 +24,10 @@ public class VirimaDetails
     public string? NewIntegrationKey { get; set; } 
 
     [JsonProperty("default_devicesite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? DefaultDevicesite { get; set; } 
+    public int? DefaultDeviceSite { get; set; } 
 
     [JsonProperty("default_devicesite_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? DefaultDevicesiteName { get; set; } 
+    public string? DefaultDeviceSiteName { get; set; } 
 
     [JsonProperty("default_devicetype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? DefaultDeviceType { get; set; } 
@@ -54,7 +54,7 @@ public class VirimaDetails
     public DateTimeOffset? LastSyncDate { get; set; } 
 
     [JsonProperty("lastsyncerror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? LastSyncEror { get; set; } 
+    public string? LastSyncError { get; set; } 
 
     [JsonProperty("delete_devices", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? DeleteDevices { get; set; } 

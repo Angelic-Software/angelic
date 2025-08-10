@@ -18,7 +18,7 @@ public class KandjiDetails
     public string? Url { get; set; } 
 
     [JsonProperty("apiurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Apiurl { get; set; } 
+    public string? ApiUrl { get; set; } 
 
     [JsonProperty("new_integration_key", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? NewIntegrationKey { get; set; } 
@@ -27,10 +27,10 @@ public class KandjiDetails
     public bool? NewIntegrationMethod { get; set; } 
 
     [JsonProperty("default_devicesite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? DefaultDevicesite { get; set; } 
+    public int? DefaultDeviceSite { get; set; } 
 
     [JsonProperty("default_devicesite_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? DefaultDevicesiteName { get; set; } 
+    public string? DefaultDeviceSiteName { get; set; } 
 
     [JsonProperty("default_devicetype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? DefaultDeviceType { get; set; } 
@@ -51,13 +51,13 @@ public class KandjiDetails
     public ICollection<IntegrationSiteMapping>? SiteMappings { get; set; } 
 
     [JsonProperty("enableintegrator", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Enableintegrator { get; set; } 
+    public bool? EnableIntegrator { get; set; } 
 
     [JsonProperty("lastsyncdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? LastSyncDate { get; set; } 
 
     [JsonProperty("lastsyncerror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? LastSyncEror { get; set; } 
+    public string? LastSyncError { get; set; } 
 
     [JsonProperty("delete_devices", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? DeleteDevices { get; set; } 

@@ -25,55 +25,55 @@ public class NCentralDetails
     public int? TopLevel { get; set; } 
 
     [JsonProperty("dontsyncaddr", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? DontSyncaddr { get; set; } 
+    public bool? DontSyncAddr { get; set; } 
 
     [JsonProperty("defassettypegroup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Defassettypegroup { get; set; } 
+    public int? DefAssetTypeGroup { get; set; } 
 
     [JsonProperty("defassettypegroup_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? DefassettypegroupName { get; set; } 
+    public string? DefAssetTypeGroupName { get; set; } 
 
     [JsonProperty("newmethod", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? NewMethod { get; set; } 
 
     [JsonProperty("alerttickettype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Alerttickettype { get; set; } 
+    public int? AlertTicketType { get; set; } 
 
     [JsonProperty("tickettype_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? TicketTypeName { get; set; } 
 
     [JsonProperty("alertticketuser", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Alertticketuser { get; set; } 
+    public int? AlertTicketUser { get; set; } 
 
     [JsonProperty("user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? UserName { get; set; } 
+    public string? UserUNDERSCOREname { get; set; } 
 
     [JsonProperty("alertusername", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Alertusername { get; set; } 
+    public string? AlertUsername { get; set; } 
 
     [JsonProperty("alertclientid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Alertclientid { get; set; } 
+    public string? AlertClientId { get; set; } 
 
     [JsonProperty("syncentities", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? SyncEntities { get; set; } 
 
     [JsonProperty("enableintegrator", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Enableintegrator { get; set; } 
+    public bool? EnableIntegrator { get; set; } 
 
     [JsonProperty("lastsyncdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? LastSyncDate { get; set; } 
 
     [JsonProperty("lastsyncerror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? LastSyncEror { get; set; } 
+    public string? LastSyncError { get; set; } 
 
     [JsonProperty("reqcredsremote", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Reqcredsremote { get; set; } 
+    public bool? ReqCredsRemote { get; set; } 
 
     [JsonProperty("deactivateclients", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Deactivateclients { get; set; } 
+    public bool? DeActivateClients { get; set; } 
 
     [JsonProperty("deactivateassets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Deactivateassets { get; set; } 
+    public bool? DeActivateAssets { get; set; } 
 
     [JsonProperty("asset_type_choice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? AssetTypeChoice { get; set; } 

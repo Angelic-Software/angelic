@@ -22,7 +22,7 @@ public class WordpressDetails
     public string? Code { get; set; } 
 
     [JsonProperty("_exchangecode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Exchangecode { get; set; } 
+    public bool? ExchangeCode { get; set; } 
 
     [JsonProperty("authorized", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Authorized { get; set; } 

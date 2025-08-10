@@ -46,7 +46,7 @@ public class AssetChange
     public int? SoftwareUserId { get; set; } 
 
     [JsonProperty("software_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? SoftwareUserName { get; set; } 
+    public string? SoftwareUsername { get; set; } 
 
     [JsonProperty("old_site", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? OldSite { get; set; } 

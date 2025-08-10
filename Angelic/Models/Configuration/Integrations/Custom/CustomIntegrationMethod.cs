@@ -43,7 +43,7 @@ public class CustomIntegrationMethod
     public int? Method { get; set; } 
 
     [JsonProperty("authorizationtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Authorizationtype { get; set; } 
+    public int? AuthorizationType { get; set; } 
 
     [JsonProperty("requesttype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? RequestType { get; set; } 
@@ -52,7 +52,7 @@ public class CustomIntegrationMethod
     public int? ResponseType { get; set; } 
 
     [JsonProperty("requestbody", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Requestbody { get; set; } 
+    public string? RequestBody { get; set; } 
 
     [JsonProperty("log_retention_policy_days", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? LogRetentionPolicyDays { get; set; } 

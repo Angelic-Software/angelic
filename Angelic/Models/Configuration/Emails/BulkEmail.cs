@@ -10,7 +10,7 @@ public class BulkEmail
     public int? Id { get; set; } 
 
     [JsonProperty("serviceid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Serviceid { get; set; } 
+    public int? ServiceId { get; set; } 
 
     [JsonProperty("subject", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Subject { get; set; } 
@@ -22,7 +22,7 @@ public class BulkEmail
     public DateTimeOffset? Timestamp { get; set; } 
 
     [JsonProperty("service_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ServiceId { get; set; } 
+    public int? ServiceIdWithUnderscore { get; set; } 
 
     [JsonProperty("status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Status { get; set; } 
@@ -34,16 +34,16 @@ public class BulkEmail
     public DateTimeOffset? LastAttemptDate { get; set; } 
 
     [JsonProperty("mailcampaignid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? MailCampaignid { get; set; } 
+    public int? MailCampaignId { get; set; } 
 
     [JsonProperty("mailcampaignemailid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? MailCampaignemailid { get; set; } 
+    public int? MailCampaignEmailId { get; set; } 
 
     [JsonProperty("mailboxfrom", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Mailboxfrom { get; set; } 
+    public int? MailboxFrom { get; set; } 
 
     [JsonProperty("mailboxreplyto", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Mailboxreplyto { get; set; } 
+    public string? MailboxReplyTo { get; set; } 
 
     [JsonProperty("trace", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<Trace>? Trace { get; set; } 

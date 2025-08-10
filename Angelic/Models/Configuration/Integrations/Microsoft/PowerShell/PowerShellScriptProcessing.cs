@@ -10,7 +10,7 @@ public class PowerShellScriptProcessing
     public int? Id { get; set; } 
 
     [JsonProperty("pssid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Pssid { get; set; } 
+    public int? PssId { get; set; } 
 
     [JsonProperty("faultid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? FaultId { get; set; } 
@@ -19,7 +19,7 @@ public class PowerShellScriptProcessing
     public bool? Processed { get; set; } 
 
     [JsonProperty("failactionadded", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Failactionadded { get; set; } 
+    public bool? FailActionAdded { get; set; } 
 
     [JsonProperty("execution_parameters", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public IDictionary<string, object?>? ExecutionParameters { get; set; } 
@@ -40,7 +40,7 @@ public class PowerShellScriptProcessing
     public bool? Requeue { get; set; } 
 
     [JsonProperty("requeued", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Requeued { get; set; } 
+    public bool? ReQueued { get; set; } 
 
     [JsonProperty("rule_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? RuleId { get; set; } 

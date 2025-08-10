@@ -59,7 +59,7 @@ public class TimesheetEvent
     public int? SiteId { get; set; } 
 
     [JsonProperty("user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? UserName { get; set; } 
+    public string? Username { get; set; } 
 
     [JsonProperty("charge_rate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ChargeRate { get; set; } 

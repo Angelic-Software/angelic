@@ -521,7 +521,7 @@ public class TicketType
     public string? DefaultChangeinformationHtml { get; set; } 
 
     [JsonProperty("isbillable", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isbillable { get; set; } 
+    public bool? IsBillable { get; set; } 
 
     [JsonProperty("items_are_billable", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? ItemsAreBillable { get; set; } 

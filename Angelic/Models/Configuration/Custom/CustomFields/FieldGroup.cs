@@ -49,33 +49,33 @@ public class FieldGroup
     public ICollection<CustomFieldVisibility>? VisibilityConditions { get; set; } 
 
     [JsonProperty("endusernew", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? EndUsernew { get; set; } 
+    public int? EndUserNew { get; set; } 
 
     [JsonProperty("enduserdetail", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? EndUserdetail { get; set; } 
+    public int? EndUserDetail { get; set; } 
 
     [JsonProperty("technew", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Technew { get; set; } 
+    public int? TechNew { get; set; } 
 
     [JsonProperty("techdetail", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? TechDetail { get; set; } 
 
     [JsonProperty("enduseraction", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? EndUseraction { get; set; } 
+    public int? EndUserAction { get; set; } 
 
     [JsonProperty("techaction", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Techaction { get; set; } 
+    public int? TechAction { get; set; } 
 
     [JsonProperty("techdetailhideifempty", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? TechDetailhideifempty { get; set; } 
+    public bool? TechDetailHideIfEmpty { get; set; } 
 
     [JsonProperty("enduserdetailhideifempty", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? EndUserdetailhideifempty { get; set; } 
+    public bool? EndUserDetailHideIfEmpty { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 
 
     [JsonProperty("collapsedbydefault", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Collapsedbydefault { get; set; } 
+    public bool? CollapsedByDefault { get; set; } 
 
 }

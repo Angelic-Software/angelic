@@ -19,7 +19,7 @@ public class IntegrationRequest
     public string? Type { get; set; } 
 
     [JsonProperty("msid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Msid { get; set; } 
+    public int? MsId { get; set; } 
 
     [JsonProperty("request_body", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? RequestBody { get; set; } 

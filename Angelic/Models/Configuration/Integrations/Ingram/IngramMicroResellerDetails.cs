@@ -59,7 +59,7 @@ public class IngramMicroResellerDetails
     public int? OrderStatusCanceled { get; set; } 
 
     [JsonProperty("order_status_backordered", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? OrderStatusBackordered { get; set; } 
+    public int? OrderStatusBackOrdered { get; set; } 
 
     [JsonProperty("order_status_processing", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? OrderStatusProcessing { get; set; } 
@@ -86,7 +86,7 @@ public class IngramMicroResellerDetails
     public string? OrderedStatusCanceledName { get; set; } 
 
     [JsonProperty("order_status_backordered_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? OrderStatusBackorderedName { get; set; } 
+    public string? OrderStatusBackOrderedName { get; set; } 
 
     [JsonProperty("order_status_processing_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? OrderStatusProcessingName { get; set; } 

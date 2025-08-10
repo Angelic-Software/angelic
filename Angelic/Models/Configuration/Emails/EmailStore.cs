@@ -15,7 +15,7 @@ public class EmailStore
     public int? Ref { get; set; } 
 
     [JsonProperty("emailsubject", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Emailsubject { get; set; } 
+    public string? EmailSubject { get; set; } 
 
     [JsonProperty("emailbody", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? EmailBody { get; set; } 
@@ -48,16 +48,16 @@ public class EmailStore
     public string? EmailBcc { get; set; } 
 
     [JsonProperty("keymessage", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Keymessage { get; set; } 
+    public string? KeyMessage { get; set; } 
 
     [JsonProperty("reply_direct", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? ReplyDirect { get; set; } 
 
     [JsonProperty("replyaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Replyaddress { get; set; } 
+    public string? ReplyAddress { get; set; } 
 
     [JsonProperty("addactionaftersending", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Addactionaftersending { get; set; } 
+    public bool? AddActionAfterSending { get; set; } 
 
     [JsonProperty("mailbox_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? MailboxId { get; set; } 
@@ -81,7 +81,7 @@ public class EmailStore
     public Mailbox? TestCredentials { get; set; } 
 
     [JsonProperty("_emailsent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Emailsent { get; set; } 
+    public bool? EmailSent { get; set; } 
 
     [JsonProperty("attachments", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<Attachment>? Attachments { get; set; } 

@@ -16,10 +16,10 @@ public class IntegrationFieldMapping
     public string? Name { get; set; } 
 
     [JsonProperty("thirdpartyname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ThirdPartyname { get; set; } 
+    public string? ThirdPartyName { get; set; } 
 
     [JsonProperty("msid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Msid { get; set; } 
+    public int? MsId { get; set; } 
 
     [JsonProperty("typeid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Typeid { get; set; } 

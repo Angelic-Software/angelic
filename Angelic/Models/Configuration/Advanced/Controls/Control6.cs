@@ -831,7 +831,7 @@ public partial class Control
         public string? TeamsConnectedUserId { get; set; } 
 
         [JsonProperty("teams_connected_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? TeamsConnectedUserName { get; set; } 
+        public string? TeamsConnectedUsername { get; set; } 
 
         [JsonProperty("default_quote_ticket_approval", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? DefaultQuoteTicketApproval { get; set; } 

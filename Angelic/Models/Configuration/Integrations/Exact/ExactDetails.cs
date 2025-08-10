@@ -21,16 +21,16 @@ public class ExactDetails
     public bool? IsAuthorized { get; set; } 
 
     [JsonProperty("redirecturi", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Redirecturi { get; set; } 
+    public string? RedirectUri { get; set; } 
 
     [JsonProperty("clienttoplevel", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Clienttoplevel { get; set; } 
+    public int? ClientTopLevel { get; set; } 
 
     [JsonProperty("itemgroup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ItemGroup { get; set; } 
 
     [JsonProperty("enablesync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Enablesync { get; set; } 
+    public bool? EnableSync { get; set; } 
 
     [JsonProperty("defaultitemcode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? DefaultItemCode { get; set; } 
@@ -45,7 +45,7 @@ public class ExactDetails
     public string? SyncEntities { get; set; } 
 
     [JsonProperty("exdnewmethod", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Exdnewmethod { get; set; } 
+    public bool? ExdNewMethod { get; set; } 
 
     [JsonProperty("new_client_secret", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? NewClientSecret { get; set; } 
@@ -57,7 +57,7 @@ public class ExactDetails
     public string? Code { get; set; } 
 
     [JsonProperty("_exchangecode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Exchangecode { get; set; } 
+    public bool? ExchangeCode { get; set; } 
 
     [JsonProperty("_disconnect", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Disconnect { get; set; } 

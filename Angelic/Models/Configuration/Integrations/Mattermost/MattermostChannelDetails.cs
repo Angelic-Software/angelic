@@ -10,10 +10,10 @@ public class MattermostChannelDetails
     public int? Id { get; set; } 
 
     [JsonProperty("mmid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Mmid { get; set; } 
+    public int? MmId { get; set; } 
 
     [JsonProperty("channelid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Channelid { get; set; } 
+    public string? ChannelId { get; set; } 
 
     [JsonProperty("name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Name { get; set; } 
@@ -22,19 +22,19 @@ public class MattermostChannelDetails
     public int? AgentId { get; set; } 
 
     [JsonProperty("webhookid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Webhookid { get; set; } 
+    public string? WebhookId { get; set; } 
 
     [JsonProperty("webhookname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Webhookname { get; set; } 
+    public string? WebhookName { get; set; } 
 
     [JsonProperty("webhookdesc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Webhookdesc { get; set; } 
+    public string? WebhookDesc { get; set; } 
 
     [JsonProperty("botname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Botname { get; set; } 
+    public string? BotName { get; set; } 
 
     [JsonProperty("boticon", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Boticon { get; set; } 
+    public string? BotIcon { get; set; } 
 
     [JsonProperty("agent_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? AgentName { get; set; } 

@@ -49,7 +49,7 @@ public class MailchimpSettings
     public bool? FbComments { get; set; } 
 
     [JsonProperty("timewarp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Timewarp { get; set; } 
+    public bool? TimeWarp { get; set; } 
 
     [JsonProperty("template_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? TemplateId { get; set; } 

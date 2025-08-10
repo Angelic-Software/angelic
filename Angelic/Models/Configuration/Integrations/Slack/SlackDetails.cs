@@ -61,7 +61,7 @@ public class SlackDetails
     public int? TicketUser { get; set; } 
 
     [JsonProperty("ticket_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? TicketUserName { get; set; } 
+    public string? TicketUsername { get; set; } 
 
     [JsonProperty("command_ticket_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? CommandTicketType { get; set; } 
@@ -73,7 +73,7 @@ public class SlackDetails
     public int? CommandUser { get; set; } 
 
     [JsonProperty("command_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? CommandUserName { get; set; } 
+    public string? CommandUsername { get; set; } 
 
     [JsonProperty("uninstalled", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Uninstalled { get; set; } 

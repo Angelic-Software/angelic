@@ -10,7 +10,7 @@ public class IntegrationFieldData
     public int? Id { get; set; } 
 
     [JsonProperty("msid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Msid { get; set; } 
+    public int? MsId { get; set; } 
 
     [JsonProperty("name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Name { get; set; } 

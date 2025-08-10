@@ -16,7 +16,7 @@ public class TabConfig
     public int? EntityId { get; set; } 
 
     [JsonProperty("screenlayout_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ScreenlayoutId { get; set; } 
+    public int? ScreenLayoutId { get; set; } 
 
     [JsonProperty("tab_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? TabId { get; set; } 
@@ -37,7 +37,7 @@ public class TabConfig
     public string? NewIcon { get; set; } 
 
     [JsonProperty("nosidemenu", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Nosidemenu { get; set; } 
+    public bool? NoSideMenu { get; set; } 
 
     [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Url { get; set; } 

@@ -24,7 +24,7 @@ namespace Angelic.Models.Configuration.Advanced.Controls;
         public string? TwilioTicketTypeName { get; set; } 
 
         [JsonProperty("twilio_default_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? TwilioDefaultUserName { get; set; } 
+        public string? TwilioDefaultUsername { get; set; } 
 
         [JsonProperty("sccm_sqldriver", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? SccmSqlDriver { get; set; } 
@@ -93,7 +93,7 @@ namespace Angelic.Models.Configuration.Advanced.Controls;
         public string? LogicMonitorDefaultSiteName { get; set; } 
 
         [JsonProperty("logicmonitor_alert_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? LogicMonitorAlertUserName { get; set; } 
+        public string? LogicMonitorAlertUsername { get; set; } 
 
         [JsonProperty("logicmonitor_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? LogicMonitorUrl { get; set; } 
@@ -114,7 +114,7 @@ namespace Angelic.Models.Configuration.Advanced.Controls;
         public string? BarracudaDefaultAssetTypeName { get; set; } 
 
         [JsonProperty("barracuda_alert_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? BarracudaAlertUserName { get; set; } 
+        public string? BarracudaAlertUsername { get; set; } 
 
         [JsonProperty("teams_chat_tenants", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? TeamsChatTenants { get; set; } 
@@ -153,7 +153,7 @@ namespace Angelic.Models.Configuration.Advanced.Controls;
         public ICollection<IntegrationFieldMapping>? Site24X7FieldMappings { get; set; } 
 
         [JsonProperty("site24x7_alert_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Site24X7AlertUserName { get; set; } 
+        public string? Site24X7AlertUsername { get; set; } 
 
         [JsonProperty("gw_mappings_new_user", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<IntegrationFieldMapping>? GwMappingsNewUser { get; set; } 
@@ -198,7 +198,7 @@ namespace Angelic.Models.Configuration.Advanced.Controls;
         public ICollection<IntegrationSiteMapping>? IcingaSiteMappings { get; set; } 
 
         [JsonProperty("icinga_alert_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? IcingaAlertUserName { get; set; } 
+        public string? IcingaAlertUsername { get; set; } 
 
         [JsonProperty("default_columns_id_sites_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public Guid? DefaultColumnsIdSitesGuid { get; set; } 
@@ -330,10 +330,10 @@ namespace Angelic.Models.Configuration.Advanced.Controls;
         public bool? CanDisableIncomingService { get; set; } 
 
         [JsonProperty("zabbix_alert_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? ZabbixAlertUserName { get; set; } 
+        public string? ZabbixAlertUsername { get; set; } 
 
         [JsonProperty("connectwise_rmm_alert_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? ConnectWiseRmmAlertUserName { get; set; } 
+        public string? ConnectWiseRmmAlertUsername { get; set; } 
 
         [JsonProperty("amazon_seller_default_site_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? AmazonSellerDefaultSiteName { get; set; } 
@@ -351,7 +351,7 @@ namespace Angelic.Models.Configuration.Advanced.Controls;
         public bool? IsNhServerless { get; set; } 
 
         [JsonProperty("incoming_default_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? IncomingDefaultUserName { get; set; } 
+        public string? IncomingDefaultUsername { get; set; } 
 
         [JsonProperty("incoming_newuser_default_site_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? IncomingNewUserDefaultSiteName { get; set; } 
@@ -369,7 +369,7 @@ namespace Angelic.Models.Configuration.Advanced.Controls;
         public ICollection<AssetTypeMapping>? PrometheusXTypeMappings { get; set; } 
 
         [JsonProperty("prometheus_alerting_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? PrometheusAlertingUserName { get; set; } 
+        public string? PrometheusAlertingUsername { get; set; } 
 
         [JsonProperty("halointegrator_prometheus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? HaloIntegratorPrometheus { get; set; } 
@@ -849,7 +849,7 @@ namespace Angelic.Models.Configuration.Advanced.Controls;
         public string? OrionServerName { get; set; } 
 
         [JsonProperty("orion_username", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? OrionUsername { get; set; } 
+        public string? OrionUNDERSCOREUsername { get; set; } 
 
         [JsonProperty("orion_password", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? OrionPassword { get; set; } 
@@ -1032,7 +1032,7 @@ namespace Angelic.Models.Configuration.Advanced.Controls;
         public string? ClientSecretNewrelic { get; set; } 
 
         [JsonProperty("newrelicuser_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? NewRelicUserName { get; set; } 
+        public string? NewRelicUsername { get; set; } 
 
         [JsonProperty("newrelic_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? NewrelicUrl { get; set; } 
@@ -1050,7 +1050,7 @@ namespace Angelic.Models.Configuration.Advanced.Controls;
         public bool? KaseyaAuthorised { get; set; } 
 
         [JsonProperty("kaseya_alert_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? KaseyaAlertUserName { get; set; } 
+        public string? KaseyaAlertUsername { get; set; } 
 
         [JsonProperty("kaseya_servicedesks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<ValueLabelIsNewKeyPair>? KaseyaServiceDesks { get; set; } 

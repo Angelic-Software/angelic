@@ -111,7 +111,7 @@ namespace Angelic.Models.Action;
         public string? TwitterIdStr { get; set; }
 
         [JsonProperty("twitter_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? TwitterUserName { get; set; }
+        public string? TwitterUsername { get; set; }
 
         [JsonProperty("tweet_sent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? TweetSentWithUnderscore { get; set; }

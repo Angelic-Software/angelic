@@ -27,7 +27,7 @@ public class AzureAdConnection
     public string? Domain { get; set; } 
 
     [JsonProperty("directoryid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Directoryid { get; set; } 
+    public string? DirectoryId { get; set; } 
 
     [JsonProperty("applicationid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ApplicationId { get; set; } 
@@ -48,7 +48,7 @@ public class AzureAdConnection
     public string? Authcode { get; set; } 
 
     [JsonProperty("_exchangecodefortoken", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Exchangecodefortoken { get; set; } 
+    public bool? ExchangeCodeForToken { get; set; } 
 
     [JsonProperty("mappings_user", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<IntegrationFieldMapping>? MappingsUser { get; set; } 
@@ -75,7 +75,7 @@ public class AzureAdConnection
     public ICollection<ValueLabelIsNewKeyPair>? AgentMatchingList { get; set; } 
 
     [JsonProperty("halointegratorenabled", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? HaloIntegratorenabled { get; set; } 
+    public bool? HaloIntegratorEnabled { get; set; } 
 
     [JsonProperty("halointegrator_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? HaloIntegratorLastSync { get; set; } 
@@ -144,7 +144,7 @@ public class AzureAdConnection
     public string? ImportIdentifierFieldName { get; set; } 
 
     [JsonProperty("accountenabled", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Accountenabled { get; set; } 
+    public bool? AccountEnabled { get; set; } 
 
     [JsonProperty("authorized", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Authorized { get; set; } 
@@ -153,13 +153,13 @@ public class AzureAdConnection
     public bool? NewMethod { get; set; } 
 
     [JsonProperty("createunmatchedusers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Createunmatchedusers { get; set; } 
+    public bool? CreateUnmatchedUsers { get; set; } 
 
     [JsonProperty("unmatchedusersite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Unmatchedusersite { get; set; } 
+    public int? UnmatchedUserSite { get; set; } 
 
     [JsonProperty("unmatchedusersite_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? UnmatchedusersiteName { get; set; } 
+    public string? UnmatchedUserSiteName { get; set; } 
 
     [JsonProperty("type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Type { get; set; } 
@@ -213,10 +213,10 @@ public class AzureAdConnection
     public int? LicenceImportType { get; set; } 
 
     [JsonProperty("graphendpoint", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Graphendpoint { get; set; } 
+    public int? GraphEndpoint { get; set; } 
 
     [JsonProperty("intuneusermatchingfield", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Intuneusermatchingfield { get; set; } 
+    public int? IntuneUserMatchingField { get; set; } 
 
     [JsonProperty("current_scopes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<string>? CurrentScopes { get; set; } 
@@ -273,7 +273,7 @@ public class AzureAdConnection
     public int? SentinelDefaultUser { get; set; } 
 
     [JsonProperty("sentinel_default_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? SentinelDefaultUserName { get; set; } 
+    public string? SentinelDefaultUsername { get; set; } 
 
     [JsonProperty("named_roles", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? NamedRoles { get; set; } 
@@ -312,10 +312,10 @@ public class AzureAdConnection
     public bool? TrackSignInActivity { get; set; } 
 
     [JsonProperty("halointegrator_allowedclientidslist", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ValueLabelKeyPair>? HaloIntegratorAllowedclientidslist { get; set; } 
+    public ICollection<ValueLabelKeyPair>? HaloIntegratorAllowedClientIdsList { get; set; } 
 
     [JsonProperty("halointegrator_allowedclientids", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? HaloIntegratorAllowedclientids { get; set; } 
+    public string? HaloIntegratorAllowedClientIds { get; set; } 
 
     [JsonProperty("user_licence", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<ValueLabelIsNewKeyPair>? UserLicence { get; set; } 
@@ -327,13 +327,13 @@ public class AzureAdConnection
     public bool? CheckLicenceListForServiceUser { get; set; } 
 
     [JsonProperty("exclude_mssense_devices", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ExcludeMssenseDevices { get; set; } 
+    public bool? ExcludeMsSenseDevices { get; set; } 
 
     [JsonProperty("authentication_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? AuthenticationType { get; set; } 
 
     [JsonProperty("_confirmmanagedidentitysetup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Confirmmanagedidentitysetup { get; set; } 
+    public bool? ConfirmManagedIdentitySetup { get; set; } 
 
     [JsonProperty("_confirmclientcredentialssetup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? ConfirmClientCredentialsSetup { get; set; } 
@@ -360,7 +360,7 @@ public class AzureAdConnection
     public bool? UseDeltaQueries { get; set; } 
 
     [JsonProperty("_deltareset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public AzureDeltaReset? Deltareset { get; set; } 
+    public AzureDeltaReset? DeltaReset { get; set; } 
 
     [JsonProperty("intune_user_matching_integration", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? IntuneUserMatchingIntegration { get; set; } 

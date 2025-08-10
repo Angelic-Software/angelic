@@ -65,13 +65,13 @@ public class AzureDevOpsDetails
     public ICollection<IntegrationFieldMapping>? PriorityMappings { get; set; } 
 
     [JsonProperty("areapath_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<IntegrationFieldMapping>? AreapathMappings { get; set; } 
+    public ICollection<IntegrationFieldMapping>? AreaPathMappings { get; set; } 
 
     [JsonProperty("iterationpath_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<IntegrationFieldMapping>? IterationpathMappings { get; set; } 
+    public ICollection<IntegrationFieldMapping>? IterationPathMappings { get; set; } 
 
     [JsonProperty("otherfield_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<IntegrationFieldMapping>? OtherfieldMappings { get; set; } 
+    public ICollection<IntegrationFieldMapping>? OtherFieldMappings { get; set; } 
 
     [JsonProperty("area_path_field", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? AreaPathField { get; set; } 
@@ -104,7 +104,7 @@ public class AzureDevOpsDetails
     public int? TicketUser { get; set; } 
 
     [JsonProperty("ticket_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? TicketUserName { get; set; } 
+    public string? TicketUsername { get; set; } 
 
     [JsonProperty("user_is_created_by", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? UserIsCreatedBy { get; set; } 
@@ -119,19 +119,19 @@ public class AzureDevOpsDetails
     public bool? NewWebhookPasswordMethod { get; set; } 
 
     [JsonProperty("enableintegrator", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Enableintegrator { get; set; } 
+    public bool? EnableIntegrator { get; set; } 
 
     [JsonProperty("lastsyncdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? LastSyncDate { get; set; } 
 
     [JsonProperty("lastsyncerror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? LastSyncEror { get; set; } 
+    public string? LastSyncError { get; set; } 
 
     [JsonProperty("update_days", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? UpdateDays { get; set; } 
 
     [JsonProperty("enablepipelines", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Enablepipelines { get; set; } 
+    public bool? EnablePipelines { get; set; } 
 
     [JsonProperty("_importtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ImportType { get; set; } 

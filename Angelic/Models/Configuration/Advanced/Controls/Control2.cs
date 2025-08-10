@@ -921,7 +921,7 @@ public partial class Control
     public int? SmtpPort { get; set; }
 
     [JsonProperty("generalusername", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? GeneralUserName { get; set; }
+    public string? GeneralUsername { get; set; }
 
     [JsonProperty("enableuserclosureconf", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? EnableUserClosureConf { get; set; }
