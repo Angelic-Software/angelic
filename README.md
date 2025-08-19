@@ -9,3 +9,5 @@ of their respective owners.
 Use of this SDK is at your own risk. The authors make no guarantees as to  
 the accuracy, stability, or continued availability of the API endpoints  
 it communicates with. The API may change without notice from Halo Service Solutions.
+
+More here soon!
