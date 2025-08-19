@@ -17,10 +17,10 @@ public class CsvTemplate
     public int? Type { get; set; } 
 
     [JsonProperty("groupingtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Groupingtype { get; set; } 
+    public int? GroupingType { get; set; } 
 
     [JsonProperty("detailcolumns", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<CsvTemplateDetail>? Detailcolumns { get; set; } 
+    public ICollection<CsvTemplateDetail>? DetailColumns { get; set; } 
 
     [JsonProperty("is_preview", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? IsPreview { get; set; } 
@@ -29,7 +29,7 @@ public class CsvTemplate
     public bool? IsGenerate { get; set; } 
 
     [JsonProperty("printcsv", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Printcsv { get; set; } 
+    public string? PrintCsv { get; set; } 
 
     [JsonProperty("invoices", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<InvoiceHeader>? Invoices { get; set; } 

@@ -46,7 +46,7 @@ public class IntegrationExport
     public int? DetailsId { get; set; } 
 
     [JsonProperty("exportdata", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<IntegrationExportData>? Exportdata { get; set; } 
+    public ICollection<IntegrationExportData>? ExportData { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

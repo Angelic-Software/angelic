@@ -28,12 +28,12 @@ public class ServiceAvailability
     public DateTimeOffset? EndDate { get; set; } 
 
     [JsonProperty("totalhours", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Totalhours { get; set; } 
+    public double? TotalHours { get; set; } 
 
     [JsonProperty("downhours", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Downhours { get; set; } 
+    public double? DownHours { get; set; } 
 
     [JsonProperty("targetmet", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Targetmet { get; set; } 
+    public bool? TargetMet { get; set; } 
 
 }

@@ -16,7 +16,7 @@ public class ZabbixWebhook
     public string? EventId { get; set; } 
 
     [JsonProperty("event_nseverity", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? EventNseverity { get; set; } 
+    public string? EventNSeverity { get; set; } 
 
     [JsonProperty("event_source", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? EventSource { get; set; } 

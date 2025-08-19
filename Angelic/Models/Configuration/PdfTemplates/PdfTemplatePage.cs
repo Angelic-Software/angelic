@@ -20,25 +20,25 @@ namespace Angelic.Models.Configuration.PdfTemplates;
         public string? Name { get; set; } 
 
         [JsonProperty("mainhtml", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Mainhtml { get; set; } 
+        public string? MainHtml { get; set; } 
 
         [JsonProperty("maindesign", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public HtmlDesign? Maindesign { get; set; } 
+        public HtmlDesign? MainDesign { get; set; } 
 
         [JsonProperty("subhtml", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Subhtml { get; set; } 
+        public string? SubHtml { get; set; } 
 
         [JsonProperty("subhtml2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Subhtml2 { get; set; } 
+        public string? SubHtml2 { get; set; } 
 
         [JsonProperty("subhtml3", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Subhtml3 { get; set; } 
+        public string? SubHtml3 { get; set; } 
 
         [JsonProperty("istitlepage", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? IsTitlepage { get; set; } 
+        public bool? IsTitlePage { get; set; } 
 
         [JsonProperty("backgroundimageurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Backgroundimageurl { get; set; } 
+        public string? BackgroundImageUrl { get; set; } 
 
         [JsonProperty("content", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Content { get; set; } 

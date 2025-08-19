@@ -13,10 +13,10 @@ public class LanguagePackTranslations
     public int? LanguageId { get; set; } 
 
     [JsonProperty("sysid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Sysid { get; set; } 
+    public int? SysId { get; set; } 
 
     [JsonProperty("systype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Systype { get; set; } 
+    public int? SysType { get; set; } 
 
     [JsonProperty("display_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? DisplayId { get; set; } 

@@ -48,7 +48,7 @@ public class VirimaDetails
     public ICollection<IntegrationSiteMapping>? SiteMappings { get; set; } 
 
     [JsonProperty("enableintegrator", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Enableintegrator { get; set; } 
+    public bool? EnableIntegrator { get; set; } 
 
     [JsonProperty("lastsyncdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? LastSyncDate { get; set; } 

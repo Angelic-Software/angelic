@@ -16,7 +16,7 @@ public class PdfTemplateDetail
     public int? Sequence { get; set; } 
 
     [JsonProperty("sytemuse", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Sytemuse { get; set; } 
+    public string? SystemUse { get; set; } 
 
     [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Title { get; set; } 
@@ -25,7 +25,7 @@ public class PdfTemplateDetail
     public string? Html { get; set; } 
 
     [JsonProperty("textalign", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Textalign { get; set; } 
+    public string? TextAlign { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

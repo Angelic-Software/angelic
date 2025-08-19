@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using System.ComponentModel.DataAnnotations;
 using Newtonsoft.Json;
 
 namespace Angelic.Models.Configuration.Integrations;
@@ -19,8 +20,8 @@ public class IntegrationLookUp
     public string? ThirdPartyId { get; set; } 
 
     [JsonProperty("value", Required = Required.Always)]
-    [System.ComponentModel.DataAnnotations.Required]
-    public string Value { get; set; } 
+    [Required]
+    public required string Value { get; set; } 
 
     [JsonProperty("_success", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Success { get; set; } 

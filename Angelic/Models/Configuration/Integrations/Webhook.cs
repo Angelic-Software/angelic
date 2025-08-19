@@ -77,7 +77,7 @@ namespace Angelic.Models.Configuration.Integrations;
         public string? SignaturePrefix { get; set; } 
 
         [JsonProperty("_iszapier", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Iszapier { get; set; } 
+        public bool? IsZapier { get; set; } 
 
         [JsonProperty("zapier_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? ZapierType { get; set; } 
@@ -169,10 +169,10 @@ namespace Angelic.Models.Configuration.Integrations;
         public bool? Disabled { get; set; } 
 
         [JsonProperty("lastcreated", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? Lastcreated { get; set; } 
+        public DateTimeOffset? LastCreated { get; set; } 
 
         [JsonProperty("nextcreationdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DateTimeOffset? NextCreationdate { get; set; } 
+        public DateTimeOffset? NextCreationDate { get; set; } 
 
         [JsonProperty("log_retention_policy_days", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? LogRetentionPolicyDays { get; set; } 

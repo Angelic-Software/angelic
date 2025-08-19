@@ -75,6 +75,6 @@ public class ItemGroup
     public string? PriceCalculationFormula { get; set; } 
 
     [JsonProperty("_updaterecurringbundleprices", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Updaterecurringbundleprices { get; set; } 
+    public bool? UpdateRecurringBundlePrices { get; set; } 
 
 }

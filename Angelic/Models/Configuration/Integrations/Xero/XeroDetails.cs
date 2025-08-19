@@ -59,7 +59,7 @@ public class XeroDetails
     public bool? IsDefault { get; set; } 
 
     [JsonProperty("enablesync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Enablesync { get; set; } 
+    public bool? EnableSync { get; set; } 
 
     [JsonProperty("default_item_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? DefaultItemCode { get; set; } 
@@ -116,7 +116,7 @@ public class XeroDetails
     public bool? ReceiveInvoiceUpdated { get; set; } 
 
     [JsonProperty("default_creditnote_item_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? DefaultCreditnoteItemCode { get; set; } 
+    public string? DefaultCreditNoteItemCode { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

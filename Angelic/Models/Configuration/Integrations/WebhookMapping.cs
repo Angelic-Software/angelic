@@ -10,13 +10,13 @@ public class WebhookMapping
     public int? Id { get; set; } 
 
     [JsonProperty("webhookid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? Webhookid { get; set; } 
+    public Guid? WebhookId { get; set; } 
 
     [JsonProperty("fiusage", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Fiusage { get; set; } 
+    public int? FiUsage { get; set; } 
 
     [JsonProperty("fiusagename", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Fiusagename { get; set; } 
+    public string? FiUsageName { get; set; } 
 
     [JsonProperty("fiid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? FiId { get; set; } 
@@ -25,7 +25,7 @@ public class WebhookMapping
     public string? FiName { get; set; } 
 
     [JsonProperty("filabel", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Filabel { get; set; } 
+    public string? FiLabel { get; set; } 
 
     [JsonProperty("key", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Key { get; set; } 

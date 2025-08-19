@@ -28,7 +28,7 @@ public class IntegrationRequest
     public DateTimeOffset? DateLogged { get; set; } 
 
     [JsonProperty("resultcode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Resultcode { get; set; } 
+    public int? ResultCode { get; set; } 
 
     [JsonProperty("response_body", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ResponseBody { get; set; } 
@@ -49,13 +49,13 @@ public class IntegrationRequest
     public ICollection<Trace>? Trace { get; set; } 
 
     [JsonProperty("_retrywebhook", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Retrywebhook { get; set; } 
+    public bool? RetryWebhook { get; set; } 
 
     [JsonProperty("preserve", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Preserve { get; set; } 
 
     [JsonProperty("hastrace", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Hastrace { get; set; } 
+    public bool? HasTrace { get; set; } 
 
     [JsonProperty("format_as_xml", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? FormatAsXml { get; set; } 

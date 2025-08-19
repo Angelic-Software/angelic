@@ -16,7 +16,7 @@ public class WebhookEvent
     public int? IntegrationMethodId { get; set; } 
 
     [JsonProperty("integation_method_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? IntegationMethodName { get; set; } 
+    public string? IntegrationMethodName { get; set; } 
 
     [JsonProperty("notification_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? NotificationId { get; set; } 
@@ -31,10 +31,10 @@ public class WebhookEvent
     public double? Duration { get; set; } 
 
     [JsonProperty("requestheaders", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Requestheaders { get; set; } 
+    public string? RequestHeaders { get; set; } 
 
     [JsonProperty("requestbody", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Requestbody { get; set; } 
+    public string? RequestBody { get; set; } 
 
     [JsonProperty("responsestatus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ResponseStatus { get; set; } 

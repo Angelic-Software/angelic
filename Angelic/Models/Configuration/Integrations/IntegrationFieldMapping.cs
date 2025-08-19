@@ -25,16 +25,16 @@ public class IntegrationFieldMapping
     public int? Typeid { get; set; } 
 
     [JsonProperty("isassetfield", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? IsAssetfield { get; set; } 
+    public bool? IsAssetField { get; set; } 
 
     [JsonProperty("subtypeid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Subtypeid { get; set; } 
+    public int? SubTypeId { get; set; } 
 
     [JsonProperty("newrecords", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Newrecords { get; set; } 
+    public bool? NewRecords { get; set; } 
 
     [JsonProperty("xmvalue", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Xmvalue { get; set; } 
+    public string? XmValue { get; set; } 
 
     [JsonProperty("third_party_friendly_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ThirdPartyFriendlyName { get; set; } 
@@ -58,7 +58,7 @@ public class IntegrationFieldMapping
     public int? ThirdPartyFieldType { get; set; } 
 
     [JsonProperty("populateemptyvalue", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Populateemptyvalue { get; set; } 
+    public bool? PopulateEmptyValue { get; set; } 
 
     [JsonProperty("value_set", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ValueSet { get; set; } 

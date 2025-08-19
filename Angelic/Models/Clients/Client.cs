@@ -1084,7 +1084,7 @@ public class Client
     public string? JiraUserId { get; set; }
 
     [JsonProperty("jira_user_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? JiraUsername { get; set; }
+    public string? JiraUsername2 { get; set; }
 
     [JsonProperty("jira_user", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ValueLabelIsNewKeyPair? JiraUser { get; set; }

@@ -45,7 +45,7 @@ public class IntegrationSiteMapping
     public string? HaloSiteName { get; set; } 
 
     [JsonProperty("userules", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Userules { get; set; } 
+    public bool? UseRules { get; set; } 
 
     [JsonProperty("criteria", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<AssetTypeMappingCriteria>? Criteria { get; set; } 

@@ -33,7 +33,7 @@ public class LanguagePackTranslationsCustom
     public bool? DoTranslate { get; set; } 
 
     [JsonProperty("_translateonly", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Translateonly { get; set; } 
+    public bool? TranslateOnly { get; set; } 
 
     [JsonProperty("_isimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? IsImport { get; set; } 

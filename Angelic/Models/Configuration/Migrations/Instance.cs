@@ -13,7 +13,7 @@ public class Instance
     public string? Hostname { get; set; } 
 
     [JsonProperty("envname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Envname { get; set; } 
+    public string? EnvName { get; set; } 
 
     [JsonProperty("version", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Version { get; set; } 
@@ -31,10 +31,10 @@ public class Instance
     public bool? Offline { get; set; } 
 
     [JsonProperty("insync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Insync { get; set; } 
+    public bool? InSync { get; set; } 
 
     [JsonProperty("versionmatch", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Versionmatch { get; set; } 
+    public bool? VersionMatch { get; set; } 
 
     [JsonProperty("canmerge", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? CanMerge { get; set; } 
@@ -43,7 +43,7 @@ public class Instance
     public bool? IsCurrent { get; set; } 
 
     [JsonProperty("nomergereason", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Nomergereason { get; set; } 
+    public string? NoMergeReason { get; set; } 
 
     [JsonProperty("isself", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? IsSelf { get; set; } 

@@ -10,7 +10,7 @@ public class CsvTemplateDetail
     public int? Id { get; set; } 
 
     [JsonProperty("csvtid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Csvtid { get; set; } 
+    public int? CsvTid { get; set; } 
 
     [JsonProperty("seq", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Seq { get; set; } 

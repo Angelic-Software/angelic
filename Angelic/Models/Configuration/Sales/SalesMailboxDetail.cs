@@ -10,19 +10,19 @@ public class SalesMailboxDetail
     public int? Id { get; set; } 
 
     [JsonProperty("smid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Smid { get; set; } 
+    public int? SmId { get; set; } 
 
     [JsonProperty("name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Name { get; set; } 
 
     [JsonProperty("enableautomatching", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? EnableAutomatching { get; set; } 
+    public bool? EnableAutoMatching { get; set; } 
 
     [JsonProperty("lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? LastSync { get; set; } 
 
     [JsonProperty("sentlastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Sentlastsync { get; set; } 
+    public DateTimeOffset? SentLastSync { get; set; } 
 
     [JsonProperty("lasterror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? LastError { get; set; } 
@@ -46,7 +46,7 @@ public class SalesMailboxDetail
     public string? GoogleRedirect { get; set; } 
 
     [JsonProperty("_getgoogletoken", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Getgoogletoken { get; set; } 
+    public bool? GetGoogleToken { get; set; } 
 
     [JsonProperty("agent_email", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? AgentEmail { get; set; } 

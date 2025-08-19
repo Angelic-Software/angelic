@@ -20,7 +20,7 @@ public class ServiceCategory
     public string? Name { get; set; } 
 
     [JsonProperty("userlevel", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Userlevel { get; set; } 
+    public int? UserLevel { get; set; } 
 
     [JsonProperty("seq", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Seq { get; set; } 
