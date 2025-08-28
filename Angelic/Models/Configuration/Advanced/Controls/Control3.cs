@@ -113,7 +113,7 @@ public partial class Control
         public bool? EnableTeamsCall { get; set; } 
 
         [JsonProperty("soc_username", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? SocUsername { get; set; } 
+        public string? SocUNDERSCOREUsername { get; set; } 
 
         [JsonProperty("soc_show_success_message", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? SocShowSuccessMessage { get; set; } 
