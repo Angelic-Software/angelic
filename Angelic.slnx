@@ -1,0 +1,4 @@
+﻿<Solution>
+  <Project Path="Angelic.Tests\Angelic.Tests.csproj" Type="Classic C#" />
+  <Project Path="Angelic\Angelic.csproj" Type="Classic C#" />
+</Solution>
