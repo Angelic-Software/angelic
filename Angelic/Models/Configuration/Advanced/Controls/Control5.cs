@@ -822,7 +822,7 @@ public partial class Control
         public string? NCentralUrl { get; set; } 
 
         [JsonProperty("ncentral_username", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? NCentralUsername { get; set; } 
+        public string? NCentralUNDERSCOREUsername { get; set; } 
 
         [JsonProperty("ncentraltoplevel", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? NCentralTopLevel { get; set; } 
