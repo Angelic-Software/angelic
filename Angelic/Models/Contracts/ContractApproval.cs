@@ -16,10 +16,10 @@ public class ContractApproval
     public bool? Result { get; set; } 
 
     [JsonProperty("approvername", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Approvername { get; set; } 
+    public string? ApproverName { get; set; } 
 
     [JsonProperty("approveremailaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Approveremailaddress { get; set; } 
+    public string? ApproverEmailAddress { get; set; } 
 
     [JsonProperty("signature", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Signature { get; set; } 

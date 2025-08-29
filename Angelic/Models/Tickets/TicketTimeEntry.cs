@@ -13,13 +13,13 @@ public class TicketTimeEntry
     public int? FaultId { get; set; } 
 
     [JsonProperty("actioncode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Actioncode { get; set; } 
+    public int? ActionCode { get; set; } 
 
     [JsonProperty("time", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? Time { get; set; } 
 
     [JsonProperty("actionbillingplanid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Actionbillingplanid { get; set; } 
+    public int? ActionBillingPlanId { get; set; } 
 
     [JsonProperty("value", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? Value { get; set; } 
@@ -28,7 +28,7 @@ public class TicketTimeEntry
     public bool? Overridden { get; set; } 
 
     [JsonProperty("actualtime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Actualtime { get; set; } 
+    public double? ActualTime { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

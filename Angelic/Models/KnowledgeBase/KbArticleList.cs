@@ -24,7 +24,7 @@ public class KbArticleList
     public int? UsefulCount { get; set; } 
 
     [JsonProperty("notuseful_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? NotusefulCount { get; set; } 
+    public int? NotUsefulCount { get; set; } 
 
     [JsonProperty("date_created", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? DateCreated { get; set; } 

@@ -19,7 +19,7 @@ public class AllowedTeams
     public string? SectionName { get; set; } 
 
     [JsonProperty("allowedteamsrestriction", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Allowedteamsrestriction { get; set; } 
+    public bool? AllowedTeamsRestriction { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

@@ -71,7 +71,7 @@ public class PurchaseOrder
     public int? GoodsInStatus { get; set; } 
 
     [JsonProperty("3rd_party_ponumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? _3rd_party_ponumber { get; set; } 
+    public string? ThirdPartyPoNumber { get; set; } 
 
     [JsonProperty("date_published", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? DatePublished { get; set; } 
@@ -89,19 +89,19 @@ public class PurchaseOrder
     public string? AssignedAgentName { get; set; } 
 
     [JsonProperty("approvalagent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Approvalagent { get; set; } 
+    public int? ApprovalAgent { get; set; } 
 
     [JsonProperty("approvalemailaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Approvalemailaddress { get; set; } 
+    public string? ApprovalEmailAddress { get; set; } 
 
     [JsonProperty("approvalnote", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Approvalnote { get; set; } 
+    public string? ApprovalNote { get; set; } 
 
     [JsonProperty("approvalagentid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Approvalagentid { get; set; } 
+    public int? ApprovalAgentId { get; set; } 
 
     [JsonProperty("approvaldatetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Approvaldatetime { get; set; } 
+    public DateTimeOffset? ApprovalDateTime { get; set; } 
 
     [JsonProperty("thirdparty_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ThirdPartyStatus { get; set; } 
@@ -194,7 +194,7 @@ public class PurchaseOrder
     public string? PdfTemplateName { get; set; } 
 
     [JsonProperty("createdbyagentname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? CreatedByAgentname { get; set; } 
+    public string? CreatedByAgentName { get; set; } 
 
     [JsonProperty("xero_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? XeroId { get; set; } 
@@ -227,7 +227,7 @@ public class PurchaseOrder
     public ICollection<AssetList>? SoAssets { get; set; } 
 
     [JsonProperty("warrantyurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Warrantyurl { get; set; } 
+    public string? WarrantyUrl { get; set; } 
 
     [JsonProperty("qbo_company_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? QboCompanyId { get; set; } 
@@ -290,25 +290,25 @@ public class PurchaseOrder
     public DateTimeOffset? CreateInvoiceInvoiceDate { get; set; } 
 
     [JsonProperty("deladdress1", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Deladdress1 { get; set; } 
+    public string? DelAddress1 { get; set; } 
 
     [JsonProperty("deladdress2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Deladdress2 { get; set; } 
+    public string? DelAddress2 { get; set; } 
 
     [JsonProperty("deladdress3", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Deladdress3 { get; set; } 
+    public string? DelAddress3 { get; set; } 
 
     [JsonProperty("deladdress4", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Deladdress4 { get; set; } 
+    public string? DelAddress4 { get; set; } 
 
     [JsonProperty("deladdress5", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Deladdress5 { get; set; } 
+    public string? DelAddress5 { get; set; } 
 
     [JsonProperty("delivery_address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public Address? DeliveryAddress { get; set; } 
 
     [JsonProperty("_forcethirdpartysync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Forcethirdpartysync { get; set; } 
+    public bool? ForceThirdPartySync { get; set; } 
 
     [JsonProperty("_create_invoice_amount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? CreateInvoiceAmount { get; set; } 

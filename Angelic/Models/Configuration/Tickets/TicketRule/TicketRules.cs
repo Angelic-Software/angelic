@@ -31,7 +31,7 @@ public class TicketRules
     public int? Use { get; set; } 
 
     [JsonProperty("stopmatching", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Stopmatching { get; set; } 
+    public bool? StopMatching { get; set; } 
 
     [JsonProperty("new_agent_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? NewAgentId { get; set; } 
@@ -76,13 +76,13 @@ public class TicketRules
     public int? NewWorkflowId { get; set; } 
 
     [JsonProperty("newworkflow_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? NewworkflowGuid { get; set; } 
+    public Guid? NewWorkflowGuid { get; set; } 
 
     [JsonProperty("new_workflow_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? NewWorkflowName { get; set; } 
 
     [JsonProperty("dontshownotification", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? DontShownotification { get; set; } 
+    public bool? DontShowNotification { get; set; } 
 
     [JsonProperty("criteria", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<TicketRulesCriteria>? Criteria { get; set; } 
@@ -148,7 +148,7 @@ public class TicketRules
     public int? NewTemplateId { get; set; } 
 
     [JsonProperty("newtemplate_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? NewtemplateGuid { get; set; } 
+    public Guid? NewTemplateGuid { get; set; } 
 
     [JsonProperty("new_template_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? NewTemplateName { get; set; } 
@@ -157,13 +157,13 @@ public class TicketRules
     public string? Warning { get; set; } 
 
     [JsonProperty("popupmsg", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Popupmsg { get; set; } 
+    public string? PopupMsg { get; set; } 
 
     [JsonProperty("popup_notes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<PopupNote>? PopupNotes { get; set; } 
 
     [JsonProperty("flowdetail_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? FlowdetailId { get; set; } 
+    public int? FlowDetailId { get; set; } 
 
     [JsonProperty("batch_size", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? BatchSize { get; set; } 

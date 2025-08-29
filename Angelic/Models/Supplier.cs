@@ -77,16 +77,16 @@ public class Supplier
     public string? Address { get; set; } 
 
     [JsonProperty("switchslatosupplier", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Switchslatosupplier { get; set; } 
+    public bool? SwitchSlaToSupplier { get; set; } 
 
     [JsonProperty("emailoverduefixby", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? EmailOverduefixby { get; set; } 
+    public bool? EmailOverdueFixBy { get; set; } 
 
     [JsonProperty("emailoverdueresponse", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? EmailOverdueresponse { get; set; } 
+    public bool? EmailOverdueResponse { get; set; } 
 
     [JsonProperty("webserviceurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Webserviceurl { get; set; } 
+    public string? WebServiceUrl { get; set; } 
 
     [JsonProperty("emailtemplate_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? EmailTemplateName { get; set; } 
@@ -119,16 +119,16 @@ public class Supplier
     public string? EmailEndTag { get; set; } 
 
     [JsonProperty("usesnhd", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Usesnhd { get; set; } 
+    public bool? UsesNhd { get; set; } 
 
     [JsonProperty("nhdurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Nhdurl { get; set; } 
+    public string? NhdUrl { get; set; } 
 
     [JsonProperty("nhdemailaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Nhdemailaddress { get; set; } 
+    public string? NhdEmailAddress { get; set; } 
 
     [JsonProperty("nhdpassword", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Nhdpassword { get; set; } 
+    public string? NhdPassword { get; set; } 
 
     [JsonProperty("parentid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ParentId { get; set; } 
@@ -146,19 +146,19 @@ public class Supplier
     public string? ApiAccessClientId { get; set; } 
 
     [JsonProperty("api_access_clientsecret", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ApiAccessClientsecret { get; set; } 
+    public string? ApiAccessClientSecret { get; set; } 
 
     [JsonProperty("thirdpartynhdauthurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ThirdPartyNhdAuthUrl { get; set; } 
 
     [JsonProperty("thirdpartynhdtenant", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ThirdPartyNhdtenant { get; set; } 
+    public string? ThirdPartyNhdTenant { get; set; } 
 
     [JsonProperty("thirdpartynhdapiclientid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ThirdPartyNhdApiclientid { get; set; } 
+    public string? ThirdPartyNhdApiClientId { get; set; } 
 
     [JsonProperty("new_thirdpartynhdapiclientsecret", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? NewThirdPartyNhdApiclientsecret { get; set; } 
+    public string? NewThirdPartyNhdApiClientSecret { get; set; } 
 
     [JsonProperty("_isimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? IsImport { get; set; } 
@@ -197,13 +197,13 @@ public class Supplier
     public string? Warning { get; set; } 
 
     [JsonProperty("issupplierdetails", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? IsSupplierdetails { get; set; } 
+    public bool? IsSupplierDetails { get; set; } 
 
     [JsonProperty("jira_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? JiraUrl { get; set; } 
 
     [JsonProperty("jira_username", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? JiraUsername { get; set; } 
+    public string? JiraUNDERSCOREUsername { get; set; } 
 
     [JsonProperty("new_jirakey", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? NewJiraKey { get; set; } 

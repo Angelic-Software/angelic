@@ -10,13 +10,13 @@ public class SqlImportField
     public int? Id { get; set; } 
 
     [JsonProperty("siid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Siid { get; set; } 
+    public int? SiId { get; set; } 
 
     [JsonProperty("thirdpartyname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ThirdPartyName { get; set; } 
 
     [JsonProperty("nhdname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Nhdname { get; set; } 
+    public string? NhdName { get; set; } 
 
     [JsonProperty("is_site_field", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? IsSiteField { get; set; } 

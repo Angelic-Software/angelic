@@ -46,7 +46,7 @@ public class AgentSection
     public bool? UnassignedAccess { get; set; } 
 
     [JsonProperty("otheragent_access", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? OtheragentAccess { get; set; } 
+    public bool? OtherAgentAccess { get; set; } 
 
     [JsonProperty("fortickets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? ForTickets { get; set; } 
@@ -61,6 +61,6 @@ public class AgentSection
     public bool? InSection { get; set; } 
 
     [JsonProperty("namewithinactive", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Namewithinactive { get; set; } 
+    public string? NameWithinActive { get; set; } 
 
 }

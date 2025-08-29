@@ -22,24 +22,24 @@ public class WorkdayBreak
     public DateTimeOffset? End { get; set; } 
 
     [JsonProperty("incmonday", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Incmonday { get; set; } 
+    public bool? IncMonday { get; set; } 
 
     [JsonProperty("inctuesday", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Inctuesday { get; set; } 
+    public bool? IncTuesday { get; set; } 
 
     [JsonProperty("incwednesday", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Incwednesday { get; set; } 
+    public bool? IncWednesday { get; set; } 
 
     [JsonProperty("incthursday", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Incthursday { get; set; } 
+    public bool? IncThursday { get; set; } 
 
     [JsonProperty("incfriday", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Incfriday { get; set; } 
+    public bool? IncFriday { get; set; } 
 
     [JsonProperty("incsaturday", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Incsaturday { get; set; } 
+    public bool? IncSaturday { get; set; } 
 
     [JsonProperty("incsunday", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Incsunday { get; set; } 
+    public bool? IncSunday { get; set; } 
 
 }

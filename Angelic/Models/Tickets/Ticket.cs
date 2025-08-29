@@ -139,17 +139,17 @@ public class Ticket
     public double? EstimateDays { get; set; }
 
     [JsonProperty("projecttimepercentage", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Projecttimepercentage { get; set; }
+    public double? ProjectTimePercentage { get; set; }
 
     [JsonProperty("projectcompletionpercentage", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public double? Projectcompletionpercentage { get; set; }
+    public double? ProjectCompletionPercentage { get; set; }
 
     [JsonProperty("projectearlieststart", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Projectearlieststart { get; set; }
+    public DateTimeOffset? ProjectEarliestStart { get; set; }
 
     [JsonProperty("projectlatestend", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Projectlatestend { get; set; }
+    public DateTimeOffset? ProjectLatestEnd { get; set; }
 
     [JsonProperty("timetaken", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? TimeTaken { get; set; }
@@ -158,16 +158,16 @@ public class Ticket
     public double? ChargeHours { get; set; }
 
     [JsonProperty("nonchargehours", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Nonchargehours { get; set; }
+    public double? NonChargeHours { get; set; }
 
     [JsonProperty("travelhours", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Travelhours { get; set; }
+    public double? TravelHours { get; set; }
 
     [JsonProperty("totalmileage", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Totalmileage { get; set; }
+    public double? TotalMileage { get; set; }
 
     [JsonProperty("itemsprice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Itemsprice { get; set; }
+    public double? ItemsPrice { get; set; }
 
     [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Items { get; set; }
@@ -194,13 +194,13 @@ public class Ticket
     public bool? Read { get; set; }
 
     [JsonProperty("enduserstatus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? EndUserstatus { get; set; }
+    public int? EndUserStatus { get; set; }
 
     [JsonProperty("onhold", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Onhold { get; set; }
 
     [JsonProperty("respondbydate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Respondbydate { get; set; }
+    public DateTimeOffset? RespondByDate { get; set; }
 
     [JsonProperty("responsedate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? ResponseDate { get; set; }
@@ -227,7 +227,7 @@ public class Ticket
     public bool? ExcludeFromSla { get; set; }
 
     [JsonProperty("slaholdtime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? SlaHoldtime { get; set; }
+    public double? SlaHoldTime { get; set; }
 
     [JsonProperty("site_timezone", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? SiteTimeZone { get; set; }
@@ -239,25 +239,25 @@ public class Ticket
     public bool? ParentAssign { get; set; }
 
     [JsonProperty("slaactiondate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? SlaActiondate { get; set; }
+    public DateTimeOffset? SlaActionDate { get; set; }
 
     [JsonProperty("slapercused", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? SlaPercUsed { get; set; }
 
     [JsonProperty("slatimeleft", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? SlaTimeleft { get; set; }
+    public double? SlaTimeLeft { get; set; }
 
     [JsonProperty("currentelapsedhours", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? CurrentElapsedHours { get; set; }
 
     [JsonProperty("lastactiondate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? LastActiondate { get; set; }
+    public DateTimeOffset? LastActionDate { get; set; }
 
     [JsonProperty("last_update", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? LastUpdate { get; set; }
 
     [JsonProperty("lastchildactiondate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Lastchildactiondate { get; set; }
+    public DateTimeOffset? LastChildActionDate { get; set; }
 
     [JsonProperty("organisation_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? OrganisationId { get; set; }
@@ -266,7 +266,7 @@ public class Ticket
     public int? DepartmentId { get; set; }
 
     [JsonProperty("reportedby", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Reportedby { get; set; }
+    public string? ReportedBy { get; set; }
 
     [JsonProperty("user_email", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? UserEmail { get; set; }
@@ -275,13 +275,13 @@ public class Ticket
     public string? EmailToList { get; set; }
 
     [JsonProperty("emailtolistsupplier", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? EmailToListsupplier { get; set; }
+    public string? EmailToListSupplier { get; set; }
 
     [JsonProperty("emailcclist", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? EmailCclist { get; set; }
+    public string? EmailCcList { get; set; }
 
     [JsonProperty("emailcclistsupplier", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? EmailCclistsupplier { get; set; }
+    public string? EmailCcListSupplier { get; set; }
 
     [JsonProperty("matched_kb_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? MatchedKbId { get; set; }
@@ -341,7 +341,7 @@ public class Ticket
     public ICollection<int>? ChildTicketIds { get; set; }
 
     [JsonProperty("nextactivitydate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? NextActivitydate { get; set; }
+    public DateTimeOffset? NextActivityDate { get; set; }
 
     [JsonProperty("inventory_number", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? InventoryNumber { get; set; }
@@ -362,7 +362,7 @@ public class Ticket
     public string? PipelineStageName { get; set; }
 
     [JsonProperty("hasbeenclosed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Hasbeenclosed { get; set; }
+    public bool? HasBeenClosed { get; set; }
 
     [JsonProperty("unread_child_action_count", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
@@ -385,7 +385,7 @@ public class Ticket
     public bool? IsVip { get; set; }
 
     [JsonProperty("isimportantcontact", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? IsImportantcontact { get; set; }
+    public bool? IsImportantContact { get; set; }
 
     [JsonProperty("inactive", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Inactive { get; set; }
@@ -428,10 +428,10 @@ public class Ticket
     public int? TargetTimeslot { get; set; }
 
     [JsonProperty("deadlinedate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Deadlinedate { get; set; }
+    public DateTimeOffset? DeadlineDate { get; set; }
 
     [JsonProperty("followupdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Followupdate { get; set; }
+    public DateTimeOffset? FollowUpdate { get; set; }
 
     [JsonProperty("oppcontactname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? OppContactName { get; set; }
@@ -486,16 +486,16 @@ public class Ticket
 
     [JsonProperty("oppconversionprobability", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public double? OppConversionprobability { get; set; }
+    public double? OppConversionProbability { get; set; }
 
     [JsonProperty("oppvalueadjusted", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? OppValueadjusted { get; set; }
+    public double? OppValueAdjusted { get; set; }
 
     [JsonProperty("oppprofit", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? OppProfit { get; set; }
 
     [JsonProperty("oppcurrentsystem", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? OppCurrentsystem { get; set; }
+    public string? OppCurrentSystem { get; set; }
 
     [JsonProperty("oppcompetitors", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? OppCompetitors { get; set; }
@@ -537,19 +537,19 @@ public class Ticket
     public int? Quantity { get; set; }
 
     [JsonProperty("projecttimebudget", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Projecttimebudget { get; set; }
+    public double? ProjectTimeBudget { get; set; }
 
     [JsonProperty("projectmoneybudget", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Projectmoneybudget { get; set; }
+    public double? ProjectMoneyBudget { get; set; }
 
     [JsonProperty("projecttimeactual", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Projecttimeactual { get; set; }
+    public double? ProjectTimeActual { get; set; }
 
     [JsonProperty("projectmoneyactual", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Projectmoneyactual { get; set; }
+    public double? ProjectMoneyActual { get; set; }
 
     [JsonProperty("lastnote", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Lastnote { get; set; }
+    public string? LastNote { get; set; }
 
     [JsonProperty("userdef1", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? UserDef1 { get; set; }
@@ -573,10 +573,10 @@ public class Ticket
     public bool? ReleaseImportant { get; set; }
 
     [JsonProperty("releasenotegroup_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ReleasenotegroupName { get; set; }
+    public string? ReleaseNoteGroupName { get; set; }
 
     [JsonProperty("releasenotegroup_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ReleasenotegroupId { get; set; }
+    public int? ReleaseNoteGroupId { get; set; }
 
     [JsonProperty("third_party_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ThirdPartyId { get; set; }
@@ -588,7 +588,7 @@ public class Ticket
     public int? SupplierStatus { get; set; }
 
     [JsonProperty("contract_refextra", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ContractRefextra { get; set; }
+    public string? ContractRefExtra { get; set; }
 
     [JsonProperty("appointment_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? AppointmentType { get; set; }
@@ -603,7 +603,7 @@ public class Ticket
     public string? SectionTimeZone { get; set; }
 
     [JsonProperty("itilname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Itilname { get; set; }
+    public string? ItilName { get; set; }
 
     [JsonProperty("related_service_descriptions", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
@@ -614,13 +614,13 @@ public class Ticket
     public string? RelatedServiceCategoryNames { get; set; }
 
     [JsonProperty("projectinternaltask", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Projectinternaltask { get; set; }
+    public bool? ProjectInternalTask { get; set; }
 
     [JsonProperty("appointment_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? AppointmentId { get; set; }
 
     [JsonProperty("nextappointmentdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? NextAppointmentdate { get; set; }
+    public DateTimeOffset? NextAppointmentDate { get; set; }
 
     [JsonProperty("firstname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? FirstName { get; set; }
@@ -678,7 +678,7 @@ public class Ticket
     public bool? RecalculateBilling { get; set; }
 
     [JsonProperty("impactlevel", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Impactlevel { get; set; }
+    public int? ImpactLevel { get; set; }
 
     [JsonProperty("supplier_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? SupplierId { get; set; }
@@ -729,7 +729,7 @@ public class Ticket
     public int? MergedIntoId { get; set; }
 
     [JsonProperty("reassigncount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Reassigncount { get; set; }
+    public int? ReassignCount { get; set; }
 
     [JsonProperty("parent_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ParentStatus { get; set; }
@@ -750,7 +750,7 @@ public class Ticket
     public string? HoverSummary { get; set; }
 
     [JsonProperty("slatimeelapsed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? SlaTimeelapsed { get; set; }
+    public double? SlaTimeElapsed { get; set; }
 
     [JsonProperty("ai_summary", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? AiSummary { get; set; }
@@ -843,13 +843,13 @@ public class Ticket
     public double? SupplierResponseTime { get; set; }
 
     [JsonProperty("supplier_respondbydate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? SupplierRespondbydate { get; set; }
+    public DateTimeOffset? SupplierRespondByDate { get; set; }
 
     [JsonProperty("supplier_slastate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? SupplierSlaState { get; set; }
 
     [JsonProperty("supplier_slatimeelapsed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? SupplierSlaTimeelapsed { get; set; }
+    public double? SupplierSlaTimeElapsed { get; set; }
 
     [JsonProperty("supplier_dateclosed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? SupplierDateClosed { get; set; }
@@ -858,14 +858,14 @@ public class Ticket
     public DateTimeOffset? SupplierFixByDate { get; set; }
 
     [JsonProperty("supplier_breachrespsent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? SupplierBreachrespsent { get; set; }
+    public bool? SupplierBreachRespSent { get; set; }
 
     [JsonProperty("supplier_breachfixbysent", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public bool? SupplierBreachfixbysent { get; set; }
+    public bool? SupplierBreachFixBySent { get; set; }
 
     [JsonProperty("changestate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Changestate { get; set; }
+    public string? ChangeState { get; set; }
 
     [JsonProperty("approvedby", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ApprovedBy { get; set; }
@@ -874,7 +874,7 @@ public class Ticket
     public bool? ShowForUsers { get; set; }
 
     [JsonProperty("messsent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Messsent { get; set; }
+    public string? MessSent { get; set; }
 
     [JsonProperty("satisfactionlevel", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? SatisfactionLevel { get; set; }
@@ -901,13 +901,13 @@ public class Ticket
     public double? Mileage { get; set; }
 
     [JsonProperty("planneddate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Planneddate { get; set; }
+    public DateTimeOffset? PlannedDate { get; set; }
 
     [JsonProperty("ccaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Ccaddress { get; set; }
+    public string? CcAddress { get; set; }
 
     [JsonProperty("agreedcleared", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Agreedcleared { get; set; }
+    public bool? AgreedCleared { get; set; }
 
     [JsonProperty("responsetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? ResponseTime { get; set; }
@@ -916,43 +916,43 @@ public class Ticket
     public double? FirstResponseTime { get; set; }
 
     [JsonProperty("alsoinform", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Alsoinform { get; set; }
+    public string? AlsoInform { get; set; }
 
     [JsonProperty("justification", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Justification { get; set; }
 
     [JsonProperty("backoutplan", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Backoutplan { get; set; }
+    public string? BackoutPlan { get; set; }
 
     [JsonProperty("communicationplan", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Communicationplan { get; set; }
+    public string? CommunicationPlan { get; set; }
 
     [JsonProperty("testplan", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Testplan { get; set; }
+    public string? TestPlan { get; set; }
 
     [JsonProperty("riskdescription", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Riskdescription { get; set; }
+    public string? RiskDescription { get; set; }
 
     [JsonProperty("risklevel", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Risklevel { get; set; }
+    public int? RiskLevel { get; set; }
 
     [JsonProperty("impactdescription", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Impactdescription { get; set; }
+    public string? ImpactDescription { get; set; }
 
     [JsonProperty("service_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ServiceId { get; set; }
 
     [JsonProperty("isparentservice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? IsParentservice { get; set; }
+    public bool? IsParentService { get; set; }
 
     [JsonProperty("surveysent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Surveysent { get; set; }
+    public bool? SurveySent { get; set; }
 
     [JsonProperty("planneddateend", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Planneddateend { get; set; }
+    public DateTimeOffset? PlannedDateEnd { get; set; }
 
     [JsonProperty("currentfaactionnumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Currentfaactionnumber { get; set; }
+    public int? CurrentFactionNumber { get; set; }
 
     [JsonProperty("approval_process_step", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ApprovalProcessStep { get; set; }
@@ -968,47 +968,47 @@ public class Ticket
     public int? ApprovalProcessId { get; set; }
 
     [JsonProperty("faultcodeopen", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Faultcodeopen { get; set; }
+    public int? FaultCodeOpen { get; set; }
 
     [JsonProperty("faultcode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Faultcode { get; set; }
+    public int? FaultCode { get; set; }
 
     [JsonProperty("laststatus3rdparty", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? LastStatus3Rdparty { get; set; }
+    public int? LastStatus3rdParty { get; set; }
 
     [JsonProperty("inform3rdpartysystem", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Inform3Rdpartysystem { get; set; }
+    public bool? Inform3rdPartySystem { get; set; }
 
     [JsonProperty("deliverycontact", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Deliverycontact { get; set; }
+    public string? DeliveryContact { get; set; }
 
     [JsonProperty("delivery_address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public Address? DeliveryAddress { get; set; }
 
     [JsonProperty("surveyneeded", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Surveyneeded { get; set; }
+    public bool? SurveyNeeded { get; set; }
 
     [JsonProperty("knownerror", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Knownerror { get; set; }
+    public bool? KnownError { get; set; }
 
     [JsonProperty("development", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Development { get; set; }
 
     [JsonProperty("causedby", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Causedby { get; set; }
+    public int? CausedBy { get; set; }
 
     [JsonProperty("messsentlast", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Messsentlast { get; set; }
+    public string? MessSentLast { get; set; }
 
     [JsonProperty("unapprovedchangestatus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Unapprovedchangestatus { get; set; }
+    public int? UnapprovedChangeStatus { get; set; }
 
     [JsonProperty("changeseq", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Changeseq { get; set; }
+    public int? ChangeSeq { get; set; }
 
     [JsonProperty("lastrecurringemailsentdate", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? LastRecurringemailsentdate { get; set; }
+    public DateTimeOffset? LastRecurringEmailSentDate { get; set; }
 
     [JsonProperty("template_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? TemplateId { get; set; }
@@ -1021,23 +1021,23 @@ public class Ticket
 
     [JsonProperty("slaholdreminderdatelastemailed", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? SlaHoldreminderdatelastemailed { get; set; }
+    public DateTimeOffset? SlaHoldReminderDateLastEmailed { get; set; }
 
     [JsonProperty("closurereminderdatelastemailed", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Closurereminderdatelastemailed { get; set; }
+    public DateTimeOffset? ClosureReminderDateLastEmailed { get; set; }
 
     [JsonProperty("assetstring", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Assetstring { get; set; }
+    public string? AssetString { get; set; }
 
     [JsonProperty("mailboxid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Mailboxid { get; set; }
+    public int? MailboxId { get; set; }
 
     [JsonProperty("alerttype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Alerttype { get; set; }
+    public string? AlertType { get; set; }
 
     [JsonProperty("actisbillabledefault", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Actisbillabledefault { get; set; }
+    public bool? ActIsBillableDefault { get; set; }
 
     [JsonProperty("emaildisplayname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? EmailDisplayName { get; set; }
@@ -1052,63 +1052,63 @@ public class Ticket
     public string? TimeZoneName { get; set; }
 
     [JsonProperty("forwardinboundupdates", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Forwardinboundupdates { get; set; }
+    public bool? ForwardInboundUpdates { get; set; }
 
     [JsonProperty("loggedoutofhdworkinghours", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Loggedoutofhdworkinghours { get; set; }
+    public bool? LoggedOutOfHdWorkingHours { get; set; }
 
     [JsonProperty("acctmaninformedsurvey", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Acctmaninformedsurvey { get; set; }
+    public bool? AcctManInformedSurvey { get; set; }
 
     [JsonProperty("laststatuschangeinformed", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public int? LastStatuschangeinformed { get; set; }
+    public int? LastStatusChangeInformed { get; set; }
 
     [JsonProperty("gfialerttype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Gfialerttype { get; set; }
+    public string? GfiAlertType { get; set; }
 
     [JsonProperty("quotedescription", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Quotedescription { get; set; }
+    public string? QuoteDescription { get; set; }
 
     [JsonProperty("quotelabouramount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Quotelabouramount { get; set; }
+    public double? QuoteLabourAmount { get; set; }
 
     [JsonProperty("quotepriority", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Quotepriority { get; set; }
+    public int? QuotePriority { get; set; }
 
     [JsonProperty("budgetcode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Budgetcode { get; set; }
+    public int? BudgetCode { get; set; }
 
     [JsonProperty("actualcost", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Actualcost { get; set; }
+    public double? ActualCost { get; set; }
 
     [JsonProperty("invoicestatus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Invoicestatus { get; set; }
+    public int? InvoiceStatus { get; set; }
 
     [JsonProperty("invoicedescription", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? InvoiceDescription { get; set; }
 
     [JsonProperty("invoicelabouramount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? InvoiceLabouramount { get; set; }
+    public double? InvoiceLabourAmount { get; set; }
 
     [JsonProperty("invoicematerialsamount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? InvoiceMaterialsamount { get; set; }
+    public double? InvoiceMaterialsAmount { get; set; }
 
     [JsonProperty("firsttimefix", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Firsttimefix { get; set; }
+    public int? FirstTimeFix { get; set; }
 
     [JsonProperty("quotematerialsamount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Quotematerialsamount { get; set; }
+    public double? QuoteMaterialsAmount { get; set; }
 
     [JsonProperty("ukasaccredited", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Ukasaccredited { get; set; }
+    public bool? UkasAccredited { get; set; }
 
     [JsonProperty("labno", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Labno { get; set; }
+    public string? LabNo { get; set; }
 
     [JsonProperty("twitterscreenname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Twitterscreenname { get; set; }
+    public string? TwitterScreenName { get; set; }
 
     [JsonProperty("twitterid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public long? TwitterId { get; set; }
@@ -1117,65 +1117,65 @@ public class Ticket
     public string? FacebookId { get; set; }
 
     [JsonProperty("fixbydateadjusted", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? FixByDateadjusted { get; set; }
+    public bool? FixByDateAdjusted { get; set; }
 
     [JsonProperty("loggedonbehalfby", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Loggedonbehalfby { get; set; }
+    public string? LoggedOnBehalfBy { get; set; }
 
     [JsonProperty("alternativecontactno", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Alternativecontactno { get; set; }
+    public string? AlternativeContactNo { get; set; }
 
     [JsonProperty("operationalserviceid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Operationalserviceid { get; set; }
+    public int? OperationalServiceId { get; set; }
 
     [JsonProperty("requestdetailsprinted", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? RequestDetailsprinted { get; set; }
+    public bool? RequestDetailsPrinted { get; set; }
 
     [JsonProperty("serviceformprinted", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Serviceformprinted { get; set; }
+    public bool? ServiceFormPrinted { get; set; }
 
     [JsonProperty("auditstatus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Auditstatus { get; set; }
+    public int? AuditStatus { get; set; }
 
     [JsonProperty("auditunum", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Auditunum { get; set; }
+    public int? AuditUnum { get; set; }
 
     [JsonProperty("auditdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Auditdate { get; set; }
+    public DateTimeOffset? AuditDate { get; set; }
 
     [JsonProperty("auditnote", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Auditnote { get; set; }
+    public string? AuditNote { get; set; }
 
     [JsonProperty("auditfaileddate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Auditfaileddate { get; set; }
+    public DateTimeOffset? AuditFailedDate { get; set; }
 
     [JsonProperty("auditfailednote", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Auditfailednote { get; set; }
+    public string? AuditFailedNote { get; set; }
 
     [JsonProperty("userrequestedapprover", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Userrequestedapprover { get; set; }
+    public int? UserRequestedApprover { get; set; }
 
     [JsonProperty("oppdontaddtomailinglist", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? OppDontaddtomailinglist { get; set; }
+    public bool? OppDontAddToMailingList { get; set; }
 
     [JsonProperty("sendprintrequest", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Sendprintrequest { get; set; }
+    public int? SendPrintRequest { get; set; }
 
     [JsonProperty("pagerdutyid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Pagerdutyid { get; set; }
+    public string? PagerdutyId { get; set; }
 
     [JsonProperty("pagerdutyincidentidstring", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public string? Pagerdutyincidentidstring { get; set; }
+    public string? PagerdutyIncidentIdString { get; set; }
 
     [JsonProperty("pagerdutystatus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Pagerdutystatus { get; set; }
+    public int? PagerdutyStatus { get; set; }
 
     [JsonProperty("pagerdutyurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Pagerdutyurl { get; set; }
+    public string? PagerdutyUrl { get; set; }
 
     [JsonProperty("pagerdutyincidentid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Pagerdutyincidentid { get; set; }
+    public string? PagerdutyIncidentId { get; set; }
 
     [JsonProperty("opportunity_third_party_url", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
@@ -1212,40 +1212,40 @@ public class Ticket
     public Address? BillingAddress { get; set; }
 
     [JsonProperty("workflow_stepstarted", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? WorkflowStepstarted { get; set; }
+    public DateTimeOffset? WorkflowStepStarted { get; set; }
 
     [JsonProperty("lessonslearned", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Lessonslearned { get; set; }
+    public string? LessonsLearned { get; set; }
 
     [JsonProperty("laststatuschangeinformedmanager", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public int? LastStatuschangeinformedmanager { get; set; }
+    public int? LastStatusChangeInformedManager { get; set; }
 
     [JsonProperty("lastbugzillasync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Lastbugzillasync { get; set; }
+    public DateTimeOffset? LastBugzillaSync { get; set; }
 
     [JsonProperty("sapid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Sapid { get; set; }
 
     [JsonProperty("sapattachmentsuuid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Sapattachmentsuuid { get; set; }
+    public string? SapAttachmentsUuid { get; set; }
 
     [JsonProperty("currency", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Currency { get; set; }
 
     [JsonProperty("projectconsignmentheaderid", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public int? Projectconsignmentheaderid { get; set; }
+    public int? ProjectConsignmentHeaderId { get; set; }
 
     [JsonProperty("projectconsignmentdetailid", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public int? Projectconsignmentdetailid { get; set; }
+    public int? ProjectConsignmentDetailId { get; set; }
 
     [JsonProperty("servicefailurestid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Servicefailurestid { get; set; }
+    public int? ServiceFailuresTid { get; set; }
 
     [JsonProperty("hdid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Hdid { get; set; }
+    public int? HdId { get; set; }
 
     [JsonProperty("deleted", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Deleted { get; set; }
@@ -1265,25 +1265,25 @@ public class Ticket
 
     [JsonProperty("deadlinenotificationhours", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public double? Deadlinenotificationhours { get; set; }
+    public double? DeadlineNotificationHours { get; set; }
 
     [JsonProperty("asset_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? AssetType { get; set; }
 
     [JsonProperty("showonroadmap", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowOnroadmap { get; set; }
+    public bool? ShowOnRoadmap { get; set; }
 
     [JsonProperty("roadmapnote", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Roadmapnote { get; set; }
+    public string? RoadmapNote { get; set; }
 
     [JsonProperty("phonenumberfrom", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? PhoneNumberfrom { get; set; }
+    public string? PhoneNumberFrom { get; set; }
 
     [JsonProperty("addressfrom", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Addressfrom { get; set; }
+    public string? AddressFrom { get; set; }
 
     [JsonProperty("changeinformation_html", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ChangeinformationHtml { get; set; }
+    public string? ChangeInformationHtml { get; set; }
 
     [JsonProperty("team_department_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? TeamDepartmentId { get; set; }
@@ -1302,7 +1302,7 @@ public class Ticket
     public bool? CanUpdate { get; set; }
 
     [JsonProperty("_mustupdateticketuser", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Mustupdateticketuser { get; set; }
+    public bool? MustUpdateTicketUser { get; set; }
 
     [JsonProperty("_spam", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Spam { get; set; }
@@ -1372,7 +1372,7 @@ public class Ticket
     public bool? DontDoRules { get; set; }
 
     [JsonProperty("dont_do_databaselookups", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? DontDoDatabaselookups { get; set; }
+    public bool? DontDoDatabaseLookups { get; set; }
 
     [JsonProperty("apply_rules", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? ApplyRules { get; set; }
@@ -1381,7 +1381,7 @@ public class Ticket
     public int? ApplyThisRule { get; set; }
 
     [JsonProperty("_forcereassign", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Forcereassign { get; set; }
+    public bool? ForceReassign { get; set; }
 
     [JsonProperty("_appointment01_ok", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Appointment01Ok { get; set; }
@@ -1426,7 +1426,7 @@ public class Ticket
     public ICollection<AssetList>? Assets { get; set; }
 
     [JsonProperty("nochangesequpdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Nochangesequpdate { get; set; }
+    public bool? NoChangeSeqUpdate { get; set; }
 
     [JsonProperty("_reclose", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Reclose { get; set; }
@@ -1457,7 +1457,7 @@ public class Ticket
     public int? ChatId { get; set; }
 
     [JsonProperty("actioncode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Actioncode { get; set; }
+    public int? ActionCode { get; set; }
 
     [JsonProperty("clone_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? CloneCount { get; set; }
@@ -1473,7 +1473,7 @@ public class Ticket
 
     [JsonProperty("unsubscribedfromserviceid", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public int? Unsubscribedfromserviceid { get; set; }
+    public int? UnsubscribedFromServiceId { get; set; }
 
     [JsonProperty("is_opportunity", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? IsOpportunity { get; set; }
@@ -1506,7 +1506,7 @@ public class Ticket
     public string? ThirdPartyClientId { get; set; }
 
     [JsonProperty("_refreshresponse", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Refreshresponse { get; set; }
+    public bool? RefreshResponse { get; set; }
 
     [JsonProperty("_isimport", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? IsImport { get; set; }
@@ -1526,16 +1526,16 @@ public class Ticket
     public bool? IsSlaHoldReminderClosure { get; set; }
 
     [JsonProperty("_importid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Importid { get; set; }
+    public int? ImportId { get; set; }
 
     [JsonProperty("sendtopagerduty", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Sendtopagerduty { get; set; }
+    public bool? SendToPagerDuty { get; set; }
 
     [JsonProperty("splunkurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Splunkurl { get; set; }
+    public string? SplunkUrl { get; set; }
 
     [JsonProperty("splunksearch", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Splunksearch { get; set; }
+    public string? SplunkSearch { get; set; }
 
     [JsonProperty("budgettype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? BudgetTypeId { get; set; }
@@ -1550,7 +1550,7 @@ public class Ticket
     public bool? ProcessAi { get; set; }
 
     [JsonProperty("send_remoteinvite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? SendRemoteinvite { get; set; }
+    public bool? SendRemoteInvite { get; set; }
 
     [JsonProperty("invite_emaillist", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? InviteEmailList { get; set; }
@@ -1559,16 +1559,16 @@ public class Ticket
     public string? ThirdPartyCallId { get; set; }
 
     [JsonProperty("remotetechid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Remotetechid { get; set; }
+    public int? RemoteTechId { get; set; }
 
     [JsonProperty("linkremotesession", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Linkremotesession { get; set; }
+    public bool? LinkRemoteSession { get; set; }
 
     [JsonProperty("remotesessionid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Remotesessionid { get; set; }
+    public int? RemoteSessionId { get; set; }
 
     [JsonProperty("utcoffset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Utcoffset { get; set; }
+    public double? UtcOffset { get; set; }
 
     [JsonProperty("form_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? FormId { get; set; }
@@ -1592,22 +1592,22 @@ public class Ticket
     public bool? CloseUnassigned { get; set; }
 
     [JsonProperty("canbechild", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Canbechild { get; set; }
+    public bool? CanBeChild { get; set; }
 
     [JsonProperty("_changefreeze01_ok", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Changefreeze01Ok { get; set; }
+    public bool? ChangeFreeze01Ok { get; set; }
 
     [JsonProperty("_force", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Force { get; set; }
 
     [JsonProperty("_ticketclash01_ok", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Ticketclash01Ok { get; set; }
+    public bool? TicketClash01Ok { get; set; }
 
     [JsonProperty("_milestonedate01_ok", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Milestonedate01Ok { get; set; }
+    public bool? MilestoneDate01Ok { get; set; }
 
     [JsonProperty("_ignoremilestonedates", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Ignoremilestonedates { get; set; }
+    public bool? IgnoreMilestoneDates { get; set; }
 
     [JsonProperty("locked", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Locked { get; set; }
@@ -1616,7 +1616,7 @@ public class Ticket
     public bool? HasRelated { get; set; }
 
     [JsonProperty("pagerdutyeragent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Pagerdutyeragent { get; set; }
+    public int? PagerdutyErAgent { get; set; }
 
     [JsonProperty("elapsed_response_hours", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? ElapsedResponseHours { get; set; }
@@ -1698,13 +1698,13 @@ public class Ticket
     public int? DevOpsCommentCount { get; set; }
 
     [JsonProperty("_iszapier", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Iszapier { get; set; }
+    public bool? IsZapier { get; set; }
 
     [JsonProperty("ncentral_ticketid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? NCentralTicketId { get; set; }
 
     [JsonProperty("_isnotify", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isnotify { get; set; }
+    public bool? IsNotify { get; set; }
 
     [JsonProperty("created_from_action_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? CreatedFromActionId { get; set; }
@@ -1714,7 +1714,7 @@ public class Ticket
     public string? CreatedFromActionName { get; set; }
 
     [JsonProperty("createacknowledgement", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Createacknowledgement { get; set; }
+    public bool? CreateAcknowledgement { get; set; }
 
     [JsonProperty("your_vote", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? YourVote { get; set; }
@@ -1724,7 +1724,7 @@ public class Ticket
 
     [JsonProperty("donotapplytemplateintheapi", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public bool? DoNotApplytemplateintheapi { get; set; }
+    public bool? DoNotApplyTemplateInTheApi { get; set; }
 
     [JsonProperty("_create_outstanding_appointments", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
@@ -1735,37 +1735,37 @@ public class Ticket
     public bool? CreateOutstandingAppointmentEmail { get; set; }
 
     [JsonProperty("scomalertstate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Scomalertstate { get; set; }
+    public int? ScomAlertState { get; set; }
 
     [JsonProperty("orionalertid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Orionalertid { get; set; }
+    public int? OrionAlertId { get; set; }
 
     [JsonProperty("orionalertactiveid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Orionalertactiveid { get; set; }
+    public int? OrionAlertActiveId { get; set; }
 
     [JsonProperty("orionacknowledgestate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Orionacknowledgestate { get; set; }
+    public int? OrionAcknowledgeState { get; set; }
 
     [JsonProperty("orionclosestate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Orionclosestate { get; set; }
+    public int? OrionCloseState { get; set; }
 
     [JsonProperty("orionacknowledgedby", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Orionacknowledgedby { get; set; }
+    public int? OrionAcknowledgedBy { get; set; }
 
     [JsonProperty("orionacknowledgedate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Orionacknowledgedate { get; set; }
+    public DateTimeOffset? OrionAcknowledgeDate { get; set; }
 
     [JsonProperty("_acknowledgealert", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Acknowledgealert { get; set; }
+    public bool? AcknowledgeAlert { get; set; }
 
     [JsonProperty("orionacknowledgenote", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Orionacknowledgenote { get; set; }
+    public string? OrionAcknowledgeNote { get; set; }
 
     [JsonProperty("orionacknowledgedbyname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Orionacknowledgedbyname { get; set; }
+    public string? OrionAcknowledgedByName { get; set; }
 
     [JsonProperty("orionalertname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Orionalertname { get; set; }
+    public string? OrionAlertName { get; set; }
 
     [JsonProperty("servicenow_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ServiceNowId { get; set; }
@@ -1783,22 +1783,22 @@ public class Ticket
     public string? ResolvedBy { get; set; }
 
     [JsonProperty("sendtosplunkoncall", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Sendtosplunkoncall { get; set; }
+    public bool? SendToSplunkOnCall { get; set; }
 
     [JsonProperty("splunkoncalltarget", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Splunkoncalltarget { get; set; }
+    public int? SplunkOnCallTarget { get; set; }
 
     [JsonProperty("splunkoncalltarget_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? SplunkoncalltargetId { get; set; }
+    public string? SplunkOnCallTargetId { get; set; }
 
     [JsonProperty("splunkoncall_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? SplunkoncallId { get; set; }
+    public string? SplunkOnCallId { get; set; }
 
     [JsonProperty("splunkoncallurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Splunkoncallurl { get; set; }
+    public string? SplunkOnCallUrl { get; set; }
 
     [JsonProperty("splunkoncallstatus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Splunkoncallstatus { get; set; }
+    public int? SplunkOnCallStatus { get; set; }
 
     [JsonProperty("connectwise_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ConnectWiseId { get; set; }
@@ -1839,11 +1839,11 @@ public class Ticket
     public int? SyncroAlertId { get; set; }
 
     [JsonProperty("laststatuschangestatus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? LastStatuschangestatus { get; set; }
+    public int? LastStatusChangeStatus { get; set; }
 
     [JsonProperty("laststatuschangestatusdate", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? LastStatuschangestatusdate { get; set; }
+    public DateTimeOffset? LastStatusChangeStatusDate { get; set; }
 
     [JsonProperty("mark_as_read_only", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? MarkAsReadOnly { get; set; }
@@ -1864,7 +1864,7 @@ public class Ticket
     public int? PowershellScriptCount { get; set; }
 
     [JsonProperty("devops_workitem_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? DevOpsWorkitemCount { get; set; }
+    public int? DevOpsWorkItemCount { get; set; }
 
     [JsonProperty("ninja_alert_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? NinjaAlertId { get; set; }
@@ -1876,25 +1876,25 @@ public class Ticket
     public int? Usertype { get; set; }
 
     [JsonProperty("actionworkflowset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Actionworkflowset { get; set; }
+    public bool? ActionWorkflowSet { get; set; }
 
     [JsonProperty("isbillable", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? IsBillable { get; set; }
 
     [JsonProperty("itemsarebillable", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Itemsarebillable { get; set; }
+    public bool? ItemsAreBillable { get; set; }
 
     [JsonProperty("childrenlefttocreate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Childrenlefttocreate { get; set; }
+    public bool? ChildrenLeftToCreate { get; set; }
 
     [JsonProperty("who", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Who { get; set; }
 
     [JsonProperty("resourcetype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ResourcetypeId { get; set; }
+    public int? ResourceTypeId { get; set; }
 
     [JsonProperty("resourcetype_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ResourcetypeName { get; set; }
+    public string? ResourceTypeName { get; set; }
 
     [JsonProperty("resource_booking_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ResourceBookingType { get; set; }
@@ -1910,7 +1910,7 @@ public class Ticket
     public string? MatchedRuleIds { get; set; }
 
     [JsonProperty("forceruleupdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Forceruleupdate { get; set; }
+    public bool? ForceRuleUpdate { get; set; }
 
     [JsonProperty("teams_user_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? TeamsUserId { get; set; }
@@ -1919,7 +1919,7 @@ public class Ticket
     public bool? IsTeams { get; set; }
 
     [JsonProperty("faultapprovalfailed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Faultapprovalfailed { get; set; }
+    public bool? FaultApprovalFailed { get; set; }
 
     [JsonProperty("article_description", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ArticleDescription { get; set; }
@@ -1937,25 +1937,25 @@ public class Ticket
     public ICollection<Tag>? Tags { get; set; }
 
     [JsonProperty("dontcreatechild", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? DontCreatechild { get; set; }
+    public bool? DontCreateChild { get; set; }
 
     [JsonProperty("needcreatechild", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? NeedCreatechild { get; set; }
+    public bool? NeedCreateChild { get; set; }
 
     [JsonProperty("sentinel_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? SentinelId { get; set; }
 
     [JsonProperty("sentinel_resourcegroup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? SentinelResourcegroup { get; set; }
+    public string? SentinelResourceGroup { get; set; }
 
     [JsonProperty("sentinel_subscriptionid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? SentinelSubscriptionid { get; set; }
+    public string? SentinelSubscriptionId { get; set; }
 
     [JsonProperty("sentinel_workspace", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? SentinelWorkspace { get; set; }
 
     [JsonProperty("faultapprovalexists", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Faultapprovalexists { get; set; }
+    public bool? FaultApprovalExists { get; set; }
 
     [JsonProperty("_validate_only", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? ValidateOnly { get; set; }
@@ -1967,10 +1967,10 @@ public class Ticket
     public string? AzureMonitorId { get; set; }
 
     [JsonProperty("domotz_alertid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? DomotzAlertid { get; set; }
+    public int? DomotzAlertId { get; set; }
 
     [JsonProperty("domotz_deviceid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? DomotzDeviceid { get; set; }
+    public int? DomotzDeviceId { get; set; }
 
     [JsonProperty("domerge", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? DoMerge { get; set; }
@@ -1994,7 +1994,7 @@ public class Ticket
     public string? ContractBalance { get; set; }
 
     [JsonProperty("bookingurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Bookingurl { get; set; }
+    public string? BookingUrl { get; set; }
 
     [JsonProperty("billable_time", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? BillableTime { get; set; }
@@ -2006,11 +2006,11 @@ public class Ticket
     public int? ClonedFrom { get; set; }
 
     [JsonProperty("slatimeremaining", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? SlaTimeremaining { get; set; }
+    public double? SlaTimeRemaining { get; set; }
 
     [JsonProperty("customfieldvalidationreason", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public string? CustomFieldvalidationreason { get; set; }
+    public string? CustomFieldValidationReason { get; set; }
 
     [JsonProperty("_has_automations", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? HasAutomations { get; set; }
@@ -2034,7 +2034,7 @@ public class Ticket
     public int? SentinelDisplayId { get; set; }
 
     [JsonProperty("postloggedview", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Postloggedview { get; set; }
+    public int? PostLoggedView { get; set; }
 
     [JsonProperty("addigy_alert_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? AddigyAlertId { get; set; }
@@ -2061,10 +2061,10 @@ public class Ticket
     public string? KaseyaAgentId { get; set; }
 
     [JsonProperty("salesforce_contactid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? SalesforceContactid { get; set; }
+    public string? SalesforceContactId { get; set; }
 
     [JsonProperty("salesforce_accountid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? SalesforceAccountid { get; set; }
+    public string? SalesforceAccountId { get; set; }
 
     [JsonProperty("salesforce_parentid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? SalesforceParentId { get; set; }
@@ -2076,7 +2076,7 @@ public class Ticket
     public string? NewrelicId { get; set; }
 
     [JsonProperty("newrelicincident_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? NewrelicincidentId { get; set; }
+    public string? NewRelicIncidentId { get; set; }
 
     [JsonProperty("backup_radar_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? BackupRadarId { get; set; }
@@ -2085,13 +2085,13 @@ public class Ticket
     public int? BackupRadarState { get; set; }
 
     [JsonProperty("linktypesarray", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<StringIdNameKeyPair>? Linktypesarray { get; set; }
+    public ICollection<StringIdNameKeyPair>? LinkTypesArray { get; set; }
 
     [JsonProperty("kaseyaid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? KaseyaId { get; set; }
 
     [JsonProperty("alluserscanview", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Alluserscanview { get; set; }
+    public int? AllUserScanView { get; set; }
 
     [JsonProperty("_dontupdate_salesforce", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? DontUpdateSalesforce { get; set; }
@@ -2103,7 +2103,7 @@ public class Ticket
     public int? SalesforceStage { get; set; }
 
     [JsonProperty("_newticket_quickclose", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? NewTicketQuickclose { get; set; }
+    public bool? NewTicketQuickClose { get; set; }
 
     [JsonProperty("service_request_detail_id", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
@@ -2156,10 +2156,10 @@ public class Ticket
     public string? ParentRelease3Name { get; set; }
 
     [JsonProperty("pagerdutyservice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Pagerdutyservice { get; set; }
+    public string? PagerdutyService { get; set; }
 
     [JsonProperty("pagerdutyservice_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? PagerdutyserviceName { get; set; }
+    public string? PagerdutyServiceName { get; set; }
 
     [JsonProperty("_dontupdate_pagerduty", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? DontUpdatePagerduty { get; set; }
@@ -2168,7 +2168,7 @@ public class Ticket
     public bool? DontFireAutomations { get; set; }
 
     [JsonProperty("teamsmessage", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Teamsmessage { get; set; }
+    public string? TeamsMessage { get; set; }
 
     [JsonProperty("default_teams_chat_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? DefaultTeamsChatName { get; set; }
@@ -2177,7 +2177,7 @@ public class Ticket
     public bool? ShowChatCreate { get; set; }
 
     [JsonProperty("htmlmessage", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Htmlmessage { get; set; }
+    public string? HtmlMessage { get; set; }
 
     [JsonProperty("linked_halo_ticket_count", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
@@ -2191,19 +2191,19 @@ public class Ticket
     public bool? OverrideOpeningActionWho { get; set; }
 
     [JsonProperty("whatsappcreatedfromid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Whatsappcreatedfromid { get; set; }
+    public string? WhatsAppCreatedFromId { get; set; }
 
     [JsonProperty("unotes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Unotes { get; set; }
+    public string? UNotes { get; set; }
 
     [JsonProperty("smemo", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Smemo { get; set; }
+    public string? SMemo { get; set; }
 
     [JsonProperty("amemo", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Amemo { get; set; }
+    public string? AMemo { get; set; }
 
     [JsonProperty("_matchintacctclass", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Matchintacctclass { get; set; }
+    public bool? MatchIntacctClass { get; set; }
 
     [JsonProperty("intacct_class", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? IntacctClass { get; set; }
@@ -2224,7 +2224,7 @@ public class Ticket
     public string? EmailMessageId { get; set; }
 
     [JsonProperty("seenby", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Seenby { get; set; }
+    public string? SeenBy { get; set; }
 
     [JsonProperty("recaptcha_token", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? RecaptchaToken { get; set; }
@@ -2301,7 +2301,7 @@ public class Ticket
     public int? DefaultReporter { get; set; }
 
     [JsonProperty("defaultsendattachments", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? DefaultSendattachments { get; set; }
+    public bool? DefaultSendAttachments { get; set; }
 
     [JsonProperty("devops_key", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? DevOpsKey { get; set; }
@@ -2331,10 +2331,10 @@ public class Ticket
     public int? ColourRule { get; set; }
 
     [JsonProperty("google_reviewdata", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public GoogleBusinessReview? GoogleReviewdata { get; set; }
+    public GoogleBusinessReview? GoogleReviewData { get; set; }
 
     [JsonProperty("google_questiondata", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public GoogleBusinessQuestion? GoogleQuestiondata { get; set; }
+    public GoogleBusinessQuestion? GoogleQuestionData { get; set; }
 
     [JsonProperty("original_agent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? OriginalAgent { get; set; }
@@ -2346,7 +2346,7 @@ public class Ticket
     public int? LiongardSystemId { get; set; }
 
     [JsonProperty("bigpanda_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? BigpandaId { get; set; }
+    public string? BigPandaId { get; set; }
 
     [JsonProperty("contributors", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<Contributors>? Contributors { get; set; }
@@ -2361,7 +2361,7 @@ public class Ticket
     public int? SqlImportId { get; set; }
 
     [JsonProperty("respondbydateadjusted", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Respondbydateadjusted { get; set; }
+    public bool? RespondByDateAdjusted { get; set; }
 
     [JsonProperty("date_dependencies", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<TicketDateDependencies>? DateDependencies { get; set; }
@@ -2373,13 +2373,13 @@ public class Ticket
     public ICollection<ViewColumnsDetails>? AssetsColumns { get; set; }
 
     [JsonProperty("slaresponseexcuse", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? SlaResponseexcuse { get; set; }
+    public string? SlaResponseExcuse { get; set; }
 
     [JsonProperty("can_add_cc_followers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? CanAddCcFollowers { get; set; }
 
     [JsonProperty("_fromchatprofileid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Fromchatprofileid { get; set; }
+    public string? FromChatProfileId { get; set; }
 
     [JsonProperty("lapsafe_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? LapsafeCount { get; set; }
@@ -2431,7 +2431,7 @@ public class Ticket
     public string? AiTonality { get; set; }
 
     [JsonProperty("_isagentuser", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? IsAgentuser { get; set; }
+    public bool? IsAgentUser { get; set; }
 
     [JsonProperty("ai_survey_score", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? AiSurveyScore { get; set; }
@@ -2456,10 +2456,10 @@ public class Ticket
 
     [JsonProperty("matched_kb_id_acessible_to_user", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public bool? MatchedKbIdAcessibleToUser { get; set; }
+    public bool? MatchedKbIdAccessibleToUser { get; set; }
 
     [JsonProperty("remotesession_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? RemotesessionCount { get; set; }
+    public int? RemoteSessionCount { get; set; }
 
     [JsonProperty("search_index_sync_timestamp", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
@@ -2473,7 +2473,7 @@ public class Ticket
     public DateTimeOffset? NewWhe { get; set; }
 
     [JsonProperty("new_actioncode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? NewActioncode { get; set; }
+    public int? NewActionCode { get; set; }
 
     [JsonProperty("notepad", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Notepad { get; set; }
@@ -2502,14 +2502,14 @@ public class Ticket
     public Appointment? AgentBooking { get; set; }
 
     [JsonProperty("pandadoc_attachment", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? PandadocAttachment { get; set; }
+    public int? PandaDocAttachment { get; set; }
 
     [JsonProperty("pandadoc_attachment_name", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public string? PandadocAttachmentName { get; set; }
+    public string? PandaDocAttachmentName { get; set; }
 
     [JsonProperty("pandadoc_attachment_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? PandadocAttachmentUrl { get; set; }
+    public string? PandaDocAttachmentUrl { get; set; }
 
     [JsonProperty("thirdparty_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ThirdPartyUrl { get; set; }
@@ -2530,7 +2530,7 @@ public class Ticket
     public int? AzureConnectionId { get; set; }
 
     [JsonProperty("kblinkid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Kblinkid { get; set; }
+    public int? KbLinkId { get; set; }
 
     [JsonProperty("ticket_client_to_invoice_to_id", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
@@ -2569,10 +2569,10 @@ public class Ticket
     public int? LockedByAgentId { get; set; }
 
     [JsonProperty("_forceunlock", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Forceunlock { get; set; }
+    public bool? ForceUnlock { get; set; }
 
     [JsonProperty("_is_aisuggestion_merge", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? IsAisuggestionMerge { get; set; }
+    public bool? IsAiSuggestionMerge { get; set; }
 
     [JsonProperty("service_linked_device", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ServiceLinkedDevice { get; set; }
@@ -2584,7 +2584,7 @@ public class Ticket
     public string? Use { get; set; }
 
     [JsonProperty("canbevotedfor", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Canbevotedfor { get; set; }
+    public bool? CanBeVotedFor { get; set; }
 
     [JsonProperty("supplier_reference", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? SupplierReference { get; set; }
@@ -2603,19 +2603,19 @@ public class Ticket
     public string? PrimaryServiceName { get; set; }
 
     [JsonProperty("idsummary", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Idsummary { get; set; }
+    public string? IdSummary { get; set; }
 
     [JsonProperty("scomclearance", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Scomclearance { get; set; }
+    public string? ScomClearance { get; set; }
 
     [JsonProperty("scomalertid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Scomalertid { get; set; }
+    public string? ScomAlertId { get; set; }
 
     [JsonProperty("statusseq", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Statusseq { get; set; }
+    public int? StatusSeq { get; set; }
 
     [JsonProperty("statuscolor", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Statuscolor { get; set; }
+    public string? StatusColor { get; set; }
 
     [JsonProperty("next_appointment_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? NextAppointmentType { get; set; }
@@ -2624,19 +2624,19 @@ public class Ticket
     public string? AccountManager { get; set; }
 
     [JsonProperty("orionalert", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Orionalert { get; set; }
+    public int? OrionAlert { get; set; }
 
     [JsonProperty("orionnote", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Orionnote { get; set; }
+    public string? OrionNote { get; set; }
 
     [JsonProperty("orionwho", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Orionwho { get; set; }
+    public int? OrionWho { get; set; }
 
     [JsonProperty("product_key", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ProductKey { get; set; }
 
     [JsonProperty("ticketage", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Ticketage { get; set; }
+    public double? TicketAge { get; set; }
 
     [JsonProperty("ninja_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? NinjaId { get; set; }
@@ -2645,7 +2645,7 @@ public class Ticket
     public string? TeamsTicketIcon { get; set; }
 
     [JsonProperty("lastactiondateteams", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? LastActiondateteams { get; set; }
+    public string? LastActionDateTeams { get; set; }
 
     [JsonProperty("priority_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? PriorityName { get; set; }
@@ -2654,10 +2654,10 @@ public class Ticket
     public int? UsefulCount { get; set; }
 
     [JsonProperty("notuseful_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? NotusefulCount { get; set; }
+    public int? NotUsefulCount { get; set; }
 
     [JsonProperty("sitepostcode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Sitepostcode { get; set; }
+    public string? SitePostcode { get; set; }
 
     [JsonProperty("mailbox", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Mailbox { get; set; }
@@ -2666,10 +2666,10 @@ public class Ticket
     public string? UserDepartments { get; set; }
 
     [JsonProperty("updateservicestatus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Updateservicestatus { get; set; }
+    public bool? UpdateServiceStatus { get; set; }
 
     [JsonProperty("servicestatusnote", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Servicestatusnote { get; set; }
+    public string? ServiceStatusNote { get; set; }
 
     [JsonProperty("itil_requesttype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ItilRequestTypeId { get; set; }
@@ -2689,7 +2689,7 @@ public class Ticket
 
     [JsonProperty("createdfromautomationstdid", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public int? CreatedFromAutomationstdid { get; set; }
+    public int? CreatedFromAutomationsTdId { get; set; }
 
     [JsonProperty("ticket_tags", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? TicketTags { get; set; }
@@ -2708,16 +2708,16 @@ public class Ticket
 
     [JsonProperty("invoiceseperatelyoverride", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Invoiceseperatelyoverride { get; set; }
+    public bool? InvoiceSeparatelyOverride { get; set; }
 
     [JsonProperty("purchaseordernumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? PurchaseOrdernumber { get; set; }
+    public string? PurchaseOrderNumber { get; set; }
 
     [JsonProperty("overrideticketcost", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Overrideticketcost { get; set; }
+    public double? OverrideTicketCost { get; set; }
 
     [JsonProperty("budgethours", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Budgethours { get; set; }
+    public string? BudgetHours { get; set; }
 
     [JsonProperty("created_by", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? CreatedBy { get; set; }
@@ -2732,7 +2732,7 @@ public class Ticket
     public ExternalLink? PrimaryIssue { get; set; }
 
     [JsonProperty("primary_workitem", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ExternalLink? PrimaryWorkitem { get; set; }
+    public ExternalLink? PrimaryWorkItem { get; set; }
 
     [JsonProperty("billing_plan_text", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? BillingPlanText { get; set; }

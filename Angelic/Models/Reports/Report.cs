@@ -189,7 +189,7 @@ public class Report
     public ICollection<ValueLabelIsNewKeyPair>? FilterLookupValues { get; set; }
     
     /// <summary>
-    /// This property had to be renamed to ReportContent from Report as a property name cannot be the same as its class in C#
+    /// This property had to be renamed to ReportContent from Report as a property name cannot be the same as its class in C#.
     /// </summary>
     [JsonProperty("report", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ReportContent? ReportContent { get; set; }
@@ -300,7 +300,7 @@ public class Report
     public string? ReportAccessToken { get; set; }
     
     [JsonProperty("colourpallette", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ColourPallette { get; set; }
+    public string? ColourPalette { get; set; }
     
     [JsonProperty("client_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ClientId { get; set; }

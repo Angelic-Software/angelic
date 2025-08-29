@@ -25,7 +25,7 @@ public class ContactGroupContacts
     public string? EmailAddress { get; set; } 
 
     [JsonProperty("contacttype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Contacttype { get; set; } 
+    public int? ContactType { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

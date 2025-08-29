@@ -10,7 +10,7 @@ public class InvoiceDetailQuantityCriteria
     public int? Id { get; set; } 
 
     [JsonProperty("invoicedetailquantity_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? InvoiceDetailquantityId { get; set; } 
+    public int? InvoiceDetailQuantityId { get; set; } 
 
     [JsonProperty("tablename", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? TableName { get; set; } 

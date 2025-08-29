@@ -22,7 +22,7 @@ public class FlowHeader
     public string? Note { get; set; } 
 
     [JsonProperty("notinuse", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Notinuse { get; set; } 
+    public bool? NotInUse { get; set; } 
 
     [JsonProperty("flow_chart_json", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? FlowChartJson { get; set; } 

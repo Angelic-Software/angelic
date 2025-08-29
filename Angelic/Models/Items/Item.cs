@@ -50,10 +50,10 @@ public class Item
     public string? PurchaseDescription { get; set; } 
 
     [JsonProperty("internalreference", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Internalreference { get; set; } 
+    public string? InternalReference { get; set; } 
 
     [JsonProperty("externalreference", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Externalreference { get; set; } 
+    public string? ExternalReference { get; set; } 
 
     [JsonProperty("quantity_in_stock", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? QuantityInStock { get; set; } 
@@ -65,16 +65,16 @@ public class Item
     public double? QuantityOnOrder { get; set; } 
 
     [JsonProperty("goodsinunit", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? GoodsInunit { get; set; } 
+    public string? GoodsInUnit { get; set; } 
 
     [JsonProperty("goodsoutunit", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Goodsoutunit { get; set; } 
+    public string? GoodsOutUnit { get; set; } 
 
     [JsonProperty("inoutconversion", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? InOutconversion { get; set; } 
+    public int? InOutConversion { get; set; } 
 
     [JsonProperty("qtyissuedthisyear", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Qtyissuedthisyear { get; set; } 
+    public double? QtyIssuedThisYear { get; set; } 
 
     [JsonProperty("baseprice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? BasePrice { get; set; } 
@@ -101,19 +101,19 @@ public class Item
     public string? AssetTypeName { get; set; } 
 
     [JsonProperty("minstockqty", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Minstockqty { get; set; } 
+    public double? MinStockQty { get; set; } 
 
     [JsonProperty("min_purchase_qty", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? MinPurchaseQty { get; set; } 
 
     [JsonProperty("secondprice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Secondprice { get; set; } 
+    public double? SecondPrice { get; set; } 
 
     [JsonProperty("promptforprice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Promptforprice { get; set; } 
+    public bool? PromptForPrice { get; set; } 
 
     [JsonProperty("sleeveprice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Sleeveprice { get; set; } 
+    public double? SleevePrice { get; set; } 
 
     [JsonProperty("taxcode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? TaxCode { get; set; } 
@@ -122,10 +122,10 @@ public class Item
     public string? TaxCodeName { get; set; } 
 
     [JsonProperty("taxcodeother", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? TaxCodeother { get; set; } 
+    public int? TaxCodeOther { get; set; } 
 
     [JsonProperty("taxcodeother_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? TaxCodeotherName { get; set; } 
+    public string? TaxCodeOtherName { get; set; } 
 
     [JsonProperty("costprice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? CostPrice { get; set; } 
@@ -137,19 +137,19 @@ public class Item
     public double? Margin { get; set; } 
 
     [JsonProperty("reorderqty", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Reorderqty { get; set; } 
+    public double? ReorderQty { get; set; } 
 
     [JsonProperty("binlocation", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Binlocation { get; set; } 
+    public string? BinLocation { get; set; } 
 
     [JsonProperty("nominalcode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? NominalCode { get; set; } 
 
     [JsonProperty("costingmethod", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Costingmethod { get; set; } 
+    public int? CostingMethod { get; set; } 
 
     [JsonProperty("servicefee", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Servicefee { get; set; } 
+    public double? ServiceFee { get; set; } 
 
     [JsonProperty("recovery", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? Recovery { get; set; } 
@@ -158,31 +158,31 @@ public class Item
     public double? Avco { get; set; } 
 
     [JsonProperty("qtyonallsalesorders", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Qtyonallsalesorders { get; set; } 
+    public double? QtyOnAllSalesOrders { get; set; } 
 
     [JsonProperty("doesnotneedconsigning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? DoesNotNeedConsigning { get; set; } 
 
     [JsonProperty("shaccountsid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Shaccountsid { get; set; } 
+    public string? ShAccountsId { get; set; } 
 
     [JsonProperty("applydiscount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Applydiscount { get; set; } 
+    public bool? ApplyDiscount { get; set; } 
 
     [JsonProperty("secondhandprice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Secondhandprice { get; set; } 
+    public double? SecondHandPrice { get; set; } 
 
     [JsonProperty("hours", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? Hours { get; set; } 
 
     [JsonProperty("markupperc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Markupperc { get; set; } 
+    public double? MarkupPerc { get; set; } 
 
     [JsonProperty("metertype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Metertype { get; set; } 
+    public int? MeterType { get; set; } 
 
     [JsonProperty("meterlife", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Meterlife { get; set; } 
+    public int? MeterLife { get; set; } 
 
     [JsonProperty("isrecurringitem", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? IsRecurringItem { get; set; } 
@@ -194,10 +194,10 @@ public class Item
     public string? TemplateName { get; set; } 
 
     [JsonProperty("recurringprice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Recurringprice { get; set; } 
+    public double? RecurringPrice { get; set; } 
 
     [JsonProperty("showmobilescanner", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowMobilescanner { get; set; } 
+    public bool? ShowMobileScanner { get; set; } 
 
     [JsonProperty("icon", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Icon { get; set; } 
@@ -218,7 +218,7 @@ public class Item
     public string? GroupThirdPartyId { get; set; } 
 
     [JsonProperty("sagetoken", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Sagetoken { get; set; } 
+    public string? SageToken { get; set; } 
 
     [JsonProperty("third_party_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ThirdPartyId { get; set; } 
@@ -230,37 +230,37 @@ public class Item
     public ICollection<ItemSupplier>? ItemSuppliers { get; set; } 
 
     [JsonProperty("xero_salestax", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? XeroSalestax { get; set; } 
+    public string? XeroSalesTax { get; set; } 
 
     [JsonProperty("xero_purchasetax", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? XeroPurchasetax { get; set; } 
+    public string? XeroPurchaseTax { get; set; } 
 
     [JsonProperty("purchasenominalcode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Purchasenominalcode { get; set; } 
+    public string? PurchaseNominalCode { get; set; } 
 
     [JsonProperty("fullyqualifiedname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Fullyqualifiedname { get; set; } 
+    public string? FullyQualifiedName { get; set; } 
 
     [JsonProperty("salestaxincluded", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Salestaxincluded { get; set; } 
+    public bool? SalesTaxIncluded { get; set; } 
 
     [JsonProperty("purchasetaxincluded", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Purchasetaxincluded { get; set; } 
+    public bool? PurchaseTaxIncluded { get; set; } 
 
     [JsonProperty("taxable", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Taxable { get; set; } 
 
     [JsonProperty("assetaccountcode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Assetaccountcode { get; set; } 
+    public int? AssetAccountCode { get; set; } 
 
     [JsonProperty("qbo_quantity", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? QboQuantity { get; set; } 
 
     [JsonProperty("qboinitial_quantity_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? QboinitialQuantityDate { get; set; } 
+    public DateTimeOffset? QboInitialQuantityDate { get; set; } 
 
     [JsonProperty("stocklocations", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<SiteList>? Stocklocations { get; set; } 
+    public ICollection<SiteList>? StockLocations { get; set; } 
 
     [JsonProperty("xero_tenant_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? XeroTenantId { get; set; } 
@@ -290,25 +290,25 @@ public class Item
     public ValueLabelIsNewKeyPair? AssetAccount { get; set; } 
 
     [JsonProperty("qbosku", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Qbosku { get; set; } 
+    public string? QboSku { get; set; } 
 
     [JsonProperty("qbocategoryid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Qbocategoryid { get; set; } 
+    public string? QboCategoryId { get; set; } 
 
     [JsonProperty("qbocategoryname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Qbocategoryname { get; set; } 
+    public string? QboCategoryName { get; set; } 
 
     [JsonProperty("qbo_category", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ValueLabelIsNewKeyPair? QboCategory { get; set; } 
 
     [JsonProperty("autotaskserviceid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? AutoTaskserviceid { get; set; } 
+    public int? AutoTaskServiceId { get; set; } 
 
     [JsonProperty("autotaskproductid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? AutoTaskproductid { get; set; } 
+    public int? AutoTaskProductId { get; set; } 
 
     [JsonProperty("iscontractitem", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? IsContractitem { get; set; } 
+    public bool? IsContractItem { get; set; } 
 
     [JsonProperty("dontinvoice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? DontInvoice { get; set; } 
@@ -326,7 +326,7 @@ public class Item
     public string? NominalCodeName { get; set; } 
 
     [JsonProperty("purchasenominalcode_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? PurchasenominalcodeName { get; set; } 
+    public string? PurchaseNominalCodeName { get; set; } 
 
     [JsonProperty("linked_item_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? LinkedItemId { get; set; } 
@@ -356,19 +356,19 @@ public class Item
     public ICollection<ItemDeviceDefaults>? LinkedAssetDefaults { get; set; } 
 
     [JsonProperty("maxitemdiscount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Maxitemdiscount { get; set; } 
+    public double? MaxItemDiscount { get; set; } 
 
     [JsonProperty("item_default_billing_period", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ItemDefaultBillingPeriod { get; set; } 
 
     [JsonProperty("primaryimageid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Primaryimageid { get; set; } 
+    public int? PrimaryImageId { get; set; } 
 
     [JsonProperty("datecreated", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? DateCreated { get; set; } 
 
     [JsonProperty("lastmodified", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Lastmodified { get; set; } 
+    public DateTimeOffset? LastModified { get; set; } 
 
     [JsonProperty("qbo_company_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? QboCompanyId { get; set; } 
@@ -387,7 +387,7 @@ public class Item
     public string? ExtraInvoiceDescription { get; set; } 
 
     [JsonProperty("isitemdetails", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? IsItemdetails { get; set; } 
+    public bool? IsItemDetails { get; set; } 
 
     [JsonProperty("intacct_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? IntacctType { get; set; } 
@@ -408,7 +408,7 @@ public class Item
     public int? ItemGroupTaxCodePurchase { get; set; } 
 
     [JsonProperty("recurringcost", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Recurringcost { get; set; } 
+    public double? RecurringCost { get; set; } 
 
     [JsonProperty("dbc_company_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? DbcCompanyId { get; set; } 
@@ -498,7 +498,7 @@ public class Item
     public string? IntacctProductLineId { get; set; } 
 
     [JsonProperty("_updateitemtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Updateitemtype { get; set; } 
+    public int? UpdateItemType { get; set; } 
 
     [JsonProperty("related_item_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? RelatedItemCount { get; set; } 

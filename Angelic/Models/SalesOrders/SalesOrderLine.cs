@@ -28,7 +28,7 @@ public class SalesOrderLine
     public string? Name { get; set; } 
 
     [JsonProperty("productcode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Productcode { get; set; } 
+    public string? ProductCode { get; set; } 
 
     [JsonProperty("item_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ItemId { get; set; } 
@@ -97,19 +97,19 @@ public class SalesOrderLine
     public double? TotalTaxAnnual { get; set; } 
 
     [JsonProperty("total_price_yearone", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? TotalPriceYearone { get; set; } 
+    public double? TotalPriceYearOne { get; set; } 
 
     [JsonProperty("total_net_total_yearone", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? TotalNetTotalYearone { get; set; } 
+    public double? TotalNetTotalYearOne { get; set; } 
 
     [JsonProperty("total_costprice_yearone", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? TotalCostPriceYearone { get; set; } 
+    public double? TotalCostPriceYearOne { get; set; } 
 
     [JsonProperty("total_profit_yearone", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? TotalProfitYearone { get; set; } 
+    public double? TotalProfitYearOne { get; set; } 
 
     [JsonProperty("total_tax_yearone", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? TotalTaxYearone { get; set; } 
+    public double? TotalTaxYearOne { get; set; } 
 
     [JsonProperty("unit", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Unit { get; set; } 
@@ -118,10 +118,10 @@ public class SalesOrderLine
     public string? Note { get; set; } 
 
     [JsonProperty("stocklocation_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? StocklocationId { get; set; } 
+    public int? StockLocationId { get; set; } 
 
     [JsonProperty("stocklocation_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? StocklocationName { get; set; } 
+    public string? StockLocationName { get; set; } 
 
     [JsonProperty("quantity_in_stock", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? QuantityInStock { get; set; } 
@@ -136,7 +136,7 @@ public class SalesOrderLine
     public bool? Selected { get; set; } 
 
     [JsonProperty("servicefee", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Servicefee { get; set; } 
+    public double? ServiceFee { get; set; } 
 
     [JsonProperty("recovery", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? Recovery { get; set; } 
@@ -145,7 +145,7 @@ public class SalesOrderLine
     public double? Margin { get; set; } 
 
     [JsonProperty("poqty", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Poqty { get; set; } 
+    public double? PoQty { get; set; } 
 
     [JsonProperty("billingperiod", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? BillingPeriod { get; set; } 
@@ -196,7 +196,7 @@ public class SalesOrderLine
     public int? GroupId { get; set; } 
 
     [JsonProperty("isgroupdesc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isgroupdesc { get; set; } 
+    public bool? IsGroupDesc { get; set; } 
 
     [JsonProperty("nominalcode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? NominalCode { get; set; } 
@@ -259,7 +259,7 @@ public class SalesOrderLine
     public int? InvoiceId { get; set; } 
 
     [JsonProperty("soitemurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Soitemurl { get; set; } 
+    public string? SoItemUrl { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 
@@ -304,10 +304,10 @@ public class SalesOrderLine
     public bool? HideItems { get; set; } 
 
     [JsonProperty("isleased", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isleased { get; set; } 
+    public bool? IsLeased { get; set; } 
 
     [JsonProperty("addbudget", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Addbudget { get; set; } 
+    public bool? AddBudget { get; set; } 
 
     [JsonProperty("add_child_templates", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? AddChildTemplates { get; set; } 
@@ -316,7 +316,7 @@ public class SalesOrderLine
     public int? StockbinId { get; set; } 
 
     [JsonProperty("isfreightline", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isfreightline { get; set; } 
+    public bool? IsFreightLine { get; set; } 
 
     [JsonProperty("asset_type_matching_field_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? AssetTypeMatchingFieldName { get; set; } 
@@ -352,7 +352,7 @@ public class SalesOrderLine
     public bool? IsBundledLine { get; set; } 
 
     [JsonProperty("dattocommercelineid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? DattoCommercelineid { get; set; } 
+    public int? DattoCommerceLineId { get; set; } 
 
     [JsonProperty("line_ticket_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? LineTicketId { get; set; } 
@@ -436,7 +436,7 @@ public class SalesOrderLine
     public double? TotalPriceAnnualConverted { get; set; } 
 
     [JsonProperty("total_price_yearone_converted", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? TotalPriceYearoneConverted { get; set; } 
+    public double? TotalPriceYearOneConverted { get; set; } 
 
     [JsonProperty("total_tax", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? TotalTax { get; set; } 
@@ -472,7 +472,7 @@ public class SalesOrderLine
     public ICollection<TaxRuleResult>? TaxRuleResult { get; set; } 
 
     [JsonProperty("decimalplacesforinvoices", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Decimalplacesforinvoices { get; set; } 
+    public int? DecimalPlacesForInvoices { get; set; } 
 
     [JsonProperty("total_net_total", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? TotalNetTotal { get; set; } 

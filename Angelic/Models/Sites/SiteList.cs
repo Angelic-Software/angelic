@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Attributes;
 using Angelic.Models.Configuration.Custom;
 using Angelic.Models.Configuration.Custom.CustomFields;
 using Newtonsoft.Json;
@@ -6,6 +7,7 @@ using Newtonsoft.Json;
 namespace Angelic.Models.Sites;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
+[ListVariantOf(typeof(Site))]
 public class SiteList
 {
     [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -75,7 +77,7 @@ public class SiteList
     public ICollection<FieldHelper>? SiteFields { get; set; } 
 
     [JsonProperty("gfisiteid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Gfisiteid { get; set; } 
+    public int? GfiSiteId { get; set; } 
 
     [JsonProperty("delivery_address_line1", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? DeliveryAddressLine1 { get; set; } 
@@ -120,7 +122,7 @@ public class SiteList
     public string? LapsafeDefaultInstallation { get; set; } 
 
     [JsonProperty("maincontact_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? MaincontactId { get; set; } 
+    public int? MainContactId { get; set; } 
 
     [JsonProperty("site_item_tax_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? SiteItemTaxCode { get; set; } 

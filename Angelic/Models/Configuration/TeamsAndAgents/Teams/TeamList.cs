@@ -56,7 +56,7 @@ public class TeamList
     public ICollection<Manager>? Managers { get; set; } 
 
     [JsonProperty("teamphotopath", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Teamphotopath { get; set; } 
+    public string? TeamPhotoPath { get; set; } 
 
     [JsonProperty("last_modified", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? LastModified { get; set; } 
@@ -80,9 +80,9 @@ public class TeamList
     public Guid? DepartmentGuid { get; set; } 
 
     [JsonProperty("homescreendashboardid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Homescreendashboardid { get; set; } 
+    public int? HomeScreenDashboardId { get; set; } 
 
     [JsonProperty("homescreendashboardname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Homescreendashboardname { get; set; } 
+    public string? HomeScreenDashboardName { get; set; } 
 
 }

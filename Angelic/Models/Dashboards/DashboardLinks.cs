@@ -74,16 +74,16 @@ public class DashboardLinks
     public string? ReportAccessToken { get; set; } 
 
     [JsonProperty("reportingperiod", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Reportingperiod { get; set; } 
+    public int? ReportingPeriod { get; set; } 
 
     [JsonProperty("reportingperiodstartdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Reportingperiodstartdate { get; set; } 
+    public DateTimeOffset? ReportingPeriodStartDate { get; set; }
 
     [JsonProperty("reportingperiodenddate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Reportingperiodenddate { get; set; } 
+    public DateTimeOffset? ReportingPeriodEndDate { get; set; } 
 
     [JsonProperty("reportingperiodvisibility", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Reportingperiodvisibility { get; set; } 
+    public int? ReportingPeriodVisibility { get; set; } 
 
     [JsonProperty("filters", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<DashboardFilter>? Filters { get; set; } 
@@ -101,7 +101,7 @@ public class DashboardLinks
     public bool? AllowAnonymous { get; set; } 
 
     [JsonProperty("rowheight", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Rowheight { get; set; } 
+    public int? RowHeight { get; set; } 
 
     [JsonProperty("manually_load_dashboards", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? ManuallyLoadDashboards { get; set; } 

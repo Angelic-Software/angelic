@@ -34,7 +34,7 @@ namespace Angelic.Models.KnowledgeBase;
         public int? UsefulCount { get; set; } 
 
         [JsonProperty("notuseful_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? NotusefulCount { get; set; } 
+        public int? NotUsefulCount { get; set; } 
 
         [JsonProperty("date_created", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public DateTimeOffset? DateCreated { get; set; } 
@@ -100,13 +100,13 @@ namespace Angelic.Models.KnowledgeBase;
         public string? EditorName { get; set; } 
 
         [JsonProperty("xrefkbentry", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Xrefkbentry { get; set; } 
+        public int? XRefKbEntry { get; set; } 
 
         [JsonProperty("xreftype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Xreftype { get; set; } 
+        public int? XRefType { get; set; } 
 
         [JsonProperty("xrefdoc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Xrefdoc { get; set; } 
+        public int? XRefDoc { get; set; } 
 
         [JsonProperty("ticket_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? TicketId { get; set; } 
@@ -124,13 +124,13 @@ namespace Angelic.Models.KnowledgeBase;
         public string? ResolutionMarkdown { get; set; } 
 
         [JsonProperty("internalmemoagent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Internalmemoagent { get; set; } 
+        public string? InternalMemoAgent { get; set; } 
 
         [JsonProperty("internalmemoagenthtml", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Internalmemoagenthtml { get; set; } 
+        public string? InternalMemoAgentHtml { get; set; } 
 
         [JsonProperty("internalmemomarkdown", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Internalmemomarkdown { get; set; } 
+        public string? InternalMemoMarkdown { get; set; } 
 
         [JsonProperty("tags", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<Tag>? Tags { get; set; } 
@@ -157,7 +157,7 @@ namespace Angelic.Models.KnowledgeBase;
         public bool? IsImport { get; set; } 
 
         [JsonProperty("importfaqs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? Importfaqs { get; set; } 
+        public string? ImportFaqs { get; set; } 
 
         [JsonProperty("last_review_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public DateTimeOffset? LastReviewDate { get; set; } 
@@ -217,10 +217,10 @@ namespace Angelic.Models.KnowledgeBase;
         public string? PdfTemplateName { get; set; } 
 
         [JsonProperty("kbentryclientaccess", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<KbArticleAreaAccess>? KbEntryclientaccess { get; set; } 
+        public ICollection<KbArticleAreaAccess>? KbEntryClientAccess { get; set; } 
 
         [JsonProperty("kbentrytoplevelaccess", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<KbArticleTopLevelAccess>? KbEntrytoplevelaccess { get; set; } 
+        public ICollection<KbArticleTopLevelAccess>? KbEntryTopLevelAccess { get; set; } 
 
         [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Warning { get; set; } 
@@ -268,16 +268,16 @@ namespace Angelic.Models.KnowledgeBase;
         public int? SearchIndexSyncBatches { get; set; } 
 
         [JsonProperty("kbpermalinks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<Permalinks>? Kbpermalinks { get; set; } 
+        public ICollection<Permalinks>? KbPermaLinks { get; set; } 
 
         [JsonProperty("negativeFeedbackTicket", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public Ticket? NegativeFeedbackTicket { get; set; } 
 
         [JsonProperty("generatetoken", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? Generatetoken { get; set; } 
+        public bool? GenerateToken { get; set; } 
 
         [JsonProperty("latestversion", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Latestversion { get; set; } 
+        public int? LatestVersion { get; set; } 
 
         [JsonProperty("use", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? Use { get; set; } 

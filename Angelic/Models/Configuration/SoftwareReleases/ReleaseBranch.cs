@@ -17,7 +17,7 @@ public class ReleaseBranch
     public string? Name { get; set; } 
 
     [JsonProperty("releasenoteset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Releasenoteset { get; set; } 
+    public int? ReleaseNoteSet { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

@@ -45,25 +45,25 @@ public class UserDashboardButtons
     public string? Icon { get; set; } 
 
     [JsonProperty("usedefault", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Usedefault { get; set; } 
+    public bool? UseDefault { get; set; } 
 
     [JsonProperty("showonhomescreen", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowOnhomescreen { get; set; } 
+    public bool? ShowOnHomeScreen { get; set; } 
 
     [JsonProperty("showonnavbar", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowOnnavbar { get; set; } 
+    public bool? ShowOnNavbar { get; set; } 
 
     [JsonProperty("iconcolour", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Iconcolour { get; set; } 
+    public string? IconColour { get; set; } 
 
     [JsonProperty("iconcolour_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? IconcolourType { get; set; } 
+    public int? IconColourType { get; set; } 
 
     [JsonProperty("anyonymousanduseraccessprivelages", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Anyonymousanduseraccessprivelages { get; set; } 
+    public int? AnonymousAndUserAccessPrivileges { get; set; } 
 
     [JsonProperty("udbtickettype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Udbtickettype { get; set; } 
+    public int? UdbTicketType { get; set; } 
 
     [JsonProperty("tickettype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public Guid? TicketTypeGuid { get; set; } 
@@ -84,7 +84,7 @@ public class UserDashboardButtons
     public ICollection<LanguagePackTranslationsCustom>? Translations { get; set; } 
 
     [JsonProperty("customhtml", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Customhtml { get; set; } 
+    public string? CustomHtml { get; set; } 
 
     [JsonProperty("page_title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? PageTitle { get; set; } 
@@ -93,13 +93,13 @@ public class UserDashboardButtons
     public string? PageDesc { get; set; } 
 
     [JsonProperty("topkb_title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? TopkbTitle { get; set; } 
+    public string? TopKbTitle { get; set; } 
 
     [JsonProperty("new_icon", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? NewIcon { get; set; } 
 
     [JsonProperty("usecustomicon", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Usecustomicon { get; set; } 
+    public bool? UseCustomIcon { get; set; } 
 
     [JsonProperty("custom_icon", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? CustomIcon { get; set; } 

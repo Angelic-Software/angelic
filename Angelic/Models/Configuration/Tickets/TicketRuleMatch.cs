@@ -22,6 +22,6 @@ public class TicketRuleMatch
     public string? Warning { get; set; } 
 
     [JsonProperty("popupmsg", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Popupmsg { get; set; } 
+    public string? PopupMsg { get; set; } 
 
 }

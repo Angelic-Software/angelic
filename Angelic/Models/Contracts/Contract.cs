@@ -83,7 +83,7 @@ public class Contract
     public bool? Active { get; set; } 
 
     [JsonProperty("iscontractdetails", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? IsContractdetails { get; set; } 
+    public bool? IsContractDetails { get; set; } 
 
     [JsonProperty("contracts", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<ContractHeaderContract>? Contracts { get; set; } 
@@ -101,15 +101,15 @@ public class Contract
     public ICollection<AssetList>? AddConfigurationItems { get; set; } 
 
     [JsonProperty("renewedfrom_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? RenewedfromId { get; set; } 
+    public int? RenewedFromId { get; set; } 
 
     [JsonProperty("renewedfrom_id_ref", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? RenewedfromIdRef { get; set; } 
+    public string? RenewedFromIdRef { get; set; } 
 
     [JsonProperty("renewedby_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? RenewedbyId { get; set; } 
+    public int? RenewedById { get; set; } 
 
     [JsonProperty("renewedby_id_ref", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? RenewedbyIdRef { get; set; } 
+    public string? RenewedByIdRef { get; set; } 
 
 }

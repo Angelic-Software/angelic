@@ -31,70 +31,70 @@ public class Workdays
     public DateTimeOffset? End { get; set; } 
 
     [JsonProperty("incmonday", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Incmonday { get; set; } 
+    public bool? IncMonday { get; set; } 
 
     [JsonProperty("inctuesday", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Inctuesday { get; set; } 
+    public bool? IncTuesday { get; set; } 
 
     [JsonProperty("incwednesday", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Incwednesday { get; set; } 
+    public bool? IncWednesday { get; set; } 
 
     [JsonProperty("incthursday", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Incthursday { get; set; } 
+    public bool? IncThursday { get; set; } 
 
     [JsonProperty("incfriday", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Incfriday { get; set; } 
+    public bool? IncFriday { get; set; } 
 
     [JsonProperty("incsaturday", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Incsaturday { get; set; } 
+    public bool? IncSaturday { get; set; } 
 
     [JsonProperty("incsunday", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Incsunday { get; set; } 
+    public bool? IncSunday { get; set; } 
 
     [JsonProperty("alldayssame", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Alldayssame { get; set; } 
+    public bool? AllDaysSame { get; set; } 
 
     [JsonProperty("endmonday", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Endmonday { get; set; } 
+    public DateTimeOffset? EndMonday { get; set; } 
 
     [JsonProperty("endtuesday", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Endtuesday { get; set; } 
+    public DateTimeOffset? EndTuesday { get; set; } 
 
     [JsonProperty("endwednesday", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Endwednesday { get; set; } 
+    public DateTimeOffset? EndWednesday { get; set; } 
 
     [JsonProperty("endthursday", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Endthursday { get; set; } 
+    public DateTimeOffset? EndThursday { get; set; } 
 
     [JsonProperty("endfriday", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Endfriday { get; set; } 
+    public DateTimeOffset? EndFriday { get; set; } 
 
     [JsonProperty("endsaturday", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Endsaturday { get; set; } 
+    public DateTimeOffset? EndSaturday { get; set; } 
 
     [JsonProperty("endsunday", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Endsunday { get; set; } 
+    public DateTimeOffset? EndSunday { get; set; } 
 
     [JsonProperty("startmonday", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Startmonday { get; set; } 
+    public DateTimeOffset? StartMonday { get; set; } 
 
     [JsonProperty("starttuesday", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Starttuesday { get; set; } 
+    public DateTimeOffset? StartTuesday { get; set; } 
 
     [JsonProperty("startwednesday", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Startwednesday { get; set; } 
+    public DateTimeOffset? StartWednesday { get; set; } 
 
     [JsonProperty("startthursday", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Startthursday { get; set; } 
+    public DateTimeOffset? StartThursday { get; set; } 
 
     [JsonProperty("startfriday", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Startfriday { get; set; } 
+    public DateTimeOffset? StartFriday { get; set; } 
 
     [JsonProperty("startsaturday", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Startsaturday { get; set; } 
+    public DateTimeOffset? StartSaturday { get; set; } 
 
     [JsonProperty("startsunday", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Startsunday { get; set; } 
+    public DateTimeOffset? StartSunday { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

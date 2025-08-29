@@ -44,7 +44,7 @@ public class ReleaseProduct
     public DevOpsProject? DevOpsProject { get; set; } 
 
     [JsonProperty("devops_otherfield_mappings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<IntegrationFieldMapping>? DevOpsOtherfieldMappings { get; set; } 
+    public ICollection<IntegrationFieldMapping>? DevOpsOtherFieldMappings { get; set; } 
 
     [JsonProperty("devops_details_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? DevOpsDetailsId { get; set; } 

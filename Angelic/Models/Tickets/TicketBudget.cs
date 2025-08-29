@@ -79,7 +79,7 @@ public class TicketBudget
     public double? RemainingValue { get; set; } 
 
     [JsonProperty("quoteline_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? QuotelineId { get; set; } 
+    public int? QuoteLineId { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

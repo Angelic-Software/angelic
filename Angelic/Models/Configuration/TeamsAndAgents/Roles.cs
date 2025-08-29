@@ -40,7 +40,7 @@ public class Roles
     public ICollection<AgentCustom>? UnameCustomFields { get; set; } 
 
     [JsonProperty("unameappointmenttypes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AgentAppointment>? Unameappointmenttypes { get; set; } 
+    public ICollection<AgentAppointment>? UnameAppointmentTypes { get; set; } 
 
     [JsonProperty("notifications", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<AgentNotification>? Notifications { get; set; } 
@@ -61,7 +61,7 @@ public class Roles
     public string? OoName { get; set; } 
 
     [JsonProperty("uname_usercustomfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AgentCustom>? UnameUserCustomfields { get; set; } 
+    public ICollection<AgentCustom>? UnameUserCustomFields { get; set; } 
 
     [JsonProperty("access_control", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<AccessControl>? AccessControl { get; set; } 
@@ -115,13 +115,13 @@ public class Roles
     public ICollection<AccessControl>? AcMessageGroups { get; set; } 
 
     [JsonProperty("ac_reportgroups", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AccessControl>? AcReportgroups { get; set; } 
+    public ICollection<AccessControl>? AcReportGroups { get; set; } 
 
     [JsonProperty("ac_fieldgroups", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AccessControl>? AcFieldgroups { get; set; } 
+    public ICollection<AccessControl>? AcFieldGroups { get; set; } 
 
     [JsonProperty("ac_languagepacks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AccessControl>? AcLanguagepacks { get; set; } 
+    public ICollection<AccessControl>? AcLanguagePacks { get; set; } 
 
     [JsonProperty("ac_itemgroups", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<AccessControl>? AcItemGroups { get; set; } 
@@ -130,7 +130,7 @@ public class Roles
     public ICollection<AccessControl>? AcSuppliers { get; set; } 
 
     [JsonProperty("ac_suppliercontracts", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AccessControl>? AcSuppliercontracts { get; set; } 
+    public ICollection<AccessControl>? AcSupplierContracts { get; set; } 
 
     [JsonProperty("is_integration", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? IsIntegration { get; set; } 
@@ -160,7 +160,7 @@ public class Roles
     public ICollection<AgentSite>? Sites { get; set; } 
 
     [JsonProperty("ac_databaselookups", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<AccessControl>? AcDatabaselookups { get; set; } 
+    public ICollection<AccessControl>? AcDatabaseLookups { get; set; } 
 
     [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Id { get; set; } 

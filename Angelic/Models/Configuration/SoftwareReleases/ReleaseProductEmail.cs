@@ -13,7 +13,7 @@ public class ReleaseProductEmail
     public int? ReleaseId { get; set; } 
 
     [JsonProperty("releasetype_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ReleasetypeName { get; set; } 
+    public string? ReleaseTypeName { get; set; } 
 
     [JsonProperty("emailtemplate_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? EmailTemplateId { get; set; } 

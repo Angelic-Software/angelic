@@ -13,7 +13,7 @@ public class TicketRulesCriteria
     public int? RuleId { get; set; } 
 
     [JsonProperty("autoassign_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? AutoassignGuid { get; set; } 
+    public Guid? AutoAssignGuid { get; set; } 
 
     [JsonProperty("qualification_criteria_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? QualificationCriteriaId { get; set; } 
@@ -31,7 +31,7 @@ public class TicketRulesCriteria
     public int? ValueInt { get; set; } 
 
     [JsonProperty("valueint_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? ValueintGuid { get; set; } 
+    public Guid? ValueIntGuid { get; set; } 
 
     [JsonProperty("value_string", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ValueString { get; set; } 
@@ -40,13 +40,13 @@ public class TicketRulesCriteria
     public DateTimeOffset? ValueDateTime { get; set; } 
 
     [JsonProperty("partialmatch", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Partialmatch { get; set; } 
+    public bool? PartialMatch { get; set; } 
 
     [JsonProperty("value_float", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? ValueFloat { get; set; } 
 
     [JsonProperty("matchseparatedvalues", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Matchseparatedvalues { get; set; } 
+    public bool? MatchSeparatedValues { get; set; } 
 
     [JsonProperty("value_display", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ValueDisplay { get; set; } 
@@ -61,7 +61,7 @@ public class TicketRulesCriteria
     public int? Type { get; set; } 
 
     [JsonProperty("flowsubdetails_criteria_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? FlowsubdetailsCriteriaId { get; set; } 
+    public int? FlowSubDetailsCriteriaId { get; set; } 
 
     [JsonProperty("use", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Use { get; set; } 
@@ -73,7 +73,7 @@ public class TicketRulesCriteria
     public int? ChatProfileFlowSeq { get; set; } 
 
     [JsonProperty("timezonestring", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? TimeZonestring { get; set; } 
+    public string? TimeZoneString { get; set; } 
 
     [JsonProperty("match_after_start", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? MatchAfterStart { get; set; } 
@@ -85,18 +85,18 @@ public class TicketRulesCriteria
     public string? Warning { get; set; } 
 
     [JsonProperty("stdid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Stdid { get; set; } 
+    public int? StdId { get; set; } 
 
     [JsonProperty("contract_rule_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ContractRuleId { get; set; } 
 
     [JsonProperty("utcoffset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Utcoffset { get; set; } 
+    public int? UtcOffset { get; set; } 
 
     [JsonProperty("eventrule_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? EventruleId { get; set; } 
+    public int? EventRuleId { get; set; } 
 
     [JsonProperty("eventrule_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? EventruleGuid { get; set; } 
+    public Guid? EventRuleGuid { get; set; } 
 
 }

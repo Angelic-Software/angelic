@@ -22,7 +22,7 @@ public class ServiceRestriction
     public int? DataId { get; set; } 
 
     [JsonProperty("svrdata_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? SvrdataGuid { get; set; } 
+    public Guid? SvrDataGuid { get; set; } 
 
     [JsonProperty("data_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? DataName { get; set; } 

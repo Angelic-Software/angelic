@@ -1,10 +1,12 @@
 using System.CodeDom.Compiler;
+using Angelic.Attributes;
 using Angelic.Models.KeyPairs;
 using Newtonsoft.Json;
 
 namespace Angelic.Models.Configuration.SelfServicePortal;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
+[ListVariantOf(typeof(ServSite))]
 public class ServSiteList
 {
     [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -29,10 +31,10 @@ public class ServSiteList
     public bool? ShowInUserCatalog { get; set; } 
 
     [JsonProperty("showintechcatalog", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowIntechcatalog { get; set; } 
+    public bool? ShowInTechCatalog { get; set; } 
 
     [JsonProperty("trackstatus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Trackstatus { get; set; } 
+    public bool? TrackStatus { get; set; } 
 
     [JsonProperty("service_category_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ServiceCategoryId { get; set; } 
@@ -125,7 +127,7 @@ public class ServSiteList
     public int? ServiceTicketTypeId { get; set; } 
 
     [JsonProperty("serviceshownewreqscreen", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Serviceshownewreqscreen { get; set; } 
+    public bool? ServiceShowNewReqScreen { get; set; } 
 
     [JsonProperty("service_template_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ServiceTemplateId { get; set; } 
@@ -143,7 +145,7 @@ public class ServSiteList
     public int? NewIncidentType { get; set; } 
 
     [JsonProperty("relatedworkdayid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Relatedworkdayid { get; set; } 
+    public int? RelatedWorkdayId { get; set; } 
 
     [JsonProperty("status_end_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? StatusEndDate { get; set; } 
@@ -164,31 +166,31 @@ public class ServSiteList
     public string? RequestDetailUrl { get; set; } 
 
     [JsonProperty("requestdetail_shownewreqscreen", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? RequestDetailShowNewreqscreen { get; set; } 
+    public bool? RequestDetailShowNewReqScreen { get; set; } 
 
     [JsonProperty("requestdetail_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? RequestDetailType { get; set; } 
 
     [JsonProperty("screenafterlogging", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Screenafterlogging { get; set; } 
+    public int? ScreenAfterLogging { get; set; } 
 
     [JsonProperty("pricingrange", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Pricingrange { get; set; } 
+    public double? PricingRange { get; set; } 
 
     [JsonProperty("override_site_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? OverrideSiteId { get; set; } 
 
     [JsonProperty("failcreaterequest", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Failcreaterequest { get; set; } 
+    public bool? FailCreateRequest { get; set; } 
 
     [JsonProperty("workdays", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Workdays { get; set; } 
 
     [JsonProperty("checkminutes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Checkminutes { get; set; } 
+    public int? CheckMinutes { get; set; } 
 
     [JsonProperty("failalwaysnewrequest", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Failalwaysnewrequest { get; set; } 
+    public bool? FailAlwaysNewRequest { get; set; } 
 
     [JsonProperty("criticality", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Criticality { get; set; } 
@@ -206,10 +208,10 @@ public class ServSiteList
     public string? Icon { get; set; } 
 
     [JsonProperty("relatedworkdayid_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? RelatedworkdayidName { get; set; } 
+    public string? RelatedWorkdayIdName { get; set; } 
 
     [JsonProperty("relatedworkdayid_content", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? RelatedworkdayidContent { get; set; } 
+    public string? RelatedWorkdayIdContent { get; set; } 
 
     [JsonProperty("status_message_update_internal_html", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? StatusMessageUpdateInternalHtml { get; set; } 

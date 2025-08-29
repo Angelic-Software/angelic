@@ -50,10 +50,10 @@ public class TicketItem
     public string? SupplierPartCode { get; set; } 
 
     [JsonProperty("stocklocation_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? StocklocationId { get; set; } 
+    public int? StockLocationId { get; set; } 
 
     [JsonProperty("stocklocation_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? StocklocationName { get; set; } 
+    public string? StockLocationName { get; set; } 
 
     [JsonProperty("quantity_in_stock", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? QuantityInStock { get; set; } 

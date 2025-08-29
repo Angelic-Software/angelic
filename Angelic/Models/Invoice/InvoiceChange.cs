@@ -37,7 +37,7 @@ public class InvoiceChange
     public int? InvoiceDetailQuantityId { get; set; } 
 
     [JsonProperty("invoice_detail_prorata_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? InvoiceDetailProrataId { get; set; } 
+    public int? InvoiceDetailProRataId { get; set; } 
 
     [JsonProperty("type_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? TypeId { get; set; } 

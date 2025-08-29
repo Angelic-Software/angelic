@@ -19,7 +19,7 @@ public class PurchaseOrderDetail
     public int? SortSeq { get; set; } 
 
     [JsonProperty("productcode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Productcode { get; set; } 
+    public string? ProductCode { get; set; } 
 
     [JsonProperty("name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Name { get; set; } 
@@ -43,7 +43,7 @@ public class PurchaseOrderDetail
     public int? GroupId { get; set; } 
 
     [JsonProperty("isgroupdesc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isgroupdesc { get; set; } 
+    public bool? IsGroupDesc { get; set; } 
 
     [JsonProperty("salesorder_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? SalesOrderId { get; set; } 
@@ -88,7 +88,7 @@ public class PurchaseOrderDetail
     public bool? HideItems { get; set; } 
 
     [JsonProperty("invoiceid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Invoiceid { get; set; } 
+    public int? InvoiceId { get; set; } 
 
     [JsonProperty("asset_type_matching_field_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? AssetTypeMatchingFieldName { get; set; } 
@@ -190,7 +190,7 @@ public class PurchaseOrderDetail
     public ICollection<TaxRuleResult>? TaxRuleResult { get; set; } 
 
     [JsonProperty("decimalplacesforinvoices", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Decimalplacesforinvoices { get; set; } 
+    public int? DecimalPlacesForInvoices { get; set; } 
 
     [JsonProperty("total_net_total", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? TotalNetTotal { get; set; } 

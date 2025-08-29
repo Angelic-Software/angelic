@@ -39,85 +39,85 @@ public class Status
     public int? TicketCount { get; set; } 
 
     [JsonProperty("showonquickchange", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowOnquickchange { get; set; } 
+    public bool? ShowOnQuickChange { get; set; } 
 
     [JsonProperty("timeuntilloffhold", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Timeuntilloffhold { get; set; } 
+    public double? TimeUntilOffHold { get; set; } 
 
     [JsonProperty("statuschangeto", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Statuschangeto { get; set; } 
+    public int? StatusChangeTo { get; set; } 
 
     [JsonProperty("statuschangetofreq", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Statuschangetofreq { get; set; } 
+    public double? StatusChangeToFreq { get; set; } 
 
     [JsonProperty("statusnochangehours", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Statusnochangehours { get; set; } 
+    public double? StatusNoChangeHours { get; set; } 
 
     [JsonProperty("nochangehoursrecurring", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Nochangehoursrecurring { get; set; } 
+    public bool? NoChangeHoursRecurring { get; set; } 
 
     [JsonProperty("statusnochangehoursmanager", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Statusnochangehoursmanager { get; set; } 
+    public int? StatusNoChangeHoursManager { get; set; } 
 
     [JsonProperty("statusnochangehoursmanagerrecurring", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Statusnochangehoursmanagerrecurring { get; set; } 
 
     [JsonProperty("statusnochangehourssection", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Statusnochangehourssection { get; set; } 
+    public double? StatusNoChangeHoursSection { get; set; } 
 
     [JsonProperty("statusnochangehourssectionrecurring", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Statusnochangehourssectionrecurring { get; set; } 
 
     [JsonProperty("nochangetemplate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Nochangetemplate { get; set; } 
+    public int? NoChangeTemplate { get; set; } 
 
     [JsonProperty("nochangetemplate_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? NochangetemplateGuid { get; set; } 
+    public Guid? NoChangeTemplateGuid { get; set; } 
 
     [JsonProperty("includeinloadbalance", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? IncludeInloadbalance { get; set; } 
+    public bool? IncludeInLoadBalance { get; set; } 
 
     [JsonProperty("statusemailfreqdays", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Statusemailfreqdays { get; set; } 
+    public int? StatusEmailFreqDays { get; set; } 
 
     [JsonProperty("statusemailid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Statusemailid { get; set; } 
+    public int? StatusEmailId { get; set; } 
 
     [JsonProperty("statusemail_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? StatusemailGuid { get; set; } 
+    public Guid? StatusEmailGuid { get; set; } 
 
     [JsonProperty("statusemailname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Statusemailname { get; set; } 
+    public string? StatusEmailName { get; set; } 
 
     [JsonProperty("notifystatuschange", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Notifystatuschange { get; set; } 
+    public int? NotifyStatusChange { get; set; } 
 
     [JsonProperty("dontsendslareminders", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? DontSendslareminders { get; set; } 
+    public bool? DontSendSlaReminders { get; set; } 
 
     [JsonProperty("nochangetemplatename", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Nochangetemplatename { get; set; } 
+    public string? NoChangeTemplateName { get; set; } 
 
     [JsonProperty("slaignorerelease", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? SlaIgnorerelease { get; set; } 
+    public bool? SlaIgnoreRelease { get; set; } 
 
     [JsonProperty("statuschangetoname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Statuschangetoname { get; set; } 
+    public string? StatusChangeToName { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 
 
     [JsonProperty("useworkinghours", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Useworkinghours { get; set; } 
+    public int? UseWorkingHours { get; set; } 
 
     [JsonProperty("useworkinghours_statusnochangehours", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? UseworkinghoursStatusnochangehours { get; set; } 
+    public int? UseWorkingHoursStatusNoChangeHours { get; set; } 
 
     [JsonProperty("useworkinghours_statusnochangehourssection", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? UseworkinghoursStatusnochangehourssection { get; set; } 
+    public int? UseWorkingHoursStatusNoChangeHoursSection { get; set; } 
 
     [JsonProperty("useworkinghours_statusnochangehoursmanager", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? UseworkinghoursStatusnochangehoursmanager { get; set; } 
+    public int? UseWorkingHoursStatusNoChangeHoursManager { get; set; } 
 
     [JsonProperty("tickettypes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<ValueLabelIsNewKeyPair>? TicketTypes { get; set; } 

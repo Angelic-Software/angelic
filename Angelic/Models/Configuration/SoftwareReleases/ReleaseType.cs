@@ -13,7 +13,7 @@ public class ReleaseType
     public string? Name { get; set; } 
 
     [JsonProperty("releasenoteset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Releasenoteset { get; set; } 
+    public int? ReleaseNoteSet { get; set; } 
 
     [JsonProperty("template_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? TemplateId { get; set; } 

@@ -16,7 +16,7 @@ public class TicketDateDependencies
     public int? FaultId { get; set; } 
 
     [JsonProperty("dependentfaultid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Dependentfaultid { get; set; } 
+    public int? DependentFaultId { get; set; } 
 
     [JsonProperty("applied_from_template", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? AppliedFromTemplate { get; set; } 

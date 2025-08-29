@@ -26,7 +26,7 @@ public class SqlImport
     public string? Table { get; set; } 
 
     [JsonProperty("udlpath", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Udlpath { get; set; } 
+    public string? UdlPath { get; set; } 
 
     [JsonProperty("enabled", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Enabled { get; set; } 
@@ -38,31 +38,31 @@ public class SqlImport
     public string? KeyField { get; set; } 
 
     [JsonProperty("datafield1", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Datafield1 { get; set; } 
+    public string? DataField1 { get; set; } 
 
     [JsonProperty("datafield2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Datafield2 { get; set; } 
+    public string? DataField2 { get; set; } 
 
     [JsonProperty("datafield3", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Datafield3 { get; set; } 
+    public string? DataField3 { get; set; } 
 
     [JsonProperty("datafield4", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Datafield4 { get; set; } 
+    public string? DataField4 { get; set; } 
 
     [JsonProperty("defaultsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? DefaultSite { get; set; } 
 
     [JsonProperty("defaultsitename", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? DefaultSitename { get; set; } 
+    public string? DefaultSiteName { get; set; } 
 
     [JsonProperty("lastrundate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? LastRundate { get; set; } 
+    public DateTimeOffset? LastRunDate { get; set; } 
 
     [JsonProperty("nhdfield3", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Nhdfield3 { get; set; } 
+    public string? NhdField3 { get; set; } 
 
     [JsonProperty("updateonly", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Updateonly { get; set; } 
+    public bool? UpdateOnly { get; set; } 
 
     [JsonProperty("integrator_enabled", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? IntegratorEnabled { get; set; } 
@@ -71,31 +71,31 @@ public class SqlImport
     public ICollection<SqlImportField>? Fields { get; set; } 
 
     [JsonProperty("sqlserver", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Sqlserver { get; set; } 
+    public string? SqlServer { get; set; } 
 
     [JsonProperty("sqldatabase", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Sqldatabase { get; set; } 
+    public string? SqlDatabase { get; set; } 
 
     [JsonProperty("sqlusername", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Sqlusername { get; set; } 
+    public string? SqlUsername { get; set; } 
 
     [JsonProperty("sisqlpassword", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Sisqlpassword { get; set; } 
+    public string? SiSqlPassword { get; set; } 
 
     [JsonProperty("new_sql_password", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? NewSqlPassword { get; set; } 
 
     [JsonProperty("useusers_site", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? UseusersSite { get; set; } 
+    public bool? UseUsersSite { get; set; } 
 
     [JsonProperty("dontupdatesite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? DontUpdatesite { get; set; } 
+    public bool? DontUpdateSite { get; set; } 
 
     [JsonProperty("dontremoveusers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? DontRemoveUsers { get; set; } 
 
     [JsonProperty("canupdaterecords", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? CanUpdaterecords { get; set; } 
+    public bool? CanUpdateRecords { get; set; } 
 
     [JsonProperty("syncto3party", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? SyncTo3Party { get; set; } 
@@ -170,7 +170,7 @@ public class SqlImport
     public string? TableMatchingFieldName { get; set; } 
 
     [JsonProperty("linkto_table_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? LinktoTableId { get; set; } 
+    public int? LinkToTableId { get; set; } 
 
     [JsonProperty("table_update_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? TableUpdateType { get; set; } 

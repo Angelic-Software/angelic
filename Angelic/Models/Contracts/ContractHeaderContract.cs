@@ -16,7 +16,7 @@ public class ContractHeaderContract
     public int? SupplierContractId { get; set; } 
 
     [JsonProperty("contractref", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Contractref { get; set; } 
+    public string? ContractRef { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

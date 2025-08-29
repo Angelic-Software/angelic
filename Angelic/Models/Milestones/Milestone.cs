@@ -50,7 +50,7 @@ public class Milestone
     public int? TargetDays { get; set; } 
 
     [JsonProperty("_fromtemplate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Fromtemplate { get; set; } 
+    public int? FromTemplate { get; set; } 
 
     [JsonProperty("milestone_value", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? MilestoneValue { get; set; } 

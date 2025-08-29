@@ -36,10 +36,10 @@ public class ServiceRequestDetails
     public int? ServiceDetailTemplateId { get; set; } 
 
     [JsonProperty("servicedetail_templateguid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? ServiceDetailTemplateguid { get; set; } 
+    public Guid? ServiceDetailTemplateGuid { get; set; } 
 
     [JsonProperty("servicedetail_templatename", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ServiceDetailTemplatename { get; set; } 
+    public string? ServiceDetailTemplateName { get; set; } 
 
     [JsonProperty("servicedetail_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ServiceDetailUrl { get; set; } 

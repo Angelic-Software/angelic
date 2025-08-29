@@ -33,22 +33,22 @@ public class TemplateList
     public string? RestrictionType { get; set; } 
 
     [JsonProperty("restrictto_department_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? RestricttoDepartmentId { get; set; } 
+    public int? RestrictToDepartmentId { get; set; } 
 
     [JsonProperty("restrictto_department_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? RestricttoDepartmentName { get; set; } 
+    public string? RestrictToDepartmentName { get; set; } 
 
     [JsonProperty("restrictto_team_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? RestricttoTeamId { get; set; } 
+    public int? RestrictToTeamId { get; set; } 
 
     [JsonProperty("restrictto_team_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? RestricttoTeamName { get; set; } 
+    public string? RestrictToTeamName { get; set; } 
 
     [JsonProperty("restrictto_agent_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? RestricttoAgentId { get; set; } 
+    public int? RestrictToAgentId { get; set; } 
 
     [JsonProperty("restrictto_agent_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? RestricttoAgentName { get; set; } 
+    public string? RestrictToAgentName { get; set; } 
 
     [JsonProperty("summary", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Summary { get; set; } 
@@ -75,7 +75,7 @@ public class TemplateList
     public string? EmailBcc { get; set; } 
 
     [JsonProperty("emailsubject", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Emailsubject { get; set; } 
+    public string? EmailSubject { get; set; } 
 
     [JsonProperty("time", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? Time { get; set; } 
@@ -84,13 +84,13 @@ public class TemplateList
     public bool? Disabled { get; set; } 
 
     [JsonProperty("lastcreated", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Lastcreated { get; set; } 
+    public DateTimeOffset? LastCreated { get; set; } 
 
     [JsonProperty("nextcreationdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? NextCreationdate { get; set; } 
+    public DateTimeOffset? NextCreationDate { get; set; } 
 
     [JsonProperty("nextcreationdate_after_end", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? NextCreationdateAfterEnd { get; set; } 
+    public DateTimeOffset? NextCreationDateAfterEnd { get; set; } 
 
     [JsonProperty("execution_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ExecutionType { get; set; } 
@@ -117,16 +117,16 @@ public class TemplateList
     public int? ApprovalId { get; set; } 
 
     [JsonProperty("reportarea", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Reportarea { get; set; } 
+    public int? ReportArea { get; set; } 
 
     [JsonProperty("reportarea_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ReportareaName { get; set; } 
+    public string? ReportAreaName { get; set; } 
 
     [JsonProperty("restrictto_department_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? RestricttoDepartmentGuid { get; set; } 
+    public Guid? RestrictToDepartmentGuid { get; set; } 
 
     [JsonProperty("restrictto_team_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? RestricttoTeamGuid { get; set; } 
+    public Guid? RestrictToTeamGuid { get; set; } 
 
     [JsonProperty("clients", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Clients { get; set; } 
@@ -135,10 +135,10 @@ public class TemplateList
     public Guid? TicketTypeGuid { get; set; } 
 
     [JsonProperty("automationtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Automationtype { get; set; } 
+    public int? AutomationType { get; set; } 
 
     [JsonProperty("optionalservice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Optionalservice { get; set; } 
+    public int? OptionalService { get; set; } 
 
     [JsonProperty("optional_agent_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? OptionalAgentId { get; set; } 
@@ -156,7 +156,7 @@ public class TemplateList
     public bool? OptionalCreateLocked { get; set; } 
 
     [JsonProperty("optional_defaultresourcetype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? OptionalDefaultResourcetype { get; set; } 
+    public int? OptionalDefaultResourceType { get; set; } 
 
     [JsonProperty("optional_excludefromsla", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? OptionalExcludeFromSla { get; set; } 
@@ -168,7 +168,7 @@ public class TemplateList
     public ICollection<AssetList>? OptionalAssets { get; set; } 
 
     [JsonProperty("optional_forwardinboundupdates", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? OptionalForwardinboundupdates { get; set; } 
+    public int? OptionalForwardInboundUpdates { get; set; } 
 
     [JsonProperty("optional_showforusers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? OptionalShowForUsers { get; set; } 
@@ -207,7 +207,7 @@ public class TemplateList
     public int? OptionalKbId { get; set; } 
 
     [JsonProperty("optional_service", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? OptionalService { get; set; } 
+    public int? OptionalUNDERSCOREService { get; set; } 
 
     [JsonProperty("optional_service_details_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? OptionalServiceDetailsId { get; set; } 

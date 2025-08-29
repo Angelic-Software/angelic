@@ -28,28 +28,28 @@ public class ServStatus
     public string? Who { get; set; } 
 
     [JsonProperty("lastcheck", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Lastcheck { get; set; } 
+    public DateTimeOffset? LastCheck { get; set; } 
 
     [JsonProperty("lastok", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? LastOk { get; set; } 
 
     [JsonProperty("lastfailed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Lastfailed { get; set; } 
+    public DateTimeOffset? LastFailed { get; set; } 
 
     [JsonProperty("okcount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Okcount { get; set; } 
+    public int? OkCount { get; set; } 
 
     [JsonProperty("failedcount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Failedcount { get; set; } 
+    public int? FailedCount { get; set; } 
 
     [JsonProperty("lastemail", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? LastEmail { get; set; } 
 
     [JsonProperty("totaldownmins", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Totaldownmins { get; set; } 
+    public int? TotalDownMins { get; set; } 
 
     [JsonProperty("totaldowninstances", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Totaldowninstances { get; set; } 
+    public int? TotalDownInstances { get; set; } 
 
     [JsonProperty("message_internal_html", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? MessageInternalHtml { get; set; } 

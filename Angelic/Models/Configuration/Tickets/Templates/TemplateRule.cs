@@ -22,10 +22,10 @@ public class TemplateRule
     public int? RuleType { get; set; } 
 
     [JsonProperty("createonchildclose_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? CreateonchildcloseId { get; set; } 
+    public int? CreateOnChildCloseId { get; set; } 
 
     [JsonProperty("createonchildclose_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? CreateonchildcloseName { get; set; } 
+    public string? CreateOnChildCloseName { get; set; } 
 
     [JsonProperty("working_days", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? WorkingDays { get; set; } 
@@ -52,13 +52,13 @@ public class TemplateRule
     public string? FieldName { get; set; } 
 
     [JsonProperty("approvalstatus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Approvalstatus { get; set; } 
+    public int? ApprovalStatus { get; set; } 
 
     [JsonProperty("group_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? GroupId { get; set; } 
 
     [JsonProperty("optionalservice_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? OptionalserviceId { get; set; } 
+    public int? OptionalServiceId { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

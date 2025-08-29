@@ -25,10 +25,10 @@ public class Features
     public bool? Licensed { get; set; } 
 
     [JsonProperty("accesslevel", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Accesslevel { get; set; } 
+    public int? AccessLevel { get; set; } 
 
     [JsonProperty("halointegratorenabled", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? HaloIntegratorenabled { get; set; } 
+    public bool? HaloIntegratorEnabled { get; set; } 
 
     [JsonProperty("halointegrator_lastsync", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? HaloIntegratorLastSync { get; set; } 

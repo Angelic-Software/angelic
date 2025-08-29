@@ -23,7 +23,7 @@ public class ServiceOption
     public string? OptionalServiceName { get; set; } 
 
     [JsonProperty("sequenceid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Sequenceid { get; set; } 
+    public int? SequenceId { get; set; } 
 
     [JsonProperty("show_new_req_screen", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? ShowNewReqScreen { get; set; } 
@@ -35,7 +35,7 @@ public class ServiceOption
     public bool? Default { get; set; } 
 
     [JsonProperty("expandeddefault", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Expandeddefault { get; set; } 
+    public bool? ExpandedDefault { get; set; } 
 
     [JsonProperty("include", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Include { get; set; } 

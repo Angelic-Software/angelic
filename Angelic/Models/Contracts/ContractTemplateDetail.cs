@@ -52,28 +52,28 @@ public class ContractTemplateDetail
     public string? Category1 { get; set; } 
 
     [JsonProperty("partialmatchcategory", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Partialmatchcategory { get; set; } 
+    public bool? PartialMatchCategory { get; set; } 
 
     [JsonProperty("category_2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Category2 { get; set; } 
 
     [JsonProperty("partialmatchcategory2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Partialmatchcategory2 { get; set; } 
+    public bool? PartialMatchCategory2 { get; set; } 
 
     [JsonProperty("category_3", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Category3 { get; set; } 
 
     [JsonProperty("partialmatchcategory3", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Partialmatchcategory3 { get; set; } 
+    public bool? PartialMatchCategory3 { get; set; } 
 
     [JsonProperty("category_4", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Category4 { get; set; } 
 
     [JsonProperty("partialmatchcategory4", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Partialmatchcategory4 { get; set; } 
+    public bool? PartialMatchCategory4 { get; set; } 
 
     [JsonProperty("user_covered_billingdescription", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? UserCoveredBillingdescription { get; set; } 
+    public int? UserCoveredBillingDescription { get; set; } 
 
     [JsonProperty("asset_covered_by_contract", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? AssetCoveredByContract { get; set; } 

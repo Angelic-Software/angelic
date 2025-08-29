@@ -16,10 +16,10 @@ public class Release
     public string? NameExpanded { get; set; } 
 
     [JsonProperty("releasetype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ReleasetypeId { get; set; } 
+    public int? ReleaseTypeId { get; set; } 
 
     [JsonProperty("releasetype_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ReleasetypeName { get; set; } 
+    public string? ReleaseTypeName { get; set; } 
 
     [JsonProperty("branch_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? BranchId { get; set; } 
@@ -28,13 +28,13 @@ public class Release
     public string? BranchName { get; set; } 
 
     [JsonProperty("whoreleased_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? WhoreleasedId { get; set; } 
+    public int? WhoReleasedId { get; set; } 
 
     [JsonProperty("builddate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Builddate { get; set; } 
+    public DateTimeOffset? BuildDate { get; set; } 
 
     [JsonProperty("releasedate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Releasedate { get; set; } 
+    public DateTimeOffset? ReleaseDate { get; set; } 
 
     [JsonProperty("note", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Note { get; set; } 
@@ -64,7 +64,7 @@ public class Release
     public int? PatchVersionNumber { get; set; } 
 
     [JsonProperty("releasenote_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ReleasenoteCount { get; set; } 
+    public int? ReleaseNoteCount { get; set; } 
 
     [JsonProperty("release1_emaildate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? Release1EmailDate { get; set; } 
@@ -97,7 +97,7 @@ public class Release
     public ICollection<int>? ReleaseEmailTickets { get; set; } 
 
     [JsonProperty("releasetype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ReleaseType? Releasetype { get; set; } 
+    public ReleaseType? ReleaseType { get; set; } 
 
     [JsonProperty("instance_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? InstanceCount { get; set; } 

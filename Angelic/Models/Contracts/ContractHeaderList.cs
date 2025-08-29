@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Attributes;
 using Angelic.Models.Configuration.Custom.CustomFields;
 using Angelic.Models.ExternalLinks;
 using Newtonsoft.Json;
@@ -6,6 +7,7 @@ using Newtonsoft.Json;
 namespace Angelic.Models.Contracts;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
+[ListVariantOf(typeof(ContractHeader))]
 public class ContractHeaderList
 {
     [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -21,7 +23,7 @@ public class ContractHeaderList
     public string? Ref { get; set; } 
 
     [JsonProperty("refextra", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Refextra { get; set; } 
+    public string? RefExtra { get; set; } 
 
     [JsonProperty("start_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? StartDate { get; set; } 
@@ -36,13 +38,13 @@ public class ContractHeaderList
     public bool? Expired { get; set; } 
 
     [JsonProperty("numberofunitsfree", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Numberofunitsfree { get; set; } 
+    public double? NumberOfUnitsFree { get; set; } 
 
     [JsonProperty("billingperiod", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? BillingPeriod { get; set; } 
 
     [JsonProperty("billingdescription", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Billingdescription { get; set; } 
+    public int? BillingDescription { get; set; } 
 
     [JsonProperty("subtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Subtype { get; set; } 
@@ -66,13 +68,13 @@ public class ContractHeaderList
     public int? SlaId { get; set; } 
 
     [JsonProperty("periodicinvoicenextdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? PeriodIcinvoicenextdate { get; set; } 
+    public DateTimeOffset? PeriodicInvoiceNextDate { get; set; } 
 
     [JsonProperty("next_invoice_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? NextInvoiceDate { get; set; } 
 
     [JsonProperty("periodchargeamount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? PeriodChargeamount { get; set; } 
+    public double? PeriodChargeAmount { get; set; } 
 
     [JsonProperty("note", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Note { get; set; } 
@@ -81,7 +83,7 @@ public class ContractHeaderList
     public double? AssetValue { get; set; } 
 
     [JsonProperty("refextra2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Refextra2 { get; set; } 
+    public string? RefExtra2 { get; set; } 
 
     [JsonProperty("contract_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ContractStatus { get; set; } 

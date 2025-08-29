@@ -17,16 +17,16 @@ public class QuotationApproval
     public bool? Result { get; set; } 
 
     [JsonProperty("approvalname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Approvalname { get; set; } 
+    public string? ApprovalName { get; set; } 
 
     [JsonProperty("approvalemailaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Approvalemailaddress { get; set; } 
+    public string? ApprovalEmailAddress { get; set; } 
 
     [JsonProperty("approvalnote", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Approvalnote { get; set; } 
+    public string? ApprovalNote { get; set; } 
 
     [JsonProperty("ponumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Ponumber { get; set; } 
+    public string? PoNumber { get; set; } 
 
     [JsonProperty("signature", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Signature { get; set; } 

@@ -31,7 +31,7 @@ public class NotificationConditions
     public int? ValueInt { get; set; } 
 
     [JsonProperty("valueint_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? ValueintGuid { get; set; } 
+    public Guid? ValueIntGuid { get; set; } 
 
     [JsonProperty("value_string", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ValueString { get; set; } 
@@ -43,7 +43,7 @@ public class NotificationConditions
     public string? ValueType { get; set; } 
 
     [JsonProperty("timezonestring", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? TimeZonestring { get; set; } 
+    public string? TimeZoneString { get; set; } 
 
     [JsonProperty("tablename", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? TableName { get; set; } 
@@ -52,6 +52,6 @@ public class NotificationConditions
     public string? Warning { get; set; } 
 
     [JsonProperty("fieldtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Fieldtype { get; set; } 
+    public string? FieldType { get; set; } 
 
 }

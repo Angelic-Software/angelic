@@ -23,10 +23,10 @@ public class IncomingEvent
     public double? Duration { get; set; } 
 
     [JsonProperty("requestheaders", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Requestheaders { get; set; } 
+    public string? RequestHeaders { get; set; } 
 
     [JsonProperty("requestbody", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Requestbody { get; set; } 
+    public string? RequestBody { get; set; } 
 
     [JsonProperty("responsestatus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ResponseStatus { get; set; } 

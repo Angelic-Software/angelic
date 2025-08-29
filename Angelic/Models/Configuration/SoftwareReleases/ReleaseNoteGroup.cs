@@ -13,10 +13,10 @@ public class ReleaseNoteGroup
     public string? Name { get; set; } 
 
     [JsonProperty("releasenote", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Releasenote { get; set; } 
+    public string? ReleaseNote { get; set; } 
 
     [JsonProperty("releasenotes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<ReleaseNote>? Releasenotes { get; set; } 
+    public ICollection<ReleaseNote>? ReleaseNotes { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

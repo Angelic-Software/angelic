@@ -19,70 +19,70 @@ public class Priority
     public Guid? SlaGuid { get; set; } 
 
     [JsonProperty("priorityid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Priorityid { get; set; } 
+    public int? PriorityId { get; set; } 
 
     [JsonProperty("name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Name { get; set; } 
 
     [JsonProperty("fixtime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Fixtime { get; set; } 
+    public double? FixTime { get; set; } 
 
     [JsonProperty("fixunits", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Fixunits { get; set; } 
+    public string? FixUnits { get; set; } 
 
     [JsonProperty("enterslaexcuse", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Enterslaexcuse { get; set; } 
+    public bool? EnterSlaExcuse { get; set; } 
 
     [JsonProperty("responsetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? ResponseTime { get; set; } 
 
     [JsonProperty("responseunits", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Responseunits { get; set; } 
+    public string? ResponseUnits { get; set; } 
 
     [JsonProperty("ishidden", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Ishidden { get; set; } 
+    public bool? IsHidden { get; set; } 
 
     [JsonProperty("fixendofday", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Fixendofday { get; set; } 
+    public bool? FixEndOfDay { get; set; } 
 
     [JsonProperty("responseendofday", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Responseendofday { get; set; } 
+    public bool? ResponseEndOfDay { get; set; } 
 
     [JsonProperty("colour", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Colour { get; set; } 
 
     [JsonProperty("catprompt", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Catprompt { get; set; } 
+    public int? CatPrompt { get; set; } 
 
     [JsonProperty("workdaysoverride", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Workdaysoverride { get; set; } 
+    public int? WorkdaysOverride { get; set; } 
 
     [JsonProperty("responsestartofday", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ResponseStartofday { get; set; } 
+    public bool? ResponseStartOfDay { get; set; } 
 
     [JsonProperty("responsestartofdaytime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ResponseStartofdaytime { get; set; } 
+    public string? ResponseStartOfDayTime { get; set; } 
 
     [JsonProperty("startofday", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Startofday { get; set; } 
+    public bool? StartOfDay { get; set; } 
 
     [JsonProperty("startofdaytime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Startofdaytime { get; set; } 
+    public string? StartOfDayTime { get; set; } 
 
     [JsonProperty("workdays", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public Workdays? Workdays { get; set; } 
 
     [JsonProperty("setfixtostartdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Setfixtostartdate { get; set; } 
+    public bool? SetFixToStartDate { get; set; } 
 
     [JsonProperty("setfixtotargetdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Setfixtotargetdate { get; set; } 
+    public bool? SetFixToTargetDate { get; set; } 
 
     [JsonProperty("translations", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<LanguagePackTranslationsCustom>? Translations { get; set; } 
 
     [JsonProperty("enterslaresponseexcuse", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Enterslaresponseexcuse { get; set; } 
+    public bool? EnterSlaResponseExcuse { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

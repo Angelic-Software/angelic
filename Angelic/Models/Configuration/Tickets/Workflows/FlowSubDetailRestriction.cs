@@ -10,7 +10,7 @@ public class FlowSubDetailRestriction
     public int? Id { get; set; } 
 
     [JsonProperty("flowsubdetail_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? FlowsubdetailId { get; set; } 
+    public int? FlowSubDetailId { get; set; } 
 
     [JsonProperty("field_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? FieldId { get; set; } 

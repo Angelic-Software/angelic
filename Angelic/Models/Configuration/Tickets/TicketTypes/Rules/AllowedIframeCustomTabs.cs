@@ -13,10 +13,10 @@ public class AllowedIframeCustomTabs
     public int? TicketTypeId { get; set; } 
 
     [JsonProperty("iframetab_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? IframetabId { get; set; } 
+    public int? IFrameTabId { get; set; } 
 
     [JsonProperty("iframetab_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? IframetabName { get; set; } 
+    public string? IFrameTabName { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

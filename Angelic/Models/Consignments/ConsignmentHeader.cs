@@ -56,10 +56,10 @@ public class ConsignmentHeader
     public int? StockbinId { get; set; } 
 
     [JsonProperty("assettomoveback", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Assettomoveback { get; set; } 
+    public int? AssetToMoveBack { get; set; } 
 
     [JsonProperty("ignoreserialisation", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Ignoreserialisation { get; set; } 
+    public bool? IgnoreSerialisation { get; set; } 
 
     [JsonProperty("is_return", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? IsReturn { get; set; } 

@@ -17,7 +17,7 @@ public class ViewFilterDetails
     public int? ListId { get; set; } 
 
     [JsonProperty("itemsupplier_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ItemsupplierId { get; set; } 
+    public int? ItemSupplierId { get; set; } 
 
     [JsonProperty("area_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? AreaId { get; set; } 
@@ -44,7 +44,7 @@ public class ViewFilterDetails
     public Guid? ListGuid { get; set; } 
 
     [JsonProperty("itemsupplier_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public Guid? ItemsupplierGuid { get; set; } 
+    public Guid? ItemSupplierGuid { get; set; } 
 
     [JsonProperty("filter_value_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public Guid? FilterValueGuid { get; set; } 

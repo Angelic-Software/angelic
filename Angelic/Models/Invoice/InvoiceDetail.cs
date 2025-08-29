@@ -16,16 +16,16 @@ public class InvoiceDetail
     public int? Id { get; set; } 
 
     [JsonProperty("ihid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Ihid { get; set; } 
+    public int? IhId { get; set; } 
 
     [JsonProperty("item_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ItemCode { get; set; } 
 
     [JsonProperty("item_shortdescription", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ItemShortdescription { get; set; } 
+    public string? ItemShortDescription { get; set; } 
 
     [JsonProperty("item_longdescription", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ItemLongdescription { get; set; } 
+    public string? ItemLongDescription { get; set; } 
 
     [JsonProperty("nominal_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? NominalCode { get; set; } 
@@ -58,7 +58,7 @@ public class InvoiceDetail
     public string? Comment2 { get; set; } 
 
     [JsonProperty("itemonorder", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Itemonorder { get; set; } 
+    public bool? ItemOnOrder { get; set; } 
 
     [JsonProperty("dsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? DSite { get; set; } 
@@ -67,10 +67,10 @@ public class InvoiceDetail
     public int? DDevNum { get; set; } 
 
     [JsonProperty("_itemid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Itemid { get; set; } 
+    public int? ItemId { get; set; } 
 
     [JsonProperty("productnumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Productnumber { get; set; } 
+    public string? ProductNumber { get; set; } 
 
     [JsonProperty("unit_cost", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? UnitCost { get; set; } 
@@ -91,7 +91,7 @@ public class InvoiceDetail
     public int? RecurringInvoiceLineId { get; set; } 
 
     [JsonProperty("actioncode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Actioncode { get; set; } 
+    public int? ActionCode { get; set; } 
 
     [JsonProperty("site", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Site { get; set; } 
@@ -103,10 +103,10 @@ public class InvoiceDetail
     public int? TicketId { get; set; } 
 
     [JsonProperty("lineactiondate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Lineactiondate { get; set; } 
+    public DateTimeOffset? LineActionDate { get; set; } 
 
     [JsonProperty("labourdepartmentid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Labourdepartmentid { get; set; } 
+    public int? LabourDepartmentId { get; set; } 
 
     [JsonProperty("salesorder_line", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? SalesOrderLine { get; set; } 
@@ -133,7 +133,7 @@ public class InvoiceDetail
     public bool? CalculatePriceFromUsers { get; set; } 
 
     [JsonProperty("creditlinkedidid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? CreditLinkedidid { get; set; } 
+    public int? CreditLinkedIdId { get; set; } 
 
     [JsonProperty("recurring_invoice_price_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? RecurringInvoicePriceType { get; set; } 
@@ -160,19 +160,19 @@ public class InvoiceDetail
     public double? OverrideAstTotal { get; set; } 
 
     [JsonProperty("prorata_next_invoice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ProrataNextInvoice { get; set; } 
+    public bool? ProRataNextInvoice { get; set; } 
 
     [JsonProperty("prorata_quantity", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? ProrataQuantity { get; set; } 
+    public double? ProRataQuantity { get; set; } 
 
     [JsonProperty("prorata_unit_price", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? ProrataUnitPrice { get; set; } 
+    public double? ProRataUnitPrice { get; set; } 
 
     [JsonProperty("prorata_shortdescription", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ProrataShortdescription { get; set; } 
+    public string? ProRataShortDescription { get; set; } 
 
     [JsonProperty("prorata_longdescription", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ProrataLongdescription { get; set; } 
+    public string? ProRataLongDescription { get; set; } 
 
     [JsonProperty("isinactive", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? IsInactive { get; set; } 
@@ -184,7 +184,7 @@ public class InvoiceDetail
     public int? GroupId { get; set; } 
 
     [JsonProperty("isgroupdesc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isgroupdesc { get; set; } 
+    public bool? IsGroupDesc { get; set; } 
 
     [JsonProperty("kashflow_line_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? KashflowLineId { get; set; } 
@@ -205,7 +205,7 @@ public class InvoiceDetail
     public DateTimeOffset? LastReadingDate { get; set; } 
 
     [JsonProperty("prorata_data", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<InvoiceDetailProRata>? ProrataData { get; set; } 
+    public ICollection<InvoiceDetailProRata>? ProRataData { get; set; } 
 
     [JsonProperty("quantity_users", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<InvoiceDetailQuantity>? QuantityUsers { get; set; } 
@@ -241,7 +241,7 @@ public class InvoiceDetail
     public int? MinMeterUnits { get; set; } 
 
     [JsonProperty("sequenceid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Sequenceid { get; set; } 
+    public int? SequenceId { get; set; } 
 
     [JsonProperty("startdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? StartDate { get; set; } 
@@ -253,7 +253,7 @@ public class InvoiceDetail
     public bool? AutoRenew { get; set; } 
 
     [JsonProperty("autorenewperiod", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? AutoRenewperiod { get; set; } 
+    public int? AutoRenewPeriod { get; set; } 
 
     [JsonProperty("intacct_location_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? IntacctLocationId { get; set; } 
@@ -268,7 +268,7 @@ public class InvoiceDetail
     public bool? HideItems { get; set; } 
 
     [JsonProperty("includegrouppriceandqty", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? IncludeGrouppriceandqty { get; set; } 
+    public bool? IncludeGroupPriceAndQty { get; set; } 
 
     [JsonProperty("auto_increase_period", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? AutoIncreasePeriod { get; set; } 
@@ -277,22 +277,22 @@ public class InvoiceDetail
     public DateTimeOffset? AutoIncreaseLastDate { get; set; } 
 
     [JsonProperty("onetimecharge", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Onetimecharge { get; set; } 
+    public bool? OneTimeCharge { get; set; } 
 
     [JsonProperty("onetimechargeinvoiceid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Onetimechargeinvoiceid { get; set; } 
+    public int? OneTimeChargeInvoiceId { get; set; } 
 
     [JsonProperty("needsreviewbeforecreation", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Needsreviewbeforecreation { get; set; } 
+    public bool? NeedsReviewBeforeCreation { get; set; } 
 
     [JsonProperty("reviewed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Reviewed { get; set; } 
 
     [JsonProperty("metertype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Metertype { get; set; } 
+    public int? MeterType { get; set; } 
 
     [JsonProperty("importcsvid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Importcsvid { get; set; } 
+    public int? ImportCsvId { get; set; } 
 
     [JsonProperty("force_new", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? ForceNew { get; set; } 
@@ -316,10 +316,10 @@ public class InvoiceDetail
     public bool? ExcludeAutoIncrease { get; set; } 
 
     [JsonProperty("createproratanormallines", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Createproratanormallines { get; set; } 
+    public int? CreateProRataNormalLines { get; set; } 
 
     [JsonProperty("createproratadate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Createproratadate { get; set; } 
+    public DateTimeOffset? CreateProRataDate { get; set; } 
 
     [JsonProperty("pro_rata_line_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ProRataLineId { get; set; } 
@@ -379,7 +379,7 @@ public class InvoiceDetail
     public int? DeferredRevenueOlid { get; set; } 
 
     [JsonProperty("deferred_revenue_olseq", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? DeferredRevenueOlseq { get; set; } 
+    public int? DeferredRevenueOlSeq { get; set; } 
 
     [JsonProperty("is_recognised_revenue", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? IsRecognisedRevenue { get; set; } 
@@ -400,7 +400,7 @@ public class InvoiceDetail
     public int? ItemTaxCode { get; set; } 
 
     [JsonProperty("_updateprorata", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Updateprorata { get; set; } 
+    public bool? UpdateProRata { get; set; } 
 
     [JsonProperty("bundle_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? BundleId { get; set; } 
@@ -442,7 +442,7 @@ public class InvoiceDetail
     public double? BasePrice { get; set; } 
 
     [JsonProperty("unitprice_converted", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? UnitpriceConverted { get; set; } 
+    public double? UnitPriceUNDERSCOREConverted { get; set; } 
 
     [JsonProperty("total_tax_converted", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? TotalTaxConverted { get; set; } 
@@ -484,7 +484,7 @@ public class InvoiceDetail
     public ICollection<TaxRuleResult>? TaxRuleResult { get; set; } 
 
     [JsonProperty("decimalplacesforinvoices", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Decimalplacesforinvoices { get; set; } 
+    public int? DecimalPlacesForInvoices { get; set; } 
 
     [JsonProperty("total_net_total", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? TotalNetTotal { get; set; } 

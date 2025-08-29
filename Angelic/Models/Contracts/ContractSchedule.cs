@@ -7,7 +7,7 @@ namespace Angelic.Models.Contracts;
 public class ContractSchedule
 {
     [JsonProperty("chid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Chid { get; set; } 
+    public int? ChId { get; set; } 
 
     [JsonProperty("seq", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Seq { get; set; } 

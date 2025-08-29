@@ -55,7 +55,7 @@ public class InvoicePaymentList
     public string? ClientName { get; set; } 
 
     [JsonProperty("_statuswarning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Statuswarning { get; set; } 
+    public string? StatusWarning { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 

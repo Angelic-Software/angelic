@@ -19,7 +19,7 @@ public class ContractTemplateHeader
     public DateTimeOffset? PrepayRecurringChargeNextDate { get; set; } 
 
     [JsonProperty("billforrecurringprepayamount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Billforrecurringprepayamount { get; set; } 
+    public bool? BillForRecurringPrepayAmount { get; set; } 
 
     [JsonProperty("prepayrecurringcharge", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? PrepayRecurringCharge { get; set; } 
@@ -31,22 +31,22 @@ public class ContractTemplateHeader
     public int? PrepayRecurringChargeBp { get; set; } 
 
     [JsonProperty("autotopupthreshhold", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? AutoTopUpthreshhold { get; set; } 
+    public double? AutoTopUpThreshold { get; set; } 
 
     [JsonProperty("autotopuptoamount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? AutoTopUptoamount { get; set; } 
+    public double? AutoTopUpToAmount { get; set; } 
 
     [JsonProperty("autotopupcostperhour", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? AutoTopUpcostperhour { get; set; } 
+    public double? AutoTopUpCostPerHour { get; set; } 
 
     [JsonProperty("autotopupbyamount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? AutoTopUpbyamount { get; set; } 
+    public double? AutoTopUpByAmount { get; set; } 
 
     [JsonProperty("surchargeid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? SurchargeId { get; set; } 
 
     [JsonProperty("numberofunitsfree", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Numberofunitsfree { get; set; } 
+    public double? NumberOfUnitsFree { get; set; } 
 
     [JsonProperty("prepayrecurringminimumdeduction", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? PrepayRecurringMinimumDeduction { get; set; } 
@@ -61,7 +61,7 @@ public class ContractTemplateHeader
     public ICollection<ContractTemplateDetail>? BillingPlans { get; set; } 
 
     [JsonProperty("billingdescription", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Billingdescription { get; set; } 
+    public int? BillingDescription { get; set; } 
 
     [JsonProperty("subtype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Subtype { get; set; } 

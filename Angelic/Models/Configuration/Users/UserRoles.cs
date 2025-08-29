@@ -15,19 +15,19 @@ public class UserRoles
     public string? Intent { get; set; } 
 
     [JsonProperty("isimportantcontact2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? IsImportantcontact2 { get; set; } 
+    public bool? IsImportantContact2 { get; set; } 
 
     [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Id { get; set; } 
 
     [JsonProperty("showmeonly", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ShowMeonly { get; set; } 
+    public int? ShowMeOnly { get; set; } 
 
     [JsonProperty("ischangeapprover2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? IsChangeapprover2 { get; set; } 
+    public bool? IsChangeApprover2 { get; set; } 
 
     [JsonProperty("ispoapprover", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? IsPoapprover { get; set; } 
+    public bool? IsPoApprover { get; set; } 
 
     [JsonProperty("web_access_level", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? WebAccessLevel { get; set; } 
@@ -36,25 +36,25 @@ public class UserRoles
     public bool? CanAdd { get; set; } 
 
     [JsonProperty("canviewopps", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Canviewopps { get; set; } 
+    public bool? CanViewOpps { get; set; } 
 
     [JsonProperty("allowviewsitedocs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Allowviewsitedocs { get; set; } 
+    public bool? AllowViewSiteDocs { get; set; } 
 
     [JsonProperty("allowviewclientdocs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Allowviewclientdocs { get; set; } 
+    public bool? AllowViewClientDocs { get; set; } 
 
     [JsonProperty("canviewcontracts", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Canviewcontracts { get; set; } 
+    public bool? CanViewContracts { get; set; } 
 
     [JsonProperty("canaccesscatalog", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? CanAccesscatalog { get; set; } 
+    public bool? CanAccessCatalog { get; set; } 
 
     [JsonProperty("cataloglevel", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Cataloglevel { get; set; } 
+    public int? CatalogLevel { get; set; } 
 
     [JsonProperty("canaccessinvoices", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? CanAccessinvoices { get; set; } 
+    public bool? CanAccessInvoices { get; set; } 
 
     [JsonProperty("name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Name { get; set; } 
@@ -72,7 +72,7 @@ public class UserRoles
     public string? Warning { get; set; } 
 
     [JsonProperty("dontackemails2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? DontAckemails2 { get; set; } 
+    public bool? DontAckEmails2 { get; set; } 
 
     [JsonProperty("departments", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<UserDepartment>? Departments { get; set; } 
@@ -81,6 +81,6 @@ public class UserRoles
     public ICollection<AgentNotification>? Notifications { get; set; } 
 
     [JsonProperty("canuploaddocuments", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? CanUploaddocuments { get; set; } 
+    public bool? CanUploadDocuments { get; set; } 
 
 }

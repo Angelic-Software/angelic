@@ -19,10 +19,10 @@ public class EscMsg
     public int? EmailStatus { get; set; } 
 
     [JsonProperty("popupstatus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Popupstatus { get; set; } 
+    public int? PopupStatus { get; set; } 
 
     [JsonProperty("popupaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Popupaddress { get; set; } 
+    public string? PopupAddress { get; set; } 
 
     [JsonProperty("subject", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Subject { get; set; } 
@@ -37,13 +37,13 @@ public class EscMsg
     public string? EmailBodyHtml { get; set; } 
 
     [JsonProperty("ccaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Ccaddress { get; set; } 
+    public string? CcAddress { get; set; } 
 
     [JsonProperty("smsstatus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? SmsStatus { get; set; } 
 
     [JsonProperty("pushstatus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Pushstatus { get; set; } 
+    public int? PushStatus { get; set; } 
 
     [JsonProperty("smsnos", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? SmsNos { get; set; } 
@@ -52,7 +52,7 @@ public class EscMsg
     public string? SmsBody { get; set; } 
 
     [JsonProperty("sendemailifnopopup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? SendEmailifnopopup { get; set; } 
+    public bool? SendEmailIfNoPopup { get; set; } 
 
     [JsonProperty("slackid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? SlackId { get; set; } 
@@ -64,16 +64,16 @@ public class EscMsg
     public int? ApprovalId { get; set; } 
 
     [JsonProperty("msteamsid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Msteamsid { get; set; } 
+    public int? MsTeamsId { get; set; } 
 
     [JsonProperty("deleted", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Deleted { get; set; } 
 
     [JsonProperty("apiversion", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Apiversion { get; set; } 
+    public string? ApiVersion { get; set; } 
 
     [JsonProperty("integratorwarning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Integratorwarning { get; set; } 
+    public bool? IntegratorWarning { get; set; } 
 
     [JsonProperty("next_retry_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? NextRetryDate { get; set; } 
@@ -82,7 +82,7 @@ public class EscMsg
     public bool? TemplateAlreadyProcessed { get; set; } 
 
     [JsonProperty("mattermost_channelid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? MattermostChannelid { get; set; } 
+    public int? MattermostChannelId { get; set; } 
 
     [JsonProperty("replyto_address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ReplyToAddress { get; set; } 
@@ -106,7 +106,7 @@ public class EscMsg
     public string? Warning { get; set; } 
 
     [JsonProperty("_ignoreperms", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Ignoreperms { get; set; } 
+    public bool? IgnorePerms { get; set; } 
 
     [JsonProperty("agent_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? AgentId { get; set; } 
@@ -115,7 +115,7 @@ public class EscMsg
     public int? UserId { get; set; } 
 
     [JsonProperty("eventno", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Eventno { get; set; } 
+    public int? EventNo { get; set; } 
 
     [JsonProperty("notification_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? NotificationId { get; set; } 

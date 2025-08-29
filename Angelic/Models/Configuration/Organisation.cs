@@ -54,7 +54,7 @@ public class Organisation
     public string? PortalBackgroundImageUrl { get; set; } 
 
     [JsonProperty("deliverysite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Deliverysite { get; set; } 
+    public int? DeliverySite { get; set; } 
 
     [JsonProperty("portalurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? PortalUrl { get; set; } 
@@ -63,7 +63,7 @@ public class Organisation
     public string? PortalColour { get; set; } 
 
     [JsonProperty("portalfolderlocation", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? PortalFolderlocation { get; set; } 
+    public string? PortalFolderLocation { get; set; } 
 
     [JsonProperty("departments", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<TopLevelList>? Departments { get; set; } 
@@ -87,7 +87,7 @@ public class Organisation
     public string? Warning { get; set; } 
 
     [JsonProperty("isorganisationdetails", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? IsOrganisationdetails { get; set; } 
+    public bool? IsOrganisationDetails { get; set; } 
 
     [JsonProperty("bank_details_line_1", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? BankDetailsLine1 { get; set; } 

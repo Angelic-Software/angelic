@@ -20,7 +20,6 @@ public class IntegrationLookUp
     public string? ThirdPartyId { get; set; } 
 
     [JsonProperty("value", Required = Required.Always)]
-    [Required]
     public required string Value { get; set; } 
 
     [JsonProperty("_success", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

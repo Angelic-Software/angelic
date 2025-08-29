@@ -32,7 +32,7 @@ public class ConsignmentDetail
     public int? SalesOrderLine { get; set; } 
 
     [JsonProperty("stocklocation_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? StocklocationId { get; set; } 
+    public int? StockLocationId { get; set; } 
 
     [JsonProperty("costprice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? CostPrice { get; set; } 
@@ -50,7 +50,7 @@ public class ConsignmentDetail
     public int? SupplierId { get; set; } 
 
     [JsonProperty("stockadjustedamount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Stockadjustedamount { get; set; } 
+    public double? StockAdjustedAmount { get; set; } 
 
     [JsonProperty("serialised_assets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<AssetList>? SerialisedAssets { get; set; } 
@@ -68,10 +68,10 @@ public class ConsignmentDetail
     public string? Warning { get; set; } 
 
     [JsonProperty("item_internalreference", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ItemInternalreference { get; set; } 
+    public string? ItemInternalReference { get; set; } 
 
     [JsonProperty("item_externalreference", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ItemExternalreference { get; set; } 
+    public string? ItemExternalReference { get; set; } 
 
     [JsonProperty("item_supplier_part_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ItemSupplierPartCode { get; set; } 

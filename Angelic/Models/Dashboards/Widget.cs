@@ -13,7 +13,7 @@ public class Widget
     public int? Id { get; set; } 
 
     [JsonProperty("dashboardid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Dashboardid { get; set; } 
+    public int? DashboardId { get; set; } 
 
     [JsonProperty("i", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? I { get; set; } 
@@ -86,16 +86,16 @@ public class Widget
     public string? CustomCss { get; set; } 
 
     [JsonProperty("initialcolour", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Initialcolour { get; set; } 
+    public string? InitialColour { get; set; } 
 
     [JsonProperty("changedcolour", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Changedcolour { get; set; } 
+    public string? ChangedColour { get; set; } 
 
     [JsonProperty("thresholdvalue", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Thresholdvalue { get; set; } 
+    public double? ThresholdValue { get; set; } 
 
     [JsonProperty("colourchangerule", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Colourchangerule { get; set; } 
+    public int? ColourChangeRule { get; set; } 
 
     [JsonProperty("override_drilldown_report_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? OverrideDrilldownReportId { get; set; } 
@@ -131,19 +131,19 @@ public class Widget
     public int? DisplayType { get; set; } 
 
     [JsonProperty("charttype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Charttype { get; set; } 
+    public int? ChartType { get; set; } 
 
     [JsonProperty("xaxis", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Xaxis { get; set; } 
+    public string? XAxis { get; set; } 
 
     [JsonProperty("yaxis", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Yaxis { get; set; } 
+    public string? YAxis { get; set; } 
 
     [JsonProperty("xaxiscaption", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Xaxiscaption { get; set; } 
+    public string? XAxisCaption { get; set; } 
 
     [JsonProperty("yaxiscaption", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Yaxiscaption { get; set; } 
+    public string? YAxisCaption { get; set; } 
 
     [JsonProperty("series", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<ReportSeries>? Series { get; set; } 
@@ -152,10 +152,10 @@ public class Widget
     public ICollection<ReportColour>? Colours { get; set; } 
 
     [JsonProperty("graphorderby", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Graphorderby { get; set; } 
+    public string? GraphOrderBy { get; set; } 
 
     [JsonProperty("graphorder", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Graphorder { get; set; } 
+    public int? GraphOrder { get; set; } 
 
     [JsonProperty("count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Count { get; set; } 
@@ -167,7 +167,7 @@ public class Widget
     public bool? Average { get; set; } 
 
     [JsonProperty("averageaspercentage", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Averageaspercentage { get; set; } 
+    public bool? AverageAsPercentage { get; set; } 
 
     [JsonProperty("show_top_only", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? ShowTopOnly { get; set; } 
@@ -176,16 +176,16 @@ public class Widget
     public int? TopCount { get; set; } 
 
     [JsonProperty("show_trendline", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowTrendline { get; set; } 
+    public bool? ShowTrendLine { get; set; } 
 
     [JsonProperty("show_datavalues", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? ShowDatavalues { get; set; } 
+    public bool? ShowDataValues { get; set; } 
 
     [JsonProperty("stackbars", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Stackbars { get; set; } 
+    public bool? StackBars { get; set; } 
 
     [JsonProperty("colourpallette", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Colourpallette { get; set; } 
+    public string? ColourPalette { get; set; } 
 
     [JsonProperty("chart_comparison", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ChartComparison { get; set; } 

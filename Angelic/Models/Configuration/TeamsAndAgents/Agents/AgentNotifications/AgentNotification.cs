@@ -31,16 +31,16 @@ public class AgentNotification
     public int? DeliveryMethod { get; set; } 
 
     [JsonProperty("sendpushnotification", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Sendpushnotification { get; set; } 
+    public bool? SendPushNotification { get; set; } 
 
     [JsonProperty("sendpushnotificationbrowser", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Sendpushnotificationbrowser { get; set; } 
+    public bool? SendPushNotificationBrowser { get; set; } 
 
     [JsonProperty("popupinnotificationpane", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Popupinnotificationpane { get; set; } 
+    public bool? PopupInNotificationPane { get; set; } 
 
     [JsonProperty("eventno", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Eventno { get; set; } 
+    public int? EventNo { get; set; } 
 
     [JsonProperty("emailtemplate_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? EmailTemplateId { get; set; } 
@@ -67,7 +67,7 @@ public class AgentNotification
     public double? Interval { get; set; } 
 
     [JsonProperty("useworkinghours", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Useworkinghours { get; set; } 
+    public int? UseWorkingHours { get; set; } 
 
     [JsonProperty("restriction_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? RestrictionType { get; set; } 
@@ -130,13 +130,13 @@ public class AgentNotification
     public string? Value1Name { get; set; } 
 
     [JsonProperty("_iszapier", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Iszapier { get; set; } 
+    public bool? IsZapier { get; set; } 
 
     [JsonProperty("filter_sitecontact", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? FilterSitecontact { get; set; } 
+    public bool? FilterSiteContact { get; set; } 
 
     [JsonProperty("sitecontact_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? SitecontactType { get; set; } 
+    public int? SiteContactType { get; set; } 
 
     [JsonProperty("_warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Warning { get; set; } 
@@ -145,7 +145,7 @@ public class AgentNotification
     public ICollection<AgentNotificationLink>? Roles { get; set; } 
 
     [JsonProperty("mattermost_channelid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? MattermostChannelid { get; set; } 
+    public int? MattermostChannelId { get; set; } 
 
     [JsonProperty("mattermost_channel_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? MattermostChannelName { get; set; } 
@@ -163,7 +163,7 @@ public class AgentNotification
     public int? FilterType { get; set; } 
 
     [JsonProperty("customisecolour", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Customisecolour { get; set; } 
+    public bool? CustomiseColour { get; set; } 
 
     [JsonProperty("colour", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Colour { get; set; } 

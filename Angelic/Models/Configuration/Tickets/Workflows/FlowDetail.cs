@@ -58,7 +58,7 @@ public class FlowDetail
     public ICollection<FlowSubDetail>? Actions { get; set; } 
 
     [JsonProperty("overrideprobabiliywhenatthisstep", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? OverrideProbabiliyWhenAtThisStep { get; set; } 
+    public bool? OverrideProbabilityWhenAtThisStep { get; set; } 
 
     [JsonProperty("probabilityoverridevalue", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? ProbabilityOverrideValue { get; set; } 

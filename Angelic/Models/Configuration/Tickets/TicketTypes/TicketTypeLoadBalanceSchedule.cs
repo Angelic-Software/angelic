@@ -19,7 +19,7 @@ public class TicketTypeLoadBalanceSchedule
     public DateTimeOffset? Time { get; set; } 
 
     [JsonProperty("assignto_agent_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? AssigntoAgentId { get; set; } 
+    public int? AssignToAgentId { get; set; } 
 
     [JsonProperty("status_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? StatusId { get; set; } 
@@ -37,6 +37,6 @@ public class TicketTypeLoadBalanceSchedule
     public bool? Paused { get; set; } 
 
     [JsonProperty("asslinked_tickettype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? AsslinkedTicketType { get; set; } 
+    public int? AssLinkedTicketType { get; set; } 
 
 }

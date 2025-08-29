@@ -47,37 +47,37 @@ public class TicketTypeList
     public bool? CanCreate { get; set; } 
 
     [JsonProperty("agentscanselect", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Agentscanselect { get; set; } 
+    public bool? AgentsCanSelect { get; set; } 
 
     [JsonProperty("itilrequesttype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ItilRequesttype { get; set; } 
+    public int? ItilRequestType { get; set; } 
 
     [JsonProperty("allowattachments", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? AllowAttachments { get; set; } 
 
     [JsonProperty("copyattachmentstochild", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Copyattachmentstochild { get; set; } 
+    public bool? CopyAttachmentsToChild { get; set; } 
 
     [JsonProperty("copyattachmentstorelated", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Copyattachmentstorelated { get; set; } 
+    public bool? CopyAttachmentsToRelated { get; set; } 
 
     [JsonProperty("is_sprint", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? IsSprint { get; set; } 
 
     [JsonProperty("fieldidlist", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<int>? FieldIdlist { get; set; } 
+    public ICollection<int>? FieldIdList { get; set; } 
 
     [JsonProperty("enduserscanselect", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? EndUserscanselect { get; set; } 
+    public bool? EndUsersCanSelect { get; set; } 
 
     [JsonProperty("anonymouscanselect", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Anonymouscanselect { get; set; } 
+    public bool? AnonymousCanSelect { get; set; } 
 
     [JsonProperty("hasmandatorytechfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Hasmandatorytechfields { get; set; } 
+    public bool? HasMandatoryTechFields { get; set; } 
 
     [JsonProperty("hasmandatoryuserfields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Hasmandatoryuserfields { get; set; } 
+    public bool? HasMandatoryUserFields { get; set; } 
 
     [JsonProperty("project_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ProjectType { get; set; } 
@@ -107,7 +107,7 @@ public class TicketTypeList
     public string? WorkflowName { get; set; } 
 
     [JsonProperty("overridewiththefollowingtemplatewhenloggingmanuallyname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Overridewiththefollowingtemplatewhenloggingmanuallyname { get; set; } 
+    public string? OverrideWithTheFollowingTemplateWhenLoggingManuallyName { get; set; } 
 
     [JsonProperty("default_priority", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? DefaultPriority { get; set; } 

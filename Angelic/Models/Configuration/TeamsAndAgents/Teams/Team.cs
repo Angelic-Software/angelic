@@ -56,7 +56,7 @@ public class Team
     public ICollection<Manager>? Managers { get; set; } 
 
     [JsonProperty("teamphotopath", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Teamphotopath { get; set; } 
+    public string? TeamPhotoPath { get; set; } 
 
     [JsonProperty("last_modified", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? LastModified { get; set; } 
@@ -74,16 +74,16 @@ public class Team
     public int? ConcurrentLicLimit { get; set; } 
 
     [JsonProperty("workinghoursbeforealert", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public double? Workinghoursbeforealert { get; set; } 
+    public double? WorkingHoursBeforeAlert { get; set; } 
 
     [JsonProperty("emailaddress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? EmailAddress { get; set; } 
 
-    [JsonProperty("addtoallagents", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Addtoallagents { get; set; } 
+    [JsonProperty("addtoallagents", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)] 
+    public bool? AddToAllAgents { get; set; } 
 
     [JsonProperty("allowlivechat", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Allowlivechat { get; set; } 
+    public bool? AllowLiveChat { get; set; } 
 
     [JsonProperty("rtid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? RtId { get; set; } 

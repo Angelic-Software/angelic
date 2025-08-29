@@ -20,10 +20,10 @@ public class ItemStock
     public int? ItemAssetTypeId { get; set; } 
 
     [JsonProperty("stocklocation_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? StocklocationId { get; set; } 
+    public int? StockLocationId { get; set; } 
 
     [JsonProperty("stocklocation_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? StocklocationName { get; set; } 
+    public string? StockLocationName { get; set; } 
 
     [JsonProperty("date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? Date { get; set; } 

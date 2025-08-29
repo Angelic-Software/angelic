@@ -7,7 +7,7 @@ namespace Angelic.Models.Configuration.TeamsAndAgents;
 public class ImpersonationRequest
 {
     [JsonProperty("irid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Irid { get; set; } 
+    public int? IrId { get; set; } 
 
     [JsonProperty("requestor", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Requestor { get; set; } 

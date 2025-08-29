@@ -31,7 +31,7 @@ public class AgentAssetType
     public bool? CanCreate { get; set; } 
 
     [JsonProperty("canview", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Canview { get; set; } 
+    public bool? CanView { get; set; } 
 
     [JsonProperty("canedit", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? CanEdit { get; set; } 

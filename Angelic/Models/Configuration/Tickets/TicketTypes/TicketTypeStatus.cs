@@ -7,7 +7,7 @@ namespace Angelic.Models.Configuration.Tickets.TicketTypes;
 public class TicketTypeStatus
 {
     [JsonProperty("ticketype_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? TicketypeId { get; set; } 
+    public int? TicketTypeId { get; set; } 
 
     [JsonProperty("tickettype_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? TicketTypeName { get; set; } 

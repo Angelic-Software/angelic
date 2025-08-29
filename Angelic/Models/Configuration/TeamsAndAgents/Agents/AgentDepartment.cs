@@ -31,9 +31,9 @@ public class AgentDepartment
     public string? RoleName { get; set; } 
 
     [JsonProperty("membershiplevel", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Membershiplevel { get; set; } 
+    public int? MembershipLevel { get; set; } 
 
     [JsonProperty("includeteamsintree", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? IncludeTeamsintree { get; set; } 
+    public bool? IncludeTeamsInTree { get; set; } 
 
 }

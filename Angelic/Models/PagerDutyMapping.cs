@@ -10,7 +10,7 @@ public class PagerDutyMapping
     public int? Id { get; set; } 
 
     [JsonProperty("serviceid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Serviceid { get; set; } 
+    public string? ServiceId { get; set; } 
 
     [JsonProperty("service_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ServiceName { get; set; } 

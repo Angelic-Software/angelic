@@ -24,10 +24,10 @@ public class FlowSubDetail
     public int? EndStep { get; set; } 
 
     [JsonProperty("old_diagram_startpos", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? OldDiagramStartpos { get; set; } 
+    public int? OldDiagramStartPos { get; set; } 
 
     [JsonProperty("old_diagram_endpos", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? OldDiagramEndpos { get; set; } 
+    public int? OldDiagramEndPos { get; set; } 
 
     [JsonProperty("action_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ActionType { get; set; } 

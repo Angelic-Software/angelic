@@ -25,43 +25,43 @@ public class Schedule
     public double? Hours { get; set; } 
 
     [JsonProperty("dailyrecurrencepattern", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Dailyrecurrencepattern { get; set; } 
+    public int? DailyRecurrencePattern { get; set; } 
 
     [JsonProperty("dailyrecurrencedays", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Dailyrecurrencedays { get; set; } 
+    public int? DailyRecurrenceDays { get; set; } 
 
     [JsonProperty("weeklyrecurrenceweeks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Weeklyrecurrenceweeks { get; set; } 
+    public int? WeeklyRecurrenceWeeks { get; set; } 
 
     [JsonProperty("endafteramount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Endafteramount { get; set; } 
+    public int? EndAfterAmount { get; set; } 
 
     [JsonProperty("rangeofrecurrence", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Rangeofrecurrence { get; set; } 
+    public int? RangeOfRecurrence { get; set; } 
 
     [JsonProperty("requesttype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? RequestType { get; set; } 
 
     [JsonProperty("recurrencepattern", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Recurrencepattern { get; set; } 
+    public int? RecurrencePattern { get; set; } 
 
     [JsonProperty("agentid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? AgentId { get; set; } 
 
     [JsonProperty("monthlyrecurrencepattern", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Monthlyrecurrencepattern { get; set; } 
+    public int? MonthlyRecurrencePattern { get; set; } 
 
     [JsonProperty("yearlyrecurrencepattern", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? YearlyRecurrencepattern { get; set; } 
+    public int? YearlyRecurrencePattern { get; set; } 
 
     [JsonProperty("monthlyrecurrencespecificdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Monthlyrecurrencespecificdate { get; set; } 
+    public int? MonthlyRecurrenceSpecificDate { get; set; } 
 
     [JsonProperty("monthlyrecurrencespecificdateinterval", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Monthlyrecurrencespecificdateinterval { get; set; } 
 
     [JsonProperty("monthlyrecurrencespecificday", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Monthlyrecurrencespecificday { get; set; } 
+    public int? MonthlyRecurrenceSpecificDay { get; set; } 
 
     [JsonProperty("monthlyrecurrencespecificdayofweek", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Monthlyrecurrencespecificdayofweek { get; set; } 
@@ -70,22 +70,22 @@ public class Schedule
     public int? Monthlyrecurrencespecificdayinterval { get; set; } 
 
     [JsonProperty("yearlyrecurrencespecificdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? YearlyRecurrencespecificdate { get; set; } 
+    public int? YearlyRecurrenceSpecificDate { get; set; } 
 
     [JsonProperty("yearlyrecurrencespecificdatemonth", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? YearlyRecurrencespecificdatemonth { get; set; } 
+    public int? YearlyRecurrenceSpecificDateMonth { get; set; } 
 
     [JsonProperty("yearlyrecurrencespecificdateinterval", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? YearlyRecurrencespecificdateinterval { get; set; } 
+    public int? YearlyRecurrenceSpecificDateInterval { get; set; } 
 
     [JsonProperty("yearlyrecurrencespecificday", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? YearlyRecurrencespecificday { get; set; } 
+    public int? YearlyRecurrenceSpecificDay { get; set; } 
 
     [JsonProperty("yearlyrecurrencespecificdayofweek", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? YearlyRecurrencespecificdayofweek { get; set; } 
+    public int? YearlyRecurrenceSpecificDayOfWeek { get; set; } 
 
     [JsonProperty("yearlyrecurrencespecificdaymonth", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? YearlyRecurrencespecificdaymonth { get; set; } 
+    public int? YearlyRecurrenceSpecificDayMonth { get; set; } 
 
     [JsonProperty("yearlyrecurrencespecificdayinterval", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? YearlyRecurrenceSpecificDayInterval { get; set; } 
@@ -97,19 +97,19 @@ public class Schedule
     public int? UniqueId { get; set; } 
 
     [JsonProperty("weeklyrecurrencestring", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Weeklyrecurrencestring { get; set; } 
+    public string? WeeklyRecurrenceString { get; set; } 
 
     [JsonProperty("nextcreationdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? NextCreationdate { get; set; } 
+    public DateTimeOffset? NextCreationDate { get; set; } 
 
     [JsonProperty("nextrundate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? NextRundate { get; set; } 
+    public DateTimeOffset? NextRunDate { get; set; } 
 
     [JsonProperty("contract_schedule_plan", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<ContractSchedulePlan>? ContractSchedulePlan { get; set; } 
 
     [JsonProperty("weeklyrecurrenceamount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<StringIdNameKeyPair>? Weeklyrecurrenceamount { get; set; } 
+    public ICollection<StringIdNameKeyPair>? WeeklyRecurrenceAmount { get; set; } 
 
     [JsonProperty("_validateonly", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? ValidateOnly { get; set; } 

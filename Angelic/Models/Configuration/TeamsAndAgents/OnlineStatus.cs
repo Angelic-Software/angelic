@@ -22,7 +22,7 @@ public class OnlineStatus
     public int? AgentStatus { get; set; } 
 
     [JsonProperty("status_overidden", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? StatusOveridden { get; set; } 
+    public bool? StatusOverridden { get; set; } 
 
     [JsonProperty("fetch_all", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? FetchAll { get; set; } 
