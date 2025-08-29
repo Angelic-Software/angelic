@@ -1059,7 +1059,7 @@ public class Client
     public string? JiraUrl { get; set; }
 
     [JsonProperty("jira_username", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? JiraUsername { get; set; }
+    public string? JiraUNDERSCOREUsername { get; set; }
 
     [JsonProperty("new_jirakey", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? NewJiraKey { get; set; }
