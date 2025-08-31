@@ -55,7 +55,7 @@ public class Timesheet
     public double? Percentage { get; set; } 
 
     [JsonProperty("workdayid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Workdayid { get; set; } 
+    public int? WorkdayId { get; set; } 
 
     [JsonProperty("events", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<TimesheetEvent>? Events { get; set; } 
@@ -67,7 +67,7 @@ public class Timesheet
     public int? ForecastingId { get; set; } 
 
     [JsonProperty("_submitapproval", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Submitapproval { get; set; } 
+    public bool? SubmitApproval { get; set; } 
 
     [JsonProperty("_approve", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Approve { get; set; } 

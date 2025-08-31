@@ -10,19 +10,19 @@ public class TimesheetApproval
     public int? Id { get; set; } 
 
     [JsonProperty("tsid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Tsid { get; set; } 
+    public int? TsId { get; set; } 
 
     [JsonProperty("unum", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Unum { get; set; } 
 
     [JsonProperty("approvalstatus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public TimeSheetApprovalStatus? Approvalstatus { get; set; } 
+    public TimeSheetApprovalStatus? ApprovalStatus { get; set; } 
 
     [JsonProperty("approvedby", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ApprovedBy { get; set; } 
 
     [JsonProperty("submissiondate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Submissiondate { get; set; } 
+    public DateTimeOffset? SubmissionDate { get; set; } 
 
     [JsonProperty("approver", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Approver { get; set; } 

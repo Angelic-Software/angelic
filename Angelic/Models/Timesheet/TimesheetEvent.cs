@@ -71,7 +71,7 @@ public class TimesheetEvent
     public int? TicketTypeId { get; set; } 
 
     [JsonProperty("lognewticket", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Lognewticket { get; set; } 
+    public bool? LogNewTicket { get; set; } 
 
     [JsonProperty("client_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ClientId { get; set; } 

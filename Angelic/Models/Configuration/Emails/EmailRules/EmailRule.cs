@@ -106,7 +106,7 @@ public class EmailRule
     public int? Seq { get; set; } 
 
     [JsonProperty("pagerduty", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Pagerduty { get; set; } 
+    public bool? PagerDuty { get; set; } 
 
     [JsonProperty("fromaddrexact", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? FromAddrExact { get; set; } 
@@ -136,10 +136,10 @@ public class EmailRule
     public int? PagerDutyAgent { get; set; } 
 
     [JsonProperty("pagerduty_service", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? PagerdutyService { get; set; } 
+    public string? PagerDutyService { get; set; } 
 
     [JsonProperty("pagerduty_service_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? PagerdutyServiceName { get; set; } 
+    public string? PagerDutyServiceName { get; set; } 
 
     [JsonProperty("5starttag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? FiveStartTag { get; set; } 

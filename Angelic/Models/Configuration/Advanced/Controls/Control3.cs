@@ -23,7 +23,7 @@ public partial class Control
         public Guid? GfiServerTypeGuid { get; set; } 
 
         [JsonProperty("gfiwstype", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? GfiWstype { get; set; } 
+        public int? GfiWsType { get; set; } 
 
         [JsonProperty("gfiwstype_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public Guid? GfiWsTypeGuid { get; set; } 

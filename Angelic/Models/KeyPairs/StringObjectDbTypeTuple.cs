@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using System.ComponentModel.DataAnnotations;
 using Newtonsoft.Json;
 
 namespace Angelic.Models.KeyPairs;
@@ -13,6 +14,7 @@ public class StringObjectDbTypeTuple
     public object? Item2 { get; set; } 
 
     [JsonProperty("item3", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DbType? Item3 { get; set; } 
+    [Range(1, 27)]
+    public int? Item3 { get; set; } 
 
 }

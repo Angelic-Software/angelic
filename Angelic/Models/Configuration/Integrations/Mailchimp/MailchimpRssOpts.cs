@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using Angelic.Models.Configuration.TeamsAndAgents.Workdays;
 using Newtonsoft.Json;
 
 namespace Angelic.Models.Configuration.Integrations.Mailchimp;

@@ -631,7 +631,7 @@ namespace Angelic.Models.Configuration;
         public int? DefaultOppClosureCat { get; set; } 
 
         [JsonProperty("default_send_to_pagerduty", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? DefaultSendToPagerduty { get; set; } 
+        public bool? DefaultSendToPagerDuty { get; set; } 
 
         [JsonProperty("minattachments", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? MinAttachments { get; set; } 

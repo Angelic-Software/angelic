@@ -22,28 +22,28 @@ public class User
     public bool? IsCommsUser { get; set; } 
 
     [JsonProperty("ischangeapprover2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? IsChangeapprover2 { get; set; } 
+    public bool? IsChangeApprover2 { get; set; } 
 
     [JsonProperty("sitephonenumberint", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public long? Sitephonenumberint { get; set; } 
+    public long? SitePhoneNumberInt { get; set; } 
 
     [JsonProperty("phonenumberint", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public long? PhoneNumberint { get; set; } 
+    public long? PhoneNumberInt { get; set; } 
 
     [JsonProperty("homenumberint", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public long? Homenumberint { get; set; } 
+    public long? HomeNumberInt { get; set; } 
 
     [JsonProperty("mobileint", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public long? Mobileint { get; set; } 
+    public long? MobileInt { get; set; } 
 
     [JsonProperty("mobilenumber2int", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public long? MobileNumber2Int { get; set; } 
 
     [JsonProperty("faxint", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public long? Faxint { get; set; } 
+    public long? FaxInt { get; set; } 
 
     [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Id { get; set; } 
+    public required int Id { get; set; } 
 
     [JsonProperty("name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Name { get; set; } 
@@ -79,13 +79,13 @@ public class User
     public string? PhoneNumberPreferred { get; set; } 
 
     [JsonProperty("sitephonenumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Sitephonenumber { get; set; } 
+    public string? SitePhoneNumber { get; set; } 
 
     [JsonProperty("phonenumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? PhoneNumber { get; set; } 
 
     [JsonProperty("homenumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Homenumber { get; set; } 
+    public string? HomeNumber { get; set; } 
 
     [JsonProperty("mobilenumber", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? MobileNumber { get; set; } 
@@ -97,7 +97,7 @@ public class User
     public string? Fax { get; set; } 
 
     [JsonProperty("telpref", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Telpref { get; set; } 
+    public int? TelPref { get; set; } 
 
     [JsonProperty("activedirectory_dn", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ActiveDirectoryDn { get; set; } 
@@ -118,7 +118,7 @@ public class User
     public string? Colour { get; set; } 
 
     [JsonProperty("isimportantcontact", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? IsImportantcontact { get; set; } 
+    public bool? IsImportantContact { get; set; } 
 
     [JsonProperty("other1", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Other1 { get; set; } 
@@ -139,7 +139,7 @@ public class User
     public string? Notes { get; set; } 
 
     [JsonProperty("neversendemails", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Neversendemails { get; set; } 
+    public bool? NeverSendEmails { get; set; } 
 
     [JsonProperty("default_currency_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? DefaultCurrencyCode { get; set; } 
@@ -151,7 +151,7 @@ public class User
     public string? AreaGuid { get; set; } 
 
     [JsonProperty("site_cautomate_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? SiteCautomateGuid { get; set; } 
+    public string? SiteCAutomateGuid { get; set; } 
 
     [JsonProperty("priority_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? PriorityId { get; set; } 
@@ -184,28 +184,28 @@ public class User
     public ICollection<AssetTypeRole>? UserRelationships { get; set; } 
 
     [JsonProperty("uddevsite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Uddevsite { get; set; } 
+    public int? UdDevSite { get; set; } 
 
     [JsonProperty("uddevnum", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Uddevnum { get; set; } 
+    public int? UdDevNum { get; set; } 
 
     [JsonProperty("uduserid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Uduserid { get; set; } 
+    public int? UdUserId { get; set; } 
 
     [JsonProperty("userdevicerolecount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? UserDevicerolecount { get; set; } 
+    public int? UserDeviceRoleCount { get; set; } 
 
     [JsonProperty("site_hubspot_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? SiteHubspotGuid { get; set; } 
 
     [JsonProperty("isserviceaccount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? IsServiceaccount { get; set; } 
+    public bool? IsServiceAccount { get; set; } 
 
     [JsonProperty("ignoreautomatedbilling", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Ignoreautomatedbilling { get; set; } 
+    public bool? IgnoreAutomatedBilling { get; set; } 
 
     [JsonProperty("isimportantcontact2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? IsImportantcontact2 { get; set; } 
+    public bool? IsImportantContact2 { get; set; } 
 
     [JsonProperty("connectwiseid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ConnectWiseId { get; set; } 
@@ -220,7 +220,7 @@ public class User
     public string? RoleList { get; set; } 
 
     [JsonProperty("sitetimezone", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Sitetimezone { get; set; } 
+    public string? SiteTimezone { get; set; } 
 
     [JsonProperty("client_account_manager_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ClientAccountManagerId { get; set; } 
@@ -247,13 +247,13 @@ public class User
     public string? NewPassword { get; set; } 
 
     [JsonProperty("dontackemails", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? DontAckemails { get; set; } 
+    public bool? DontAckEmails { get; set; } 
 
     [JsonProperty("web_access_level", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? WebAccessLevel { get; set; } 
 
     [JsonProperty("showmeonly", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ShowMeonly { get; set; } 
+    public int? ShowMeOnly { get; set; } 
 
     [JsonProperty("showrecentonly", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? ShowRecentOnly { get; set; } 
@@ -310,10 +310,10 @@ public class User
     public int? Inv10Site { get; set; } 
 
     [JsonProperty("informaction", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Informaction { get; set; } 
+    public bool? InformAction { get; set; } 
 
     [JsonProperty("informclearance", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Informclearance { get; set; } 
+    public bool? InformClearance { get; set; } 
 
     [JsonProperty("inv11", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Inv11 { get; set; } 
@@ -412,7 +412,7 @@ public class User
     public bool? CanAdd { get; set; } 
 
     [JsonProperty("allowviewsitedocs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Allowviewsitedocs { get; set; } 
+    public bool? AllowViewSiteDocs { get; set; } 
 
     [JsonProperty("third_party_guid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ThirdPartyGuid { get; set; } 
@@ -421,28 +421,28 @@ public class User
     public string? ThirdPartySql { get; set; } 
 
     [JsonProperty("ischangeapprover", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? IsChangeapprover { get; set; } 
+    public bool? IsChangeApprover { get; set; } 
 
     [JsonProperty("cancreateuser", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? CanCreateuser { get; set; } 
+    public bool? CanCreateUser { get; set; } 
 
     [JsonProperty("department", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Department { get; set; } 
 
     [JsonProperty("isheadofdept", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Isheadofdept { get; set; } 
+    public bool? IsHeadOfDept { get; set; } 
 
     [JsonProperty("deputysite", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Deputysite { get; set; } 
+    public int? DeputySite { get; set; } 
 
     [JsonProperty("deputyusername", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Deputyusername { get; set; } 
+    public string? DeputyUsername { get; set; } 
 
     [JsonProperty("cat2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Cat2 { get; set; } 
 
     [JsonProperty("lastlogindate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Lastlogindate { get; set; } 
+    public DateTimeOffset? LastLoginDate { get; set; } 
 
     [JsonProperty("email2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Email2 { get; set; } 
@@ -451,22 +451,22 @@ public class User
     public string? Email3 { get; set; } 
 
     [JsonProperty("iscontractcontact", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? IsContractcontact { get; set; } 
+    public bool? IsContractContact { get; set; } 
 
     [JsonProperty("informnewarea", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Informnewarea { get; set; } 
+    public bool? InformNewArea { get; set; } 
 
     [JsonProperty("informactionarea", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Informactionarea { get; set; } 
+    public bool? InformActionArea { get; set; } 
 
     [JsonProperty("informclearancearea", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Informclearancearea { get; set; } 
+    public bool? InformClearanceArea { get; set; } 
 
     [JsonProperty("disclaimermatchstring", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? DisclaimerMatchString { get; set; } 
 
     [JsonProperty("viewallcleared", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Viewallcleared { get; set; } 
+    public bool? ViewAllCleared { get; set; } 
 
     [JsonProperty("isexternal", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? IsExternal { get; set; } 
@@ -487,46 +487,46 @@ public class User
     public int? Question5 { get; set; } 
 
     [JsonProperty("dontaddtomailinglist", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? DontAddtomailinglist { get; set; } 
+    public bool? DontAddToMailingList { get; set; } 
 
     [JsonProperty("caneditwebdetails", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? CanEditwebdetails { get; set; } 
+    public bool? CanEditWebDetails { get; set; } 
 
     [JsonProperty("cataloglevel", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Cataloglevel { get; set; } 
+    public int? CatalogLevel { get; set; } 
 
     [JsonProperty("canaccesscatalog", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? CanAccesscatalog { get; set; } 
+    public bool? CanAccessCatalog { get; set; } 
 
     [JsonProperty("hasbeentrained", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Hasbeentrained { get; set; } 
+    public bool? HasBeenTrained { get; set; } 
 
     [JsonProperty("admanager", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Admanager { get; set; } 
+    public string? AdManager { get; set; } 
 
     [JsonProperty("canviewcontracts", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Canviewcontracts { get; set; } 
+    public bool? CanViewContracts { get; set; } 
 
     [JsonProperty("ispoapprover", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? IsPoapprover { get; set; } 
+    public bool? IsPoApprover { get; set; } 
 
     [JsonProperty("encmethod", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Encmethod { get; set; } 
+    public int? EncMethod { get; set; } 
 
     [JsonProperty("adconnection", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Adconnection { get; set; } 
+    public int? AdConnection { get; set; } 
 
     [JsonProperty("useadlogin", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Useadlogin { get; set; } 
+    public int? UseAdLogin { get; set; } 
 
     [JsonProperty("sendwelcomeemail", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Sendwelcomeemail { get; set; } 
+    public bool? SendWelcomeEmail { get; set; } 
 
     [JsonProperty("welcomeemail_template_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? WelcomeemailTemplateId { get; set; } 
+    public int? WelcomeEmailTemplateId { get; set; } 
 
     [JsonProperty("resetpassword", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Resetpassword { get; set; } 
+    public bool? ResetPassword { get; set; } 
 
     [JsonProperty("_anonymise", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? Anonymise { get; set; } 
@@ -535,7 +535,7 @@ public class User
     public int? ReassignAllToUser { get; set; } 
 
     [JsonProperty("ismaincontact", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Ismaincontact { get; set; } 
+    public bool? IsMainContact { get; set; } 
 
     [JsonProperty("primary_address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public Address? PrimaryAddress { get; set; } 
@@ -598,10 +598,10 @@ public class User
     public string? AgentAppUrl { get; set; } 
 
     [JsonProperty("imagedata", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Imagedata { get; set; } 
+    public string? ImageData { get; set; } 
 
     [JsonProperty("webannouncement", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Webannouncement { get; set; } 
+    public string? WebAnnouncement { get; set; } 
 
     [JsonProperty("cautomateid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? CAutomateId { get; set; } 
@@ -622,7 +622,7 @@ public class User
     public bool? DelegationActivated { get; set; } 
 
     [JsonProperty("delegation_timebased", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? DelegationTimebased { get; set; } 
+    public bool? DelegationTimeBased { get; set; } 
 
     [JsonProperty("delegation_start", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DateTimeOffset? DelegationStart { get; set; } 
@@ -643,7 +643,7 @@ public class User
     public bool? IsNhServerEmailDefault { get; set; } 
 
     [JsonProperty("matchprimaryemail", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Matchprimaryemail { get; set; } 
+    public bool? MatchPrimaryEmail { get; set; } 
 
     [JsonProperty("servicenow_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ServiceNowId { get; set; } 
@@ -655,31 +655,31 @@ public class User
     public string? SiteServiceNowId { get; set; } 
 
     [JsonProperty("sgatewayid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Sgatewayid { get; set; } 
+    public string? SGatewayId { get; set; } 
 
     [JsonProperty("software", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<AssetApplications>? Software { get; set; } 
 
     [JsonProperty("canaccessinvoices", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? CanAccessinvoices { get; set; } 
+    public bool? CanAccessInvoices { get; set; } 
 
     [JsonProperty("samaccountname", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Samaccountname { get; set; } 
+    public string? SamAccountName { get; set; } 
 
     [JsonProperty("oktaid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Oktaid { get; set; } 
+    public string? OktaId { get; set; } 
 
     [JsonProperty("okta_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? OktaStatus { get; set; } 
 
     [JsonProperty("authenticatorapp_configured", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? AuthenticatorappConfigured { get; set; } 
+    public bool? AuthenticatorAppConfigured { get; set; } 
 
     [JsonProperty("_revoke_authenticatorapp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? RevokeAuthenticatorapp { get; set; } 
+    public bool? RevokeAuthenticatorApp { get; set; } 
 
     [JsonProperty("ulastupdate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public DateTimeOffset? Ulastupdate { get; set; } 
+    public DateTimeOffset? ULastUpdate { get; set; } 
 
     [JsonProperty("_isopp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? IsOpp { get; set; } 
@@ -703,7 +703,7 @@ public class User
     public string? SiteGuid2 { get; set; } 
 
     [JsonProperty("allowviewclientdocs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Allowviewclientdocs { get; set; } 
+    public bool? AllowViewClientDocs { get; set; } 
 
     [JsonProperty("azure_tenant_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? AzureTenantId { get; set; } 
@@ -742,7 +742,7 @@ public class User
     public string? Warning { get; set; } 
 
     [JsonProperty("isuserdetails", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? IsUserdetails { get; set; } 
+    public bool? IsUserDetails { get; set; } 
 
     [JsonProperty("hudu_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? HuduUrl { get; set; } 
@@ -757,13 +757,13 @@ public class User
     public bool? Unsubscribed { get; set; } 
 
     [JsonProperty("canviewopps", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Canviewopps { get; set; } 
+    public bool? CanViewOpps { get; set; } 
 
     [JsonProperty("azure_tenant_domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? AzureTenantDomain { get; set; } 
 
     [JsonProperty("servicenow_companyid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? ServiceNowCompanyid { get; set; } 
+    public string? ServiceNowCompanyId { get; set; } 
 
     [JsonProperty("external_links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<ExternalLink>? ExternalLinks { get; set; } 
@@ -784,7 +784,7 @@ public class User
     public bool? SalesforceDontSync { get; set; } 
 
     [JsonProperty("_hascontactsenabled", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Hascontactsenabled { get; set; } 
+    public bool? HasContactsEnabled { get; set; } 
 
     [JsonProperty("new_site_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? NewSiteName { get; set; } 
@@ -838,13 +838,13 @@ public class User
     public bool? NewUserSiteOnly { get; set; } 
 
     [JsonProperty("thirdpartygroups", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public ICollection<UserThirdPartyGroup>? ThirdPartygroups { get; set; } 
+    public ICollection<UserThirdPartyGroup>? ThirdPartyGroups { get; set; } 
 
     [JsonProperty("linked_sites", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<ExternalLink>? LinkedSites { get; set; } 
 
     [JsonProperty("dontackemails2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? DontAckemails2 { get; set; } 
+    public bool? DontAckEmails2 { get; set; } 
 
     [JsonProperty("instagram_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public long? InstagramId { get; set; } 
@@ -880,16 +880,16 @@ public class User
     public bool? ServiceAccountOverridden { get; set; } 
 
     [JsonProperty("sendaccountsemails", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? SendAccountsemails { get; set; } 
+    public bool? SendAccountsEmails { get; set; } 
 
     [JsonProperty("extratabs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<Tabs>? ExtraTabs { get; set; } 
 
     [JsonProperty("informifack", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Informifack { get; set; } 
+    public bool? InformIfAck { get; set; } 
 
     [JsonProperty("informnewareaifack", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Informnewareaifack { get; set; } 
+    public bool? InformNewAreaIfAck { get; set; } 
 
     [JsonProperty("marketing_unsubscribes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<MarketingUnsubscribe>? MarketingUnsubscribes { get; set; } 
@@ -913,7 +913,7 @@ public class User
     public bool? CheckUpdateUserTickets { get; set; } 
 
     [JsonProperty("canuploaddocuments", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? CanUploaddocuments { get; set; } 
+    public bool? CanUploadDocuments { get; set; } 
 
     [JsonProperty("runbook_button_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? RunbookButtonId { get; set; } 
@@ -949,7 +949,7 @@ public class User
     public DateTimeOffset? ContractEndDate { get; set; } 
 
     [JsonProperty("okta_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? OktaId { get; set; } 
+    public string? OktaUNDERSCOREId { get; set; } 
 
     [JsonProperty("azure_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? AzureId { get; set; } 
@@ -958,10 +958,10 @@ public class User
     public string? UserWithClientSite { get; set; } 
 
     [JsonProperty("client_automatic_callscript_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? ClientAutomaticCallscriptId { get; set; } 
+    public int? ClientAutomaticCallScriptId { get; set; } 
 
     [JsonProperty("neversendmarketingemails", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? Neversendmarketingemails { get; set; } 
+    public bool? NeverSendMarketingEmails { get; set; } 
 
     [JsonProperty("is_prospect", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? IsProspect { get; set; } 

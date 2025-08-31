@@ -300,7 +300,7 @@ public partial class Control
         public bool? WestcoastDeleteLicences { get; set; } 
 
         [JsonProperty("defaultconsigmentuser", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? DefaultConsigmentUser { get; set; } 
+        public int? DefaultConsignmentUser { get; set; } 
 
         [JsonProperty("show_timezone_input", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? ShowTimeZoneInput { get; set; } 

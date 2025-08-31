@@ -987,7 +987,7 @@ public partial class Control
     public string? NinjaRmmDeeplinkUrl { get; set; }
 
     [JsonProperty("pagerduty_webhook_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? PagerdutyWebhookType { get; set; }
+    public int? PagerDutyWebhookType { get; set; }
 
     [JsonProperty("twilio_allow_inbound", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? TwilioAllowInbound { get; set; }

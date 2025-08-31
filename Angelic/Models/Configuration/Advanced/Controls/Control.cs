@@ -1161,7 +1161,7 @@ namespace Angelic.Models.Configuration.Advanced.Controls;
         public bool? GwAssetScopes { get; set; } 
 
         [JsonProperty("pagerduty_services", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ICollection<PagerDutyMapping>? PagerdutyServices { get; set; } 
+        public ICollection<PagerDutyMapping>? PagerDutyServices { get; set; } 
 
         [JsonProperty("integration_client_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string? IntegrationClientId { get; set; } 

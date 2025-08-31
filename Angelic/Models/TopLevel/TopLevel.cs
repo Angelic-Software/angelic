@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using System.ComponentModel.DataAnnotations.Schema;
 using Angelic.Attributes;
 using Angelic.Models.Configuration.TeamsAndAgents.Agents;
 using Angelic.Models.Configuration.TeamsAndAgents.Teams;
@@ -11,6 +12,7 @@ namespace Angelic.Models.TopLevel;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
 [HasEndpoint("TopLevel")]
+[Table("TREE")]
 public class TopLevel
 {
     [JsonProperty("toplevel_mailbox_override", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -41,13 +43,13 @@ public class TopLevel
     public string? Notes { get; set; } 
 
     [JsonProperty("kashflowurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Kashflowurl { get; set; } 
+    public string? KashflowUrl { get; set; } 
 
     [JsonProperty("kashflowusername", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Kashflowusername { get; set; } 
+    public string? KashflowUsername { get; set; } 
 
     [JsonProperty("kashflowpassword", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Kashflowpassword { get; set; } 
+    public string? KashflowPassword { get; set; } 
 
     [JsonProperty("mailbox_override", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? MailboxOverride { get; set; } 

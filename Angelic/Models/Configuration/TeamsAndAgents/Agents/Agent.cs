@@ -688,7 +688,7 @@ namespace Angelic.Models.Configuration.TeamsAndAgents.Agents;
         public string? DefaultColumnsUsersSelectedName { get; set; } 
 
         [JsonProperty("pagerduty_email", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string? PagerdutyEmail { get; set; } 
+        public string? PagerDutyEmail { get; set; } 
 
         [JsonProperty("ac_assettypes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<AccessControl>? AcAssetTypes { get; set; } 

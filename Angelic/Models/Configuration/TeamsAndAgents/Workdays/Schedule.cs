@@ -4,7 +4,7 @@ using Angelic.Models.Contracts;
 using Angelic.Models.KeyPairs;
 using Newtonsoft.Json;
 
-namespace Angelic.Models;
+namespace Angelic.Models.Configuration.TeamsAndAgents.Workdays;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
 public class Schedule

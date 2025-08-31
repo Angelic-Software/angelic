@@ -1162,20 +1162,20 @@ public class Ticket
     public int? SendPrintRequest { get; set; }
 
     [JsonProperty("pagerdutyid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? PagerdutyId { get; set; }
+    public string? PagerDutyId { get; set; }
 
     [JsonProperty("pagerdutyincidentidstring", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
-    public string? PagerdutyIncidentIdString { get; set; }
+    public string? PagerDutyIncidentIdString { get; set; }
 
     [JsonProperty("pagerdutystatus", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? PagerdutyStatus { get; set; }
+    public int? PagerDutyStatus { get; set; }
 
     [JsonProperty("pagerdutyurl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? PagerdutyUrl { get; set; }
+    public string? PagerDutyUrl { get; set; }
 
     [JsonProperty("pagerdutyincidentid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? PagerdutyIncidentId { get; set; }
+    public string? PagerDutyIncidentId { get; set; }
 
     [JsonProperty("opportunity_third_party_url", Required = Required.Default,
         NullValueHandling = NullValueHandling.Ignore)]
@@ -1616,7 +1616,7 @@ public class Ticket
     public bool? HasRelated { get; set; }
 
     [JsonProperty("pagerdutyeragent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? PagerdutyErAgent { get; set; }
+    public int? PagerDutyErAgent { get; set; }
 
     [JsonProperty("elapsed_response_hours", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public double? ElapsedResponseHours { get; set; }
@@ -2156,13 +2156,13 @@ public class Ticket
     public string? ParentRelease3Name { get; set; }
 
     [JsonProperty("pagerdutyservice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? PagerdutyService { get; set; }
+    public string? PagerDutyService { get; set; }
 
     [JsonProperty("pagerdutyservice_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? PagerdutyServiceName { get; set; }
+    public string? PagerDutyServiceName { get; set; }
 
     [JsonProperty("_dontupdate_pagerduty", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? DontUpdatePagerduty { get; set; }
+    public bool? DontUpdatePagerDuty { get; set; }
 
     [JsonProperty("_dont_fire_automations", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public bool? DontFireAutomations { get; set; }

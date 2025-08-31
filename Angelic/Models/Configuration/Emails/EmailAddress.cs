@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using System.ComponentModel.DataAnnotations;
 using Angelic.Models.Configuration.Emails.Mailboxes;
 using Angelic.Models.Items;
 using Newtonsoft.Json;
@@ -18,7 +19,8 @@ public class EmailAddress
     public string? RoutingType { get; set; } 
 
     [JsonProperty("mailboxType", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public MailboxType? MailboxType { get; set; } 
+    [Range(0, 7)]
+    public int? MailboxType { get; set; } 
 
     [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ItemId? Id { get; set; } 

@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using System.ComponentModel.DataAnnotations;
 using Newtonsoft.Json;
 
 namespace Angelic.Models.Configuration.Integrations.Xero;
@@ -31,9 +32,11 @@ public class XeroWebhookEvent
     public object? ResourceObject { get; set; } 
 
     [JsonProperty("eventTypeNum", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public RelayEventType? EventTypeNum { get; set; } 
+    [Range(0, 3)]
+    public int? EventTypeNum { get; set; } 
 
     [JsonProperty("eventCategoryNum", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public RelayEventCategory? EventCategoryNum { get; set; } 
+    [Range(0, 7)]
+    public int? EventCategoryNum { get; set; } 
 
 }

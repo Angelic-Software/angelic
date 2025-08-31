@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using System.ComponentModel.DataAnnotations;
 using Angelic.Models.Appointments;
 using Angelic.Models.Configuration.Emails;
 using Angelic.Models.Items;
@@ -28,7 +29,8 @@ namespace Angelic.Models.Configuration.Integrations.Microsoft.ExchangeWebService
         public EmailAddress? Organizer { get; set; } 
 
         [JsonProperty("appointmentType", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppointmentType? AppointmentType { get; set; } 
+        [Range(0, 3)]
+        public int? AppointmentType { get; set; } 
 
         [JsonProperty("isAllDayEvent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsAllDayEvent { get; set; } 

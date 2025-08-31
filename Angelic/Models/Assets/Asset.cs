@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using System.ComponentModel.DataAnnotations.Schema;
 using Angelic.Models.Configuration;
 using Angelic.Models.Configuration.Assets;
 using Angelic.Models.Configuration.Assets.AssetTypes;
@@ -29,6 +30,7 @@ namespace Angelic.Models.Assets;
 /// SQL database table name: DEVICE.
 /// </summary>
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
+[Table("DEVICE")]
 public class Asset
 {
     [JsonProperty("os_override", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

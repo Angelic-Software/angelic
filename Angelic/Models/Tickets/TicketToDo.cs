@@ -43,7 +43,7 @@ public class TicketToDo
     public string? Warning { get; set; } 
 
     [JsonProperty("addedby", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public int? Addedby { get; set; } 
+    public int? AddedBy { get; set; } 
 
     [JsonProperty("group_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? GroupId { get; set; } 

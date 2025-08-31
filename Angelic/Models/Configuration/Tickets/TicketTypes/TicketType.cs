@@ -753,7 +753,7 @@ public class TicketType
     public bool? ShowGeneralSurveyFields { get; set; } 
 
     [JsonProperty("default_send_to_pagerduty", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public bool? DefaultSendToPagerduty { get; set; } 
+    public bool? DefaultSendToPagerDuty { get; set; } 
 
     [JsonProperty("completion_status_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? CompletionStatusType { get; set; } 

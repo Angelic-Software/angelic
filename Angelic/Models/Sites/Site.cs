@@ -336,7 +336,7 @@ public class Site
     public int? AutoTaskId { get; set; } 
 
     [JsonProperty("pagerdutywildcard", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-    public string? PagerdutyWildcard { get; set; } 
+    public string? PagerDutyWildcard { get; set; } 
 
     [JsonProperty("ateraid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? AteraId { get; set; } 
