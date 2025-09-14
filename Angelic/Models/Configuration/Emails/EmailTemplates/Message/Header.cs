@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 namespace Angelic.Models.Configuration.Emails.EmailTemplates.Message;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
-public class Header
+public record Header
 {
     [JsonProperty("offset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public long? Offset { get; set; } 

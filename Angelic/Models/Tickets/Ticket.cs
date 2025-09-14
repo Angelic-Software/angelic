@@ -31,7 +31,7 @@ namespace Angelic.Models.Tickets;
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
 [Table("FAULTS")]
 [HasEndpoint("Tickets")]
-public class Ticket
+public record Ticket
 {
     [JsonProperty("oppjobtitle", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? OppJobTitle { get; set; }

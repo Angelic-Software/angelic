@@ -11,7 +11,7 @@ namespace Angelic.Models.Tickets;
 [HasEndpoint("Tickets")]
 [ListVariantOf(typeof(Ticket))]
 [Table("FAULTS")]
-public class TicketList
+public record TicketList
 {
     [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Id { get; set; }

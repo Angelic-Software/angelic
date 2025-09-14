@@ -13,7 +13,7 @@ namespace Angelic.Models.TopLevel;
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
 [HasEndpoint("TopLevel")]
 [Table("TREE")]
-public class TopLevel
+public record TopLevel
 {
     [JsonProperty("toplevel_mailbox_override", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? TopLevelMailboxOverride { get; set; } 

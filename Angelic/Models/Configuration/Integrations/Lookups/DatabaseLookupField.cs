@@ -5,7 +5,7 @@ using static Newtonsoft.Json.Required;
 namespace Angelic.Models.Configuration.Integrations.Lookups;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
-public class DatabaseLookupField
+public record DatabaseLookupField
 {
     [JsonProperty("id", Required = Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Id { get; set; } 

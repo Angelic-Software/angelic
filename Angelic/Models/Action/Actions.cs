@@ -26,7 +26,7 @@ namespace Angelic.Models.Action;
 
     [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
     [HasEndpoint("Actions")]
-    public class Actions
+    public record Actions
     {
         /// <summary>
         /// The ID of the ticket in which this Action applies to.

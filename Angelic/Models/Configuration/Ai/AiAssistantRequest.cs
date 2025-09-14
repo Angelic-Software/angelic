@@ -2,7 +2,7 @@ using Newtonsoft.Json;
 
 namespace Angelic.Models.Configuration.Ai;
 
-public class AiAssistantRequest
+public record AiAssistantRequest
 {
     [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Id { get; set; }

@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 namespace Angelic.Models.Attachments;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
-public class Attachment
+public record Attachment
 {
     [JsonProperty("third_party_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? ThirdPartyId { get; set; } 

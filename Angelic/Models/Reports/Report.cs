@@ -12,7 +12,7 @@ namespace Angelic.Models.Reports;
 
 [HasEndpoint("Report")]
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
-public class Report
+public record Report
 {
     [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Id { get; set; }

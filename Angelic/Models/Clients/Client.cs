@@ -23,7 +23,7 @@ using Newtonsoft.Json;
 
 namespace Angelic.Models.Clients;
 
-public class Client
+public record Client
 {
     [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Id { get; set; }

@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 namespace Angelic.Models.Configuration.Integrations.Freshdesk;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
-public class FreshdeskTicket
+public record FreshdeskTicket
 {
     [JsonProperty("attachments", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public ICollection<FreshdeskAttachment>? Attachments { get; set; } 

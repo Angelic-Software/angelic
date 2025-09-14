@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 namespace Angelic.Models.Configuration.Integrations.OpenIddict;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
-public class OpenIddictAuthorization
+public record OpenIddictAuthorization
 {
     [JsonProperty("application", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public OpenIddictApplication? Application { get; set; } 

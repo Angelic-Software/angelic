@@ -7,7 +7,7 @@ namespace Angelic.Models.Configuration;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
 [HasEndpoint("Tabs")]
-public class Tabs
+public record Tabs
 {
     [JsonProperty("intent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Intent { get; set; } 

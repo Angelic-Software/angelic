@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 namespace Angelic.Models.Configuration.Integrations.Twitter;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
-public class TwitterWebhookContent
+public record TwitterWebhookContent
 {
     [JsonProperty("for_user_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public long? ForUserId { get; set; } 

@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 namespace Angelic.Models.Configuration.Integrations.Google;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
-public class GoogleBusinessAnswer
+public record GoogleBusinessAnswer
 {
     [JsonProperty("name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Name { get; set; } 

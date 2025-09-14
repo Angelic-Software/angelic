@@ -2,7 +2,7 @@ using Newtonsoft.Json;
 
 namespace Angelic.Models.KeyPairs;
 
-public class IdValueKeyPair
+public record IdValueKeyPair
 {
     [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Id { get; set; }

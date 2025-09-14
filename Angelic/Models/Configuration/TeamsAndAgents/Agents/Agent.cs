@@ -7,7 +7,7 @@ using Newtonsoft.Json;
 namespace Angelic.Models.Configuration.TeamsAndAgents.Agents;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public class Agent
+    public record Agent
     {
         [JsonProperty("sites", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ICollection<AgentSite>? Sites { get; set; } 

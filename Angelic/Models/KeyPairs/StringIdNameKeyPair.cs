@@ -5,7 +5,7 @@ namespace Angelic.Models.KeyPairs;
 /// <summary>
 /// Originally named KeyPair.
 /// </summary>
-public class StringIdNameKeyPair
+public record StringIdNameKeyPair
 {
     [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Id { get; set; } 

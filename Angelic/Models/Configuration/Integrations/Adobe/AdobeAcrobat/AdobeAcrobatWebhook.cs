@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 namespace Angelic.Models.Configuration.Integrations.Adobe.AdobeAcrobat;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
-public class AdobeAcrobatWebhook
+public record AdobeAcrobatWebhook
 {
     [JsonProperty("webhookId", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? WebhookId { get; set; }

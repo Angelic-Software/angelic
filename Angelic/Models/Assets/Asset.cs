@@ -31,7 +31,7 @@ namespace Angelic.Models.Assets;
 /// </summary>
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
 [Table("DEVICE")]
-public class Asset
+public record Asset
 {
     [JsonProperty("os_override", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? OsOverride { get; set; }

@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 namespace Angelic.Models.Configuration.Integrations.Okta;
 
 
-    public class OktaMapping
+    public record OktaMapping
     {
         [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Id { get; set; } 

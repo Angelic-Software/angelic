@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 namespace Angelic.Models.Configuration.Tickets.Views;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
-public class ViewFilterDetails
+public record ViewFilterDetails
 {
     [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Id { get; set; } 

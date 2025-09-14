@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 namespace Angelic.Models.Configuration.Integrations.Mailchimp;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
-public class MailchimpMergeFields
+public record MailchimpMergeFields
 {
     [JsonProperty("property1", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public object? Property1 { get; set; } 

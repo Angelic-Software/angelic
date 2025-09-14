@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 namespace Angelic.Models.Configuration.Emails.EmailTemplates.Encoder;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
-public class DecoderFallback
+public record DecoderFallback
 {
     [JsonProperty("maxCharCount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? MaxCharCount { get; set; } 

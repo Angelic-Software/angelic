@@ -6,7 +6,7 @@ using Newtonsoft.Json;
 namespace Angelic.Models.Configuration.SelfServicePortal;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
-public class ServiceRequestDetails
+public record ServiceRequestDetails
 {
     [JsonProperty("icon", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Icon { get; set; } 

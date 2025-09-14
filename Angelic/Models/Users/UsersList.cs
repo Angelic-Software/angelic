@@ -12,7 +12,7 @@ namespace Angelic.Models.Users;
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
 [HasEndpoint("Users")]
 [ListVariantOf(typeof(User))]
-public class UsersList
+public record UsersList
 {
     [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public int? Id { get; set; } 

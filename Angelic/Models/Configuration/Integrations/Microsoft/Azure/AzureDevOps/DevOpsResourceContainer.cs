@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 namespace Angelic.Models.Configuration.Integrations.Microsoft.Azure.AzureDevOps;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
-public class DevOpsResourceContainer
+public record DevOpsResourceContainer
 {
     [JsonProperty("project", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public DevOpsResourceContainerDetail? Project { get; set; } 

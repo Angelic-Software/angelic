@@ -2,7 +2,7 @@ using Newtonsoft.Json;
 
 namespace Angelic.Models.KeyPairs;
 
-public class LongIdNameKeyPair
+public record LongIdNameKeyPair
 {
     [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public long? Id { get; set; } 

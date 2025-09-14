@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 namespace Angelic.Models.Configuration.Integrations.Device42;
 
 [GeneratedCode("NJsonSchema", "14.3.0.0 (NJsonSchema v11.2.0.0 (Newtonsoft.Json v13.0.0.0))")]
-public class Device42Webhook
+public record Device42Webhook
 {
     [JsonProperty("category", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
     public string? Category { get; set; } 
